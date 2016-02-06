@@ -1,0 +1,299 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Twitch Stream Utility</title>
+	<link rel="icon" href="http://www.twitch.tv/favicon.ico" />
+	<link href="https://cdn.jsdelivr.net/foundation/6.1.2/foundation.min.css" rel="stylesheet" />
+	<link href="https://cdn.jsdelivr.net/foundation-icons/3.0/foundation-icons.min.css" rel="stylesheet" />
+</head>
+<body>
+<nav class="top-bar" style="margin-bottom:0.9375rem;">
+	<div class="top-bar-left">
+		<ul class="dropdown menu" data-dropdown-menu>
+			<li class="menu-text">Twitch Stream Utility</li>
+		    <li>
+		        <div class="input-group" style="margin-bottom: 0;">
+		            <button id="setup" class="button secondary" data-toggle="setupDropdown" style="margin-bottom: 0; padding: 0.3rem 1rem;">
+		                <i class="fi-info" style="font-size: 1.7rem;"></i>
+		            </button>
+		            <div class="dropdown-pane row" id="setupDropdown" data-dropdown>
+		                <p>Setup instructions go here.</p>
+		            </div>
+		            <button class="button secondary" data-toggle="settingsDropdown" style="margin-bottom: 0; padding: 0.3rem 1rem; margin-left: 0.5rem;">
+		                <i class="fi-wrench" style="font-size: 1.7rem;"></i>
+		            </button>
+		            <div class="dropdown-pane row" id="settingsDropdown" data-dropdown>
+		                <div class="column input-group">
+		                    <label for="quality" class="input-group-label">Quality</label>
+		                    <select id="quality" class="input-group-field" style="min-width: 6rem;">
+		                        <option value="best">Best</option>
+		                        <option value="source">Source</option>
+		                        <option value="high">High</option>
+		                        <option value="medium">Medium</option>
+		                        <option value="low">Low</option>
+		                        <option value="mobile">Mobile</option>
+		                        <option value="audio">Audio</option>
+		                    </select>
+		                </div>
+		                <div class="column input-group">
+		                    <label for="autoRefresh" class="input-group-label" style="width: 226px;">Refresh every 2 minutes</label>
+		                    <input type="checkbox" id="autoRefresh" class="input-group-field" style="height: 40px; width: 40px; margin-right: 0;"/>
+		                </div>
+		            </div>
+		            <button id="refresh" class="button" style="margin-bottom: 0; padding: 0.3rem 1rem; margin-left: 0.5rem;">
+		                <i class="fi-refresh" style="font-size: 1.7rem;"></i>
+		            </button>
+		        </div>
+		    </li>
+		</ul>
+	</div>
+	<div class="top-bar-right">
+      	<ul class="menu">
+        	<li>
+				<div class="input-group" style="margin-bottom:0;">
+					<label for="username" class="input-group-label">User</label>
+					<input type="text" id="username" class="input-group-field" placeholder="Username" style="margin-right:0;text-align:center;" />
+					<div class="input-group-button">
+					    <button id="usernameButton" class="button" style="margin-bottom: 0; padding: 0.3rem 1rem;">
+					        <i class="fi-save" style="font-size: 1.7rem;"></i>
+					    </button>
+					</div>
+				</div>
+        	</li>
+      	</ul>
+    </div>
+</nav>
+<section id="currentStreams" class="row">
+
+</section>
+<footer class="row">
+	<div class="column">
+		<hr />
+		<p style="text-align:center;">&copy; 2016 <a href="http://www.isaac-west.ca/">Isaac West</a></p>
+	</div>
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/foundation/6.1.2/foundation.min.js"></script>
+<script>
+	(function () {
+		$(document).foundation();
+
+		twitchStream = {
+			currentUser: localStorage.getItem('twitchStream.currentUser'),
+			quality: localStorage.getItem('twitchStream.quality'),
+            autoRefresh: localStorage.getItem('twitchStream.autoRefresh'),
+
+			refresh: function() {
+				if (twitchStream.currentUser) {
+					twitchStream.getFollowed(twitchStream.currentUser);
+				} else {
+					$("#currentStreams").empty();
+				}
+			},
+
+			getFollowed: function(username) {
+				var url = "https://api.twitch.tv/kraken/users/" + username + "/follows/channels";
+				$.ajax({
+					url: url,
+					cache: false,
+					success: function(result) {
+						twitchStream.getStreams(result);
+					}
+				})
+			},
+
+			getStreams: function(followedStreams) {
+				if (followedStreams.follows.length > 0) {
+					var url = "https://api.twitch.tv/kraken/streams?channel=";
+
+					followedStreams.follows.forEach(function(item) {
+						url += item.channel.display_name + ",";
+					});
+
+					url = url.substring(0, url.length - 1);
+
+					$.ajax({
+						url: url,
+						cache: false,
+						success: function(result) {
+							twitchStream.renderStreams(result);
+						}
+					})
+				}
+			},
+
+			renderStreams: function(currentStreams) {
+				$("#currentStreams").empty();
+
+				currentStreams.streams.sort(function(a, b) {
+					if (a.channel.display_name < b.channel.display_name) {
+						return -1;
+					}
+					if (a.channel.display_name > b.channel.display_name) {
+						return 1;
+					}
+					return 0;
+				});
+
+				currentStreams.streams.forEach(function(item) {
+					var $div = $("<div/>", {
+						class: "medium-4 small-12 columns"
+					});
+
+					var $panel = $("<div/>", {
+						class: "callout secondary",
+						style: "padding:0.75rem;"
+					}).appendTo($div);
+
+					$("<img/>", {
+						src: item.preview.medium,
+						style: "margin-bottom:0.5rem;width:100%;height:100%;"
+					}).appendTo($panel);
+
+					$("<h6/>", {
+						text: item.channel.status,
+						style: "white-space:nowrap;overflow:hidden;text-overflow: ellipsis;"
+					}).appendTo($panel);
+
+					$("<p/>", {
+						text: item.viewers + " watching ",
+						style: "text-align:right;white-space:nowrap;overflow:hidden;text-overflow: ellipsis;"
+					}).appendTo($panel).append(
+						$("<a/>", {
+							text: item.channel.display_name,
+							href: "http://www.twitch.tv/" + item.channel.display_name + "/profile"
+						})
+					);
+
+					var $buttonsRow = $("<div/>", {
+						class: "row collapse"
+					}).appendTo($panel);
+
+					$("<div/>", {
+						class: "small-3 columns"
+					}).appendTo($buttonsRow).append(
+						$("<a/>", {
+							onclick: "window.open('http://www.twitch.tv/" + 
+								item.channel.display_name + 
+								"/chat?popout=', 'newwindow', 'width=400, height=600');",
+							target: "_blank",
+							class: "button expanded secondary disabled",
+							style: "margin-bottom:0;padding:0.3rem 1rem;"
+						}).append(
+							$("<i/>", {
+								class: "fi-comments",
+								style: "color:#333;font-size:1.7rem;"
+							})
+						)
+					);
+
+					$("<div/>", {
+						class: "small-9 columns"
+					}).appendTo($buttonsRow).append(
+						$("<a/>", {
+							text: "Launch",
+							href: "livestreamer:" + item.channel.display_name + " " + twitchStream.quality,
+							class: "button expanded",
+							style: "margin-bottom:0;"
+						})
+					);
+
+					$("#currentStreams").append($div);
+				});
+
+				$("#currentStreams > div.columns:last-child").addClass("end")
+			}
+		};
+
+		if (twitchStream.currentUser) {
+			$("#username").val(twitchStream.currentUser);
+		}
+
+		if (twitchStream.quality) {
+			$("#quality").val(twitchStream.quality);
+		} else {
+			$("#quality").val("best");
+			localStorage.setItem('twitchStream.quality', "best");
+			twitchStream.quality = "best";
+		}
+
+		if (twitchStream.autoRefresh) {
+		    $("#autoRefresh").prop("checked", true);
+		    setInterval(function() {
+		            twitchStream.refresh();
+		        }, 1000 * 60 * 2
+		    );
+		}
+
+		$("#usernameButton").on("click", function() {
+			var username = $("#username").val();
+			localStorage.setItem('twitchStream.currentUser', username);
+			twitchStream.currentUser = username;
+			twitchStream.refresh();
+		});
+
+	    $("#quality").on("change", function() {
+	        var quality = $(this).val();
+	        localStorage.setItem('twitchStream.quality', quality);
+	        twitchStream.quality = quality;
+	        twitchStream.refresh();
+	    });
+
+	    $("#autoRefresh").on("change", function() {
+	        var autoRefresh = $(this).is(':checked');
+	        if (autoRefresh) {
+	            localStorage.setItem("twitchStream.autoRefresh", autoRefresh);
+	        } else {
+	            localStorage.removeItem("twitchStream.autoRefresh");
+	        }
+	        twitchStream.autoRefresh = autoRefresh;
+            if (autoRefresh) {
+                setInterval(function () {
+                        twitchStream.refresh();
+                    }, 1000 * 60 * 2
+                );
+                twitchStream.refresh();
+            } else {
+                clearInterval();
+            }
+	    });
+
+		$("#refresh").on("click", twitchStream.refresh);
+
+		twitchStream.refresh();
+	})();
+</script>
+</body>
+<!--
+	Prerequisites
+		Livestreamer 	http://docs.livestreamer.io/
+		VLC				http://www.videolan.org/vlc/index.html
+
+	Protocol Setup		https://msdn.microsoft.com/en-us/library/aa767914%28v=vs.85%29.aspx
+
+		1. In regedit, find HKEY_CLASSES_ROOT
+		2. Add a key named "livestreamer" 
+		3. Set livestreamer's default string to "URL:Livestreamer Protocol"
+		4. Add an empty string to livestreamer called "URL Protocol"
+		5. Add a key to livestreamer named "shell"
+		6. Add a key to shell named "open"
+		7. Add a key to open named "command"
+		8. Set command's default string to the path of launch.bat
+
+		HKEY_CLASSES_ROOT
+		   	livestreamer
+		      	(Default) = "URL:Livestreamer Protocol"
+		      	URL Protocol = ""
+		      	shell
+		         	open
+		            	command
+		               		(Default) = "C:\...\launch.bat" "%1"
+
+	launch.bat
+		set "str=%1
+		set "var2=%str:*:=%"
+		livestreamer twitch.tv/%var2%
+-->
+</html>
