@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Redirect</title>
+</head>
+<body>
+    <p id="text">You are being redirected...</p>
+    <script>
+        var request = new XMLHttpRequest();
+        request.open('GET', 'http://node.claire-west.ca/go' + window.location.pathname, true);
+
+        var invalid = 'Invalid redirect path.';
+
+        request.onload = function() {
+            if (request.status >= 200 && request.status < 400) {
+                var resp = request.responseText;
+                window.location.replace(resp);
+            } else {
+                document.getElementById('text').textContent = invalid;
+            }
+        };
+
+        request.onerror = function() {
+            document.getElementById('text').textContent = invalid;
+        };
+
+        request.send();
+    </script>
+</body>
+</html>

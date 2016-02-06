@@ -1,0 +1,37 @@
+<div class="column">
+    <h4>
+        <a href="#twitch2-settings"><i class="fa fa-arrow-left" title="Back to Settings"></i></a>
+        <span>Setup</span>
+    </h4>
+    <h6><strong>Security Notice</strong></h6>
+    <p>This tool involves running a batch script located on your computer. When you click a link using the custom protocol it will run this script. While unlikely, if you click a link elsewhere that uses a protocol with the same name it is possible someone could take advantage of this. Use at your own risk.</p>
+    <h6><strong>Prerequisites</strong></h6>
+    <ul>
+        <li><a href="http://www.videolan.org/vlc/index.html">VLC</a></li>
+        <li><a href="http://docs.livestreamer.io/">Livestreamer</a></li>
+    </ul>
+    <h6><strong>launch.bat</strong></h6>
+    <code>set "str=%1</code><br />
+    <code>set "var2=%str:*:=%"</code><br />
+    <code>livestreamer %var2%</code><br />
+    <h6 style="margin-top:0.5rem;"><strong>Protocol Setup</strong></h6>
+    <ol>
+        <li>In regedit, find HKEY_CLASSES_ROOT</li>
+        <li>Add a key named "livestreamer"</li>
+        <li>Set livestreamer's default string to "URL:Livestreamer Protocol"</li>
+        <li>Add an empty string to livestreamer called "URL Protocol"</li>
+        <li>Add a key to livestreamer named "shell"</li>
+        <li>Add a key to shell named "open"</li>
+        <li>Add a key to open named "command"</li>
+        <li>Set command's default string to the path of launch.bat (see below)</li>
+    </ol>
+    <p style="margin-top:0.5rem;margin-bottom:0.5rem;">The final structure should look like this:</p>
+    <p style="margin-bottom:0;">HKEY_CLASSES_ROOT</p>
+    <p style="margin-bottom:0;text-indent:1rem;">livestreamer</p>
+    <p style="margin-bottom:0;text-indent:2rem;">(Default) = "URL:Livestreamer Protocol"</p>
+    <p style="margin-bottom:0;text-indent:2rem;">URL Protocol = ""</p>
+    <p style="margin-bottom:0;text-indent:2rem;">shell</p>
+    <p style="margin-bottom:0;text-indent:3rem;">open</p>
+    <p style="margin-bottom:0;text-indent:4rem;">command</p>
+    <p style="margin-bottom:0;text-indent:5rem;">(Default) = "C:\...\launch.bat" "%1"</p>
+</div>

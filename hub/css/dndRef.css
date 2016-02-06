@@ -1,0 +1,131 @@
+#app-dndRef .sectionNav .menu .input-group {
+    margin-bottom: 0;
+}
+
+#app-dndRef .dndRefDirectorySearch {
+    display: inline-block;
+    font-size: 1.5625rem;
+    line-height: 2.15rem;
+    text-align: center;
+    margin-right: 0;
+}
+
+#app-dndRef .fa.fa-cog {
+    margin-top: 1px;
+}
+
+#app-dndRef p,
+#app-dndRef dl {
+    font-family: Georgia, serif;
+}
+
+#app-dndRef .top-bar-left i {
+    margin-top: 0.0625rem;
+}
+
+#dndRef-directory {
+    font-size: 1.1875rem;
+}
+#dndRef-directory dt {
+    margin-bottom: 0;
+}
+#dndRef-directory dd {
+    line-height: 1.25rem;
+    padding-top: 0.25rem;
+    padding-bottom: 0.375rem;
+    margin-left: 1.5rem;
+}
+#dndRef-directory dd + dt {
+    margin-top: 0.25rem;
+}
+
+#dndRef-directory .search .content h5 {
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+}
+#dndRef-directory .search .content p {
+    margin-bottom: 0;
+}
+
+#dndRef-monster h4,
+#dndRef-monster p,
+#dndRef-spellbook h5,
+#dndRef-spellbook p {
+    margin-bottom: 0;
+}
+
+#dndRef-monster {
+    margin-top: -0.5rem;
+    padding-top: 0.5rem;
+}
+
+#dndRef-monster hr {
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+}
+
+#dndRef-monster h4,
+#dndRef-monster h5 {
+    font-weight: bold;
+}
+
+#dndRef-monster .species {
+    font-style: italic;
+}
+
+#dndRef-monster .abilityScores {
+    text-align: center;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+#dndRef-monster .abilityScores .columns {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+#dndRef-monster .sections p {
+    margin-bottom: 0.25rem;
+}
+#dndRef-monster .sections h5 {
+    margin-top: 0.25rem;
+    margin-bottom: 0;
+    border-bottom: 1px solid;
+}
+
+#dndRef-monster .name,
+#dndRef-monster .attributes,
+#dndRef-monster .sections h5 {
+    color: #58180D
+}
+
+#dndRef-monster hr {
+    border-bottom-color: #9C2B1B;
+}
+
+#dndRef-spellbook input,
+#dndRef-spellbook select {
+    margin-bottom: 0;
+}
+
+#dndRef-spellbook .content .name {
+    margin-top: 0.5rem;
+}
+
+#dndRef-spellbook .sections p:not(:first-child) {
+    text-indent: 1rem;
+}
+
+#dndRef-page .sections h6 {
+    font-weight: bold;
+}
+#dndRef-page .attributes th,
+#dndRef-page .attributes td {
+    padding: 0.25rem 0.5rem;
+}
+#dndRef-page .attributes caption {
+    font-weight: bold;
+    padding-bottom: 0;
+}
+#dndRef-page .attributes th {
+    text-align: right;
+}

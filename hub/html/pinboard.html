@@ -1,0 +1,297 @@
+<nav class="top-bar sectionNav">
+    <div class="top-bar-content">
+        <div class="top-bar-left">
+            <ul class="menu">
+                <li class="contextBar">
+                    <div class="mainActions button-group">
+                        <h4>Load a Board</h4>
+                    </div>
+                    <div class="boardActions button-group">
+                        <a href="#pinboard-load" class="topbar-button-fa button secondary" title="Load Board">
+                            <i class="fa fa-folder-open-o"></i>
+                            <span class="show-for-sr">Load Board</span>
+                        </a>
+                        <button class="boardOptions topbar-button-fa button secondary" title="Board Options" data-open="pinboard-view-options">
+                            <i class="fa fa-cog"></i>
+                            <span class="show-for-sr">Board Options</span>
+                        </button>
+                        <button class="saveIndicator topbar-button-fa button hollow success disabled" title="Board Saved">
+                            <i class="fa fa-check-circle"></i>
+                            <span class="show-for-sr">Board Saved</span>
+                        </button>
+                    </div>
+                    <div class="button-group pinActions">
+                        <button class="pinboardClosePin topbar-button-fa button secondary" title="Close Pin">
+                            <i class="fa fa-arrow-circle-left"></i>
+                            <span class="show-for-sr">Close Pin</span>
+                        </button>
+                        <button class="pinOptions topbar-button-fa button secondary" title="Pin Options">
+                            <i class="fa fa-cog"></i>
+                            <span class="show-for-sr">Pin Options</span>
+                        </button>
+                        <button class="saveIndicator topbar-button-fa button hollow success disabled" title="Board Saved">
+                            <i class="fa fa-check-circle"></i>
+                            <span class="show-for-sr">Board Saved</span>
+                        </button>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="pinboard-top-bar-center show-for-medium">
+            <h4 class="pinboardTitle"></h4>
+        </div>
+        <div class="top-bar-right">
+            <ul class="menu">
+                <li class="contextBar">
+                    <div class="pinActions button-group" hidden>
+                        <button class="pinboardEditMode topbar-button-fa button secondary" title="Enable Edit Mode">
+                            <i class="fa fa-wrench"></i>
+                            <span class="show-for-sr">Enable Edit Mode</span>
+                        </button>
+                        <button class="pinboardDeleteContent topbar-button-fa button secondary" title="Enable Delete Mode">
+                            <i class="fa fa-trash-o"></i>
+                            <span class="show-for-sr">Enable Delete Mode</span>
+                        </button>
+                        <button class="pinboardNewContent topbar-button-fa button" title="Add Content to Pin" data-open="pinboard-new-content">
+                            <i class="fa fa-plus"></i>
+                            <span class="show-for-sr">Add Content to Pin</span>
+                        </button>
+                    </div>
+                    <div class="boardActions button-group" hidden>
+                        <button class="pinboardSearch topbar-button-fa button secondary" title="Search Pins" data-toggle="pinboardSearchDropdown">
+                            <i class="fa fa-search"></i>
+                            <span class="show-for-sr">Search Pins</span>
+                        </button>
+                        <div id="pinboardSearchDropdown" class="dropdown-pane hide-for-large" data-dropdown>
+                            <input type="text" class="pinboardSearchText text-center" placeholder="Search" style="margin-right:0;width:100%;" />
+                        </div>
+                        <button class="pinboardAdd topbar-button-fa button" title="New Pin">
+                            <i class="fa fa-plus-square-o"></i>
+                            <span class="show-for-sr">New Pin</span>
+                        </button>
+                    </div>
+                    <div class="mainActions button-group" hidden>
+                        <button class="pinboardDelete topbar-button-fa button secondary" title="Enable Delete Mode">
+                            <i class="fa fa-trash-o"></i>
+                            <span class="show-for-sr">Enable Delete Mode</span>
+                        </button>
+                        <a href="#pinboard-view" class="topbar-button-fi button" title="New Board">
+                            <i class="fi-page-add"></i>
+                            <span class="show-for-sr">New Board</span>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<section id="pinboard-load" class="row contentSection defaultSection" hidden>
+    <div class="hide-for-medium columns">
+        <select class="publicOrPrivate">
+            <option value="public" selected="selected">Public Boards</option>
+            <option value="private">Your Boards</option>
+        </select>
+    </div>
+    <div class="private medium-6 columns">
+        <h4 class="show-for-medium">Your Boards</h4>
+        <div class="row">
+            <div class="notSignedIn column">
+                <p>You are not signed in.</p>
+            </div>
+            <div class="signedIn column" hidden>
+                <p>Your ID:&nbsp;<span></span></p>
+            </div>
+            <div class="yourBoards"></div>
+        </div>
+    </div>
+    <div class="public medium-6 columns">
+        <h4 class="show-for-medium">Public Boards</h4>
+        <div class="row">
+            <div class="publicBoardUser column">
+                <div class="input-group">
+                    <input class="publicBoardUserId input-group-field text-center" placeholder="Owner's ID" type="text">
+                    <div class="input-group-button">
+                        <button class="getPublicBoards button">Confirm</button>
+                    </div>
+                </div>
+            </div>
+            <div class="publicBoards show-for-medium"></div>
+        </div>
+    </div>
+</section>
+<section id="pinboard-view" class="row contentSection" hidden>
+    <div class="pinboard"></div>
+</section>
+
+<div id="pinboard-view-options" class="reveal" data-reveal>
+    <div class="row">
+        <div class="small-6 columns end">
+            <label>Title:
+                <input type="text" class="boardTitleSetting" />
+            </label>
+        </div>
+    </div>
+
+    <div class="row" hidden>
+        <div class="columns end">
+            <label>Board Image:
+                <input type="text" class="boardImageSetting" />
+            </label>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="columns end">
+            <label>Custom CSS:
+                <input type="text" class="boardCSSSetting" />
+            </label>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="columns end">
+            <h5>Permissions</h5>
+        </div>
+        <div class="medium-6 columns end">
+            <div class="input-group">
+                <input type="text" class="input-group-field addRoleName">
+                <div class="input-group-button">
+                    <input type="button" class="addRole button" value="Add Role">
+                </div>
+            </div>
+            <div>
+                <div class="roleList"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="small-6 columns end">
+            <label>Public:
+                <input type="checkbox" class="boardPublicSetting" />
+            </label>
+        </div>
+        <div class="small-6 large-4 large-offset-2 columns">
+            <a class="saveBoardSettings primary button expanded" data-close>Save</a>
+        </div>
+    </div>
+    <button class="close-button" data-close aria-label="Close modal" type="button">
+        <span aria-hidden="true">&times;</span>
+    </button>
+</div>
+
+<div id="pinboard-view-settings" class="reveal" data-reveal>
+    <div class="row">
+        <div class="small-6 columns end">
+            <label>Title:
+                <input type="text" class="tileTitleSetting" />
+            </label>
+        </div>
+    </div>
+    <div class="row">
+        <div class="column">
+            <label>Description:
+                <textarea class="tileDescSetting"></textarea>
+            </label>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="column">
+            <label>Background Image URL:
+                <input type="text" class="tileImageSetting" />
+            </label>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="small-8 columns end">
+            <label>Background Color:
+                <input type="text" class="tileColorSetting" />
+            </label>
+        </div>
+    </div>
+    <div class="row">
+        <div class="small-3 medium-2 columns">
+            <button class="pinboardDeletePin topbar-button-fa button alert" title="Delete This Pin" data-close>
+                <i class="fa fa-trash-o"></i>
+                <span class="show-for-sr">Delete This Pin</span>
+            </button>
+        </div>
+        <div class="small-3 medium-2 medium-offset-2 large-offset-4 columns">
+            <button class="pinboardClonePin topbar-button-fa button secondary" title="Clone This Pin" data-close>
+                <i class="fa fa-clone"></i>
+                <span class="show-for-sr">Clone This Pin</span>
+            </button>
+        </div>
+        <div class="small-6 medium-6 large-4 columns">
+            <a class="saveTileSettings primary button expanded" data-close>Save</a>
+        </div>
+    </div>
+    <button class="close-button" data-close aria-label="Close modal" type="button">
+        <span aria-hidden="true">&times;</span>
+    </button>
+</div>
+
+<div id="pinboard-new-content" class="reveal" data-reveal>
+    <ul class="tabs" data-tabs id="pinboard-new-content-tabs" data-active-collapse="true">
+        <li class="tabs-title is-active" aria-selected="true"><a href="#pinboard-new-content-paragraph">Paragraph</a></li>
+        <li class="tabs-title"><a href="#pinboard-new-content-image">Image</a></li>
+        <li class="tabs-title"><a href="#pinboard-new-content-heading">Heading</a></li>
+        <!-- <li class="tabs-title"><a href="#pinboard-new-content-columns">Columns</a></li> -->
+    </ul>
+    <div class="tabs-content" data-tabs-content="pinboard-new-content-tabs">
+        <div class="tabs-panel is-active" id="pinboard-new-content-paragraph">
+            <label>
+                Paragraph Text:
+                <textarea rows="8" class="contentValue"></textarea>
+            </label>
+        </div>
+        <div class="tabs-panel" id="pinboard-new-content-image">
+            <label>
+                Image URL:
+                <input type="text" class="contentValue" />
+            </label>
+        </div>
+        <div class="tabs-panel" id="pinboard-new-content-heading">
+            <label>
+                Heading Text:
+                <input type="text" class="contentValue" />
+            </label>
+        </div>
+        <!-- <div class="tabs-panel" id="pinboard-new-content-columns">
+            <p>Unless on a phone-sized screen, content will be placed in two columns.</p>
+            <div class="row">
+                <div class="medium-6 columns"></div>
+                <div class="medium-6 columns"></div>
+            </div>
+        </div> -->
+    </div>
+    <div class="row">
+        <div class="medium-6 medium-offset-6 large-4 large-offset-8 columns">
+            <a class="confirmPinContent primary button expanded" data-close>Confirm</a>
+        </div>
+    </div>
+    <button class="close-button" data-close aria-label="Close modal" type="button">
+        <span aria-hidden="true">&times;</span>
+    </button>
+</div>
+
+<div id="pinboard-edit-content" class="reveal" data-reveal>
+    <div class="row">
+        <div class="column">
+            <label>Edit:
+                <textarea rows="8" class="tileEditSetting"></textarea>
+            </label>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="medium-6 medium-offset-6 large-4 large-offset-8 columns">
+            <a class="confirmEditPinContent primary button expanded" data-close>Confirm</a>
+        </div>
+    </div>
+    <button class="close-button" data-close aria-label="Close modal" type="button">
+        <span aria-hidden="true">&times;</span>
+    </button>
+</div>

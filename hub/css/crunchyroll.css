@@ -1,0 +1,133 @@
+#app-crunchyroll .fa.fa-cog {
+    margin-top: 1px;
+}
+
+#app-crunchyroll img[src=""] {
+    display: none;
+}
+
+#crunchyrollAccountDropdown input {
+    width: 100%;
+    margin-right: 0;
+}
+
+#crunchyrollAccountDropdown input,
+#crunchyrollAccountDropdown a {
+    margin-bottom: 0;
+}
+
+#app-crunchyroll select.sorting {
+    margin-bottom: 0.5rem;
+}
+
+#app-crunchyroll .seasonTiles {
+    padding-left: 0.4rem;
+    padding-right: 0.4rem;
+}
+
+#app-crunchyroll .crunchyrollOuterTile,
+#app-crunchyroll .crunchyrollOuterSeasonHeader  {
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+}
+
+#app-crunchyroll .crunchyrollTile {
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+#app-crunchyroll .tileHeader {
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+#crunchyroll-browse .showTiles {
+    margin-left: -0.55rem;
+    margin-right: -0.55rem;
+}
+#crunchyroll-browse .crunchyrollTile {
+    padding: 0.5rem;
+}
+#crunchyroll-browse .crunchyrollTile .tileHeader a {
+    color: #3f3f3f;
+}
+
+#crunchyroll-episodes .crunchyrollSeasonHeader {
+    padding: 0.25rem 0.5rem;
+    margin-bottom: 0.5rem;
+}
+#crunchyroll-episodes .crunchyrollSeasonHeader .seasonName {
+    font-size: 1rem;
+    font-weight: 700;
+}
+#crunchyroll-episodes .tileHeader,
+#crunchyroll-episodes .tileDescription {
+    font-size: 0.75rem;
+}
+#crunchyroll-episodes .tileDescription {
+    margin-bottom: 0.25rem;
+}
+#crunchyroll-episodes .tileLaunchButton {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+#crunchyroll-episodes > div:last-child {
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+}
+
+#crunchyroll-episodes .seriesImgPort + .seriesDescription {
+    font-size: 0.75rem;
+}
+
+#crunchyroll-episodes .seriesImgPort {
+    margin-bottom: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+#crunchyroll-episodes .seriesImgLand {
+    margin-bottom: 0.5rem;
+    border-radius: 0.25rem;
+}
+
+#crunchyroll-queue .tileDescription,
+#crunchyroll-queue .tileLongText {
+    margin-bottom: 0;
+}
+
+#crunchyroll-queue .tileImageEpisode {
+    text-align: center;
+}
+
+#crunchyroll-queue .tileImageEpisode a {
+    position: relative;
+}
+
+#crunchyroll-queue .tileImageEpisode a img {
+    width: calc(100% - 5px);
+    height: calc(100% - 5px);
+    border: 5px solid;
+    border-radius: 0.75rem;
+}
+
+#crunchyroll-queue .tileImageEpisode a span {
+    width: 0;
+    height: 0;
+    font-size: 0;
+    border-top: 1.25rem solid transparent;
+    border-bottom: 1.25rem solid transparent;
+    border-left: 2.5rem solid;
+    position: absolute;
+    top: calc(50% - 1.25rem);
+    left: calc(50% - 1.25rem);
+}
+
+#crunchyroll-settings input[type=checkbox] {
+    height: 40px;
+    width: 40px;
+    margin-right: 0;
+}
+
+#crunchyroll-loading {
+    padding-top: 1rem;
+}

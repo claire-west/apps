@@ -1,0 +1,328 @@
+{
+  "name": "Poisons",
+  "sections": [
+    {
+      "header": "",
+      "items": [
+        {
+          "name": "",
+          "text": "Given their insidious and deadly nature, poisons are illegal in most societies but are a favorite tool among assassins, drow, and other evil creatures."
+        },
+        {
+          "name": "",
+          "text": "Poisons come in the following four types:"
+        },
+        {
+          "name": "Contact",
+          "text": "Contact poison can be smeared on an object and remains potent until it is touched or washed off. A creature that touches contact poison with exposed skin suffers its effects."
+        },
+        {
+          "name": "Ingested",
+          "text": "A creature must swallow an entire dose of ingested poison to suffer its effects. The dose can be delivered in food or a liquid. You may decide that a partial dose has a reduced effect, such as allowing advantage on the saving throw or dealing only half damage on a failed save."
+        },
+        {
+          "name": "Inhaled",
+          "text": "These poisons are powders or gases that take effect when inhaled. Blowing the powder or releasing the gas subjects creatures in a 5-foot cube to its effect. The resulting cloud dissipates immediately afterward. Holding one's breath is ineffective against inhaled poisons, as they affect nasal membranes, tear ducts, and other parts of the body."
+        },
+        {
+          "name": "Injury",
+          "text": "Injury poison can be applied to Weapons, ammunition, trap Components, and other Objects that deal piercing or slashing damage and remains potent until delivered through a wound or washed off. A creature that takes piercing or slashing damage from an object coated with the poison is exposed to its effects."
+        }
+      ]
+    },
+    {
+      "type": "table",
+      "header": "Table: Poisons",
+      "items": [
+        {
+          "type": "thead",
+          "rows": [
+            [
+              {
+                "type": "th",
+                "text": "Poison"
+              },
+              {
+                "type": "th",
+                "text": "Type"
+              },
+              {
+                "type": "th",
+                "text": "Price per Dose"
+              },
+              {
+                "type": "th",
+                "text": "Poison"
+              },
+              {
+                "type": "th",
+                "text": "Type"
+              },
+              {
+                "type": "th",
+                "text": "Price per Dose"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "tbody",
+          "rows": [
+            [
+              {
+                "type": "td",
+                "text": "Assassin's blood"
+              },
+              {
+                "type": "td",
+                "text": "Ingested"
+              },
+              {
+                "type": "td",
+                "text": "150 gp"
+              },
+              {
+                "type": "td",
+                "text": "Oil of taggit"
+              },
+              {
+                "type": "td",
+                "text": "Contact"
+              },
+              {
+                "type": "td",
+                "text": "400 gp"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Burnt othur fumes"
+              },
+              {
+                "type": "td",
+                "text": "Inhaled"
+              },
+              {
+                "type": "td",
+                "text": "500 gp"
+              },
+              {
+                "type": "td",
+                "text": "Pale tincture"
+              },
+              {
+                "type": "td",
+                "text": "Ingested"
+              },
+              {
+                "type": "td",
+                "text": "250 gp"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Crawler mucus"
+              },
+              {
+                "type": "td",
+                "text": "Contact"
+              },
+              {
+                "type": "td",
+                "text": "200 gp"
+              },
+              {
+                "type": "td",
+                "text": "Purple Worm poison"
+              },
+              {
+                "type": "td",
+                "text": "Injury"
+              },
+              {
+                "type": "td",
+                "text": "2,000 gp"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Drow poison"
+              },
+              {
+                "type": "td",
+                "text": "Injury"
+              },
+              {
+                "type": "td",
+                "text": "200 gp"
+              },
+              {
+                "type": "td",
+                "text": "Serpent venom"
+              },
+              {
+                "type": "td",
+                "text": "Injury"
+              },
+              {
+                "type": "td",
+                "text": "200 gp"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Essence of ether"
+              },
+              {
+                "type": "td",
+                "text": "Inhaled"
+              },
+              {
+                "type": "td",
+                "text": "300 gp"
+              },
+              {
+                "type": "td",
+                "text": "Torpor"
+              },
+              {
+                "type": "td",
+                "text": "Ingested"
+              },
+              {
+                "type": "td",
+                "text": "600 gp"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Malice"
+              },
+              {
+                "type": "td",
+                "text": "Inhaled"
+              },
+              {
+                "type": "td",
+                "text": "250 gp"
+              },
+              {
+                "type": "td",
+                "text": "Truth serum"
+              },
+              {
+                "type": "td",
+                "text": "Ingested"
+              },
+              {
+                "type": "td",
+                "text": "150 gp"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Midnight tears"
+              },
+              {
+                "type": "td",
+                "text": "Ingested"
+              },
+              {
+                "type": "td",
+                "text": "1,500 gp"
+              },
+              {
+                "type": "td",
+                "text": "Wyvern poison"
+              },
+              {
+                "type": "td",
+                "text": "Injury"
+              },
+              {
+                "type": "td",
+                "text": "1,200 gp"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "header": "Sample Poisons",
+      "level": "2",
+      "items": [
+        {
+          "name": "",
+          "text": "Each type of poison has its own debilitating effects."
+        },
+        {
+          "name": "Assassin's Blood (Ingested)",
+          "text": "A creature subjected to this poison must make a DC 10 Constitution saving throw. On a failed save, it takes 6 (1d12) poison damage and is Poisoned for 24 hours. On a successful save, the creature takes half damage and isn't Poisoned."
+        },
+        {
+          "name": "Burnt Othur Fumes (Inhaled)",
+          "text": "A creature subjected to this poison must succeed on a DC 13 Constitution saving throw or take 10 (3d6) poison damage, and must repeat the saving throw at the start of each of its turns. On each successive failed save, the character takes 3 (1d6) poison damage. After three successful saves, the poison ends."
+        },
+        {
+          "name": "Crawler Mucus (Contact)",
+          "text": "This poison must be harvested from a dead or Incapacitated crawler. A creature subjected to this poison must succeed on a DC 13 Constitution saving throw or be Poisoned for 1 minute. The Poisoned creature is Paralyzed. The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+        },
+        {
+          "name": "Drow Poison (Injury)",
+          "text": "This poison is typically made only by the drow, and only in a place far removed from sunlight. A creature subjected to this poison must succeed on a DC 13 Constitution saving throw or be Poisoned for 1 hour. If the saving throw fails by 5 or more, the creature is also Unconscious while Poisoned in this way. The creature wakes up if it takes damage or if another creature takes an action to shake it awake."
+        },
+        {
+          "name": "Essence of Ether (Inhaled)",
+          "text": "A creature subjected to this poison must succeed on a DC 15 Constitution saving throw or become Poisoned for 8 hours. The Poisoned creature is Unconscious. The creature wakes up if it takes damage or if another creature takes an action to shake it awake."
+        },
+        {
+          "name": "Malice (Inhaled)",
+          "text": "A creature subjected to this poison must succeed on a DC 15 Constitution saving throw or become Poisoned for 1 hour. The Poisoned creature is Blinded."
+        },
+        {
+          "name": "Midnight Tears (Ingested)",
+          "text": "A creature that ingests this poison suffers no effect until the stroke of midnight. If the poison has not been neutralized before then, the creature must succeed on a DC 17 Constitution saving throw, taking 31 (9d6) poison damage on a failed save, or half as much damage on a successful one."
+        },
+        {
+          "name": "Oil of Taggit (Contact)",
+          "text": "A creature subjected to this poison must succeed on a DC 13 Constitution saving throw or become Poisoned for 24 hours. The Poisoned creature is Unconscious. The creature wakes up if it takes damage."
+        },
+        {
+          "name": "Pale Tincture (Ingested)",
+          "text": "A creature subjected to this poison must succeed on a DC 16 Constitution saving throw or take 3 (1d6) poison damage and become Poisoned. The Poisoned creature must repeat the saving throw every 24 hours, taking 3 (1d6) poison damage on a failed save. Until this poison ends, the damage the poison deals can't be healed by any means. After seven successful saving throws, the effect ends and the creature can heal normally."
+        },
+        {
+          "name": "Purple Worm Poison (Injury)",
+          "text": "This poison must be harvested from a dead or Incapacitated Purple Worm. A creature subjected to this poison must make a DC 19 Constitution saving throw, taking 42 (12d6) poison damage on a failed save, or half as much damage on a successful one."
+        },
+        {
+          "name": "Serpent Venom (Injury)",
+          "text": "This poison must be harvested from a dead or Incapacitated Giant Poisonous Snake. A creature subjected to this poison must succeed on a DC 11 Constitution saving throw, taking 10 (3d6) poison damage on a failed save, or half as much damage on a successful one."
+        },
+        {
+          "name": "Torpor (Ingested)",
+          "text": "A creature subjected to this poison must succeed on a DC 15 Constitution saving throw or become Poisoned for 4d6 hours. The Poisoned creature is Incapacitated."
+        },
+        {
+          "name": "Truth Serum (Ingested)",
+          "text": "A creature subjected to this poison must succeed on a DC 11 Constitution saving throw or become Poisoned for 1 hour. The Poisoned creature can't knowingly speak a lie, as if under the effect of a Zone of Truth spell."
+        },
+        {
+          "name": "Wyvern Poison (Injury)",
+          "text": "This poison must be harvested from a dead or Incapacitated Wyvern. A creature subjected to this poison must make a DC 15 Constitution saving throw, taking 24 (7d6) poison damage on a failed save, or half as much damage on a successful one."
+        }
+      ]
+    }
+  ],
+  "attributes": {
+    "Category": "Rules",
+    "Source": "SRD 5.0"
+  }
+}

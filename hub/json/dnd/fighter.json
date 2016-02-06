@@ -1,0 +1,683 @@
+{
+  "name": "Fighter",
+  "sections": [
+    {
+      "header": "",
+      "items": [
+        {
+          "name": "",
+          "text": "As a fighter, you gain the following Class Features."
+        }
+      ]
+    },
+    {
+      "header": "Hit Points",
+      "level": "2",
+      "items": [
+        {
+          "name": "",
+          "text": ""
+        },
+        {
+          "name": "Hit Dice",
+          "text": "1d10 per fighter level"
+        },
+        {
+          "name": "Hit Points at 1st Level",
+          "text": "10 + your Constitution modifier"
+        },
+        {
+          "name": "Hit Points at Higher Levels",
+          "text": "1d10 (or 6) + your Constitution modifier per fighter level after 1st"
+        }
+      ]
+    },
+    {
+      "header": "Starting Proficiencies",
+      "level": "2",
+      "items": [
+        {
+          "name": "",
+          "text": "You are proficient with the following items, in addition to any proficiencies provided by your race or background."
+        },
+        {
+          "name": "Armor",
+          "text": "Light Armor, Medium Armor, Heavy Armor, shields"
+        },
+        {
+          "name": "Weapons",
+          "text": "simple Weapons, martial Weapons"
+        },
+        {
+          "name": "Tools",
+          "text": "none"
+        },
+        {
+          "name": "Skills",
+          "text": "Choose two skills from Acrobatics, Animal Handling, Athletics, History, Insight, Intimidation, Perception, and Survival"
+        }
+      ]
+    },
+    {
+      "header": "Starting Equipment",
+      "level": "2",
+      "items": [
+        {
+          "name": "",
+          "text": ""
+        },
+        {
+          "name": "",
+          "text": "You start with the following items, plus anything provided by your background."
+        },
+        {
+          "name": "",
+          "text": "• (a) Chain Mail or (b) leather, Longbow, and 20 Arrows"
+        },
+        {
+          "name": "",
+          "text": "• (a) a martial weapon and a Shield or (b) two martial Weapons"
+        },
+        {
+          "name": "",
+          "text": "• (a) a Light Crossbow and 20 bolts or (b) two handaxes"
+        },
+        {
+          "name": "",
+          "text": "• (a) a Dungeoneer's Pack or (b) an Explorer's Pack"
+        },
+        {
+          "name": "",
+          "text": "Alternatively, you may start with 5d4 x 10 gp to buy your own Equipment."
+        }
+      ]
+    },
+    {
+      "type": "table",
+      "header": "Table: The Fighter",
+      "items": [
+        {
+          "type": "thead",
+          "rows": [
+            [
+              {
+                "type": "th",
+                "text": "Level",
+                "style": "text-align:center"
+              },
+              {
+                "type": "th",
+                "text": "Proficiency Bonus",
+                "style": "text-align:center"
+              },
+              {
+                "type": "th",
+                "text": "Bonus Features",
+                "style": "text-align:center"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "tbody",
+          "rows": [
+            [
+              {
+                "type": "td",
+                "text": "1st",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+2",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "Fighting Style, Second Wind"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "2nd",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+2",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "Action Surge (one use)"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "3rd",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+2",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "Martial Archetype"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "4th",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+2",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "Ability Score Improvement"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "5th",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "Extra Attack"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "6th",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "Ability Score Improvement"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "7th",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "Martial Archetype feature"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "8th",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "Ability Score Improvement"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "9th",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+4",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "Indomitable (one use)"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "10th",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+4",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "Martial Archetype feature"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "11th",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+4",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "Extra Attack (2)"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "12th",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+4",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "Ability Score Improvement"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "13th",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+5",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "Indomitable (two uses)"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "14th",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+5",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "Ability Score Improvement"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "15th",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+5",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "Martial Archetype feature"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "16th",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+5",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "Ability Score Improvement"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "17th",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+6",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "Action Surge (two uses), Indomitable (three uses)"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "18th",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+6",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "Martial Archetype feature"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "19th",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+6",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "Ability Score Improvement"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "20th",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+6",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "Extra Attack (3)"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "header": "Fighting Style",
+      "level": "2",
+      "items": [
+        {
+          "name": "",
+          "text": "You adopt a particular style of fighting as your specialty. Choose a fighting style from the list of optional features. You can't take the same Fighting Style option more than once, even if you get to choose again."
+        }
+      ]
+    },
+    {
+      "header": "Archery",
+      "level": "3",
+      "items": [
+        {
+          "name": "",
+          "text": "You gain a +2 bonus to Attack rolls you make with Ranged Weapons."
+        }
+      ]
+    },
+    {
+      "header": "Defense",
+      "level": "3",
+      "items": [
+        {
+          "name": "",
+          "text": "While you are wearing armor, you gain a +1 bonus to AC."
+        }
+      ]
+    },
+    {
+      "header": "Dueling",
+      "level": "3",
+      "items": [
+        {
+          "name": "",
+          "text": "When you are wielding a melee weapon in one hand and no other Weapons, you gain a +2 bonus to Damage Rolls with that weapon."
+        }
+      ]
+    },
+    {
+      "header": "Great Weapon Fighting",
+      "level": "3",
+      "items": [
+        {
+          "name": "",
+          "text": "When you roll a 1 or 2 on a damage die for an Attack you make with a melee weapon that you are wielding with two hands, you can reroll the die and must use the new roll, even if the new roll is a 1 or a 2. The weapon must have the Two-Handed or Versatile property for you to gain this benefit."
+        }
+      ]
+    },
+    {
+      "header": "Protection",
+      "level": "3",
+      "items": [
+        {
+          "name": "",
+          "text": "When a creature you can see attacks a target other than you that is within 5 feet of you, you can use your reaction to impose disadvantage on the Attack roll. You must be wielding a Shield."
+        }
+      ]
+    },
+    {
+      "header": "Two-Weapon Fighting",
+      "level": "3",
+      "items": [
+        {
+          "name": "",
+          "text": "When you engage in two-weapon fighting, you can add your ability modifier to the damage of the second Attack."
+        }
+      ]
+    },
+    {
+      "header": "Second Wind",
+      "level": "2",
+      "items": [
+        {
+          "name": "",
+          "text": "You have a limited well of stamina that you can draw on to protect yourself from harm. On Your Turn, you can use a Bonus Action to regain hit points equal to 1d10 + your fighter level."
+        },
+        {
+          "name": "",
+          "text": "    Once you use this feature, you must finish a short or Long Rest before you can use it again."
+        }
+      ]
+    },
+    {
+      "header": "Action Surge",
+      "level": "2",
+      "items": [
+        {
+          "name": "",
+          "text": "Starting at 2nd level, you can push yourself beyond your normal limits for a moment. On Your Turn, you can take one additional action on top of your regular action and a possible Bonus Action."
+        },
+        {
+          "name": "",
+          "text": "    Once you use this feature, you must finish a short or Long Rest before you can use it again. Starting at 17th level, you can use it twice before a rest, but only once on the same turn."
+        }
+      ]
+    },
+    {
+      "header": "Martial Archetype",
+      "level": "2",
+      "items": [
+        {
+          "name": "",
+          "text": "At 3rd level, you choose an archetype that you strive to emulate in your Combat styles and techniques, such as Champion. The archetype you choose grants you features at 3rd level and again at 7th, 10th, 15th, and 18th level."
+        }
+      ]
+    },
+    {
+      "header": "Ability Score Improvement",
+      "level": "2",
+      "items": [
+        {
+          "name": "",
+          "text": "When you reach 4th level, and again at 6th, 8th, 12th, 14th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two Ability Scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature."
+        }
+      ]
+    },
+    {
+      "header": "Extra Attack",
+      "level": "2",
+      "items": [
+        {
+          "name": "",
+          "text": ""
+        },
+        {
+          "name": "",
+          "text": "Beginning at 5th level, you can Attack twice, instead of once, whenever you take the Attack action on Your Turn."
+        },
+        {
+          "name": "",
+          "text": "    The number of attacks increases to three when you reach 11th level in this class and to four when you reach 20th level in this class."
+        }
+      ]
+    },
+    {
+      "header": "Indomitable",
+      "level": "2",
+      "items": [
+        {
+          "name": "",
+          "text": "Beginning at 9th level, you can reroll a saving throw that you fail. If you do so, you must use the new roll, and you can't use this feature again until you finish a Long Rest."
+        },
+        {
+          "name": "",
+          "text": "    You can use this feature twice between long rests starting at 13th level and three times between long rests starting at 17th level."
+        }
+      ]
+    },
+    {
+      "header": "Martial Archetypes",
+      "level": "2",
+      "items": [
+        {
+          "name": "",
+          "text": "Different fighters choose different approaches to perfecting their fighting prowess. The martial archetype you choose to emulate reflects your approach."
+        }
+      ]
+    },
+    {
+      "header": "Champion",
+      "level": "3",
+      "items": [
+        {
+          "name": "",
+          "text": "The archetypal Champion focuses on the development of raw physical power honed to deadly perfection. Those who model themselves on this archetype combine rigorous Training with physical excellence to deal devastating blows."
+        }
+      ]
+    },
+    {
+      "header": "Improved Critical",
+      "level": "4",
+      "items": [
+        {
+          "name": "",
+          "text": "Beginning when you choose this archetype at 3rd level, your weapon attacks score a critical hit on a roll of 19 or 20."
+        }
+      ]
+    },
+    {
+      "header": "Remarkable Athlete",
+      "level": "4",
+      "items": [
+        {
+          "name": "",
+          "text": "Starting at 7th level, you can add half your proficiency bonus (round up) to any Strength, Dexterity, or Constitution check you make that doesn't already use your proficiency bonus."
+        },
+        {
+          "name": "",
+          "text": "In addition, when you make a running long jump, the distance you can cover increases by a number of feet equal to your Strength modifier."
+        }
+      ]
+    },
+    {
+      "header": "Additional Fighting Style",
+      "level": "4",
+      "items": [
+        {
+          "name": "",
+          "text": "At 10th level, you can choose a second option from the Fighting Style class feature."
+        }
+      ]
+    },
+    {
+      "header": "Superior Critical",
+      "level": "4",
+      "items": [
+        {
+          "name": "",
+          "text": "Starting at 15th level, your weapon attacks score a critical hit on a roll of 18–20."
+        }
+      ]
+    },
+    {
+      "header": "Survivor",
+      "level": "4",
+      "items": [
+        {
+          "name": "",
+          "text": "At 18th level, you attain the pinnacle of resilience in battle. At the start of each of your turns, you regain hit points equal to 5 + your Constitution modifier if you have no more than half of your hit points left."
+        },
+        {
+          "name": "",
+          "text": "You don't gain this benefit if you have 0 hit points."
+        }
+      ]
+    }
+  ],
+  "attributes": {
+    "Hit Dice": "d10",
+    "Saving Throws": "Strength, Constitution",
+    "Category": "Classes",
+    "Source": "SRD 5.0"
+  }
+}

@@ -1,0 +1,1126 @@
+{
+  "name": "Weapons",
+  "sections": [
+    {
+      "header": "",
+      "items": [
+        {
+          "name": "",
+          "text": "Your class grants proficiency in certain weapons, reflecting both the class's focus and the tools you are most likely to use. Whether you favor a Longsword or a Longbow, your weapon and your ability to wield it effectively can mean the difference between life and death while adventuring."
+        },
+        {
+          "name": "",
+          "text": "The Weapons table shows the most common weapons used in the fantasy gaming worlds, their price and weight, the damage they deal when they hit, and any special properties they possess. Every weapon is classified as either melee or ranged. A melee weapon is used to Attack a target within 5 feet of you, whereas a ranged weapon is used to Attack a target at a distance."
+        }
+      ]
+    },
+    {
+      "header": "Weapon Proficiency",
+      "level": "3",
+      "items": [
+        {
+          "name": "",
+          "text": "Your race, class, and feats can grant you proficiency with certain weapons or categories of weapons. The two categories are simple and martial. Most people can use simple weapons with proficiency. These weapons include clubs, maces, and other weapons often found in the hands of commoners. Martial weapons, including swords, axes, and polearms, require more specialized Training to use effectively. Most warriors use martial weapons because these weapons put their fighting style and Training to best use."
+        },
+        {
+          "name": "",
+          "text": "Proficiency with a weapon allows you to add your proficiency bonus to the Attack roll for any Attack you make with that weapon. If you make an Attack roll using a weapon with which you lack proficiency, you do not add your proficiency bonus to the Attack roll."
+        }
+      ]
+    },
+    {
+      "header": "Weapon Properties",
+      "level": "3",
+      "items": [
+        {
+          "name": "",
+          "text": "Many weapons have special properties related to their use, as shown in the Weapons table."
+        }
+      ]
+    },
+    {
+      "header": "Ammunition",
+      "level": "4",
+      "items": [
+        {
+          "name": "",
+          "text": ""
+        },
+        {
+          "name": "",
+          "text": "You can use a weapon that has the ammunition property to make a ranged Attack only if you have ammunition to fire from the weapon. Each time you Attack with the weapon, you expend one piece of ammunition. Drawing the ammunition from a Quiver, case, or other container is part of the Attack (you need a free hand to load a one-handed weapon). At the end of the battle, you can recover half your expended ammunition by taking a minute to Search the battlefield. If you use a weapon that has the ammunition property to make a melee Attack, you treat the weapon as an improvised weapon (see “Improvised Weapons” later in the section). A sling must be loaded to deal any damage when used in this way."
+        }
+      ]
+    },
+    {
+      "header": "Finesse",
+      "level": "4",
+      "items": [
+        {
+          "name": "",
+          "text": "When Making an Attack with a finesse weapon, you use your choice of your Strength or Dexterity modifier for the Attack and Damage Rolls. You must use the same modifier for both rolls."
+        }
+      ]
+    },
+    {
+      "header": "Heavy",
+      "level": "4",
+      "items": [
+        {
+          "name": "",
+          "text": ""
+        },
+        {
+          "name": "",
+          "text": "Small creatures have disadvantage on Attack rolls with heavy weapons. A heavy weapon's size and bulk make it too large for a Small creature to use effectively."
+        }
+      ]
+    },
+    {
+      "header": "Light",
+      "level": "4",
+      "items": [
+        {
+          "name": "",
+          "text": "A light weapon is small and easy to handle, making it ideal for use when fighting with two weapons."
+        }
+      ]
+    },
+    {
+      "header": "Loading",
+      "level": "4",
+      "items": [
+        {
+          "name": "",
+          "text": "Because of the time required to load this weapon, you can fire only one piece of ammunition from it when you use an action, Bonus Action, or reaction to fire it, regardless of the number of attacks you can normally make."
+        }
+      ]
+    },
+    {
+      "header": "Range",
+      "level": "4",
+      "items": [
+        {
+          "name": "",
+          "text": "A weapon that can be used to make a ranged Attack has a range in parentheses after the ammunition or thrown property. The range lists two numbers. The first is the weapon's normal range in feet, and the second indicates the weapon's long range. When attacking a target beyond normal range, you have disadvantage on the Attack roll. You can't Attack a target beyond the weapon's long range."
+        }
+      ]
+    },
+    {
+      "header": "Reach",
+      "level": "4",
+      "items": [
+        {
+          "name": "",
+          "text": "This weapon adds 5 feet to your reach when you Attack with it, as well as when determining your reach for Opportunity Attacks with it."
+        }
+      ]
+    },
+    {
+      "header": "Special",
+      "level": "4",
+      "items": [
+        {
+          "name": "",
+          "text": "A weapon with the special property has unusual rules governing its use, explained in the weapon's description (see “Special Weapons” later in this section)."
+        }
+      ]
+    },
+    {
+      "header": "Thrown",
+      "level": "4",
+      "items": [
+        {
+          "name": "",
+          "text": "If a weapon has the thrown property, you can throw the weapon to make a ranged Attack. If the weapon is a melee weapon, you use the same ability modifier for that Attack roll and damage roll that you would use for a melee Attack with the weapon. For example, if you throw a Handaxe, you use your Strength, but if you throw a Dagger, you can use either your Strength or your Dexterity, since the Dagger has the finesse property."
+        }
+      ]
+    },
+    {
+      "header": "Two-Handed",
+      "level": "4",
+      "items": [
+        {
+          "name": "",
+          "text": "This weapon requires two hands when you Attack with it."
+        }
+      ]
+    },
+    {
+      "header": "Versatile",
+      "level": "4",
+      "items": [
+        {
+          "name": "",
+          "text": "This weapon can be used with one or two hands. A damage value in parentheses appears with the property—the damage when the weapon is used with two hands to make a melee Attack."
+        }
+      ]
+    },
+    {
+      "header": "Improvised Weapons",
+      "level": "4",
+      "items": [
+        {
+          "name": "",
+          "text": "Sometimes characters don't have their weapons and have to Attack with whatever is at hand. An improvised weapon includes any object you can wield in one or two hands, such as broken glass, a table leg, a frying pan, a wagon wheel, or a dead Goblin."
+        },
+        {
+          "name": "",
+          "text": "Often, an improvised weapon is similar to an actual weapon and can be treated as such. For example, a table leg is akin to a club. At the GM's option, a character proficient with a weapon can use a similar object as if it were that weapon and use his or her proficiency bonus."
+        },
+        {
+          "name": "",
+          "text": "An object that bears no resemblance to a weapon deals 1d4 damage (the GM assigns a damage type appropriate to the object). If a character uses a ranged weapon to make a melee Attack, or throws a melee weapon that does not have the thrown property, it also deals 1d4 damage. An improvised thrown weapon has a normal range of 20 feet and a long range of 60 feet."
+        }
+      ]
+    },
+    {
+      "header": "Silvered Weapons",
+      "level": "4",
+      "items": [
+        {
+          "name": "",
+          "text": "Some Monsters that have immunity or Resistance to nonmagical weapons are susceptible to silver weapons, so cautious adventurers invest extra coin to plate their weapons with silver. You can silver a single weapon or ten pieces of ammunition for 100 gp. This cost represents not only the price of the silver, but the time and expertise needed to add silver to the weapon without making it less effective."
+        }
+      ]
+    },
+    {
+      "header": "Special Weapons",
+      "level": "4",
+      "items": [
+        {
+          "name": "",
+          "text": "Weapons with special rules are described here."
+        },
+        {
+          "name": "Lance",
+          "text": "You have disadvantage when you use a lance to Attack a target within 5 feet of you. Also, a lance requires two hands to wield when you aren't mounted."
+        },
+        {
+          "name": "Net",
+          "text": "A Large or smaller creature hit by a net is Restrained until it is freed. A net has no effect on creatures that are formless, or creatures that are Huge or larger. A creature can use its action to make a DC 10 Strength check, freeing itself or another creature within its reach on a success. Dealing 5 slashing damage to the net (AC 10) also frees the creature without harming it, ending the effect and destroying the net. When you use an action, Bonus Action, or reaction to Attack with a net, you can make only one Attack regardless of the number of attacks you can normally make."
+        }
+      ]
+    },
+    {
+      "type": "table",
+      "header": "Weapons",
+      "items": [
+        {
+          "type": "thead",
+          "rows": [
+            [
+              {
+                "type": "th",
+                "text": "Weapon"
+              },
+              {
+                "type": "th",
+                "text": "Cost"
+              },
+              {
+                "type": "th",
+                "text": "Damage"
+              },
+              {
+                "type": "th",
+                "text": "Weight"
+              },
+              {
+                "type": "th",
+                "text": "Properties"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "thead",
+          "rows": [
+            [
+              {
+                "type": "td",
+                "text": "Simple Melee Weapons",
+                "colspan": "5"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "tbody",
+          "rows": [
+            [
+              {
+                "type": "td",
+                "text": "Club"
+              },
+              {
+                "type": "td",
+                "text": "1 sp"
+              },
+              {
+                "type": "td",
+                "text": "1d4 bludgeoning"
+              },
+              {
+                "type": "td",
+                "text": "2 lb."
+              },
+              {
+                "type": "td",
+                "text": "Light"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Dagger"
+              },
+              {
+                "type": "td",
+                "text": "2 gp"
+              },
+              {
+                "type": "td",
+                "text": "1d4 piercing"
+              },
+              {
+                "type": "td",
+                "text": "1 lb."
+              },
+              {
+                "type": "td",
+                "text": "Finesse, light, thrown (range 20/60)"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Greatclub"
+              },
+              {
+                "type": "td",
+                "text": "2 sp"
+              },
+              {
+                "type": "td",
+                "text": "1d8 bludgeoning"
+              },
+              {
+                "type": "td",
+                "text": "10 lb."
+              },
+              {
+                "type": "td",
+                "text": "Two-handed"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Handaxe"
+              },
+              {
+                "type": "td",
+                "text": "5 gp"
+              },
+              {
+                "type": "td",
+                "text": "1d6 slashing"
+              },
+              {
+                "type": "td",
+                "text": "2 lb."
+              },
+              {
+                "type": "td",
+                "text": "Light, thrown (range 20/60)"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Javelin"
+              },
+              {
+                "type": "td",
+                "text": "5 sp"
+              },
+              {
+                "type": "td",
+                "text": "1d6 piercing"
+              },
+              {
+                "type": "td",
+                "text": "2 lb."
+              },
+              {
+                "type": "td",
+                "text": "Thrown (range 30/120)"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Light Hammer"
+              },
+              {
+                "type": "td",
+                "text": "2 gp"
+              },
+              {
+                "type": "td",
+                "text": "1d4 bludgeoning"
+              },
+              {
+                "type": "td",
+                "text": "2 lb."
+              },
+              {
+                "type": "td",
+                "text": "Light, thrown (range 20/60)"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Mace"
+              },
+              {
+                "type": "td",
+                "text": "5 gp"
+              },
+              {
+                "type": "td",
+                "text": "1d6 bludgeoning"
+              },
+              {
+                "type": "td",
+                "text": "4 lb."
+              },
+              {
+                "type": "td",
+                "text": "—"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Quarterstaff"
+              },
+              {
+                "type": "td",
+                "text": "2 sp"
+              },
+              {
+                "type": "td",
+                "text": "1d6 bludgeoning"
+              },
+              {
+                "type": "td",
+                "text": "4 lb."
+              },
+              {
+                "type": "td",
+                "text": "Versatile (1d8)"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Sickle"
+              },
+              {
+                "type": "td",
+                "text": "1 gp"
+              },
+              {
+                "type": "td",
+                "text": "1d4 slashing"
+              },
+              {
+                "type": "td",
+                "text": "2 lb."
+              },
+              {
+                "type": "td",
+                "text": "Light"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Spear"
+              },
+              {
+                "type": "td",
+                "text": "1 gp"
+              },
+              {
+                "type": "td",
+                "text": "1d6 piercing"
+              },
+              {
+                "type": "td",
+                "text": "3 lb."
+              },
+              {
+                "type": "td",
+                "text": "Thrown (range 20/60), versatile (1d8)"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "thead",
+          "rows": [
+            [
+              {
+                "type": "td",
+                "text": "Simple Ranged Weapons",
+                "colspan": "5"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "tbody",
+          "rows": [
+            [
+              {
+                "type": "td",
+                "text": "Crossbow, light"
+              },
+              {
+                "type": "td",
+                "text": "25 gp"
+              },
+              {
+                "type": "td",
+                "text": "1d8 piercing"
+              },
+              {
+                "type": "td",
+                "text": "5 lb."
+              },
+              {
+                "type": "td",
+                "text": "Ammunition (range 80/320), loading, two-handed"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Dart"
+              },
+              {
+                "type": "td",
+                "text": "5 cp"
+              },
+              {
+                "type": "td",
+                "text": "1d4 piercing"
+              },
+              {
+                "type": "td",
+                "text": "1/4 lb."
+              },
+              {
+                "type": "td",
+                "text": "Finesse, thrown (range 20/60)"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Shortbow"
+              },
+              {
+                "type": "td",
+                "text": "25 gp"
+              },
+              {
+                "type": "td",
+                "text": "1d6 piercing"
+              },
+              {
+                "type": "td",
+                "text": "2 lb."
+              },
+              {
+                "type": "td",
+                "text": "Ammunition (range 80/320), two-handed"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Sling"
+              },
+              {
+                "type": "td",
+                "text": "1 sp"
+              },
+              {
+                "type": "td",
+                "text": "1d4 bludgeoning"
+              },
+              {
+                "type": "td",
+                "text": "—"
+              },
+              {
+                "type": "td",
+                "text": "Ammunition (range 30/120)"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "thead",
+          "rows": [
+            [
+              {
+                "type": "td",
+                "text": "Martial Melee Weapons",
+                "colspan": "5"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "tbody",
+          "rows": [
+            [
+              {
+                "type": "td",
+                "text": "Battleaxe"
+              },
+              {
+                "type": "td",
+                "text": "10 gp"
+              },
+              {
+                "type": "td",
+                "text": "1d8 slashing"
+              },
+              {
+                "type": "td",
+                "text": "4 lb."
+              },
+              {
+                "type": "td",
+                "text": "Versatile (1d10)"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Flail"
+              },
+              {
+                "type": "td",
+                "text": "10 gp"
+              },
+              {
+                "type": "td",
+                "text": "1d8 bludgeoning"
+              },
+              {
+                "type": "td",
+                "text": "2 lb."
+              },
+              {
+                "type": "td",
+                "text": "—"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Glaive"
+              },
+              {
+                "type": "td",
+                "text": "20 gp"
+              },
+              {
+                "type": "td",
+                "text": "1d10 slashing"
+              },
+              {
+                "type": "td",
+                "text": "6 lb."
+              },
+              {
+                "type": "td",
+                "text": "Heavy, reach, two-handed"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Greataxe"
+              },
+              {
+                "type": "td",
+                "text": "30 gp"
+              },
+              {
+                "type": "td",
+                "text": "1d12 slashing"
+              },
+              {
+                "type": "td",
+                "text": "7 lb."
+              },
+              {
+                "type": "td",
+                "text": "Heavy, two-handed"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Greatsword"
+              },
+              {
+                "type": "td",
+                "text": "50 gp"
+              },
+              {
+                "type": "td",
+                "text": "2d6 slashing"
+              },
+              {
+                "type": "td",
+                "text": "6 lb."
+              },
+              {
+                "type": "td",
+                "text": "Heavy, two-handed"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Halberd"
+              },
+              {
+                "type": "td",
+                "text": "20 gp"
+              },
+              {
+                "type": "td",
+                "text": "1d10 slashing"
+              },
+              {
+                "type": "td",
+                "text": "6 lb."
+              },
+              {
+                "type": "td",
+                "text": "Heavy, reach, two-handed"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Lance"
+              },
+              {
+                "type": "td",
+                "text": "10 gp"
+              },
+              {
+                "type": "td",
+                "text": "1d12 piercing"
+              },
+              {
+                "type": "td",
+                "text": "6 lb."
+              },
+              {
+                "type": "td",
+                "text": "Reach, special"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Longsword"
+              },
+              {
+                "type": "td",
+                "text": "15 gp"
+              },
+              {
+                "type": "td",
+                "text": "1d8 slashing"
+              },
+              {
+                "type": "td",
+                "text": "3 lb."
+              },
+              {
+                "type": "td",
+                "text": "Versatile (1d10)"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Maul"
+              },
+              {
+                "type": "td",
+                "text": "10 gp"
+              },
+              {
+                "type": "td",
+                "text": "2d6 bludgeoning"
+              },
+              {
+                "type": "td",
+                "text": "10 lb."
+              },
+              {
+                "type": "td",
+                "text": "Heavy, two-handed"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Morningstar"
+              },
+              {
+                "type": "td",
+                "text": "15 gp"
+              },
+              {
+                "type": "td",
+                "text": "1d8 piercing"
+              },
+              {
+                "type": "td",
+                "text": "4 lb."
+              },
+              {
+                "type": "td",
+                "text": "—"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Pike"
+              },
+              {
+                "type": "td",
+                "text": "5 gp"
+              },
+              {
+                "type": "td",
+                "text": "1d10 piercing"
+              },
+              {
+                "type": "td",
+                "text": "18 lb."
+              },
+              {
+                "type": "td",
+                "text": "Heavy, reach, two-handed"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Rapier"
+              },
+              {
+                "type": "td",
+                "text": "25 gp"
+              },
+              {
+                "type": "td",
+                "text": "1d8 piercing"
+              },
+              {
+                "type": "td",
+                "text": "2 lb."
+              },
+              {
+                "type": "td",
+                "text": "Finesse"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Scimitar"
+              },
+              {
+                "type": "td",
+                "text": "25 gp"
+              },
+              {
+                "type": "td",
+                "text": "1d6 slashing"
+              },
+              {
+                "type": "td",
+                "text": "3 lb."
+              },
+              {
+                "type": "td",
+                "text": "Finesse, light"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Shortsword"
+              },
+              {
+                "type": "td",
+                "text": "10 gp"
+              },
+              {
+                "type": "td",
+                "text": "1d6 piercing"
+              },
+              {
+                "type": "td",
+                "text": "2 lb."
+              },
+              {
+                "type": "td",
+                "text": "Finesse, light"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Trident"
+              },
+              {
+                "type": "td",
+                "text": "5 gp"
+              },
+              {
+                "type": "td",
+                "text": "1d6 piercing"
+              },
+              {
+                "type": "td",
+                "text": "4 lb."
+              },
+              {
+                "type": "td",
+                "text": "Thrown (range 20/60), versatile (1d8)"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "War Pick"
+              },
+              {
+                "type": "td",
+                "text": "5 gp"
+              },
+              {
+                "type": "td",
+                "text": "1d8 piercing"
+              },
+              {
+                "type": "td",
+                "text": "2 lb."
+              },
+              {
+                "type": "td",
+                "text": "—"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Warhammer"
+              },
+              {
+                "type": "td",
+                "text": "15 gp"
+              },
+              {
+                "type": "td",
+                "text": "1d8 bludgeoning"
+              },
+              {
+                "type": "td",
+                "text": "2 lb."
+              },
+              {
+                "type": "td",
+                "text": "Versatile (1d10)"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Whip"
+              },
+              {
+                "type": "td",
+                "text": "2 gp"
+              },
+              {
+                "type": "td",
+                "text": "1d4 slashing"
+              },
+              {
+                "type": "td",
+                "text": "3 lb."
+              },
+              {
+                "type": "td",
+                "text": "Finesse, reach"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "thead",
+          "rows": [
+            [
+              {
+                "type": "td",
+                "text": "Martial Ranged Weapons",
+                "colspan": "5"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "tbody",
+          "rows": [
+            [
+              {
+                "type": "td",
+                "text": "Blowgun"
+              },
+              {
+                "type": "td",
+                "text": "10 gp"
+              },
+              {
+                "type": "td",
+                "text": "1 piercing"
+              },
+              {
+                "type": "td",
+                "text": "1 lb."
+              },
+              {
+                "type": "td",
+                "text": "Ammunition (range 25/100), loading"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Crossbow, hand"
+              },
+              {
+                "type": "td",
+                "text": "75 gp"
+              },
+              {
+                "type": "td",
+                "text": "1d6 piercing"
+              },
+              {
+                "type": "td",
+                "text": "3 lb."
+              },
+              {
+                "type": "td",
+                "text": "Ammunition (range 30/120), light, loading"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Crossbow, heavy"
+              },
+              {
+                "type": "td",
+                "text": "50 gp"
+              },
+              {
+                "type": "td",
+                "text": "1d10 piercing"
+              },
+              {
+                "type": "td",
+                "text": "18 lb."
+              },
+              {
+                "type": "td",
+                "text": "Ammunition (range 100/400), heavy, loading, two-handed"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Longbow"
+              },
+              {
+                "type": "td",
+                "text": "50 gp"
+              },
+              {
+                "type": "td",
+                "text": "1d8 piercing"
+              },
+              {
+                "type": "td",
+                "text": "2 lb."
+              },
+              {
+                "type": "td",
+                "text": "Ammunition (range 150/600), heavy, two-handed"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Net"
+              },
+              {
+                "type": "td",
+                "text": "1 gp"
+              },
+              {
+                "type": "td",
+                "text": "—"
+              },
+              {
+                "type": "td",
+                "text": "3 lb."
+              },
+              {
+                "type": "td",
+                "text": "Special, thrown (range 5/15)"
+              }
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "attributes": {
+    "Category": "Rules",
+    "Based On": "Equipment",
+    "Source": "SRD 5.0"
+  }
+}

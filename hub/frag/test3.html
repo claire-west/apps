@@ -1,0 +1,24 @@
+<div z--controller style="border:1px solid black">
+    <p>The second nested fragment (this time with a controller)</p>
+    <span>//text:</span><span z--bind="//text"></span><br />
+    <span>text:</span><span z--bind="text"></span><br />
+    <span>>arg:</span><span z--bind=">arg"></span><br />
+    <span>text:</span><input z--bind="text" />
+    <div z--iterate=">test3arr">
+        <span z--template z--bind=">"></span>
+    </div>
+    <div z--iterate="//arr">
+        <span z--template z--bind="//."></span>
+    </div>
+    <div z--iterate="/arr">
+        <span z--template z--bind=">"></span>
+    </div>
+    <span>^test:</span><span z--bind="^test"></span><br />
+    <span>>text:</span><span z--bind=">text"></span><br />
+    <div z--iterate="/arr">
+        <div z--template>
+            <span z--bind=">."></span>
+            <span z--bind=">.."></span>
+        </div>
+    </div>
+</div>

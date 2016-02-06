@@ -1,0 +1,493 @@
+{
+  "name": "Sentient Magic Items",
+  "sections": [
+    {
+      "header": "",
+      "items": [
+        {
+          "name": "",
+          "text": "Some Magic Items possess sentience and personality. Such an item might be possessed, haunted by the spirit of a previous owner, or self-aware thanks to the magic used to create it. In any case, the item behaves like a character, complete with personality quirks, ideals, bonds, and sometimes flaws. A sentient item might be a cherished ally to its wielder or a continual thorn in the side."
+        },
+        {
+          "name": "",
+          "text": "Most sentient items are Weapons. Other kinds of items can manifest sentience, but consumable items such as potions and scrolls are never sentient."
+        },
+        {
+          "name": "",
+          "text": "Sentient Magic Items function as NPCs under the GM's control. Any activated property of the item is under the item's control, not its wielder's. As long as the wielder maintains a good relationship with the item, the wielder can access those properties normally. If the relationship is strained, the item can suppress its activated properties or even turn them against the wielder."
+        }
+      ]
+    },
+    {
+      "header": "Creating Sentient Magic Items",
+      "level": "2",
+      "items": [
+        {
+          "name": "",
+          "text": ""
+        },
+        {
+          "name": "",
+          "text": "When you decide to make a magic item sentient, you create the item's persona in the same way you would create an NPC, with a few exceptions described here."
+        }
+      ]
+    },
+    {
+      "header": "Abilities",
+      "level": "3",
+      "items": [
+        {
+          "name": "",
+          "text": "A sentient magic item has Intelligence, Wisdom, and Charisma scores. You can choose the item's abilities or determine them randomly. To determine them randomly, roll 4d6 for each one, dropping the lowest roll and totaling the rest."
+        }
+      ]
+    },
+    {
+      "header": "Communication",
+      "level": "3",
+      "items": [
+        {
+          "name": "",
+          "text": "A sentient item has some ability to communicate, either by sharing its emotions, broadcasting its thoughts telepathically, or speaking aloud. You can choose how it communicates or roll on the following table."
+        }
+      ]
+    },
+    {
+      "type": "table",
+      "header": "",
+      "items": [
+        {
+          "type": "thead",
+          "rows": [
+            [
+              {
+                "type": "td",
+                "text": "d100"
+              },
+              {
+                "type": "td",
+                "text": "Communication"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "tbody",
+          "rows": [
+            [
+              {
+                "type": "td",
+                "text": "01 - 60"
+              },
+              {
+                "type": "td",
+                "text": "The item communicates by transmitting emotion to the creating carrying or wielding it."
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "61 - 90"
+              },
+              {
+                "type": "td",
+                "text": "The item can speak, read, and understand one or more languages."
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "91 - 00"
+              },
+              {
+                "type": "td",
+                "text": "The item can speak, read, and understand one or more languages. In addition, the item can communicate telepathically with any character that carries or wields it."
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "header": "Senses",
+      "level": "3",
+      "items": [
+        {
+          "name": "",
+          "text": "With sentience comes awareness. A sentient item can perceive its surroundings out to a limited range. You can choose its senses or roll on the following table."
+        }
+      ]
+    },
+    {
+      "type": "table",
+      "header": "",
+      "items": [
+        {
+          "type": "thead",
+          "rows": [
+            [
+              {
+                "type": "td",
+                "text": "d4"
+              },
+              {
+                "type": "td",
+                "text": "Senses"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "tbody",
+          "rows": [
+            [
+              {
+                "type": "td",
+                "text": "1"
+              },
+              {
+                "type": "td",
+                "text": "Hearing and normal vision to 30 ft."
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "2"
+              },
+              {
+                "type": "td",
+                "text": "Hearing and normal vision to 60 ft."
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "3"
+              },
+              {
+                "type": "td",
+                "text": "Hearing and normal vision to 120 ft."
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "4"
+              },
+              {
+                "type": "td",
+                "text": "Hearing and Darkvision to 120 ft."
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "header": "Alignment",
+      "level": "3",
+      "items": [
+        {
+          "name": "",
+          "text": "A sentient magic item has an alignment. Its creator or nature might suggest an alignment. If not, you can pick an alignment or roll on the following table."
+        }
+      ]
+    },
+    {
+      "type": "table",
+      "header": "",
+      "items": [
+        {
+          "type": "thead",
+          "rows": [
+            [
+              {
+                "type": "td",
+                "text": "d100"
+              },
+              {
+                "type": "td",
+                "text": "Alignment"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "tbody",
+          "rows": [
+            [
+              {
+                "type": "td",
+                "text": "01 - 15"
+              },
+              {
+                "type": "td",
+                "text": "Lawful Good"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "16 - 35"
+              },
+              {
+                "type": "td",
+                "text": "Neutral Good"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "36 - 50"
+              },
+              {
+                "type": "td",
+                "text": "Chaotic Good"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "51 - 63"
+              },
+              {
+                "type": "td",
+                "text": "Lawful Neutral"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "64 - 73"
+              },
+              {
+                "type": "td",
+                "text": "Neutral"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "74 - 85"
+              },
+              {
+                "type": "td",
+                "text": "Chaotic Neutral"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "86 - 89"
+              },
+              {
+                "type": "td",
+                "text": "Lawful Evil"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "90 - 96"
+              },
+              {
+                "type": "td",
+                "text": "Neutral Evil"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "97 - 00"
+              },
+              {
+                "type": "td",
+                "text": "Chaotic Evil"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "header": "Special Purpose",
+      "level": "3",
+      "items": [
+        {
+          "name": "",
+          "text": "You can give a sentient item an objective it pursues, perhaps to the exclusion of all else. As long as the wielder's use of the item aligns with that Special purpose, the item remains cooperative. Deviating from this course might cause conflict between the wielder and the item, and could even cause the item to prevent the use of its activated properties. You can pick a Special purpose or roll on the following table."
+        }
+      ]
+    },
+    {
+      "type": "table",
+      "header": "",
+      "items": [
+        {
+          "type": "thead",
+          "rows": [
+            [
+              {
+                "type": "td",
+                "text": "d10"
+              },
+              {
+                "type": "td",
+                "text": "Purpose"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "tbody",
+          "rows": [
+            [
+              {
+                "type": "td",
+                "text": "1"
+              },
+              {
+                "type": "td",
+                "text": "Aligned: The item seeks to defeat or destroy those of a diametrically opposed alignment (such an item is never neutral)."
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "2"
+              },
+              {
+                "type": "td",
+                "text": "Bane: The item seeks to defeat or destroy creates of a particular kind, such as Fiends, shapechangers, Trolls, or Wizards."
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "3"
+              },
+              {
+                "type": "td",
+                "text": "Protector: The item seeks to defend a particular race or kind of creature, such as Elves or Druids."
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "4"
+              },
+              {
+                "type": "td",
+                "text": "Crusader: The item seeks to defeat, weaken, or destroy the servants of a particular deity."
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "5"
+              },
+              {
+                "type": "td",
+                "text": "Templar: The item seeks to defend the servants and interests of a particular deity."
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "6"
+              },
+              {
+                "type": "td",
+                "text": "Destroyer:  The item craves destruction and goads its user to fight arbitrarily."
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "7"
+              },
+              {
+                "type": "td",
+                "text": "Glory Seeker: The item seeks renown as the greatest magic item in the world, by establishing its user as a famous or notorious figure."
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "8"
+              },
+              {
+                "type": "td",
+                "text": "Lore Seeker: The item craves knowledge or is determined to solve a mystery, learn a secret, or unravel a cryptic prophecy."
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "9"
+              },
+              {
+                "type": "td",
+                "text": "Destiny Seeker: The item is convinced that it and its wielder have key roles to play in future events."
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "10"
+              },
+              {
+                "type": "td",
+                "text": "Creator Seeker: The item seeks its creator and wants to understand why it was created."
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "header": "Conflict",
+      "level": "2",
+      "items": [
+        {
+          "name": "",
+          "text": "A sentient item has a will of its own, shaped by its personality and alignment. If its wielder acts in a manner opposed to the item's alignment or purpose, conflict can arise. When such a conflict occurs, the item makes a Charisma check contested by the wielder's Charisma check. If the item wins the contest, it makes one or more of the following demands:"
+        },
+        {
+          "name": "",
+          "text": "• The item insists on being carried or worn at all times."
+        },
+        {
+          "name": "",
+          "text": "• The item demands that its wielder dispose of anything the item finds repugnant."
+        },
+        {
+          "name": "",
+          "text": "• The item demands that its wielder pursue the item's goals to the exclusion of all other goals."
+        },
+        {
+          "name": "",
+          "text": "• The item demands to be given to someone else.If its wielder refuses to comply with the item's wishes, the item can do any or all of the following:Make it impossible for its wielder to attune to it."
+        },
+        {
+          "name": "",
+          "text": "Suppress one or more of its activated properties."
+        },
+        {
+          "name": "",
+          "text": "Attempt to take control of its wielder."
+        },
+        {
+          "name": "",
+          "text": "If a sentient item attempts to take control of its wielder, the wielder must make a Charisma Saving Throw, with a DC equal to 12 + the item's Charisma modifier. On a failed save, the wielder is Charmed by the item for 1d12 hours. While Charmed, the wielder must try to follow the item's commands. If the wielder takes damage, it can repeat the Saving Throw, ending the effect on a success. Whether the attempt to control its user succeeds or fails, the item can't use this power again until the next dawn."
+        }
+      ]
+    }
+  ],
+  "attributes": {
+    "Category": "Rules",
+    "Based On": "Equipment",
+    "Source": "SRD 5.0"
+  }
+}

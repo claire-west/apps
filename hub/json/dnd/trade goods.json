@@ -1,0 +1,182 @@
+{
+  "name": "Trade Goods",
+  "sections": [
+    {
+      "header": "",
+      "items": [
+        {
+          "name": "",
+          "text": "Most wealth is not in coins. It is measured in livestock, grain, land, rights to collect taxes, or rights to resources (such as a mine or a forest)."
+        },
+        {
+          "name": "",
+          "text": "Guilds, nobles, and royalty regulate trade. Chartered companies are granted rights to conduct trade along certain routes, to send merchant ships to various ports, or to buy or sell specific goods. Guilds set prices for the goods or services that they control, and determine who may or may not offer those goods and services. Merchants commonly exchange trade goods without using currency. The Trade Goods table shows the value of commonly exchanged goods."
+        }
+      ]
+    },
+    {
+      "type": "table",
+      "header": "Trade Goods",
+      "items": [
+        {
+          "type": "thead",
+          "rows": [
+            [
+              {
+                "type": "th",
+                "text": "Cost"
+              },
+              {
+                "type": "th",
+                "text": "Goods"
+              },
+              {
+                "type": "th",
+                "text": "Cost"
+              },
+              {
+                "type": "th",
+                "text": "Goods"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "tbody",
+          "rows": [
+            [
+              {
+                "type": "td",
+                "text": "1 cp"
+              },
+              {
+                "type": "td",
+                "text": "1 lb. of wheat"
+              },
+              {
+                "type": "td",
+                "text": "3 gp"
+              },
+              {
+                "type": "td",
+                "text": "1 lb. of cloves or one pig"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "2 cp"
+              },
+              {
+                "type": "td",
+                "text": "1 lb. of flour or one chicken"
+              },
+              {
+                "type": "td",
+                "text": "5 gp"
+              },
+              {
+                "type": "td",
+                "text": "1 lb. of silver or 1 sq. yd. of linen"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "5 cp"
+              },
+              {
+                "type": "td",
+                "text": "1 lb. of salt"
+              },
+              {
+                "type": "td",
+                "text": "10 gp"
+              },
+              {
+                "type": "td",
+                "text": "1 sq. yd. of silk or one cow"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "1 sp"
+              },
+              {
+                "type": "td",
+                "text": "1 lb. of iron or 1 sq. yd. of canvas"
+              },
+              {
+                "type": "td",
+                "text": "15 gp"
+              },
+              {
+                "type": "td",
+                "text": "1 lb. of saffron or one ox"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "5 sp"
+              },
+              {
+                "type": "td",
+                "text": "1 lb. of copper or 1 sq. yd. of cotton cloth"
+              },
+              {
+                "type": "td",
+                "text": "50 gp"
+              },
+              {
+                "type": "td",
+                "text": "1 lb. of gold"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "1 gp"
+              },
+              {
+                "type": "td",
+                "text": "1 lb. of ginger or one goat"
+              },
+              {
+                "type": "td",
+                "text": "500 gp"
+              },
+              {
+                "type": "td",
+                "text": "1 lb. of platinum"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "2 gp"
+              },
+              {
+                "type": "td",
+                "text": "1 lb. of cinnamon or pepper, or one sheep"
+              },
+              {
+                "type": "td",
+                "text": ""
+              },
+              {
+                "type": "td",
+                "text": ""
+              }
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "attributes": {
+    "Category": "Rules",
+    "Source": "SRD 5.0"
+  }
+}

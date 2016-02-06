@@ -1,0 +1,92 @@
+{
+  "name": "Deep Gnome",
+  "sections": [
+    {
+      "header": "",
+      "items": [
+        {
+          "name": "",
+          "text": "Forest gnomes and rock gnomes are the gnomes most commonly encountered in the lands of the surface world. There is another subrace of gnomes rarely seen by any surface-dweller: deep gnomes, also known as svirfneblin. Guarded, and suspicious of outsiders, svirfneblin are cunning and taciturn, but can be just as kind-hearted, loyal, and compassionate as their surface cousins."
+        }
+      ]
+    },
+    {
+      "header": "Deep Gnome Traits",
+      "level": "2",
+      "items": [
+        {
+          "name": "",
+          "text": "When you create a gnome character, you may choose the deep gnome as an alternative to the subraces in the Player's Handbook. For your convenience, the traits of the gnome and the deep gnome are combined here."
+        },
+        {
+          "name": "Ability Score Increase",
+          "text": "Your Intelligence score increases by 2, and your Dexterity score increases by 1."
+        },
+        {
+          "name": "Age",
+          "text": "Deep gnomes are short-lived for gnomes. They mature at the same rate humans do and are considered full-grown adults by 25. They live 200 to 250 years, although hard toil and the dangers of the Underdark often claim them before their time."
+        },
+        {
+          "name": "Alignment",
+          "text": "Svirfneblin believe that survival depends on avoiding entanglements with other creatures and not making enemies, so they favor neutral alignments. They rarely wish others ill, and they are unlikely to take risks on behalf of others."
+        },
+        {
+          "name": "Size",
+          "text": "A typical svirfneblin stands about 3 to 3½ feet tall and weighs 80 to 120 pounds. Your size is Small."
+        },
+        {
+          "name": "Speed",
+          "text": "Your base walking speed is 25 feet."
+        },
+        {
+          "name": "Superior Darkvision",
+          "text": "Your darkvision has a radius of 120 feet."
+        },
+        {
+          "name": "Gnome Cunning",
+          "text": "You have advantage on all Intelligence, Wisdom, and Charisma saving throws against magic."
+        },
+        {
+          "name": "Stone Camouflage",
+          "text": "You have advantage on Dexterity (stealth) checks to hide in rocky terrain."
+        },
+        {
+          "name": "Languages",
+          "text": "You can speak, read, and write Common, Gnomish, and Undercommon. The svirfneblin dialect is more guttural than surface Gnomish, and most svirfneblin know only a little bit of Common, but those who deal with outsiders (and that includes you as an adventurer) pick up enough Common to get by in other lands."
+        }
+      ]
+    },
+    {
+      "header": "Optional Feat",
+      "level": "2",
+      "items": [
+        {
+          "name": "",
+          "text": "If your DM allows the use of feats from chapter 6 of the Player's Handbook, your deep gnome character has access to the following special feat."
+        }
+      ]
+    },
+    {
+      "header": "Svirfneblin Magic",
+      "level": "3",
+      "items": [
+        {
+          "name": "Prerequisite",
+          "text": "Gnome (deep gnome)"
+        },
+        {
+          "name": "",
+          "text": "You have inherited the innate spellcasting ability of your ancestors. This ability allows you to cast nondetectionon yourself at will, without needing a material component. You can also cast each of the following spells once with this ability: blindness/deafness, blur, and disguise self. You regain the ability to cast these spells when you finish a long rest."
+        },
+        {
+          "name": "",
+          "text": "Intelligence is your spellcasting ability for these spells, and you cast them at their lowest possible levels."
+        }
+      ]
+    }
+  ],
+  "attributes": {
+    "Category": "Races",
+    "Source": "Elemental Evil Player's Companion"
+  }
+}

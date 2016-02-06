@@ -1,0 +1,36 @@
+<div z--controller>
+    <div class="column">
+        <h4>
+            <span z--bind="header"></span>
+            <span class="float-right" style="font-size: 1rem;" z--visible="!!items.0.version">
+                <span>version:</span>
+                <span z--bind="items.0.version"></span>
+            </span>
+        </h4>
+    </div>
+    <div class="column scroll-h">
+        <table class="margin-bottom-0">
+            <thead>
+                <tr z--iterate="columns">
+                    <td></td>
+                    <th z--bind=">" z--template></th>
+                </tr>
+            </thead>
+            <tbody z--iterate="items">
+                <tr z--template z--iterate="columns">
+                    <td class="text-right" z--bind='{
+                        "fn": "index"
+                    }'></td>
+                    <td z--bind='{
+                        "path": ">.",
+                        "fn": "get",
+                        "args": ">"
+                    }' z--template></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="column">
+        <a class="button expanded hollow" z--click="plusOne"><i class="fa fa-plus" title="Generate One More"></i></a>
+    </div>
+</div>

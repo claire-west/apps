@@ -1,0 +1,188 @@
+<div z--controller>
+    <section z--visible='{ "path": "@subsection", "eq": "sector" }'>
+        <div class="column" z--visible="!hexes">
+            <h4 class="text-center">
+                <span>Rolling some dice...</span>
+                <i class="fa fa-refresh fa-spin"></i>
+            </h4>
+        </div>
+        <div class="column">
+            <h4 class="text-center" z--bind="name"></h4>
+        </div>
+        <div class="column">
+            <div class="hex-wrapper" z--class='{
+                    "class": "rearrange",
+                    "path": "rearrange"
+                }'>
+                <div class="hex" z--class='{
+                    "class": "pickSecond",
+                    "path": "!!selectedHex"
+                }' z--iterate="hexes">
+                    <ol z--iterate=">" z--template>
+                        <li class="hex" z--template
+                            z--click='{
+                                "path": "onHexClick",
+                                "args": [ "seed", ">" ]
+                            }'
+                            z--class='{
+                                "class": "empty",
+                                "path": "!>name"
+                            }'>
+                            <span z--bind=">coord">&nbsp;</span>
+                            <span z--bind=">name"></span>
+                            <span>&nbsp;</span>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+        <div class="column gm-only">
+            <p class="text-center">Seed:&nbsp;<span z--bind="seed"></span></p>
+        </div>
+    </section>
+    <section z--visible='{ "path": "@subsection", "eq": "list" }'>
+        <div class="column">
+            <h4 class="text-center" z--bind="name"></h4>
+        </div>
+        <div class="column">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Hex</th>
+                        <th>Star</th>
+                        <th class="text-right">Tech Level</th>
+                        <th>
+                            <span>Worlds</span>
+                            <span class="float-right show-for-medium">Tags</span>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody z--iterate="flattenedArray">
+                    <tr z--visible=">name" z--template z--click='{
+                            "path": "onHexClick",
+                            "args": [ "seed" ]
+                        }'>
+                        <td z--bind=">coord"></td>
+                        <td z--bind=">name"></td>
+                        <td z--iterate=">worlds">
+                            <p class="text-right" z--bind=">Tech Level.Level" z--template></p>
+                        </td>
+                        <td z--iterate=">worlds">
+                            <p z--template>
+                                <a z--bind='{
+                                    "path": ">",
+                                    "fn": "worldHref",
+                                    "args": [ ">.", "seed" ]
+                                }' z--click='{
+                                    "path": "onWorldClick",
+                                    "args": [ ">.", "seed" ]
+                                }'>
+                                    <span z--bind=">name"></span>&nbsp;(<span z--bind=">designation"></span>)
+                                </a>
+                                <span class="float-right show-for-medium" z--bind='{
+                                    "path": ">",
+                                    "fn": "concatTags"
+                                }'></span>
+                            </p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <section z--visible='{ "path": "@subsection", "eq": "hex" }'>
+        <div class="column">
+            <h4>
+                <a z--bind="sectorHref"><i class="fa fa-arrow-left" title="Back to Sector"></i></a>
+                <span z--bind="currentHex.coord"></span>
+                <span>-</span>
+                <span z--bind="currentHex.name"></span>
+            </h4>
+        </div>
+        <div z--iterate="currentHex.worlds">
+            <div class="column" z--template>
+                <h5>
+                    <a z--bind='{
+                        "path": ">",
+                        "fn": "worldHref",
+                        "args": [ "currentHex", "seed" ]
+                    }'>
+                        <span z--bind=">name"></span>
+                        <span>(<span z--bind=">fullDesignation"></span>)</span>
+                    </a>
+                </h5>
+                <p>
+                    <strong>Population:</strong>
+                    <span z--bind=">Population"></span>
+                </p>
+                <p>
+                    <strong>Tech Level:</strong>
+                    <span z--bind=">Tech Level.Description"></span>
+                </p>
+                <p>
+                    <strong>Tags:</strong>
+                    <span z--bind='{ "path": ">", "fn": "concatTags" }'></span>
+                </p>
+            </div>
+        </div>
+    </section>
+    <section z--visible='{ "path": "@subsection", "eq": "world" }'>
+        <div class="column">
+            <h4>
+                <a z--bind="hexHref"><i class="fa fa-arrow-left" title="Back to Hex"></i></a>
+                <span z--bind="currentWorld.name"></span>
+                <span>(<span z--bind="currentWorld.fullDesignation"></span>)</span>
+            </h4>
+        </div>
+        <div class="column">
+            <p>
+                <strong>Population:</strong>
+                <span z--bind="currentWorld.Population"></span>
+            </p>
+            <p>
+                <strong>Tech Level:</strong>
+                <span z--bind="currentWorld.Tech Level.Description"></span>
+            </p>
+            <p>
+                <strong>Atmosphere:</strong>
+                <span z--bind="currentWorld.Atmosphere"></span>
+            </p>
+            <p>
+                <strong>Biosphere:</strong>
+                <span z--bind="currentWorld.Biosphere"></span>
+            </p>
+            <p>
+                <strong>Temperature:</strong>
+                <span z--bind="currentWorld.Temperature"></span>
+            </p>
+            <div z--iterate="currentWorld.Tags">
+                <div z--template>
+                    <p>
+                        <strong z--bind=">Tag"></strong>
+                        <a z--click='{ "path": "^lib.messageBox", "args": [ ">Tag", ">Description" ] }'><i class="fa fa-question-circle"></i></a>
+                    </p>
+                    <p class="text-indent-content">
+                        <em>Enemies:</em>
+                        <span z--bind=">Enemies"></span>
+                    </p>
+                    <p class="text-indent-content">
+                        <em>Friends:</em>
+                        <span z--bind=">Friends"></span>
+                    </p>
+                    <p class="text-indent-content">
+                        <em>Complications:</em>
+                        <span z--bind=">Complications"></span>
+                    </p>
+                    <p class="text-indent-content">
+                        <em>Places:</em>
+                        <span z--bind=">Places"></span>
+                    </p>
+                    <p class="text-indent-content">
+                        <em>Things:</em>
+                        <span z--bind=">Things"></span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

@@ -1,0 +1,20 @@
+<div z--controller>
+    <div class="input-group show-for-medium" z--iterate="actions" z--visible="!!actions.length">
+        <a class="topbar-button-fa button" z--title=">title" z--bind=">href" z--class='{ "class": "secondary", "path": ">secondary" }' z--click=">click" z--visible="!>hidden" z--template>
+            <i class="fa" z--class='{ "path": ">icon", "fn": "setIcon" }'></i>
+        </a>
+    </div>
+    <ul class="dropdown menu align-right show-for-small-only" data-dropdown-menu>
+        <li>
+            <a class="fa fa-bars topbar-icon" z--visible="!!actions.length"></a>
+            <ul class="menu z-front" z--iterate="actions">
+                <li z--click=">click" z--visible="!>hidden" data-close z--template>
+                    <a class="flex" z--bind=">href">
+                        <i class="fa" z--class='{ "path": ">icon", "fn": "setIcon" }'></i>
+                        <span z--text=">title" ></span>
+                    </a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</div>

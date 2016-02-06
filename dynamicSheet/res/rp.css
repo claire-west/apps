@@ -1,0 +1,391 @@
+*, *::before, *::after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-size: 100%;
+}
+
+body {
+    background: #FFF;
+    color: #333;
+    padding: 0;
+    margin: 0;
+    font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    position: relative;
+    cursor: auto;
+}
+
+label {
+    text-align: center;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    display: block;
+    cursor: pointer;
+}
+
+input, textarea, select {
+    width: 100%;
+    height: 2.3125rem;
+    font-size: 0.875rem;
+    color: rgba(0, 0, 0, 0.75);
+    border: 1px solid #CCC;
+    background-color: #FFF;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+    padding: 0.5rem;
+}
+input:focus,
+textarea:focus {
+    outline: none;
+}
+input {
+    text-align: center;
+    font-size: 1.125rem;
+    padding: 0;
+}
+textarea {
+    font: inherit;
+    resize: vertical;
+    padding: 0.25rem 0.5rem;
+    overflow: auto;
+}
+textarea[rows] {
+    height: auto;
+}
+
+.rpInput label {
+    color: #FFF;
+    padding: 0 0.4375rem;
+}
+
+.rpSingle label,
+.rpMultiline label {
+    padding: 0;
+    border-top-right-radius: 1.05rem;
+    border-top-left-radius: 1.05rem;
+    border-bottom-right-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+}
+.rpSingle input {
+    height: 3.5rem;
+    font-size: 2rem;
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+}
+.rpMultiline textarea {
+    border-top-right-radius: 0.5rem;
+    border-top-left-radius: 0.5rem;
+}
+
+.rpSingleWithCalc label {
+    padding-bottom: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    border-top-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+}
+.rpSingleWithCalc input:first-child {
+    height: 3.5rem;
+    font-size: 2rem;
+    border-top-right-radius: 0.5rem;
+    border-top-left-radius: 0.5rem;
+}
+.rpSingleWithCalc input:last-child {
+    margin-bottom: -0.0625rem;
+    border-bottom-right-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+}
+.rpSingleWithCalc input:read-only {
+    background: #DDD;
+    cursor: default;
+}
+
+.rpSingleSmall label {
+    padding: 0;
+    border-top-right-radius: 0.55rem;
+    border-top-left-radius: 0.55rem;
+    border-bottom-right-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+}
+.rpSingleSmall input {
+    border-top-right-radius: 0.5rem;
+    border-top-left-radius: 0.5rem;
+}
+
+.rpDualV label:first-child {
+    text-align: left;
+    border-top-right-radius: 0.5rem;
+    border-top-left-radius: 0.5rem;
+}
+.rpDualV label:last-child {
+    text-align: right;
+    border-bottom-right-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+}
+.rpDualV label:last-child input {
+    border-bottom-right-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+}
+.rpDualV label:first-child input {
+    border-top-right-radius: 0.5rem;
+    border-top-left-radius: 0.5rem;
+}
+
+.rpDualH {
+    display: flex;
+}
+.rpDualH label {
+    width: 50%;
+}
+.rpDualH label:first-child {
+    text-align: left;
+    padding-right: 0;
+    padding-bottom: 1.5rem;
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+}
+.rpDualH label:last-child {
+    text-align: right;
+    padding-top: 1.5rem;
+    padding-left: 0;
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+}
+.rpDualH input {
+    height: 3.5rem;
+    font-size: 2rem;
+}
+.rpDualH label:first-child input {
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+}
+.rpDualH label:last-child input {
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+}
+
+.rpCheckboxLeft label,
+.rpCheckboxRight label {
+    height: 2.1875rem;
+    line-height: 2.09375rem;
+    padding: 0;
+    border-bottom: 0.0625rem solid white;
+    border-top: 0.0625rem solid white;
+}
+.rpCheckboxLeft label {
+    margin-left: 1.875rem;
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+}
+.rpCheckboxRight label {
+    margin-right: 1.875rem;
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+}
+.rpCheckboxLeft input,
+.rpCheckboxRight input {
+    width: 2.25rem;
+    height: 2.25rem;
+    margin: 0;
+    margin-top: -0.0625rem;
+    cursor: pointer;
+}
+.rpCheckboxLeft input {
+    float: left;
+    margin-left: -1.875rem;
+}
+.rpCheckboxRight input {
+    float: right;
+    margin-right: -1.875rem;
+}
+
+.rpInlineLeft label,
+.rpInlineRight label {
+    height: 2.1875rem;
+    line-height: 2.1875rem;
+    padding: 0;
+}
+.rpInlineLeft label {
+    margin-left: 1.875rem;
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+}
+.rpInlineRight label {
+    margin-right: 1.875rem;
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+}
+.rpInlineLeft input,
+.rpInlineRight input {
+    width: 2.25rem;
+    height: 2.1875rem;
+    margin: 0;
+}
+.rpInlineLeft input {
+    float: left;
+    margin-left: -1.875rem;
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+}
+.rpInlineRight input {
+    float: right;
+    margin-right: -1.875rem;
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+}
+
+.rpSkillList label {
+    text-align: left;
+    padding-top: 0.125rem;
+    padding-bottom: 0.125rem;
+}
+.rpSkillList label:first-child,
+.rpSkillList label:last-child {
+    text-align: center;
+    background: #222;
+}
+.rpSkillList label:first-child {
+    border-top-right-radius: 0.5rem;
+    border-top-left-radius: 0.5rem;
+    cursor: auto;
+}
+.rpSkillList label:last-child {
+    border-bottom-right-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+    cursor: auto;
+}
+.rpSkillList label:not(:first-child) {
+    border-top: 1px solid white;
+}
+.rpSkillList input {
+    float: left;
+    width: 1.25rem;
+    height: 1.25rem;
+    margin: 0;
+    margin-right: 0.5rem;
+    cursor: pointer;
+}
+
+.rpBgGrey label,
+.rpBgGray label { background: #222; }
+.rpBgBlue label { background: #008; }
+.rpBgGreen label { background: #040; }
+.rpBgRed label { background: #500; }
+
+.rpCol {
+    width: 100%;
+    display: block;
+    position: relative;
+    float: left;
+    padding: 0.25rem;
+}
+.rpCol .rpRow .rpCol {
+    padding-right: 0.125rem;
+    padding-left: 0.125rem;
+}
+
+.rpRow {
+    width: 100%;
+    display: block;
+    max-width: 62.5rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+.rpRow::before,
+.rpRow::after {
+    content: " ";
+    display: table;
+}
+.rpRow::after {
+    clear: both;
+}
+
+.rpNoPad {
+    padding: 0;
+}
+
+.rpS1{width:8.333333333333333%;width:calc(100%/12);}
+.rpS2{width:16.66666666666667%;width:calc(100%/6);}
+.rpS3{width:25%;}
+.rpS4{width:33.33333333333334%;width:calc(100%/3);}
+.rpS5{width:41.66666666666667%;width:calc(100%/12*5);}
+.rpS6{width:50%;}
+.rpS7{width:58.33333333333333%;width:calc(100%/12*7);}
+.rpS8{width:66.66666666666667%;width:calc(100%/3*2);}
+.rpS9{width:75%;}
+.rpS10{width:83.33333333333334%;width:calc(100%/6*5);}
+.rpS11{width:91.66666666666667%;width:calc(100%/12*11);}
+.rpS12{width:100%;}
+.rpSHide{display:none;}
+.rpSOffset1{margin-left:8.333333333333333%;margin-left:calc(100%/12);}
+.rpSOffset2{margin-left:16.66666666666667%;margin-left:calc(100%/6);}
+.rpSOffset3{margin-left:25%;}
+.rpSOffset4{margin-left:33.33333333333334%;margin-left:calc(100%/3);}
+.rpSOffset5{margin-left:41.66666666666667%;margin-left:calc(100%/12*5);}
+.rpSOffset6{margin-left:50%;}
+.rpSOffset7{margin-left:58.33333333333333%;margin-left:calc(100%/12*7);}
+.rpSOffset8{margin-left:66.66666666666667%;margin-left:calc(100%/3*2);}
+.rpSOffset9{margin-left:75%;}
+.rpSOffset10{margin-left:83.33333333333334%;margin-left:calc(100%/6*5);}
+.rpSOffset11{margin-left:91.66666666666667%;margin-left:calc(100%/12*11);}
+
+@media screen and (min-width: 641px) {
+    .rpM1{width:8.333333333333333%;width:calc(100%/12);}
+    .rpM2{width:16.66666666666667%;width:calc(100%/6);}
+    .rpM3{width:25%;}
+    .rpM4{width:33.33333333333334%;width:calc(100%/3);}
+    .rpM5{width:41.66666666666667%;width:calc(100%/12*5);}
+    .rpM6{width:50%;}
+    .rpM7{width:58.33333333333333%;width:calc(100%/12*7);}
+    .rpM8{width:66.66666666666667%;width:calc(100%/3*2);}
+    .rpM9{width:75%;}
+    .rpM10{width:83.33333333333334%;width:calc(100%/6*5);}
+    .rpM11{width:91.66666666666667%;width:calc(100%/12*11);}
+    .rpM12{width:100%;}
+    .rpMHide{display:none;}
+    .rpSHide{display:inherit;}
+    .rpMOffset1{margin-left:8.333333333333333%;margin-left:calc(100%/12);}
+    .rpMOffset2{margin-left:16.66666666666667%;margin-left:calc(100%/6);}
+    .rpMOffset3{margin-left:25%;}
+    .rpMOffset4{margin-left:33.33333333333334%;margin-left:calc(100%/3);}
+    .rpMOffset5{margin-left:41.66666666666667%;margin-left:calc(100%/12*5);}
+    .rpMOffset6{margin-left:50%;}
+    .rpMOffset7{margin-left:58.33333333333333%;margin-left:calc(100%/12*7);}
+    .rpMOffset8{margin-left:66.66666666666667%;margin-left:calc(100%/3*2);}
+    .rpMOffset9{margin-left:75%;}
+    .rpMOffset10{margin-left:83.33333333333334%;margin-left:calc(100%/6*5);}
+    .rpMOffset11{margin-left:91.66666666666667%;margin-left:calc(100%/12*11);}
+}
+
+@media screen and (min-width: 1281px) {
+    .rpL1{width:8.333333333333333%;width:calc(100%/12);}
+    .rpL2{width:16.66666666666667%;width:calc(100%/6);}
+    .rpL3{width:25%;}
+    .rpL4{width:33.33333333333334%;width:calc(100%/3);}
+    .rpL5{width:41.66666666666667%;width:calc(100%/12*5);}
+    .rpL6{width:50%;}
+    .rpL7{width:58.33333333333333%;width:calc(100%/12*7);}
+    .rpL8{width:66.66666666666667%;width:calc(100%/3*2);}
+    .rpL9{width:75%;}
+    .rpL10{width:83.33333333333334%;width:calc(100%/6*5);}
+    .rpL11{width:91.66666666666667%;width:calc(100%/12*11);}
+    .rpL12{width:100%;}
+    .rpMHide{display:inherit;}
+    .rpSHide{display:inherit;}
+    .rpLHide{display:none;}
+    .rpLOffset1{margin-left:8.333333333333333%;margin-left:calc(100%/12);}
+    .rpLOffset2{margin-left:16.66666666666667%;margin-left:calc(100%/6);}
+    .rpLOffset3{margin-left:25%;}
+    .rpLOffset4{margin-left:33.33333333333334%;margin-left:calc(100%/3);}
+    .rpLOffset5{margin-left:41.66666666666667%;margin-left:calc(100%/12*5);}
+    .rpLOffset6{margin-left:50%;}
+    .rpLOffset7{margin-left:58.33333333333333%;margin-left:calc(100%/12*7);}
+    .rpLOffset8{margin-left:66.66666666666667%;margin-left:calc(100%/3*2);}
+    .rpLOffset9{margin-left:75%;}
+    .rpLOffset10{margin-left:83.33333333333334%;margin-left:calc(100%/6*5);}
+    .rpLOffset11{margin-left:91.66666666666667%;margin-left:calc(100%/12*11);}
+}

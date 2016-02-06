@@ -1,0 +1,49 @@
+#app-swn .top-bar-content .menu .input-group {
+    margin-bottom: 0;
+}
+
+#app-swn .top-bar-content .menu .input-group a {
+    border: none;
+}
+
+#app-swn .top-bar-content .menu .input-group a:not(:last-child) {
+    border-right: 1px solid #fff;
+}
+
+#swn-sector li.hex > span:not(:first-child) {
+    color: #2199e8;
+}
+
+#swn-sector p:not(:last-child),
+#swn-sector table p {
+    margin-bottom: 0;
+}
+
+#swn-sector table tbody tr:hover {
+    background: #ccc;
+    cursor: pointer;
+}
+
+#swn-sector .hex-wrapper.rearrange .hex .hex {
+    /*background-color: #ffe082;*/
+    background-color: #cecece;
+    opacity: 0.25;
+}
+
+#swn-sector .hex-wrapper.rearrange .hex.pickSecond .hex.selected {
+    opacity: 1;
+    background-color: #ef9a9a;
+}
+
+#swn-sector .hex-wrapper.rearrange .hex.pickSecond .hex {
+    background-color: #c5e1a5;
+}
+
+#swn-sector .hex-wrapper.rearrange .hex .hex:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+#swn-gen p {
+    margin-bottom: 0;
+}

@@ -1,0 +1,77 @@
+{
+    "page": 232,
+    "version": "1e",
+    "Sex": [
+        "Female",
+        "Male"
+    ],
+    "Age": [
+        "Young",
+        "Middle-aged",
+        "Old"
+    ],
+    "Height": [
+        "Very Short",
+        {
+            "text": "Short",
+            "weight": 2
+        },
+        {
+            "text": "Average",
+            "weight": 2
+        },
+        {
+            "text": "Tall",
+            "weight": 2
+        },
+        "Very Tall"
+    ],
+    "Problem": [
+        "Grudge against local authorities.",
+        "Has a secret kept from their family.",
+        "Chronic illness",
+        "Enmity of a local psychic",
+        "Has enemies at work",
+        "Owes loan sharks",
+        "Threatened with loss of spouse, sibling, or child",
+        "Close relative in trouble with the law ",
+        "Drug or behavioral addict",
+        "Blackmailed by enemy"
+    ],
+    "Job Motivation": [
+        "Greed, because nothing else they can do pays better",
+        "Idealistic about the job",
+        "Sense of social duty",
+        "Force of habit takes them through the day",
+        "Seeks to please another",
+        "Feels inadequate as anything else",
+        "Family tradition",
+        "Religious obligation or vow",
+        "Nothing better to do, and they need the money",
+        "They’re quitting at the first good opportunity",
+        "It’s a stepping stone to better things",
+        "Spite against an enemy discomfited by the work"
+    ],
+    "Noticeable Quirk": [
+        "Bald",
+        "Terrible taste in clothing",
+        "Very thin",
+        "Powerful build",
+        "Bad eyesight, may wear spectacles",
+        "Carries work tools constantly",
+        "Long hair",
+        "Bearded if male, ankle-length hair if female",
+        "Scars all over hands",
+        "Missing digits or an ear",
+        "Smells like their work",
+        "Repeats themself constantly",
+        "Talks about tabloid articles",
+        "Booming voice",
+        "Vocal dislike of offworlders",
+        "Always snuffling",
+        "Missing teeth",
+        "Fastidiously neat",
+        "Wears religious emblems",
+        "Speaks as little as possible"
+    ]
+}

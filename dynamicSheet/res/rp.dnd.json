@@ -1,0 +1,315 @@
+[
+    [
+        {
+            "control": "Single",
+            "args": {
+                "span": "rpM5",
+                "label": "Character Name"
+            }
+        },
+        {
+            "control": "Container",
+            "args": {
+                "span": "rpM7",
+                "controls": [
+                    {
+                        "control": "DualV",
+                        "args": {
+                            "span": "rpS4",
+                            "label": "Class",
+                            "label2": "Race"
+                        }
+                    },
+                    {
+                        "control": "DualV",
+                        "args": {
+                            "span": "rpS4",
+                            "label": "Background",
+                            "label2": "Alignment"
+                        }
+                    },
+                    {
+                        "control": "DualV",
+                        "args": {
+                            "span": "rpS4",
+                            "label": "Player Name",
+                            "label2": "XP"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "control": "Container",
+            "args": {
+                "span": "rpM4",
+                "color": "rpBgBlue",
+                "controls": [
+                    {
+                        "control": "Container",
+                        "args": {
+                            "span": "rpS4",
+                            "controls": [
+                                {
+                                    "control": "SingleWithCalc",
+                                    "args": {
+                                        "span": "rpS12",
+                                        "label": "Str",
+                                        "expression": "floor((x - 10) / 2)"
+                                    }
+                                },
+                                {
+                                    "control": "SingleWithCalc",
+                                    "args": {
+                                        "span": "rpS12",
+                                        "label": "Dex",
+                                        "expression": "floor((x - 10) / 2)"
+                                    }
+                                },
+                                {
+                                    "control": "SingleWithCalc",
+                                    "args": {
+                                        "span": "rpS12",
+                                        "label": "Con",
+                                        "expression": "floor((x - 10) / 2)"
+                                    }
+                                },
+                                {
+                                    "control": "SingleWithCalc",
+                                    "args": {
+                                        "span": "rpS12",
+                                        "label": "Int",
+                                        "expression": "floor((x - 10) / 2)"
+                                    }
+                                },
+                                {
+                                    "control": "SingleWithCalc",
+                                    "args": {
+                                        "span": "rpS12",
+                                        "label": "Wis",
+                                        "expression": "floor((x - 10) / 2)"
+                                    }
+                                },
+                                {
+                                    "control": "SingleWithCalc",
+                                    "args": {
+                                        "span": "rpS12",
+                                        "label": "Cha",
+                                        "expression": "floor((x - 10) / 2)"
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "control": "Container",
+                        "args": {
+                            "span": "rpS8",
+                            "controls": [
+                                {
+                                    "control": "CheckboxLeft",
+                                    "args": {
+                                        "span": "rpS12",
+                                        "label": "Inspiration"
+                                    }
+                                },
+                                {
+                                    "control": "InlineLeft",
+                                    "args": {
+                                        "span": "rpS12",
+                                        "label": "Proficiency Bonus"
+                                    }
+                                },
+                                {
+                                    "control": "SkillList",
+                                    "args": {
+                                        "span": "rpS12",
+                                        "label": "Saving Throws",
+                                        "skills": "Strength,Dexterity,Constitution,Intelligence,Wisdom,Charisma"
+                                    }
+                                },
+                                {
+                                    "control": "SkillList",
+                                    "args": {
+                                        "span": "rpS12",
+                                        "label": "Skills",
+                                        "skills": "Acrobatics (dex),Animal Handling (wis),Arcana (int),Athletics (str),Deception (cha),History (int),Insight (cha),Intimidation (cha),Investigation (int),Medicine (wis),Nature (int),Perception (wis),Performance (cha),Persuasion (cha),Religion (int),Sleight of Hand (dex),Stealth (dex),Survival (wis)"
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "control": "InlineLeft",
+                        "args": {
+                            "span": "rpS12",
+                            "label": "Passive Wisdom (perception)"
+                        }
+                    },
+                    {
+                        "control": "Multiline",
+                        "args": {
+                            "span": "rpS12",
+                            "rows": 6,
+                            "label": "Other Proficiencies & Languages"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "control": "Container",
+            "args": {
+                "span": "rpM4",
+                "color": "rpBgGreen",
+                "controls": [
+                    {
+                        "control": "Single",
+                        "args": {
+                            "span": "rpS4",
+                            "label": "AC"
+                        }
+                    },
+                    {
+                        "control": "Single",
+                        "args": {
+                            "span": "rpS4",
+                            "label": "Initiative"
+                        }
+                    },
+                    {
+                        "control": "Single",
+                        "args": {
+                            "span": "rpS4",
+                            "label": "Speed"
+                        }
+                    },
+                    {
+                        "control": "Single",
+                        "args": {
+                            "span": "rpS6",
+                            "label": "Current HP"
+                        }
+                    },
+                    {
+                        "control": "DualV",
+                        "args": {
+                            "span": "rpS6",
+                            "label": "Max HP",
+                            "label2": "Temp HP"
+                        }
+                    },
+                    {
+                        "control": "DualV",
+                        "args": {
+                            "span": "rpS6",
+                            "label": "Dice Remaining",
+                            "label2": "Hit Dice"
+                        }
+                    },
+                    {
+                        "control": "DualV",
+                        "args": {
+                            "span": "rpS6",
+                            "label": "Successes",
+                            "label2": "Failures"
+                        }
+                    },
+                    {
+                        "control": "Multiline",
+                        "args": {
+                            "span": "rpS12",
+                            "rows": 17,
+                            "label": "Attacks & Spellcasting"
+                        }
+                    },
+                    {
+                        "control": "SingleSmall",
+                        "args": {
+                            "span": "rpS3",
+                            "label": "CP"
+                        }
+                    },
+                    {
+                        "control": "SingleSmall",
+                        "args": {
+                            "span": "rpS3",
+                            "label": "SP"
+                        }
+                    },
+                    {
+                        "control": "SingleSmall",
+                        "args": {
+                            "span": "rpS3",
+                            "label": "GP"
+                        }
+                    },
+                    {
+                        "control": "SingleSmall",
+                        "args": {
+                            "span": "rpS3",
+                            "label": "PP"
+                        }
+                    },
+                    {
+                        "control": "Multiline",
+                        "args": {
+                            "span": "rpS12",
+                            "rows": 10,
+                            "label": "Equipment"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "control": "Container",
+            "args": {
+                "span": "rpM4",
+                "color": "rpBgRed",
+                "controls": [
+                    {
+                        "control": "Multiline",
+                        "args": {
+                            "span": "rpS12",
+                            "rows": 5,
+                            "label": "Traits"
+                        }
+                    },
+                    {
+                        "control": "Multiline",
+                        "args": {
+                            "span": "rpS12",
+                            "rows": 4,
+                            "label": "Ideals"
+                        }
+                    },
+                    {
+                        "control": "Multiline",
+                        "args": {
+                            "span": "rpS12",
+                            "rows": 4,
+                            "label": "Bonds"
+                        }
+                    },
+                    {
+                        "control": "Multiline",
+                        "args": {
+                            "span": "rpS12",
+                            "rows": 4,
+                            "label": "Flaws"
+                        }
+                    },
+                    {
+                        "control": "Multiline",
+                        "args": {
+                            "span": "rpS12",
+                            "rows": 24,
+                            "label": "Features & Notes"
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+]

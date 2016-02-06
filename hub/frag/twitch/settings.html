@@ -1,0 +1,41 @@
+<div>
+    <div class="column">
+        <h4>
+            <a href="#twitch2"><i class="fa fa-arrow-left" title="Back to Followed Streams"></i></a>
+            <span>Settings</span>
+        </h4>
+    </div>
+    <div class="medium-4 columns">
+        <div class="input-group">
+            <label class="input-group-label">Quality</label>
+            <select class="input-group-field" z--bind="quality">
+                <option value="best">Best</option>
+                <option value="source">Source</option>
+                <option value="high">High</option>
+                <option value="medium">Medium</option>
+                <option value="low">Low</option>
+                <option value="mobile">Mobile</option>
+                <option value="audio">Audio</option>
+            </select>
+        </div>
+    </div>
+    <div class="medium-4 columns">
+        <div class="input-group">
+            <label class="input-group-label checkboxLabel">
+                <span>Refresh every 2 minutes</span>
+                <input type="checkbox" class="input-group-field" z--bind="autoRefresh" />
+            </label>
+        </div>
+    </div>
+    <div class="medium-4 columns">
+        <div class="input-group">
+            <label class="input-group-label checkboxLabel">
+                <span>12-hour time</span>
+                <input type="checkbox" class="input-group-field" z--bind="twelveHour" />
+            </label>
+        </div>
+    </div>
+    <div class="medium-4 columns end">
+        <a class="button" href="#twitch2-setup">View setup instructions.</a>
+    </div>
+</div>

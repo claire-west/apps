@@ -1,0 +1,71 @@
+<nav class="top-bar sectionNav">
+    <div class="top-bar-content">
+        <div class="top-bar-left">
+            <ul class="dropdown menu" data-dropdown-menu style="max-width: 250px;">
+                <li>
+                    <a>Generate</a>
+                    <ul class="vertical menu nested z-front">
+                        <li><a href="#swn">Sector</a></li>
+                        <li><a href="#swn-names">Names</a></li>
+                        <li><a href="#swn-gen/npc">NPCs</a></li>
+                        <li><a href="#swn-gen/patron">Patrons</a></li>
+                        <li><a href="#swn-gen/pointOfInterest">Points of Interest</a></li>
+                        <li><a href="#swn-gen/worldRelations">Same-star World Relationships</a></li>
+                        <li>
+                            <a>1e Tables</a>
+                            <ul class="menu">
+                                <li><a href="#swn-gen/alien">Aliens</a></li>
+                                <li><a href="#swn-gen/architecture">Architecture</a></li>
+                                <li><a href="#swn-gen/corp">Corporations</a></li>
+                                <li><a href="#swn-gen/creature">Creatures</a></li>
+                                <li><a href="#swn-gen/heresy">Heresies</a></li>
+                                <li><a href="#swn-gen/person">People</a></li>
+                                <li><a href="#swn-gen/politicalParty">Political Parties</a></li>
+                                <li><a href="#swn-gen/religion">Religions</a></li>
+                                <li><a href="#swn-gen/room">Rooms</a></li>
+                                <li><a href="#swn-gen/society">Societies</a></li>
+                                <li><a href="#swn-gen/societalConflict">Societal Conflicts</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="top-bar-right">
+            <ul class="menu">
+                <li>
+                    <z--hub-frag z--frag="actionMenu" z--model='{ "actions": ">sectionMenu" }'></z--hub-frag>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<section id="swn" class="row contentSection defaultSection" hidden>
+    <div class="column">
+        <h4>Generate Sector</h4>
+    </div>
+    <div class="large-6 medium-8 columns">
+        <div class="input-group">
+            <label class="input-group-label">Seed</label>
+            <input class="input-group-field" type="text" z--bind="seed" />
+            <div class="input-group-button">
+                <a class="button" z--click="onReseed"><i class="fa fa-refresh"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="large-3 medium-4 medium-offset-0 small-6 small-offset-6 columns end">
+        <a class="button expanded" z--click='{ "path": "toSector", "args": "seed" }'>Make It So&nbsp;<i class="fa fa-angle-right"></i></a>
+    </div>
+</section>
+<section id="swn-sector" class="row contentSection" z--lazy hidden>
+    <z--hub-frag-swn z--frag="sector"></z--hub-frag-swn>
+</section>
+<section id="swn-gen" class="row contentSection" z--lazy hidden>
+    <z--hub-frag-swn z--frag="gen"></z--hub-frag-swn>
+</section>
+<section id="swn-names" class="row contentSection" z--lazy hidden>
+    <z--hub-frag-swn z--frag="names"></z--hub-frag-swn>
+</section>
+<section id="swn-settings" class="row contentSection" z--lazy hidden>
+    <z--hub-frag-swn z--frag="settings"></z--hub-frag-swn>
+</section>

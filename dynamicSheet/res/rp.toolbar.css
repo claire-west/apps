@@ -1,0 +1,177 @@
+a {
+    color: #008;
+    padding: 0.25rem;
+}
+#toggleToolbar {
+    width: 3.75rem;
+    float: right;
+    margin-left: -3.75rem;
+}
+#signOut {
+    float: left;
+    padding: 0.25rem;
+}
+a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+button {
+    color: #EEE;
+    background: #333;
+    text-align: center;
+    line-height: 1.5rem;
+    border: 1px solid #EEE;
+    cursor: pointer;
+}
+button:focus {
+    outline: none;
+}
+button.expand {
+    width: 100%;
+}
+button.selected {
+    background: #666;
+}
+button[disabled] {
+    cursor: auto;
+}
+button.delete {
+    width: 2.3125rem;
+    background: darkred;
+}
+button.delete + button {
+    width: calc(100% - 2.3125rem);
+}
+
+#rpContent {
+    clear: both;
+}
+
+#rpToolbar,
+#rpIo {
+    text-align: center;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    clear: both;
+}
+
+#rpToolbar *,
+#rpIo * {
+    margin: 0;
+}
+
+#rpToolbar div:first-child button {
+    margin-top: 0.25rem;
+}
+
+#rpToolbar label,
+#rpIo label {
+    text-align: left;
+    line-height: 1rem;
+}
+#rpToolbar label {
+    margin-top: 1rem;
+}
+
+#rpToolbar button,
+#rpIo button {
+    height: 2.3125rem;
+    padding-right: 0.75rem;
+    padding-left: 0.75rem;
+}
+
+#rpToolbar .rpCol .rpCol {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+#rpStatus {
+    height: 1.125rem;
+}
+
+#rpContent .placeable > .rpInput.rpContainer {
+    border: 1px solid #333;
+    border-top-width: 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+#rpContent .placeable > .rpInput > label,
+#rpContent .placeable > .rpInput > label > input,
+#rpContent .placeable > .rpInput > label > textarea {
+    cursor: not-allowed;
+}
+
+#rpContent .placeBefore,
+#rpContent .placeAfter {
+    position: absolute;
+    top: calc(50% - 1rem);
+    border-top: 1rem solid transparent;
+    border-bottom: 1rem solid transparent;
+    cursor: pointer;
+    z-index: 1000;
+}
+#rpContent .placeBefore {
+    left: calc(30% - 1rem);
+    border-right: 2rem solid orange;
+}
+#rpContent .placeBefore:hover {
+    border-right-color: orangered;
+}
+#rpContent .rpContainer + .placeBefore {
+    left: calc(10% - 1rem);
+    top: -0.25rem;
+    border-right-color: orchid;
+}
+#rpContent .rpContainer + .placeBefore:hover {
+    border-right-color: purple;
+}
+#rpContent .placeAfter {
+    left: calc(70% - 1rem);
+    border-left: 2rem solid orange;
+}
+#rpContent .placeAfter:hover {
+    border-left-color: orangered;
+}
+#rpContent .rpContainer ~ .placeAfter {
+    left: calc(90% - 1rem);
+    top: -0.25rem;
+    border-left-color: orchid;
+}
+#rpContent .rpContainer ~ .placeAfter:hover {
+    border-left-color: purple;
+}
+
+
+#rpContent .selectable > .rpInput.rpContainer {
+    border: 1px solid #AAA;
+    border-top-width: 1rem;
+    border-radius: 0.5rem;
+    opacity: 1;
+}
+#rpContent .selectable > .rpInput {
+    opacity: 0.5;
+    cursor: pointer;
+}
+#rpContent .selectable > .rpInput:hover {
+    opacity: 1;
+}
+#rpContent .selectable > .rpInput.rpContainer {
+    border: 1px solid #AAA;
+    border-top-width: 1rem;
+    border-radius: 0.5rem;
+    opacity: 1;
+}
+#rpContent .selectable > .rpInput.rpContainer:hover {
+    border-color: #222;
+}
+#rpContent .selected > .rpInput {
+    opacity: 1;
+    cursor: pointer;
+}
+#rpContent .selected > .rpInput.rpContainer {
+    border: 1px solid #222;
+    border-top-width: 1rem;
+    border-radius: 0.5rem;
+    opacity: 1;
+}

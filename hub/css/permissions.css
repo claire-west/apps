@@ -1,0 +1,63 @@
+#permissions-manager .roleList .label {
+    height: 1.625rem;
+    line-height: 1rem;
+    cursor: pointer;
+}
+
+#permissions-manager .roleList p {
+    margin-top: 0.125rem;
+    margin-bottom: 0.125rem;
+    cursor: pointer;
+    background-color: #f5f5f5;
+}
+
+#permissions-manager .roleList i {
+    float: right;
+    line-height: 1.75rem;
+    font-size: 1.5rem;
+    margin-right: 0.75rem;
+}
+
+#permissions-manager .roleList p:hover {
+    background-color: #e8e8e8;
+}
+
+#permissions-manager .identifierList .label {
+    height: 1.625rem;
+    line-height: 1rem;
+}
+
+#permissions-manager .identifierList button {
+    margin-bottom: 0;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+}
+
+#permissions-manager .identifierList button i {
+    font-size: 1rem;
+}
+
+#permissions-manager .identifierList p {
+    margin-top: 0.125rem;
+    margin-bottom: 0.125rem;
+}
+
+#permissions-manager .identifierInput {
+    margin-bottom: 0.75rem;
+}
+
+#permissions-manager .identifierInput input {
+    height: 2rem;
+    padding: 0.25rem;
+}
+
+#permissions-manager .identifierInput button {
+    height: 2rem;
+    padding: 0 0.75rem;
+    line-height: 2rem;
+}
+
+#permissions-unauthorized h5 {
+    text-align: center;
+    margin-top: 1rem;
+}

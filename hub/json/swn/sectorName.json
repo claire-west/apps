@@ -1,0 +1,35 @@
+{
+    "start": [
+        "Hades",
+        "Amber",
+        "Annwyn",
+        "Asgard",
+        "Avalon",
+        "Dinas",
+        "Elysian",
+        "Reynes",
+        "Saguenay",
+        "Kvenland",
+        "Lyonesse",
+        "Meropis",
+        "Olympus",
+        "Shangra",
+        "Tartarus",
+        "Themis",
+        "Valhallan"
+    ],
+    "end": [
+        "Beta",
+        "Gamma",
+        "Delta",
+        "Zeta",
+        "Theta",
+        "Kappa",
+        "Lambda",
+        "Rho",
+        "Sigma",
+        "Tau",
+        "Psi",
+        "Omega"
+    ]
+}

@@ -1,0 +1,101 @@
+#lastRefresh {
+    margin-left: 0.5rem;
+}
+
+#usernameTopbar {
+    margin-right: 0;
+}
+
+#usernameButtonTopbar {
+    border-left: none;
+}
+
+#usernameDropdown > div {
+    margin-bottom: 0;
+}
+
+#username {
+    margin-right: 0;
+    width: 100%;
+}
+
+#usernameButton {
+    border-left: none;
+}
+
+/* settings */
+
+#autoRefresh,
+#twelveHour,
+#includeVodcasts {
+    height: 40px;
+    width: 40px;
+    margin-right: 0;
+}
+
+/* singleEntry */
+
+#channelName,
+#gameTitle {
+    text-align: center;
+    width: 100%;
+}
+
+#checkSingleStream,
+#checkGame {
+    width: 8.1rem;
+}
+
+/* new playlist */
+
+#gamePlaylistTitle {
+    text-align: center;
+    width: 100%;
+}
+
+#checkPlaylistGame {
+    width: 8.1rem;
+}
+
+#gamePlaylistResults {
+    margin-top: 1rem;
+}
+
+/* playlists */
+
+#twitch-playlists h4,
+#twitch-playlists h6 {
+    margin-bottom: 0;
+}
+#twitch-playlists h6 strong {
+    line-height: 35px;
+}
+#twitch-playlists div.playlist-row,
+#gamePlaylistResults div.playlist-row {
+    background: #F9F9F9;
+    margin-bottom: 1px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    margin-left: 0;
+    margin-right: 0;
+}
+#twitch-playlists i.fa-edit {
+    margin-top: 2px;
+}
+#twitch-playlists span {
+    line-height: 40px;
+}
+#twitch-playlists div.switch {
+    margin-bottom: 0;
+}
+#twitch-playlists label.switch-paddle {
+    margin-top: 4px;
+}
+#twitch-playlists div.button-group {
+    margin-bottom: 0;
+}
+
+#twitch-newPlaylist ul.tabs li.tabs-title a {
+    font-size: 1rem;
+    padding: 0.8rem;
+}

@@ -1,0 +1,75 @@
+{
+    "version": "2e",
+    "Background": [
+        "The local underclass or poorest natives",
+        "Common laborers or cube workers",
+        "Aspiring bourgeoise or upper class",
+        "The elite of this society",
+        "Minority or foreigners; reroll on 1d4",
+        "Offworlders or exotics; reroll on 1d4"
+    ],
+    "Role in Society": [
+        "Criminal, thug, thief, swindler",
+        "Menial, cleaner, retail worker, servant",
+        "Unskilled heavy labor, porter, construction",
+        "Skilled trade, electrician, mechanic, pilot",
+        "Idea worker, programmer, writer",
+        "Merchant, business owner, trader, banker",
+        "Official, bureaucrat, courtier, clerk",
+        "Military, soldier, enforcer, law officer"
+    ],
+    "Biggest Problem": [
+        "They have significant debt or money woes",
+        "A loved one is in trouble; reroll for it",
+        "Romantic failure with a desired person",
+        "Drug or behavioral addiction",
+        "Their superior dislikes or resents them",
+        "They have a persistent sickness",
+        "They hate their job or life situation",
+        "Someone dangerous is targeting them",
+        "They're pursuing a disastrous purpose",
+        "They have no problems worth mentioning"
+    ],
+    "Age": [
+        "Unusually young or old for their role",
+        "Young adult",
+        "Mature prime",
+        "Middle-aged or elderly"
+    ],
+    "Greatest Desire": [
+        "A particular romantic partner",
+        "Money for them or a loved one",
+        "A promotion in their job",
+        "Answers about a past trauma",
+        "Revenge on an enemy",
+        "To help a beleaguered friend",
+        "An entirely different job",
+        "Protection from an enemy",
+        "To leave their current life",
+        "Fame and glory",
+        "Power over those around them",
+        "Everything they want from life"
+    ],
+    "Obvious Trait": [
+        "Ambition",
+        "Avarice",
+        "Bitterness",
+        "Courage",
+        "Cowardice",
+        "Curiosity",
+        "Deceitfulness",
+        "Determination",
+        "Devotion to a cause",
+        "Filiality",
+        "Hatred",
+        "Honesty",
+        "Hopefulness",
+        "Love of a person",
+        "Nihilism",
+        "Paternalim",
+        "Pessimism",
+        "Protectiveness",
+        "Resentment",
+        "Shame"
+    ]
+}
