@@ -1,0 +1,6115 @@
+[
+  {
+    "url": "#dndRef-page/aarakocra",
+    "name": "Aarakocra",
+    "tags": [
+      "Aarakocra Traits"
+    ],
+    "attributes": {
+      "Category": "Races",
+      "Source": "Elemental Evil Player's Companion"
+    }
+  },
+  {
+    "url": "#dndRef-page/ability scores",
+    "name": "Ability Scores",
+    "tags": [
+      "Ability Scores and Modifiers",
+      {
+        "text": "Ability Scores and Modifiers",
+        "type": "table"
+      },
+      "Advantage and Disadvantage",
+      "Proficiency Bonus",
+      "Ability Checks",
+      {
+        "text": "Typical Difficulty Classes",
+        "type": "table"
+      },
+      "Contests",
+      "Skills",
+      "Variant: Skills with Different Abilities",
+      "Passive Checks",
+      "Working Together",
+      "Group Checks",
+      "Using Each Ability",
+      "Strength",
+      "Strength Checks",
+      "Attack Rolls and Damage",
+      "Lifting and Carrying",
+      "Variant: Encumbrance",
+      "Dexterity",
+      "Dexterity Checks",
+      "Attack Rolls and Damage",
+      "Armor Class",
+      "Initiative",
+      "Hiding",
+      "Constitution",
+      "Constitution Checks",
+      "Hit Points",
+      "Intelligence",
+      "Intelligence Checks",
+      "Spellcasting Ability",
+      "Wisdom",
+      "Wisdom Checks",
+      "Spellcasting Ability",
+      "Charisma",
+      "Charisma Checks",
+      "Spellcasting Ability",
+      "Saving Throws"
+    ],
+    "attributes": {
+      "Category": "Rules",
+      "Source": "SRD 5.0"
+    }
+  },
+  {
+    "url": "#dndRef-page/acolyte",
+    "name": "Acolyte",
+    "tags": [
+      "Feature: Shelter of the Faithful",
+      "Suggested Characteristics"
+    ],
+    "attributes": {
+      "Category": "Backgrounds",
+      "Source": "SRD 5.0"
+    }
+  },
+  {
+    "url": "#dndRef-page/adventuring gear",
+    "name": "Adventuring Gear",
+    "tags": [
+      {
+        "text": "Adventuring Gear",
+        "type": "table"
+      },
+      "Equipment Packs",
+      {
+        "text": "Container Capacities",
+        "type": "table"
+      }
+    ],
+    "attributes": {
+      "Category": "Rules",
+      "Based On": "Equipment",
+      "Source": "SRD 5.0"
+    }
+  },
+  {
+    "url": "#dndRef-page/armor",
+    "name": "Armor",
+    "tags": [
+      "Light Armor",
+      "Medium Armor",
+      "Heavy Armor",
+      {
+        "text": "Armor",
+        "type": "table"
+      },
+      "Getting Into and Out of Armor",
+      {
+        "text": "Donning and Doffing Armor",
+        "type": "table"
+      }
+    ],
+    "attributes": {
+      "Category": "Rules",
+      "Based On": "Equipment",
+      "Source": "SRD 5.0"
+    }
+  },
+  {
+    "url": "#dndRef-page/backgrounds",
+    "name": "Backgrounds",
+    "tags": [
+      "Proficiencies",
+      "Languages",
+      "Equipment",
+      "Suggested Characteristics",
+      "Customizing a Background"
+    ],
+    "attributes": {
+      "Category": "Backgrounds",
+      "Source": "SRD 5.0"
+    }
+  },
+  {
+    "url": "#dndRef-page/barbarian",
+    "name": "Barbarian",
+    "tags": [
+      "Hit Points",
+      "Proficiencies",
+      "Equipment",
+      {
+        "text": "Table: The Barbarian",
+        "type": "table"
+      },
+      "Rage",
+      "Unarmored Defense",
+      "Danger Sense",
+      "Reckless Attack",
+      "Primal Path",
+      "Ability Score Improvement",
+      "Extra Attack",
+      "Fast Movement",
+      "Feral Instinct",
+      "Brutal Critical",
+      "Relentless Rage",
+      "Persistent Rage",
+      "Indomitable Might",
+      "Primal Champion",
+      "Primal Paths",
+      "Path of the Berserker",
+      "Frenzy",
+      "Mindless Rage",
+      "Intimidating Presence",
+      "Retaliation"
+    ],
+    "attributes": {
+      "Hit Dice": "d12",
+      "Saving Throws": "Strength, Constitution",
+      "Category": "Classes",
+      "Source": "SRD 5.0"
+    }
+  },
+  {
+    "url": "#dndRef-page/bard",
+    "name": "Bard",
+    "tags": [
+      "Hit Points",
+      "Starting Proficiencies",
+      "Starting Equipment",
+      {
+        "text": "Table: The Bard",
+        "type": "table"
+      },
+      "Bardic Inspiration",
+      "Spellcasting",
+      "Jack of All Trades",
+      "Song of Rest",
+      "Bard College",
+      "Expertise",
+      "Ability Score Improvement",
+      "Font of Inspiration",
+      "Countercharm",
+      "Magical Secrets",
+      "Superior Inspiration",
+      "College of Lore",
+      "Bonus Proficiencies",
+      "Cutting Words",
+      "Additional Magical Secrets",
+      "Peerless Skill"
+    ],
+    "attributes": {
+      "Hit Dice": "d8",
+      "Saving Throws": "Dexterity, Charisma",
+      "Category": "Classes",
+      "Source": "SRD 5.0"
+    }
+  },
+  {
+    "url": "#dndRef-page/character advancement",
+    "name": "Character Advancement",
+    "tags": [
+      "Beyond 1st Level",
+      {
+        "text": "Character Advancement",
+        "type": "table"
+      },
+      "Multiclassing",
+      "Prerequisites",
+      {
+        "text": "Multiclassing Prerequisites",
+        "type": "table"
+      },
+      "Experience Points",
+      "Hit Points and Hit Dice",
+      "Proficiency Bonus",
+      "Proficiencies",
+      {
+        "text": "Multiclassing Proficiencies",
+        "type": "table"
+      },
+      "Class Features",
+      "Channel Divinity",
+      "Extra Attack",
+      "Unarmored Defense",
+      "Spellcasting",
+      {
+        "text": "Multiclass Spellcaster: Spell Slots per Spell Level",
+        "type": "table"
+      },
+      "Alignment",
+      "Alignment in the Multiverse",
+      "Languages",
+      {
+        "text": "Table: Standard Languages",
+        "type": "table"
+      },
+      {
+        "text": "Exotic Languages",
+        "type": "table"
+      },
+      "Inspiration",
+      "Gaining Inspiration",
+      "Using Inspiration"
+    ],
+    "attributes": {
+      "Category": "Rules",
+      "Source": "SRD 5.0"
+    }
+  },
+  {
+    "url": "#dndRef-page/cleric",
+    "name": "Cleric",
+    "tags": [
+      "Hit Points",
+      "Starting Proficiencies",
+      "Starting Equipment",
+      {
+        "text": "Table: The Cleric",
+        "type": "table"
+      },
+      "Spellcasting",
+      "Divine Domain",
+      "Channel Divinity",
+      "Channel Divinity: Turn Undead",
+      "Ability Score Improvement",
+      "Destroy Undead",
+      "Divine Intervention",
+      "Life Domain",
+      {
+        "text": "Table: Life Domain Spells",
+        "type": "table"
+      },
+      "Bonus Proficiency",
+      "Disciple of Life",
+      "Channel Divinity: Preserve Life",
+      "Blessed Healer",
+      "Divine Strike",
+      "Supreme Healing"
+    ],
+    "attributes": {
+      "Hit Dice": "d8",
+      "Saving Throws": "Wisdom, Charisma",
+      "Category": "Classes",
+      "Source": "SRD 5.0"
+    }
+  },
+  {
+    "url": "#dndRef-page/combat",
+    "name": "Combat",
+    "tags": [
+      "The Order of Combat",
+      "Combat Step by Step",
+      "Surprise",
+      "Initiative",
+      "Your Turn",
+      "Reactions",
+      "Movement and Position",
+      "Breaking Up Your Move",
+      "Moving between Attacks",
+      "Using Different Speeds",
+      "Difficult Terrain",
+      "Being Prone",
+      "Interacting with Objects Around You",
+      "Moving Around Other Creatures",
+      "Flying Movement",
+      "Creature Size",
+      "Squeezing into a Smaller Space",
+      "Actions in Combat",
+      "Attack",
+      "Cast a Spell",
+      "Dash",
+      "Disengage",
+      "Dodge",
+      "Help",
+      "Hide",
+      "Ready",
+      "Search",
+      "Use an Object",
+      "Making an Attack",
+      "Attack Rolls",
+      "Modifiers to the Roll",
+      "Rolling 1 or 20",
+      "Unseen Attackers and Targets",
+      "Ranged Attacks",
+      "Range",
+      "Ranged Attacks in Close Combat",
+      "Melee Attacks",
+      "Opportunity Attacks",
+      "Two-Weapon Fighting",
+      "Grappling",
+      "Contests in Combat",
+      "Shoving a Creature",
+      "Cover",
+      "Damage and Healing",
+      "Hit Points",
+      "Damage Rolls",
+      "Critical Hits",
+      "Damage Types",
+      "Damage Resistance and Vulnerability",
+      "Healing",
+      "Dropping to 0 Hit Points",
+      "Instant Death",
+      "Falling Unconscious",
+      "Death Saving Throws",
+      "Stabilizing a Creature",
+      "Monsters and Death",
+      "Knocking a Creature Out",
+      "Temporary Hit Points",
+      "Mounted Combat",
+      "Mounting and Dismounting",
+      "Controlling a Mount",
+      "Underwater Combat"
+    ],
+    "attributes": {
+      "Category": "Rules",
+      "Source": "SRD 5.0"
+    }
+  },
+  {
+    "url": "#dndRef-page/conditions",
+    "name": "Conditions",
+    "tags": [
+      "Blinded",
+      "Charmed",
+      "Deafened",
+      "Fatigued",
+      "Frightened",
+      "Grappled",
+      "Incapacitated",
+      "Invisible",
+      "Paralyzed",
+      "Petrified",
+      "Poisoned",
+      "Prone",
+      "Restrained",
+      "Stunned",
+      "Unconscious",
+      "Exhaustion",
+      {
+        "text": "Exhaustion Effects",
+        "type": "table"
+      }
+    ],
+    "attributes": {
+      "Category": "Rules",
+      "Source": "SRD 5.0"
+    }
+  },
+  {
+    "url": "#dndRef-page/criminal",
+    "name": "Criminal",
+    "tags": [
+      "Criminal Speciality",
+      "Feature: Criminal Contact",
+      "Suggested Characteristics",
+      "Variant Criminal: Spy"
+    ],
+    "attributes": {
+      "Category": "Backgrounds",
+      "Source": "Player's Basic Rules 0.2"
+    }
+  },
+  {
+    "url": "#dndRef-page/deep gnome",
+    "name": "Deep Gnome",
+    "tags": [
+      "Deep Gnome Traits",
+      "Optional Feat",
+      "Svirfneblin Magic"
+    ],
+    "attributes": {
+      "Category": "Races",
+      "Source": "Elemental Evil Player's Companion"
+    }
+  },
+  {
+    "url": "#dndRef-page/dragonborn",
+    "name": "Dragonborn",
+    "tags": [
+      "Dragonborn Traits",
+      {
+        "text": "Draconic Ancestry",
+        "type": "table"
+      }
+    ],
+    "attributes": {
+      "Category": "Races",
+      "Source": "SRD 5.0"
+    }
+  },
+  {
+    "url": "#dndRef-page/druid",
+    "name": "Druid",
+    "tags": [
+      "Hit Points",
+      "Starting Proficiencies",
+      "Starting Equipment",
+      {
+        "text": "Table: The Druid",
+        "type": "table"
+      },
+      "Druidic",
+      "Spellcasting",
+      "Wild Shape",
+      {
+        "text": "Table: Beast Shapes",
+        "type": "table"
+      },
+      "Druid Circle",
+      "Ability Score Improvement",
+      "Timeless Body",
+      "Beast Spells",
+      "Archdruid",
+      "Circle of the Land",
+      "Bonus Cantrip",
+      "Natural Recovery",
+      "Circle Spells",
+      {
+        "text": "Table: Arctic",
+        "type": "table"
+      },
+      {
+        "text": "Table: Coast",
+        "type": "table"
+      },
+      {
+        "text": "Table: Desert",
+        "type": "table"
+      },
+      {
+        "text": "Table: Forest",
+        "type": "table"
+      },
+      {
+        "text": "Table: Grassland",
+        "type": "table"
+      },
+      {
+        "text": "Table: Mountain",
+        "type": "table"
+      },
+      {
+        "text": "Table: Swamp",
+        "type": "table"
+      },
+      "Land's Stride",
+      "Nature's Ward",
+      "Nature's Sanctuary",
+      "Sacred Plants and Wood",
+      "Druids and the Gods"
+    ],
+    "attributes": {
+      "Hit Dice": "d8",
+      "Saving Throws": "Intelligence, Wisdom",
+      "Category": "Classes",
+      "Source": "SRD 5.0"
+    }
+  },
+  {
+    "url": "#dndRef-page/dwarf",
+    "name": "Dwarf",
+    "tags": [
+      "Dwarf Traits",
+      "Subraces",
+      "Hill Dwarf",
+      "Mountain Dwarf"
+    ],
+    "attributes": {
+      "Category": "Races",
+      "Source": "Player's Basic Rules 0.2"
+    }
+  },
+  {
+    "url": "#dndRef-page/elf",
+    "name": "Elf",
+    "tags": [
+      "Elf Traits",
+      "Subraces",
+      "High Elf",
+      "Wood Elf"
+    ],
+    "attributes": {
+      "Category": "Races",
+      "Source": "Player's Basic Rules 0.2"
+    }
+  },
+  {
+    "url": "#dndRef-page/feats",
+    "name": "Feats",
+    "tags": [
+      "Grappler"
+    ],
+    "attributes": {
+      "Category": "Feats",
+      "Source": "SRD 5.0"
+    }
+  },
+  {
+    "url": "#dndRef-page/fighter",
+    "name": "Fighter",
+    "tags": [
+      "Hit Points",
+      "Starting Proficiencies",
+      "Starting Equipment",
+      {
+        "text": "Table: The Fighter",
+        "type": "table"
+      },
+      "Fighting Style",
+      "Archery",
+      "Defense",
+      "Dueling",
+      "Great Weapon Fighting",
+      "Protection",
+      "Two-Weapon Fighting",
+      "Second Wind",
+      "Action Surge",
+      "Martial Archetype",
+      "Ability Score Improvement",
+      "Extra Attack",
+      "Indomitable",
+      "Martial Archetypes",
+      "Champion",
+      "Improved Critical",
+      "Remarkable Athlete",
+      "Additional Fighting Style",
+      "Superior Critical",
+      "Survivor"
+    ],
+    "attributes": {
+      "Hit Dice": "d10",
+      "Saving Throws": "Strength, Constitution",
+      "Category": "Classes",
+      "Source": "SRD 5.0"
+    }
+  },
+  {
+    "url": "#dndRef-page/folk hero",
+    "name": "Folk Hero",
+    "tags": [
+      "Defining Event",
+      "Feature: Rustic Hospitality",
+      "Suggested Characteristics"
+    ],
+    "attributes": {
+      "Category": "Backgrounds",
+      "Source": "Player's Basic Rules 0.2"
+    }
+  },
+  {
+    "url": "#dndRef-page/genasi",
+    "name": "Genasi",
+    "tags": [
+      "Genasi Traits",
+      "Subraces",
+      "Air Genasi",
+      "Earth Genasi",
+      "Fire Genasi",
+      "Water Genasi"
+    ],
+    "attributes": {
+      "Category": "Races",
+      "Source": "Elemental Evil Player's Companion"
+    }
+  },
+  {
+    "url": "#dndRef-page/gnome",
+    "name": "Gnome",
+    "tags": [
+      "Gnome Traits",
+      "Subraces",
+      "Rock Gnome"
+    ],
+    "attributes": {
+      "Category": "Races",
+      "Source": "Player's Basic Rules 0.2"
+    }
+  },
+  {
+    "url": "#dndRef-page/goliath",
+    "name": "Goliath",
+    "tags": [
+      "Goliath Traits"
+    ],
+    "attributes": {
+      "Category": "Races",
+      "Source": "Elemental Evil Player's Companion"
+    }
+  },
+  {
+    "url": "#dndRef-page/half-elf",
+    "name": "Half-Elf",
+    "tags": [
+      "Half-Elf Traits"
+    ],
+    "attributes": {
+      "Category": "Races"
+    }
+  },
+  {
+    "url": "#dndRef-page/half-orc",
+    "name": "Half-Orc",
+    "tags": [
+      "Half-Orc Traits"
+    ],
+    "attributes": {
+      "Category": "Races"
+    }
+  },
+  {
+    "url": "#dndRef-page/halfling",
+    "name": "Halfling",
+    "tags": [
+      "Halfling Traits",
+      "Subraces",
+      "Lightfoot",
+      "Stout"
+    ],
+    "attributes": {
+      "Category": "Races",
+      "Source": "Player's Basic Rules 0.2"
+    }
+  },
+  {
+    "url": "#dndRef-page/human",
+    "name": "Human",
+    "tags": [
+      "Human Traits",
+      "Variant Human"
+    ],
+    "attributes": {
+      "Category": "Races",
+      "Source": "Player's Basic Rules 0.2"
+    }
+  },
+  {
+    "url": "#dndRef-page/monk",
+    "name": "Monk",
+    "tags": [
+      "Hit Points",
+      "Starting Proficiencies",
+      "Starting Equipment",
+      {
+        "text": "Table: The Monk",
+        "type": "table"
+      },
+      "Unarmored Defense",
+      "Martial Arts",
+      "Ki",
+      "Flurry of Blows",
+      "Patient Defense",
+      "Step of the Wind",
+      "Unarmored Movement",
+      "Monastic Tradition",
+      "Deflect Missiles",
+      "Ability Score Improvement",
+      "Slow Fall",
+      "Extra Attack",
+      "Stunning Strike",
+      "Ki-Empowered Strikes",
+      "Stillness of Mind",
+      "Evasion",
+      "Purity of Body",
+      "Tongue of the Sun and Moon",
+      "Diamond Soul",
+      "Timeless Body",
+      "Empty Body",
+      "Perfect Soul",
+      "Monastic Traditions",
+      "Way of the Open Hand",
+      "Open Hand Technique",
+      "Wholeness of Body",
+      "Tranquility",
+      "Quivering Palm"
+    ],
+    "attributes": {
+      "Hit Dice": "d8",
+      "Saving Throws": "Strength, Dexterity",
+      "Category": "Classes",
+      "Source": "SRD 5.0"
+    }
+  },
+  {
+    "url": "#dndRef-page/mounts and vehicles",
+    "name": "Mounts and Vehicles",
+    "tags": [
+      {
+        "text": "Mounts and Other Animals",
+        "type": "table"
+      },
+      {
+        "text": "Tack, Harness, and Drawn Vehicles",
+        "type": "table"
+      },
+      {
+        "text": "Waterborne Vehicles",
+        "type": "table"
+      }
+    ],
+    "attributes": {
+      "Category": "Rules",
+      "Based On": "Equipment",
+      "Source": "SRD 5.0"
+    }
+  },
+  {
+    "url": "#dndRef-page/movement",
+    "name": "Movement",
+    "tags": [
+      "Speed",
+      "Travel Pace",
+      {
+        "text": "Travel Pace and Effects",
+        "type": "table"
+      },
+      "Difficult Terrain",
+      "Special Types of Movement",
+      "Climbing, Swimming, and Crawling",
+      "Jumping"
+    ],
+    "attributes": {
+      "Category": "Rules",
+      "Source": "SRD 5.0"
+    }
+  },
+  {
+    "url": "#dndRef-page/noble",
+    "name": "Noble",
+    "tags": [
+      "Feature: Position of Privilege",
+      "Suggested Characteristics"
+    ],
+    "attributes": {
+      "Category": "Backgrounds",
+      "Source": "Player's Basic Rules 0.2"
+    }
+  },
+  {
+    "url": "#dndRef-page/objects",
+    "name": "Objects",
+    "tags": [
+      "Statistics for Objects",
+      {
+        "text": "Object Armor Class",
+        "type": "table"
+      },
+      {
+        "text": "Object Hit Points",
+        "type": "table"
+      }
+    ],
+    "attributes": {
+      "Category": "Rules",
+      "Based On": "Equipment",
+      "Source": "SRD 5.0"
+    }
+  },
+  {
+    "url": "#dndRef-page/paladin",
+    "name": "Paladin",
+    "tags": [
+      "Hit Points",
+      "Starting Proficiencies",
+      "Starting Equipment",
+      {
+        "text": "Table: The Paladin",
+        "type": "table"
+      },
+      "Divine Sense",
+      "Lay on Hands",
+      "Fighting Style",
+      "Defense",
+      "Dueling",
+      "Great Weapon Fighting",
+      "Protection",
+      "Divine Smite",
+      "Spellcasting",
+      "Divine Health",
+      "Sacred Oath",
+      "Oath Spells",
+      "Channel Divinity",
+      "Ability Score Improvement",
+      "Extra Attack",
+      "Aura of Protection",
+      "Aura of Courage",
+      "Improved Divine Smite",
+      "Cleansing Touch",
+      "Sacred Oaths",
+      "Oath of Devotion",
+      "Tenets of Devotion",
+      "Oath Spells",
+      {
+        "text": "Table: Oath of Devotion Spells",
+        "type": "table"
+      },
+      "Channel Divinity",
+      "Aura of Devotion",
+      "Purity of Spirit",
+      "Holy Nimbus",
+      "Breaking Your Oath"
+    ],
+    "attributes": {
+      "Hit Dice": "d10",
+      "Saving Throws": "Wisdom, Charisma",
+      "Category": "Classes",
+      "Source": "SRD 5.0"
+    }
+  },
+  {
+    "url": "#dndRef-page/poisons",
+    "name": "Poisons",
+    "tags": [
+      {
+        "text": "Table: Poisons",
+        "type": "table"
+      },
+      "Sample Poisons"
+    ],
+    "attributes": {
+      "Category": "Rules",
+      "Source": "SRD 5.0"
+    }
+  },
+  {
+    "url": "#dndRef-page/ranger",
+    "name": "Ranger",
+    "tags": [
+      "Hit Points",
+      "Starting Proficiencies",
+      "Starting Equipment",
+      {
+        "text": "Table: The Ranger",
+        "type": "table"
+      },
+      "Favored Enemy",
+      "Natural Explorer",
+      "Spellcasting",
+      "Fighting Style",
+      "Archery",
+      "Defense",
+      "Dueling",
+      "Two-Weapon Fighting",
+      "Ranger Archetype",
+      "Primeval Awareness",
+      "Ability Score Improvement",
+      "Extra Attack",
+      "Land's Stride",
+      "Hide in Plain Sight",
+      "Vanish",
+      "Feral Senses",
+      "Foe Slayer",
+      "Ranger Archetypes",
+      "Hunter",
+      "Hunter's Prey",
+      "Defensive Tactics",
+      "Multiattack",
+      "Superior Hunter's Defense"
+    ],
+    "attributes": {
+      "Hit Dice": "d10",
+      "Saving Throws": "Strength, Dexterity",
+      "Category": "Classes",
+      "Source": "SRD 5.0"
+    }
+  },
+  {
+    "url": "#dndRef-page/resting",
+    "name": "Resting",
+    "tags": [
+      "Short Rest",
+      "Long Rest",
+      "Between Adventures",
+      "Lifestyle Expenses",
+      "Downtime Activities",
+      "Crafting",
+      "Practicing a Profession",
+      "Recuperating",
+      "Researching",
+      "Training"
+    ],
+    "attributes": {
+      "Category": "Rules",
+      "Source": "SRD 5.0"
+    }
+  },
+  {
+    "url": "#dndRef-page/rogue",
+    "name": "Rogue",
+    "tags": [
+      "Hit Points",
+      "Starting Proficiencies",
+      "Starting Equipment",
+      {
+        "text": "Table: The Rogue",
+        "type": "table"
+      },
+      "Expertise",
+      "Sneak Attack",
+      "Thieves' Cant",
+      "Cunning Action",
+      "Roguish Archetype",
+      "Ability Score Improvement",
+      "Uncanny Dodge",
+      "Evasion",
+      "Reliable Talent",
+      "Blindsense",
+      "Slippery Mind",
+      "Elusive",
+      "Stroke of Luck",
+      "Roguish Archetypes",
+      "Thief",
+      "Fast Hands",
+      "Second-Story Work",
+      "Supreme Sneak",
+      "Use Magic Device",
+      "Thief's Reflexes"
+    ],
+    "attributes": {
+      "Hit Dice": "d8",
+      "Saving Throws": "Dexterity, Intelligence",
+      "Category": "Classes",
+      "Source": "SRD 5.0"
+    }
+  },
+  {
+    "url": "#dndRef-page/sage",
+    "name": "Sage",
+    "tags": [
+      "Speciality",
+      "Feature: Researcher",
+      "Suggested Characteristics"
+    ],
+    "attributes": {
+      "Category": "Backgrounds",
+      "Source": "Player's Basic Rules 0.2"
+    }
+  },
+  {
+    "url": "#dndRef-page/sentient magic items",
+    "name": "Sentient Magic Items",
+    "tags": [
+      "Creating Sentient Magic Items",
+      "Abilities",
+      "Communication",
+      "Senses",
+      "Alignment",
+      "Special Purpose",
+      "Conflict"
+    ],
+    "attributes": {
+      "Category": "Rules",
+      "Based On": "Equipment",
+      "Source": "SRD 5.0"
+    }
+  },
+  {
+    "url": "#dndRef-page/soldier",
+    "name": "Soldier",
+    "tags": [
+      "Speciality",
+      "Feature: Military Rank",
+      "Suggested Characteristics"
+    ],
+    "attributes": {
+      "Category": "Backgrounds",
+      "Source": "Player's Basic Rules 0.2"
+    }
+  },
+  {
+    "url": "#dndRef-page/sorcerer",
+    "name": "Sorcerer",
+    "tags": [
+      "Hit Points",
+      "Starting Proficiencies",
+      "Starting Equipment",
+      {
+        "text": "Table: The Sorcerer",
+        "type": "table"
+      },
+      "Spellcasting",
+      "Sorcerous Origin",
+      "Font of Magic",
+      "Sorcery Points",
+      "Flexible Casting",
+      {
+        "text": "Table: Creating Spell Slots",
+        "type": "table"
+      },
+      "Metamagic",
+      "Careful Spell",
+      "Distant Spell",
+      "Empowered Spell",
+      "Extended Spell",
+      "Heightened Spell",
+      "Quickened Spell",
+      "Subtle Spell",
+      "Twinned Spell",
+      "Ability Score Improvement",
+      "Sorcerous Restoration",
+      "Sorcerous Origins",
+      "Draconic Bloodline",
+      "Dragon Ancestor",
+      {
+        "text": "Table: Draconic Ancestry",
+        "type": "table"
+      },
+      "Draconic Resilience",
+      "Elemental Affinity",
+      "Dragon Wings",
+      "Draconic Presence"
+    ],
+    "attributes": {
+      "Hit Dice": "d6",
+      "Saving Throws": "Constitution, Charisma",
+      "Category": "Classes",
+      "Source": "SRD 5.0"
+    }
+  },
+  {
+    "url": "#dndRef-page/the environment",
+    "name": "The Environment",
+    "tags": [
+      "Falling",
+      "Suffocating",
+      "Vision and Light",
+      "Blindsight",
+      "Darkvision",
+      "Truesight",
+      "Food and Water",
+      "Food",
+      "Water",
+      "Interacting with Objects"
+    ],
+    "attributes": {
+      "Category": "Rules",
+      "Based On": "Setting",
+      "Source": "SRD 5.0"
+    }
+  },
+  {
+    "url": "#dndRef-page/tiefling",
+    "name": "Tiefling",
+    "tags": [
+      "Tiefling Traits"
+    ],
+    "attributes": {
+      "Category": "Races"
+    }
+  },
+  {
+    "url": "#dndRef-page/tools",
+    "name": "Tools",
+    "tags": [
+      {
+        "text": "Tools",
+        "type": "table"
+      }
+    ],
+    "attributes": {
+      "Category": "Rules",
+      "Based On": "Equipment",
+      "Source": "SRD 5.0"
+    }
+  },
+  {
+    "url": "#dndRef-page/trade goods",
+    "name": "Trade Goods",
+    "tags": [
+      {
+        "text": "Trade Goods",
+        "type": "table"
+      }
+    ],
+    "attributes": {
+      "Category": "Rules",
+      "Source": "SRD 5.0"
+    }
+  },
+  {
+    "url": "#dndRef-page/traps",
+    "name": "Traps",
+    "tags": [
+      "Traps in Play",
+      "Triggering a Trap",
+      "Detecting and Disabling a Trap",
+      "Trap Effects",
+      {
+        "text": "Trap Save DCs and Attack Bonuses",
+        "type": "table"
+      },
+      {
+        "text": "Damage Severity by Level",
+        "type": "table"
+      },
+      "Complex Traps",
+      "Sample Traps",
+      "Collapsing Roof",
+      "Falling Net",
+      "Fire-Breathing Statue",
+      "Pits",
+      "Poison Darts",
+      "Poison Needle",
+      "Rolling Sphere",
+      "Sphere of Annihilation"
+    ],
+    "attributes": {
+      "Category": "Rules",
+      "Source": "SRD 5.0"
+    }
+  },
+  {
+    "url": "#dndRef-page/treasure",
+    "name": "Treasure",
+    "tags": [
+      {
+        "text": "Standard Exchange Rates",
+        "type": "table"
+      },
+      "Selling Treasure"
+    ],
+    "attributes": {
+      "Category": "Rules",
+      "Based On": "Equipment",
+      "Source": "SRD 5.0"
+    }
+  },
+  {
+    "url": "#dndRef-page/warlock",
+    "name": "Warlock",
+    "tags": [
+      "Hit Points",
+      "Starting Proficiencies",
+      "Starting Equipment",
+      {
+        "text": "Table: The Warlock",
+        "type": "table"
+      },
+      "Otherworldly Patron",
+      "Pact Magic",
+      "Eldritch Invocations",
+      "Pact Boon",
+      "Pact of the Chain",
+      "Pact of the Blade",
+      "Pact of the Tome",
+      "Ability Score Improvement",
+      "Mystic Arcanum",
+      "Eldritch Master",
+      "Eldritch Invocations",
+      "Agonizing Blast",
+      "Armor of Shadows",
+      "Ascendant Step",
+      "Beast Speech",
+      "Beguiling Influence",
+      "Bewitching Whispers",
+      "Book of Ancient Secrets",
+      "Chains of Carceri",
+      "Devil's Sight",
+      "Dreadful Word",
+      "Eldritch Sight",
+      "Eldritch Spear",
+      "Eyes of the Rune Keeper",
+      "Fiendish Vigor",
+      "Gaze of Two Minds",
+      "Lifedrinker",
+      "Mask of Many Faces",
+      "Master of Myriad Forms",
+      "Minions of Chaos",
+      "Mire the Mind",
+      "Misty Visions",
+      "One with Shadows",
+      "Otherworldly Leap",
+      "Repelling Blast",
+      "Sculptor of Flesh",
+      "Sign of Ill Omen",
+      "Thief of Five Fates",
+      "Thirsting Blade",
+      "Visions of Distant Realms",
+      "Voice of the Chain Master",
+      "Whispers of the Grave",
+      "Witch Sight",
+      "Otherworldly Patrons",
+      "The Fiend",
+      "Expanded Spell List",
+      {
+        "text": "Table: Fiend Expanded Spells",
+        "type": "table"
+      },
+      "Dark One's Blessing",
+      "Dark One's Own Luck",
+      "Fiendish Resilience",
+      "Hurl Through Hell",
+      "Your Pact Boon"
+    ],
+    "attributes": {
+      "Hit Dice": "d8",
+      "Saving Throws": "Wisdom, Charisma",
+      "Category": "Classes",
+      "Source": "SRD 5.0"
+    }
+  },
+  {
+    "url": "#dndRef-page/weapons",
+    "name": "Weapons",
+    "tags": [
+      "Weapon Proficiency",
+      "Weapon Properties",
+      "Ammunition",
+      "Finesse",
+      "Heavy",
+      "Light",
+      "Loading",
+      "Range",
+      "Reach",
+      "Special",
+      "Thrown",
+      "Two-Handed",
+      "Versatile",
+      "Improvised Weapons",
+      "Silvered Weapons",
+      "Special Weapons",
+      {
+        "text": "Weapons",
+        "type": "table"
+      }
+    ],
+    "attributes": {
+      "Category": "Rules",
+      "Based On": "Equipment",
+      "Source": "SRD 5.0"
+    }
+  },
+  {
+    "url": "#dndRef-page/wizard",
+    "name": "Wizard",
+    "tags": [
+      "Hit Points",
+      "Starting Proficiencies",
+      "Starting Equipment",
+      {
+        "text": "Table: The Wizard",
+        "type": "table"
+      },
+      "Spellcasting",
+      "Arcane Recovery",
+      "Arcane Tradition",
+      "Ability Score Improvement",
+      "Spell Mastery",
+      "Signature Spells",
+      "School of Evocation",
+      "Evocation Savant",
+      "Sculpt Spells",
+      "Potent Cantrip",
+      "Empowered Evocation",
+      "Overchannel",
+      "Your Spellbook"
+    ],
+    "attributes": {
+      "Hit Dice": "d6",
+      "Saving Throws": "Intelligence, Wisdom",
+      "Category": "Classes",
+      "Source": "SRD 5.0"
+    }
+  },
+  {
+    "url": "#dndRef-spellbook/all/any",
+    "name": "Spells",
+    "tags": [
+      {
+        "name": "Acid Arrow",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Acid Splash",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Aid",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Alarm",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Alter Self",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Animal Friendship",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Animal Messenger",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Animal Shapes",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Animate Dead",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Animate Objects",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Antilife Shell",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Antimagic Field",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Antipathy (Sympathy)",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Arcane Eye",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Arcane Hand",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Arcane Lock",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Arcane Sword",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Arcanist's Magic Aura",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Astral Projection",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Augury",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Awaken",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Bane",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Banishment",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Barkskin",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Beacon of Hope",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Bestow Curse",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Black Tentacles",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Blade Barrier",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Bless",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Blight",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Blindness Deafness",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Blink",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Blur",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Branding Smite",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.1"
+        }
+      },
+      {
+        "name": "Burning Hands",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Call Lightning",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Calm Emotions",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Chain Lightning",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Charm Person",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Chill Touch",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Circle of Death",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Clairvoyance",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Clone",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Cloudkill",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Color Spray",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Command",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Commune",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Commune with Nature",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Comprehend Languages",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Compulsion",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Cone of Cold",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Confusion",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Conjure Animals",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Conjure Celestial",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Conjure Elemental",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Conjure Fey",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Conjure Minor Elementals",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Conjure Woodland Beings",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Contact Other Plane",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Contagion",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Contingency",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Continual Flame",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Control Water",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Control Weather",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Counterspell",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Create Food and Water",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Create or Destroy Water",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Create Undead",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Creation",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Cure Wounds",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Dancing Lights",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Darkness",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Darkvision",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Daylight",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Death Ward",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Delayed Blast Fireball",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Demiplane",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Detect Evil and Good",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Detect Magic",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Detect Poison and Disease",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Detect Thoughts",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Dimension Door",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Disguise Self",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Disintegrate",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Dispel Evil and Good",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Dispel Magic",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Divination",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Divine Favor",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Divine Word",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Dominate Beast",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Dominate Monster",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Dominate Person",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Dream",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Druidcraft",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Earthquake",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Eldritch Blast",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Enhance Ability",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Enlarge Reduce",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Entangle",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Enthrall",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Etherealness",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Expeditious Retreat",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Eyebite",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Fabricate",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Faerie Fire",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Faithful Hound",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "False Life",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Fear",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Feather Fall",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Feeblemind",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Find Familiar",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Find Steed",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Find the Path",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Find Traps",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Finger of Death",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Fire Bolt",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Fire Shield",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Fire Storm",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Fireball",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Flame Blade",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Flame Strike",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Flaming Sphere",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Flesh to Stone",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Floating Disk",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Fly",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Fog Cloud",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Forbiddance",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Forcecage",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Foresight",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Freedom of Movement",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Freezing Sphere",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Gaseous Form",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Gate",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Geas",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Gentle Repose",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Giant Insect",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Glibness",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Globe of Invulnerability",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Glyph of Warding",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Goodberry",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.1"
+        }
+      },
+      {
+        "name": "Grease",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Greater Invisibility",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Greater Restoration",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Guardian of Faith",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.1"
+        }
+      },
+      {
+        "name": "Guards and Wards",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Guidance",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Guiding Bolt",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Gust of Wind",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Hallow",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Hallucinatory Terrain",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Harm",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Haste",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Heal",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Healing Word",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Heat Metal",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Hellish Rebuke",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.1"
+        }
+      },
+      {
+        "name": "Heroes' Feast",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Heroism",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Hideous Laughter",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Hold Monster",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Hold Person",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Holy Aura",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Hunter's Mark",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.1"
+        }
+      },
+      {
+        "name": "Hypnotic Pattern",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Ice Storm",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Identify",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Illusory Script",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Imprisonment",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Incendiary Cloud",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Inflict Wounds",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Insect Plague",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Instant Summons",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Invisibility",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Irresistible Dance",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Jump",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Knock",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Legend Lore",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Lesser Restoration",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Levitate",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Light",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Lightning Bolt",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Locate Animals or Plants",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Locate Creature",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Locate Object",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Longstrider",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Mage Armor",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Mage Hand",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Magic Circle",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Magic Jar",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Magic Missile",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Magic Mouth",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Magic Weapon",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Magnificent Mansion",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Major Image",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Mass Cure Wounds",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Mass Heal",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Mass Healing Word",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Mass Suggestion",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Maze",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Meld into Stone",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Mending",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Message",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Meteor Swarm",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Mind Blank",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Minor Illusion",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Mirage Arcane",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Mirror Image",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Mislead",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Misty Step",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Modify Memory",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Moonbeam",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Move Earth",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Nondetection",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Pass without Trace",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Passwall",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Phantasmal Killer",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Phantom Steed",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Planar Ally",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Planar Binding",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Plane Shift",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Plant Growth",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Poison Spray",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.1"
+        }
+      },
+      {
+        "name": "Polymorph",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Power Word Kill",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Power Word Stun",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Prayer of Healing",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Prestidigitation",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Prismatic Spray",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Prismatic Wall",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Private Sanctum",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Produce Flame",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Programmed Illusion",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Project Image",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Protection from Energy",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Protection from Evil and Good",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Protection from Poison",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Purify Food and Drink",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Raise Dead",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Ray of Enfeeblement",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Ray of Frost",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Regenerate",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Reincarnate",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Remove Curse",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Resilient Sphere",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Resistance",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Resurrection",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Reverse Gravity",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Revivify",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Rope Trick",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Sacred Flame",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Sanctuary",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Scorching Ray",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Scrying",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Secret Chest",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "See Invisibility",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Seeming",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Sending",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Sequester",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Shapechange",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Shatter",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Shield",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Shield of Faith",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Shillelagh",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Shocking Grasp",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Silence",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Silent Image",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Simulacrum",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Sleep",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Sleet Storm",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Slow",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Spare the Dying",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.1"
+        }
+      },
+      {
+        "name": "Speak with Animals",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Speak with Dead",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Speak with Plants",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Spider Climb",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Spike Growth",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Spirit Guardians",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Spiritual Weapon",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Stinking Cloud",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Stone Shape",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Stoneskin",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Storm of Vengeance",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Suggestion",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Sunbeam",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Sunburst",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Symbol",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Telekinesis",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Telepathic Bond",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Teleport",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Teleportation Circle",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Thaumaturgy",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Thunderwave",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Time Stop",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Tiny Hut",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Tongues",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Transport via Plants",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Tree Stride",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "True Polymorph",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "True Resurrection",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "True Seeing",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "True Strike",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Unseen Servant",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Vampiric Touch",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Vicious Mockery",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.1"
+        }
+      },
+      {
+        "name": "Wall of Fire",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Wall of Force",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Wall of Ice",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Wall of Stone",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Wall of Thorns",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Warding Bond",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Water Breathing",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Water Walk",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Web",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Weird",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Wind Walk",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Wind Wall",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Wish",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Word of Recall",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Zone of Truth",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Abi-Dalzim's Horrid Wilting",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "Elemental Evil Player's Companion"
+        }
+      },
+      {
+        "name": "Absorb Elements",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "Elemental Evil Player's Companion"
+        }
+      },
+      {
+        "name": "Aganazzar's Scorcher",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "Elemental Evil Player's Companion"
+        }
+      },
+      {
+        "name": "Beast Bond",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "Elemental Evil Player's Companion"
+        }
+      },
+      {
+        "name": "Bones of the Earth",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "Elemental Evil Player's Companion"
+        }
+      },
+      {
+        "name": "Catapult",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "Elemental Evil Player's Companion"
+        }
+      },
+      {
+        "name": "Create Bonfire",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "Elemental Evil Player's Companion"
+        }
+      },
+      {
+        "name": "Control Flames",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "Elemental Evil Player's Companion"
+        }
+      },
+      {
+        "name": "Control Winds",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "Elemental Evil Player's Companion"
+        }
+      },
+      {
+        "name": "Dust Devil",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "Elemental Evil Player's Companion"
+        }
+      },
+      {
+        "name": "Earthbind",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "Elemental Evil Player's Companion"
+        }
+      },
+      {
+        "name": "Earth Tremor",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "Elemental Evil Player's Companion"
+        }
+      },
+      {
+        "name": "Elemental Bane",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "Elemental Evil Player's Companion"
+        }
+      },
+      {
+        "name": "Erupting Earth",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "Elemental Evil Player's Companion"
+        }
+      },
+      {
+        "name": "Flame Arrows",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "Elemental Evil Player's Companion"
+        }
+      },
+      {
+        "name": "Frostbite",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "Elemental Evil Player's Companion"
+        }
+      },
+      {
+        "name": "Gust",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "Elemental Evil Player's Companion"
+        }
+      },
+      {
+        "name": "Ice Knife",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "Elemental Evil Player's Companion"
+        }
+      },
+      {
+        "name": "Immolation",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "Elemental Evil Player's Companion"
+        }
+      },
+      {
+        "name": "Investiture of Flame",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "Elemental Evil Player's Companion"
+        }
+      },
+      {
+        "name": "Investiture of Ice",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "Elemental Evil Player's Companion"
+        }
+      },
+      {
+        "name": "Investiture of Stone",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "Elemental Evil Player's Companion"
+        }
+      },
+      {
+        "name": "Investiture of Wind",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "Elemental Evil Player's Companion"
+        }
+      },
+      {
+        "name": "Maelstrom",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "Elemental Evil Player's Companion"
+        }
+      },
+      {
+        "name": "Magic Stone",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "Elemental Evil Player's Companion"
+        }
+      },
+      {
+        "name": "Maximilian's Earthen Grasp",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "Elemental Evil Player's Companion"
+        }
+      },
+      {
+        "name": "Melf's Minute Meteors",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "Elemental Evil Player's Companion"
+        }
+      },
+      {
+        "name": "Mold Earth",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "Elemental Evil Player's Companion"
+        }
+      },
+      {
+        "name": "Primordial Ward",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "Elemental Evil Player's Companion"
+        }
+      },
+      {
+        "name": "Pyrotechnics",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "Elemental Evil Player's Companion"
+        }
+      },
+      {
+        "name": "Shape Water",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "Elemental Evil Player's Companion"
+        }
+      },
+      {
+        "name": "Skywrite",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "Elemental Evil Player's Companion"
+        }
+      },
+      {
+        "name": "Snilloc's Snowball Swarm",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "Elemental Evil Player's Companion"
+        }
+      },
+      {
+        "name": "Storm Sphere",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "Elemental Evil Player's Companion"
+        }
+      },
+      {
+        "name": "Thunderclap",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "Elemental Evil Player's Companion"
+        }
+      },
+      {
+        "name": "Tidal Wave",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "Elemental Evil Player's Companion"
+        }
+      },
+      {
+        "name": "Transmute Rock",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "Elemental Evil Player's Companion"
+        }
+      },
+      {
+        "name": "Vitriolic Sphere",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "Elemental Evil Player's Companion"
+        }
+      },
+      {
+        "name": "Wall of Sand",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "Elemental Evil Player's Companion"
+        }
+      },
+      {
+        "name": "Wall of Water",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "Elemental Evil Player's Companion"
+        }
+      },
+      {
+        "name": "Warding Wind",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "Elemental Evil Player's Companion"
+        }
+      },
+      {
+        "name": "Watery Sphere",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "Elemental Evil Player's Companion"
+        }
+      },
+      {
+        "name": "Whirlwind",
+        "attributes": {
+          "Category": "Spells",
+          "Source": "Elemental Evil Player's Companion"
+        }
+      }
+    ]
+  },
+  {
+    "url": "#dndRef-bestiary",
+    "name": "Bestiary",
+    "tags": [
+      {
+        "name": "Aboleth",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Acolyte",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Adult Black Dragon",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Adult Blue Dragon",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Adult Brass Dragon",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Adult Bronze Dragon",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Adult Copper Dragon",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Adult Gold Dragon",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Adult Green Dragon",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Adult Red Dragon",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Adult Silver Dragon",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Adult White Dragon",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Air Elemental",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Ancient Black Dragon",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Ancient Blue Dragon",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Ancient Brass Dragon",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Ancient Bronze Dragon",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Ancient Copper Dragon",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Ancient Gold Dragon",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Ancient Green Dragon",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Ancient Red Dragon",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Ancient Silver Dragon",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Ancient White Dragon",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Androsphinx",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Animated Armor",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Ankheg",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Ape",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Archmage",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Assassin",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Awakened Shrub",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Awakened Tree",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Axe Beak",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Azer",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Baboon",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Badger",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Balor",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Bandit",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Bandit Captain",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Barbed Devil",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Basilisk",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Bat",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Bearded Devil",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Behir",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Berserker",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Black Bear",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Black Dragon Wyrmling",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Black Pudding",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Blink Dog",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Blood Hawk",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Blue Dragon Wyrmling",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Boar",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Bone Devil",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Brass Dragon Wyrmling",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Bronze Dragon Wyrmling",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Brown Bear",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Bugbear",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Bulette",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Camel",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Cat",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Centaur",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Chain Devil",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Chimera",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Chuul",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Clay Golem",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Cloaker",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Cloud Giant",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Cockatrice",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Commoner",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Constrictor Snake",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Copper Dragon Wyrmling",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Couatl",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Crab",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Crocodile",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Cult Fanatic",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Cultist",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Darkmantle",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Death Dog",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Deep Gnome (Svirfneblin)",
+        "attributes": {
+          "Category": "Monsters"
+        }
+      },
+      {
+        "name": "Deer",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Deva",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Dire Wolf",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Diseased Giant Rat",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Djinni",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Doppelganger",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Draft Horse",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Dragon Turtle",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Dretch",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Drider",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Drow",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Druid",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Dryad",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Duergar",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Dust Mephit",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Eagle",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Earth Elemental",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Efreeti",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Elephant",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Elk",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Erinyes",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Ettercap",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Ettin",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Fire Elemental",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Fire Giant",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Flesh Golem",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Flying Snake",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Flying Sword",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Frog",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Frost Giant",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Gargoyle",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Gelatinous Cube",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Ghast",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Ghost",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Ghoul",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Giant Ape",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Giant Badger",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Giant Bat",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Giant Boar",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Giant Centipede",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Giant Constrictor Snake",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Giant Crab",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Giant Crocodile",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Giant Eagle",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Giant Elk",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Giant Fire Beetle",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Giant Frog",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Giant Goat",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Giant Hyena",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Giant Lizard",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Giant Octopus",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Giant Owl",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Giant Poisonous Snake",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Giant Rat",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Giant Scorpion",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Giant Sea Horse",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Giant Shark",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Giant Spider",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Giant Toad",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Giant Vulture",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Giant Wasp",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Giant Weasel",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Giant Wolf Spider",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Gibbering Mouther",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Glabrezu",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Gladiator",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Gnoll",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Goat",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Goblin",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Gold Dragon Wyrmling",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Gorgon",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Gray Ooze",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Green Dragon Wyrmling",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Green Hag",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Grick",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Griffon",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Grimlock",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Guard",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Guardian Naga",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Gynosphinx",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Half-Red Dragon Veteran",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Harpy",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Hawk",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Hell Hound",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Hezrou",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Hill Giant",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Hippogriff",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Hobgoblin",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Homunculus",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Horned Devil",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Hunter Shark",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Hydra",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Hyena",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Ice Devil",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Ice Mephit",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Imp",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Invisible Stalker",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Iron Golem",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Jackal",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Killer Whale",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Knight",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Kobold",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Kraken",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Lamia",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Lemure",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Lich",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Lion",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Lizard",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Lizardfolk",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Mage",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Magma Mephit",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Magmin",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Mammoth",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Manticore",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Marilith",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Mastiff",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Medusa",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Merfolk",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Merrow",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Mimic",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Minotaur",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Minotaur Skeleton",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Mule",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Mummy",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Mummy Lord",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Nalfeshnee",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Night Hag",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Nightmare",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Noble",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Ochre Jelly",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Octopus",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Ogre",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Ogre Zombie",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Oni",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Orc",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Otyugh",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Owl",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Owlbear",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Panther",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Pegasus",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Phase Spider",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Pit Fiend",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Planetar",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Plesiosaurus",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Poisonous Snake",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Polar Bear",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Pony",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Priest",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Pseudodragon",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Purple Worm",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Quasit",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Quipper",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Rakshasa",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Rat",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Raven",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Red Dragon Wyrmling",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Reef Shark",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Remorhaz",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Rhinoceros",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Riding Horse",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Roc",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Roper",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Rug of Smothering",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Rust Monster",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Saber-Toothed Tiger",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Sahuagin",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Salamander",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Satyr",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Scorpion",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Scout",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Sea Hag",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Sea Horse",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Shadow",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Shambling Mound",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Shield Guardian",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Shrieker",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Silver Dragon Wyrmling",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Skeleton",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Solar",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Specter",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Spider",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Spirit Naga",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Sprite",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Spy",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Steam Mephit",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Stirge",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Stone Giant",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Stone Golem",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Storm Giant",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Succubus (Incubus)",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Swarm of Bats",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Swarm of Beetles",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Swarm of Centipedes",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Swarm of Insects",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Swarm of Poisonous Snakes",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Swarm of Quippers",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Swarm of Rats",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Swarm of Ravens",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Swarm of Spiders",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Swarm of Wasps",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Tarrasque",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Thug",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Tiger",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Treant",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Tribal Warrior",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Triceratops",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Troll",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Tyrannosaurus Rex",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Unicorn",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Vampire",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Vampire Spawn",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Veteran",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Violet Fungus",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Vrock",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Vulture",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Warhorse",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Warhorse Skeleton",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Water Elemental",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Weasel",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Werebear",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Wereboar",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Wererat",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Weretiger",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Werewolf",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "White Dragon Wyrmling",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Wight",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Will-o'-Wisp",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Winter Wolf",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Wolf",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Worg",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Wraith",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Wyvern",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Xorn",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Young Black Dragon",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Young Blue Dragon",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Young Brass Dragon",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Young Bronze Dragon",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Young Copper Dragon",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Young Gold Dragon",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Young Green Dragon",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Young Red Dragon",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Young Silver Dragon",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Young White Dragon",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      },
+      {
+        "name": "Zombie",
+        "attributes": {
+          "Category": "Monsters",
+          "Source": "SRD 5.0"
+        }
+      }
+    ]
+  }
+]

@@ -1,0 +1,81 @@
+<nav class="top-bar sectionNav"></nav>
+<section id="resources-manager" class="row contentSection defaultSection" hidden>
+    <div class="medium-6 columns">
+        <h4>Upload</h4>
+        <div class="row">
+            <div class="small-6 columns">
+                <button class="resourceFileButton button expanded" z--click="openFileBrowser">Select File</button>
+            </div>
+            <div class="small-6 columns end">
+                <button class="resourceUploadButton button expanded float-right" z--click="uploadResource" z--enabled="allowSave">Save Resource<span class="ajaxSpinner" hidden>&nbsp;<i class="fa fa-refresh fa-spin"></i></span></button>
+            </div>
+            <div class="small-6 columns">
+                <label>
+                    Label
+                    <input type="text" z--bind="newResource.label" z--keyup="updateSaveButton" />
+                </label>
+            </div>
+            <div class="small-6 columns">
+                <label>
+                    Suffix
+                    <input type="text" z--bind="newResource.suffix" z--keyup="updateSaveButton" />
+                </label>
+            </div>
+            <div class="columns">
+                <p class="fileContent" z--bind="filePreview"></p>
+            </div>
+        </div>
+    </div>
+    <div class="medium-6 columns">
+        <h4>Resources</h4>
+        <div class="resourceList" z--iterate="resourceList">
+            <p z--template z--click="editResource">
+                <button class="button alert tiny" z--click="removeResource">
+                    <i class="fa fa-trash-o"></i>
+                </button>
+                <span class="label" z--bind=".Label"></span>
+                <span class="meta" z--bind=".Meta"></span>
+            </p>
+        </div>
+    </div>
+    <input type="file" class="resourceFile" z--change="onFileSelect" hidden />
+</section>
+<section id="resources-unauthorized" class="row contentSection" hidden>
+    <h5>You must log in to use this app.</h5>
+</section>
+
+<div id="resources-manager-edit" class="reveal" data-reveal>
+    <div class="row">
+        <div class="column">
+            <h4 z--bind="editing.Label"></h4>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="medium-6 columns end">
+            <div class="roleInput input-group">
+                <input class="input-group-field" type="text" z--bind="newRole">
+                <div class="input-group-button">
+                    <button class="button" z--click="addRole">
+                        <i class="fa fa-plus"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="column roleList" z--iterate="roles">
+            <p z--template>
+                <button class="button alert tiny" z--click="removeRole">
+                    <i class="fa fa-trash-o"></i>
+                </button>
+                <span class="label" z--bind="."></span>
+            </p>
+        </div>
+    </div>
+
+    <button class="close-button" data-close aria-label="Close modal" type="button">
+        <span aria-hidden="true">&times;</span>
+    </button>
+</div>

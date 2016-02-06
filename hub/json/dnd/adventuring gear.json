@@ -1,0 +1,2158 @@
+{
+  "name": "Adventuring Gear",
+  "sections": [
+    {
+      "header": "",
+      "items": [
+        {
+          "name": "",
+          "text": "This section describes items that have Special rules or require further explanation."
+        },
+        {
+          "name": "Acid",
+          "text": "As an action, you can splash the contents of this vial onto a creature within 5 feet of you or throw the vial up to 20 feet, shattering it on impact. In either case, make a ranged Attack against a creature or object, treating the acid as an improvised weapon. On a hit, the target takes 2d6 acid damage."
+        },
+        {
+          "name": "Alchemist's Fire",
+          "text": "This sticky, adhesive fluid ignites when exposed to air. As an action, you can throw this flask up to 20 feet, shattering it on impact. Make a ranged Attack against a creature or object, treating the Alchemist's Fire as an improvised weapon. On a hit, the target takes 1d4 fire damage at the start of each of its turns. A creature can end this damage by using its action to make a DC 10 Dexterity check to extinguish the flames."
+        },
+        {
+          "name": "Antitoxin",
+          "text": "A creature that drinks this vial of liquid gains advantage on saving throws against poison for 1 hour. It confers no benefit to Undead or constructs."
+        },
+        {
+          "name": "Arcane Focus",
+          "text": "An arcane focus is a Special item—an orb, a Crystal, a rod, a specially constructed staff, a wand-like length of wood, or some similar item—designed to channel the power of arcane Spells. A Sorcerer, Warlock, or Wizard can use such an item as a spellcasting focus."
+        },
+        {
+          "name": "Ball bearings",
+          "text": "As an action, you can spill these tiny metal balls from their pouch to cover a level, square area that is 10 feet on a side. A creature moving across the covered area must succeed on a DC 10 Dexterity saving throw or fall prone. A creature moving through the area at half speed doesn't need to make the save."
+        },
+        {
+          "name": "Block and tackle",
+          "text": "A set of pulleys with a cable threaded through them and a hook to attach to Objects, a Block and tackle allows you to hoist up to four times the weight you can normally lift."
+        },
+        {
+          "name": "Book",
+          "text": "A book might contain poetry, historical accounts, information pertaining to a particular field of lore, diagrams and notes on gnomish contraptions, or just about anything else that can be represented using text or pictures. A book of Spells is a Spellbook (described later in this section)."
+        },
+        {
+          "name": "Caltrops",
+          "text": "As an action, you can spread a bag of Caltrops to cover a square area that is 5 feet on a side. Any creature that enters the area must succeed on a DC 15 Dexterity saving throw or stop moving this turn and take 1 piercing damage. Taking this damage reduces the creature's walking speed by 10 feet until the creature regains at least 1 hit point. A creature moving through the area at half speed doesn't need to make the save."
+        },
+        {
+          "name": "Candle",
+          "text": "For 1 hour, a Candle sheds bright light in a 5-foot radius and dim light for an additional 5 feet."
+        },
+        {
+          "name": "Case, Crossbow Bolt",
+          "text": "This wooden case can hold up to twenty Crossbow bolts."
+        },
+        {
+          "name": "Case, Map or Scroll",
+          "text": "This cylindrical leather case can hold up to ten rolled-up sheets of paper or five rolled-up sheets of Parchment."
+        },
+        {
+          "name": "Chain",
+          "text": "A chain has 10 hit points. It can be burst with a successful DC 20 Strength check."
+        },
+        {
+          "name": "Climber's Kit",
+          "text": "A climber's kit includes Special pitons, boot tips, gloves, and a harness. You can use the climber's kit as an action to anchor yourself; when you do, you can't fall more than 25 feet from the point where you anchored yourself, and you can't climb more than 25 feet away from that point without undoing the anchor."
+        },
+        {
+          "name": "Component pouch",
+          "text": "A Component pouch is a small, watertight leather belt pouch that has compartments to hold all the material Components and other Special items you need to cast your Spells, except for those Components that have a specific cost (as indicated in a spell's description)."
+        },
+        {
+          "name": "Crowbar",
+          "text": "Using a Crowbar grants advantage to Strength Checks where the crowbar's leverage can be applied."
+        },
+        {
+          "name": "Druidic Focus",
+          "text": "A Druidic focus might be a Sprig of mistletoe or holly, a wand or scepter made of yew or another Special wood, a staff drawn whole out of a living tree, or a totem object incorporating feathers, fur, bones, and teeth from sacred animals. A druid can use such an object as a spellcasting focus."
+        },
+        {
+          "name": "Fishing tackle",
+          "text": "This kit includes a wooden rod, silken line, corkwood bobbers, steel hooks, lead sinkers, velvet lures, and narrow netting."
+        },
+        {
+          "name": "Healer's Kit",
+          "text": "This kit is a leather pouch containing bandages, salves, and splints. The kit has ten uses. As an action, you can expend one use of the kit to stabilize a creature that has 0 hit points, without needing to make a Wisdom (Medicine) check."
+        },
+        {
+          "name": "Holy Symbol",
+          "text": "A holy Symbol is a representation of a god or pantheon. It might be an Amulet depicting a Symbol representing a deity, the same Symbol carefully engraved or inlaid as an Emblem on a Shield, or a tiny box holding a fragment of a sacred relic. Pantheons lists the symbols commonly associated with many gods in the multiverse. A Cleric or Paladin can use a holy Symbol as a spellcasting focus. To use the Symbol in this way, the caster must hold it in hand, wear it visibly, or bear it on a Shield."
+        },
+        {
+          "name": "Holy Water",
+          "text": "As an action, you can splash the contents of this flask onto a creature within 5 feet of you or throw it up to 20 feet, shattering it on impact. In either case, make a ranged Attack against a target creature, treating the Holy Water as an improvised weapon. If the target is a fiend or Undead, it takes 2d6 radiant damage. A Cleric or Paladin may create Holy Water by performing a Special ritual. The ritual takes 1 hour to perform, uses 25 gp worth of powdered silver, and requires the caster to expend a 1st-level spell slot."
+        },
+        {
+          "name": "Hunting trap",
+          "text": "When you use your action to set it, this trap forms a saw-toothed steel ring that snaps shut when a creature steps on a pressure plate in the center. The trap is affixed by a heavy chain to an immobile object, such as a tree or a spike driven into the ground. A creature that steps on the plate must succeed on a DC 13 Dexterity saving throw or take 1d4 piercing damage and stop moving. Thereafter, until the creature breaks free of the trap, its Movement is limited by the length of the chain (typically 3 feet long). A creature can use its action to make a DC 13 Strength check, freeing itself or another creature within its reach on a success. Each failed check deals 1 piercing damage to the trapped creature."
+        },
+        {
+          "name": "Lamp",
+          "text": "A lamp casts bright light in a 15-foot radius and dim light for an additional 30 feet. Once lit, it burns for 6 hours on a flask (1 pint) of oil."
+        },
+        {
+          "name": "Lantern, Bullseye",
+          "text": "A Bullseye lantern casts bright light in a 60-foot cone and dim light for an additional 60 feet. Once lit, it burns for 6 hours on a flask (1 pint) of oil."
+        },
+        {
+          "name": "Lantern, Hooded",
+          "text": "A Hooded lantern casts bright light in a 30-foot radius and dim light for an additional 30 feet. Once lit, it burns for 6 hours on a flask (1 pint) of oil. As an action, you can lower the hood, reducing the light to dim light in a 5-foot radius."
+        },
+        {
+          "name": "Lock",
+          "text": "A key is provided with the lock. Without the key, a creature proficient with thieves' tools can pick this lock with a successful DC 15 Dexterity check. Your GM may decide that better locks are available for higher prices."
+        },
+        {
+          "name": "Magnifying glass",
+          "text": "This lens allows a closer look at small Objects. It is also useful as a substitute for flint and steel when starting fires. Lighting a fire with a Magnifying glass requires light as bright as sunlight to focus, tinder to ignite, and about 5 minutes for the fire to ignite. A Magnifying glass grants advantage on any ability check made to appraise or inspect an item that is small or highly detailed."
+        },
+        {
+          "name": "Manacles",
+          "text": "These metal restraints can bind a Small or Medium creature. Escaping the Manacles requires a successful DC 20 Dexterity check. Breaking them requires a successful DC 20 Strength check. Each set of Manacles comes with one key. Without the key, a creature proficient with thieves' tools can pick the manacles' lock with a successful DC 15 Dexterity check. Manacles have 15 hit points."
+        },
+        {
+          "name": "Mess kit",
+          "text": "This tin box contains a cup and simple cutlery. The box clamps together, and one side can be used as a cooking pan and the other as a plate or shallow bowl."
+        },
+        {
+          "name": "Oil",
+          "text": "Oil usually comes in a clay flask that holds 1 pint. As an action, you can splash the oil in this flask onto a creature within 5 feet of you or throw it up to 20 feet, shattering it on impact. Make a ranged Attack against a target creature or object, treating the oil as an improvised weapon. On a hit, the target is covered in oil. If the target takes any fire damage before the oil dries (after 1 minute), the target takes an additional 5 fire damage from the burning oil. You can also pour a flask of oil on the ground to cover a 5-foot-square area, provided that the surface is level. If lit, the oil burns for 2 rounds and deals 5 fire damage to any creature that enters the area or ends its turn in the area. A creature can take this damage only once per turn."
+        },
+        {
+          "name": "Poison, Basic",
+          "text": "You can use the poison in this vial to coat one slashing or piercing weapon or up to three pieces of ammunition. Applying the poison takes an action. A creature hit by the Poisoned weapon or ammunition must make a DC 10 Constitution saving throw or take 1d4 poison damage. Once applied, the poison retains potency for 1 minute before drying."
+        },
+        {
+          "name": "Potion of Healing",
+          "text": "A character who drinks the magical red fluid in this vial regains 2d4 + 2 hit points. Drinking or administering a potion takes an action."
+        },
+        {
+          "name": "Pouch",
+          "text": "A cloth or leather pouch can hold up to 20 Sling bullets or 50 Blowgun Needles, among other things. A compartmentalized pouch for holding spell Components is called a Component pouch (described earlier in this section)."
+        },
+        {
+          "name": "Quiver",
+          "text": "A Quiver can hold up to 20 Arrows."
+        },
+        {
+          "name": "Ram, Portable",
+          "text": "You can use a Portable ram to break down doors. When doing so, you gain a +4 bonus on the Strength check. One other character can help you use the ram, giving you advantage on this check."
+        },
+        {
+          "name": "Rations",
+          "text": "Rations consist of dry foods suitable for extended travel, including jerky, dried fruit, hardtack, and nuts."
+        },
+        {
+          "name": "Rope",
+          "text": "Rope, whether made of hemp or silk, has 2 hit points and can be burst with a DC 17 Strength check."
+        },
+        {
+          "name": "Scale, Merchant's",
+          "text": "A scale includes a small balance, pans, and a suitable assortment of weights up to 2 pounds. With it, you can measure the exact weight of small Objects, such as raw precious metals or Trade Goods, to help determine their worth."
+        },
+        {
+          "name": "Spellbook",
+          "text": "Essential for wizards, a Spellbook is a leather-bound tome with 100 blank vellum pages suitable for recording Spells."
+        },
+        {
+          "name": "Spyglass",
+          "text": "Objects viewed through a Spyglass are magnified to twice their size."
+        },
+        {
+          "name": "Tent",
+          "text": "A simple and portable canvas shelter, a tent sleeps two."
+        },
+        {
+          "name": "Tinderbox",
+          "text": "This small container holds flint, fire steel, and tinder (usually dry cloth soaked in light oil) used to kindle a fire. Using it to light a torch—or anything else with abundant, exposed fuel—takes an action. Lighting any other fire takes 1 minute."
+        },
+        {
+          "name": "Torch",
+          "text": "A torch burns for 1 hour, providing bright light in a 20-foot radius and dim light for an additional 20 feet. If you make a melee Attack with a burning torch and hit, it deals 1 fire damage."
+        }
+      ]
+    },
+    {
+      "type": "table",
+      "header": "Adventuring Gear",
+      "items": [
+        {
+          "type": "thead",
+          "rows": [
+            [
+              {
+                "type": "th",
+                "text": "Item"
+              },
+              {
+                "type": "th",
+                "text": "Cost",
+                "style": "text-align:center"
+              },
+              {
+                "type": "th",
+                "text": "Weight",
+                "style": "text-align:center"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "tbody",
+          "rows": [
+            [
+              {
+                "type": "td",
+                "text": "Abacus"
+              },
+              {
+                "type": "td",
+                "text": "2 gp",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "2 lb.",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Acid (vial)"
+              },
+              {
+                "type": "td",
+                "text": "25 gp",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "1 lb.",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Alchemist's fire (flask)"
+              },
+              {
+                "type": "td",
+                "text": "50 gp",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "1 lb.",
+                "style": "text-align:center"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "thead",
+          "rows": [
+            [
+              {
+                "type": "td",
+                "text": "Ammunition",
+                "colspan": "3"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "tbody",
+          "rows": [
+            [
+              {
+                "type": "td",
+                "text": "Arrows (20)",
+                "style": "padding-left: 25px!important"
+              },
+              {
+                "type": "td",
+                "text": "1 gp",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "1 lb.",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Blowgun Needles (50)",
+                "style": "padding-left: 25px!important"
+              },
+              {
+                "type": "td",
+                "text": "1 gp",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "1 lb.",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Crossbow bolts (20)",
+                "style": "padding-left: 25px!important"
+              },
+              {
+                "type": "td",
+                "text": "1 gp",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "1½ lb.",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Sling bullets (20)",
+                "style": "padding-left: 25px!important"
+              },
+              {
+                "type": "td",
+                "text": "4 cp",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "1½ lb.",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Antitoxin (vial)"
+              },
+              {
+                "type": "td",
+                "text": "50 gp",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "—",
+                "style": "text-align:center"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "thead",
+          "rows": [
+            [
+              {
+                "type": "td",
+                "text": "Arcane focus",
+                "colspan": "3"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "tbody",
+          "rows": [
+            [
+              {
+                "type": "td",
+                "text": "Crystal",
+                "style": "padding-left: 25px!important"
+              },
+              {
+                "type": "td",
+                "text": "10 gp",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "1 lb.",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Orb",
+                "style": "padding-left: 25px!important"
+              },
+              {
+                "type": "td",
+                "text": "20 gp",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3 lb.",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Rod",
+                "style": "padding-left: 25px!important"
+              },
+              {
+                "type": "td",
+                "text": "10 gp",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "2 lb.",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Staff",
+                "style": "padding-left: 25px!important"
+              },
+              {
+                "type": "td",
+                "text": "5 gp",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "4 lb.",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Wand",
+                "style": "padding-left: 25px!important"
+              },
+              {
+                "type": "td",
+                "text": "10 gp",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "1 lb.",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Backpack"
+              },
+              {
+                "type": "td",
+                "text": "2 gp",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "5 lb.",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Ball bearings (bag of 1,000)"
+              },
+              {
+                "type": "td",
+                "text": "1 gp",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "2 lb.",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Barrel"
+              },
+              {
+                "type": "td",
+                "text": "2 gp",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "70 lb.",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Basket"
+              },
+              {
+                "type": "td",
+                "text": "4 sp",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "2 lb.",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Bedroll"
+              },
+              {
+                "type": "td",
+                "text": "1 gp",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "7 lb.",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Bell"
+              },
+              {
+                "type": "td",
+                "text": "1 gp",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "—",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Blanket"
+              },
+              {
+                "type": "td",
+                "text": "5 sp",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3 lb.",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Block and tackle"
+              },
+              {
+                "type": "td",
+                "text": "1 gp",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "5 lb.",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Book"
+              },
+              {
+                "type": "td",
+                "text": "25 gp",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "5 lb.",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Bottle, glass"
+              },
+              {
+                "type": "td",
+                "text": "2 gp",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "2 lb.",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Bucket"
+              },
+              {
+                "type": "td",
+                "text": "5 cp",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "2 lb.",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Caltrops (bag of 20)"
+              },
+              {
+                "type": "td",
+                "text": "1 gp",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "2 lb.",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Candle"
+              },
+              {
+                "type": "td",
+                "text": "1 cp",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "—",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Case, crossbow bolt"
+              },
+              {
+                "type": "td",
+                "text": "1 gp",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "1 lb.",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Case, map or scroll"
+              },
+              {
+                "type": "td",
+                "text": "1 gp",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "1 lb.",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Chain (10 feet)"
+              },
+              {
+                "type": "td",
+                "text": "5 gp",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "10 lb.",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Chalk (1 piece)"
+              },
+              {
+                "type": "td",
+                "text": "1 cp",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "—",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Chest"
+              },
+              {
+                "type": "td",
+                "text": "5 gp",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "25 lb.",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Clothes, common"
+              },
+              {
+                "type": "td",
+                "text": "5 sp",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3 lb.",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Clothes, costume"
+              },
+              {
+                "type": "td",
+                "text": "5 gp",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "4 lb.",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Clothes, fine"
+              },
+              {
+                "type": "td",
+                "text": "15 gp",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "6 lb.",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Clothes, traveler's"
+              },
+              {
+                "type": "td",
+                "text": "2 gp",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "4 lb.",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Component pouch"
+              },
+              {
+                "type": "td",
+                "text": "25 gp",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "2 lb.",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Crowbar"
+              },
+              {
+                "type": "td",
+                "text": "2 gp",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "5 lb.",
+                "style": "text-align:center"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "thead",
+          "rows": [
+            [
+              {
+                "type": "td",
+                "text": "Druidic focus",
+                "colspan": "3"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "tbody",
+          "rows": [
+            [
+              {
+                "type": "td",
+                "text": "Sprig of mistletoe",
+                "style": "padding-left: 25px!important"
+              },
+              {
+                "type": "td",
+                "text": "1 gp",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "—",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Totem",
+                "style": "padding-left: 25px!important"
+              },
+              {
+                "type": "td",
+                "text": "1 gp",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "—",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Wooden staff",
+                "style": "padding-left: 25px!important"
+              },
+              {
+                "type": "td",
+                "text": "5 gp",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "4 lb.",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Yew wand",
+                "style": "padding-left: 25px!important"
+              },
+              {
+                "type": "td",
+                "text": "10 gp",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "1 lb.",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Fishing tackle"
+              },
+              {
+                "type": "td",
+                "text": "1 gp",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "4 lb.",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Flask or tankard"
+              },
+              {
+                "type": "td",
+                "text": "2 cp",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "1 lb.",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Grappling hook"
+              },
+              {
+                "type": "td",
+                "text": "2 gp",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "4 lb.",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Hammer"
+              },
+              {
+                "type": "td",
+                "text": "1 gp",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3 lb.",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Hammer, sledge"
+              },
+              {
+                "type": "td",
+                "text": "2 gp",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "10 lb.",
+                "style": "text-align:center"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "thead",
+          "rows": [
+            [
+              {
+                "type": "td",
+                "text": "Holy Symbol",
+                "colspan": "3"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "tbody",
+          "rows": [
+            [
+              {
+                "type": "td",
+                "text": "Amulet",
+                "style": "padding-left: 25px!important"
+              },
+              {
+                "type": "td",
+                "text": "5 gp",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "1 lb.",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Emblem",
+                "style": "padding-left: 25px!important"
+              },
+              {
+                "type": "td",
+                "text": "5 gp",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "—",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Reliquary",
+                "style": "padding-left: 25px!important"
+              },
+              {
+                "type": "td",
+                "text": "5 gp",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "2 lb.",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Holy Water (flask)"
+              },
+              {
+                "type": "td",
+                "text": "25 gp",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "1 lb.",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Hourglass"
+              },
+              {
+                "type": "td",
+                "text": "25 gp",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "1 lb.",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Hunting trap"
+              },
+              {
+                "type": "td",
+                "text": "5 gp",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "25 lb.",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Ink (1 ounce bottle)"
+              },
+              {
+                "type": "td",
+                "text": "10 gp",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "—",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Ink pen"
+              },
+              {
+                "type": "td",
+                "text": "2 cp",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "—",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Jug or pitcher"
+              },
+              {
+                "type": "td",
+                "text": "2 cp",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "4 lb.",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Kit, climber's"
+              },
+              {
+                "type": "td",
+                "text": "25 gp",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "12 lb.",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Kit, disguise"
+              },
+              {
+                "type": "td",
+                "text": "25 gp",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3 lb.",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Kit, forgery"
+              },
+              {
+                "type": "td",
+                "text": "15 gp",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "5 lb.",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Kit, herbalism"
+              },
+              {
+                "type": "td",
+                "text": "5 gp",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3 lb.",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Kit, healer's"
+              },
+              {
+                "type": "td",
+                "text": "5 gp",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3 lb.",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Kit, mess"
+              },
+              {
+                "type": "td",
+                "text": "2 sp",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "1 lb.",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Kit, poisoner's"
+              },
+              {
+                "type": "td",
+                "text": "50 gp",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "2 lb.",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Ladder (10-foot)"
+              },
+              {
+                "type": "td",
+                "text": "1 sp",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "25 lb.",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Lamp"
+              },
+              {
+                "type": "td",
+                "text": "5 sp",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "1 lb.",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Lantern, bullseye"
+              },
+              {
+                "type": "td",
+                "text": "10 gp",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "2 lb.",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Lantern, hooded"
+              },
+              {
+                "type": "td",
+                "text": "5 gp",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "2 lb.",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Lock"
+              },
+              {
+                "type": "td",
+                "text": "10 gp",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "1 lb.",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Magnifying glass"
+              },
+              {
+                "type": "td",
+                "text": "100 gp",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "—",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Manacles"
+              },
+              {
+                "type": "td",
+                "text": "2 gp",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "6 lb.",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Mirror, steel"
+              },
+              {
+                "type": "td",
+                "text": "5 gp",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "1/2 lb.",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Oil (flask)"
+              },
+              {
+                "type": "td",
+                "text": "1 sp",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "1 lb.",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Paper (one sheet)"
+              },
+              {
+                "type": "td",
+                "text": "2 sp",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "—",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Parchment (one sheet)"
+              },
+              {
+                "type": "td",
+                "text": "1 sp",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "—",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Perfume (vial)"
+              },
+              {
+                "type": "td",
+                "text": "5 gp",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "—",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Pick, miner's"
+              },
+              {
+                "type": "td",
+                "text": "2 gp",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "10 lb.",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Piton"
+              },
+              {
+                "type": "td",
+                "text": "5 cp",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "1/4 lb.",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Poison, basic (vial)"
+              },
+              {
+                "type": "td",
+                "text": "100 gp",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "—",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Pole (10-foot)"
+              },
+              {
+                "type": "td",
+                "text": "5 cp",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "7 lb.",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Pot, iron"
+              },
+              {
+                "type": "td",
+                "text": "2 gp",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "10 lb.",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Potion of Healing"
+              },
+              {
+                "type": "td",
+                "text": "50 gp",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "1/2 lb.",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Pouch"
+              },
+              {
+                "type": "td",
+                "text": "5 sp",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "1 lb.",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Quiver"
+              },
+              {
+                "type": "td",
+                "text": "1 gp",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "1 lb.",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Ram, portable"
+              },
+              {
+                "type": "td",
+                "text": "4 gp",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "35 lb.",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Rations (1 day)"
+              },
+              {
+                "type": "td",
+                "text": "5 sp",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "2 lb.",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Robes"
+              },
+              {
+                "type": "td",
+                "text": "1 gp",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "4 lb.",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Rope, hempen (50 feet)"
+              },
+              {
+                "type": "td",
+                "text": "1 gp",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "10 lb.",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Rope, silk (50 feet)"
+              },
+              {
+                "type": "td",
+                "text": "10 gp",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "5 lb.",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Sack"
+              },
+              {
+                "type": "td",
+                "text": "1 cp",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "1/2 lb.",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Scale, merchant's"
+              },
+              {
+                "type": "td",
+                "text": "5 gp",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3 lb.",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Sealing wax"
+              },
+              {
+                "type": "td",
+                "text": "5 sp",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "—",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Shovel"
+              },
+              {
+                "type": "td",
+                "text": "2 gp",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "5 lb.",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Signal whistle"
+              },
+              {
+                "type": "td",
+                "text": "5 cp",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "—",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Signet ring"
+              },
+              {
+                "type": "td",
+                "text": "5 gp",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "—",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Soap"
+              },
+              {
+                "type": "td",
+                "text": "2 cp",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "—",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Spellbook"
+              },
+              {
+                "type": "td",
+                "text": "50 gp",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3 lb.",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Spikes, iron (10)"
+              },
+              {
+                "type": "td",
+                "text": "1 gp",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "5 lb.",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Spyglass"
+              },
+              {
+                "type": "td",
+                "text": "1,000 gp",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "1 lb.",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Tent, two-person"
+              },
+              {
+                "type": "td",
+                "text": "2 gp",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "20 lb.",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Tinderbox"
+              },
+              {
+                "type": "td",
+                "text": "5 sp",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "1 lb.",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Torch"
+              },
+              {
+                "type": "td",
+                "text": "1 cp",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "1 lb.",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Vial"
+              },
+              {
+                "type": "td",
+                "text": "1 gp",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "—",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Waterskin"
+              },
+              {
+                "type": "td",
+                "text": "2 sp",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "5 lb. (full)",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Whetstone"
+              },
+              {
+                "type": "td",
+                "text": "1 cp",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "1 lb.",
+                "style": "text-align:center"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "header": "Equipment Packs",
+      "level": "3",
+      "items": [
+        {
+          "name": "",
+          "text": "The starting Equipment you get from your class includes a collection of useful adventuring gear, put together in a pack. The contents of these packs are listed here. If you are buying your starting Equipment, you can purchase a pack for the price shown, which might be cheaper than buying the items individually."
+        },
+        {
+          "name": "Burglar's Pack (16 gp)",
+          "text": "Includes a Backpack, a bag of 1,000 Ball bearings, 10 feet of string, a bell, 5 candles, a Crowbar, a Hammer, 10 pitons, a Hooded lantern, 2 flasks of oil, 5 days Rations, a Tinderbox, and a Waterskin. The pack also has 50 feet of Hempen rope strapped to the side of it."
+        },
+        {
+          "name": "Diplomat's Pack (39 gp)",
+          "text": "Includes a chest, 2 cases for maps and scrolls, a set of Fine clothes, a bottle of ink, an Ink pen, a lamp, 2 flasks of oil, 5 sheets of paper, a vial of Perfume, Sealing wax, and soap."
+        },
+        {
+          "name": "Dungeoneer's Pack (12 gp)",
+          "text": "Includes a Backpack, a Crowbar, a Hammer, 10 pitons, 10 torches, a Tinderbox, 10 days of Rations, and a Waterskin. The pack also has 50 feet of Hempen rope strapped to the side of it."
+        },
+        {
+          "name": "Entertainer's Pack (40 gp)",
+          "text": "Includes a Backpack, a Bedroll, 2 costumes, 5 candles, 5 days of Rations, a Waterskin, and a Disguise kit."
+        },
+        {
+          "name": "Explorer's Pack (10 gp)",
+          "text": "Includes a Backpack, a Bedroll, a Mess kit, a Tinderbox, 10 torches, 10 days of Rations, and a Waterskin. The pack also has 50 feet of Hempen rope strapped to the side of it."
+        },
+        {
+          "name": "Priest's Pack (19 gp)",
+          "text": "Includes a Backpack, a Blanket, 10 candles, a Tinderbox, an alms box, 2 blocks of incense, a censer, vestments, 2 days of Rations, and a Waterskin."
+        },
+        {
+          "name": "Scholar's Pack (40 gp)",
+          "text": "Includes a Backpack, a book of lore, a bottle of ink, an Ink pen, 10 sheets of Parchment, a little bag of sand, and a small knife.   "
+        }
+      ]
+    },
+    {
+      "type": "table",
+      "header": "Container Capacities",
+      "items": [
+        {
+          "type": "thead",
+          "rows": [
+            [
+              {
+                "type": "th",
+                "text": "Container"
+              },
+              {
+                "type": "th",
+                "text": "Capacity"
+              },
+              {
+                "type": "th",
+                "text": "Container"
+              },
+              {
+                "type": "th",
+                "text": "Capacity"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "tbody",
+          "rows": [
+            [
+              {
+                "type": "td",
+                "text": "Backpack*"
+              },
+              {
+                "type": "td",
+                "text": "1 cubic foot/30 pounds of gear"
+              },
+              {
+                "type": "td",
+                "text": "Jug or pitcher"
+              },
+              {
+                "type": "td",
+                "text": "1 gallon liquid"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Barrel"
+              },
+              {
+                "type": "td",
+                "text": "40 gallons liquid, 4 cubic feet solid"
+              },
+              {
+                "type": "td",
+                "text": "Pot, iron"
+              },
+              {
+                "type": "td",
+                "text": "1 gallon liquid"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Basket"
+              },
+              {
+                "type": "td",
+                "text": "2 cubic feet/40 pounds of gear"
+              },
+              {
+                "type": "td",
+                "text": "Pouch"
+              },
+              {
+                "type": "td",
+                "text": "1/5 cubic foot/6 pounds of gear"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Bottle"
+              },
+              {
+                "type": "td",
+                "text": "1½ pints liquid"
+              },
+              {
+                "type": "td",
+                "text": "Sack"
+              },
+              {
+                "type": "td",
+                "text": "1 cubic foot/30 pounds of gear"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Bucket"
+              },
+              {
+                "type": "td",
+                "text": "3 gallons liquid, 1/2 cubic foot solid"
+              },
+              {
+                "type": "td",
+                "text": "Vial"
+              },
+              {
+                "type": "td",
+                "text": "4 ounces liquid"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Chest"
+              },
+              {
+                "type": "td",
+                "text": "12 cubic feet/300 pounds of gear"
+              },
+              {
+                "type": "td",
+                "text": "Waterskin"
+              },
+              {
+                "type": "td",
+                "text": "4 pints liquid"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Flask or tankard"
+              },
+              {
+                "type": "td",
+                "text": "1 pint liquid"
+              },
+              {
+                "type": "td",
+                "text": ""
+              },
+              {
+                "type": "td",
+                "text": ""
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "header": "",
+      "items": [
+        {
+          "name": "",
+          "text": "* You can also strap items, such as a Bedroll or a coil of rope, to the outside of a Backpack."
+        }
+      ]
+    }
+  ],
+  "attributes": {
+    "Category": "Rules",
+    "Based On": "Equipment",
+    "Source": "SRD 5.0"
+  }
+}

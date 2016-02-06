@@ -1,0 +1,22 @@
+#app-myAnimeList .sectionNav .menu .input-group {
+    display: flex;
+    flex-direction: row;
+
+    margin-bottom: 0;
+}
+
+#app-myAnimeList .sectionNav .menu .input-group .button {
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#app-myAnimeList .sectionNav .menu .input-group .button:not(:first-child) {
+    border-left: 1px solid #fff;
+}
+
+#app-myAnimeList .sectionNav .menu .input-group .button i {
+    font-size: 1.5rem;
+    margin-top: 0.125rem;
+}

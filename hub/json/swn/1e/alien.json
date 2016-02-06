@@ -1,0 +1,44 @@
+{
+    "page": 138,
+    "version": "1e",
+    "Body Type": [
+        "Humanlike",
+        "Avian",
+        "Reptilian",
+        "Insectile",
+        "Exotic",
+        "Hybrid"
+    ],
+    "Psychology/Lens": [
+        "Collectivity",
+        "Curiosity",
+        "Despair",
+        "Domination",
+        "Faith",
+        "Fear",
+        "Gluttony",
+        "Greed",
+        "Hate",
+        "Honor",
+        "Journeying",
+        "Joy",
+        "Pacifism",
+        "Pride",
+        "Sagacity",
+        "Subtlety",
+        "Tradition",
+        "Treachery",
+        "Tribalism",
+        "Wrath"
+    ],
+    "Social Structure": [
+        "Democratic",
+        "Monarchic",
+        "Tribal",
+        "Oligarchic",
+        {
+            "text": "Multipolar",
+            "weight": 2
+        }
+    ]
+}

@@ -1,0 +1,2085 @@
+{
+  "name": "Character Advancement",
+  "sections": [
+    {
+      "header": "Beyond 1st Level",
+      "level": "2",
+      "items": [
+        {
+          "name": "",
+          "text": "As your character goes on adventures and overcomes challenges, he or she gains experience, represented by experience points. A character who reaches a specified experience point total advances in capability. This advancement is called gaining a level. "
+        },
+        {
+          "name": "",
+          "text": "When your character gains a level, his or her class often grants additional features, as detailed in the class description. Some of these features allow you to increase your Ability Scores, either increasing two scores by 1 each or increasing one score by 2. You can't increase an ability score above 20. In addition, every character's proficiency bonus increases at certain levels."
+        },
+        {
+          "name": "",
+          "text": "Each time you gain a level, you gain 1 additional Hit Die. Roll that Hit Die, add your Constitution modifier to the roll, and add the total to your hit point maximum. Alternatively, you can use the fixed value shown in your class entry, which is the average result of the die roll (rounded up)."
+        },
+        {
+          "name": "",
+          "text": "When your Constitution modifier increases by 1, your hit point maximum increases by 1 for each level you have attained. For example, if your 7th-level Fighter has a Constitution score of 17, when he reaches 8th level, he increases his Constitution score from 17 to 18, thus increasing his Constitution modifier from +3 to +4. His hit point maximum then increases by 8."
+        },
+        {
+          "name": "",
+          "text": "The Character Advancement table summarizes the XP you need to advance in levels from level 1 through level 20, and the proficiency bonus for a character of that level. Consult the information in your character's class description to see what other improvements you gain at each level."
+        }
+      ]
+    },
+    {
+      "type": "table",
+      "header": "Character Advancement",
+      "items": [
+        {
+          "type": "thead",
+          "rows": [
+            [
+              {
+                "type": "th",
+                "text": "Experience Points"
+              },
+              {
+                "type": "th",
+                "text": "Level"
+              },
+              {
+                "type": "th",
+                "text": "Proficiency Bonus"
+              },
+              {
+                "type": "th",
+                "text": "Experience Points"
+              },
+              {
+                "type": "th",
+                "text": "Level"
+              },
+              {
+                "type": "th",
+                "text": "Proficiency Bonus"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "tbody",
+          "rows": [
+            [
+              {
+                "type": "td",
+                "text": "0"
+              },
+              {
+                "type": "td",
+                "text": "1"
+              },
+              {
+                "type": "td",
+                "text": "+2"
+              },
+              {
+                "type": "td",
+                "text": "85,000"
+              },
+              {
+                "type": "td",
+                "text": "11"
+              },
+              {
+                "type": "td",
+                "text": "+4"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "300"
+              },
+              {
+                "type": "td",
+                "text": "2"
+              },
+              {
+                "type": "td",
+                "text": "+2"
+              },
+              {
+                "type": "td",
+                "text": "100,000"
+              },
+              {
+                "type": "td",
+                "text": "12"
+              },
+              {
+                "type": "td",
+                "text": "+4"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "900"
+              },
+              {
+                "type": "td",
+                "text": "3"
+              },
+              {
+                "type": "td",
+                "text": "+2"
+              },
+              {
+                "type": "td",
+                "text": "120,000"
+              },
+              {
+                "type": "td",
+                "text": "13"
+              },
+              {
+                "type": "td",
+                "text": "+5"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "2,700"
+              },
+              {
+                "type": "td",
+                "text": "4"
+              },
+              {
+                "type": "td",
+                "text": "+2"
+              },
+              {
+                "type": "td",
+                "text": "140,000"
+              },
+              {
+                "type": "td",
+                "text": "14"
+              },
+              {
+                "type": "td",
+                "text": "+5"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "6,500"
+              },
+              {
+                "type": "td",
+                "text": "5"
+              },
+              {
+                "type": "td",
+                "text": "+3"
+              },
+              {
+                "type": "td",
+                "text": "165,000"
+              },
+              {
+                "type": "td",
+                "text": "15"
+              },
+              {
+                "type": "td",
+                "text": "+5"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "14,000"
+              },
+              {
+                "type": "td",
+                "text": "6"
+              },
+              {
+                "type": "td",
+                "text": "+3"
+              },
+              {
+                "type": "td",
+                "text": "195,000"
+              },
+              {
+                "type": "td",
+                "text": "16"
+              },
+              {
+                "type": "td",
+                "text": "+5"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "23,000"
+              },
+              {
+                "type": "td",
+                "text": "7"
+              },
+              {
+                "type": "td",
+                "text": "+3"
+              },
+              {
+                "type": "td",
+                "text": "225,000"
+              },
+              {
+                "type": "td",
+                "text": "17"
+              },
+              {
+                "type": "td",
+                "text": "+6"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "34,000"
+              },
+              {
+                "type": "td",
+                "text": "8"
+              },
+              {
+                "type": "td",
+                "text": "+3"
+              },
+              {
+                "type": "td",
+                "text": "265,000"
+              },
+              {
+                "type": "td",
+                "text": "18"
+              },
+              {
+                "type": "td",
+                "text": "+6"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "48,000"
+              },
+              {
+                "type": "td",
+                "text": "9"
+              },
+              {
+                "type": "td",
+                "text": "+3"
+              },
+              {
+                "type": "td",
+                "text": "305,000"
+              },
+              {
+                "type": "td",
+                "text": "19"
+              },
+              {
+                "type": "td",
+                "text": "+6"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "64,000"
+              },
+              {
+                "type": "td",
+                "text": "10"
+              },
+              {
+                "type": "td",
+                "text": "+3"
+              },
+              {
+                "type": "td",
+                "text": "355,000"
+              },
+              {
+                "type": "td",
+                "text": "20"
+              },
+              {
+                "type": "td",
+                "text": "+6"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "header": "Multiclassing",
+      "level": "2",
+      "items": [
+        {
+          "name": "",
+          "text": "Multiclassing allows you to gain levels in multiple Classes. Doing so lets you mix the Abilities of those Classes to realize a character concept that might not be reflected in one of the standard class options."
+        },
+        {
+          "name": "",
+          "text": "With this rule, you have the option of gaining a level in a new class whenever you advance in level, instead of gaining a level in your current class. Your levels in all your Classes are added together to determine your character level. For example, if you have three levels in Wizard and two in Fighter, you're a 5th-level character."
+        },
+        {
+          "name": "",
+          "text": "As you advance in levels, you might primarily remain a member of your original class with just a few levels in another class, or you might change course entirely, never looking back at the class you left behind. You might even start progressing in a third or fourth class. Compared to a single-class character of the same level, you'll sacrifice some focus in exchange for versatility."
+        }
+      ]
+    },
+    {
+      "header": "Prerequisites",
+      "level": "3",
+      "items": [
+        {
+          "name": "",
+          "text": "To qualify for a new class, you must meet the ability score prerequisites for both your current class and your new one, as shown in the Multiclassing Prerequisites table. For example, a Barbarian who decides to multiclass into the druid class must have both Strength and Wisdom scores of 13 or higher. Without the full Training that a beginning character receives, you must be a quick study in your new class, having a natural aptitude that is reflected by higher- than-average Ability Scores."
+        }
+      ]
+    },
+    {
+      "type": "table",
+      "header": "Multiclassing Prerequisites",
+      "items": [
+        {
+          "type": "thead",
+          "rows": [
+            [
+              {
+                "type": "th",
+                "text": "Class"
+              },
+              {
+                "type": "th",
+                "text": "Ability Score Minimum"
+              },
+              {
+                "type": "th",
+                "text": "Class"
+              },
+              {
+                "type": "th",
+                "text": "Ability Score Minimum"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "tbody",
+          "rows": [
+            [
+              {
+                "type": "td",
+                "text": "Barbarian"
+              },
+              {
+                "type": "td",
+                "text": "Strength 13"
+              },
+              {
+                "type": "td",
+                "text": "Paladin"
+              },
+              {
+                "type": "td",
+                "text": "Strength 13 and Charisma 13"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Bard"
+              },
+              {
+                "type": "td",
+                "text": "Charisma 13"
+              },
+              {
+                "type": "td",
+                "text": "Ranger"
+              },
+              {
+                "type": "td",
+                "text": "Dexterity 13 and Wisdom 13"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Cleric"
+              },
+              {
+                "type": "td",
+                "text": "Wisdom 13"
+              },
+              {
+                "type": "td",
+                "text": "Rogue"
+              },
+              {
+                "type": "td",
+                "text": "Dexterity 13"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Druid"
+              },
+              {
+                "type": "td",
+                "text": "Wisdom 13"
+              },
+              {
+                "type": "td",
+                "text": "Sorcerer"
+              },
+              {
+                "type": "td",
+                "text": "Charisma 13"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Fighter"
+              },
+              {
+                "type": "td",
+                "text": "Strength 13 or Dexterity 13"
+              },
+              {
+                "type": "td",
+                "text": "Warlock"
+              },
+              {
+                "type": "td",
+                "text": "Charisma 13"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Monk"
+              },
+              {
+                "type": "td",
+                "text": "Dexterity 13 and Wisdom 13"
+              },
+              {
+                "type": "td",
+                "text": "Wizard"
+              },
+              {
+                "type": "td",
+                "text": "Intelligence 13"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "header": "Experience Points",
+      "level": "3",
+      "items": [
+        {
+          "name": "",
+          "text": "The experience point cost to gain a level is always based on your total character level, as shown in the Character Advancement table, not your level in a particular class. So, if you are a Cleric 6/fighter 1, you must gain enough XP to reach 8th level before you can take your second level as a Fighter or your seventh level as a Cleric."
+        }
+      ]
+    },
+    {
+      "header": "Hit Points and Hit Dice",
+      "level": "3",
+      "items": [
+        {
+          "name": "",
+          "text": "You gain the hit points from your new class as described for levels after 1st. You gain the 1st-level hit points for a class only when you are a 1st-level character."
+        },
+        {
+          "name": "",
+          "text": "You add together the Hit Dice granted by all your Classes to form your pool of Hit Dice. If the Hit Dice are the same die type, you can simply pool them together. For example, both the Fighter and the Paladin have a d10, so if you are a Paladin 5/fighter 5, you have ten d10 Hit Dice. If your Classes give you Hit Dice of different types, keep track of them separately. If you are a Paladin 5/cleric 5, for example, you have five d10 Hit Dice and five d8 Hit Dice."
+        }
+      ]
+    },
+    {
+      "header": "Proficiency Bonus",
+      "level": "3",
+      "items": [
+        {
+          "name": "",
+          "text": "Your proficiency bonus is always based on your total character level, as shown in the Character Advancement table, not your level in a particular class. For example, if you are a Fighter 3/rogue 2, you have the proficiency bonus of a 5th- level character, which is +3."
+        }
+      ]
+    },
+    {
+      "header": "Proficiencies",
+      "level": "3",
+      "items": [
+        {
+          "name": "",
+          "text": "When you gain your first level in a class other than your initial class, you gain only some of new class's starting proficiencies, as shown in the Multiclassing Proficiencies table."
+        }
+      ]
+    },
+    {
+      "type": "table",
+      "header": "Multiclassing Proficiencies",
+      "items": [
+        {
+          "type": "thead",
+          "rows": [
+            [
+              {
+                "type": "th",
+                "text": "Class"
+              },
+              {
+                "type": "th",
+                "text": "Proficiencies Gained"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "tbody",
+          "rows": [
+            [
+              {
+                "type": "td",
+                "text": "Barbarian"
+              },
+              {
+                "type": "td",
+                "text": "Shields, simple Weapons, martial Weapons"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Bard"
+              },
+              {
+                "type": "td",
+                "text": "Light Armor, one skill of your choice, one musical instrument of your choice"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Cleric"
+              },
+              {
+                "type": "td",
+                "text": "Light Armor, Medium Armor, shields"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Druid"
+              },
+              {
+                "type": "td",
+                "text": "Light Armor, Medium Armor, shields (druids will not wear armor or use shields made of metal)"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Fighter"
+              },
+              {
+                "type": "td",
+                "text": "Light Armor, Medium Armor, shields, simple Weapons, martial Weapons"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Monk"
+              },
+              {
+                "type": "td",
+                "text": "Simple Weapons, shortswords"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Paladin"
+              },
+              {
+                "type": "td",
+                "text": "Light Armor, Medium Armor, shields, simple Weapons, martial Weapons"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Ranger"
+              },
+              {
+                "type": "td",
+                "text": "Light Armor, Medium Armor, shields, simple Weapons, martial Weapons, one skill from the class's skill list"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Rogue"
+              },
+              {
+                "type": "td",
+                "text": "Light Armor, one skill from the class's skill list, thieves' tools"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Sorcerer"
+              },
+              {
+                "type": "td",
+                "text": "—"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Warlock"
+              },
+              {
+                "type": "td",
+                "text": "Light Armor, simple Weapons"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Wizard"
+              },
+              {
+                "type": "td",
+                "text": "—"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "header": "Class Features",
+      "level": "3",
+      "items": [
+        {
+          "name": "",
+          "text": "When you gain a new level in a class, you get its features for that level. You don't, however, receive the class's starting Equipment, and a few features have additional rules when you're multiclassing: Channel Divinity, Extra Attack, Unarmored Defense, and Spellcasting."
+        }
+      ]
+    },
+    {
+      "header": "Channel Divinity",
+      "level": "4",
+      "items": [
+        {
+          "name": "",
+          "text": "If you already have the Channel Divinity feature and gain a level in a class that also grants the feature, you gain the Channel Divinity effects granted by that class, but getting the feature again doesn't give you an additional use of it. You gain additional uses only when you reach a class level that explicitly grants them to you. For example, if you are a Cleric 6/paladin 4, you can use Channel Divinity twice between rests because you are high enough level in the Cleric class to have more uses. Whenever you use the feature, you can choose any of the Channel Divinity effects available to you from your two Classes."
+        }
+      ]
+    },
+    {
+      "header": "Extra Attack",
+      "level": "4",
+      "items": [
+        {
+          "name": "",
+          "text": ""
+        },
+        {
+          "name": "",
+          "text": "If you gain the Extra Attack class feature from more than one class, the features don't add together. You can't make more than two attacks with this feature unless it says you do (as the fighter's version of Extra Attack does). Similarly, the warlock's eldritch invocation Thirsting Blade doesn't give you additional attacks if you also have Extra Attack."
+        }
+      ]
+    },
+    {
+      "header": "Unarmored Defense",
+      "level": "4",
+      "items": [
+        {
+          "name": "",
+          "text": "If you already have the Unarmored Defense feature, you can't gain it again from another class."
+        }
+      ]
+    },
+    {
+      "header": "Spellcasting",
+      "level": "4",
+      "items": [
+        {
+          "name": "",
+          "text": "Your capacity for spellcasting depends partly on your combined levels in all your spellcasting Classes and partly on your individual levels in those Classes. Once you have the Spellcasting feature from more than one class, use the rules below. If you multiclass but have the Spellcasting feature from only one class, you follow the rules as described in that class."
+        },
+        {
+          "name": "Spells Known and Prepared",
+          "text": "You determine what Spells you know and can prepare for each class individually, as if you were a single-classed member of that class. If you are a Ranger 4/wizard 3, for example, you know three 1st-level Ranger Spells based on your levels in the Ranger class. As 3rd-level Wizard, you know three Wizard Cantrips, and Your Spellbook contains ten Wizard Spells, two of which (the two you gained when you reached 3rd level as a wizard) can be 2nd-level Spells. If your Intelligence is 16, you can prepare six Wizard Spells from Your Spellbook."
+        },
+        {
+          "name": "",
+          "text": "Each spell you know and prepare is associated with one of your Classes, and you use the spellcasting ability of that class when you cast the spell. Similarly, a spellcasting focus, such as a holy Symbol, can be used only for the Spells from the class associated with that focus."
+        },
+        {
+          "name": "Spell Slots",
+          "text": "You determine your available Spell Slots by adding together all your levels in the bard, Cleric, druid, Sorcerer, and Wizard Classes, and half your levels (rounded down) in the Paladin and Ranger Classes. Use this total to determine your Spell Slots by consulting the Multiclass Spellcaster table."
+        },
+        {
+          "name": "",
+          "text": "If you have more than one spellcasting class, this table might give you Spell Slots of a level that is higher than the Spells you know or can prepare. You can use those slots, but only to cast your lower-level Spells. If a lower-level spell that you cast, like Burning Hands, has an enhanced effect when cast using a higher-level slot, you can use the enhanced effect, even though you don't have any Spells of that higher level."
+        },
+        {
+          "name": "",
+          "text": "For example, if you are the aforementioned Ranger 4/wizard 3, you count as a 5th-level character when determining your spell slots: you have four 1st-level slots, three 2nd-level slots, and two 3rd-level slots. However, you don't know any 3rd-level Spells, nor do you know any 2nd-level Ranger Spells. You can use the Spell Slots of those levels to cast the Spells you do know—and potentially enhance their effects."
+        },
+        {
+          "name": "Pact Magic",
+          "text": "If you have both the Spellcasting class feature and the Pact Magic class feature from the Warlock class, you can use the Spell Slots you gain from the Pact Magic feature to cast Spells you know or have prepared from Classes with the Spellcasting class feature, and you can use the Spell Slots you gain from the Spellcasting class feature to cast Warlock Spells you know."
+        }
+      ]
+    },
+    {
+      "type": "table",
+      "header": "Multiclass Spellcaster: Spell Slots per Spell Level",
+      "items": [
+        {
+          "type": "thead",
+          "rows": [
+            [
+              {
+                "type": "th",
+                "text": "Lvl."
+              },
+              {
+                "type": "th",
+                "text": "1st"
+              },
+              {
+                "type": "th",
+                "text": "2nd"
+              },
+              {
+                "type": "th",
+                "text": "3rd"
+              },
+              {
+                "type": "th",
+                "text": "4th"
+              },
+              {
+                "type": "th",
+                "text": "5th"
+              },
+              {
+                "type": "th",
+                "text": "6th"
+              },
+              {
+                "type": "th",
+                "text": "7th"
+              },
+              {
+                "type": "th",
+                "text": "8th"
+              },
+              {
+                "type": "th",
+                "text": "9th"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "tbody",
+          "rows": [
+            [
+              {
+                "type": "td",
+                "text": "1st"
+              },
+              {
+                "type": "td",
+                "text": "2"
+              },
+              {
+                "type": "td",
+                "text": "—"
+              },
+              {
+                "type": "td",
+                "text": "—"
+              },
+              {
+                "type": "td",
+                "text": "—"
+              },
+              {
+                "type": "td",
+                "text": "—"
+              },
+              {
+                "type": "td",
+                "text": "—"
+              },
+              {
+                "type": "td",
+                "text": "—"
+              },
+              {
+                "type": "td",
+                "text": "—"
+              },
+              {
+                "type": "td",
+                "text": "—"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "2nd"
+              },
+              {
+                "type": "td",
+                "text": "3"
+              },
+              {
+                "type": "td",
+                "text": "—"
+              },
+              {
+                "type": "td",
+                "text": "—"
+              },
+              {
+                "type": "td",
+                "text": "—"
+              },
+              {
+                "type": "td",
+                "text": "—"
+              },
+              {
+                "type": "td",
+                "text": "—"
+              },
+              {
+                "type": "td",
+                "text": "—"
+              },
+              {
+                "type": "td",
+                "text": "—"
+              },
+              {
+                "type": "td",
+                "text": "—"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "3rd"
+              },
+              {
+                "type": "td",
+                "text": "4"
+              },
+              {
+                "type": "td",
+                "text": "2"
+              },
+              {
+                "type": "td",
+                "text": "—"
+              },
+              {
+                "type": "td",
+                "text": "—"
+              },
+              {
+                "type": "td",
+                "text": "—"
+              },
+              {
+                "type": "td",
+                "text": "—"
+              },
+              {
+                "type": "td",
+                "text": "—"
+              },
+              {
+                "type": "td",
+                "text": "—"
+              },
+              {
+                "type": "td",
+                "text": "—"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "4th"
+              },
+              {
+                "type": "td",
+                "text": "4"
+              },
+              {
+                "type": "td",
+                "text": "3"
+              },
+              {
+                "type": "td",
+                "text": "—"
+              },
+              {
+                "type": "td",
+                "text": "—"
+              },
+              {
+                "type": "td",
+                "text": "—"
+              },
+              {
+                "type": "td",
+                "text": "—"
+              },
+              {
+                "type": "td",
+                "text": "—"
+              },
+              {
+                "type": "td",
+                "text": "—"
+              },
+              {
+                "type": "td",
+                "text": "—"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "5th"
+              },
+              {
+                "type": "td",
+                "text": "4"
+              },
+              {
+                "type": "td",
+                "text": "3"
+              },
+              {
+                "type": "td",
+                "text": "2"
+              },
+              {
+                "type": "td",
+                "text": "—"
+              },
+              {
+                "type": "td",
+                "text": "—"
+              },
+              {
+                "type": "td",
+                "text": "—"
+              },
+              {
+                "type": "td",
+                "text": "—"
+              },
+              {
+                "type": "td",
+                "text": "—"
+              },
+              {
+                "type": "td",
+                "text": "—"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "6th"
+              },
+              {
+                "type": "td",
+                "text": "4"
+              },
+              {
+                "type": "td",
+                "text": "3"
+              },
+              {
+                "type": "td",
+                "text": "3"
+              },
+              {
+                "type": "td",
+                "text": "—"
+              },
+              {
+                "type": "td",
+                "text": "—"
+              },
+              {
+                "type": "td",
+                "text": "—"
+              },
+              {
+                "type": "td",
+                "text": "—"
+              },
+              {
+                "type": "td",
+                "text": "—"
+              },
+              {
+                "type": "td",
+                "text": "—"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "7th"
+              },
+              {
+                "type": "td",
+                "text": "4"
+              },
+              {
+                "type": "td",
+                "text": "3"
+              },
+              {
+                "type": "td",
+                "text": "3"
+              },
+              {
+                "type": "td",
+                "text": "1"
+              },
+              {
+                "type": "td",
+                "text": "—"
+              },
+              {
+                "type": "td",
+                "text": "—"
+              },
+              {
+                "type": "td",
+                "text": "—"
+              },
+              {
+                "type": "td",
+                "text": "—"
+              },
+              {
+                "type": "td",
+                "text": "—"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "8th"
+              },
+              {
+                "type": "td",
+                "text": "4"
+              },
+              {
+                "type": "td",
+                "text": "3"
+              },
+              {
+                "type": "td",
+                "text": "3"
+              },
+              {
+                "type": "td",
+                "text": "2"
+              },
+              {
+                "type": "td",
+                "text": "—"
+              },
+              {
+                "type": "td",
+                "text": "—"
+              },
+              {
+                "type": "td",
+                "text": "—"
+              },
+              {
+                "type": "td",
+                "text": "—"
+              },
+              {
+                "type": "td",
+                "text": "—"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "9th"
+              },
+              {
+                "type": "td",
+                "text": "4"
+              },
+              {
+                "type": "td",
+                "text": "3"
+              },
+              {
+                "type": "td",
+                "text": "3"
+              },
+              {
+                "type": "td",
+                "text": "3"
+              },
+              {
+                "type": "td",
+                "text": "1"
+              },
+              {
+                "type": "td",
+                "text": "—"
+              },
+              {
+                "type": "td",
+                "text": "—"
+              },
+              {
+                "type": "td",
+                "text": "—"
+              },
+              {
+                "type": "td",
+                "text": "—"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "10th"
+              },
+              {
+                "type": "td",
+                "text": "4"
+              },
+              {
+                "type": "td",
+                "text": "3"
+              },
+              {
+                "type": "td",
+                "text": "3"
+              },
+              {
+                "type": "td",
+                "text": "3"
+              },
+              {
+                "type": "td",
+                "text": "2"
+              },
+              {
+                "type": "td",
+                "text": "—"
+              },
+              {
+                "type": "td",
+                "text": "—"
+              },
+              {
+                "type": "td",
+                "text": "—"
+              },
+              {
+                "type": "td",
+                "text": "—"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "11th"
+              },
+              {
+                "type": "td",
+                "text": "4"
+              },
+              {
+                "type": "td",
+                "text": "3"
+              },
+              {
+                "type": "td",
+                "text": "3"
+              },
+              {
+                "type": "td",
+                "text": "3"
+              },
+              {
+                "type": "td",
+                "text": "2"
+              },
+              {
+                "type": "td",
+                "text": "1"
+              },
+              {
+                "type": "td",
+                "text": "—"
+              },
+              {
+                "type": "td",
+                "text": "—"
+              },
+              {
+                "type": "td",
+                "text": "—"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "12th"
+              },
+              {
+                "type": "td",
+                "text": "4"
+              },
+              {
+                "type": "td",
+                "text": "3"
+              },
+              {
+                "type": "td",
+                "text": "3"
+              },
+              {
+                "type": "td",
+                "text": "3"
+              },
+              {
+                "type": "td",
+                "text": "2"
+              },
+              {
+                "type": "td",
+                "text": "1"
+              },
+              {
+                "type": "td",
+                "text": "—"
+              },
+              {
+                "type": "td",
+                "text": "—"
+              },
+              {
+                "type": "td",
+                "text": "—"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "13th"
+              },
+              {
+                "type": "td",
+                "text": "4"
+              },
+              {
+                "type": "td",
+                "text": "3"
+              },
+              {
+                "type": "td",
+                "text": "3"
+              },
+              {
+                "type": "td",
+                "text": "3"
+              },
+              {
+                "type": "td",
+                "text": "2"
+              },
+              {
+                "type": "td",
+                "text": "1"
+              },
+              {
+                "type": "td",
+                "text": "1"
+              },
+              {
+                "type": "td",
+                "text": "—"
+              },
+              {
+                "type": "td",
+                "text": "—"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "14th"
+              },
+              {
+                "type": "td",
+                "text": "4"
+              },
+              {
+                "type": "td",
+                "text": "3"
+              },
+              {
+                "type": "td",
+                "text": "3"
+              },
+              {
+                "type": "td",
+                "text": "3"
+              },
+              {
+                "type": "td",
+                "text": "2"
+              },
+              {
+                "type": "td",
+                "text": "1"
+              },
+              {
+                "type": "td",
+                "text": "1"
+              },
+              {
+                "type": "td",
+                "text": "—"
+              },
+              {
+                "type": "td",
+                "text": "—"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "15th"
+              },
+              {
+                "type": "td",
+                "text": "4"
+              },
+              {
+                "type": "td",
+                "text": "3"
+              },
+              {
+                "type": "td",
+                "text": "3"
+              },
+              {
+                "type": "td",
+                "text": "3"
+              },
+              {
+                "type": "td",
+                "text": "2"
+              },
+              {
+                "type": "td",
+                "text": "1"
+              },
+              {
+                "type": "td",
+                "text": "1"
+              },
+              {
+                "type": "td",
+                "text": "1"
+              },
+              {
+                "type": "td",
+                "text": "—"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "16th"
+              },
+              {
+                "type": "td",
+                "text": "4"
+              },
+              {
+                "type": "td",
+                "text": "3"
+              },
+              {
+                "type": "td",
+                "text": "3"
+              },
+              {
+                "type": "td",
+                "text": "3"
+              },
+              {
+                "type": "td",
+                "text": "2"
+              },
+              {
+                "type": "td",
+                "text": "1"
+              },
+              {
+                "type": "td",
+                "text": "1"
+              },
+              {
+                "type": "td",
+                "text": "1"
+              },
+              {
+                "type": "td",
+                "text": "—"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "17th"
+              },
+              {
+                "type": "td",
+                "text": "4"
+              },
+              {
+                "type": "td",
+                "text": "3"
+              },
+              {
+                "type": "td",
+                "text": "3"
+              },
+              {
+                "type": "td",
+                "text": "3"
+              },
+              {
+                "type": "td",
+                "text": "2"
+              },
+              {
+                "type": "td",
+                "text": "1"
+              },
+              {
+                "type": "td",
+                "text": "1"
+              },
+              {
+                "type": "td",
+                "text": "1"
+              },
+              {
+                "type": "td",
+                "text": "1"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "18th"
+              },
+              {
+                "type": "td",
+                "text": "4"
+              },
+              {
+                "type": "td",
+                "text": "3"
+              },
+              {
+                "type": "td",
+                "text": "3"
+              },
+              {
+                "type": "td",
+                "text": "3"
+              },
+              {
+                "type": "td",
+                "text": "3"
+              },
+              {
+                "type": "td",
+                "text": "1"
+              },
+              {
+                "type": "td",
+                "text": "1"
+              },
+              {
+                "type": "td",
+                "text": "1"
+              },
+              {
+                "type": "td",
+                "text": "1"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "19th"
+              },
+              {
+                "type": "td",
+                "text": "4"
+              },
+              {
+                "type": "td",
+                "text": "3"
+              },
+              {
+                "type": "td",
+                "text": "3"
+              },
+              {
+                "type": "td",
+                "text": "3"
+              },
+              {
+                "type": "td",
+                "text": "3"
+              },
+              {
+                "type": "td",
+                "text": "2"
+              },
+              {
+                "type": "td",
+                "text": "1"
+              },
+              {
+                "type": "td",
+                "text": "1"
+              },
+              {
+                "type": "td",
+                "text": "1"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "20th"
+              },
+              {
+                "type": "td",
+                "text": "4"
+              },
+              {
+                "type": "td",
+                "text": "3"
+              },
+              {
+                "type": "td",
+                "text": "3"
+              },
+              {
+                "type": "td",
+                "text": "3"
+              },
+              {
+                "type": "td",
+                "text": "3"
+              },
+              {
+                "type": "td",
+                "text": "2"
+              },
+              {
+                "type": "td",
+                "text": "2"
+              },
+              {
+                "type": "td",
+                "text": "1"
+              },
+              {
+                "type": "td",
+                "text": "1"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "header": "Alignment",
+      "level": "3",
+      "items": [
+        {
+          "name": "",
+          "text": "A typical creature in the game world has an alignment, which broadly describes its moral and personal attitudes. Alignment is a combination of two factors: one identifies morality (good, evil, or neutral), and the other describes attitudes toward society and order (lawful, chaotic, or neutral). Thus, nine distinct alignments define the possible combinations."
+        },
+        {
+          "name": "",
+          "text": "These brief summaries of the nine alignments describe the typical behavior of a creature with that alignment. Individuals might vary significantly from that typical behavior, and few people are perfectly and consistently faithful to the precepts of their alignment."
+        },
+        {
+          "name": "Lawful good (LG)",
+          "text": "creatures can be counted on to do the right thing as expected by society. Gold dragons, paladins, and most dwarves are lawful good."
+        },
+        {
+          "name": "Neutral good (NG)",
+          "text": "folk do the best they can to help others according to their needs. Many Celestials, some Cloud Giants, and most gnomes are neutral good."
+        },
+        {
+          "name": "Chaotic good (CG)",
+          "text": "creatures act as their conscience directs, with little regard for what others expect. Copper dragons, many elves, and unicorns are chaotic good."
+        },
+        {
+          "name": "Lawful neutral (LN)",
+          "text": "individuals act in accordance with law, tradition, or personal codes. Many monks and some wizards are lawful neutral."
+        },
+        {
+          "name": "Neutral (N)",
+          "text": "is the alignment of those who prefer to steer clear of moral questions and don't take sides, doing what seems best at the time. Lizardfolk, most druids, and many humans are neutral."
+        },
+        {
+          "name": "Chaotic neutral (CN)",
+          "text": "creatures follow their whims, holding their personal freedom above all else. Many barbarians and rogues, and some bards, are chaotic neutral."
+        },
+        {
+          "name": "Lawful evil (LE)",
+          "text": "creatures methodically take what they want, within the limits of a code of tradition, loyalty, or order. Devils, blue dragons, and hobgoblins are lawful evil."
+        },
+        {
+          "name": "Neutral evil (NE)",
+          "text": "is the alignment of those who do whatever they can get away with, without compassion or qualms. Many drow, some Cloud Giants, and goblins are neutral evil."
+        },
+        {
+          "name": "Chaotic evil (CE)",
+          "text": "creatures act with arbitrary violence, spurred by their greed, Hatred, or bloodlust. Demons, red dragons, and orcs are chaotic evil."
+        }
+      ]
+    },
+    {
+      "header": "Alignment in the Multiverse",
+      "level": "4",
+      "items": [
+        {
+          "name": "",
+          "text": "For many thinking creatures, alignment is a moral choice. Humans, dwarves, elves, and other humanoid races can choose whether to follow the paths of good or evil, law or chaos. According to myth, the good- aligned gods who created these races gave them free will to choose their moral paths, knowing that good without free will is slavery."
+        },
+        {
+          "name": "",
+          "text": "The evil deities who created other races, though, made those races to serve them. Those races have strong inborn tendencies that match the nature of their gods. Most orcs share the violent, savage nature of the orc gods, and are thus inclined toward evil. Even if an orc chooses a good alignment, it struggles against its innate tendencies for its entire life. (Even Half-Orcs feel the lingering pull of the orc god's influence.)"
+        },
+        {
+          "name": "",
+          "text": "Alignment is an essential part of the nature of Celestials and Fiends. A devil does not choose to be lawful evil, and it doesn't tend toward lawful evil, but rather it is lawful evil in its essence. If it somehow ceased to be lawful evil, it would cease to be a devil."
+        },
+        {
+          "name": "",
+          "text": "Most creatures that lack the capacity for rational thought do not have alignments—they are unaligned. Such a creature is incapable of making a moral or ethical choice and acts according to its bestial nature. Sharks are savage predators, for example, but they are not evil; they have no alignment."
+        }
+      ]
+    },
+    {
+      "header": "Languages",
+      "level": "3",
+      "items": [
+        {
+          "name": "",
+          "text": "Your race indicates the languages your character can speak by default, and your background might give you access to one or more additional languages of your choice. Note these languages on your character sheet."
+        },
+        {
+          "name": "",
+          "text": "Choose your languages from the Standard Languages table, or choose one that is common in your campaign. With your GM's permission, you can instead choose a Language from the Standard Languages table or a secret Language, such as thieves' cant or the tongue of druids."
+        },
+        {
+          "name": "",
+          "text": "Some of these languages are actually families of languages with many dialects. For example, the Primordial Language includes the Auran, Aquan, Ignan, and Terran dialects, one for each of the four elemental planes. Creatures that speak different dialects of the same Language can communicate with one another."
+        }
+      ]
+    },
+    {
+      "type": "table",
+      "header": "Table: Standard Languages",
+      "items": [
+        {
+          "type": "thead",
+          "rows": [
+            [
+              {
+                "type": "th",
+                "text": "Language"
+              },
+              {
+                "type": "th",
+                "text": "Typical Speakers"
+              },
+              {
+                "type": "th",
+                "text": "Script"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "tbody",
+          "rows": [
+            [
+              {
+                "type": "td",
+                "text": "Common"
+              },
+              {
+                "type": "td",
+                "text": "Humans"
+              },
+              {
+                "type": "td",
+                "text": "Common"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Dwarvish"
+              },
+              {
+                "type": "td",
+                "text": "Dwarves"
+              },
+              {
+                "type": "td",
+                "text": "Dwarvish"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Elvish"
+              },
+              {
+                "type": "td",
+                "text": "Elves"
+              },
+              {
+                "type": "td",
+                "text": "Elvish"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Giant"
+              },
+              {
+                "type": "td",
+                "text": "Ogres, Giants"
+              },
+              {
+                "type": "td",
+                "text": "Dwarvish"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Gnomish"
+              },
+              {
+                "type": "td",
+                "text": "Gnomes"
+              },
+              {
+                "type": "td",
+                "text": "Dwarvish"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Goblin"
+              },
+              {
+                "type": "td",
+                "text": "Goblinoids"
+              },
+              {
+                "type": "td",
+                "text": "Dwarvish"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Halfling"
+              },
+              {
+                "type": "td",
+                "text": "Halflings"
+              },
+              {
+                "type": "td",
+                "text": "Common"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Orc"
+              },
+              {
+                "type": "td",
+                "text": "Orcs"
+              },
+              {
+                "type": "td",
+                "text": "Dwarvish"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "type": "table",
+      "header": "Exotic Languages",
+      "items": [
+        {
+          "type": "thead",
+          "rows": [
+            [
+              {
+                "type": "th",
+                "text": "Language"
+              },
+              {
+                "type": "th",
+                "text": "Typical Speakers"
+              },
+              {
+                "type": "th",
+                "text": "Script"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "tbody",
+          "rows": [
+            [
+              {
+                "type": "td",
+                "text": "Abyssal"
+              },
+              {
+                "type": "td",
+                "text": "Demons"
+              },
+              {
+                "type": "td",
+                "text": "Infernal"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Celestial"
+              },
+              {
+                "type": "td",
+                "text": "Celestials"
+              },
+              {
+                "type": "td",
+                "text": "Celestial"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Draconic"
+              },
+              {
+                "type": "td",
+                "text": "Dragons, Dragonborn"
+              },
+              {
+                "type": "td",
+                "text": "Draconic"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Deep Speech"
+              },
+              {
+                "type": "td",
+                "text": "Aboleths, cloakers"
+              },
+              {
+                "type": "td",
+                "text": "—"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Infernal"
+              },
+              {
+                "type": "td",
+                "text": "Devils"
+              },
+              {
+                "type": "td",
+                "text": "Infernal"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Primordial"
+              },
+              {
+                "type": "td",
+                "text": "Elementals"
+              },
+              {
+                "type": "td",
+                "text": "Dwarvish"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Sylvan"
+              },
+              {
+                "type": "td",
+                "text": "Fey creatures"
+              },
+              {
+                "type": "td",
+                "text": "Elvish"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Undercommon"
+              },
+              {
+                "type": "td",
+                "text": "Underworld traders"
+              },
+              {
+                "type": "td",
+                "text": "Elvish"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "header": "Inspiration",
+      "level": "2",
+      "items": [
+        {
+          "name": "",
+          "text": "Inspiration is a rule the game master can use to reward you for playing your character in a way that's true to his or her personality traits, ideal, bond, and flaw. By using inspiration, you can draw on your personality trait of compassion for the downtrodden to give you an edge in negotiating with the Beggar Prince. Or inspiration can let you call on your bond to the defense of your home village to push past the effect of a spell that has been laid on you."
+        }
+      ]
+    },
+    {
+      "header": "Gaining Inspiration",
+      "level": "3",
+      "items": [
+        {
+          "name": "",
+          "text": "Your GM can choose to give you inspiration for a variety of reasons. Typically, GMs award it when you play out your personality traits, give in to the drawbacks presented by a flaw or bond, and otherwise portray your character in a compelling way. Your GM will tell you how you can earn inspiration in the game."
+        },
+        {
+          "name": "",
+          "text": "You either have inspiration or you don't—you can't stockpile multiple “inspirations” for later use."
+        }
+      ]
+    },
+    {
+      "header": "Using Inspiration",
+      "level": "3",
+      "items": [
+        {
+          "name": "",
+          "text": "If you have inspiration, you can expend it when you make an Attack roll, saving throw, or ability check. Spending your inspiration gives you advantage on that roll."
+        },
+        {
+          "name": "",
+          "text": "Additionally, if you have inspiration, you can reward another player for good roleplaying, clever thinking, or simply doing something exciting in the game. When another player character does something that really contributes to the story in a fun and interesting way, you can give up your inspiration to give that character inspiration."
+        }
+      ]
+    }
+  ],
+  "attributes": {
+    "Category": "Rules",
+    "Source": "SRD 5.0"
+  }
+}

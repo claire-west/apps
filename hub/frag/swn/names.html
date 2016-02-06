@@ -1,0 +1,43 @@
+<div z--controller>
+    <div class="column">
+        <h4>
+            <span>Names</span>
+            <span class="float-right" style="font-size: 1rem;" z--visible="!!version">
+                <span>version:</span>
+                <span z--bind="version"></span>
+            </span>
+        </h4>
+    </div>
+    <div class="column">
+        <p>The current revised edition beta does not include Greek or Latin names. Blank rows may be generated as a result.</p>
+    </div>
+    <div class="column scroll-h">
+        <table class="margin-bottom-0">
+            <thead>
+                <tr>
+                    <td></td>
+                    <th>Female</th>
+                    <th>Male</th>
+                    <th>Surname</th>
+                    <th>Place</th>
+                    <th>Origin</th>
+                </tr>
+            </thead>
+            <tbody z--iterate="items">
+                <tr z--template>
+                    <td class="text-right" z--bind='{
+                        "fn": "index"
+                    }'></td>
+                    <td z--bind=">Female"></td>
+                    <td z--bind=">Male"></td>
+                    <td z--bind=">Surname"></td>
+                    <td z--bind=">Place"></td>
+                    <td z--bind=">language"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="column">
+        <a class="button expanded hollow" z--click="plusOne"><i class="fa fa-plus" title="Generate One More"></i></a>
+    </div>
+</div>

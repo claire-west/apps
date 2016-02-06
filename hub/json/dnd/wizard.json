@@ -1,0 +1,1807 @@
+{
+  "name": "Wizard",
+  "sections": [
+    {
+      "header": "",
+      "items": [
+        {
+          "name": "",
+          "text": "As a wizard, you gain the following Class Features."
+        }
+      ]
+    },
+    {
+      "header": "Hit Points",
+      "level": "2",
+      "items": [
+        {
+          "name": "",
+          "text": ""
+        },
+        {
+          "name": "Hit Dice",
+          "text": "1d6 per wizard level"
+        },
+        {
+          "name": "Hit Points at 1st Level",
+          "text": "6 + your Constitution modifier"
+        },
+        {
+          "name": "Hit Points at Higher Levels",
+          "text": "1d6 (or 4) + your Constitution modifier per wizard level after 1st"
+        }
+      ]
+    },
+    {
+      "header": "Starting Proficiencies",
+      "level": "2",
+      "items": [
+        {
+          "name": "",
+          "text": "You are proficient with the following items, in addition to any proficiencies provided by your race or background."
+        },
+        {
+          "name": "Armor",
+          "text": "none"
+        },
+        {
+          "name": "Weapons",
+          "text": "daggers, darts, slings, quarterstaffs, light crossbows"
+        },
+        {
+          "name": "Tools",
+          "text": "none"
+        },
+        {
+          "name": "Skills",
+          "text": "Choose two from Arcana, History, Insight, Investigation, Medicine, and Religion"
+        }
+      ]
+    },
+    {
+      "header": "Starting Equipment",
+      "level": "2",
+      "items": [
+        {
+          "name": "",
+          "text": ""
+        },
+        {
+          "name": "",
+          "text": "You start with the following items, plus anything provided by your background."
+        },
+        {
+          "name": "",
+          "text": "• (a) a Quarterstaff or (b) a Dagger"
+        },
+        {
+          "name": "",
+          "text": "• (a) a Component pouch or (b) an arcane focus"
+        },
+        {
+          "name": "",
+          "text": "• (a) a Scholar's Pack or (b) an Explorer's Pack"
+        },
+        {
+          "name": "",
+          "text": "• A Spellbook"
+        },
+        {
+          "name": "",
+          "text": "Alternatively, you may start with 4d4 x 10 gp to buy your own Equipment."
+        }
+      ]
+    },
+    {
+      "type": "table",
+      "header": "Table: The Wizard",
+      "items": [
+        {
+          "type": "thead",
+          "rows": [
+            [
+              {
+                "type": "th",
+                "text": "Level",
+                "style": "text-align:center",
+                "rowspan": "2"
+              },
+              {
+                "type": "th",
+                "text": "Proficiency Bonus",
+                "style": "text-align:center",
+                "rowspan": "2"
+              },
+              {
+                "type": "th",
+                "text": "Features",
+                "style": "text-align:center",
+                "rowspan": "2"
+              },
+              {
+                "type": "th",
+                "text": "Cantrips Known",
+                "style": "text-align:center",
+                "rowspan": "2"
+              },
+              {
+                "type": "th",
+                "text": "—Spell Slots per Spell Level—",
+                "style": "text-align:center",
+                "colspan": "9"
+              }
+            ],
+            [
+              {
+                "type": "th",
+                "text": "1st",
+                "style": "text-align:center"
+              },
+              {
+                "type": "th",
+                "text": "2nd",
+                "style": "text-align:center"
+              },
+              {
+                "type": "th",
+                "text": "3rd",
+                "style": "text-align:center"
+              },
+              {
+                "type": "th",
+                "text": "4th",
+                "style": "text-align:center"
+              },
+              {
+                "type": "th",
+                "text": "5th",
+                "style": "text-align:center"
+              },
+              {
+                "type": "th",
+                "text": "6th",
+                "style": "text-align:center"
+              },
+              {
+                "type": "th",
+                "text": "7th",
+                "style": "text-align:center"
+              },
+              {
+                "type": "th",
+                "text": "8th",
+                "style": "text-align:center"
+              },
+              {
+                "type": "th",
+                "text": "9th",
+                "style": "text-align:center"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "tbody",
+          "rows": [
+            [
+              {
+                "type": "td",
+                "text": "1st",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+2",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "Spellcasting, Arcane Recovery",
+                "style": "text-align:left"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "2",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "2nd",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+2",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "Arcane Tradition",
+                "style": "text-align:left"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "3rd",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+2",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:left"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "4",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "2",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "4th",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+2",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "Ability Score Improvement",
+                "style": "text-align:left"
+              },
+              {
+                "type": "td",
+                "text": "4",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "4",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "5th",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:left"
+              },
+              {
+                "type": "td",
+                "text": "4",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "4",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "2",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "6th",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "Arcane Tradition feature",
+                "style": "text-align:left"
+              },
+              {
+                "type": "td",
+                "text": "4",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "4",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "7th",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:left"
+              },
+              {
+                "type": "td",
+                "text": "4",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "4",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "1",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "8th",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "Ability Score Improvement",
+                "style": "text-align:left"
+              },
+              {
+                "type": "td",
+                "text": "4",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "4",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "2",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "9th",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+4",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:left"
+              },
+              {
+                "type": "td",
+                "text": "4",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "4",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "1",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "10th",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+4",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "Arcane Tradition feature",
+                "style": "text-align:left"
+              },
+              {
+                "type": "td",
+                "text": "5",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "4",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "2",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "11th",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+4",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:left"
+              },
+              {
+                "type": "td",
+                "text": "5",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "4",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "2",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "1",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "12th",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+4",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "Ability Score Improvement",
+                "style": "text-align:left"
+              },
+              {
+                "type": "td",
+                "text": "5",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "4",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "2",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "1",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "13th",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+5",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:left"
+              },
+              {
+                "type": "td",
+                "text": "5",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "4",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "2",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "1",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "1",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "14th",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+5",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "Arcane Tradition feature",
+                "style": "text-align:left"
+              },
+              {
+                "type": "td",
+                "text": "5",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "4",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "2",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "1",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "1",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "15th",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+5",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:left"
+              },
+              {
+                "type": "td",
+                "text": "5",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "4",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "2",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "1",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "1",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "1",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "16th",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+5",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "Ability Score Improvement",
+                "style": "text-align:left"
+              },
+              {
+                "type": "td",
+                "text": "5",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "4",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "2",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "1",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "1",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "1",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "17th",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+6",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:left"
+              },
+              {
+                "type": "td",
+                "text": "5",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "4",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "2",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "1",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "1",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "1",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "1",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "18th",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+6",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "Spell Mastery",
+                "style": "text-align:left"
+              },
+              {
+                "type": "td",
+                "text": "5",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "4",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "1",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "1",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "1",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "1",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "19th",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+6",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "Ability Score Improvement",
+                "style": "text-align:left"
+              },
+              {
+                "type": "td",
+                "text": "5",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "4",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "2",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "1",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "1",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "1",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "20th",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+6",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "Signature Spell",
+                "style": "text-align:left"
+              },
+              {
+                "type": "td",
+                "text": "5",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "4",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "2",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "2",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "1",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "1",
+                "style": "text-align:center"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "header": "Spellcasting",
+      "level": "2",
+      "items": [
+        {
+          "name": "",
+          "text": "As a student of Arcane Magic, you have a Spellbook containing Spells that show the first glimmerings of your true power."
+        },
+        {
+          "name": "Cantrips",
+          "text": ""
+        },
+        {
+          "name": "",
+          "text": "At 1st level, you know three Cantrips of your choice from the wizard spell list. You learn additional wizard Cantrips of your choice at higher levels, as shown in the Cantrips Known column of the Wizard table."
+        },
+        {
+          "name": "Spellbook",
+          "text": ""
+        },
+        {
+          "name": "",
+          "text": "At 1st level, you have a Spellbook containing six 1st-level wizard Spells of your choice. Your Spellbook is the repository of the wizard Spells you know, except your Cantrips, which are fixed in your mind."
+        },
+        {
+          "name": "Preparing and Casting Spells",
+          "text": ""
+        },
+        {
+          "name": "",
+          "text": "The Wizard table shows how many Spell Slots you have to cast your Spells of 1st level and higher. To cast one of these Spells, you must expend a slot of the spell's level or higher. You regain all expended Spell Slots when you finish a Long Rest."
+        },
+        {
+          "name": "",
+          "text": "    You prepare the list of wizard Spells that are available for you to cast. To do so, choose a number of wizard Spells from your Spellbook equal to your Intelligence modifier + your wizard level (minimum of one spell). The Spells must be of a level for which you have Spell Slots."
+        },
+        {
+          "name": "",
+          "text": "    For example, if you're a 3rd-level wizard, you have four 1st-level and two 2nd-level Spell Slots. With an Intelligence of 16, your list of prepared Spells can include six Spells of 1st or 2nd level, in any combination, chosen from your Spellbook. If you prepare the 1st-level spell Magic Missile, you can cast it using a 1st-level or a 2nd-level slot. Casting the spell doesn't remove it from your list of prepared Spells."
+        },
+        {
+          "name": "",
+          "text": "    You can change your list of prepared Spells when you finish a Long Rest. Preparing a new list of wizard Spells requires time spent studying your Spellbook and memorizing the incantations and gestures you must make to cast the spell: at least 1 minute per Spell Level for each spell on your list."
+        },
+        {
+          "name": "Spellcasting Ability",
+          "text": ""
+        },
+        {
+          "name": "",
+          "text": "Intelligence is your spellcasting ability for your wizard Spells, since you learn your Spells through dedicated study and memorization. You use your Intelligence whenever a spell refers to your spellcasting ability. In addition, you use your Intelligence modifier when Setting the saving throw DC for a wizard spell you cast and when Making an Attack roll with one."
+        },
+        {
+          "name": "Spell save DC",
+          "text": "= 8 + your proficiency bonus + your Intelligence modifier"
+        },
+        {
+          "name": "Spell Attack modifier",
+          "text": "= your proficiency bonus + your Intelligence modifier"
+        },
+        {
+          "name": "Ritual Casting",
+          "text": ""
+        },
+        {
+          "name": "",
+          "text": "You can cast a wizard spell as a ritual if that spell has the ritual tag and you have the spell in your Spellbook. You don't need to have the spell prepared."
+        },
+        {
+          "name": "Spellcasting Focus",
+          "text": ""
+        },
+        {
+          "name": "",
+          "text": "You can use an arcane focus as a spellcasting focus for your wizard Spells."
+        }
+      ]
+    },
+    {
+      "header": "Arcane Recovery",
+      "level": "2",
+      "items": [
+        {
+          "name": "",
+          "text": "You have learned to regain some of your magical energy by studying your Spellbook. Once per day when you finish a Short Rest, you can choose expended Spell Slots to recover. The Spell Slots can have a combined level that is equal to or less than half your wizard level (rounded up), and none of the slots can be 6th level or higher."
+        },
+        {
+          "name": "",
+          "text": "For example, if you're a 4th-level wizard, you can recover up to two levels worth of Spell Slots. You can recover either a 2nd-level spell slot or two 1st-level Spell Slots."
+        }
+      ]
+    },
+    {
+      "header": "Arcane Tradition",
+      "level": "2",
+      "items": [
+        {
+          "name": "",
+          "text": "When you reach 2nd level, you choose an arcane tradition, shaping your practice of magic through one of eight schools, such as Evocation. Your choice grants you features at 2nd level and again at 6th, 10th, and 14th level."
+        }
+      ]
+    },
+    {
+      "header": "Ability Score Improvement",
+      "level": "2",
+      "items": [
+        {
+          "name": "",
+          "text": "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two Ability Scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature."
+        }
+      ]
+    },
+    {
+      "header": "Spell Mastery",
+      "level": "2",
+      "items": [
+        {
+          "name": "",
+          "text": "At 18th level, you have achieved such mastery over certain Spells that you can cast them at will. Choose a 1st-level wizard spell and a 2nd-level wizard spell that are in your Spellbook. You can cast those Spells at their lowest level without expending a spell slot when you have them prepared. If you want to cast either spell at a higher level, you must expend a spell slot as normal."
+        },
+        {
+          "name": "",
+          "text": "    By spending 8 hours in study, you can exchange one or both of the Spells you chose for different Spells of the same levels."
+        }
+      ]
+    },
+    {
+      "header": "Signature Spells",
+      "level": "2",
+      "items": [
+        {
+          "name": "",
+          "text": ""
+        },
+        {
+          "name": "",
+          "text": "When you reach 20th level, you gain mastery over two powerful Spells and can cast them with little effort. Choose two 3rd-level wizard Spells in your Spellbook as your signature Spells. You always have these Spells prepared, they don't count against the number of Spells you have prepared, and you can cast each of them once at 3rd level without expending a spell slot. When you do so, you can't do so again until you finish a short or Long Rest."
+        },
+        {
+          "name": "",
+          "text": "    If you want to cast either spell at a higher level, you must expend a spell slot as normal."
+        },
+        {
+          "name": "",
+          "text": "Arcane Traditions"
+        },
+        {
+          "name": "",
+          "text": "The study of wizardry is ancient, stretching back to the earliest mortal discoveries of magic. It is firmly established in fantasy gaming worlds, with various traditions dedicated to its complex study."
+        },
+        {
+          "name": "",
+          "text": "The most common arcane traditions in the multiverse revolve around The Schools of Magic. Wizards through the ages have cataloged thousands of Spells, grouping them into eight categories called schools. In some places, these traditions are literally schools. In other institutions, the schools are more like academic departments, with rival faculties competing for students and funding. Even wizards who train apprentices in the solitude of their own towers use the division of magic into schools as a learning device, since the Spells of each school require mastery of different techniques."
+        }
+      ]
+    },
+    {
+      "header": "School of Evocation",
+      "level": "3",
+      "items": [
+        {
+          "name": "",
+          "text": ""
+        },
+        {
+          "name": "",
+          "text": "You focus your study on magic that creates powerful elemental effects such as bitter cold, searing flame, rolling thunder, crackling lightning, and burning acid. Some evokers find employment in military forces, serving as artillery to blast enemy armies from afar. Others use their spectacular power to protect the weak, while some seek their own gain as bandits, adventurers, or aspiring tyrants."
+        }
+      ]
+    },
+    {
+      "header": "Evocation Savant",
+      "level": "4",
+      "items": [
+        {
+          "name": "",
+          "text": "Beginning when you select this school at 2nd level, the gold and time you must spend to copy an Evocation spell into your Spellbook is halved."
+        }
+      ]
+    },
+    {
+      "header": "Sculpt Spells",
+      "level": "4",
+      "items": [
+        {
+          "name": "",
+          "text": ""
+        },
+        {
+          "name": "",
+          "text": "Beginning at 2nd level, you can create pockets of relative safety within the effects of your Evocation Spells. When you cast an Evocation spell that affects other creatures that you can see, you can choose a number of them equal to 1 + the spell's level. The chosen creatures automatically succeed on their saving throws against the spell, and they take no damage if they would normally take half damage on a successful save."
+        }
+      ]
+    },
+    {
+      "header": "Potent Cantrip",
+      "level": "4",
+      "items": [
+        {
+          "name": "",
+          "text": "Starting at 6th level, your damaging Cantrips affect even creatures that avoid the brunt of the effect. When a creature succeeds on a saving throw against your cantrip, the creature takes half the cantrip's damage (if any) but suffers no additional effect from the cantrip."
+        }
+      ]
+    },
+    {
+      "header": "Empowered Evocation",
+      "level": "4",
+      "items": [
+        {
+          "name": "",
+          "text": ""
+        },
+        {
+          "name": "",
+          "text": "Beginning at 10th level, you can add your Intelligence modifier to one damage roll of any wizard Evocation spell you cast."
+        }
+      ]
+    },
+    {
+      "header": "Overchannel",
+      "level": "4",
+      "items": [
+        {
+          "name": "",
+          "text": "Starting at 14th level, you can increase the power of your simpler Spells. When you cast a wizard spell of 1st through 5th level that deals damage, you can deal maximum damage with that spell."
+        },
+        {
+          "name": "",
+          "text": "The first time you do so, you suffer no adverse effect. If you use this feature again before you finish a Long Rest, you take 2d12 necrotic damage for each level of the spell, immediately after you cast it. Each time you use this feature again before finishing a Long Rest, the necrotic damage per Spell Level increases by 1d12. This damage ignores Resistance and immunity."
+        }
+      ]
+    },
+    {
+      "header": "Your Spellbook",
+      "level": "2",
+      "items": [
+        {
+          "name": "",
+          "text": ""
+        },
+        {
+          "name": "",
+          "text": "The Spells that you add to your Spellbook as you gain levels reflect the arcane research you conduct on your own, as well as intellectual breakthroughs you have had about the nature of the multiverse. You might find other Spells during your adventures. You could discover a spell recorded on a scroll in an evil wizard's chest, for example, or in a dusty tome in an ancient Library."
+        },
+        {
+          "name": "Copying a Spell into the Book",
+          "text": "When you find a wizard spell of 1st level or higher, you can add it to your Spellbook if it is of a Spell Level you can prepare and if you can spare the time to decipher and copy it."
+        },
+        {
+          "name": "",
+          "text": "Copying that spell into your Spellbook involves reproducing the basic form of the spell, then deciphering the unique system of notation used by the wizard who wrote it. You must practice the spell until you understand the sounds or gestures required, then transcribe it into your Spellbook using your own notation."
+        },
+        {
+          "name": "",
+          "text": "For each level of the spell, the process takes 2 hours and costs 50 gp. The cost represents material Components you expend as you experiment with the spell to master it, as well as the fine inks you need to record it. Once you have spent this time and money, you can prepare the spell just like your other Spells."
+        },
+        {
+          "name": "Replacing the Book",
+          "text": "You can copy a spell from your own Spellbook into another book—for example, if you want to make a backup copy of your Spellbook. This is just like copying a new spell into your Spellbook, but faster and easier, since you understand your own notation and already know how to cast the spell. You need spend only 1 hour and 10 gp for each level of the copied spell."
+        },
+        {
+          "name": "",
+          "text": "If you lose your Spellbook, you can use the same procedure to transcribe the Spells that you have prepared into a new Spellbook. Filling out the remainder of your Spellbook requires you to find new Spells to do so, as normal. For this reason, many wizards keep backup spellbooks in a safe place."
+        },
+        {
+          "name": "The Book's Appearance",
+          "text": "Your Spellbook is a unique compilation of Spells, with its own decorative flourishes and margin notes. It might be a plain, functional leather volume that you received as a gift from your master, a finely bound gilt-­edged tome you found in an ancient Library, or even a loose collection of notes scrounged together after you lost your previous Spellbook in a mishap."
+        }
+      ]
+    }
+  ],
+  "attributes": {
+    "Hit Dice": "d6",
+    "Saving Throws": "Intelligence, Wisdom",
+    "Category": "Classes",
+    "Source": "SRD 5.0"
+  }
+}

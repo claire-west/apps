@@ -1,0 +1,36 @@
+<nav class="top-bar sectionNav"></nav>
+<section id="permissions-manager" class="row contentSection defaultSection" z--lazy hidden>
+    <div class="small-6 columns">
+        <h4>Roles</h4>
+        <div class="roleList" z--iterate="roles">
+            <p z--template z--click="toRole">
+                <span class="label" z--bind="."></span>
+                <i class="fa fa-angle-right"></i>
+            </p>
+        </div>
+    </div>
+    <div class="small-6 columns end">
+        <h4>Allowed to Access</h4>
+        <div class="identifierInput input-group" z--visible="showIdentifierInput">
+            <input class="input-group-field" type="text" z--bind="identifierText">
+            <div class="input-group-button">
+                <button class="button" z--click="addIdentifier">
+                    <i class="fa fa-plus"></i>
+                </button>
+            </div>
+        </div>
+        <div class="identifierList" z--iterate="identifiers">
+            <p z--template>
+                <button class="button alert tiny" z--click="removeIdentifier">
+                    <i class="fa fa-trash-o"></i>
+                </button>
+                <span class="label" z--bind="."></span>
+            </p>
+        </div>
+    </div>
+</section>
+<section id="permissions-unauthorized" class="row contentSection" hidden>
+    <div class="columns">
+        <h5>You must log in to use this app.</h5>
+    </div>
+</section>

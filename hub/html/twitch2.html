@@ -1,0 +1,108 @@
+<nav class="top-bar sectionNav">
+    <div class="top-bar-content">
+        <div class="top-bar-left">
+            <ul class="menu">
+                <li>
+                    <div class="input-group">
+                        <a class="topbar-button-fa button secondary" title="Settings" href="#twitch2-settings">
+                            <i class="fa fa-cog"></i>
+                            <span class="show-for-sr">Settings</span>
+                        </a>
+                        <a class="topbar-button-fi button hide" title="One-time Entry" href="#twitch2-singleEntry">
+                            <i class="fi-play-video"></i>
+                            <span class="show-for-sr">One-time Entry</span>
+                        </a>
+                        <a class="topbar-button-fa button hide" title="Playlists" href="#twitch2-playlists">
+                            <i class="fa fa-th" style="margin-top: 2px;"></i>
+                            <span class="show-for-sr">Manage Playlists</span>
+                        </a>
+                        <a class="topbar-button-fa button" title="Refresh" z--click="onRefresh">
+                            <i class="fa fa-refresh" z--class='{
+                                "class": "fa-spin",
+                                "path": "lastRefresh",
+                                "eq": "loading..."
+                            }'></i>
+                            <span class="show-for-sr">Refresh</span>
+                        </a>
+                        <span class="hide-for-small-only" z--visible="!!lastRefresh">Last refresh: <span z--bind="lastRefresh"></span></span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="top-bar-right">
+            <ul class="menu">
+                <li>
+                    <div class="input-group show-for-large">
+                        <input type="text" class="input-group-field text-center" placeholder="Username" z--bind="username" />
+                        <div class="input-group-button">
+                            <button class="topbar-button-fa button" title="Save Username" z--click="onSaveUsername">
+                                <i class="fa fa-save"></i>
+                                <span class="show-for-sr">Save Username</span>
+                            </button>
+                        </div>
+                    </div>
+                    <button class="topbar-button-fi button hide-for-large" title="Enter Username" data-toggle="twitch-usernameDropdown">
+                        <i class="fi-torso"></i>
+                        <span class="show-for-sr">Username Entry</span>
+                    </button>
+                    <div id="twitch-usernameDropdown" class="dropdown-pane hide-for-large" data-dropdown>
+                        <div class="input-group">
+                            <input type="text" class="input-group-field text-center" placeholder="Username" z--bind="username" />
+                            <div class="input-group-button">
+                                <button class="topbar-button-fa button" title="Save Username" z--click="onSaveUsername">
+                                    <i class="fa fa-save"></i>
+                                    <span class="show-for-sr">Save Username</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<section id="twitch2" class="row contentSection defaultSection" hidden>
+    <div class="column" z--iterate="streams">
+        <div class="row" z--template>
+            <div class="streamHeader column">
+                <h4>
+                    <a href="#twitch2" z--visible=".showBackButton"><i class="fa fa-arrow-left" title="Back to Followed Streams"></i></a>
+                    <span z--bind=">title"></span>
+                    <em>
+                        <span z--bind=">channels.length"></span>
+                    </em>
+                </h4>
+                <!-- <h5 z--bind=">emptyMessage" z--visible="!>channels.length"></h5> -->
+            </div>
+            <div z--iterate=">channels">
+                <div class="streamTile large-3 medium-4 small-12 columns end" z--template>
+                    <div class="callout secondary">
+                        <a z--bind=">channelLink">
+                            <img z--bind=">previewSrc" z--title=">game">
+                        </a>
+                        <h6 class="truncate-line-wrap" z--bind=">streamTitle" z--title=">streamTitle" z--click="toggleLineWrap"></h6>
+                        <p class="truncate-line-wrap"><span z--bind=">viewers"></span> watching <a z--bind=">profileLink" z--text=">channel"></a></p>
+
+                        <div class="row collapse">
+                            <div class="small-3 columns">
+                                <a target="_blank" class="button hollow expanded secondary" z--bind=">chatLink" z--click='{ "path": "openChat", "args": ">chatLink" }'><i class="fi-comments"></i></a>
+                            </div>
+                            <div class="small-9 columns">
+                                <a class="button expanded" z--bind=">launchLink">Launch</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="twitch2-settings" class="row contentSection" z--lazy hidden>
+    <z--hub-frag-twitch z--frag="settings"></z--hub-frag-twitch>
+</section>
+<section id="twitch2-setup" class="row contentSection" z--lazy hidden>
+    <z--hub-frag-twitch z--frag="setup"></z--hub-frag-twitch>
+</section>
+<!-- <section id="twitch2-singleEntry" class="row contentSection" z--lazy hidden>
+    <z--hub-frag-twitch z--frag="singleEntry"></z--hub-frag-twitch>
+</section> -->

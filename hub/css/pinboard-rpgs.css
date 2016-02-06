@@ -1,0 +1,25 @@
+#pinboard-view .pinboardTile {
+    max-height: 9rem;
+}
+
+#pinboard-view .pinboardTile.inactiveTile {
+    height: 1rem;
+}
+
+#pinboard-view .pinboardTile.inactiveTile .title {
+    line-height: 1rem;
+    font-size: 0.75rem;
+}
+
+@media screen and (min-width: 40em) {
+    #pinboard-view .medium-3 {
+        width: 33.3333333333%;
+        width: calc(100% / 3);
+    }
+}
+
+@media screen and (min-width: 64em) {
+    #pinboard-view .large-2 {
+        width: 20%
+    }
+}

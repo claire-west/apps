@@ -1,0 +1,15 @@
+#app-randomTables .sectionNav .menu .input-group {
+    margin-bottom: 0;
+}
+
+#app-randomTables .top-bar-left .input-group h4 {
+    line-height: 2.5rem;
+    margin-bottom: 0;
+    margin-left: 0.25rem;
+}
+
+#app-randomTables .top-bar-right .input-group select {
+    text-align: center;
+    margin-right: 1rem;
+    margin-bottom: 0;
+}

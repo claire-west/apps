@@ -1,0 +1,65 @@
+{
+  "name": "Human",
+  "sections": [
+    {
+      "header": "Human Traits",
+      "level": "2",
+      "items": [
+        {
+          "name": "",
+          "text": "It's hard to make generalizations about humans, but your human character has these traits."
+        },
+        {
+          "name": "Ability Score Increase",
+          "text": "Your Ability Scores each increase by 1."
+        },
+        {
+          "name": "Age",
+          "text": "Humans reach adulthood in their late teens and live less than a century."
+        },
+        {
+          "name": "Alignment",
+          "text": "Humans tend toward no particular alignment. The best and the worst are found among them."
+        },
+        {
+          "name": "Size",
+          "text": "Humans vary widely in height and build, from barely 5 feet to well over 6 feet tall. Regardless of your position in that range, your size is Medium."
+        },
+        {
+          "name": "Speed",
+          "text": "Your base walking speed is 30 feet."
+        },
+        {
+          "name": "Languages",
+          "text": "You can speak, read, and write Common and one extra Language of your choice. Humans typically learn the languages of other peoples they deal with, including obscure dialects. They are fond of sprinkling their Speech with words borrowed from other tongues: Orc curses, Elvish musical expressions, Dwarvish military phrases, and so on."
+        }
+      ]
+    },
+    {
+      "header": "Variant Human",
+      "level": "3",
+      "items": [
+        {
+          "name": "",
+          "text": "If your campaign uses the optional feat rules from the Player's Handbook, your Dungeon Master might allow these variant traits, all of which replace the human's Ability Score Increase trait."
+        },
+        {
+          "name": "Ability Score Increase",
+          "text": "Two different ability scores of your choice increase by 1."
+        },
+        {
+          "name": "Skills",
+          "text": "You gain proficiency in one skill of your choice."
+        },
+        {
+          "name": "Feat",
+          "text": "You gain one feat of your choice."
+        }
+      ]
+    }
+  ],
+  "attributes": {
+    "Category": "Races",
+    "Source": "Player's Basic Rules 0.2"
+  }
+}

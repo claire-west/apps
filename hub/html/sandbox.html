@@ -1,0 +1,65 @@
+<nav class="top-bar sectionNav"></nav>
+<section class="row contentSection defaultSection" data-lazy hidden>
+    <div class="columns">
+        <h4>Sandbox</h4>
+    </div>
+    <div class="columns">
+        <p z--bind="^test" z--title="^test"></p>
+        <p z--bind="/test" z--title="/test"></p>
+        <p z--bind="/@app"></p>
+        <div z--iterate="singleArr">
+            <z--hub-frag z--template z--frag="test" z--blah="blah"></z--hub-frag>
+        </div>
+        <p z--bind='{
+            "path": "text",
+            "fn": "double"
+        }'></p>
+        <label>
+            <input z--bind="text" z--keyup="onKeyup" />
+            <span>Value is <span z--visible='{ "path": "text", "ne": "test" }'>not </span>'test'</span>
+        </label>
+        <textarea z--bind="=text"></textarea>
+        <select z--bind="text">
+            <option z--bind="arr.0" z--text="text"></option>
+            <option z--bind="arr.1" z--text="bool"></option>
+        </select>
+        <p z--bind="!!text"></p>
+        <label><input type="checkbox" z--bind="bool" /><span z--visible="bool">Check this</span></label>
+        <p z--bind="bool"></p>
+        <p z--bind="!bool"></p>
+        <div z--iterate="arr">
+            <p z--template>
+                <span z--bind="."></span>
+                <span z--bind="text"></span>
+                <span z--bind="^test"></span>
+                <span z--bind="^.text"></span>
+                <span z--bind="^/."></span>
+                <span z--bind=">"></span>
+            </p>
+        </div>
+        <select z--iterate="keyval">
+            <option value=""></option>
+            <option z--template z--bind=".key" z--text=".val"></option>
+        </select>
+        <button class="button" z--click='{ "args": [ "/@app", "@section" ], "path": "onClick" }'>Clickme</button>
+        <table>
+            <tbody z--iterate="orders">
+                <tr z--template>
+                    <td>
+                        <span z--bind="orderText"></span>
+                        <span z--bind=".number"></span>
+                        <span z--bind=">number"></span>
+                    </td>
+                    <td z--iterate=".items">
+                        <p z--template>
+                            <span z--bind=">.number"></span>
+                            <span z--bind="itemText"></span>
+                            <span z--bind="..number"></span>
+                            <span z--bind=">number"></span>
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</section>

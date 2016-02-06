@@ -1,0 +1,74 @@
+#app-resources .resourceFileButton,
+#app-resources .resourceUploadButton {
+    margin-bottom: 0;
+}
+
+#app-resources .fileContent {
+    word-wrap: break-word;
+}
+
+#resources-manager .resourceList p {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+}
+
+#resources-manager .resourceList .label {
+    height: 1.625rem;
+    line-height: 1rem;
+    cursor: pointer;
+}
+
+#resources-manager .resourceList .meta {
+    float: right;
+    margin-right: 0.5rem;
+}
+
+#resources-manager .resourceList p:hover {
+    background-color: #eee;
+}
+
+#resources-manager .resourceList button {
+    float: right;
+}
+
+#resources-manager .resourceList button,
+#resources-manager-edit .roleList button {
+    margin-bottom: 0;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+}
+
+#resources-manager .resourceList button i,
+#resources-manager-edit .roleList button i {
+    font-size: 1rem;
+}
+
+#resources-manager-edit .roleList p {
+    margin-bottom: 0.25rem;
+}
+
+#resources-manager-edit .roleList .label {
+    height: 1.625rem;
+    line-height: 1rem;
+}
+
+#resources-manager-edit .roleInput {
+    margin-bottom: 0.75rem;
+}
+
+#resources-manager-edit .roleInput input {
+    height: 2rem;
+    padding: 0.25rem;
+}
+
+#resources-manager-edit .roleInput button {
+    height: 2rem;
+    padding: 0 0.75rem;
+    line-height: 2rem;
+}
+
+#resources-unauthorized h5 {
+    text-align: center;
+    margin-top: 1rem;
+}

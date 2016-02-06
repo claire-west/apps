@@ -1,0 +1,1858 @@
+{
+  "name": "Cleric",
+  "sections": [
+    {
+      "header": "",
+      "items": [
+        {
+          "name": "",
+          "text": "As a cleric, you gain the following Class Features."
+        }
+      ]
+    },
+    {
+      "header": "Hit Points",
+      "level": "2",
+      "items": [
+        {
+          "name": "",
+          "text": ""
+        },
+        {
+          "name": "Hit Dice",
+          "text": "1d8 per cleric level"
+        },
+        {
+          "name": "Hit Points at 1st Level",
+          "text": "8 + your Constitution modifier"
+        },
+        {
+          "name": "Hit Points at Higher Levels",
+          "text": "1d8 (or 5) + your Constitution modifier per cleric level after 1st"
+        }
+      ]
+    },
+    {
+      "header": "Starting Proficiencies",
+      "level": "2",
+      "items": [
+        {
+          "name": "",
+          "text": "You are proficient with the following items, in addition to any proficiencies provided by your race or background."
+        },
+        {
+          "name": "Armor",
+          "text": "Light Armor, Medium Armor, shields"
+        },
+        {
+          "name": "Weapons",
+          "text": "simple Weapons"
+        },
+        {
+          "name": "Tools",
+          "text": "none"
+        },
+        {
+          "name": "Skills",
+          "text": "Choose two from History, Insight, Medicine, Persuasion, and Religion"
+        }
+      ]
+    },
+    {
+      "header": "Starting Equipment",
+      "level": "2",
+      "items": [
+        {
+          "name": "",
+          "text": ""
+        },
+        {
+          "name": "",
+          "text": "You start with the following items, plus anything provided by your background."
+        },
+        {
+          "name": "",
+          "text": "• (a) a mace or (b) a Warhammer (if proficient)"
+        },
+        {
+          "name": "",
+          "text": "• (a) Scale Mail, (b) Leather Armor, or (c) Chain Mail (if proficient)"
+        },
+        {
+          "name": "",
+          "text": "• (a) a Light Crossbow and 20 bolts or (b) any simple weapon"
+        },
+        {
+          "name": "",
+          "text": "• (a) a Priest's Pack or (b) an Explorer's Pack"
+        },
+        {
+          "name": "",
+          "text": "• A Shield and a holy Symbol"
+        },
+        {
+          "name": "",
+          "text": "Alternatively, you may start with 5d4 x 10 gp to buy your own Equipment."
+        }
+      ]
+    },
+    {
+      "type": "table",
+      "header": "Table: The Cleric",
+      "items": [
+        {
+          "type": "thead",
+          "rows": [
+            [
+              {
+                "type": "th",
+                "text": "Level",
+                "style": "text-align:center",
+                "rowspan": "2"
+              },
+              {
+                "type": "th",
+                "text": "Proficiency Bonus",
+                "style": "text-align:center",
+                "rowspan": "2"
+              },
+              {
+                "type": "th",
+                "text": "Features",
+                "style": "text-align:center",
+                "rowspan": "2"
+              },
+              {
+                "type": "th",
+                "text": "Cantrips Known",
+                "style": "text-align:center",
+                "rowspan": "2"
+              },
+              {
+                "type": "th",
+                "text": "Spell Slots per Spell Level",
+                "style": "text-align:center",
+                "colspan": "9"
+              }
+            ],
+            [
+              {
+                "type": "th",
+                "text": "1st",
+                "style": "text-align:center"
+              },
+              {
+                "type": "th",
+                "text": "2nd",
+                "style": "text-align:center"
+              },
+              {
+                "type": "th",
+                "text": "3rd",
+                "style": "text-align:center"
+              },
+              {
+                "type": "th",
+                "text": "4th",
+                "style": "text-align:center"
+              },
+              {
+                "type": "th",
+                "text": "5th",
+                "style": "text-align:center"
+              },
+              {
+                "type": "th",
+                "text": "6th",
+                "style": "text-align:center"
+              },
+              {
+                "type": "th",
+                "text": "7th",
+                "style": "text-align:center"
+              },
+              {
+                "type": "th",
+                "text": "8th",
+                "style": "text-align:center"
+              },
+              {
+                "type": "th",
+                "text": "9th",
+                "style": "text-align:center"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "tbody",
+          "rows": [
+            [
+              {
+                "type": "td",
+                "text": "1st",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+2",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "Spellcasting, Divine Domain"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "2",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "2nd",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+2",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "Channel Divinity (1/rest), Divine Domain feature"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "3rd",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+2",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "4",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "2",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "4th",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+2",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "Ability Score Improvement"
+              },
+              {
+                "type": "td",
+                "text": "4",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "4",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "5th",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "Destroy Undead (CR 1/2)"
+              },
+              {
+                "type": "td",
+                "text": "4",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "4",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "2",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "6th",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "Channel Divinity (2/rest), Divine Domain feature"
+              },
+              {
+                "type": "td",
+                "text": "4",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "4",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "7th",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "4",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "4",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "1",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "8th",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "Ability Score Improvement, Destroy Undead (CR 1), Divine Domain feature"
+              },
+              {
+                "type": "td",
+                "text": "4",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "4",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "2",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "9th",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+4",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "4",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "4",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "1",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "10th",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+4",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "Divine Intervention"
+              },
+              {
+                "type": "td",
+                "text": "5",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "4",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "2",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "11th",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+4",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "Destroy Undead (CR 2)"
+              },
+              {
+                "type": "td",
+                "text": "5",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "4",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "2",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "1",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "12th",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+4",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "Ability Score Improvement"
+              },
+              {
+                "type": "td",
+                "text": "5",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "4",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "2",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "1",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "13th",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+5",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "5",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "4",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "2",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "1",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "1",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "14th",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+5",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "Destroy Undead (CR 3)"
+              },
+              {
+                "type": "td",
+                "text": "5",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "4",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "2",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "1",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "1",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "15th",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+5",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "5",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "4",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "2",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "1",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "1",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "1",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "16th",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+5",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "Ability Score Improvement"
+              },
+              {
+                "type": "td",
+                "text": "5",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "4",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "2",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "1",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "1",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "1",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "17th",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+6",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "Destroy Undead (CR 4), Divine Domain feature"
+              },
+              {
+                "type": "td",
+                "text": "5",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "4",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "2",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "1",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "1",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "1",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "1",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "18th",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+6",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "Channel Divinity (3/rest)"
+              },
+              {
+                "type": "td",
+                "text": "5",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "4",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "1",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "1",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "1",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "1",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "19th",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+6",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "Ability Score Improvement"
+              },
+              {
+                "type": "td",
+                "text": "5",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "4",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "2",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "1",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "1",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "1",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "20th",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+6",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "Divine Intervention improvement"
+              },
+              {
+                "type": "td",
+                "text": "5",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "4",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "2",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "2",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "1",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "1",
+                "style": "text-align:center"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "header": "Spellcasting",
+      "level": "2",
+      "items": [
+        {
+          "name": "",
+          "text": "As a conduit for divine power, you can cast cleric Spells. See chapter 10 for the general rules of spellcasting and chapter 11 for a selection of cleric Spells."
+        },
+        {
+          "name": "Cantrips",
+          "text": ""
+        },
+        {
+          "name": "",
+          "text": "At 1st level, you know three Cantrips of your choice from the cleric spell list. You learn additional cleric Cantrips of your choice at higher levels, as shown in the Cantrips Known column of the Cleric table."
+        },
+        {
+          "name": "Preparing and Casting Spells",
+          "text": ""
+        },
+        {
+          "name": "",
+          "text": "The Cleric table shows how many Spell Slots you have to cast your Spells of 1st level and higher. To cast one of these Spells, you must expend a slot of the spell's level or higher. You regain all expended Spell Slots when you finish a Long Rest."
+        },
+        {
+          "name": "",
+          "text": "    You prepare the list of cleric Spells that are available for you to cast, choosing from the cleric spell list. When you do so, choose a number of cleric Spells equal to your Wisdom modifier + your cleric level (minimum of one spell). The Spells must be of a level for which you have Spell Slots."
+        },
+        {
+          "name": "",
+          "text": "    For example, if you are a 3rd-level cleric, you have four 1st-level and two 2nd-level Spell Slots. With a Wisdom of 16, your list of prepared Spells can include six Spells of 1st or 2nd level, in any combination. If you prepare the 1st-level spell Cure Wounds, you can cast it using a 1st-level or 2nd-level slot. Casting the spell doesn't remove it from your list of prepared Spells."
+        },
+        {
+          "name": "",
+          "text": "    You can change your list of prepared Spells when you finish a Long Rest. Preparing a new list of cleric Spells requires time spent in prayer and meditation: at least 1 minute per Spell Level for each spell on your list."
+        },
+        {
+          "name": "Spellcasting Ability",
+          "text": ""
+        },
+        {
+          "name": "",
+          "text": "Wisdom is your spellcasting ability for your cleric Spells. The power of your Spells comes from your devotion to your deity. You use your Wisdom whenever a cleric spell refers to your spellcasting ability. In addition, you use your Wisdom modifier when Setting the saving throw DC for a cleric spell you cast and when Making an Attack roll with one."
+        },
+        {
+          "name": "Spell save DC",
+          "text": "= 8 + your proficiency bonus + your Wisdom modifier"
+        },
+        {
+          "name": "Spell Attack modifier",
+          "text": "= your proficiency bonus + your Wisdom modifier"
+        },
+        {
+          "name": "Ritual Casting",
+          "text": ""
+        },
+        {
+          "name": "",
+          "text": "You can cast a cleric spell as a ritual if that spell has the ritual tag and you have the spell prepared."
+        },
+        {
+          "name": "Spellcasting Focus",
+          "text": ""
+        },
+        {
+          "name": "",
+          "text": "You can use a holy Symbol (see \"Equipment\") as a spellcasting focus for your cleric Spells."
+        }
+      ]
+    },
+    {
+      "header": "Divine Domain",
+      "level": "2",
+      "items": [
+        {
+          "name": "",
+          "text": "Choose one domain related to your deity, such as Life. The Life domain is detailed at the end of the class description, and provides examples of gods associated with it. Your choice grants you domain Spells and other features when you choose it at 1st level. It also grants you additional ways to use Channel Divinity when you gain that feature at 2nd level, and additional benefits at 6th, 8th, and 17th levels."
+        },
+        {
+          "name": "Domain Spells",
+          "text": ""
+        },
+        {
+          "name": "",
+          "text": "Each domain has a list of spells-its domain spells-that you gain at the cleric levels noted in the domain description. Once you gain a domain spell, you always have it prepared, and it doesn't count against the number of Spells you can prepare each day."
+        },
+        {
+          "name": "",
+          "text": "    If you have a domain spell that doesn't appear on the cleric spell list, the spell is nonetheless a cleric spell for you."
+        }
+      ]
+    },
+    {
+      "header": "Channel Divinity",
+      "level": "2",
+      "items": [
+        {
+          "name": "",
+          "text": "At 2nd level, you gain the ability to channel divine energy directly from your deity, using that energy to fuel magical effects. You start with two such effects: Turn Undead and an effect determined by your domain. Some domains grant you additional effects as you advance in levels, as noted in the domain description."
+        },
+        {
+          "name": "",
+          "text": "    When you use your Channel Divinity, you choose which effect to create. You must then finish a short or Long Rest to use your Channel Divinity again."
+        },
+        {
+          "name": "",
+          "text": "    Some Channel Divinity effects require saving throws. When you use such an effect from this class, the DC equals your cleric spell save DC."
+        },
+        {
+          "name": "",
+          "text": "    Beginning at 6th level, you can use your Channel Divinity twice between rests, and beginning at 18th level, you can use it three times between rests. When you finish a short or Long Rest, you regain your expended uses."
+        }
+      ]
+    },
+    {
+      "header": "Channel Divinity: Turn Undead",
+      "level": "3",
+      "items": [
+        {
+          "name": "",
+          "text": ""
+        },
+        {
+          "name": "",
+          "text": "As an action, you present your holy Symbol and speak a prayer censuring the Undead. Each Undead that can see or hear you within 30 feet of you must make a Wisdom saving throw. If the creature fails its saving throw, it is turned for 1 minute or until it takes any damage."
+        },
+        {
+          "name": "",
+          "text": "    A turned creature must spend its turns trying to move as far away from you as it can, and it can't willingly move to a space within 30 feet of you. It also can't take reactions. For its action, it can use only the Dash action or try to escape from an effect that prevents it from moving. If there's nowhere to move, the creature can use the Dodge action."
+        }
+      ]
+    },
+    {
+      "header": "Ability Score Improvement",
+      "level": "2",
+      "items": [
+        {
+          "name": "",
+          "text": "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two Ability Scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature."
+        }
+      ]
+    },
+    {
+      "header": "Destroy Undead",
+      "level": "2",
+      "items": [
+        {
+          "name": "",
+          "text": ""
+        },
+        {
+          "name": "",
+          "text": "Starting at 5th level, when an Undead of CR 1/2 or lower fails its saving throw against Your Turn Undead feature, the creature is instantly destroyed."
+        }
+      ]
+    },
+    {
+      "header": "Divine Intervention",
+      "level": "2",
+      "items": [
+        {
+          "name": "",
+          "text": "Beginning at 10th level, you can call on your deity to intervene on your behalf when your need is great."
+        },
+        {
+          "name": "",
+          "text": "    Imploring your deity's aid requires you to use your action. Describe the assistance you seek, and roll percentile dice. If you roll a number equal to or lower than your cleric level, your deity intervenes. The DM chooses the nature of the intervention; the effect of any cleric spell or cleric domain spell would be appropriate. If your deity intervenes, you can't use this feature again for 7 days. Otherwise, you can use it again after you finish a Long Rest."
+        },
+        {
+          "name": "",
+          "text": "    At 20th level, your call for intervention succeeds automatically, no roll required."
+        }
+      ]
+    },
+    {
+      "header": "Life Domain",
+      "level": "2",
+      "items": [
+        {
+          "name": "",
+          "text": "The Life domain focuses on the vibrant positive energy—one of the fundamental forces of the universe—that sustains all life. The gods of life promote vitality and health through Healing the sick and wounded, caring for those in need, and driving away the forces of death and undeath. Almost any non-evil deity can claim influence over this domain, particularly agricultural deities, sun gods, gods of Healing or endurance, and gods of home and community."
+        }
+      ]
+    },
+    {
+      "type": "table",
+      "header": "Table: Life Domain Spells",
+      "items": [
+        {
+          "type": "thead",
+          "rows": [
+            [
+              {
+                "type": "th",
+                "text": "Cleric Level"
+              },
+              {
+                "type": "th",
+                "text": "Spells"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "tbody",
+          "rows": [
+            [
+              {
+                "type": "td",
+                "text": "1st"
+              },
+              {
+                "type": "td",
+                "text": "Bless, Cure Wounds"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "3rd"
+              },
+              {
+                "type": "td",
+                "text": "Lesser Restoration, Spiritual Weapon"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "5th"
+              },
+              {
+                "type": "td",
+                "text": "Beacon of Hope, Revivify"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "7th"
+              },
+              {
+                "type": "td",
+                "text": "Death Ward, Guardian of Faith"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "9th"
+              },
+              {
+                "type": "td",
+                "text": "Mass Cure Wounds, Raise Dead"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "header": "Bonus Proficiency",
+      "level": "3",
+      "items": [
+        {
+          "name": "",
+          "text": "When you choose this domain at 1st level, you gain proficiency with Heavy Armor."
+        }
+      ]
+    },
+    {
+      "header": "Disciple of Life",
+      "level": "3",
+      "items": [
+        {
+          "name": "",
+          "text": "Also starting at 1st level, your Healing Spells are more effective. Whenever you use a spell of 1st level or higher to restore hit points to a creature, the creature regains additional hit points equal to 2 + the spell's level."
+        }
+      ]
+    },
+    {
+      "header": "Channel Divinity: Preserve Life",
+      "level": "3",
+      "items": [
+        {
+          "name": "",
+          "text": "Starting at 2nd level, you can use your Channel Divinity to heal the badly injured."
+        },
+        {
+          "name": "",
+          "text": "As an action, you present your holy Symbol and evoke Healing energy that can restore a number of hit points equal to five times your cleric level."
+        },
+        {
+          "name": "",
+          "text": "Choose any creatures within 30 feet of you, and divide those hit points among them. This feature can restore a creature to no more than half of its hit point maximum. You can't use this feature on an Undead or a construct."
+        }
+      ]
+    },
+    {
+      "header": "Blessed Healer",
+      "level": "3",
+      "items": [
+        {
+          "name": "",
+          "text": "Beginning at 6th level, the Healing Spells you cast on others heal you as well. When you Cast a Spell of 1st level or higher that restores hit points to a creature other than you, you regain hit points equal to 2 + the spell's level."
+        }
+      ]
+    },
+    {
+      "header": "Divine Strike",
+      "level": "3",
+      "items": [
+        {
+          "name": "",
+          "text": "At 8th level, you gain the ability to infuse your weapon strikes with divine energy. Once on each of your turns when you hit a creature with a weapon Attack, you can cause the Attack to deal an extra 1d8 radiant damage to the target. When you reach 14th level, the extra damage increases to 2d8."
+        }
+      ]
+    },
+    {
+      "header": "Supreme Healing",
+      "level": "3",
+      "items": [
+        {
+          "name": "",
+          "text": ""
+        },
+        {
+          "name": "",
+          "text": "Starting at 17th level, when you would normally roll one or more dice to restore hit points with a spell, you instead use the highest number possible for each die. For example, instead of restoring 2d6 hit points to a creature, you restore 12."
+        }
+      ]
+    }
+  ],
+  "attributes": {
+    "Hit Dice": "d8",
+    "Saving Throws": "Wisdom, Charisma",
+    "Category": "Classes",
+    "Source": "SRD 5.0"
+  }
+}
