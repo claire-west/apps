@@ -82,12 +82,32 @@
                         </div>
                         <div class="column input-group">
                             <label for="autoRefresh" class="input-group-label" style="width: 226px;">Refresh every 2 minutes</label>
-                            <input type="checkbox" id="autoRefresh" class="input-group-field" style="height: 40px; width: 40px; margin-right: 0;"/>
+                            <input type="checkbox" id="autoRefresh" class="input-group-field" style="height: 40px; width: 40px; margin-right: 0;" />
                         </div>
                         <div class="column input-group">
                             <label for="twelveHour" class="input-group-label" style="width: 226px;">12-hour time</label>
-                            <input type="checkbox" id="twelveHour" class="input-group-field" style="height: 40px; width: 40px; margin-right: 0;"/>
+                            <input type="checkbox" id="twelveHour" class="input-group-field" style="height: 40px; width: 40px; margin-right: 0;" />
                         </div>
+                    </div>
+                    <button class="button" data-open="singleStreamReveal" style="margin-bottom: 0; padding: 0.3rem 1rem; border-left: 1px solid white;">
+                        <i class="fi-play-video" style="font-size: 1.7rem;"></i>
+                        <span class="show-for-sr">Specify a Stream</span>
+                    </button>
+                    <div  id="singleStreamReveal" class="reveal" data-reveal>
+                        <div class="column input-group">
+                            <label for="channelName" class="input-group-label">Channel</label>
+                            <input type="text"id="channelName" class="input-group-field" placeholder="Channel Name" style="text-align:center;width:100%;" />
+                            <div class="input-group-button">
+                                <a id="checkSingleStream" class="button primary disabled" style="width:8.1rem;margin-right:1.5rem;">
+                                    <span>Check Stream</span>
+                                    <img src="http://www.gifstache.com/images/ajax_loader.gif" style="height:25px;margin-top:-0.45rem;margin-bottom:-0.45rem;" />
+                                </a>
+                            </div>
+                        </div>
+                        <button class="close-button" data-close aria-label="Close modal" type="button">
+                            <i class="fi-x"></i>
+                            <span class="show-for-sr">Close</span>
+                        </button>
                     </div>
                     <button id="refresh" class="button" style="margin-bottom: 0; padding: 0.3rem 1rem; border-left: 1px solid white;">
                         <i class="fi-refresh" style="font-size: 1.7rem;"></i>
@@ -102,7 +122,6 @@
         <ul class="menu">
             <li>
                 <div class="input-group" style="margin-bottom:0;">
-                    <label for="username" class="input-group-label hide-for-small-only">User</label>
                     <input type="text" id="username" class="input-group-field" placeholder="Username" style="margin-right:0;text-align:center;" />
                     <div class="input-group-button">
                         <button id="usernameButton" class="button" style="margin-bottom: 0; padding: 0.3rem 1rem;">
@@ -128,6 +147,7 @@
     (function () {
         $(document).foundation();
         $("#year").text(new Date().getFullYear());
+        $("#checkSingleStream img").hide();
 
         window.twitchStream = {
             currentUser: localStorage.getItem('twitchStream.currentUser'),
@@ -306,6 +326,48 @@
                         }, 1000 * 60 * 2
                     );
                 }
+            },
+
+            singleStream: {
+                checkStream: function(channelName) {
+                    $("#checkSingleStream span").hide();
+                    $("#checkSingleStream img").show();
+                    $.ajax({
+                        url: "https://api.twitch.tv/kraken/streams?channel=" + channelName,
+                        cache: false,
+                        success: function(result) {
+                            twitchStream.singleStream.updateButton(channelName, result);
+                        },
+                        error: function() {
+                            $("#checkSingleStream")
+                                .removeClass("success")
+                                .removeClass("primary")
+                                .addClass("alert")
+                                .removeAttr("href");
+                            $("#checkSingleStream span").text("Error").show();
+                            $("#checkSingleStream img").hide();
+                        }
+                    });                    
+                },
+
+                updateButton: function(channelName, stream) {
+                    if (stream.streams.length > 0) {
+                        $("#checkSingleStream")
+                            .removeClass("primary")
+                            .addClass("success")
+                            .prop("href", "livestreamer:" + channelName + " " + twitchStream.quality);
+                        $("#checkSingleStream span").text("Launch Stream").show();
+                        $("#checkSingleStream img").hide();
+                    } else {
+                        $("#checkSingleStream")
+                                .removeClass("success")
+                                .removeClass("primary")
+                                .addClass("alert")
+                                .removeAttr("href");
+                            $("#checkSingleStream span").text("Not Live").show();
+                            $("#checkSingleStream img").hide();
+                    }
+                }
             }
         };
 
@@ -372,6 +434,29 @@
             twitchStream.twelveHour = twelveHour;
             if (!$("#lastRefresh").hasClass("hide")) {
                 twitchStream.updateRefreshTimestamp();
+            }
+        });
+
+        $("#channelName").on("keyup", function() {
+            $("#checkSingleStream")
+                .removeClass("success")
+                .removeClass("alert")
+                .addClass("primary")
+                .removeAttr("href");
+            $("#checkSingleStream span").text("Check Stream").show();
+            $("#checkSingleStream img").hide();
+
+            if ($(this).val() === "") {
+                $("#checkSingleStream").addClass("disabled");
+            } else {
+                $("#checkSingleStream").removeClass("disabled");
+            }
+        });
+
+        $("#checkSingleStream").on("click", function() {
+            var $button = $("#checkSingleStream");
+            if ($button.hasClass("primary") || $button.hasClass("alert")) {
+                twitchStream.singleStream.checkStream($("#channelName").val());
             }
         });
 
