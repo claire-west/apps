@@ -19,7 +19,7 @@
                         <i class="fi-shield" style="font-size: 1.7rem;"></i>
                         <span class="show-for-sr">Security Warning</span>
                     </button>
-                    <div class="dropdown-pane row" id="securityDropdown" data-dropdown>
+                    <div class="dropdown-pane" id="securityDropdown" data-dropdown>
                         <p style="margin-bottom:0;"><strong>Security Notice:</strong>&nbsp;This tool involves running a batch file located on your computer. When you click a link using the custom protocol it will run this script.</p>
                         <p>While unlikely, if you click a link elsewhere that also uses the same protocol it is possible someone could take advantage of this.</p>
                     </div>
@@ -67,8 +67,8 @@
                         <i class="fi-wrench" style="font-size: 1.7rem;"></i>
                         <span class="show-for-sr">Settings</span>
                     </button>
-                    <div class="dropdown-pane row" id="settingsDropdown" data-dropdown>
-                        <div class="column input-group">
+                    <div class="dropdown-pane" id="settingsDropdown" data-dropdown>
+                        <div class="input-group">
                             <label for="quality" class="input-group-label">Quality</label>
                             <select id="quality" class="input-group-field">
                                 <option value="best">Best</option>
@@ -80,11 +80,11 @@
                                 <option value="audio">Audio</option>
                             </select>
                         </div>
-                        <div class="column input-group">
+                        <div class="input-group">
                             <label for="autoRefresh" class="input-group-label" style="width: 226px;">Refresh every 2 minutes</label>
                             <input type="checkbox" id="autoRefresh" class="input-group-field" style="height: 40px; width: 40px; margin-right: 0;" />
                         </div>
-                        <div class="column input-group">
+                        <div class="input-group" style="margin-bottom:0;">
                             <label for="twelveHour" class="input-group-label" style="width: 226px;">12-hour time</label>
                             <input type="checkbox" id="twelveHour" class="input-group-field" style="height: 40px; width: 40px; margin-right: 0;" />
                         </div>
@@ -94,11 +94,11 @@
                         <span class="show-for-sr">Specify a Stream</span>
                     </button>
                     <div  id="singleStreamReveal" class="reveal" data-reveal>
-                        <div class="column input-group">
+                        <div class="input-group" style="margin-bottom:0;">
                             <label for="channelName" class="input-group-label">Channel</label>
                             <input type="text"id="channelName" class="input-group-field" placeholder="Channel Name" style="text-align:center;width:100%;" />
                             <div class="input-group-button">
-                                <a id="checkSingleStream" class="button primary disabled" style="width:8.1rem;margin-right:1.5rem;">
+                                <a id="checkSingleStream" class="button primary disabled" style="width:8.1rem;margin-right:2rem;">
                                     <span>Check Stream</span>
                                     <img src="http://www.gifstache.com/images/ajax_loader.gif" style="height:25px;margin-top:-0.45rem;margin-bottom:-0.45rem;" />
                                 </a>
@@ -121,14 +121,29 @@
     <div class="top-bar-right">
         <ul class="menu">
             <li>
-                <div class="input-group" style="margin-bottom:0;">
-                    <input type="text" id="username" class="input-group-field" placeholder="Username" style="margin-right:0;text-align:center;" />
+                <div class="input-group show-for-large" style="margin-bottom:0;">
+                    <input type="text" id="usernameTopbar" class="input-group-field" placeholder="Username" style="margin-right:0;text-align:center;" />
+                    <div class="input-group-button">
+                        <button id="usernameButtonTopbar" class="button" style="margin-bottom: 0; padding: 0.3rem 1rem;">
+                            <i class="fi-save" style="font-size: 1.7rem;"></i>
+                            <span class="show-for-sr">Save Username</span>
+                        </button>
+                    </div>
+                </div>
+                <button class="button hide-for-large" data-toggle="usernameDropdown" style="margin-bottom: 0; padding: 0.3rem 1rem;">
+                    <i class="fi-torso" style="font-size: 1.7rem;"></i>
+                    <span class="show-for-sr">Username Entry</span>
+                </button>
+                <div id="usernameDropdown" class="dropdown-pane hide-for-large" data-dropdown>
+                    <div class="input-group" style="margin-bottom:0;">
+                    <input type="text" id="username" class="input-group-field" placeholder="Username" style="margin-right:0;text-align:center;width:100%;" />
                     <div class="input-group-button">
                         <button id="usernameButton" class="button" style="margin-bottom: 0; padding: 0.3rem 1rem;">
                             <i class="fi-save" style="font-size: 1.7rem;"></i>
                             <span class="show-for-sr">Save Username</span>
                         </button>
                     </div>
+                </div>
                 </div>
             </li>
         </ul>
@@ -373,6 +388,7 @@
 
         if (twitchStream.currentUser) {
             $("#username").val(twitchStream.currentUser);
+            $("#usernameTopbar").val(twitchStream.currentUser);
         }
 
         if (twitchStream.quality) {
@@ -392,12 +408,20 @@
             $("#twelveHour").prop("checked", true);
         }
 
-        $("#usernameButton").on("click", function() {
+        $("#usernameButton, #usernameButtonTopbar").on("click", function() {
             var username = $("#username").val();
             localStorage.setItem('twitchStream.currentUser', username);
             twitchStream.currentUser = username;
             twitchStream.refresh();
             twitchStream.initAutoRefresh();
+        });
+
+        $("#username").on("keyup", function() {
+            $("#usernameTopbar").val($(this).val());
+        });
+
+        $("#usernameTopbar").on("keyup", function() {
+            $("#username").val($(this).val());
         });
 
         $("#quality").on("change", function() {
