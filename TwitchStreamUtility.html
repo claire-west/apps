@@ -23,7 +23,7 @@
                         <p style="margin-bottom:0;"><strong>Security Notice:</strong>&nbsp;This tool involves running a batch file located on your computer. When you click a link using the custom protocol it will run this script.</p>
                         <p>While unlikely, if you click a link elsewhere that also uses the same protocol it is possible someone could take advantage of this.</p>
                     </div>
-                    <button id="setup" class="button secondary" data-open="setupReveal" style="margin-bottom: 0; padding: 0.3rem 1rem; margin-left: 0.5rem;">
+                    <button id="setup" class="button secondary" data-open="setupReveal" style="margin-bottom: 0; padding: 0.3rem 1rem; border-left: 1px solid white;">
                         <i class="fi-info" style="font-size: 1.7rem;"></i>
                         <span class="show-for-sr">Setup Instructions</span>
                     </button>
@@ -38,7 +38,7 @@
                         <code>set "str=%1</code><br />
                         <code>set "var2=%str:*:=%"</code><br />
                         <code>livestreamer twitch.tv/%var2%</code><br />
-                        <h6 style="margin-top:0.5rem;"><strong>Protocol Setup</strong><h6>
+                        <h6 style="margin-top:0.5rem;"><strong>Protocol Setup</strong></h6>
                         <ol>
                             <li>In regedit, find HKEY_CLASSES_ROOT</li>
                             <li>Add a key named "livestreamer"</li>
@@ -58,15 +58,19 @@
                         <p style="margin-bottom:0;text-indent:3rem;">open</p>
                         <p style="margin-bottom:0;text-indent:4rem;">command</p>
                         <p style="margin-bottom:0;text-indent:5rem;">(Default) = "C:\...\launch.bat" "%1"</p>
+                        <button class="close-button" data-close aria-label="Close modal" type="button">
+                            <i class="fi-x"></i>
+                            <span class="show-for-sr">Close</span>
+                        </button>
                     </div>
-                    <button class="button secondary" data-toggle="settingsDropdown" style="margin-bottom: 0; padding: 0.3rem 1rem; margin-left: 0.5rem;">
+                    <button class="button secondary" data-toggle="settingsDropdown" style="margin-bottom: 0; padding: 0.3rem 1rem; border-left: 1px solid white;">
                         <i class="fi-wrench" style="font-size: 1.7rem;"></i>
                         <span class="show-for-sr">Settings</span>
                     </button>
                     <div class="dropdown-pane row" id="settingsDropdown" data-dropdown>
                         <div class="column input-group">
                             <label for="quality" class="input-group-label">Quality</label>
-                            <select id="quality" class="input-group-field" style="min-width: 6rem;">
+                            <select id="quality" class="input-group-field">
                                 <option value="best">Best</option>
                                 <option value="source">Source</option>
                                 <option value="high">High</option>
@@ -80,11 +84,16 @@
                             <label for="autoRefresh" class="input-group-label" style="width: 226px;">Refresh every 2 minutes</label>
                             <input type="checkbox" id="autoRefresh" class="input-group-field" style="height: 40px; width: 40px; margin-right: 0;"/>
                         </div>
+                        <div class="column input-group">
+                            <label for="twelveHour" class="input-group-label" style="width: 226px;">12-hour time</label>
+                            <input type="checkbox" id="twelveHour" class="input-group-field" style="height: 40px; width: 40px; margin-right: 0;"/>
+                        </div>
                     </div>
-                    <button id="refresh" class="button" style="margin-bottom: 0; padding: 0.3rem 1rem; margin-left: 0.5rem;">
+                    <button id="refresh" class="button" style="margin-bottom: 0; padding: 0.3rem 1rem; border-left: 1px solid white;">
                         <i class="fi-refresh" style="font-size: 1.7rem;"></i>
                         <span class="show-for-sr">Refresh</span>
                     </button>
+                    <span id="lastRefresh" class="hide-for-small-only hide" style="margin-left: 0.5rem;">Last refresh: <span id="lastRefreshTime"></span></span>
                 </div>
             </li>
         </ul>
@@ -93,7 +102,7 @@
         <ul class="menu">
             <li>
                 <div class="input-group" style="margin-bottom:0;">
-                    <label for="username" class="input-group-label">User</label>
+                    <label for="username" class="input-group-label hide-for-small-only">User</label>
                     <input type="text" id="username" class="input-group-field" placeholder="Username" style="margin-right:0;text-align:center;" />
                     <div class="input-group-button">
                         <button id="usernameButton" class="button" style="margin-bottom: 0; padding: 0.3rem 1rem;">
@@ -106,13 +115,11 @@
         </ul>
     </div>
 </nav>
-<section id="currentStreams" class="row">
-
-</section>
+<section id="currentStreams" class="row"></section>
 <footer class="row">
     <div class="column">
         <hr />
-        <p style="text-align:center;">&copy; 2016 <a href="http://www.isaac-west.ca/">Isaac West</a></p>
+        <p style="text-align:center;">&copy; <span id="year"></span> <a href="http://www.isaac-west.ca/">Isaac West</a></p>
     </div>
 </footer>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
@@ -120,17 +127,27 @@
 <script>
     (function () {
         $(document).foundation();
+        $("#year").text(new Date().getFullYear());
 
-        twitchStream = {
+        window.twitchStream = {
             currentUser: localStorage.getItem('twitchStream.currentUser'),
             quality: localStorage.getItem('twitchStream.quality'),
             autoRefresh: localStorage.getItem('twitchStream.autoRefresh'),
+            twelveHour: localStorage.getItem('twitchStream.twelveHour'),
 
             refresh: function() {
                 if (twitchStream.currentUser) {
                     twitchStream.getFollowed(twitchStream.currentUser);
                 } else {
                     $("#currentStreams").empty();
+                    $("#currentStreams").append(
+                        $("<h5/>", {
+                            text: "Enter a Username",
+                            class: "text-center",
+                            style: "font-style:italic;"
+                        })
+                    );
+                    $("#lastRefresh").addClass("hide");
                 }
             },
 
@@ -142,7 +159,7 @@
                     success: function(result) {
                         twitchStream.getStreams(result);
                     }
-                })
+                });
             },
 
             getStreams: function(followedStreams) {
@@ -161,90 +178,134 @@
                         success: function(result) {
                             twitchStream.renderStreams(result);
                         }
-                    })
+                    });
                 }
             },
 
             renderStreams: function(currentStreams) {
                 $("#currentStreams").empty();
 
-                currentStreams.streams.sort(function(a, b) {
-                    if (a.channel.display_name < b.channel.display_name) {
-                        return -1;
-                    }
-                    if (a.channel.display_name > b.channel.display_name) {
-                        return 1;
-                    }
-                    return 0;
-                });
-
-                currentStreams.streams.forEach(function(item) {
-                    var $div = $("<div/>", {
-                        class: "medium-4 small-12 columns"
+                if (currentStreams.streams.length < 1) {
+                    $("#currentStreams").append(
+                        $("<h5/>", {
+                            text: "No Channels Live",
+                            class: "text-center",
+                            style: "font-style:italic;"
+                        })
+                    );
+                } else {
+                    currentStreams.streams.sort(function(a, b) {
+                        if (a.channel.display_name < b.channel.display_name) {
+                            return -1;
+                        }
+                        if (a.channel.display_name > b.channel.display_name) {
+                            return 1;
+                        }
+                        return 0;
                     });
 
-                    var $panel = $("<div/>", {
-                        class: "callout secondary",
-                        style: "padding:0.75rem;"
-                    }).appendTo($div);
+                    currentStreams.streams.forEach(function(item) {
+                        var $div = $("<div/>", {
+                            class: "medium-4 small-12 columns"
+                        });
 
-                    $("<img/>", {
-                        src: item.preview.medium,
-                        style: "margin-bottom:0.5rem;width:100%;height:100%;"
-                    }).appendTo($panel);
+                        var $panel = $("<div/>", {
+                            class: "callout secondary",
+                            style: "padding:0.75rem;"
+                        }).appendTo($div);
 
-                    $("<h6/>", {
-                        text: item.channel.status,
-                        style: "white-space:nowrap;overflow:hidden;text-overflow: ellipsis;"
-                    }).appendTo($panel);
-
-                    $("<p/>", {
-                        text: item.viewers + " watching ",
-                        style: "text-align:right;white-space:nowrap;overflow:hidden;text-overflow: ellipsis;"
-                    }).appendTo($panel).append(
                         $("<a/>", {
-                            text: item.channel.display_name,
-                            href: "http://www.twitch.tv/" + item.channel.display_name + "/profile"
-                        })
-                    );
-
-                    var $buttonsRow = $("<div/>", {
-                        class: "row collapse"
-                    }).appendTo($panel);
-
-                    $("<div/>", {
-                        class: "small-3 columns"
-                    }).appendTo($buttonsRow).append(
-                        $("<a/>", {
-                            onclick: "window.open('http://www.twitch.tv/" + 
-                                item.channel.display_name + 
-                                "/chat?popout=', 'newwindow', 'width=400, height=600');",
-                            target: "_blank",
-                            class: "button expanded secondary disabled",
-                            style: "margin-bottom:0;padding:0.3rem 1rem;"
+                            href: "http://www.twitch.tv/" + item.channel.display_name
                         }).append(
-                            $("<i/>", {
-                                class: "fi-comments",
-                                style: "color:#333;font-size:1.7rem;"
+                            $("<img/>", {
+                                src: item.preview.medium,
+                                style: "margin-bottom:0.5rem;width:100%;height:100%;"
                             })
-                        )
+                        ).appendTo($panel);
+                        
+                        $("<h6/>", {
+                            text: item.channel.status,
+                            style: "white-space:nowrap;overflow:hidden;text-overflow: ellipsis;"
+                        }).appendTo($panel);
+
+                        $("<p/>", {
+                            text: item.viewers + " watching ",
+                            style: "text-align:right;white-space:nowrap;overflow:hidden;text-overflow: ellipsis;"
+                        }).appendTo($panel).append(
+                            $("<a/>", {
+                                text: item.channel.display_name,
+                                href: "http://www.twitch.tv/" + item.channel.display_name + "/profile"
+                            })
+                        );
+
+                        var $buttonsRow = $("<div/>", {
+                            class: "row collapse"
+                        }).appendTo($panel);
+
+                        $("<div/>", {
+                            class: "small-3 columns"
+                        }).appendTo($buttonsRow).append(
+                            $("<a/>", {
+                                onclick: "window.open('http://www.twitch.tv/" +
+                                    item.channel.display_name +
+                                    "/chat?popout=', 'newwindow', 'width=400, height=600');",
+                                target: "_blank",
+                                class: "button expanded secondary disabled",
+                                style: "margin-bottom:0;padding:0.3rem 1rem;"
+                            }).append(
+                                $("<i/>", {
+                                    class: "fi-comments",
+                                    style: "color:#333;font-size:1.7rem;"
+                                })
+                            )
+                        );
+
+                        $("<div/>", {
+                            class: "small-9 columns"
+                        }).appendTo($buttonsRow).append(
+                            $("<a/>", {
+                                text: "Launch",
+                                href: "livestreamer:" + item.channel.display_name + " " + twitchStream.quality,
+                                class: "button expanded",
+                                style: "margin-bottom:0;"
+                            })
+                        );
+
+                        $("#currentStreams").append($div);
+                    });
+
+                    $("#currentStreams > div.columns:last-child").addClass("end");
+                }
+
+                twitchStream.updateRefreshTimestamp();
+                $("#lastRefresh").removeClass("hide");
+            },
+
+            updateRefreshTimestamp: function() {
+                var now = new Date();
+                var hours = now.getHours();
+                if (twitchStream.twelveHour) {
+                    if (hours > 12) {
+                        hours -= 12;
+                    } else if (hours === 0) {
+                        hours = 12;
+                    }
+                }
+                var minutes = now.getMinutes();
+                if (minutes < 10) {
+                    minutes = "0" + minutes;
+                }
+                $("#lastRefreshTime").text(hours + ":" + minutes);
+            },
+
+            initAutoRefresh: function() {
+                clearInterval();
+                if (twitchStream.autoRefresh) {
+                    setInterval(function() {
+                            twitchStream.refresh();
+                        }, 1000 * 60 * 2
                     );
-
-                    $("<div/>", {
-                        class: "small-9 columns"
-                    }).appendTo($buttonsRow).append(
-                        $("<a/>", {
-                            text: "Launch",
-                            href: "livestreamer:" + item.channel.display_name + " " + twitchStream.quality,
-                            class: "button expanded",
-                            style: "margin-bottom:0;"
-                        })
-                    );
-
-                    $("#currentStreams").append($div);
-                });
-
-                $("#currentStreams > div.columns:last-child").addClass("end")
+                }
             }
         };
 
@@ -262,10 +323,11 @@
 
         if (twitchStream.autoRefresh) {
             $("#autoRefresh").prop("checked", true);
-            setInterval(function() {
-                    twitchStream.refresh();
-                }, 1000 * 60 * 2
-            );
+            twitchStream.initAutoRefresh();
+        }
+
+        if (twitchStream.twelveHour) {
+            $("#twelveHour").prop("checked", true);
         }
 
         $("#usernameButton").on("click", function() {
@@ -273,6 +335,7 @@
             localStorage.setItem('twitchStream.currentUser', username);
             twitchStream.currentUser = username;
             twitchStream.refresh();
+            twitchStream.initAutoRefresh();
         });
 
         $("#quality").on("change", function() {
@@ -280,10 +343,11 @@
             localStorage.setItem('twitchStream.quality', quality);
             twitchStream.quality = quality;
             twitchStream.refresh();
+            twitchStream.initAutoRefresh();
         });
 
         $("#autoRefresh").on("change", function() {
-            var autoRefresh = $(this).is(':checked');
+            var autoRefresh = $(this).is(":checked");
             if (autoRefresh) {
                 localStorage.setItem("twitchStream.autoRefresh", autoRefresh);
             } else {
@@ -291,17 +355,30 @@
             }
             twitchStream.autoRefresh = autoRefresh;
             if (autoRefresh) {
-                setInterval(function () {
-                        twitchStream.refresh();
-                    }, 1000 * 60 * 2
-                );
+                twitchStream.initAutoRefresh();
                 twitchStream.refresh();
             } else {
                 clearInterval();
             }
         });
 
-        $("#refresh").on("click", twitchStream.refresh);
+        $("#twelveHour").on("change", function() {
+            var twelveHour = $(this).is(":checked");
+            if (twelveHour) {
+                localStorage.setItem("twitchStream.twelveHour", twelveHour);
+            } else {
+                localStorage.removeItem("twitchStream.twelveHour");
+            }
+            twitchStream.twelveHour = twelveHour;
+            if (!$("#lastRefresh").hasClass("hide")) {
+                twitchStream.updateRefreshTimestamp();
+            }
+        });
+
+        $("#refresh").on("click", function() {
+            twitchStream.initAutoRefresh();
+            twitchStream.refresh();
+        });
 
         twitchStream.refresh();
     })();
