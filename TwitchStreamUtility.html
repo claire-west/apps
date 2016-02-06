@@ -21,7 +21,7 @@
                     </button>
                     <div class="dropdown-pane" id="securityDropdown" data-dropdown>
                         <p style="margin-bottom:0;"><strong>Security Notice:</strong>&nbsp;This tool involves running a batch file located on your computer. When you click a link using the custom protocol it will run this script.</p>
-                        <p>While unlikely, if you click a link elsewhere that also uses the same protocol it is possible someone could take advantage of this.</p>
+                        <p>While unlikely, if you click a link elsewhere that uses a protocol with the same name it is possible someone could take advantage of this. Use at your own risk.</p>
                     </div>
                     <button id="setup" class="button secondary" data-open="setupReveal" style="margin-bottom: 0; padding: 0.3rem 1rem; border-left: 1px solid white;">
                         <i class="fi-info" style="font-size: 1.7rem;"></i>
@@ -198,7 +198,19 @@
             },
 
             getStreams: function(followedStreams) {
-                if (followedStreams.follows.length > 0) {
+                if (followedStreams.follows.length < 1) {
+                    $("#currentStreams").append(
+                        $("<div/>", {
+                            class: "column"
+                        }).append(
+                            $("<h5/>", {
+                                text: "No Followed Channels",
+                                class: "text-center",
+                                style: "font-style:italic;"
+                            })
+                        )
+                    );
+                } else {
                     var url = "https://api.twitch.tv/kraken/streams?channel=";
 
                     followedStreams.follows.forEach(function(item) {
@@ -222,11 +234,15 @@
 
                 if (currentStreams.streams.length < 1) {
                     $("#currentStreams").append(
-                        $("<h5/>", {
-                            text: "No Channels Live",
-                            class: "text-center",
-                            style: "font-style:italic;"
-                        })
+                        $("<div/>", {
+                            class: "column"
+                        }).append(
+                            $("<h5/>", {
+                                text: "No Channels Live",
+                                class: "text-center",
+                                style: "font-style:italic;"
+                            })
+                        )
                     );
                 } else {
                     currentStreams.streams.sort(function(a, b) {
@@ -373,6 +389,20 @@
                             .prop("href", "livestreamer:" + channelName + " " + twitchStream.quality);
                         $("#checkSingleStream span").text("Launch Stream").show();
                         $("#checkSingleStream img").hide();
+                        if (twitchStream.singleStream.timeout) {
+                            clearTimeout(twitchStream.singleStream.timeout);
+                        }
+                        twitchStream.singleStream.timeout = setTimeout(function() {
+                                $button = $("#checkSingleStream");
+                                if ($button.hasClass("success")) {
+                                    $button.removeClass("success")
+                                        .addClass("primary")
+                                        .removeAttr("href")
+                                    $("#checkSingleStream span").text("Check Stream");
+                                }
+                            },
+                            1000 * 30
+                        );
                     } else {
                         $("#checkSingleStream")
                                 .removeClass("success")
@@ -407,6 +437,10 @@
         if (twitchStream.twelveHour) {
             $("#twelveHour").prop("checked", true);
         }
+
+        $("#usernameButton").on("click", function() {
+            $("#usernameDropdown").foundation("close");
+        });
 
         $("#usernameButton, #usernameButtonTopbar").on("click", function() {
             var username = $("#username").val();
