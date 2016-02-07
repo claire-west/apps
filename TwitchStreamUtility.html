@@ -134,12 +134,19 @@
                             <span class="show-for-sr">Close</span>
                         </button>
                     </div>
-                    <button class="topbar-button-fa button" data-toggle="gamesDropdown">
-                        <i class="fa fa-gamepad"></i>
+                    <button class="topbar-button-fa button" data-toggle="playlistDropdown">
+                        <i class="fa fa-th" style="margin-top: 2px;"></i>
                         <span class="show-for-sr">Manage Playlists</span>
                     </button>
-                    <div class="dropdown-pane" id="gamesDropdown" data-dropdown>
-                        <p>Feature under construction.</p>
+                    <div class="dropdown-pane" id="playlistDropdown" data-dropdown>
+                        <h5>Playlists</h5>
+                        <div class="input-group" style="margin-bottom:0;">
+                            <label for="activePlaylist" class="input-group-label">Active Playlist</label>
+                            <select id="activePlaylist" class="input-group-field">
+                                <option value="followed">Followed</option>
+                                <option value="hosts">Live Hosts</option>
+                            </select>
+                        </div>
                     </div>
                     <button id="refresh" class="topbar-button-fa button">
                         <i class="fa fa-refresh"></i>
@@ -181,9 +188,7 @@
         </ul>
     </div>
 </nav>
-<section id="currentStreams" class="row">
-    <img id="refreshSpinner" src="http://www.gifstache.com/images/ajax_loader.gif" style="height:100px;" />
-</section>
+<section id="currentStreams" class="row"></section>
 <footer class="row">
     <div class="column">
         <hr />
@@ -200,15 +205,20 @@
         $("#year").text(new Date().getFullYear());
         
         window.twitchStream = {
-            currentUser: localStorage.getItem('twitchStream.currentUser'),
-            quality: localStorage.getItem('twitchStream.quality'),
-            autoRefresh: localStorage.getItem('twitchStream.autoRefresh'),
-            twelveHour: localStorage.getItem('twitchStream.twelveHour'),
+            currentUser: localStorage.getItem("twitchStream.currentUser"),
+            quality: localStorage.getItem("twitchStream.quality"),
+            autoRefresh: localStorage.getItem("twitchStream.autoRefresh"),
+            twelveHour: localStorage.getItem("twitchStream.twelveHour"),
+            activePlaylist: localStorage.getItem("twitchStream.activePlaylist"),
 
             refresh: function() {
                 if (twitchStream.currentUser) {
                     $("#refresh i").addClass("fa-spin");
-                    twitchStream.getFollowed(twitchStream.currentUser);
+                    if (twitchStream.activePlaylist === "followed") {
+                        twitchStream.getFollowed(twitchStream.currentUser);
+                    } else if (twitchStream.activePlaylist === "hosts") {
+                        twitchStream.getHosts(twitchStream.currentUser);
+                    }
                 } else {
                     $("#currentStreams").empty();
                     $("#currentStreams").append(
@@ -263,16 +273,15 @@
                         url: url,
                         cache: false,
                         success: function(result) {
-                            twitchStream.renderStreams(result);
+                            twitchStream.renderFollowed(result.streams);
                         }
                     });
                 }
             },
 
-            renderStreams: function(currentStreams) {
+            renderFollowed: function(streams) {
                 $("#currentStreams").empty();
-
-                if (currentStreams.streams.length < 1) {
+                if (streams.length < 1) {
                     $("#currentStreams").append(
                         $("<div/>", {
                             class: "column"
@@ -285,7 +294,7 @@
                         )
                     );
                 } else {
-                    currentStreams.streams.sort(function(a, b) {
+                    streams.sort(function(a, b) {
                         if (a.channel.display_name < b.channel.display_name) {
                             return -1;
                         }
@@ -296,74 +305,63 @@
                     });
 
                     var now = Date.now();
-                    currentStreams.streams.forEach(function(item) {
-                        var $div = $("<div/>", {
-                            class: "medium-4 small-12 columns"
-                        });
-
-                        var $panel = $("<div/>", {
-                            class: "callout secondary",
-                            style: "padding:0.75rem;"
-                        }).appendTo($div);
-
-                        $("<a/>", {
-                            href: "http://www.twitch.tv/" + item.channel.display_name
-                        }).append(
-                            $("<img/>", {
-                                src: item.preview.medium + "?" + now,
-                                style: "margin-bottom:0.5rem;width:100%;height:100%;"
-                            })
-                        ).appendTo($panel);
-                        
-                        $("<h6/>", {
-                            text: item.channel.status,
-                            style: "white-space:nowrap;overflow:hidden;text-overflow: ellipsis;"
-                        }).appendTo($panel);
-
-                        $("<p/>", {
-                            text: item.viewers + " watching ",
-                            style: "text-align:right;white-space:nowrap;overflow:hidden;text-overflow: ellipsis;"
-                        }).appendTo($panel).append(
-                            $("<a/>", {
-                                text: item.channel.display_name,
-                                href: "http://www.twitch.tv/" + item.channel.display_name + "/profile"
-                            })
-                        );
-
-                        var $buttonsRow = $("<div/>", {
-                            class: "row collapse"
-                        }).appendTo($panel);
-
-                        $("<div/>", {
-                            class: "small-3 columns"
-                        }).appendTo($buttonsRow).append(
-                            $("<a/>", {
-                                onclick: "window.open('http://www.twitch.tv/" +
-                                    item.channel.display_name +
-                                    "/chat?popout=', 'newwindow', 'width=400, height=600');",
-                                target: "_blank",
-                                class: "button expanded secondary disabled",
-                                style: "margin-bottom:0;padding:0.3rem 1rem;"
-                            }).append(
-                                $("<i/>", {
-                                    class: "fi-comments",
-                                    style: "color:#333;font-size:1.7rem;"
-                                })
+                    streams.forEach(function(item) {
+                        $("#currentStreams").append(
+                            twitchStream.rendering.renderFollow(
+                                item.channel.display_name,
+                                item.channel.status,
+                                item.preview.medium,
+                                item.viewers,
+                                now
                             )
                         );
+                    });
 
+                    $("#currentStreams > div.columns:last-child").addClass("end");
+                }
+
+                twitchStream.updateRefreshTimestamp();
+                $("#lastRefresh").removeClass("hide");
+                $("#refresh i").removeClass("fa-spin");
+            },
+
+            getHosts: function(username) {
+                var url = "http://api.twitch.tv/api/users/" + username + "/followed/hosting?callback=?";
+                $.getJSON(url, function(data) {
+                    twitchStream.renderHosts(data.hosts);
+                });
+            },
+
+            renderHosts: function(hosts) {
+                $("#currentStreams").empty();
+                if (hosts.length < 1) {
+                    $("#currentStreams").append(
                         $("<div/>", {
-                            class: "small-9 columns"
-                        }).appendTo($buttonsRow).append(
-                            $("<a/>", {
-                                text: "Launch",
-                                href: "livestreamer:" + item.channel.display_name + " " + twitchStream.quality,
-                                class: "button expanded",
-                                style: "margin-bottom:0;"
+                            class: "column"
+                        }).append(
+                            $("<h5/>", {
+                                text: "No Live Hosts",
+                                class: "text-center",
+                                style: "font-style:italic;"
                             })
-                        );
+                        )
+                    );
+                } else {
+                    hosts.sort(function(a, b) {
+                        return a.target.viewers - b.target.viewers;
+                    });
 
-                        $("#currentStreams").append($div);
+                    var now = Date.now();
+                    hosts.forEach(function(item) {
+                        $("#currentStreams").append(
+                            twitchStream.rendering.renderHost(
+                                item.display_name,
+                                item.target.channel.name,
+                                item.target.preview,
+                                item.target.viewers,
+                                now
+                            )
+                        );
                     });
 
                     $("#currentStreams > div.columns:last-child").addClass("end");
@@ -400,6 +398,144 @@
                             twitchStream.refresh();
                         }, 1000 * 60 * 2
                     );
+                }
+            },
+
+            rendering: {
+                outerDiv: function() {
+                    return $("<div/>", {
+                        class: "medium-4 small-12 columns"
+                    });
+                },
+
+                panel: function() {
+                    return $("<div/>", {
+                        class: "callout secondary",
+                        style: "padding:0.75rem;"
+                    });
+                },
+
+                preview: function(channelName, src, now) {
+                    return $("<a/>", {
+                        href: "http://www.twitch.tv/" + channelName
+                    }).append(
+                        $("<img/>", {
+                            src: src + "?" + now,
+                            style: "margin-bottom:0.5rem;width:100%;height:100%;"
+                        })
+                    )
+                },
+
+                status: function(status) {
+                    return $("<h6/>", {
+                        text: status,
+                        style: "margin-bottom:0;white-space:nowrap;overflow:hidden;text-overflow: ellipsis;"
+                    })
+                },
+
+                viewers: function(viewers) {
+                    return $("<p/>", {
+                        text: viewers + " watching ",
+                        style: "margin-bottom:0.5rem;text-align:right;white-space:nowrap;overflow:hidden;text-overflow: ellipsis;"
+                    })
+                },
+
+                profileLink: function(channelName) {
+                    return $("<a/>", {
+                        text: channelName,
+                        href: "http://www.twitch.tv/" + channelName + "/profile"
+                    })
+                },
+
+                buttonsRow: function(channelName) {
+                    var $buttonsRow = $("<div/>", {
+                        class: "row collapse"
+                    })
+
+                    $("<div/>", {
+                        class: "small-3 columns"
+                    }).appendTo($buttonsRow).append(
+                        $("<a/>", {
+                            onclick: "window.open('http://www.twitch.tv/" +
+                                channelName +
+                                "/chat?popout=', 'newwindow', 'width=400, height=600');",
+                            target: "_blank",
+                            class: "button expanded secondary disabled",
+                            style: "margin-bottom:0;padding:0.3rem 1rem;"
+                        }).append(
+                            $("<i/>", {
+                                class: "fi-comments",
+                                style: "color:#333;font-size:1.7rem;"
+                            })
+                        )
+                    );
+
+                    $("<div/>", {
+                        class: "small-9 columns"
+                    }).appendTo($buttonsRow).append(
+                        $("<a/>", {
+                            text: "Launch",
+                            href: "livestreamer:" + channelName + " " + twitchStream.quality,
+                            class: "button expanded",
+                            style: "margin-bottom:0;"
+                        })
+                    );
+
+                    return $buttonsRow;
+                },
+
+                renderFollow: function(channelName, status, preview, viewers, now) {
+                    var $div = twitchStream.rendering.outerDiv();
+                    var $panel = twitchStream.rendering.panel().appendTo($div);
+
+                    twitchStream.rendering.preview(
+                        channelName,
+                        preview,
+                        now
+                    ).appendTo($panel);
+                    
+                    twitchStream.rendering.status(
+                        status
+                    ).appendTo($panel);
+
+                    twitchStream.rendering.viewers(
+                        viewers
+                    ).appendTo($panel)
+                        .append(twitchStream.rendering.profileLink(channelName)
+                    );
+
+                    twitchStream.rendering.buttonsRow(
+                        channelName
+                    ).appendTo($panel);
+
+                    return $div;
+                },
+
+                renderHost: function(hostName, targetName, preview, viewers, now) {
+                    var $div = twitchStream.rendering.outerDiv();
+                    var $panel = twitchStream.rendering.panel().appendTo($div);
+
+                    twitchStream.rendering.preview(
+                        targetName,
+                        preview,
+                        now
+                    ).appendTo($panel);
+                    
+                    twitchStream.rendering.status(
+                        hostName + " hosting " + targetName
+                    ).appendTo($panel);
+
+                    twitchStream.rendering.viewers(
+                        viewers
+                    ).appendTo($panel)
+                        .append(twitchStream.rendering.profileLink(targetName)
+                    );
+
+                    twitchStream.rendering.buttonsRow(
+                        targetName
+                    ).appendTo($panel);
+
+                    return $div;
                 }
             },
 
@@ -469,7 +605,7 @@
             $("#quality").val(twitchStream.quality);
         } else {
             $("#quality").val("best");
-            localStorage.setItem('twitchStream.quality', "best");
+            localStorage.setItem("twitchStream.quality", "best");
             twitchStream.quality = "best";
         }
 
@@ -480,6 +616,14 @@
 
         if (twitchStream.twelveHour) {
             $("#twelveHour").prop("checked", true);
+        }
+
+        if (twitchStream.activePlaylist) {
+            $("#activePlaylist").val(twitchStream.activePlaylist);
+        } else {
+            $("#activePlaylist").val("followed");
+            localStorage.setItem("twitchStream.activePlaylist", "followed");
+            twitchStream.activePlaylist = "followed";
         }
 
         $("#usernameButton").on("click", function() {
@@ -560,6 +704,14 @@
             if ($button.hasClass("primary") || $button.hasClass("alert")) {
                 twitchStream.singleStream.checkStream($("#channelName").val());
             }
+        });
+
+        $("#activePlaylist").on("change", function() {
+            var activePlaylist = $(this).val();
+            localStorage.setItem("twitchStream.activePlaylist", activePlaylist);
+            twitchStream.activePlaylist = activePlaylist;
+            twitchStream.refresh();
+            $("#playlistDropdown").foundation("close");
         });
 
         $("#refresh").on("click", function() {
