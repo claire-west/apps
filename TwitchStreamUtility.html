@@ -9,6 +9,12 @@
     <link href="https://cdn.jsdelivr.net/foundation-icons/3.0/foundation-icons.min.css" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/fontawesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" />
     <style>
+        .truncate-line-wrap {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
         .topbar-button-fa,
         .topbar-button-fi {
             height: 40px;
@@ -30,6 +36,30 @@
         }
         .topbar-button-fi i {
             font-size: 30px;
+        }
+
+        #playlists div.playlist-row {
+            padding-top: 4px;
+            padding-bottom: 4px;
+        }
+        #playlists div.playlist-row {
+            background: #F9F9F9;
+            margin-bottom: 1px
+        }
+        #playlists i.fa-edit {
+            margin-top: 2px;
+        }
+        #playlists span {
+            line-height: 40px;
+        }
+        #playlists div.switch {
+            margin-bottom: 0;
+        }
+        #playlists label.switch-paddle {
+            margin-top: 4px;
+        }
+        #playlists div.button-group {
+            margin-bottom: 0;
         }
     </style>
 </head>
@@ -134,20 +164,10 @@
                             <span class="show-for-sr">Close</span>
                         </button>
                     </div>
-                    <button class="topbar-button-fa button" data-toggle="playlistDropdown">
+                    <button id="playlistToggle" class="topbar-button-fa button">
                         <i class="fa fa-th" style="margin-top: 2px;"></i>
                         <span class="show-for-sr">Manage Playlists</span>
                     </button>
-                    <div class="dropdown-pane" id="playlistDropdown" data-dropdown>
-                        <h5>Playlists</h5>
-                        <div class="input-group" style="margin-bottom:0;">
-                            <label for="activePlaylist" class="input-group-label">Active Playlist</label>
-                            <select id="activePlaylist" class="input-group-field">
-                                <option value="followed">Followed</option>
-                                <option value="hosts">Live Hosts</option>
-                            </select>
-                        </div>
-                    </div>
                     <button id="refresh" class="topbar-button-fa button">
                         <i class="fa fa-refresh"></i>
                         <span class="show-for-sr">Refresh</span>
@@ -175,20 +195,108 @@
                 </button>
                 <div id="usernameDropdown" class="dropdown-pane hide-for-large" data-dropdown>
                     <div class="input-group" style="margin-bottom:0;">
-                    <input type="text" id="username" class="input-group-field" placeholder="Username" style="margin-right:0;text-align:center;width:100%;" />
-                    <div class="input-group-button">
-                        <button id="usernameButton" class="topbar-button-fa button" style="border-left:none;">
-                            <i class="fa fa-save"></i>
-                            <span class="show-for-sr">Save Username</span>
-                        </button>
+                        <input type="text" id="username" class="input-group-field" placeholder="Username" style="margin-right:0;text-align:center;width:100%;" />
+                        <div class="input-group-button">
+                            <button id="usernameButton" class="topbar-button-fa button" style="border-left:none;">
+                                <i class="fa fa-save"></i>
+                                <span class="show-for-sr">Save Username</span>
+                            </button>
+                        </div>
                     </div>
-                </div>
                 </div>
             </li>
         </ul>
     </div>
 </nav>
 <section id="currentStreams" class="row"></section>
+<section id="playlists">
+    <div class="row">
+        <div class="small-2 columns"><h6></h6></div>
+        <div class="small-2 columns">
+            <h6><strong>Type</strong></h6>
+        </div>
+        <div class="small-6 columns">
+            <h6><strong>Name</strong></h6>
+        </div>
+        <div class="small-2 columns">
+            <h6 class="text-center"><strong>Active</strong></h6>
+        </div>
+    </div>
+    <div id="playlistsTemporary" class="row playlist-row">
+        <div class="small-2 columns">
+            <div class="button-group">
+                <button class="button hollow secondary disabled topbar-button-fa">
+                    <i class="fa fa-trash-o"></i>
+                    <span class="show-for-sr">Delete Playlist</span>
+                </button>
+                <button class="button hollow disabled topbar-button-fa">
+                    <i class="fa fa-edit"></i>
+                    <span class="show-for-sr">Edit Playlist</span>
+                </button>
+            </div>
+        </div>
+        <div class="small-2 columns"><span>Temporary</span></div>
+        <div class="small-6 columns"><span id="temporaryPlaylistName"></span></div>
+        <div class="small-2 columns">
+            <div class="switch text-center">
+                <input type="radio" id="temporarySwitch" class="switch-input" name="activePlaylist" value="temporary" />
+                <label class="switch-paddle" for="temporarySwitch" style="opacity:0.25;cursor:not-allowed;pointer-events:none;">
+                    <span class="show-for-sr">Temporary Playlist</span>
+                </label>
+            </div>
+        </div>
+    </div>
+    <div class="row playlist-row">
+        <div class="small-2 columns">
+            <div class="button-group">
+                <button class="button hollow secondary disabled topbar-button-fa">
+                    <i class="fa fa-trash-o"></i>
+                    <span class="show-for-sr">Delete Playlist</span>
+                </button>
+                <button class="button hollow disabled topbar-button-fa">
+                    <i class="fa fa-edit"></i>
+                    <span class="show-for-sr">Edit Playlist</span>
+                </button>
+            </div>
+        </div>
+        <div class="small-2 columns"><span style="font-style:italic;">(default)</span></div>
+        <div class="small-6 columns"><span>Followed Channels</span></div>
+        <div class="small-2 columns">
+            <div class="switch text-center">
+                <input type="radio" id="followedSwitch" class="switch-input" name="activePlaylist" value="followed" />
+                <label class="switch-paddle" for="followedSwitch">
+                    <span class="show-for-sr">Followed Channels</span>
+                </label>
+            </div>
+        </div>
+    </div>
+    <div class="row playlist-row">
+        <div class="small-2 columns">
+            <div class="button-group">
+                <button class="button hollow secondary disabled topbar-button-fa">
+                    <i class="fa fa-trash-o"></i>
+                    <span class="show-for-sr">Delete Playlist</span>
+                </button>
+                <button class="button hollow disabled topbar-button-fa">
+                    <i class="fa fa-edit"></i>
+                    <span class="show-for-sr">Edit Playlist</span>
+                </button>
+            </div>
+        </div>
+        <div class="small-2 columns"><span style="font-style:italic;">(default)</span></div>
+        <div class="small-6 columns"><span>Live Hosts</span></div>
+        <div class="small-2 columns">
+            <div class="switch text-center">
+                <input type="radio" id="hostsSwitch" class="switch-input" name="activePlaylist" value="hosts" />
+                <label class="switch-paddle" for="hostsSwitch">
+                    <span class="show-for-sr">Live Hosts</span>
+                </label>
+            </div>
+        </div>
+    </div>
+    <section id="playlistsGames"></section>
+    <section id="playlistsCustom"></section>
+</section>
 <footer class="row">
     <div class="column">
         <hr />
@@ -200,8 +308,9 @@
 <script>
     (function () {
         $(document).foundation();
+        $("#playlists").hide();
+        $("#playlistsTemporary").hide();
         $("#checkSingleStream img").hide();
-        $("#refreshSpinner").hide();
         $("#year").text(new Date().getFullYear());
         
         window.twitchStream = {
@@ -401,7 +510,108 @@
                 }
             },
 
+            setValue: function(key, value) {
+                localStorage.setItem("twitchStream." + key, value);
+                twitchStream[key] = value;
+            },
+
+            getValue: function(key) {
+                if (!twitchStream[key]) {
+                    twitchStream[key] = localStorage.getItem("twitchStream." + key);
+                }
+                return twitchStream[key];
+            },
+
+            clearValue: function(key) {
+                localStorage.removeItem("twitchStream." + key);
+                delete twitchStream[key];
+            },
+
             rendering: {
+                playlistRow: function(type, name, key) {
+                    $div = $("<div/>", {
+                        class: "row playlist-row"
+                    });
+
+                    $("<div/>", {
+                        class: "small-2 columns"
+                    }).append(
+                        $("<div/>", {
+                            class: "button-group"
+                        }).append(
+                            $("<button/>", {
+                                class: "button hollow secondary topbar-button-fa"
+                            }).append(
+                                $("<i/>", {
+                                    class: "fa fa-trash-o"
+                                })
+                            ).append(
+                                $("<span/>", {
+                                    text: "Delete Playlist",
+                                    class: "show-for-sr"
+                                })
+                            )
+                        ).append(
+                            $("<button/>", {
+                                class: "button hollow topbar-button-fa"
+                            }).append(
+                                $("<i/>", {
+                                    class: "fa fa-edit"
+                                })
+                            ).append(
+                                $("<span/>", {
+                                    text: "Edit Playlist",
+                                    class: "show-for-sr"
+                                })
+                            )
+                        )
+                    ).appendTo($div);
+
+                    $("<div/>", {
+                        class: "small-2 columns"
+                    }).append(
+                        $("<span/>", {
+                            text: type
+                        })
+                    ).appendTo($div);
+
+                    $("<div/>", {
+                        class: "small-6 columns"
+                    }).append(
+                        $("<span/>", {
+                            text: name
+                        })
+                    ).appendTo($div);
+
+                    $("<div/>", {
+                        class: "small-2 columns"
+                    }).append(
+                        $("<div/>", {
+                            class: "switch text-center"
+                        }).append(
+                            $("<input/>", {
+                                type: "radio",
+                                id: key + "Switch",
+                                class: "switch-input",
+                                name: "activePlaylist",
+                                value: key
+                            })
+                        ).append(
+                            $("<label/>", {
+                                class: "switch-paddle",
+                                for: key + "Switch"
+                            }).append(
+                                $("<span/>", {
+                                    text: name,
+                                    class: "show-for-sr"
+                                })
+                            )
+                        )
+                    ).appendTo($div);
+
+                    return $div;
+                },
+
                 outerDiv: function() {
                     return $("<div/>", {
                         class: "medium-4 small-12 columns"
@@ -429,14 +639,16 @@
                 status: function(status) {
                     return $("<h6/>", {
                         text: status,
-                        style: "margin-bottom:0;white-space:nowrap;overflow:hidden;text-overflow: ellipsis;"
+                        class: "truncate-line-wrap",
+                        style: "margin-bottom:0;"
                     })
                 },
 
                 viewers: function(viewers) {
                     return $("<p/>", {
                         text: viewers + " watching ",
-                        style: "margin-bottom:0.5rem;text-align:right;white-space:nowrap;overflow:hidden;text-overflow: ellipsis;"
+                        class: "truncate-line-wrap",
+                        style: "margin-bottom:0.5rem;text-align:right;"
                     })
                 },
 
@@ -605,8 +817,7 @@
             $("#quality").val(twitchStream.quality);
         } else {
             $("#quality").val("best");
-            localStorage.setItem("twitchStream.quality", "best");
-            twitchStream.quality = "best";
+            twitchStream.setValue("quality", "best");
         }
 
         if (twitchStream.autoRefresh) {
@@ -619,11 +830,10 @@
         }
 
         if (twitchStream.activePlaylist) {
-            $("#activePlaylist").val(twitchStream.activePlaylist);
+            $("input[name=activePlaylist][value=" + twitchStream.activePlaylist + "]").attr('checked', 'checked');
         } else {
-            $("#activePlaylist").val("followed");
-            localStorage.setItem("twitchStream.activePlaylist", "followed");
-            twitchStream.activePlaylist = "followed";
+            $("input[name=activePlaylist][value=followed]").attr('checked', 'checked');
+            twitchStream.setValue("activePlaylist", "followed");
         }
 
         $("#usernameButton").on("click", function() {
@@ -632,8 +842,7 @@
 
         $("#usernameButton, #usernameButtonTopbar").on("click", function() {
             var username = $("#username").val();
-            localStorage.setItem('twitchStream.currentUser', username);
-            twitchStream.currentUser = username;
+            twitchStream.setValue("currentUser", username);
             twitchStream.refresh();
             twitchStream.initAutoRefresh();
         });
@@ -648,8 +857,7 @@
 
         $("#quality").on("change", function() {
             var quality = $(this).val();
-            localStorage.setItem('twitchStream.quality', quality);
-            twitchStream.quality = quality;
+            twitchStream.setValue("quality", quality);
             twitchStream.refresh();
             twitchStream.initAutoRefresh();
         });
@@ -706,12 +914,23 @@
             }
         });
 
-        $("#activePlaylist").on("change", function() {
+        $("input[name=activePlaylist]").on("change", function() {
             var activePlaylist = $(this).val();
-            localStorage.setItem("twitchStream.activePlaylist", activePlaylist);
-            twitchStream.activePlaylist = activePlaylist;
+            twitchStream.setValue("activePlaylist", activePlaylist);
+            $("#currentStreams").empty();
+            $("#playlists").hide();
+            $("#currentStreams").show();
             twitchStream.refresh();
-            $("#playlistDropdown").foundation("close");
+        });
+
+        $("#temporarySwitch").off("click");
+        $("#temporarySwitch").on("click", function(event) {
+            event.preventDefault();
+        });
+
+        $("#playlistToggle").on("click", function() {
+            $("#currentStreams").toggle();
+            $("#playlists").toggle();
         });
 
         $("#refresh").on("click", function() {
