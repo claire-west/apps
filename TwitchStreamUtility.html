@@ -77,106 +77,23 @@
             <li class="menu-text hide-for-small-only">Twitch Stream Utility</li>
             <li>
                 <div class="input-group" style="margin-bottom: 0;">
-                    <button class="topbar-button-fa button secondary" data-toggle="securityDropdown" style="border-left:none;">
+                    <button class="topbar-button-fa button secondary" data-section="security" style="border-left:none;">
                         <i class="fa fa-shield"></i>
                         <span class="show-for-sr">Security Warning</span>
                     </button>
-                    <div class="dropdown-pane" id="securityDropdown" data-dropdown>
-                        <p style="margin-bottom:0;"><strong>Security Notice:</strong>&nbsp;This tool involves running a batch file located on your computer. When you click a link using the custom protocol it will run this script.</p>
-                        <p>While unlikely, if you click a link elsewhere that uses a protocol with the same name it is possible someone could take advantage of this. Use at your own risk.</p>
-                    </div>
-                    <button class="topbar-button-fa button secondary" data-open="setupReveal">
+                    <button class="topbar-button-fa button secondary" data-section="setup">
                         <i class="fa fa-info-circle"></i>
                         <span class="show-for-sr">Setup Instructions</span>
                     </button>
-                    <div id="setupReveal" class="reveal" data-reveal>
-                        <h5>Setup</h5>
-                        <h6><strong>Prerequisites</strong></h6>
-                        <ul style="background-color:white;">
-                            <li><a href="http://www.videolan.org/vlc/index.html">VLC</a></li>
-                            <li><a href="http://docs.livestreamer.io/">Livestreamer</a></li>
-                        </ul>
-                        <h6 style="margin-top:0.5rem;"><strong>launch.bat</strong></h6>
-                        <code>set "str=%1</code><br />
-                        <code>set "var2=%str:*:=%"</code><br />
-                        <code>livestreamer twitch.tv/%var2%</code><br />
-                        <h6 style="margin-top:0.5rem;"><strong>Protocol Setup</strong></h6>
-                        <ol>
-                            <li>In regedit, find HKEY_CLASSES_ROOT</li>
-                            <li>Add a key named "livestreamer"</li>
-                            <li>Set livestreamer's default string to "URL:Livestreamer Protocol"</li>
-                            <li>Add an empty string to livestreamer called "URL Protocol"</li>
-                            <li>Add a key to livestreamer named "shell"</li>
-                            <li>Add a key to shell named "open"</li>
-                            <li>Add a key to open named "command"</li>
-                            <li>Set command's default string to the path of launch.bat (see below)</li>
-                        </ol>
-                        <p style="margin-top:0.5rem;margin-bottom:0.5rem;">The final structure should look like this:</p>
-                        <p style="margin-bottom:0;">HKEY_CLASSES_ROOT</p>
-                        <p style="margin-bottom:0;text-indent:1rem;">livestreamer</p>
-                        <p style="margin-bottom:0;text-indent:2rem;">(Default) = "URL:Livestreamer Protocol"</p>
-                        <p style="margin-bottom:0;text-indent:2rem;">URL Protocol = ""</p>
-                        <p style="margin-bottom:0;text-indent:2rem;">shell</p>
-                        <p style="margin-bottom:0;text-indent:3rem;">open</p>
-                        <p style="margin-bottom:0;text-indent:4rem;">command</p>
-                        <p style="margin-bottom:0;text-indent:5rem;">(Default) = "C:\...\launch.bat" "%1"</p>
-                        <button class="close-button" data-close aria-label="Close modal" type="button">
-                            <i class="fi-x"></i>
-                            <span class="show-for-sr">Close</span>
-                        </button>
-                    </div>
-                    <button class="topbar-button-fa button secondary" data-toggle="settingsDropdown">
+                    <button class="topbar-button-fa button secondary" data-section="settings">
                         <i class="fa fa-cog"></i>
                         <span class="show-for-sr">Settings</span>
                     </button>
-                    <div class="dropdown-pane" id="settingsDropdown" data-dropdown>
-                        <div class="input-group">
-                            <label for="quality" class="input-group-label">Quality</label>
-                            <select id="quality" class="input-group-field">
-                                <option value="best">Best</option>
-                                <option value="source">Source</option>
-                                <option value="high">High</option>
-                                <option value="medium">Medium</option>
-                                <option value="low">Low</option>
-                                <option value="mobile">Mobile</option>
-                                <option value="audio">Audio</option>
-                            </select>
-                        </div>
-                        <div class="input-group">
-                            <label for="autoRefresh" class="input-group-label" style="width: 226px;">Refresh every 2 minutes</label>
-                            <input type="checkbox" id="autoRefresh" class="input-group-field" style="height: 40px; width: 40px; margin-right: 0;" />
-                        </div>
-                        <div class="input-group" style="margin-bottom:0;">
-                            <label for="twelveHour" class="input-group-label" style="width: 226px;">12-hour time</label>
-                            <input type="checkbox" id="twelveHour" class="input-group-field" style="height: 40px; width: 40px; margin-right: 0;" />
-                        </div>
-                    </div>
-                    <button class="topbar-button-fi button" data-toggle="singleEntryDropdown">
+                    <button class="topbar-button-fi button" data-section="singleEntry">
                         <i class="fi-play-video"></i>
                         <span class="show-for-sr">Specify a Stream</span>
                     </button>
-                    <div id="singleEntryDropdown" class="dropdown-pane" data-dropdown style="width:30rem;">
-                        <div class="input-group" style="margin-bottom:0.5rem;">
-                            <label for="channelName" class="input-group-label" style="width:6rem;">Channel</label>
-                            <input type="text"id="channelName" class="input-group-field" placeholder="Channel Name" style="text-align:center;width:100%;" />
-                            <div class="input-group-button">
-                                <a id="checkSingleStream" class="button primary disabled" style="width:8.1rem;">
-                                    <span>Check Stream</span>
-                                    <img src="http://www.gifstache.com/images/ajax_loader.gif" style="height:25px;margin-top:-0.45rem;margin-bottom:-0.45rem;" />
-                                </a>
-                            </div>
-                        </div>
-                        <div class="input-group" style="margin-bottom:0;">
-                            <label for="gameTitle" class="input-group-label" style="width:6rem;">Game</label>
-                            <input type="text" id="gameTitle" class="input-group-field" placeholder="Game Title" style="text-align:center;width:100%;" />
-                            <div class="input-group-button">
-                                <a id="checkGame" class="button primary disabled" style="width:8.1rem;">
-                                    <span>Check Game</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <button id="playlistToggle" class="topbar-button-fa button">
+                    <button class="topbar-button-fa button" data-section="playlists">
                         <i class="fa fa-th" style="margin-top: 2px;"></i>
                         <span class="show-for-sr">Manage Playlists</span>
                     </button>
@@ -220,8 +137,102 @@
         </ul>
     </div>
 </nav>
-<section id="currentStreams" class="row"></section>
-<section id="playlists">
+<section id="currentStreams" class="row contentSection"></section>
+<section id="security" class="row contentSection">
+    <div class="column">
+        <h4>Security</h4>
+        <p style="margin-bottom:0;"><strong>Security Notice:</strong>&nbsp;This tool involves running a batch file located on your computer. When you click a link using the custom protocol it will run this script.</p>
+        <p>While unlikely, if you click a link elsewhere that uses a protocol with the same name it is possible someone could take advantage of this. Use at your own risk.</p>
+    </div>
+</section>
+<section id="setup" class="row contentSection">
+    <div class="column">
+        <h4>Setup</h4>
+        <h6><strong>Prerequisites</strong></h6>
+        <ul style="background-color:white;">
+            <li><a href="http://www.videolan.org/vlc/index.html">VLC</a></li>
+            <li><a href="http://docs.livestreamer.io/">Livestreamer</a></li>
+        </ul>
+        <h6 style="margin-top:0.5rem;"><strong>launch.bat</strong></h6>
+        <code>set "str=%1</code><br />
+        <code>set "var2=%str:*:=%"</code><br />
+        <code>livestreamer twitch.tv/%var2%</code><br />
+        <h6 style="margin-top:0.5rem;"><strong>Protocol Setup</strong></h6>
+        <ol>
+            <li>In regedit, find HKEY_CLASSES_ROOT</li>
+            <li>Add a key named "livestreamer"</li>
+            <li>Set livestreamer's default string to "URL:Livestreamer Protocol"</li>
+            <li>Add an empty string to livestreamer called "URL Protocol"</li>
+            <li>Add a key to livestreamer named "shell"</li>
+            <li>Add a key to shell named "open"</li>
+            <li>Add a key to open named "command"</li>
+            <li>Set command's default string to the path of launch.bat (see below)</li>
+        </ol>
+        <p style="margin-top:0.5rem;margin-bottom:0.5rem;">The final structure should look like this:</p>
+        <p style="margin-bottom:0;">HKEY_CLASSES_ROOT</p>
+        <p style="margin-bottom:0;text-indent:1rem;">livestreamer</p>
+        <p style="margin-bottom:0;text-indent:2rem;">(Default) = "URL:Livestreamer Protocol"</p>
+        <p style="margin-bottom:0;text-indent:2rem;">URL Protocol = ""</p>
+        <p style="margin-bottom:0;text-indent:2rem;">shell</p>
+        <p style="margin-bottom:0;text-indent:3rem;">open</p>
+        <p style="margin-bottom:0;text-indent:4rem;">command</p>
+        <p style="margin-bottom:0;text-indent:5rem;">(Default) = "C:\...\launch.bat" "%1"</p>
+        <button class="close-button" data-close aria-label="Close modal" type="button">
+            <i class="fi-x"></i>
+            <span class="show-for-sr">Close</span>
+        </button>
+    </div>
+</section>
+<section id="settings" class="row contentSection">
+    <div class="column">
+        <h4>Settings</h4>
+        <div class="input-group">
+            <label for="quality" class="input-group-label">Quality</label>
+            <select id="quality" class="input-group-field" style="width:189px;">
+                <option value="best">Best</option>
+                <option value="source">Source</option>
+                <option value="high">High</option>
+                <option value="medium">Medium</option>
+                <option value="low">Low</option>
+                <option value="mobile">Mobile</option>
+                <option value="audio">Audio</option>
+            </select>
+        </div>
+        <div class="input-group">
+            <label for="autoRefresh" class="input-group-label" style="width: 226px;">Refresh every 2 minutes</label>
+            <input type="checkbox" id="autoRefresh" class="input-group-field" style="height: 40px; width: 40px; margin-right: 0;" />
+        </div>
+        <div class="input-group" style="margin-bottom:0;">
+            <label for="twelveHour" class="input-group-label" style="width: 226px;">12-hour time</label>
+            <input type="checkbox" id="twelveHour" class="input-group-field" style="height: 40px; width: 40px; margin-right: 0;" />
+        </div>
+    </div>
+</section>
+<section id="singleEntry" class="row contentSection">
+    <div class="column">
+        <h4>One-time Entry</h4>
+        <div class="input-group" style="margin-bottom:0.5rem;">
+            <label for="channelName" class="input-group-label" style="width:6rem;">Channel</label>
+            <input type="text"id="channelName" class="input-group-field" placeholder="Channel Name" style="text-align:center;width:100%;" />
+            <div class="input-group-button">
+                <a id="checkSingleStream" class="button primary disabled" style="width:8.1rem;">
+                    <span>Check Stream</span>
+                    <img src="http://www.gifstache.com/images/ajax_loader.gif" style="height:25px;margin-top:-0.45rem;margin-bottom:-0.45rem;" />
+                </a>
+            </div>
+        </div>
+        <div class="input-group" style="margin-bottom:0;">
+            <label for="gameTitle" class="input-group-label" style="width:6rem;">Game</label>
+            <input type="text" id="gameTitle" class="input-group-field" placeholder="Game Title" style="text-align:center;width:100%;" />
+            <div class="input-group-button">
+                <a id="checkGame" class="button primary disabled" style="width:8.1rem;">
+                    <span>Check Game</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="playlists" class="contentSection">
     <div class="row">
         <div class="small-2 columns"><h4>Playlists</h4></div>
         <div class="small-2 columns">
@@ -320,9 +331,8 @@
 <script>
     (function () {
         $(document).foundation();
-        $("#playlists").hide();
         $("#playlistsTemporary").hide();
-        $("#singleEntryDropdown img").hide();
+        $("#singleEntry img").hide();
         $("#year").text(new Date().getFullYear());
         
         window.twitchStream = {
@@ -332,8 +342,20 @@
             twelveHour: localStorage.getItem("twitchStream.twelveHour"),
             activePlaylist: localStorage.getItem("twitchStream.activePlaylist"),
 
+            showSection: function(sectionId) {
+                var section = $("#" + sectionId);
+                if (section.is(":visible")) {
+                    $(".contentSection").hide();
+                    $("#currentStreams").show();
+                } else {
+                    $(".contentSection").hide();
+                    section.show();
+                }
+            },
+
             refresh: function() {
                 if (twitchStream.activePlaylist === "game") {
+                    $("#refresh i").addClass("fa-spin");
                     twitchStream.getGames(twitchStream.playlistData.title);
                 } else if (twitchStream.activePlaylist === "custom") {
                     //TODO
@@ -359,7 +381,6 @@
 
             useTemporaryPlaylist: function() {
                 $("#refresh i").addClass("fa-spin");
-                $("#singleEntryDropdown").foundation("close");
                 twitchStream.activePlaylist = twitchStream.temporaryPlaylist.type
                 twitchStream.playlistData = twitchStream.temporaryPlaylist.data
                 twitchStream.refresh();
@@ -864,6 +885,8 @@
             }
         };
 
+        twitchStream.showSection("currentStreams");
+
         if (twitchStream.currentUser) {
             $("#username").val(twitchStream.currentUser);
             $("#usernameTopbar").val(twitchStream.currentUser);
@@ -891,6 +914,10 @@
             $("input[name=activePlaylist][value=followed]").attr('checked', 'checked');
             twitchStream.setValue("activePlaylist", "followed");
         }
+
+        $("[data-section]").on("click", function() {
+            twitchStream.showSection($(this).data("section"));
+        });
 
         $("#usernameButton").on("click", function() {
             $("#usernameDropdown").foundation("close");
@@ -985,8 +1012,8 @@
                     title: $("#gameTitle").val()
                 }
             };
-            $("#playlists").hide();
-            $("#currentStreams").show();
+            $("#currentStreams").empty();
+            twitchStream.showSection("currentStreams");
             twitchStream.useTemporaryPlaylist();
         });
 
@@ -997,8 +1024,7 @@
             }
             twitchStream.setValue("activePlaylist", activePlaylist);
             $("#currentStreams").empty();
-            $("#playlists").hide();
-            $("#currentStreams").show();
+            twitchStream.showSection("currentStreams");
             twitchStream.refresh();
         });
 
@@ -1007,14 +1033,13 @@
             event.preventDefault();
         });
 
-        $("#playlistToggle").on("click", function() {
-            $("#currentStreams").toggle();
-            $("#playlists").toggle();
-        });
-
         $("#refresh").on("click", function() {
             twitchStream.initAutoRefresh();
             twitchStream.refresh();
+            if ($("#currentStreams").is(":hidden")) {
+                $("#currentStreams").empty();
+                twitchStream.showSection("currentStreams");
+            }
         });
 
         twitchStream.refresh();
