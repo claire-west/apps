@@ -70,34 +70,30 @@
         }
     </style>
 </head>
-<body>
+<body style="overflow-x:hidden;">
 <nav class="top-bar" style="margin-bottom:0.5rem;">
     <div class="top-bar-left">
         <ul class="menu">
             <li class="menu-text hide-for-small-only">Twitch Stream Utility</li>
             <li>
                 <div class="input-group" style="margin-bottom: 0;">
-                    <button class="topbar-button-fa button secondary" data-section="security" style="border-left:none;">
-                        <i class="fa fa-shield"></i>
-                        <span class="show-for-sr">Security Warning</span>
-                    </button>
-                    <button class="topbar-button-fa button secondary" data-section="setup">
+                    <button class="topbar-button-fa button secondary" title="Setup" data-section="setup">
                         <i class="fa fa-info-circle"></i>
                         <span class="show-for-sr">Setup Instructions</span>
                     </button>
-                    <button class="topbar-button-fa button secondary" data-section="settings">
+                    <button class="topbar-button-fa button secondary" title="Settings" data-section="settings">
                         <i class="fa fa-cog"></i>
                         <span class="show-for-sr">Settings</span>
                     </button>
-                    <button class="topbar-button-fi button" data-section="singleEntry">
+                    <button class="topbar-button-fi button" title="One-time Entry" data-section="singleEntry">
                         <i class="fi-play-video"></i>
-                        <span class="show-for-sr">Specify a Stream</span>
+                        <span class="show-for-sr">One-time Entry</span>
                     </button>
-                    <button class="topbar-button-fa button" data-section="playlists">
+                    <button class="topbar-button-fa button" title="Playlists" data-section="playlists">
                         <i class="fa fa-th" style="margin-top: 2px;"></i>
                         <span class="show-for-sr">Manage Playlists</span>
                     </button>
-                    <button id="refresh" class="topbar-button-fa button">
+                    <button id="refresh" class="topbar-button-fa button" title="Refresh">
                         <i class="fa fa-refresh"></i>
                         <span class="show-for-sr">Refresh</span>
                     </button>
@@ -112,13 +108,13 @@
                 <div class="input-group show-for-large" style="margin-bottom:0;">
                     <input type="text" id="usernameTopbar" class="input-group-field" placeholder="Username" style="margin-right:0;text-align:center;" />
                     <div class="input-group-button">
-                        <button id="usernameButtonTopbar" class="topbar-button-fa button" style="border-left:none;">
+                        <button id="usernameButtonTopbar" class="topbar-button-fa button" title="Save Username" style="border-left:none;">
                             <i class="fa fa-save"></i>
                             <span class="show-for-sr">Save Username</span>
                         </button>
                     </div>
                 </div>
-                <button class="topbar-button-fi button hide-for-large" data-toggle="usernameDropdown" style="border-left:none;">
+                <button class="topbar-button-fi button hide-for-large" title="Enter Username" data-toggle="usernameDropdown" style="border-left:none;">
                     <i class="fi-torso"></i>
                     <span class="show-for-sr">Username Entry</span>
                 </button>
@@ -126,7 +122,7 @@
                     <div class="input-group" style="margin-bottom:0;">
                         <input type="text" id="username" class="input-group-field" placeholder="Username" style="margin-right:0;text-align:center;width:100%;" />
                         <div class="input-group-button">
-                            <button id="usernameButton" class="topbar-button-fa button" style="border-left:none;">
+                            <button id="usernameButton" class="topbar-button-fa button" title="Save Username" style="border-left:none;">
                                 <i class="fa fa-save"></i>
                                 <span class="show-for-sr">Save Username</span>
                             </button>
@@ -138,22 +134,17 @@
     </div>
 </nav>
 <section id="currentStreams" class="row contentSection"></section>
-<section id="security" class="row contentSection">
-    <div class="column">
-        <h4>Security</h4>
-        <p style="margin-bottom:0;"><strong>Security Notice:</strong>&nbsp;This tool involves running a batch file located on your computer. When you click a link using the custom protocol it will run this script.</p>
-        <p>While unlikely, if you click a link elsewhere that uses a protocol with the same name it is possible someone could take advantage of this. Use at your own risk.</p>
-    </div>
-</section>
 <section id="setup" class="row contentSection">
     <div class="column">
-        <h4>Setup</h4>
+        <h4><i class="fa fa-arrow-left" title="Back to Followed Streams" style="cursor:pointer;" data-section="currentStreams"></i>&nbsp;Setup</h4>
+        <h6><strong>Security Notice</strong></h6>
+        <p>This tool involves running a batch script located on your computer. When you click a link using the custom protocol it will run this script. While unlikely, if you click a link elsewhere that uses a protocol with the same name it is possible someone could take advantage of this. Use at your own risk.</p>
         <h6><strong>Prerequisites</strong></h6>
-        <ul style="background-color:white;">
+        <ul>
             <li><a href="http://www.videolan.org/vlc/index.html">VLC</a></li>
             <li><a href="http://docs.livestreamer.io/">Livestreamer</a></li>
         </ul>
-        <h6 style="margin-top:0.5rem;"><strong>launch.bat</strong></h6>
+        <h6><strong>launch.bat</strong></h6>
         <code>set "str=%1</code><br />
         <code>set "var2=%str:*:=%"</code><br />
         <code>livestreamer twitch.tv/%var2%</code><br />
@@ -177,18 +168,16 @@
         <p style="margin-bottom:0;text-indent:3rem;">open</p>
         <p style="margin-bottom:0;text-indent:4rem;">command</p>
         <p style="margin-bottom:0;text-indent:5rem;">(Default) = "C:\...\launch.bat" "%1"</p>
-        <button class="close-button" data-close aria-label="Close modal" type="button">
-            <i class="fi-x"></i>
-            <span class="show-for-sr">Close</span>
-        </button>
     </div>
 </section>
 <section id="settings" class="row contentSection">
-    <div class="column">
-        <h4>Settings</h4>
+    <div class="small-12 columns">
+        <h4><i class="fa fa-arrow-left" title="Back to Followed Streams" style="cursor:pointer;" data-section="currentStreams"></i>&nbsp;Settings</h4>
+    </div>
+    <div class="medium-4 columns">
         <div class="input-group">
             <label for="quality" class="input-group-label">Quality</label>
-            <select id="quality" class="input-group-field" style="width:189px;">
+            <select id="quality" class="input-group-field">
                 <option value="best">Best</option>
                 <option value="source">Source</option>
                 <option value="high">High</option>
@@ -198,19 +187,23 @@
                 <option value="audio">Audio</option>
             </select>
         </div>
+    </div>
+    <div class="medium-4 columns">
         <div class="input-group">
-            <label for="autoRefresh" class="input-group-label" style="width: 226px;">Refresh every 2 minutes</label>
+            <label for="autoRefresh" class="input-group-label" style="width: 100%">Refresh every 2 minutes</label>
             <input type="checkbox" id="autoRefresh" class="input-group-field" style="height: 40px; width: 40px; margin-right: 0;" />
         </div>
+    </div>
+    <div class="medium-4 columns">
         <div class="input-group" style="margin-bottom:0;">
-            <label for="twelveHour" class="input-group-label" style="width: 226px;">12-hour time</label>
+            <label for="twelveHour" class="input-group-label" style="width: 100%">12-hour time</label>
             <input type="checkbox" id="twelveHour" class="input-group-field" style="height: 40px; width: 40px; margin-right: 0;" />
         </div>
     </div>
 </section>
 <section id="singleEntry" class="row contentSection">
     <div class="column">
-        <h4>One-time Entry</h4>
+        <h4><i class="fa fa-arrow-left" title="Back to Followed Streams" style="cursor:pointer;" data-section="currentStreams"></i>&nbsp;One-time Entry</h4>
         <div class="input-group" style="margin-bottom:0.5rem;">
             <label for="channelName" class="input-group-label" style="width:6rem;">Channel</label>
             <input type="text"id="channelName" class="input-group-field" placeholder="Channel Name" style="text-align:center;width:100%;" />
@@ -234,7 +227,7 @@
 </section>
 <section id="playlists" class="contentSection">
     <div class="row">
-        <div class="small-2 columns"><h4>Playlists</h4></div>
+        <div class="small-2 columns"><h4><i class="fa fa-arrow-left" title="Back to Followed Streams" style="cursor:pointer;" data-section="currentStreams"></i>&nbsp;Playlists</h4></div>
         <div class="small-2 columns">
             <h6><strong>Type</strong></h6>
         </div>
@@ -334,6 +327,33 @@
         $("#playlistsTemporary").hide();
         $("#singleEntry img").hide();
         $("#year").text(new Date().getFullYear());
+
+        Array.prototype.sortBy = function(properties) {
+            var tempArray = properties.split("[").join(".").split("]").join(".").split(".");
+            var propArray = [];
+            for (var i = 0; i < tempArray.length; i++) {
+                if (tempArray[i] !== "") {
+                    propArray.push(tempArray[i])
+                }
+            }
+            var getPropByPropArray = function(object, propArray, index) {
+                if (!index) {
+                index = 0;
+                }
+                if (index === propArray.length - 1) {
+                    return object[propArray[index]];
+                }
+                return getPropByPropArray(object[propArray[index]], propArray, ++index);
+            }
+            this.sort(function(a, b) {
+                var aVal = getPropByPropArray(a, propArray);
+                var bVal = getPropByPropArray(b, propArray);
+                if (typeof aVal === "string" && typeof bVal === "string") {
+                    return aVal.toLocaleLowerCase().localeCompare(bVal.toLocaleLowerCase());
+                }
+                return bVal - aVal;
+            })
+        };
         
         window.twitchStream = {
             currentUser: localStorage.getItem("twitchStream.currentUser"),
@@ -381,14 +401,16 @@
 
             useTemporaryPlaylist: function() {
                 $("#refresh i").addClass("fa-spin");
+                $("#playlistsTemporary").show();
                 twitchStream.activePlaylist = twitchStream.temporaryPlaylist.type
                 twitchStream.playlistData = twitchStream.temporaryPlaylist.data
                 twitchStream.refresh();
                 if (twitchStream.activePlaylist === "game") {
                     $("#temporaryPlaylistName").text("Game: " + twitchStream.playlistData.title);
+                } else if (twitchStream.activePlaylist === "custom") {
+                    //TODO
                 }
                 $("#temporarySwitch").prop("checked", true)
-                $("#playlistsTemporary").show();
             },
 
             getFollowed: function(username) {
@@ -422,15 +444,7 @@
                         url: url,
                         cache: false,
                         success: function(result) {
-                            result.streams.sort(function(a, b) {
-                                if (a.channel.display_name < b.channel.display_name) {
-                                    return -1;
-                                }
-                                if (a.channel.display_name > b.channel.display_name) {
-                                    return 1;
-                                }
-                                return 0;
-                            });
+                            result.streams.sortBy("channel.display_name");
                             twitchStream.renderStreams(result.streams, "Followed Streams");
                         }
                     });
@@ -450,6 +464,7 @@
                                 item.channel.display_name,
                                 item.channel.status,
                                 item.preview.medium,
+                                item.game,
                                 item.viewers,
                                 now
                             )
@@ -459,9 +474,7 @@
                     $("#currentStreams > div.columns:last-child").addClass("end");
                 }
 
-                twitchStream.updateRefreshTimestamp();
-                $("#lastRefresh").removeClass("hide");
-                $("#refresh i").removeClass("fa-spin");
+                twitchStream.finishRefresh();
             },
 
             getHosts: function(username) {
@@ -476,9 +489,8 @@
                 if (hosts.length < 1) {
                     $("#currentStreams").append(twitchStream.rendering.error("No Live Hosts"));
                 } else {
-                    hosts.sort(function(a, b) {
-                        return a.target.viewers - b.target.viewers;
-                    });
+                    console.log(hosts);
+                    hosts.sortBy("target.viewers");
 
                     $("#currentStreams").append(twitchStream.rendering.title("Live Hosts"));
 
@@ -489,6 +501,7 @@
                                 item.display_name,
                                 item.target.channel.name,
                                 item.target.preview,
+                                item.game,
                                 item.target.viewers,
                                 now
                             )
@@ -498,9 +511,7 @@
                     $("#currentStreams > div.columns:last-child").addClass("end");
                 }
 
-                twitchStream.updateRefreshTimestamp();
-                $("#lastRefresh").removeClass("hide");
-                $("#refresh i").removeClass("fa-spin");
+                twitchStream.finishRefresh();
             },
 
             getGames: function(fragment) {
@@ -529,11 +540,18 @@
                     url: url,
                     cache: false,
                     success: function(result) {
-                        result.streams.sort(function(a, b) {
-                            return b.viewers - a.viewers;
-                        });
+                        result.streams.sortBy("viewers");
                         twitchStream.renderStreams(result.streams, title);
                     }
+                });
+            },
+
+            finishRefresh: function() {
+                twitchStream.updateRefreshTimestamp();
+                $("#lastRefresh").removeClass("hide");
+                $("#refresh i").removeClass("fa-spin");
+                $("#currentStreams h6").on("click", function() {
+                    $(this).toggleClass("truncate-line-wrap")
                 });
             },
 
@@ -585,13 +603,30 @@
 
             rendering: {
                 title: function(title) {
-                    return $("<div/>", {
+                    var $div = $("<div/>", {
                         class: "column"
-                    }).append(
-                        $("<h4/>", {
-                            text: title
-                        })
-                    )
+                    })
+
+                    var $h4 = $("<h4/>");
+                    if (twitchStream.activePlaylist !== "followed") {
+                        $h4.append(
+                            $("<i/>", {
+                                title: "Back to Followed Streams",
+                                class: "fa fa-arrow-left",
+                                style: "cursor:pointer;"
+                            }).on("click", function() {
+                                twitchStream.setValue("activePlaylist", "followed");
+                                $("#currentStreams").empty();
+                                twitchStream.refresh();
+                                $("#playlistsTemporary").hide();
+                                $("#followedSwitch").prop("checked", true)
+                            })
+                        ).append("&nbsp;")
+                    }
+
+                    $h4.append(document.createTextNode(title));
+                    $div.append($h4);
+                    return $div;
                 },
 
                 error: function(error) {
@@ -704,12 +739,13 @@
                     });
                 },
 
-                preview: function(channelName, src, now) {
+                preview: function(channelName, src, gameTitle, now) {
                     return $("<a/>", {
                         href: "http://www.twitch.tv/" + channelName
                     }).append(
                         $("<img/>", {
                             src: src + "?" + now,
+                            title: gameTitle,
                             style: "margin-bottom:0.5rem;width:100%;height:100%;"
                         })
                     )
@@ -718,6 +754,7 @@
                 status: function(status) {
                     return $("<h6/>", {
                         text: status,
+                        title: status,
                         class: "truncate-line-wrap",
                         style: "margin-bottom:0;"
                     })
@@ -773,13 +810,14 @@
                     return $buttonsRow;
                 },
 
-                renderFollow: function(channelName, status, preview, viewers, now) {
+                renderFollow: function(channelName, status, preview, gameTitle, viewers, now) {
                     var $div = twitchStream.rendering.outerDiv();
                     var $panel = twitchStream.rendering.panel().appendTo($div);
 
                     twitchStream.rendering.preview(
                         channelName,
                         preview,
+                        gameTitle,
                         now
                     ).appendTo($panel);
                     
@@ -800,13 +838,14 @@
                     return $div;
                 },
 
-                renderHost: function(hostName, targetName, preview, viewers, now) {
+                renderHost: function(hostName, targetName, preview, gameTitle, viewers, now) {
                     var $div = twitchStream.rendering.outerDiv();
                     var $panel = twitchStream.rendering.panel().appendTo($div);
 
                     twitchStream.rendering.preview(
                         targetName,
                         preview,
+                        gameTitle,
                         now
                     ).appendTo($panel);
                     
@@ -931,10 +970,18 @@
         });
 
         $("#username").on("keyup", function() {
+            if (Foundation.Keyboard.parseKey(event) === "ENTER") {
+                $("#usernameButton").trigger("click");
+                return;
+            }
             $("#usernameTopbar").val($(this).val());
         });
 
         $("#usernameTopbar").on("keyup", function() {
+            if (Foundation.Keyboard.parseKey(event) === "ENTER") {
+                $("#usernameButtonTopbar").trigger("click");
+                return;
+            }
             $("#username").val($(this).val());
         });
 
@@ -974,7 +1021,12 @@
             }
         });
 
-        $("#channelName").on("keyup", function() {
+        $("#channelName").on("keyup", function(event) {
+            if (Foundation.Keyboard.parseKey(event) === "ENTER") {
+                $("#checkSingleStream").trigger("click");
+                return;
+            }
+
             $("#checkSingleStream")
                 .removeClass("success")
                 .removeClass("alert")
@@ -998,6 +1050,10 @@
         });
 
         $("#gameTitle").on("keyup", function() {
+            if (Foundation.Keyboard.parseKey(event) === "ENTER") {
+                $("#checkGame").trigger("click");
+                return;
+            }
             if ($(this).val() === "") {
                 $("#checkGame").addClass("disabled");
             } else {
