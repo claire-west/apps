@@ -655,25 +655,11 @@
                 delete twitchStream[key];
             },
 
-            rebindGamePlaylistSwitches: function() {
-                $("#playlistsGames input[name=activePlaylist]").off("change");
-                $("#playlistsGames input[name=activePlaylist]").on("change", function() {
-                    var gameTitle = $(this).val();
-                    $("#playlistsTemporary").hide();
-                    twitchStream.setValue("activePlaylist", "game");
-                    twitchStream.setValue("playlistData", { title: gameTitle });
-
-                    $("#currentStreams").empty();
-                    twitchStream.showSection("currentStreams");
-                    twitchStream.refresh();
-                });
-            },
-
             rendering: {
                 title: function(title) {
                     var $div = $("<div/>", {
                         class: "column"
-                    })
+                    });
 
                     var $h4 = $("<h4/>");
                     if (twitchStream.activePlaylist !== "followed") {
@@ -713,14 +699,15 @@
                 gamePlaylists: function() {
                     var $playlistsSection = $("#playlistsGames");
                     $playlistsSection.empty();
+                    var index = 0;
                     twitchStream.gamePlaylists.forEach(function(item) {
                         $playlistsSection.append(
-                            twitchStream.rendering.playlistRow("Game", item, item, true)
+                            twitchStream.rendering.playlistRow("Game", item, item, index++, true)
                         );
                     });
                 },
 
-                playlistRow: function(type, name, key, editDisabled) {
+                playlistRow: function(type, name, key, index, editDisabled) {
                     var $div = $("<div/>", {
                         class: "row playlist-row"
                     });
@@ -755,6 +742,8 @@
 
                     if (editDisabled) {
                         $editButton.addClass("disabled");
+                    } else {
+                        //TODO
                     }
 
                     $("<div/>", {
@@ -782,23 +771,34 @@
                         })
                     ).appendTo($div);
 
+                    var $radio = $("<input/>", {
+                        type: "radio",
+                        id: "gameSwitch" + index,
+                        class: "switch-input",
+                        name: "activePlaylist",
+                        value: key
+                    }).on("change", function() {
+                        if ($(this).is(":checked")) {
+                            $("#playlistsTemporary").hide();
+                            twitchStream.setValue("activePlaylist", "game");
+                            twitchStream.setValue("playlistData", { title: name });
+
+                            $("#currentStreams").empty();
+                            twitchStream.showSection("currentStreams");
+                            twitchStream.refresh();
+                        }
+                    });
+
                     $("<div/>", {
                         class: "small-2 columns"
                     }).append(
                         $("<div/>", {
                             class: "switch text-center"
-                        }).append(
-                            $("<input/>", {
-                                type: "radio",
-                                id: key.split(" ").join() + "Switch",
-                                class: "switch-input",
-                                name: "activePlaylist",
-                                value: key
-                            })
-                        ).append(
+                        }).append($radio)
+                        .append(
                             $("<label/>", {
                                 class: "switch-paddle",
-                                for: key.split(" ").join() + "Switch"
+                                for: "gameSwitch" + index
                             }).append(
                                 $("<span/>", {
                                     text: name,
@@ -1012,12 +1012,13 @@
                 selectActive: function () {
                     if (twitchStream.activePlaylist) {
                         if (twitchStream.activePlaylist === "game") {
-                            $("input[name=activePlaylist][value='" + twitchStream.playlistData.title + "']").attr("checked", "checked");
+                            var index = twitchStream.gamePlaylists.indexOf(twitchStream.playlistData.title);
+                            $("#gameSwitch" + index).prop("checked", "checked");
                         } else {
-                            $("input[name=activePlaylist][value='" + twitchStream.activePlaylist + "']").attr("checked", "checked");
+                            $("#" + twitchStream.activePlaylist + "Switch").prop("checked", "checked");
                         }
                     } else {
-                        $("#followedSwitch").attr("checked", "checked");
+                        $("#followedSwitch").prop("checked", "checked");
                         twitchStream.setValue("activePlaylist", "followed");
                     }
                 },
@@ -1101,9 +1102,9 @@
                         twitchStream.setValue("gamePlaylists", twitchStream.gamePlaylists);
                         twitchStream.rendering.gamePlaylists();
                     }
-                    $("input[name=activePlaylist][value='" + gameTitle + "']").attr("checked", "checked");
+                    var index = twitchStream.gamePlaylists.indexOf(gameTitle);
+                    $("#gameSwitch" + index).prop("checked", "checked");
                     twitchStream.showSection("playlists");
-                    twitchStream.rebindGamePlaylistSwitches();
 
                     twitchStream.setValue("activePlaylist", "game");
                     twitchStream.setValue("playlistData", { title: gameTitle });
@@ -1114,7 +1115,7 @@
                     if (type === "game") {
                         var index = twitchStream.gamePlaylists.indexOf(name);
                         if (index !== -1) {
-                            if ($("input[name=activePlaylist][value='" + name + "']").is(":checked")) {
+                            if ($("#gameSwitch" + index).is(":checked")) {
                                 twitchStream.setValue("activePlaylist", "followed");
                                 twitchStream.refresh();
                             }
@@ -1122,7 +1123,6 @@
                             twitchStream.setValue("gamePlaylists", twitchStream.gamePlaylists);
                             
                             twitchStream.rendering.gamePlaylists();
-                            twitchStream.rebindGamePlaylistSwitches();
                             twitchStream.playlists.selectActive();
                         }
                     } else if (type === "custom") {
@@ -1294,8 +1294,6 @@
             twitchStream.showSection("currentStreams");
             twitchStream.refresh();
         });
-
-        twitchStream.rebindGamePlaylistSwitches();
 
         $("#gamePlaylistTitle").on("keyup", function() {
             if (Foundation.Keyboard.parseKey(event) === "ENTER") {
