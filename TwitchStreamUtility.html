@@ -465,6 +465,7 @@
                     },
                     error: function() {
                         $("#refresh i").removeClass("fa-spin");
+                        $("#lastRefreshTime").text("Error");
                     }
                 });
             },
@@ -488,6 +489,10 @@
                         success: function(result) {
                             result.streams.sortBy("channel.display_name");
                             twitchStream.renderStreams(result.streams, "Followed Streams");
+                        },
+                        error: function() {
+                            $("#refresh i").removeClass("fa-spin");
+                            $("#lastRefreshTime").text("Error");
                         }
                     });
                 }
@@ -542,7 +547,8 @@
                                 item.display_name,
                                 item.target.channel.name,
                                 item.target.preview,
-                                item.game,
+                                item.target.title,
+                                item.target.meta_game,
                                 item.target.viewers,
                                 now
                             )
@@ -588,6 +594,10 @@
                     success: function(result) {
                         result.streams.sortBy("viewers");
                         twitchStream.renderStreams(result.streams, title);
+                    },
+                    error: function() {
+                        $("#refresh i").removeClass("fa-spin");
+                        $("#lastRefreshTime").text("Error");
                     }
                 });
             },
@@ -923,7 +933,7 @@
                     return $div;
                 },
 
-                renderHost: function(hostName, targetName, preview, gameTitle, viewers, now) {
+                renderHost: function(hostName, targetName, preview, status, gameTitle, viewers, now) {
                     var $div = twitchStream.rendering.outerDiv();
                     var $panel = twitchStream.rendering.panel().appendTo($div);
 
@@ -935,7 +945,7 @@
                     ).appendTo($panel);
                     
                     twitchStream.rendering.status(
-                        hostName + " hosting " + targetName
+                        hostName + " hosting " + targetName + " - " + status
                     ).appendTo($panel);
 
                     twitchStream.rendering.viewers(
@@ -1104,6 +1114,7 @@
                     }
                     var index = twitchStream.gamePlaylists.indexOf(gameTitle);
                     $("#gameSwitch" + index).prop("checked", "checked");
+                    $("#gamePlaylistTitle").val(null);
                     twitchStream.showSection("playlists");
 
                     twitchStream.setValue("activePlaylist", "game");
