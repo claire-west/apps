@@ -1,0 +1,281 @@
+<nav class="top-bar sectionNav">
+    <div class="top-bar-content">
+        <div class="top-bar-left">
+            <ul class="menu">
+                <li>
+                    <div class="input-group" style="margin-bottom: 0;">
+                        <button class="topbar-button-fa button secondary" title="Setup" data-section="setup" style="border-left:none;">
+                            <i class="fa fa-info-circle"></i>
+                            <span class="show-for-sr">Setup</span>
+                        </button>
+                        <button class="topbar-button-fa button secondary" title="Settings" data-section="settings">
+                            <i class="fa fa-cog"></i>
+                            <span class="show-for-sr">Settings</span>
+                        </button>
+                        <button class="topbar-button-fi button" title="One-time Entry" data-section="singleEntry">
+                            <i class="fi-play-video"></i>
+                            <span class="show-for-sr">One-time Entry</span>
+                        </button>
+                        <button class="topbar-button-fa button" title="Playlists" data-section="playlists">
+                            <i class="fa fa-th" style="margin-top: 2px;"></i>
+                            <span class="show-for-sr">Manage Playlists</span>
+                        </button>
+                        <button id="refresh" class="topbar-button-fa button" title="Refresh">
+                            <i class="fa fa-refresh"></i>
+                            <span class="show-for-sr">Refresh</span>
+                        </button>
+                        <span id="lastRefresh" class="hide-for-small-only hide">Last refresh: <span id="lastRefreshTime"></span></span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="top-bar-right">
+            <ul class="menu">
+                <li>
+                    <div class="input-group show-for-large" style="margin-bottom:0;">
+                        <input type="text" id="usernameTopbar" class="input-group-field text-center" placeholder="Username" />
+                        <div class="input-group-button">
+                            <button id="usernameButtonTopbar" class="topbar-button-fa button" title="Save Username">
+                                <i class="fa fa-save"></i>
+                                <span class="show-for-sr">Save Username</span>
+                            </button>
+                        </div>
+                    </div>
+                    <button class="topbar-button-fi button hide-for-large" title="Enter Username" data-toggle="usernameDropdown" style="border-left:none;">
+                        <i class="fi-torso"></i>
+                        <span class="show-for-sr">Username Entry</span>
+                    </button>
+                    <div id="usernameDropdown" class="dropdown-pane hide-for-large" data-dropdown>
+                        <div class="input-group">
+                            <input type="text" id="username" class="input-group-field text-center" placeholder="Username" />
+                            <div class="input-group-button">
+                                <button id="usernameButton" class="topbar-button-fa button" title="Save Username">
+                                    <i class="fa fa-save"></i>
+                                    <span class="show-for-sr">Save Username</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<section id="twitch-currentStreams" class="row contentSection defaultSection" hidden></section>
+<section id="twitch-setup" class="row contentSection" hidden>
+    <div class="column">
+        <h4><i class="fa fa-arrow-left" title="Back to Followed Streams" style="cursor:pointer;" data-section="currentStreams"></i>&nbsp;Setup</h4>
+        <h6><strong>Security Notice</strong></h6>
+        <p>This tool involves running a batch script located on your computer. When you click a link using the custom protocol it will run this script. While unlikely, if you click a link elsewhere that uses a protocol with the same name it is possible someone could take advantage of this. Use at your own risk.</p>
+        <h6><strong>Prerequisites</strong></h6>
+        <ul>
+            <li><a href="http://www.videolan.org/vlc/index.html">VLC</a></li>
+            <li><a href="http://docs.livestreamer.io/">Livestreamer</a></li>
+        </ul>
+        <h6><strong>launch.bat</strong></h6>
+        <code>set "str=%1</code><br />
+        <code>set "var2=%str:*:=%"</code><br />
+        <code>livestreamer twitch.tv/%var2%</code><br />
+        <h6 style="margin-top:0.5rem;"><strong>Protocol Setup</strong></h6>
+        <ol>
+            <li>In regedit, find HKEY_CLASSES_ROOT</li>
+            <li>Add a key named "livestreamer"</li>
+            <li>Set livestreamer's default string to "URL:Livestreamer Protocol"</li>
+            <li>Add an empty string to livestreamer called "URL Protocol"</li>
+            <li>Add a key to livestreamer named "shell"</li>
+            <li>Add a key to shell named "open"</li>
+            <li>Add a key to open named "command"</li>
+            <li>Set command's default string to the path of launch.bat (see below)</li>
+        </ol>
+        <p style="margin-top:0.5rem;margin-bottom:0.5rem;">The final structure should look like this:</p>
+        <p style="margin-bottom:0;">HKEY_CLASSES_ROOT</p>
+        <p style="margin-bottom:0;text-indent:1rem;">livestreamer</p>
+        <p style="margin-bottom:0;text-indent:2rem;">(Default) = "URL:Livestreamer Protocol"</p>
+        <p style="margin-bottom:0;text-indent:2rem;">URL Protocol = ""</p>
+        <p style="margin-bottom:0;text-indent:2rem;">shell</p>
+        <p style="margin-bottom:0;text-indent:3rem;">open</p>
+        <p style="margin-bottom:0;text-indent:4rem;">command</p>
+        <p style="margin-bottom:0;text-indent:5rem;">(Default) = "C:\...\launch.bat" "%1"</p>
+    </div>
+</section>
+<section id="twitch-settings" class="row contentSection" hidden>
+    <div class="column">
+        <h4><i class="fa fa-arrow-left" title="Back to Followed Streams" style="cursor:pointer;" data-section="currentStreams"></i>&nbsp;Settings</h4>
+    </div>
+    <div class="medium-4 columns">
+        <div class="input-group">
+            <label for="quality" class="input-group-label">Quality</label>
+            <select id="quality" class="input-group-field">
+                <option value="best">Best</option>
+                <option value="source">Source</option>
+                <option value="high">High</option>
+                <option value="medium">Medium</option>
+                <option value="low">Low</option>
+                <option value="mobile">Mobile</option>
+                <option value="audio">Audio</option>
+            </select>
+        </div>
+    </div>
+    <div class="medium-4 columns">
+        <div class="input-group">
+            <label for="autoRefresh" class="input-group-label" style="width: 100%">Refresh every 2 minutes</label>
+            <input type="checkbox" id="autoRefresh" class="input-group-field" />
+        </div>
+    </div>
+    <div class="medium-4 columns">
+        <div class="input-group" style="margin-bottom:0;">
+            <label for="twelveHour" class="input-group-label" style="width: 100%">12-hour time</label>
+            <input type="checkbox" id="twelveHour" class="input-group-field" />
+        </div>
+    </div>
+</section>
+<section id="twitch-singleEntry" class="row contentSection" hidden>
+    <div class="column">
+        <h4><i class="fa fa-arrow-left" title="Back to Followed Streams" style="cursor:pointer;" data-section="currentStreams"></i>&nbsp;One-time Entry</h4>
+        <div class="input-group" style="margin-bottom:0.5rem;">
+            <label for="channelName" class="input-group-label" style="width:6rem;">Channel</label>
+            <input type="text" id="channelName" class="input-group-field" placeholder="Channel Name" />
+            <div class="input-group-button">
+                <a id="checkSingleStream" class="button primary disabled">
+                    <span>Check Stream</span>
+                    <img src="../shared/img/loader_arrows.gif" style="height:25px;margin-top:-0.45rem;margin-bottom:-0.45rem;" />
+                </a>
+            </div>
+        </div>
+        <div class="input-group" style="margin-bottom:0;">
+            <label for="gameTitle" class="input-group-label" style="width:6rem;">Game</label>
+            <input type="text" id="gameTitle" class="input-group-field" placeholder="Game Title" />
+            <div class="input-group-button">
+                <a id="checkGame" class="button primary disabled">
+                    <span>Check Game</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="twitch-playlists" class="row contentSection" hidden>
+    <div class="column">
+        <div class="row">
+            <div class="small-2 columns"><h4><i class="fa fa-arrow-left" title="Back to Followed Streams" style="cursor:pointer;" data-section="currentStreams"></i>&nbsp;Playlists</h4></div>
+            <div class="small-2 columns">
+                <h6><strong>Type</strong></h6>
+            </div>
+            <div class="small-6 columns">
+                <h6><strong>Name</strong></h6>
+            </div>
+            <div class="small-2 columns">
+                <h6 class="text-center"><strong>Active</strong></h6>
+            </div>
+        </div>
+        <div id="playlistsTemporary" class="row playlist-row">
+            <div class="small-2 columns">
+                <div class="button-group">
+                    <button class="button hollow secondary disabled topbar-button-fa">
+                        <i class="fa fa-trash-o"></i>
+                        <span class="show-for-sr">Delete Playlist</span>
+                    </button>
+                    <button class="button hollow disabled topbar-button-fa">
+                        <i class="fa fa-edit"></i>
+                        <span class="show-for-sr">Edit Playlist</span>
+                    </button>
+                </div>
+            </div>
+            <div class="small-2 columns"><span>Temporary</span></div>
+            <div class="small-6 columns"><span id="temporaryPlaylistName"></span></div>
+            <div class="small-2 columns">
+                <div class="switch text-center">
+                    <input type="radio" id="temporarySwitch" class="switch-input" name="activePlaylist" value="temporary" />
+                    <label class="switch-paddle" for="temporarySwitch" style="opacity:0.25;cursor:not-allowed;pointer-events:none;">
+                        <span class="show-for-sr">Temporary Playlist</span>
+                    </label>
+                </div>
+            </div>
+        </div>
+        <section id="playlistsDefault">
+            <div class="row playlist-row">
+                <div class="small-2 columns">
+                    <div class="button-group">
+                        <button class="button hollow secondary disabled topbar-button-fa">
+                            <i class="fa fa-trash-o"></i>
+                            <span class="show-for-sr">Delete Playlist</span>
+                        </button>
+                        <button class="button hollow disabled topbar-button-fa">
+                            <i class="fa fa-edit"></i>
+                            <span class="show-for-sr">Edit Playlist</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="small-2 columns"><span style="font-style:italic;">(default)</span></div>
+                <div class="small-6 columns"><span>Followed Channels</span></div>
+                <div class="small-2 columns">
+                    <div class="switch text-center">
+                        <input type="radio" id="followedSwitch" class="switch-input" name="activePlaylist" value="followed" />
+                        <label class="switch-paddle" for="followedSwitch">
+                            <span class="show-for-sr">Followed Channels</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="row playlist-row">
+                <div class="small-2 columns">
+                    <div class="button-group">
+                        <button class="button hollow secondary disabled topbar-button-fa">
+                            <i class="fa fa-trash-o"></i>
+                            <span class="show-for-sr">Delete Playlist</span>
+                        </button>
+                        <button class="button hollow disabled topbar-button-fa">
+                            <i class="fa fa-edit"></i>
+                            <span class="show-for-sr">Edit Playlist</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="small-2 columns"><span style="font-style:italic;">(default)</span></div>
+                <div class="small-6 columns"><span>Live Hosts</span></div>
+                <div class="small-2 columns">
+                    <div class="switch text-center">
+                        <input type="radio" id="hostsSwitch" class="switch-input" name="activePlaylist" value="hosts" />
+                        <label class="switch-paddle" for="hostsSwitch">
+                            <span class="show-for-sr">Live Hosts</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="playlistsGames"></section>
+        <section id="playlistsCustom"></section>
+        <div class="row playlist-row">
+            <div class="small-2 small-offset-10 columns text-center">
+                <button class="button topbar-button-fi" title="New Playlist" data-section="newPlaylist" style="margin-top:4px;margin-bottom:4px;border-left:none;height:32px;width:64px;">
+                    <i class="fi-plus" style="font-size:24px;"></i>
+                    <span class="show-for-sr">New Playlist</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="twitch-newPlaylist" class="row contentSection" hidden>
+    <div class="column">
+        <h4><i class="fa fa-arrow-left" title="Back to Playlists" style="cursor:pointer;" data-section="playlists"></i>&nbsp;New Playlist</h4>
+    </div>
+    <div class="column">
+        <ul id="newPlaylistTabs" class="tabs" data-tabs>
+            <li class="tabs-title is-active"><a href="#newGamePlaylist" aria-selected="true"><i class="fa fa-gamepad"></i>&nbsp;Game</a></li>
+            <!-- <li class="tabs-title"><a href="#newCustomPlaylist"><i class="fa fa-cogs"></i>&nbsp;Custom</a></li> -->
+        </ul>
+        <div class="tabs-content" data-tabs-content="newPlaylistTabs">
+            <div class="tabs-panel is-active" id="newGamePlaylist">
+                <div class="input-group" style="margin-bottom:0;">
+                    <input type="text" id="gamePlaylistTitle" class="input-group-field" placeholder="Search Game Titles" />
+                    <div class="input-group-button">
+                        <a id="checkPlaylistGame" class="button primary disabled">
+                            <span>Search</span>
+                            <img src="../shared/img/loader_arrows.gif" style="height:25px;margin-top:-0.45rem;margin-bottom:-0.45rem;" />
+                        </a>
+                    </div>
+                </div>
+                <div id="gamePlaylistResults"></div>
+            </div>
+            <!-- <div class="tabs-panel" id="newCustomPlaylist"></div> -->
+        </div>
+    </div>
+</section>

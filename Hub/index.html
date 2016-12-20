@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Isaac West | App Hub</title>
+    <link id="favicon" rel="icon" href="../../favicon.ico" />
+    <link href="https://cdn.jsdelivr.net/foundation/6.1.2/foundation.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/foundation-icons/3.0/foundation-icons.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/fontawesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/fontawesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="res/css/style.css" rel="stylesheet"></link>
+</head>
+<body>
+<div class="off-canvas-wrapper">
+<div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+<div class="off-canvas position-left" id="offCanvas" data-off-canvas data-transition-time="500">
+    <button class="close-button" aria-label="Close menu" type="button" data-close>
+        <span aria-hidden="true">&times;</span>
+    </button>
+    <ul class="vertical menu appMenu"></ul>
+</div>
+<div class="off-canvas-content" data-off-canvas-content>
+    <nav class="top-bar appNav">
+        <div class="top-bar-left">
+            <ul class="menu show-for-medium appMenu"></ul>
+            <ul class="menu hide-for-medium appMenu">
+                <li class="menu-text"><button class="menu-icon" type="button" data-open="offCanvas"></button></li>
+            </ul>
+        </div>
+    </nav>
+    <div id="app-twitch" data-app="Twitch Stream Utility" class="app defaultApp" hidden></div>
+    <footer class="row">
+        <div class="column">
+            <hr />
+            <p style="text-align:center;">&copy;&nbsp;<span id="year"></span>&nbsp;<a href="http://www.isaac-west.ca/">Isaac West</a></p>
+        </div>
+    </footer>
+</div>
+</div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/foundation/6.1.2/foundation.min.js"></script>
+<script src="../shared/js/dynCore.js"></script>
+<script>
+    (function() {
+        window.dynCore.js('../shared/js/arraySort.js');
+        window.dynCore.js('../shared/js/hashNav.js');
+        window.dynCore.js('../shared/js/yearFooter.js');
+    })();
+</script>
+</body>
+</html>

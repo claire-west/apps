@@ -1,0 +1,114 @@
+body {
+    overflow-x: hidden;
+}
+
+.off-canvas-wrapper,
+.off-canvas-wrapper-inner {
+    height: 100%;
+}
+
+.menu-icon {
+    outline: none;
+}
+
+.close-button {
+    outline: none;
+    top: 0.25rem;
+}
+
+.close-button span {
+    color: #fff;
+    font-weight: normal;
+}
+
+.off-canvas {
+    height: 100%;
+    background: #222;
+}
+
+.off-canvas li a {
+    padding: 0.05rem;
+}
+
+nav.appNav {
+    background-color: #222;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+nav.appNav ul {
+    background-color: #222;
+}
+
+nav.appNav li a {
+    color: #fff;
+    padding: 0;
+}
+
+nav.appNav .show-for-medium li a.active {
+    color: #2199e8;
+    -o-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+nav.appNav .show-for-medium li a:not(.active) {
+    color: #fff;
+    -o-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+nav.appNav .hide-for-medium li a:not(.active) {
+    display: none;
+}
+
+nav.sectionNav {
+    margin-bottom: 0.5rem;
+}
+
+.top-bar-content {
+    max-width: 75rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.top-bar-left,
+.top-bar-right {
+    width: auto;
+}
+
+.truncate-line-wrap {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* topbar */
+
+.topbar-button-fa,
+.topbar-button-fi {
+    height: 40px;
+    width: 56px;
+    padding: 0;
+    margin-bottom: 0;
+    border-left: 1px solid white;
+}
+.topbar-button-fa {
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+.topbar-button-fi {
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+.topbar-button-fa i {
+    font-size: 23px;
+}
+.topbar-button-fi i {
+    font-size: 30px;
+}
