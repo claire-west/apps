@@ -1,0 +1,140 @@
+<nav class="top-bar sectionNav">
+    <div class="top-bar-content">
+        <div class="top-bar-left">
+            <ul class="menu">
+                <li>
+                    <div class="input-group" style="margin-bottom: 0;">
+                        <a href="#crunchyroll-settings" class="topbar-button-fa button secondary" title="Settings" style="border-left:none;">
+                            <i class="fa fa-cog"></i>
+                            <span class="show-for-sr">Settings</span>
+                        </a>
+                        <a href="#crunchyroll-browse" class="topbar-button-fa button" title="Browse">
+                            <i class="fa fa-th" style="margin-top: 2px;"></i>
+                            <span class="show-for-sr">Browse</span>
+                        </a>
+                        <a href="#crunchyroll-queue" class="topbar-button-fa button" title="Queue">
+                            <i class="fa fa-th-list" style="margin-top: 2px;"></i>
+                            <span class="show-for-sr">Queue</span>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="top-bar-right">
+            <ul class="menu">
+                <li>
+                    <button class="topbar-button-fi button" title="Log in to Crunchyroll" data-toggle="crunchyrollAccountDropdown" style="border-left:none;">
+                        <i class="fi-torso"></i>
+                        <span class="show-for-sr">Account Login</span>
+                    </button>
+                    <div id="crunchyrollAccountDropdown" class="dropdown-pane" data-dropdown>
+                        <input placeholder="Email" name="account" type="text" class="text-center" />
+                        <input placeholder="Password" name="password" type="password" class="text-center" />
+                        <a class="login button expanded">
+                            <span>Log in</span>
+                            <img class="ajaxLoader" src="../shared/img/loader_arrows.gif" style="height:25px;margin-top:-0.5rem;margin-bottom:-0.4rem;" />
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div id="crunchyroll-error" class="row" hidden></div>
+<section id="crunchyroll-browse" class="row contentSection" hidden>
+    <div class="medium-8 columns">
+        <h4>Browse Anime</h4>
+    </div>
+    <div class="medium-4 columns">
+        <select class="showSort sorting">
+            <option value="popular" selected="selected">Popular</option>
+            <option value="simulcast">Simulcast</option>
+            <option value="updated">Updated</option>
+            <option value="alpha">Alphabetical</option>
+        </select>
+    </div>
+    <div class="column">
+        <div class="showTiles row" data-equalizer></div>
+    </div>
+</section>
+<section id="crunchyroll-episodes" class="row contentSection" hidden>
+    <div class="medium-8 columns">
+        <div class="row">
+            <div class="small-8 medium-12 columns">
+                <h4 class="truncate-line-wrap">
+                    <a class="seriesName"></a>
+                </h4>
+                <select class="episodeSort sorting hide-for-medium">
+                    <option value="asc" selected="selected">Oldest to Newest</option>
+                    <option value="desc">Newest to Oldest</option>
+                </select>
+            </div>
+            <div class="small-4 columns hide-for-medium">
+                <img class="seriesImgLand" src />
+            </div>
+        </div>
+        <div class="episodes"></div>
+    </div>
+    <div class="medium-4 columns show-for-medium">
+        <select class="episodeSort sorting">
+            <option value="asc" selected="selected">Oldest to Newest</option>
+            <option value="desc">Newest to Oldest</option>
+        </select>
+        <img class="seriesImgPort" src />
+        <p class="seriesDescription"></p>
+    </div>
+</section>
+<section id="crunchyroll-queue" class="row contentSection" hidden>
+    <div class="column">
+        <h4>
+            <a href="http://www.crunchyroll.com/home/queue">Queue</a>
+        </h4>
+    </div>
+    <div class="column">
+        <div class="queueTiles row"></div>
+    </div>
+</section>
+<section id="crunchyroll-settings" class="row contentSection" hidden>
+    <div class="column">
+        <h4>Settings</h4>
+    </div>
+    <div class="medium-4 columns">
+        <div class="input-group">
+            <label for="crunchyrollQuality" class="input-group-label">Quality</label>
+            <select id="crunchyrollQuality" class="input-group-field">
+                <option value="best" selected="selected">Best</option>
+                <option value="ultra">Ultra</option>
+                <option value="high">High</option>
+                <option value="medium">Medium</option>
+                <option value="low">Low</option>
+            </select>
+        </div>
+    </div>
+    <div class="medium-8 columns">
+        <div class="input-group">
+            <label for="crunchyrollEpisodeSorting" class="input-group-label">Default Episode Sorting</label>
+            <select id="crunchyrollEpisodeSorting" class="input-group-field">
+                <option value="asc" selected="selected">Oldest First</option>
+                <option value="desc">Newest First</option>
+            </select>
+        </div>
+    </div>
+    <div class="column">
+        <p>This utility uses a separate queue from the actual Crunchyroll site. Below are options to use partial or full integration with the Crunchyroll queue. Be aware that Crunchyroll's lack of external sign-in support means that it is <em>difficult to securely integrate</em> with your account. Use at your own risk.</p>
+    </div>
+    <div class="medium-4 columns">
+        <button class="importQueueButton button expanded" title="Import Queue" style="border-left:none;">
+            <span>Import Queue</span>
+            <img class="ajaxLoader" src="../shared/img/loader_arrows.gif" style="height:25px;margin-top:-0.45rem;margin-bottom:-0.45rem;" />
+        </button>
+    </div>
+    <div class="medium-8 columns">
+        <div class="input-group">
+            <label for="useLiveQueue" class="input-group-label" style="width: 100%">Live Queue Only</label>
+            <input type="checkbox" id="useLiveQueue" class="input-group-field" />
+        </div>
+    </div>
+</section>
+<div id="crunchyroll-loading" hidden>
+    <h4 class="text-center">Loading&nbsp;<i class="fa fa-refresh fa-spin"></i></h4>
+</div>

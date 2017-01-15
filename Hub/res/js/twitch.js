@@ -1,10 +1,17 @@
 (function() {
-    window.dynCore.html('twitch', function() {
-        window.dynCore.css('twitch', 'res/css/twitch.css');
+    window.dynCore.css('twitch', 'res/css/twitch.css');
+
+    $.when(window.dynCore.html('twitch'),
+        window.dynCore.require([
+            'isMobile.js',
+            'arraySort.js',
+            'hashNav.js'
+        ], '../shared/js/')
+    ).done(function() {
         window.hashNav.appInit('twitch', init());
     });
 
-    var init = function() {
+    function init() {
         var twitchClientId = 'Mm9iNWY1a25qMHZvd25nN2o4aHM5YzVvemw1a2Ntaw==';
         var twitchStream = {
             favicon: 'http://www.twitch.tv/favicon.ico',
@@ -523,7 +530,7 @@
                     }).appendTo($buttonsRow).append(
                         $("<a/>", {
                             text: "Launch",
-                            href: "livestreamer:" + channelName + " " + twitchStream.quality,
+                            href: "livestreamer:twitch.tv/" + channelName + " " + twitchStream.quality,
                             class: "button expanded",
                             style: "margin-bottom:0;"
                         })
@@ -553,9 +560,19 @@
                         .append(twitchStream.rendering.profileLink(channelName)
                     );
 
-                    twitchStream.rendering.buttonsRow(
-                        channelName
-                    ).appendTo($panel);
+                    if (!window.isMobile()) {
+                        twitchStream.rendering.buttonsRow(
+                            channelName
+                        ).appendTo($panel);
+                    } else {
+                        $panel.append(
+                            $('<p/>', {
+                                text: 'Playing ' + gameTitle,
+                                class: 'text-right',
+                                style: 'margin-top:-0.5rem;margin-bottom:-0.5rem;'
+                            })
+                        )
+                    }
 
                     return $div;
                 },

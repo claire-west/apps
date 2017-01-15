@@ -25,17 +25,21 @@
         <div class="top-bar-left">
             <ul class="menu show-for-medium appMenu"></ul>
             <ul class="menu hide-for-medium appMenu">
-                <li class="menu-text"><button class="menu-icon" type="button" data-open="offCanvas"></button></li>
+                <li class="menu-text offCanvasShow"><button class="menu-icon" type="button" data-open="offCanvas"></button></li>
             </ul>
         </div>
-    </nav>
-    <div id="app-twitch" data-app="Twitch Stream Utility" class="app defaultApp" hidden></div>
-    <footer class="row">
-        <div class="column">
-            <hr />
-            <p style="text-align:center;">&copy;&nbsp;<span id="year"></span>&nbsp;<a href="http://www.isaac-west.ca/">Isaac West</a></p>
+        <div class="top-bar-right">
+            <div class="signOut menu-text" hidden>
+                <span></span>
+                <a>(sign out)</a>
+            </div>
         </div>
-    </footer>
+    </nav>
+    <div id="app-twitch" data-app="Twitch" class="app defaultApp" hidden></div>
+    <!-- <div id="app-youtube" data-app="YouTube" class="app" hidden></div> -->
+    <div id="app-crunchyroll" data-app="Crunchyroll" class="app" hidden></div>
+    <div id="app-pinboard" data-app="Pinboard" class="app" hidden></div>
+    <div id="app-dynform" data-app="Dynamic Form" data-iframe="/apps/DynamicSheet" class="app" hidden></div>
 </div>
 </div>
 </div>
@@ -44,9 +48,13 @@
 <script src="../shared/js/dynCore.js"></script>
 <script>
     (function() {
-        window.dynCore.js('../shared/js/arraySort.js');
-        window.dynCore.js('../shared/js/hashNav.js');
-        window.dynCore.js('../shared/js/yearFooter.js');
+        window.dynCore.require([
+            'hashNav.js',
+            'centralAuth.js',
+            'yearFooter.js'
+        ], '../shared/js/').done(function() {
+            window.dynCore.require('res/js/hubAuth.js');
+        });
     })();
 </script>
 </body>

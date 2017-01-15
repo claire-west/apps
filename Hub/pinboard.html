@@ -1,0 +1,49 @@
+<nav class="top-bar sectionNav">
+    <div class="top-bar-content">
+        <div class="top-bar-left">
+            <ul class="menu">
+                <li>
+                    <div class="input-group">
+                        <a href="#pinboard-load" class="topbar-button-fa button secondary" title="Load Board">
+                            <i class="fa fa-folder-open-o"></i>
+                            <span class="show-for-sr">Load Board</span>
+                        </a>
+                        <a href="#pinboard-new" class="topbar-button-fa button" title="New Board">
+                            <i class="fa fa-plus"></i>
+                            <span class="show-for-sr">New Board</span>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="top-bar-right">
+            <ul class="menu">
+                <li>
+                    <button class="pinboardSave topbar-button-fa button" title="Save">
+                        <i class="fa fa-floppy-o"></i>
+                        <span class="show-for-sr">Save</span>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<section id="pinboard-load" class="row contentSection defaultSection" hidden>
+    <div class="hide-for-medium columns">
+        <h4>Load a Board</h4>
+    </div>
+    <div class="hide-for-medium columns">
+        <select class="publicOrPrivate">
+            <option value="public" selected="selected">Public Boards</option>
+            <option value="private">Your Boards</option>
+        </select>
+    </div>
+    <div class="public medium-6 columns">
+        <h4 class="show-for-medium">Public Boards</h4>
+    </div>
+    <div class="private show-for-medium medium-6 columns">
+        <h4 class="show-for-medium">Your Boards</h4>
+        <p>Not signed in.</p>
+    </div>
+</section>
+<section id="pinboard-view" class="row contentSection" hidden></section>

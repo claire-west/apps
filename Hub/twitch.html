@@ -4,11 +4,11 @@
             <ul class="menu">
                 <li>
                     <div class="input-group" style="margin-bottom: 0;">
-                        <button class="topbar-button-fa button secondary" title="Setup" data-section="setup" style="border-left:none;">
+                        <button class="topbar-button-fa button secondary" title="Setup" data-section="setup" style="border-left:none;display:none;">
                             <i class="fa fa-info-circle"></i>
                             <span class="show-for-sr">Setup</span>
                         </button>
-                        <button class="topbar-button-fa button secondary" title="Settings" data-section="settings">
+                        <button class="topbar-button-fa button secondary" title="Settings" data-section="settings" style="border-left:none;">
                             <i class="fa fa-cog"></i>
                             <span class="show-for-sr">Settings</span>
                         </button>
@@ -64,7 +64,7 @@
 <section id="twitch-currentStreams" class="row contentSection defaultSection" hidden></section>
 <section id="twitch-setup" class="row contentSection" hidden>
     <div class="column">
-        <h4><i class="fa fa-arrow-left" title="Back to Followed Streams" style="cursor:pointer;" data-section="currentStreams"></i>&nbsp;Setup</h4>
+        <h4><i class="fa fa-arrow-left" title="Back to Followed Streams" style="cursor:pointer;" data-section="settings"></i>&nbsp;Setup</h4>
         <h6><strong>Security Notice</strong></h6>
         <p>This tool involves running a batch script located on your computer. When you click a link using the custom protocol it will run this script. While unlikely, if you click a link elsewhere that uses a protocol with the same name it is possible someone could take advantage of this. Use at your own risk.</p>
         <h6><strong>Prerequisites</strong></h6>
@@ -75,7 +75,7 @@
         <h6><strong>launch.bat</strong></h6>
         <code>set "str=%1</code><br />
         <code>set "var2=%str:*:=%"</code><br />
-        <code>livestreamer twitch.tv/%var2%</code><br />
+        <code>livestreamer %var2%</code><br />
         <h6 style="margin-top:0.5rem;"><strong>Protocol Setup</strong></h6>
         <ol>
             <li>In regedit, find HKEY_CLASSES_ROOT</li>
@@ -128,12 +128,15 @@
             <input type="checkbox" id="twelveHour" class="input-group-field" />
         </div>
     </div>
+    <div class="columns">
+        <a class="button" data-section="setup">View setup instructions.</a>
+    </div>
 </section>
 <section id="twitch-singleEntry" class="row contentSection" hidden>
     <div class="column">
         <h4><i class="fa fa-arrow-left" title="Back to Followed Streams" style="cursor:pointer;" data-section="currentStreams"></i>&nbsp;One-time Entry</h4>
         <div class="input-group" style="margin-bottom:0.5rem;">
-            <label for="channelName" class="input-group-label" style="width:6rem;">Channel</label>
+            <label for="channelName" class="input-group-label show-for-medium" style="width:6rem;">Channel</label>
             <input type="text" id="channelName" class="input-group-field" placeholder="Channel Name" />
             <div class="input-group-button">
                 <a id="checkSingleStream" class="button primary disabled">
@@ -143,7 +146,7 @@
             </div>
         </div>
         <div class="input-group" style="margin-bottom:0;">
-            <label for="gameTitle" class="input-group-label" style="width:6rem;">Game</label>
+            <label for="gameTitle" class="input-group-label show-for-medium" style="width:6rem;">Game</label>
             <input type="text" id="gameTitle" class="input-group-field" placeholder="Game Title" />
             <div class="input-group-button">
                 <a id="checkGame" class="button primary disabled">

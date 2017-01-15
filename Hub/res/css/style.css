@@ -77,9 +77,31 @@ nav.sectionNav {
     margin-right: auto;
 }
 
+.top-bar-left .menu.appMenu .menu-text.offCanvasShow {
+    padding-left: 0.35rem;
+    padding-right: 0.75rem;
+}
+.top-bar-left .menu.appMenu .menu-text.offCanvasShow ~ .menu-text {
+    padding-left: 0;
+    padding-right: 0;
+}
+
 .top-bar-left,
 .top-bar-right {
     width: auto;
+}
+
+.top-bar-right .g-signin2 {
+    margin-top: 0.0625rem;
+    margin-right: -0.4375rem;
+}
+.top-bar-right .g-signin2 > div {
+    box-shadow: none;
+}
+.top-bar-right .signOut {
+    color: white;
+    font-weight: normal;
+    padding-right: 0;
 }
 
 .truncate-line-wrap {

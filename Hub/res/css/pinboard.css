@@ -1,0 +1,14 @@
+#app-pinboard .top-bar-left .input-group {
+    margin-bottom: 0;
+}
+#app-pinboard .top-bar-left a[href="#pinboard-load"] {
+    border-left: none;
+}
+#app-pinboard .top-bar-left a[href="#pinboard-load"] i,
+#app-pinboard .top-bar-left a[href="#pinboard-new"] i {
+    margin-top: 2px;
+}
+
+#app-pinboard .top-bar-right .pinboardSave {
+    border-left: none;
+}
