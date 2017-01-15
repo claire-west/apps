@@ -1,6 +1,7 @@
 (function() {
     var onNavApp = [];
     var onNavSection = [];
+    var pending = {};
     var apps = {};
 
     var register = function(title, id) {
@@ -26,10 +27,13 @@
 
     var currentApp;
     var navigate = function(e) {
-        var hash = window.location.hash.split('-');
+        var hashParts = window.location.hash.split('/');
+        var route = hashParts[0].split('-');
+        var navArgs = hashParts.splice(1);
+
         var appSelector;
-        if (hash[0]) {
-            appSelector = '#app-' + hash[0].substring(1);
+        if (route[0]) {
+            appSelector = '#app-' + route[0].substring(1);
         } else {
             appSelector = '.defaultApp';
         }
@@ -38,12 +42,28 @@
 
         if (app !== currentApp) {
             if (typeof(apps[app]) === 'undefined') {
+                if ($app.data('iframe')) {
+                    pending[app] = $.Deferred();
+                    window.dynCore.iframe(app, $app.data('iframe')).done(
+                        function(element) {
+                            $(element).on('load', function() {
+                                var links = this.contentWindow.document.getElementsByTagName('link');
+                                for (var i = 0; i < links.length; i++) {
+                                    if (links[i].getAttribute('rel') === 'icon') {
+                                        this.contentWindow.favicon = links[i].getAttribute('href');
+                                    }
+                                }
+                                pending[app].resolve(this.contentWindow);
+                            });
+                        }
+                    );
+                }
                 window.dynCore.js(app);
                 return;
             }
 
             for (var i = 0; i < onNavApp.length; i++) {
-                onNavApp[i].call(this, app);
+                onNavApp[i].call(this, app, route[1], navArgs);
             }
 
             currentApp = app;
@@ -53,22 +73,21 @@
             window.dynCore.favicon(apps[app].favicon);
             $('title').text($app.data('app'));
 
-            $('.appNav .menu-text').removeClass('active');
+            $('.appNav .menu-text a').removeClass('active');
             $('.appNav a[href="#' + app + '"]').addClass('active');
         }
 
         var section;
-        if (hash[1]) {
-            section = '#' + app + '-' + hash[1];
+        if (route[1]) {
+            section = '#' + app + '-' + route[1];
         } else {
             section = '.defaultSection';
         }
 
         var $section = $app.find(section);
         if ($section[0]) {
-            section = $section[0].id.split('-')[1];
             for (var i = 0; i < onNavSection.length; i++) {
-                onNavSection[i].call(this, app, section);
+                onNavSection[i].call(this, app, route[1], navArgs);
             }
         }
 
@@ -81,6 +100,12 @@
             apps[title] = app;
             $(document).foundation();
             this.rehash();
+        },
+        getPending: function(title) {
+            return pending[title];
+        },
+        getApp: function(title) {
+            return apps[title];
         },
         bindNavApp: function(fn) {
             onNavApp.push(fn);
