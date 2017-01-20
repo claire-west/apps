@@ -96,10 +96,11 @@
     };
 
     window.hashNav = {
-        appInit: function(title, app) {
-            apps[title] = app;
+        appInit: function(app, title) {
+            apps[title || app.title] = app;
             $(document).foundation();
             this.rehash();
+            return app;
         },
         getPending: function(title) {
             return pending[title];

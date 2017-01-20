@@ -1,6 +1,8 @@
 (function() {
     var loadedModules = [];
+    var modules = {};
     var templates = {};
+    var pending = [];
 
     var paths = {};
     var getPath = function(title) {
@@ -17,19 +19,56 @@
         path: function(title, path) {
             paths[title] = path;
         },
+        module: function(title) {
+            return modules[title];
+        },
+        modules: function() {
+            return modules;
+        },
+        when: function() {
+            var promise = $.Deferred();
+            $.when.apply(this, arguments).done(function() {
+                window.dynCore.resolve().done(function() {
+                    promise.resolve(modules);
+                });
+            });
+            return promise;
+        },
         js: function(title) {
             var path = getPath(title);
             if (loadedModules.indexOf(path) > -1) {
-                console.log('Module at ' + path + ' already loaded.');
+                console.warn('Module at ' + path + ' already loaded.');
                 return $.when();
             }
             return $.getScript(path)
                 .done(function() {
+                    console.info('Module ' + title + ' loaded.');
                     loadedModules.push(path);
                 }).fail(function(resp, e) {
                     console.error('Unable to load module.', resp, e);
                 }
             );
+        },
+        declare: function(title, promises, fnInit) {
+            var promise = window.dynCore.pending();
+
+            if (!Array.isArray(promises)) {
+                promises = [promises];
+            }
+
+            $.when.apply(this, promises).done(function() {
+                if (fnInit) {
+                    var module = fnInit();
+                    if (title && module) {
+                        modules[title] = module;
+                    }
+                }
+                promise.resolve(modules);
+            }).fail(function() {
+                console.error('Failed to load prerequisites for ' + title + '.');
+                promise.reject();
+            });
+            return promise;
         },
         require: function(titles, prefix) {
             if (titles &&
@@ -49,6 +88,17 @@
                 pending.push(this.js(titles[i]));
             }
 
+            return $.when.apply(this, pending);
+        },
+        pending: function() {
+            var promise = $.Deferred();
+            pending.push(promise);
+            promise.always(function() {
+                pending.splice(pending.indexOf(promise));
+            });
+            return promise;
+        },
+        resolve: function() {
             return $.when.apply(this, pending);
         },
         html: function(title, path) {
@@ -72,7 +122,7 @@
                     frameborder: 0,
                     scrolling: 'no',
                     width: '100%'
-                }).on('load', function() { window.scaleIframe(this, true); });
+                }).on('load', function() { modules.scaleIframe(this, true); });
 
                 $('#app-' + app).append($element);
 
@@ -92,12 +142,15 @@
 
             var promises = [];
 
-            for (var key in name) {
+            for (let key in name) {
                 if (templates[key]) {
+                    console.warn('Template ' + key + ' already loaded.');
                     promises.push($.when());
+                    continue;
                 }
                 promises.push(
                     $.get(name[key] || (key + '.html')).done(function(resp){
+                        console.info('Template ' + key + ' loaded.');
                         templates[key] = $(resp);
                     })
                 );
@@ -121,10 +174,26 @@
 
                 for (var selector in args[i]) {
                     var props = args[i][selector];
-                    var innerElement = $(element).find(selector);
+                    var innerElement;
+                    if (selector === '') {
+                        innerElement = $(element);
+                    } else {
+                        innerElement = $(element).find(selector);
+                    }
                     for (var prop in props) {
                         if (prop === 'text') {
                             innerElement.text(props[prop]);
+                        } else if (prop === 'on') {
+                            if (!Array.isArray(props[prop])) {
+                                props[prop] = [props[prop]];
+                            }
+
+                            for (var i = 0; i < props[prop].length; i++) {
+                                var event = props[prop][i];
+                                innerElement.on(event.event, event.fn);
+                            }
+                        } else if (prop === 'style' || prop.split('-')[0] === 'data') {
+                            innerElement.attr(prop, props[prop]);
                         } else {
                             innerElement.prop(prop, props[prop]);
                         }
@@ -134,7 +203,7 @@
                 result.push(element);
             }
             
-            return result;
+            return $(result);
         },
         css: function(app, paths) {
             if (!Array.isArray(paths)) {
@@ -150,6 +219,7 @@
                     })
                 );
             }
+            return $.when();
         },
         favicon: function(filepath) {
             $('#favicon').remove();

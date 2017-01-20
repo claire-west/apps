@@ -1,12 +1,14 @@
 (function() {
-    window.scaleIframe = function(element, maintain) {
-        element.style.height = element.contentWindow.document.body.scrollHeight + 'px';
+    window.dynCore.declare('scaleIframe', null, function() {
+        var scaleIframe = function(element, maintain) {
+            element.style.height = element.contentWindow.document.body.scrollHeight + 'px';
 
-        if (maintain) {
-            setTimeout(function() {
-                window.scaleIframe(element, maintain);
-            }, 100);
-        }
-    };
+            if (maintain) {
+                setTimeout(function() {
+                    scaleIframe(element, maintain);
+                }, 100);
+            }
+        };
+        return scaleIframe;
+    });
 })();
-
