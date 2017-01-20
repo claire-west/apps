@@ -1,17 +1,17 @@
-(function() {
-    $.when(window.hashNav.getPending('dynform'),
-        window.dynCore.require('../shared/js/centralAuth.js')
+(function(dynCore, hashNav) {
+    $.when(hashNav.getPending('dynform'),
+        dynCore.require('../shared/js/centralAuth.js')
     ).done(function(rpWindow) {
-        window.hashNav.appInit('dynform', init(rpWindow));
+        hashNav.appInit(init(rpWindow, dynCore.modules()), 'dynform');
     });
 
-    function init(rpWindow) {
+    function init(rpWindow, modules) {
         var core = rpWindow.rp.core;
 
-        if (window.centralAuth.google.info) {
-            core.auth = window.centralAuth.google.info;
+        if (modules.centralAuth.google.info) {
+            core.auth = modules.centralAuth.google.info;
         } else if (core.auth) {
-            window.centralAuth.google.info = core.auth;
+            modules.centralAuth.google.info = core.auth;
         }
 
         var signIn = function(info) {
@@ -22,12 +22,12 @@
         };
 
         rpWindow.signIn = core.signIn = function(googleUser) {
-            window.centralAuth.google.signIn(googleUser).done(function(info) {
+            modules.centralAuth.google.signIn(googleUser).done(function(info) {
                 signIn(info);
             });
         };
 
-        window.centralAuth.google.on('signIn', function(info) {
+        modules.centralAuth.google.on('signIn', function(info) {
             signIn(info);
         });
 
@@ -38,12 +38,12 @@
         };
 
         core.signOut = function() {
-            window.centralAuth.google.signOut().then(function() {
+            modules.centralAuth.google.signOut().then(function() {
                 signOut();
             })
         };
 
-        window.centralAuth.google.on('signOut', function() {
+        modules.centralAuth.google.on('signOut', function() {
             signOut();
         });
 
@@ -51,4 +51,4 @@
         
         return rpWindow;
     }
-})();
+})(window.dynCore, window.hashNav);

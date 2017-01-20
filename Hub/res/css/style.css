@@ -11,19 +11,19 @@ body {
     outline: none;
 }
 
-.close-button {
+.off-canvas {
+    height: 100%;
+    background: #222;
+}
+
+.off-canvas .close-button {
     outline: none;
     top: 0.25rem;
 }
 
-.close-button span {
+.off-canvas .close-button span {
     color: #fff;
     font-weight: normal;
-}
-
-.off-canvas {
-    height: 100%;
-    background: #222;
 }
 
 .off-canvas li a {

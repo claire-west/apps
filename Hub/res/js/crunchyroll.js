@@ -1,19 +1,20 @@
-(function() {
-    window.dynCore.css('crunchyroll', 'res/css/crunchyroll.css');
+(function(dynCore, hashNav) {
+    dynCore.css('crunchyroll', 'res/css/crunchyroll.css');
 
-    $.when(window.dynCore.html('crunchyroll'),
-        window.dynCore.require([
+    dynCore.when(dynCore.html('crunchyroll'),
+        dynCore.require([
             'localUUID.js',
             'isMobile.js',
             'arraySort.js',
             'hashNav.js'
         ], '../shared/js/')
-    ).done(function() {
-        window.hashNav.appInit('crunchyroll', init());
+    ).done(function(modules) {
+        hashNav.appInit(init(modules));
     });
 
-    function init() {
+    function init(modules) {
         var crunchyroll = {
+            title: 'crunchyroll',
             favicon: 'http://www.crunchyroll.com/favicon.ico',
             accountData: JSON.parse(localStorage.getItem('crunchyroll.account')),
 
@@ -104,7 +105,7 @@
                     var expiry = new Date(crunchyroll.accountData.expires);
                     var now = new Date();
                     if (expiry > (now.getDate() + 1)) {
-                        console.log('Over 24 hours before expiry, will not renew session.');
+                        console.warn('Over 24 hours before expiry, will not renew session.');
                         return;
                     }
 
@@ -216,7 +217,7 @@
             refresh: {
                 seriesList: function(sorting, page) {
                     var shows = crunchyroll.ajaxLoader(crunchyroll.api.seriesList(sorting, page), '#crunchyroll-browse');
-                    var template = window.dynCore.loadTemplate('crunchyroll.showTile', 'res/html/crunchyrollShowTile.html');
+                    var template = dynCore.loadTemplate('crunchyroll.showTile', 'res/html/crunchyrollShowTile.html');
                     
                     var $tiles = $('#crunchyroll-browse .showTiles');
                     $tiles.empty();
@@ -240,7 +241,7 @@
                                 }
                             };
                         });
-                        $tiles.append(window.dynCore.makeFragment('crunchyroll.showTile', tileArgs));
+                        $tiles.append(dynCore.makeFragment('crunchyroll.showTile', tileArgs));
                         $tiles.find('div.columns:last-child').addClass('end');
                         $tiles.find('p.truncate-line-wrap').on('click', function() {
                             $(this).toggleClass('truncate-line-wrap');
@@ -261,8 +262,8 @@
                 episodes: function(series, sorting) {
                     var info = crunchyroll.api.seriesInfo(series);
                     var episodes = crunchyroll.ajaxLoader(crunchyroll.api.episodes(series, sorting), '#crunchyroll-episodes');
-                    var template = window.dynCore.loadTemplate('crunchyroll.episodeTile', 'res/html/crunchyrollEpisodeTile.html');
-                    var headerTemplate = window.dynCore.loadTemplate('crunchyroll.seasonHeader', 'res/html/crunchyrollSeasonHeader.html');
+                    var template = dynCore.loadTemplate('crunchyroll.episodeTile', 'res/html/crunchyrollEpisodeTile.html');
+                    var headerTemplate = dynCore.loadTemplate('crunchyroll.seasonHeader', 'res/html/crunchyrollSeasonHeader.html');
                     
                     var $section = $('#crunchyroll-episodes');
                     var $tiles = $section.find('.episodes');
@@ -335,12 +336,12 @@
                                     $('<div/>', {
                                         class: 'seasonTiles row'
                                     }).append(
-                                        window.dynCore.makeFragment('crunchyroll.seasonHeader', {
+                                        dynCore.makeFragment('crunchyroll.seasonHeader', {
                                             '.seasonName': {
                                                 text: 'Season ' + seasons[i].data.season + ': ' + seasons[i].data.name
                                             }
                                         })
-                                    ).append(window.dynCore.makeFragment('crunchyroll.episodeTile', collections[id]))
+                                    ).append(dynCore.makeFragment('crunchyroll.episodeTile', collections[id]))
                                 );
                             }
 
@@ -358,7 +359,7 @@
 
                 queue: function() {
                     var info = crunchyroll.ajaxLoader(crunchyroll.api.queue(), '#crunchyroll-queue');
-                    var template = window.dynCore.loadTemplate('crunchyroll.queueTile', 'res/html/crunchyrollQueueTile.html');
+                    var template = dynCore.loadTemplate('crunchyroll.queueTile', 'res/html/crunchyrollQueueTile.html');
 
                     var $section = $('#crunchyroll-queue');
                     var $tiles = $section.find('.queueTiles');
@@ -368,7 +369,7 @@
                         var tileArgs = resp.data.map(function(show) {
                             var episode = 'Episode ' + show.most_likely_media.episode_number + ':';
                             var launchHref;
-                            if (!window.isMobile()) {
+                            if (!modules.isMobile()) {
                                 launchHref = crunchyroll.livestreamerHref(show.most_likely_media.url);
                             } else {
                                 launchHref = show.most_likely_media.url
@@ -411,7 +412,7 @@
                                 }
                             };
                         });
-                        $tiles.append(window.dynCore.makeFragment('crunchyroll.queueTile', tileArgs));
+                        $tiles.append(dynCore.makeFragment('crunchyroll.queueTile', tileArgs));
                         $tiles.find('p.truncate-line-wrap').on('click', function() {
                             $(this).toggleClass('truncate-line-wrap');
                         });
@@ -556,7 +557,7 @@
             });
         });
 
-        window.hashNav.bindNavApp(function(app, section, args) {
+        hashNav.bindNavApp(function(app, section, args) {
             if (app === 'crunchyroll') {
                 if (!section) {
                     window.location.replace('#crunchyroll-browse');
@@ -564,7 +565,7 @@
             }
         });
 
-        window.hashNav.bindNavSection(function(app, section, args) {
+        hashNav.bindNavSection(function(app, section, args) {
             if (app === 'crunchyroll') {
                 if (crunchyroll.nav[section]) {
                     crunchyroll.nav[section].apply(this, args)
@@ -574,4 +575,4 @@
 
         return crunchyroll;
     };
-})();
+})(window.dynCore, window.hashNav);

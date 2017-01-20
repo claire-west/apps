@@ -53,7 +53,10 @@
             'centralAuth.js',
             'yearFooter.js'
         ], '../shared/js/').done(function() {
-            window.dynCore.require('res/js/hubAuth.js');
+            window.dynCore.require([
+                //'chromeCheck.js',
+                'hubAuth.js'
+            ], 'res/js/');
         });
     })();
 </script>

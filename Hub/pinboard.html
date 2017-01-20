@@ -2,37 +2,64 @@
     <div class="top-bar-content">
         <div class="top-bar-left">
             <ul class="menu">
-                <li>
-                    <div class="input-group">
+                <li class="contextBar">
+                    <div class="mainActions boardActions button-group">
                         <a href="#pinboard-load" class="topbar-button-fa button secondary" title="Load Board">
                             <i class="fa fa-folder-open-o"></i>
                             <span class="show-for-sr">Load Board</span>
                         </a>
-                        <a href="#pinboard-new" class="topbar-button-fa button" title="New Board">
+                    </div>
+                    <div class="button-group pinActions">
+                        <button class="pinboardClosePin topbar-button-fa button secondary" title="Close Pin">
+                            <i class="fa fa-arrow-circle-left"></i>
+                            <span class="show-for-sr">Close Pin</span>
+                        </button>
+                        <button class="pinboardOptions topbar-button-fa button secondary" title="Pin Options">
+                            <i class="fa fa-cog"></i>
+                            <span class="show-for-sr">Pin Options</span>
+                        </button>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="pinboard-top-bar-center">
+            <h4 class="pinboardTitle"></h4>
+        </div>
+        <div class="top-bar-right">
+            <ul class="menu">
+                <li class="contextBar">
+                    <div class="pinActions button-group" hidden>
+                        <button class="pinboardNewContent topbar-button-fa button" title="Add Content to Pin">
                             <i class="fa fa-plus"></i>
+                            <span class="show-for-sr">Add Content to Pin</span>
+                        </button>
+                        <button class="pinboardSave topbar-button-fa button" title="Save and Close Pin">
+                            <i class="fa fa-floppy-o"></i>
+                            <span class="show-for-sr">Save and Close Pin</span>
+                        </button>
+                    </div>
+                    <div class="boardActions button-group" hidden>
+                        <button class="pinboardAdd topbar-button-fa button" title="New Pin">
+                            <i class="fa fa-plus-square-o"></i>
+                            <span class="show-for-sr">New Pin</span>
+                        </button>
+                    </div>
+                    <div class="mainActions button-group" hidden>
+                        <a href="#pinboard-view" class="topbar-button-fi button" title="New Board">
+                            <i class="fi-page-add"></i>
                             <span class="show-for-sr">New Board</span>
                         </a>
                     </div>
                 </li>
             </ul>
         </div>
-        <div class="top-bar-right">
-            <ul class="menu">
-                <li>
-                    <button class="pinboardSave topbar-button-fa button" title="Save">
-                        <i class="fa fa-floppy-o"></i>
-                        <span class="show-for-sr">Save</span>
-                    </button>
-                </li>
-            </ul>
-        </div>
     </div>
 </nav>
 <section id="pinboard-load" class="row contentSection defaultSection" hidden>
-    <div class="hide-for-medium columns">
+    <div class="column">
         <h4>Load a Board</h4>
     </div>
-    <div class="hide-for-medium columns">
+    <!-- <div class="hide-for-medium columns">
         <select class="publicOrPrivate">
             <option value="public" selected="selected">Public Boards</option>
             <option value="private">Your Boards</option>
@@ -41,9 +68,52 @@
     <div class="public medium-6 columns">
         <h4 class="show-for-medium">Public Boards</h4>
     </div>
-    <div class="private show-for-medium medium-6 columns">
-        <h4 class="show-for-medium">Your Boards</h4>
-        <p>Not signed in.</p>
+    <div class="private medium-6 columns">
+        <h4>Your Boards</h4>
+    </div> -->
+    <div class="notSignedIn column">
+        <p>You are not signed in.</p>
     </div>
+    <div class="yourBoards column" hidden></div>
 </section>
-<section id="pinboard-view" class="row contentSection" hidden></section>
+<section id="pinboard-view" class="row contentSection" hidden>
+    <div class="pinboard"></div>
+</section>
+<div id="pinboard-view-settings" class="reveal" data-reveal>
+    <div class="row">
+        <div class="small-6 columns end">
+            <label>Title:
+                <input type="text" class="tileTitleSetting" />
+            </label>
+        </div>
+    </div>
+    <div class="row">
+        <div class="column">
+            <label>Description:
+                <textarea class="tileDescSetting"></textarea>
+            </label>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="column">
+            <label>Background Image URL:
+                <input type="text" class="tileImageSetting" />
+            </label>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="small-6 columns end">
+            <label>Background Color:
+                <input type="text" class="tileColorSetting" />
+            </label>
+        </div>
+        <div class="medium-6 large-4 large-offset-8 columns">
+            <a class="saveTileSettings primary button expanded" data-close>Save</a>
+        </div>
+    </div>
+    <button class="close-button" data-close aria-label="Close modal" type="button">
+        <span aria-hidden="true">&times;</span>
+    </button>
+</div>

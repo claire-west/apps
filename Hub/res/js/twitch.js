@@ -1,19 +1,20 @@
-(function() {
-    window.dynCore.css('twitch', 'res/css/twitch.css');
+(function(dynCore) {
+    dynCore.css('twitch', 'res/css/twitch.css');
 
-    $.when(window.dynCore.html('twitch'),
-        window.dynCore.require([
+    dynCore.when(dynCore.html('twitch'),
+        dynCore.require([
             'isMobile.js',
             'arraySort.js',
             'hashNav.js'
         ], '../shared/js/')
-    ).done(function() {
-        window.hashNav.appInit('twitch', init());
+    ).done(function(modules) {
+        window.hashNav.appInit(init(modules));
     });
 
-    function init() {
+    function init(modules) {
         var twitchClientId = 'Mm9iNWY1a25qMHZvd25nN2o4aHM5YzVvemw1a2Ntaw==';
         var twitchStream = {
+            title: 'twitch',
             favicon: 'http://www.twitch.tv/favicon.ico',
             currentUser: localStorage.getItem("twitchStream.currentUser"),
             quality: localStorage.getItem("twitchStream.quality"),
@@ -560,7 +561,7 @@
                         .append(twitchStream.rendering.profileLink(channelName)
                     );
 
-                    if (!window.isMobile()) {
+                    if (!modules.isMobile()) {
                         twitchStream.rendering.buttonsRow(
                             channelName
                         ).appendTo($panel);
@@ -986,4 +987,4 @@
 
         return twitchStream;
     };
-})();
+})(window.dynCore);
