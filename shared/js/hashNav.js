@@ -73,8 +73,8 @@
             window.dynCore.favicon(apps[app].favicon);
             $('title').text($app.data('app'));
 
-            $('.appNav .menu-text a').removeClass('active');
-            $('.appNav a[href="#' + app + '"]').addClass('active');
+            $('.appNav .menu-text a, .off-canvas .menu-text a').removeClass('active');
+            $('.appNav a[href="#' + app + '"], .off-canvas a[href="#' + app + '"]').addClass('active');
         }
 
         var section;

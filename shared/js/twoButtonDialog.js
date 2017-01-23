@@ -2,7 +2,7 @@
     window.dynCore.declare('twoButtonDialog',
         window.dynCore.loadTemplate('twoButtonDialog', '../shared/html/twoButtonDialog.html'),
         function() {
-            return function(title, text, positive, negative) {
+            return function(title, text, positive, negative, swapButtons) {
                 var promise = $.Deferred();
 
                 var args = {
@@ -25,9 +25,16 @@
                 };
 
                 var $element = window.dynCore.makeFragment('twoButtonDialog', args).appendTo($('body'));
-                $(document).foundation();
-                $element.foundation('open');
-                $element.on('closed.zf.reveal', promise.reject);
+
+                if (swapButtons) {
+                    $element.find('.button-group a').toggleClass('alert').toggleClass('primary');
+                }
+
+                $element.foundation().foundation('open');
+                $element.on('closed.zf.reveal', function() {
+                    promise.reject();
+                    $element.remove();
+                });
                 
                 return promise;
             };
