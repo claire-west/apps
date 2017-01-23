@@ -45,7 +45,7 @@ nav.appNav li a {
     padding: 0;
 }
 
-nav.appNav .show-for-medium li a.active {
+.off-canvas li a.active {
     color: #2199e8;
     -o-transition: 0.5s;
     -ms-transition: 0.5s;
@@ -54,7 +54,7 @@ nav.appNav .show-for-medium li a.active {
     transition: 0.5s;
 }
 
-nav.appNav .show-for-medium li a:not(.active) {
+.off-canvas li a:not(.active) {
     color: #fff;
     -o-transition: 0.5s;
     -ms-transition: 0.5s;
@@ -63,7 +63,7 @@ nav.appNav .show-for-medium li a:not(.active) {
     transition: 0.5s;
 }
 
-nav.appNav .hide-for-medium li a:not(.active) {
+nav.appNav li a:not(.active) {
     display: none;
 }
 

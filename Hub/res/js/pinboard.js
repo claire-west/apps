@@ -2,6 +2,7 @@
     dynCore.css('pinboard', 'res/css/pinboard.css');
 
     dynCore.when(dynCore.html('pinboard'),
+        dynCore.loadTemplate('ajaxLoader', '../shared/html/ajaxLoader.html'),
         dynCore.require([
             'hashNav.js',
             'centralAuth.js',
@@ -34,11 +35,21 @@
             favicon: null,
             lists: {},
             boards: {},
+            editPinDirty: false,
             
             signIn: {
+                view: function(info) {
+                    if ($('#app-pinboard .contextBar .boardActions').is(':visible')) {
+                        pinboard.showBoardActions();
+                    }
+                    if ($('.activeTile').length) {
+                        $('#app-pinboard .contextBar .pinActions').show();
+                    }
+                },
                 load: function(info) {
                     $('#pinboard-load .notSignedIn').hide();
                     $('#pinboard-load .yourBoards').show();
+                    $('#app-pinboard .top-bar-right .mainActions').show();
                     if (window.location.hash.includes('pinboard-load')) {
                         pinboard.refresh.privateBoards();
                     }
@@ -46,15 +57,22 @@
             },
 
             signOut: {
+                view: function(info) {
+                    if ($('#app-pinboard .contextBar .boardActions').is(':visible')) {
+                        pinboard.showBoardActions();
+                    }
+                },
                 load: function() {
                     $('#pinboard-load .yourBoards').hide();
                     $('#pinboard-load .notSignedIn').show();
+                    $('#app-pinboard .top-bar-right .mainActions').hide();
                 }
             },
 
             userIsOwner: function() {
                 try {
-                    if (pinboard.boards[pinboard.nav.currentView.id].UserId ===
+                    if (modules.centralAuth.google.info.id &&
+                        pinboard.boards[pinboard.nav.currentView.id].UserId ===
                         modules.centralAuth.google.info.id) {
 
                         return true;
@@ -63,16 +81,66 @@
                 return false;
             },
 
+            boardSortable: null,
             makeSortable: function() {
-                Sortable.create($('#app-pinboard .pinboard').get(0), {
+                pinboard.boardSortable = Sortable.create($('#app-pinboard .pinboard').get(0), {
                     draggable: '.pinboardTile',
-                    //draggable: '.pinboardTile:not(.activeTile):not(.inactiveTile)',
                     onEnd: function(e) {
                         if (e.oldIndex !== e.newIndex) {
                             pinboard.saveCurrent();
                         }
                     }
                 });
+            },
+
+            pinSortable: null,
+            makePinSortable: function() {
+                if ($('#app-pinboard .activeTile .content').get(0)) {
+                    pinboard.pinSortable = Sortable.create($('#app-pinboard .activeTile .content').get(0), {
+                        draggable: '.contentItem',
+                        onEnd: function(e) {
+                            if (e.oldIndex !== e.newIndex) {
+                                pinboard.saveCurrent();
+                            }
+                        }
+                    });
+                }
+            },
+
+            exitEditMode: function() {
+                $('#app-pinboard .pinActions .pinboardEditMode').prop('title', 'Enable Edit Mode').removeClass('success');
+                $('#app-pinboard .activeTile .innerContent').off('click').removeClass('editMode');
+                if (pinboard.pinSortable) {
+                    pinboard.pinSortable.option('disabled', true);
+                }
+            },
+
+            exitDeleteMode: function() {
+                $('#app-pinboard .contextBar .alert').prop('title', 'Enable Delete Mode').removeClass('alert');
+                $('#app-pinboard .deletable').off('click').removeClass('deletable');
+            },
+
+            makeDeletable: function($items, fnGetTitle, fnOnConfirm) {
+                var $self = $(this).toggleClass('alert');
+                $items.toggleClass('deletable');
+
+                if ($self.hasClass('alert')) {
+                    $self.prop('title', 'Disable Delete Mode');
+                    $items.on('click', function(e) {
+                        e.preventDefault();
+                        var $clickedItem = $(this);
+                        var title = fnGetTitle($clickedItem);
+                        var promise = modules.twoButtonDialog('Really delete ' + title + '?',
+                            'This cannot be undone.', 'Delete', 'Cancel', true);
+
+                        promise.done(function() {
+                            fnOnConfirm($clickedItem);
+                        });
+                    });
+                } else {
+                    $self.prop('title', 'Enable Delete Mode');
+                    $items.off('click');
+                }
             },
 
             saveCurrent: function() {
@@ -87,7 +155,7 @@
                     var background = 'background-image:' + $background.css('background-image') +';' +
                         'background-color:' + $background.css('background-color') +';';
 
-                    var content = pinboard.serializePin($background.find('.content').children());
+                    var content = pinboard.serializePin($background.find('.content').children('.contentItem'));
 
                     pins.push({
                         background: background,
@@ -106,26 +174,27 @@
 
             serializePin: function(children) {
                 var content = [];
-                children.each(function(i, content) {
-                    var $content = $(content);
-                    var element = $content.find('.innerContent').get(0);
+                children.each(function(i, item) {
+                    var $item = $(item);
+                    var element = $item.find('.innerContent').get(0);
                     
-                    var contentType = $content.attr('class');
-                    var contentArgs = {};
-                    contentArgs[contentType] = {};
+                    var contentType = $item.attr('class');
+                    var contentArgs = {
+                        '.innerContent': {}
+                    };
 
                     if (element.innerHTML) {
-                        contentArgs.text = element.innerHTML;
+                        contentArgs['.innerContent'].text = pinboard.serializeBold(element.innerHTML);
                     }
                     for (var i = 0; i < element.attributes.length; i++) {
                         var attr = element.attributes[i];
-                        if (attr.specified == true) {
-                            contentArgs[attr.name] = attr.value;
+                        if (attr.specified == true && attr.name !== 'class') {
+                            contentArgs['.innerContent'][attr.name] = attr.value;
                         }
                     }
 
                     content.push({
-                        contentType: $content.attr('class'),
+                        contentType: contentType,
                         contentArgs: contentArgs
                     });
                 });
@@ -172,14 +241,14 @@
                     }
 
                     var $pins = dynCore.makeFragment('pinboard.tile', tileArgs).appendTo($board);
-                    console.log($pins, pinContent);
-                    // if (content) {
-                    //         var $content = $tile.find('.content');
-                    //         for (var i = 0; i < content.length; i++) {
-                    //             $content.append(dynCore.makeFragment('pinboard.pinContent', content[i].contentArgs).children(content[i].contentType));
-                    //         }
-                    //     }
-
+                    
+                    for (var i = 0; i < $pins.length; i++) {
+                        if (pinContent[i] && pinContent[i].length) {
+                            var $content = $($pins[i]).find('.content');
+                            pinboard.makePinContent(null, $content, pinContent[i]);
+                        }
+                    }
+                    
                     $('#app-pinboard .pinboardTile').on('click', function() {
                         if (!$(this).hasClass('activeTile')) {
                             var pin = $(this).data('pin') || 
@@ -188,9 +257,13 @@
                             window.location.href = '#pinboard-view/' +
                                 pinboard.nav.currentView.id + '/' + pin;
                         }
-                    }).find('p').each(function(i, element) {
+                    }).find('.description').each(function(i, element) {
                         $clamp(element, { clamp: 3 });
                     });
+
+                    if (pinboard.userIsOwner()) {
+                        pinboard.makeSortable();
+                    }
                 }
             },
 
@@ -205,6 +278,8 @@
 
             makePinActive: function(element) {
                 $('#app-pinboard .pinboardTile').removeClass('activeTile').removeClass('inactiveTile');
+                pinboard.exitDeleteMode();
+                pinboard.exitEditMode();
 
                 if ($(element).length) {
                     $(element).addClass('activeTile');
@@ -213,15 +288,30 @@
                     $('#app-pinboard .contextBar .boardActions').hide();
                     if (pinboard.userIsOwner()) {
                         $('#app-pinboard .top-bar .pinActions').show();
+                        if (pinboard.boardSortable) {
+                            pinboard.boardSortable.option('disabled', true);
+                        }
                     }
                 } else {
                     window.location.href = '#pinboard-view/' + pinboard.nav.currentView.id;
-
-                    $('#app-pinboard .top-bar .pinActions').hide();
-                    if (pinboard.userIsOwner()) {
-                        $('#app-pinboard .contextBar .boardActions').show();
-                    }
+                    pinboard.showBoardActions();
                 }
+            },
+
+            showBoardActions: function() {
+                $('#app-pinboard .contextBar .button-group').hide();
+                var $boardActions = $('#app-pinboard .contextBar .boardActions');
+                if (pinboard.userIsOwner()) {
+                    $boardActions.children().show();
+                    if (pinboard.boardSortable) {
+                        pinboard.boardSortable.option('disabled', false);
+                    }
+                } else {
+                    $boardActions.children().hide();
+                    $boardActions.children('a[href="#pinboard-load"],' +
+                        '.pinboardSearch, #pinboardSearchDropdown').show();
+                }
+                $boardActions.show();
             },
 
             api: {
@@ -235,11 +325,34 @@
                         },
                         headers: Object.assign({
                             label: board.label,
+                            public: $('#pinboard-view-options .boardPublicSetting').prop('checked'),
                             meta: 'pinboard'
                         }, modules.centralAuth.google.baseHeaders())
                     }).done(function(id) {
+                        console.info('Saved board ' + id + '.');
                         board.Id = id;
                     });
+                },
+
+                delete: function(id) {
+                    return $.ajax({
+                        url: '/nosql/' + id,
+                        method: 'DELETE',
+                        headers: Object.assign({
+                            meta: 'pinboard'
+                        }, modules.centralAuth.google.baseHeaders())
+                    }).done(function(id) {
+                        console.info('Deleted board ' + id + '.');
+                        delete pinboard.boards[id];
+                        for (let list in pinboard.lists) {
+                            for (var i = 0; i < pinboard.lists[list].length; i++) {
+                                if (pinboard.lists[list][i].Id === id) {
+                                    pinboard.lists[list].splice(i);
+                                    i--;
+                                }
+                            }
+                        }
+                    })
                 },
 
                 singleBoard: function(id) {
@@ -262,13 +375,14 @@
                     });
                 },
 
-                publicBoards: function() {
+                publicBoards: function(userId) {
                     return $.ajax({
                         url: '/nosql',
                         method: 'GET',
                         headers: Object.assign({
                             meta: 'pinboard',
-                            public: true
+                            public: true,
+                            userId: userId
                         }, modules.centralAuth.google.baseHeaders())
                     });
                 }
@@ -276,15 +390,6 @@
 
             refresh: {
                 view: function(id, pin) {
-                    if (!modules.centralAuth.google.info) {
-                        var fn = function(info) {
-                            modules.centralAuth.google.off('signIn', fn);
-                            pinboard.refresh.view(id, pin);
-                        }
-                        modules.centralAuth.google.on('signIn', fn);
-
-                        return;
-                    }
                     var $board = $('#pinboard-view .pinboard');
 
                     var tileTemplate = dynCore.loadTemplate('pinboard.tile', 'res/html/pinboardTile.html');
@@ -292,29 +397,29 @@
 
                     var fnRetry = function() {
                         modules.ajaxError($board, function() {
-                            pinboard.refresh.view(id);
+                            pinboard.refresh.view(id, pin);
                         });
                     };
 
                     if (!id) {
-                        var newBoard = modules.ajaxLoader(pinboard.api.save({ pins: {}, label: 'New Board' }), $board);
-                        $('#app-pinboard .contextBar .boardActions').show();
+                        var newBoard = modules.ajaxLoader(pinboard.api.save({ pins: [
+                            {
+                                background: 'background-color: #888;',
+                                title: 'New Pin',
+                                description: 'Click to get started.'
+                            }
+                        ], label: 'New Board' }), $board);
 
                         $.when(newBoard, tileTemplate, contentTemplate).done(function(board) {
-                            pinboard.boards[board[0]] = {
-                                Id: board[0],
-                                Label: 'New Board',
-                                Text: '[]'
-                            };
                             window.location.replace('#pinboard-view/' + board[0]);
                         }).fail(fnRetry);
 
                     } else if (pinboard.nav.currentView.id === id) {
                         pinboard.selectPin(pin);
                         $('#app-pinboard .pinboardTitle').show();
+
                     } else {
                         $board.empty();
-                        pinboard.nav.currentView.id = id;
 
                         var board;
                         if (pinboard.boards[id]) {
@@ -322,22 +427,39 @@
                         }
                         board = modules.ajaxLoader(pinboard.api.singleBoard(id), $board);
 
+                        var fnWaitForAuth = function() {
+                            var fn = function(info) {
+                                modules.centralAuth.google.off('signIn', fn);
+                                pinboard.refresh.view(id, pin);
+                            }
+                            modules.centralAuth.google.on('signIn', fn);
+                        }
+
+                        board.fail(function() {
+                            if (!modules.centralAuth.google.info) {
+                                fnWaitForAuth();
+                                return;
+                            }
+                        });
+
                         $.when(board, tileTemplate, contentTemplate).done(function(resp) {
                             var board = resp[0];
+                            if (!modules.centralAuth.google.info && !board.Public) {
+                                fnWaitForAuth();
+                                return;
+                            }
+                        
+                            pinboard.nav.currentView.id = id;
                             pinboard.boards[id] = board;
 
+                            $('#pinboard-view-options .boardPublicSetting').prop('checked', board.Public);
                             $('#app-pinboard .pinboardTitle').text(board.Label).show();
 
-                            if (!board.Public) {
-                                $('#app-pinboard .contextBar .boardActions').show();
-                            }
-                            
+                            pinboard.showBoardActions();
                             pinboard.makeBoard(pinboard.deserialize(board.Text));
                             pinboard.selectPin(pin);
                         }).fail(fnRetry);
                     }
-
-                    pinboard.makeSortable();
                 },
 
                 privateBoards: function() {
@@ -350,10 +472,55 @@
                     var template = dynCore.loadTemplate('pinboard.boardListItem', 'res/html/pinboardBoardListItem.html');
                     
                     $.when(boards, template).done(function(boards) {
-                        pinboard.lists.private = boards;
+                        pinboard.lists.private = boards[0];
+                        var listArgs = pinboard.lists.private.map(function(board) {
+                            return {
+                                a: {
+                                    href: '#pinboard-view/' + board.Id
+                                },
+                                h5: {
+                                    text: board.Label
+                                },
+                                i: {
+                                    class: board.Public ? '' : 'fa fa-lock'
+                                }
+                            }
+                        });
+                        $privateBoards.append(dynCore.makeFragment('pinboard.boardListItem', listArgs));
                     }).fail(function() {
                         modules.ajaxError($privateBoards, function() {
                             pinboard.refresh.privateBoards();
+                        });
+                    });
+                },
+
+                publicBoards: function(userId) {
+                    delete pinboard.lists.public;
+                    var $publicBoards = $('#pinboard-load .publicBoards');
+                    $publicBoards.empty();
+
+                    var boards = modules.ajaxLoader(pinboard.api.publicBoards(userId), $publicBoards);
+                    var template = dynCore.loadTemplate('pinboard.boardListItem', 'res/html/pinboardBoardListItem.html');
+                    
+                    $.when(boards, template).done(function(boards) {
+                        pinboard.lists.public = boards[0];
+                        var listArgs = pinboard.lists.public.map(function(board) {
+                            return {
+                                a: {
+                                    href: '#pinboard-view/' + board.Id
+                                },
+                                h5: {
+                                    text: board.Label
+                                },
+                                i: {
+                                    class: board.Public ? '' : 'fa fa-lock'
+                                }
+                            }
+                        });
+                        $publicBoards.append(dynCore.makeFragment('pinboard.boardListItem', listArgs));
+                    }).fail(function() {
+                        modules.ajaxError($publicBoards, function() {
+                            pinboard.refresh.publicBoards();
                         });
                     });
                 }
@@ -367,12 +534,23 @@
                 view: function(id, pin) {
                     if (id === pinboard.nav.currentView.id &&
                         pin === pinboard.nav.currentView.pin) {
+
+                        $('#app-pinboard .pinboardTitle').show();
+                        if (id) {
+                            if (typeof(pin) !== 'undefined') {
+                                if (pinboard.userIsOwner) {
+                                    $('#app-pinboard .top-bar .pinActions').show();
+                                }
+                            } else {
+                                pinboard.showBoardActions();
+                            }
+                        }
                         return;
                     }
                     pinboard.refresh.view(id, pin);
                 },
 
-                load: function(publicOrPrivate) {
+                load: function(publicOrPrivate, userId) {
                     if (!publicOrPrivate) {
                         window.location.replace('#pinboard-load/private');
                         return;
@@ -383,9 +561,127 @@
                     $('#pinboard-load .' + publicOrPrivate).removeClass('show-for-medium');
                     $('#app-pinboard .contextBar .mainActions').show();
 
+                    $('#app-pinboard .mainActions .pinboardDelete')
+                        .prop('title', 'Enable Delete Mode').removeClass('alert')
+                    $('#pinboard-load .yourBoards a').off('click');
+
                     if (modules.centralAuth.google.info) {
                         pinboard.signIn.load(modules.centralAuth.google.info);
+                    } else {
+                        $('#app-pinboard .top-bar-right .mainActions').hide();
                     }
+
+                    if (publicOrPrivate === 'public' && userId) {
+                        $('#pinboard-load .publicBoardUser .publicBoardUserId').val(userId);
+                        pinboard.refresh.publicBoards(userId);
+                    }
+                }
+            },
+
+            serializeBold: function(html) {
+                return html.split('<strong>').join('*').split('</strong>').join('*');
+            },
+
+            parseBold: function($element) {
+                while ($element.html() && $element.html().includes('*')) {
+                    $element.html($element.html().replace('*', '<strong>'));
+                    $element.html($element.html().replace('*', '</strong>'));
+                }
+                return $element;
+            },
+
+            makePinContent: function(promise, $content, content) {
+                promise = promise || $.Deferred();
+                if (!Array.isArray(content)) {
+                    content = [content];
+                }
+
+                var template = dynCore.loadTemplate('pinboard.pinContent', 'res/html/pinboardTileContent.html');
+                template.done(function() {
+                    var $elements = [];
+                    for (var i = 0; i < content.length; i++) {
+                        var $element = dynCore.makeFragment('pinboard.pinContent', content[i].contentArgs)
+                            .children('.' + content[i].contentType.replace(' ', '.')).first();
+                        
+                        pinboard.parseBold($element);
+                        $content.append($element);
+                        $elements.push($element);
+                    }
+                    promise.resolve($elements);
+                }).fail(function() {
+                    promise.reject();
+                });
+                return promise;
+            },
+
+            newPinContent: {
+                paragraph: function(promise, $activeTab) {
+                    var $input = $activeTab.find('.contentValue');
+                    var value = $input.val();
+                    if (value) {
+                        $content = $('#app-pinboard .activeTile .content');
+                        pinboard.makePinContent(promise, $content, {
+                            contentType: 'contentText',
+                            contentArgs: {
+                                '.innerContent': {
+                                    text: value
+                                }
+                            }
+                        }).done(function($elements) {
+                            promise.resolve($elements);
+                        }).fail(function() {
+                            promise.reject();
+                        });
+                    } else {
+                        promise.reject();
+                    }
+                    return promise;
+                },
+
+                image: function(promise, $activeTab) {
+                    var $input = $activeTab.find('.contentValue');
+                    var value = $input.val();
+                    if (value) {
+                        $content = $('#app-pinboard .activeTile .content');
+                        pinboard.makePinContent(promise, $content, {
+                            contentType: 'contentImg',
+                            contentArgs: {
+                                '.innerContent': {
+                                    src: value
+                                }
+                            }
+                        }).done(function($elements) {
+                            promise.resolve($elements);
+                        }).fail(function() {
+                            promise.reject();
+                        });
+                    } else {
+                        promise.reject();
+                    }
+                    return promise;
+                },
+
+                heading: function(promise, $activeTab) {
+                    var $input = $activeTab.find('.contentValue');
+                    var value = $input.val();
+                    if (value) {
+                        $content = $('#app-pinboard .activeTile .content');
+                        pinboard.makePinContent(promise, $content, {
+                            contentType: 'contentHeading',
+                            contentArgs: {
+                                '.innerContent': {
+                                    text: value
+                                }
+                            }
+                        }).done(function($elements) {
+                            promise.resolve($elements);
+                        }).fail(function() {
+                            promise.reject();
+                        });
+                    } else {
+                        promise.reject();
+                    }
+                    return promise;
                 }
             }
         };
@@ -404,6 +700,11 @@
 
         $('#pinboard-load .publicOrPrivate').on('change', function() {
             window.location.hash = '#pinboard-load/' + $(this).val();
+        });
+
+        $('#pinboard-load .publicBoardUser .getPublicBoards').on('click', function() {
+            window.location.hash = '#pinboard-load/public/' +
+                $('#pinboard-load .publicBoardUser .publicBoardUserId').val();
         });
 
         $('#app-pinboard .pinboardTitle').on('click', function() {
@@ -427,11 +728,122 @@
             }
         });
 
+        $('#app-pinboard .mainActions .pinboardDelete').on('click', function() {
+            var $listItems = $('#pinboard-load .yourBoards a');
+            pinboard.makeDeletable.call(this, $listItems, function($clickedItem) {
+                return $clickedItem.find('h5').text();
+            }, function($clickedItem) {
+                var id = $clickedItem.prop('href').split('/');
+                id = id[id.length - 1];
+                if (id) {
+                    pinboard.api.delete(id).done(function() {
+                        $clickedItem.parent().remove();
+                    });
+                }
+            });
+        });
+
+        $('#pinboard-view-settings .pinboardDeletePin').on('click', function() {
+            var $active = $('#app-pinboard .activeTile');
+            var $dialog = $('#pinboard-view-settings');
+            var title = $dialog.find('.tileTitleSetting').val();
+
+            $dialog.foundation('close');
+            var promise = modules.twoButtonDialog('Really delete pin ' + title + '?',
+                'This cannot be undone.', 'Delete', 'Cancel', true);
+
+            promise.done(function() {
+                $active.remove();
+                window.location.href = '#pinboard-view/' + pinboard.nav.currentView.id;
+                pinboard.saveCurrent();
+            }).fail(function() {
+                $('#pinboard-view-settings').foundation('open');
+            });
+        });
+
+        $('#app-pinboard .pinActions .pinboardDeleteContent').on('click', function() {
+            pinboard.exitEditMode();
+
+            var $pins = $('#pinboard-view .activeTile .contentItem > .row');
+            pinboard.makeDeletable.call(this, $pins, function() {
+                return 'content';
+            }, function($clickedItem) {
+                $clickedItem.parent().remove();
+                pinboard.exitDeleteMode();
+                pinboard.saveCurrent();
+            });
+        });
+
+        $('#app-pinboard .boardActions .boardOptions').on('click', function() {
+            var title = $('#app-pinboard .pinboardTitle').text();
+            $('#pinboard-view-options .boardTitleSetting').val(title);
+            $('#pinboard-view-options .boardPublicSetting').prop('checked', pinboard.boards[pinboard.nav.currentView.id].Public);
+        });
+
+        $('#pinboard-view-options .saveBoardSettings').on('click', function() {
+            var dirty = false;
+
+            var newTitle = $('#pinboard-view-options .boardTitleSetting').val();
+            var oldTitle = $('#app-pinboard .pinboardTitle').text();
+            if (newTitle !== oldTitle) {
+                $('#app-pinboard .pinboardTitle').text(newTitle);
+                dirty = true;
+            }
+
+            var newPublic = $('#pinboard-view-options .boardPublicSetting').prop('checked');
+            if (pinboard.boards[pinboard.nav.currentView.id].Public !== newPublic) {
+                pinboard.boards[pinboard.nav.currentView.id].Public = newPublic;
+                dirty = true;
+            }
+
+            if (dirty) {
+                pinboard.saveCurrent();
+            }
+        });
+
+        $('#app-pinboard .boardActions .pinboardSearchText').on('keyup', function() {
+            var searchText = $(this).val().toLowerCase();
+            if (searchText) {
+                $('#app-pinboard .pinboardTile').each(function(i, tile) {
+                    var $tile = $(tile);
+                    if ($tile.find('.title').text().toLowerCase().includes(searchText) ||
+                        $tile.find('.description').text().toLowerCase().includes(searchText)) {
+
+                        $tile.show();
+                    } else {
+                        $tile.hide();
+                    }
+                });
+            } else {
+                $('#app-pinboard .pinboardTile').show();
+            }
+        });
+
+        $('#app-pinboard .boardActions .pinboardAdd').on('click', function() {
+            var $element = dynCore.makeFragment('pinboard.tile', {
+                '.background': {
+                    style: 'background-color:#888;'
+                }
+            }).appendTo($('#pinboard-view .pinboard'));
+
+            $element.on('click', function() {
+                if (!$(this).hasClass('activeTile')) {
+                    var pin = $(this).data('pin') || 
+                        $('#app-pinboard .pinboardTile').index($(this));
+
+                    window.location.href = '#pinboard-view/' +
+                        pinboard.nav.currentView.id + '/' + pin;
+                }
+            });
+
+            pinboard.saveCurrent();
+        });
+
         $('#app-pinboard .pinActions .pinboardClosePin').on('click', function() {
             window.location.href = '#pinboard-view/' + pinboard.nav.currentView.id;
         });
 
-        $('#app-pinboard .pinActions .pinboardOptions').on('click', function() {
+        $('#app-pinboard .pinActions .pinOptions').on('click', function() {
             var $settings = $('#pinboard-view-settings');
             var $active = $('#app-pinboard .activeTile');
 
@@ -457,8 +869,66 @@
             }
 
             $settings.find('.tileColorSetting').val($background.css('background-color'));
-
             $settings.foundation('open');
+        });
+
+        $('#pinboard-new-content .confirmPinContent').on('click', function() {
+            var $activeTab = $('#pinboard-new-content .tabs-panel.is-active');
+            var contentType = $activeTab.get(0).id.split('-')[3];
+            var promise = $.Deferred();
+
+            pinboard.newPinContent[contentType] && pinboard.newPinContent[contentType](promise, $activeTab);
+            
+            promise.done(function() {
+                pinboard.saveCurrent();
+            });
+        });
+
+        $('#app-pinboard .pinActions .pinboardEditMode').on('click', function() {
+            pinboard.exitDeleteMode();
+
+            var $self = $(this);
+            var $innerContents = $('#app-pinboard .activeTile .innerContent').toggleClass('editMode');
+            $self.toggleClass('success');
+            pinboard.editPinDirty = false;
+
+            if ($self.hasClass('success')) {
+                $self.prop('title', 'Disable Edit Mode');
+                pinboard.makePinSortable();
+                var $dialog = $('#pinboard-edit-content');
+                $innerContents.on('click', function() {
+                    var $clicked = $(this);
+                    var value;
+                    if ($clicked.prop('src')) {
+                        value = $clicked.prop('src');
+                    } else {
+                        value = pinboard.serializeBold($clicked.html());
+                    }
+                    var $editValue = $dialog.find('.tileEditSetting');
+                    $editValue.val(value);
+
+                    $dialog.find('.confirmEditPinContent').off('click').on('click', function() {
+                        var newValue = $editValue.val();
+                        if ($clicked.prop('src')) {
+                            $clicked.prop('src', newValue);
+                        } else {
+                            $clicked.text(newValue);
+                            pinboard.parseBold($clicked);
+                        }
+                        if (newValue !== value) {
+                            pinboard.saveCurrent();
+                        }
+                    });
+
+                    $dialog.foundation('open');
+                });
+            } else {
+                $self.prop('title', 'Enable Edit Mode');
+                $innerContents.off('click');
+                if (pinboard.pinSortable) {
+                    pinboard.pinSortable.option('disabled', true);
+                }
+            }
         });
 
         $('#pinboard-view-settings .saveTileSettings').on('click', function() {
