@@ -164,6 +164,9 @@
 #pinboard-view .pinboardTile.activeTile .innerContent {
     transition: background 0.25s linear;
 }
+#pinboard-view .pinboardTile.activeTile .innerContent .strikethrough {
+    text-decoration: line-through;
+}
 
 #pinboard-view .pinboardTile.activeTile {
     width: 100%;
@@ -202,16 +205,21 @@
     height: calc(100% - 2.75rem);
     padding: 0.5rem;
     margin: 0.5rem;
-    background: rgba(255,255,255,0.9);
+    background: rgba(255,255,255,0.85);
 
     transition: background 0.25s linear;
 
     -moz-box-sizing: border-box;
 }
+#pinboard-view .pinboardTile.activeTile .background .content p,
+#pinboard-view .pinboardTile.activeTile .background .content h6 {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
 #pinboard-view .pinboardTile.activeTile .background .content p {
-    text-indent: 1rem;
+    font-size: 1.125rem;
     line-height: 1.25rem;
-    margin-bottom: 0.75rem;
+    margin-bottom: 0.875rem;
 }
 #pinboard-view .pinboardTile.activeTile .background .content h6 {
     font-size: 1.5rem;
@@ -292,8 +300,8 @@
     margin-bottom: 0;
 }
 #pinboard-new-content textarea,
-#pinboard-edit-content textarea {
-    text-indent: 1rem;
+#pinboard-edit-content textarea,
+#pinboard-view-settings textarea {
     line-height: 1.375rem;
 }
 #pinboard-new-content .close-button {

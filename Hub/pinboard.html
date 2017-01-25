@@ -176,13 +176,19 @@
         </div>
     </div>
     <div class="row">
-        <div class="small-3 columns">
-        <button class="pinboardDeletePin topbar-button-fa button alert" title="Delete This Pin" data-close>
+        <div class="small-3 medium-2 columns">
+            <button class="pinboardDeletePin topbar-button-fa button alert" title="Delete This Pin" data-close>
                 <i class="fa fa-trash-o"></i>
                 <span class="show-for-sr">Delete This Pin</span>
             </button>
         </div>
-        <div class="small-9 medium-6 large-4 columns">
+        <div class="small-3 medium-2 medium-offset-2 large-offset-4 columns">
+            <button class="pinboardClonePin topbar-button-fa button secondary" title="Clone This Pin" data-close>
+                <i class="fa fa-clone"></i>
+                <span class="show-for-sr">Clone This Pin</span>
+            </button>
+        </div>
+        <div class="small-6 medium-6 large-4 columns">
             <a class="saveTileSettings primary button expanded" data-close>Save</a>
         </div>
     </div>
@@ -202,7 +208,7 @@
         <div class="tabs-panel is-active" id="pinboard-new-content-paragraph">
             <label>
                 Paragraph Text:
-                <textarea rows="3" class="contentValue"></textarea>
+                <textarea rows="8" class="contentValue"></textarea>
             </label>
         </div>
         <div class="tabs-panel" id="pinboard-new-content-image">
@@ -239,7 +245,7 @@
     <div class="row">
         <div class="column">
             <label>Edit:
-                <textarea rows="3" class="tileEditSetting"></textarea>
+                <textarea rows="8" class="tileEditSetting"></textarea>
             </label>
         </div>
     </div>
