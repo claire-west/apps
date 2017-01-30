@@ -3,7 +3,7 @@ An extensible javascript-based app hub to facilitate a variety of loosely-couple
 
 ### Features
 - hash-based navigation and routing
-- dynamically loaded scripts, html, fragemnts, iframes, and css
+- dynamically loaded scripts, html, fragments, iframes, and css
 - shared google sign-on across all apps
 
 ### Apps
