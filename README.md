@@ -9,5 +9,5 @@ An extensible javascript-based app hub to facilitate a variety of loosely-couple
 ### Apps
 - a browser-based version of my original Twitch Stream Utility
 - a lightweight utility to browse anime from Crunchyroll
-- an in-progress pinboard app
+- a cloud-based pinboard app using Google SignIn
 - an old, somewhat unstable dynamic form builder
