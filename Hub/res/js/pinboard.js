@@ -10,7 +10,7 @@
             'ajaxError.js',
             'twoButtonDialog.js',
             'localUUID.js',
-            'arrayMove.js',
+            'isMobile.js',
             'isInt.js'
         ], '../shared/js/'),
         dynCore.require([
@@ -45,6 +45,13 @@
                     if ($('#app-pinboard .activeTile').length) {
                         $('#app-pinboard .contextBar .pinActions').show();
                     }
+                    if (pinboard.userIsOwner()) {
+                        if (pinboard.boardSortable) {
+                            pinboard.boardSortable.option('disabled', false);
+                        } else {
+                            pinboard.makeSortable();
+                        }
+                    }
                 },
                 load: function(info) {
                     $('#pinboard-load .notSignedIn').hide();
@@ -63,6 +70,9 @@
                 view: function(info) {
                     if ($('#app-pinboard .contextBar .boardActions').is(':visible')) {
                         pinboard.showBoardActions();
+                    }
+                    if (pinboard.boardSortable) {
+                        pinboard.boardSortable.option('disabled', true);
                     }
                 },
                 load: function() {
@@ -96,6 +106,9 @@
 
             boardSortable: null,
             makeSortable: function() {
+                if (modules.isMobile()) {
+                    return;
+                }
                 pinboard.boardSortable = Sortable.create($('#app-pinboard .pinboard').get(0), {
                     draggable: '.pinboardTile',
                     onEnd: function(e) {
@@ -121,7 +134,8 @@
             },
 
             exitEditMode: function() {
-                $('#app-pinboard .pinActions .pinboardEditMode').prop('title', 'Enable Edit Mode').removeClass('success');
+                $('#app-pinboard .pinActions .pinboardEditMode').prop('title', 'Enable Edit Mode').removeClass('success')
+                    .children('span').text('Enable Edit Mode');
                 $('#app-pinboard .pinboardTile .innerContent').off('click').removeClass('editMode');
                 if (pinboard.pinSortable) {
                     pinboard.pinSortable.option('disabled', true);
@@ -129,7 +143,8 @@
             },
 
             exitDeleteMode: function() {
-                $('#app-pinboard .contextBar .alert').prop('title', 'Enable Delete Mode').removeClass('alert');
+                $('#app-pinboard .contextBar .alert').prop('title', 'Enable Delete Mode').removeClass('alert')
+                    .children('span').text('Enable Delete Mode');
                 $('#app-pinboard .deletable').off('click').removeClass('deletable');
             },
 
@@ -138,7 +153,8 @@
                 $items.toggleClass('deletable');
 
                 if ($self.hasClass('alert')) {
-                    $self.prop('title', 'Disable Delete Mode');
+                    $self.prop('title', 'Disable Delete Mode')
+                        .children('span').text('Disable Delete Mode');
                     $items.on('click', function(e) {
                         e.preventDefault();
                         var $clickedItem = $(this);
@@ -151,7 +167,8 @@
                         });
                     });
                 } else {
-                    $self.prop('title', 'Enable Delete Mode');
+                    $self.prop('title', 'Enable Delete Mode')
+                        .children('span').text('Enable Delete Mode');
                     $items.off('click');
                 }
             },
@@ -167,10 +184,11 @@
                     var $background = $pin.find('.background');
                     var background = 'background-image:' + $background.css('background-image') +';' +
                         'background-color:' + $background.css('background-color') +';';
-
+                    var pinId = $pin.data('pin');
                     var content = pinboard.serializePin($background.find('.content').children('.contentItem'));
 
                     pins.push({
+                        id: pinId,
                         background: background,
                         title: $pin.find('.title').text(),
                         description: $pin.find('.description').text(),
@@ -191,7 +209,15 @@
                     var $item = $(item);
                     var element = $item.find('.innerContent').get(0);
                     
-                    var contentType = $item.attr('class');
+                    var classes = $item.attr('class').split(' ');
+                    for (var i = 0; i < classes.length; i++) {
+                        if (!classes[i].startsWith('content')) {
+                            classes.splice(i, 1);
+                            i--;
+                        }
+                    }
+                    var contentType = classes.join(' ');
+
                     var contentArgs = {
                         '.innerContent': {}
                     };
@@ -228,6 +254,9 @@
                 if (contents.length) {
                     return contents.map(function(pin) {
                         return {
+                            '': {
+                                'data-pin': pin.id
+                            },
                             '.background': {
                                 style: pin.background
                             },
@@ -243,6 +272,10 @@
                 }
             },
 
+            newPinId: function() {
+                return modules.uuid().split('-')[0];
+            },
+
             makeBoard: function(tileArgs) {
                 if (tileArgs) {
                     var $board = $('#pinboard-view .pinboard');
@@ -251,6 +284,9 @@
                     for (var i = 0; i < tileArgs.length; i++) {
                         pinContent.push(tileArgs[i].content)
                         delete tileArgs[i].content;
+                        tileArgs[i][''] = tileArgs[i][''] || {};
+                        tileArgs[i]['']['data-pin'] =
+                            tileArgs[i]['']['data-pin'] || pinboard.newPinId();
                     }
 
                     var $pins = dynCore.makeFragment('pinboard.tile', tileArgs).appendTo($board);
@@ -276,10 +312,17 @@
 
             selectPin: function(pin) {
                 pinboard.nav.currentView.pin = pin;
-                if (modules.isInt(pin)) {
-                    pinboard.makePinActive($('.pinboard .pinboardTile').get(pin));
+                var $dataMatch = $('.pinboard').find('.pinboardTile[data-pin="' + pin + '"]').first();
+                if ($dataMatch.length) {
+                    pinboard.makePinActive($dataMatch);
+                    return;
+                }
+
+                var $pins = $('.pinboard .pinboardTile');
+                if (modules.isInt(pin) && pin < $pins.length) {
+                    pinboard.makePinActive($pins.get(pin));
                 } else {
-                    pinboard.makePinActive($('.pinboard').find('.pinboardTile[data-pin="' + pin + '"]').first());
+                    pinboard.makePinActive();
                 }
             },
 
@@ -325,8 +368,42 @@
                 $boardActions.show();
             },
 
+            saveStatus: {
+                saved: function() {
+                    var $indicators = $('#app-pinboard .contextBar .saveIndicator');
+                    $indicators.off('click').removeClass('alert').removeClass('primary')
+                        .addClass('disabled').addClass('success').prop('title', 'Board Saved');
+                    $indicators.children('i').removeClass('fa-floppy-o').removeClass('fa-refresh')
+                        .removeClass('fa-spin').addClass('fa-check-circle');
+                    $indicators.children('span').text('Board Saved');
+                },
+
+                saving: function() {
+                    var $indicators = $('#app-pinboard .contextBar .saveIndicator');
+                    $indicators.off('click').removeClass('success').removeClass('alert')
+                        .addClass('disabled').addClass('primary').prop('title', 'Saving...');
+                    $indicators.children('i').removeClass('fa-check-circle').removeClass('fa-floppy-o')
+                        .addClass('fa-spin').addClass('fa-refresh');
+                    $indicators.children('span').text('Saving...');
+                },
+
+                error: function() {
+                    var $indicators = $('#app-pinboard .contextBar .saveIndicator');
+                    $indicators.removeClass('success').removeClass('primary')
+                        .removeClass('disabled').addClass('alert').prop('title', 'Save Failed, Click to Retry');
+                    $indicators.children('i').removeClass('fa-check-circle').removeClass('fa-refresh')
+                        .removeClass('fa-spin').addClass('fa-floppy-o');
+                    $indicators.children('span').text('Save Failed, Click to Retry');
+                    $indicators.off('click').on('click', function() {
+                        $(this).off('click');
+                        pinboard.saveCurrent();
+                    });
+                }
+            },
+
             api: {
                 save: function(board, label) {
+                    pinboard.saveStatus.saving();
                     return $.ajax({
                         url: '/nosql',
                         method: 'POST',
@@ -341,7 +418,10 @@
                         }, modules.centralAuth.google.baseHeaders())
                     }).done(function(id) {
                         console.info('Saved board ' + id + '.');
+                        pinboard.saveStatus.saved();
                         board.Id = id;
+                    }).fail(function() {
+                        pinboard.saveStatus.error();
                     });
                 },
 
@@ -558,6 +638,7 @@
                         }
                         return;
                     }
+
                     pinboard.refresh.view(id, pin);
                 },
 
@@ -574,6 +655,7 @@
 
                     $('#app-pinboard .mainActions .pinboardDelete')
                         .prop('title', 'Enable Delete Mode').removeClass('alert')
+                        .children('span').text('Enable Delete Mode');
                     $('#pinboard-load .yourBoards a').off('click');
 
                     if (modules.centralAuth.google.info) {
@@ -591,18 +673,20 @@
 
             serializeTags: function(html) {
                 html = pinboard.serializeBold(html);
-                html = pinboard.serializeLink(html);
                 html = pinboard.serializeStrike(html);
+                html = pinboard.serializeTable(html);
                 html = pinboard.serializeBreak(html);
+                html = pinboard.serializeLink(html);
 
                 return html;
             },
 
             parseTags: function($element) {
                 $element = pinboard.parseBold($element);
-                $element = pinboard.parseLink($element);
                 $element = pinboard.parseStrike($element);
+                $element = pinboard.parseTable($element);
                 $element = pinboard.parseBreak($element);
+                $element = pinboard.parseLink($element);
 
                 return $element;
             },
@@ -624,17 +708,36 @@
             },
 
             parseStrike: function($element) {
-                $element.html($element.html().split('{{').join('<span class="strikethrough">'));
-                $element.html($element.html().split('}}').join('</span>'));
+                if ($element.html()) {
+                    $element.html($element.html().split('{{').join('<span class="strikethrough">'));
+                    $element.html($element.html().split('}}').join('</span>'));
+                }
                 return $element;
             },
 
             serializeLink: function(html) {
-                html = html.split('</a>').join(']]');
                 while (html.includes('<a')) {
+                    var parts = [];
+
                     var left = html.indexOf('<a href="');
-                    var right = html.indexOf('">') + 2;
-                    html = html.substring(0, left) + '[[' + html.substring(right)
+                    parts.push(html.substring(0, left) + '[[');
+
+                    var hrefStart = left + 9;
+                    var hrefEnd = html.substring(hrefStart).indexOf('"') + hrefStart;
+                    var href = html.substring(hrefStart, hrefEnd);
+                    parts.push(href);
+
+                    var right = html.substring(left).indexOf('>') + left + 1;
+
+                    var end = html.indexOf('</a>');
+                    var text = html.substring(right, end);
+                    if (text !== href) {
+                        parts.push('|' + text);
+                    }
+
+                    parts.push(']]');
+                    var after = html.substring(end + 4);
+                    html = parts.join('') + after;
                 }
                 return html;
             },
@@ -644,6 +747,15 @@
                     var left = $element.html().indexOf('[[') + 2;
                     var right = $element.html().substring(left).indexOf(']]');
                     var href = $element.html().substr(left, right);
+                    var text;
+                    if (href.includes('|')) {
+                        var parts = href.split('|');
+                        href = parts[0];
+                        text = parts[1];
+                    } else {
+                        text = href;
+                    }
+                    $element.html($element.html().substring(0, left) + text + $element.html().substring(left + right));
                     $element.html($element.html().replace('[[', '<a href="' + href + '">'));
                     $element.html($element.html().replace(']]', '</a>'));
                 }
@@ -656,7 +768,31 @@
             },
 
             parseBreak: function($element) {
-                $element.html($element.html().split('\n').join('<br>'));
+                if ($element.html()) {
+                    $element.html($element.html().split('\n').join('<br>'));
+                }
+                return $element;
+            },
+
+            serializeTable: function(html) {
+                html = html.split('<div class="row">').join('~--\n');
+                html = html.split('<div class="row text-right">').join('--~\n');
+                html = html.split('<div class="small-3 columns">').join('~////');
+                html = html.split('<div class="small-4 columns">').join('~///');
+                html = html.split('<div class="small-6 columns">').join('~//');
+                html = html.split('</div>').join('//~');
+                return html;
+            },
+
+            parseTable: function($element) {
+                if ($element.html()) {
+                    $element.html($element.html().split('~--\n').join('<div class="row">'));
+                    $element.html($element.html().split('--~\n').join('<div class="row text-right">'));
+                    $element.html($element.html().split('~////').join('<div class="small-3 columns">'));
+                    $element.html($element.html().split('~///').join('<div class="small-4 columns">'));
+                    $element.html($element.html().split('~//').join('<div class="small-6 columns">'));
+                    $element.html($element.html().split('//~').join('</div>'));
+                }
                 return $element;
             },
 
@@ -833,10 +969,11 @@
 
         $('#pinboard-view-settings .pinboardClonePin').on('click', function() {
             var $element = $('#app-pinboard .activeTile').clone().on('click', pinboard.onPinClick);
+            var pinId = pinboard.newPinId();
+            $element.attr('data-pin', pinId);
             var $board = $('#app-pinboard .pinboard');
             $board.append($element);
-            window.location.href = '#pinboard-view/' + pinboard.nav.currentView.id +
-                '/' + ($board.children().length - 1);
+            window.location.href = '#pinboard-view/' + pinboard.nav.currentView.id + '/' + pinId;
             pinboard.saveCurrent();
         });
 
@@ -898,7 +1035,11 @@
         });
 
         $('#app-pinboard .boardActions .pinboardAdd').on('click', function() {
+            var pinId = pinboard.newPinId();
             var $element = dynCore.makeFragment('pinboard.tile', {
+                '': {
+                    'data-pin': pinId
+                },
                 '.background': {
                     style: 'background-color:#888;'
                 }
@@ -969,7 +1110,8 @@
             pinboard.editPinDirty = false;
 
             if ($self.hasClass('success')) {
-                $self.prop('title', 'Disable Edit Mode');
+                $self.prop('title', 'Disable Edit Mode')
+                    .children('span').text('Disable Edit Mode');
                 pinboard.makePinSortable();
                 var $dialog = $('#pinboard-edit-content');
                 $innerContents.on('click', function() {
@@ -999,7 +1141,8 @@
                     $dialog.foundation('open');
                 });
             } else {
-                $self.prop('title', 'Enable Edit Mode');
+                $self.prop('title', 'Enable Edit Mode')
+                    .children('span').text('Enable Edit Mode');
                 $innerContents.off('click');
                 if (pinboard.pinSortable) {
                     pinboard.pinSortable.option('disabled', true);

@@ -345,6 +345,9 @@
                                 );
                             }
 
+                            if (modules.isMobile()) {
+                                $tiles.find('.tileLaunchButton').hide();
+                            }
                             $tiles.find('.seasonTiles div.columns:last-child').addClass('end');
                             $tiles.find('p.truncate-line-wrap').on('click', function() {
                                 $(this).toggleClass('truncate-line-wrap');

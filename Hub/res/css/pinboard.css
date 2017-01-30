@@ -30,6 +30,11 @@
     line-height: 2rem;
 }
 
+#app-pinboard .contextBar .saveIndicator.disabled {
+    opacity: 1;
+    border: 1px solid transparent;
+}
+
 #app-pinboard .pinboard-top-bar-center {
     display: inline-block;
 }
