@@ -2,6 +2,7 @@
     var loadedModules = [];
     var modules = {};
     var templates = {};
+    var templateNotified = {};
     var pending = [];
 
     var paths = {};
@@ -101,10 +102,11 @@
         resolve: function() {
             return $.when.apply(this, pending);
         },
-        html: function(title, path) {
+        html: function(title, path, $container) {
             var promise = $.Deferred();
+            $container = $container || $('#app-' + title);
 
-            $('#app-' + title).load(path || (title + '.html'), function(resp, status) {
+            $container.load(path || (title + '.html'), function(resp, status) {
                 if (status === 'success') {
                     promise.resolve(resp);
                 } else {
@@ -115,7 +117,9 @@
 
             return promise;
         },
-        iframe: function(app, url) {
+        iframe: function(app, url, $container) {
+            $container = $container || $('#app-' + app);
+            
             return window.dynCore.require('../shared/js/iframeScaling.js').then(function() {
                 $element = $('<iframe/>', {
                     src: url,
@@ -124,7 +128,7 @@
                     width: '100%'
                 }).on('load', function() { modules.scaleIframe(this, true); });
 
-                $('#app-' + app).append($element);
+                $container.append($element);
 
                 return $.Deferred().resolve($element).promise();
             });
@@ -144,7 +148,10 @@
 
             for (let key in name) {
                 if (templates[key]) {
-                    console.warn('Template ' + key + ' already loaded.');
+                    if (!templateNotified[key]) {
+                        console.warn('Template ' + key + ' already loaded.');
+                        templateNotified[key] = true;
+                    }
                     promises.push($.when());
                     continue;
                 }

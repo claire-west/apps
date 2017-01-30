@@ -1,6 +1,7 @@
 (function() {
     window.dynCore.declare('centralAuth', null, function() {
         var events = {};
+        var initialized;
         var centralAuth = {
             google: {
                 signIn: function(googleUser) {
@@ -75,13 +76,25 @@
                 },
                 // sign in buttons must be created before the api is loaded
                 init: function() {
+                    if (initialized) {
+                        return initialized;
+                    }
+                    initialized = $.Deferred();
+
                     $('head').append(
                         $('<meta/>', {
                             name: 'google-signin-client_id',
                             content: '747138068474-uflnaifip3j1t0qbldd2rrojajodvlgu.apps.googleusercontent.com'
                         })
                     );
-                    window.dynCore.require('https://apis.google.com/js/platform.js');
+                    window.dynCore.require('https://apis.google.com/js/platform.js').done(function() {
+                        initialized.resolve();
+                    }).fail(function() {
+                        initialized.reject();
+                        initialized = null;
+                    });
+
+                    return initialized;
                 }
             }
         };
