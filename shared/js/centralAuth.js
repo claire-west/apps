@@ -87,6 +87,8 @@
                             content: '747138068474-uflnaifip3j1t0qbldd2rrojajodvlgu.apps.googleusercontent.com'
                         })
                     );
+                    
+                    var promise = initialized;
                     window.dynCore.require('https://apis.google.com/js/platform.js').done(function() {
                         initialized.resolve();
                     }).fail(function() {
@@ -94,7 +96,7 @@
                         initialized = null;
                     });
 
-                    return initialized;
+                    return promise;
                 }
             }
         };
