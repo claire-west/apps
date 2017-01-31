@@ -49,7 +49,7 @@
                         if (fn) {
                             for (var i = 0; i < events[event].length; i++) {
                                 if (events[event][i] === fn) {
-                                    events[event].splice(i);
+                                    events[event].splice(i, 1);
                                     break;
                                 }
                             }
