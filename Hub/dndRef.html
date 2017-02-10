@@ -1,0 +1,109 @@
+<nav class="top-bar sectionNav">
+    <div class="top-bar-content">
+        <div class="top-bar-left">
+            <ul class="menu">
+                <li>
+                    <div class="input-group">
+                        <a href="#dndRef-directory" class="topbar-button-fa button secondary" title="Directory" style="border-left: none;">
+                            <i class="fa fa-home"></i>
+                            <span class="show-for-sr">Directory</span>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="top-bar-right">
+            <ul class="menu">
+                <li>
+                    <div class="input-group">
+                        <a href="#dndRef-settings" class="topbar-button-fa button secondary" title="Settings" style="border-left: none;">
+                            <i class="fa fa-cog"></i>
+                            <span class="show-for-sr">Settings</span>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<section id="dndRef-directory" class="row contentSection defaultSection" hidden>
+    <div class="column">
+        <h4>D&amp;D 5th Edition</h4>
+    </div>
+    <div class="content column">
+        <dl>
+            <dt>Monsters:</dt>
+            <dd><a href="#dndRef-bestiary">Bestiary</a></dd>
+            <dt>Spellbook:</dt>
+            <dd><a href="#dndRef-spellbook">All Spells</a></dd>
+            <dd>
+                <dl>
+                    <dt>By Class:</dt>
+                    <dd><a href="#dndRef-spellbook/bard">Bard</a></dd>
+                    <dd><a href="#dndRef-spellbook/cleric">Cleric</a></dd>
+                    <dd><a href="#dndRef-spellbook/druid">Druid</a></dd>
+                    <dd><a href="#dndRef-spellbook/sorcerer">Sorcerer</a></dd>
+                    <dd><a href="#dndRef-spellbook/warlock">Warlock</a></dd>
+                    <dd><a href="#dndRef-spellbook/wizard">Wizard</a></dd>
+                </dl>
+            </dd>
+        </dl>
+    </div>
+</section>
+<section id="dndRef-bestiary" class="row contentSection" hidden>
+    <div class="column">
+        <h4>Bestiary</h4>
+    </div>
+    <div class="medium-5 columns">
+        <label>
+            Monster Name
+            <input class="monsterName" type="text" />
+        </label>
+    </div>
+    <div class="small-6 medium-3 columns">
+        <label>
+            Species
+            <select class="species"></select>
+        </label>
+    </div>
+    <div class="small-3 medium-2 columns">
+        <label>
+            Min CR
+            <select class="minCR"></select>
+        </label>
+    </div>
+    <div class="small-3 medium-2 columns">
+        <label>
+            Max CR
+            <select class="maxCR"></select>
+        </label>
+    </div>
+    <div class="content column"></div>
+</section>
+<section id="dndRef-monster" class="row contentSection" hidden></section>
+<section id="dndRef-spellbook" class="row contentSection" hidden>
+    <div class="column">
+        <h4>Spellbook</h4>
+    </div>
+    <div class="column">
+        <label>
+            Spell Name
+            <input class="spellName" type="text" />
+        </label>
+    </div>
+    <div class="small-9 columns">
+        <label>
+            Category
+            <select class="spellCategory"></select>
+        </label>
+    </div>
+    <div class="small-3 columns">
+        <label>
+            Level
+            <select class="spellLevel"></select>
+        </label>
+    </div>
+    <div class="content"></div>
+</section>
+<section id="dndRef-spell" class="row contentSection" hidden></section>
+<section id="dndRef-settings" class="row contentSection" hidden></section>
