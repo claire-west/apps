@@ -49,7 +49,7 @@
                         if (fn) {
                             for (var i = 0; i < events[event].length; i++) {
                                 if (events[event][i] === fn) {
-                                    events[event].splice(i, 1);
+                                    events[event].splice(i);
                                     break;
                                 }
                             }
@@ -87,8 +87,6 @@
                             content: '747138068474-uflnaifip3j1t0qbldd2rrojajodvlgu.apps.googleusercontent.com'
                         })
                     );
-                    
-                    var promise = initialized;
                     window.dynCore.require('https://apis.google.com/js/platform.js').done(function() {
                         initialized.resolve();
                     }).fail(function() {
@@ -96,7 +94,7 @@
                         initialized = null;
                     });
 
-                    return promise;
+                    return initialized;
                 }
             }
         };

@@ -59,7 +59,7 @@
 
             $.when.apply(this, promises).done(function() {
                 if (fnInit) {
-                    var module = fnInit();
+                    var module = fnInit(modules);
                     if (title && module) {
                         modules[title] = module;
                     }
