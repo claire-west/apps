@@ -60,6 +60,14 @@
 #pinboard-load > div > h4 {
     margin-bottom: 0.25rem;
 }
+#pinboard-load .notSignedIn.column,
+#pinboard-load .signedIn.column {
+    padding-left: 0.925rem;
+    padding-right: 0.925rem;
+}
+#pinboard-load .signedIn p {
+    margin-bottom: 0;
+}
 #pinboard-load .column,
 #pinboard-load .columns {
     position: relative;
@@ -240,6 +248,9 @@
     background: rgba(155,155,155,0.75);
 
     transition: background 0.25s linear;
+}
+#pinboard-view .pinboardTile.activeTile .contentItem.contentImg {
+    text-align: center;
 }
 #pinboard-view .pinboardTile.activeTile .contentItem > .row.deletable .innerContent {
     background-color: rgba(236,88,64,0.25);

@@ -98,6 +98,9 @@
             <div class="notSignedIn column">
                 <p>You are not signed in.</p>
             </div>
+            <div class="signedIn column" hidden>
+                <p>Your ID:&nbsp;<span></span></p>
+            </div>
             <div class="yourBoards"></div>
         </div>
     </div>
@@ -129,13 +132,21 @@
         </div>
     </div>
 
-    <!-- <div class="row">
-        <div class="column">
-            <label>Listing Image:
+    <div class="row" hidden>
+        <div class="columns end">
+            <label>Board Image:
                 <input type="text" class="boardImageSetting" />
             </label>
         </div>
-    </div> -->
+    </div>
+
+    <div class="row">
+        <div class="columns end">
+            <label>Custom CSS:
+                <input type="text" class="boardCSSSetting" />
+            </label>
+        </div>
+    </div>
 
     <div class="row">
         <div class="small-6 columns end">

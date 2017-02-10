@@ -55,6 +55,7 @@
                 },
                 load: function(info) {
                     $('#pinboard-load .notSignedIn').hide();
+                    $('#pinboard-load .signedIn').show().find('span').text(info.id);
                     $('#pinboard-load .yourBoards').show();
 
                     if ($('#pinboard-load').is(':visible')) {
@@ -77,6 +78,7 @@
                 },
                 load: function() {
                     $('#pinboard-load .yourBoards').hide();
+                    $('#pinboard-load .signedIn').hide();
                     $('#pinboard-load .notSignedIn').show();
                     $('#app-pinboard .top-bar-right .mainActions').hide();
                 }
@@ -196,10 +198,16 @@
                     });
                 });
 
+                var boardImage = '';
+                var customCSS = $('link[rel=stylesheet][data-app=pinboard-custom]').prop('href') || '';
                 return {
                     id: pinboard.nav.currentView.id,
                     pins: pins,
-                    label: $('#app-pinboard .pinboardTitle').text()
+                    label: [
+                        $('#app-pinboard .pinboardTitle').text().split('|').join('&pipe;'),
+                        boardImage.split('|').join('&pipe;'),
+                        customCSS.split('|').join('&pipe;')
+                    ].join('|')
                 }
             },
 
@@ -269,6 +277,13 @@
                             content: pin.content
                         };
                     });
+                }
+            },
+
+            setCustomCSS: function(url) {
+                $('link[rel=stylesheet][data-app=pinboard-custom]').remove();
+                if (url) {
+                    dynCore.css('pinboard-custom', url);
                 }
             },
 
@@ -544,7 +559,15 @@
                             pinboard.boards[id] = board;
 
                             $('#pinboard-view-options .boardPublicSetting').prop('checked', board.Public);
-                            $('#app-pinboard .pinboardTitle').text(board.Label).show();
+                            var boardSettings = board.Label.split('|');
+                            $('#app-pinboard .pinboardTitle').text(boardSettings[0].split('&pipe;').join('|')).show();
+
+                            pinboard.setCustomCSS(boardSettings[2]);
+                            // label: [
+                            //     $('#app-pinboard .pinboardTitle').text().split('|').join('&pipe;'),
+                            //     $('#pinboard-view-options .boardImageSetting').val().split('|').join('&pipe;'),
+                            //     $('#pinboard-view-options .boardCSSSetting').val().split('|').join('&pipe;')
+                            // ].join('|')
 
                             pinboard.showBoardActions();
                             pinboard.makeBoard(pinboard.deserialize(board.Text));
@@ -570,7 +593,7 @@
                                     href: '#pinboard-view/' + board.Id
                                 },
                                 h5: {
-                                    text: board.Label
+                                    text: board.Label.split('|')[0].split('&pipe;').join('|')
                                 },
                                 i: {
                                     class: board.Public ? '' : 'fa fa-lock'
@@ -601,7 +624,7 @@
                                     href: '#pinboard-view/' + board.Id
                                 },
                                 h5: {
-                                    text: board.Label
+                                    text: board.Label.split('|')[0].split('&pipe;').join('|')
                                 },
                                 i: {
                                     class: board.Public ? '' : 'fa fa-lock'
@@ -991,7 +1014,13 @@
 
         $('#app-pinboard .boardActions .boardOptions').on('click', function() {
             var title = $('#app-pinboard .pinboardTitle').text();
+            var image = '';
+            var css = $('link[rel=stylesheet][data-app=pinboard-custom]').prop('href');
+            
             $('#pinboard-view-options .boardTitleSetting').val(title);
+            $('#pinboard-view-options .boardImageSetting').val(image);
+            $('#pinboard-view-options .boardCSSSetting').val(css);
+
             $('#pinboard-view-options .boardPublicSetting').prop('checked', pinboard.boards[pinboard.nav.currentView.id].Public);
         });
 
@@ -1002,6 +1031,13 @@
             var oldTitle = $('#app-pinboard .pinboardTitle').text();
             if (newTitle !== oldTitle) {
                 $('#app-pinboard .pinboardTitle').text(newTitle);
+                dirty = true;
+            }
+
+            var oldCss = $('link[rel=stylesheet][data-app=pinboard-custom]').prop('href');
+            var newCss = $('#pinboard-view-options .boardCSSSetting').val();
+            if (newCss !== oldCss) {
+                pinboard.setCustomCSS(newCss);
                 dirty = true;
             }
 
