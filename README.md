@@ -10,4 +10,5 @@ An extensible javascript-based app hub to facilitate a variety of loosely-couple
 - a browser-based version of my original Twitch Stream Utility
 - a lightweight utility to browse anime from Crunchyroll
 - a cloud-based pinboard app using google sign-on
+- a reference app for the Dungeons & Dragons 5th edition SRD
 - an old, somewhat unstable dynamic form builder (via iframe)
