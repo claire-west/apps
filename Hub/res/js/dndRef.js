@@ -243,6 +243,27 @@
                     var match = modules.indexer.get(dndRef.bestiary, dndRef.filterPaths.name, name);
                     var filtered = modules.indexer.filter(dndRef.bestiary, match);
                     var args = filtered.map(function(item) {
+                        
+                        var perception = null;
+                        if (item.attributes.Skills) {
+                            var skills = item.attributes.Skills.split(', ');
+                            for (var i = 0; i < skills.length; i++) {
+                                var index = skills[i].indexOf('Perception');
+                                if (index > -1) {
+                                    perception = 10 + parseInt(skills[i].substring(index + 12));
+                                    break;
+                                }
+                            }
+                        }
+
+                        if (perception === null) {
+                            perception = 10 + parseInt(dndRef.getModifier(item.attributes.WIS));
+                        }
+                        var senses = 'passive Perception ' + perception;
+                        if (item.attributes.Senses) {
+                            senses = item.attributes.Senses + ', ' + senses;
+                        }
+
                         return {
                             '.name': {
                                 text: item.name
@@ -297,7 +318,7 @@
                                 text: item.attributes['Condition Immunities'] || 'None'
                             },
                             '.senses': {
-                                text: item.attributes.Senses
+                                text: senses
                             },
                             '.languages': {
                                 text: item.attributes.Languages || 'None'
@@ -461,13 +482,25 @@
 
             nav: {
                 bestiaryRendered: false,
+                bestiaryArgs: {},
                 bestiary: function(category, minCR, maxCR, query) {
                     if (!maxCR) {
-                        var hash = '#dndRef-bestiary/' + (category || 'all') + '/' +
-                            (minCR || '0') + '/' + (maxCR || '33');
+                        var hash = '#dndRef-bestiary/' + (category ||
+                            dndRef.nav.bestiaryArgs.category || 'all') + '/' +
+                            (minCR || dndRef.nav.bestiaryArgs.minCR || '0') + '/' +
+                            (maxCR || dndRef.nav.bestiaryArgs.maxCR || '33');
+                        if (dndRef.nav.bestiaryArgs.query) {
+                            hash += '/' + dndRef.nav.bestiaryArgs.query;
+                        }
                         window.location.replace(hash);
                         return;
                     }
+                    dndRef.nav.bestiaryArgs = {
+                        category: category,
+                        minCR: minCR,
+                        maxCR: maxCR,
+                        query: query
+                    };
 
                     if (dndRef.nav.bestiaryRendered) {
                         $('#dndRef-bestiary .species').val(category);
@@ -497,6 +530,7 @@
 
                 currentMonster: null,
                 monster: function(name) {
+                    $('#app-dndRef .backToBestiary').show();
                     if (name === dndRef.nav.currentMonster) {
                         return;
                     }
@@ -591,6 +625,7 @@
 
         hashNav.bindNavSection(function(app, section, args) {
             if (app === 'dndRef') {
+                $('#app-dndRef .backToBestiary').hide();
                 if (dndRef.nav[section]) {
                     dndRef.nav[section].apply(this, args);
                 }
