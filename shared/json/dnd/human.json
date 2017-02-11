@@ -1,0 +1,40 @@
+{
+  "name": "Human",
+  "sections": [
+    {
+      "header": "Human Traits",
+      "level": "2",
+      "items": [
+        {
+          "name": "",
+          "text": "It’s hard to make generalizations about humans, but your human character has these traits."
+        },
+        {
+          "name": "Ability Score Increase",
+          "text": "Your Ability Scores each increase by 1."
+        },
+        {
+          "name": "Age",
+          "text": "Humans reach adulthood in their late teens and live less than a century."
+        },
+        {
+          "name": "Alignment",
+          "text": "Humans tend toward no particular alignment. The best and the worst are found among them."
+        },
+        {
+          "name": "Size",
+          "text": "Humans vary widely in height and build, from barely 5 feet to well over 6 feet tall. Regardless of your position in that range, your size is Medium."
+        },
+        {
+          "name": "Speed",
+          "text": "Your base walking speed is 30 feet."
+        },
+        {
+          "name": "Languages",
+          "text": "You can speak, read, and write Common and one extra Language of your choice. Humans typically learn the languages of other peoples they deal with, including obscure dialects. They are fond of sprinkling their Speech with words borrowed from other tongues: Orc curses, Elvish musical expressions, Dwarvish military phrases, and so on."
+        }
+      ]
+    }
+  ],
+  "attributes": { "Category": "Races" }
+}

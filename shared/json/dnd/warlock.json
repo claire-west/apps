@@ -1,0 +1,1894 @@
+{
+  "name": "Warlock",
+  "sections": [
+    {
+      "header": "",
+      "items": [
+        {
+          "name": "",
+          "text": "As a warlock, you gain the following Class Features."
+        }
+      ]
+    },
+    {
+      "header": "Hit Points",
+      "level": "2",
+      "items": [
+        {
+          "name": "",
+          "text": ""
+        },
+        {
+          "name": "Hit Dice",
+          "text": "1d8 per warlock level"
+        },
+        {
+          "name": "Hit Points at 1st Level",
+          "text": "8 + your Constitution modifier"
+        },
+        {
+          "name": "Hit Points at Higher Levels",
+          "text": "1d8 (or 5) + your Constitution modifier per warlock level after 1st"
+        }
+      ]
+    },
+    {
+      "header": "Starting Proficiencies",
+      "level": "2",
+      "items": [
+        {
+          "name": "",
+          "text": "You are proficient with the following items, in addition to any proficiencies provided by your race or background."
+        },
+        {
+          "name": "Armor",
+          "text": "Light Armor"
+        },
+        {
+          "name": "Weapons",
+          "text": "simple Weapons"
+        },
+        {
+          "name": "Tools",
+          "text": "none"
+        },
+        {
+          "name": "Skills",
+          "text": "Choose two skills from Arcana, Deception, History, Intimidation, Investigation, Nature, and Religion"
+        }
+      ]
+    },
+    {
+      "header": "Starting Equipment",
+      "level": "2",
+      "items": [
+        {
+          "name": "",
+          "text": ""
+        },
+        {
+          "name": "",
+          "text": "You start with the following items, plus anything provided by your background."
+        },
+        {
+          "name": "",
+          "text": "• (a) a Light Crossbow and 20 bolts or (b) any simple weapon"
+        },
+        {
+          "name": "",
+          "text": "• (a) a Component pouch or (b) an arcane focus"
+        },
+        {
+          "name": "",
+          "text": "• (a) a Scholar's Pack or (b) a Dungeoneer's Pack"
+        },
+        {
+          "name": "",
+          "text": "• Leather Armor, any simple weapon, and two daggers"
+        },
+        {
+          "name": "",
+          "text": "Alternatively, you may start with 4d4 x 10 gp to buy your own Equipment."
+        }
+      ]
+    },
+    {
+      "type": "table",
+      "header": "Table: The Warlock",
+      "items": [
+        {
+          "type": "thead",
+          "rows": [
+            [
+              {
+                "type": "th",
+                "text": "Level",
+                "style": "text-align:center"
+              },
+              {
+                "type": "th",
+                "text": "Proficiency Bonus",
+                "style": "text-align:center"
+              },
+              {
+                "type": "th",
+                "text": "Features",
+                "style": "text-align:center"
+              },
+              {
+                "type": "th",
+                "text": "Cantrips Known",
+                "style": "text-align:center"
+              },
+              {
+                "type": "th",
+                "text": "Spells Known",
+                "style": "text-align:center"
+              },
+              {
+                "type": "th",
+                "text": "Spell Slots",
+                "style": "text-align:center"
+              },
+              {
+                "type": "th",
+                "text": "Slot Level",
+                "style": "text-align:center"
+              },
+              {
+                "type": "th",
+                "text": "InvocationsKnown",
+                "style": "text-align:center"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "tbody",
+          "rows": [
+            [
+              {
+                "type": "td",
+                "text": "1st",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+2",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "Otherworldly Patron, Pact Magic",
+                "style": "text-align:left"
+              },
+              {
+                "type": "td",
+                "text": "2",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "2",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "1",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "1st",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "2nd",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+2",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "Eldritch Invocations",
+                "style": "text-align:left"
+              },
+              {
+                "type": "td",
+                "text": "2",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "2",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "1st",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "2",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "3rd",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+2",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "Pact Boon",
+                "style": "text-align:left"
+              },
+              {
+                "type": "td",
+                "text": "2",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "4",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "2",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "2nd",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "2",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "4th",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+2",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "Ability Score Improvement",
+                "style": "text-align:left"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "5",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "2",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "2nd",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "2",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "5th",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:left"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "6",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "2",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3rd",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "6th",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "Otherworldly Patron feature",
+                "style": "text-align:left"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "7",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "2",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3rd",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "7th",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:left"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "8",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "2",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "4th",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "4",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "8th",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "Ability Score Improvement",
+                "style": "text-align:left"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "9",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "2",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "4th",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "4",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "9th",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+4",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:left"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "10",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "2",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "5th",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "5",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "10th",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+4",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "Otherworldly Patron feature",
+                "style": "text-align:left"
+              },
+              {
+                "type": "td",
+                "text": "4",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "10",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "2",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "5th",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "5",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "11th",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+4",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "Mystic Arcanum (6th level)",
+                "style": "text-align:left"
+              },
+              {
+                "type": "td",
+                "text": "4",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "11",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "5th",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "5",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "12th",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+4",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "Ability Score Improvement",
+                "style": "text-align:left"
+              },
+              {
+                "type": "td",
+                "text": "4",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "11",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "5th",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "6",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "13th",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+5",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "Mystic Arcanum (7th level)",
+                "style": "text-align:left"
+              },
+              {
+                "type": "td",
+                "text": "4",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "12",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "5th",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "6",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "14th",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+5",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "Otherworldly Patron feature",
+                "style": "text-align:left"
+              },
+              {
+                "type": "td",
+                "text": "4",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "12",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "5th",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "6",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "15th",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+5",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "Mystic Arcanum (8th level)",
+                "style": "text-align:left"
+              },
+              {
+                "type": "td",
+                "text": "4",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "13",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "5th",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "7",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "16th",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+5",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "Ability Score Improvement",
+                "style": "text-align:left"
+              },
+              {
+                "type": "td",
+                "text": "4",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "13",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "5th",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "7",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "17th",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+6",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "Mystic Arcanum (9th level)",
+                "style": "text-align:left"
+              },
+              {
+                "type": "td",
+                "text": "4",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "14",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "4",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "5th",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "7",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "18th",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+6",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:left"
+              },
+              {
+                "type": "td",
+                "text": "4",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "14",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "4",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "5th",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "8",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "19th",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+6",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "Ability Score Improvement",
+                "style": "text-align:left"
+              },
+              {
+                "type": "td",
+                "text": "4",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "15",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "4",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "5th",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "8",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "20th",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+6",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "Eldritch Master",
+                "style": "text-align:left"
+              },
+              {
+                "type": "td",
+                "text": "4",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "15",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "4",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "5th",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "8",
+                "style": "text-align:center"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "header": "Otherworldly Patron",
+      "level": "2",
+      "items": [
+        {
+          "name": "",
+          "text": "At 1st level, you have struck a bargain with an otherworldly being of your choice, such as the Fiend. Your choice grants you features at 1st level and again at 6th, 10th, and 14th level."
+        }
+      ]
+    },
+    {
+      "header": "Pact Magic",
+      "level": "2",
+      "items": [
+        {
+          "name": "",
+          "text": "Your arcane research and the magic bestowed on you by your patron have given you facility with Spells. See chapter 10 for the general rules of spellcasting and chapter 11 for the warlock spell list."
+        },
+        {
+          "name": "Cantrips",
+          "text": ""
+        },
+        {
+          "name": "",
+          "text": "You know two Cantrips of your choice from the warlock spell list. You learn additional warlock Cantrips of your choice at higher levels, as shown in the Cantrips Known column of the Warlock table."
+        },
+        {
+          "name": "Spell Slots",
+          "text": ""
+        },
+        {
+          "name": "",
+          "text": "The Warlock table shows how many Spell Slots you have. The table also shows what the level of those slots is; all of your Spell Slots are the same level. To cast one of your warlock Spells of 1st level or higher, you must expend a spell slot. You regain all expended Spell Slots when you finish a short or Long Rest."
+        },
+        {
+          "name": "",
+          "text": "    For example, when you are 5th level, you have two 3rd-level Spell Slots. To cast the 1st-level spell Thunderwave, you must spend one of those slots, and you cast it as a 3rd-level spell."
+        },
+        {
+          "name": "Spells Known of 1st Level and Higher",
+          "text": ""
+        },
+        {
+          "name": "",
+          "text": "At 1st level, you know two 1st-level Spells of your choice from the warlock spell list."
+        },
+        {
+          "name": "",
+          "text": "    You learn a new warlock spell every time you gain a level from 2 through 9, as well as at level 19. A spell you choose must be of a level no higher than what's shown in the table's Slot Level column for your level. When you reach 6th level, for example, you learn a new warlock spell, which can be 1st, 2nd, or 3rd level."
+        },
+        {
+          "name": "",
+          "text": "    Additionally, when you gain a level in this class, you can choose one of the warlock Spells you know and replace it with another spell from the warlock spell list, which also must be of a level for which you have Spell Slots."
+        },
+        {
+          "name": "Spellcasting Ability",
+          "text": ""
+        },
+        {
+          "name": "",
+          "text": "Charisma is your spellcasting ability for your warlock Spells, so you use your Charisma whenever a spell refers to your spellcasting ability. In addition, you use your Charisma modifier when Setting the saving throw DC for a warlock spell you cast and when Making an Attack roll with one."
+        },
+        {
+          "name": "Spell save DC",
+          "text": "= 8 + Proficiency bonus + Charisma modifier"
+        },
+        {
+          "name": "Spell Attack modifier",
+          "text": "= Proficiency bonus + Charisma modifier"
+        },
+        {
+          "name": "Spellcasting Focus",
+          "text": ""
+        },
+        {
+          "name": "",
+          "text": "You can use an arcane focus as a spellcasting focus for your warlock Spells."
+        }
+      ]
+    },
+    {
+      "header": "Eldritch Invocations",
+      "level": "2",
+      "items": [
+        {
+          "name": "",
+          "text": "In your study of occult lore, you have unearthed eldritch invocations, fragments of forbidden knowledge that imbue you with an abiding magical ability."
+        },
+        {
+          "name": "",
+          "text": "    At 2nd level, you gain two eldritch invocations of your choice. Your invocation options are detailed at the end of the class description. When you gain certain warlock levels, you gain additional invocations of your choice."
+        },
+        {
+          "name": "",
+          "text": "    Additionally, when you gain a level in this class, you can choose one of the invocations you know and replace it with another invocation that you could learn at that level. A level prerequisite in an invocation refers to warlock level, not character level."
+        }
+      ]
+    },
+    {
+      "header": "Pact Boon",
+      "level": "2",
+      "items": [
+        {
+          "name": "",
+          "text": "At 3rd level, your otherworldly patron bestows a gift upon you for your loyal service. You gain one of the following features of your choice."
+        }
+      ]
+    },
+    {
+      "header": "Pact of the Chain",
+      "level": "3",
+      "items": [
+        {
+          "name": "",
+          "text": ""
+        },
+        {
+          "name": "",
+          "text": "You learn the Find Familiar spell and can cast it as a ritual. The spell doesn’t count against your number of Spells known."
+        },
+        {
+          "name": "",
+          "text": "When you cast the spell, you can choose one of the normal forms for your familiar or one of the following Special forms: imp, Pseudodragon, Quasit, or Sprite."
+        },
+        {
+          "name": "",
+          "text": "Additionally, when you take the Attack action, you can forgo one of your own attacks to allow your familiar to make one Attack of its own with its reaction."
+        }
+      ]
+    },
+    {
+      "header": "Pact of the Blade",
+      "level": "3",
+      "items": [
+        {
+          "name": "",
+          "text": "You can use your action to create a pact weapon in your empty hand. You can choose the form that this melee weapon takes each time you create it. You are proficient with it while you wield it. This weapon counts as magical for the purpose of overcoming Resistance and immunity to nonmagical attacks and damage."
+        },
+        {
+          "name": "",
+          "text": "Your pact weapon disappears if it is more than 5 feet away from you for 1 minute or more. It also disappears if you use this feature again, if you dismiss the weapon (no action required), or if you die."
+        },
+        {
+          "name": "",
+          "text": "You can transform one Magic Weapon into your pact weapon by performing a Special ritual while you hold the weapon. You perform the ritual over the course of 1 hour, which can be done during a Short Rest. You can then dismiss the weapon, shunting it into an extradimensional space, and it appears whenever you create your pact weapon thereafter. You can’t affect an artifact or a sentient weapon in this way. The weapon ceases being your pact weapon if you die, if you perform the 1-hour ritual on a different weapon, or if you use a 1-hour ritual to break your bond to it. The weapon appears at your feet if it is in the extradimensional space when the bond breaks."
+        }
+      ]
+    },
+    {
+      "header": "Pact of the Tome",
+      "level": "3",
+      "items": [
+        {
+          "name": "",
+          "text": "Your patron gives you a grimoire called a Book of Shadows. When you gain this feature, choose three Cantrips from any class’s spell list (the three needn’t be from the same list). While the book is on your person, you can cast those Cantrips at will. They don’t count against your number of Cantrips known. If they don’t appear on the warlock spell list, they are nonetheless warlock Spells for you."
+        },
+        {
+          "name": "",
+          "text": "If you lose your Book of Shadows, you can perform a 1-hour ceremony to receive a replacement from your patron. This ceremony can be performed during a short or Long Rest, and it destroys the previous book. The book turns to ash when you die."
+        }
+      ]
+    },
+    {
+      "header": "Ability Score Improvement",
+      "level": "2",
+      "items": [
+        {
+          "name": "",
+          "text": "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two Ability Scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature."
+        }
+      ]
+    },
+    {
+      "header": "Mystic Arcanum",
+      "level": "2",
+      "items": [
+        {
+          "name": "",
+          "text": "At 11th level, your patron bestows upon you a magical secret called an arcanum. Choose one 6th-level spell from the warlock spell list as this arcanum."
+        },
+        {
+          "name": "",
+          "text": "    You can cast your arcanum spell once without expending a spell slot. You must finish a Long Rest before you can do so again."
+        },
+        {
+          "name": "",
+          "text": "    At higher levels, you gain more warlock Spells of your choice that can be cast in this way: one 7th-level spell at 13th level, one 8th-level spell at 15th level, and one 9th-level spell at 17th level. You regain all uses of your Mystic A rcanum when you finish a Long Rest."
+        }
+      ]
+    },
+    {
+      "header": "Eldritch Master",
+      "level": "2",
+      "items": [
+        {
+          "name": "",
+          "text": "At 20th level, you can draw on your inner reserve of mystical power while entreating your patron to regain expended Spell Slots. You can spend 1 minute entreating your patron for aid to regain all your expended Spell Slots from your Pact Magic feature. Once you regain Spell Slots with this feature, you must finish a Long Rest before you can do so again."
+        }
+      ]
+    },
+    {
+      "header": "Eldritch Invocations",
+      "level": "2",
+      "items": [
+        {
+          "name": "",
+          "text": "If an eldritch invocation has Prerequisites, you must meet them to learn it. You can learn the invocation at the same time that you meet its Prerequisites. A level prerequisite refers to your level in this class."
+        }
+      ]
+    },
+    {
+      "header": "Agonizing Blast",
+      "level": "3",
+      "items": [
+        {
+          "name": "",
+          "text": ""
+        },
+        {
+          "name": "Prerequisite",
+          "text": "Eldritch Blast cantrip"
+        },
+        {
+          "name": "",
+          "text": "When you cast Eldritch Blast, add your Charisma modifier to the damage it deals on a hit."
+        }
+      ]
+    },
+    {
+      "header": "Armor of Shadows",
+      "level": "3",
+      "items": [
+        {
+          "name": "",
+          "text": "You can cast Mage Armor on yourself at will, without expending a spell slot or material Components."
+        }
+      ]
+    },
+    {
+      "header": "Ascendant Step",
+      "level": "3",
+      "items": [
+        {
+          "name": "",
+          "text": ""
+        },
+        {
+          "name": "Prerequisite",
+          "text": "9th level"
+        },
+        {
+          "name": "",
+          "text": "You can cast Levitate on yourself at will, without expending a spell slot or material Components."
+        }
+      ]
+    },
+    {
+      "header": "Beast Speech",
+      "level": "3",
+      "items": [
+        {
+          "name": "",
+          "text": ""
+        },
+        {
+          "name": "",
+          "text": "You can cast Speak with Animals at will, without expending a spell slot."
+        }
+      ]
+    },
+    {
+      "header": "Beguiling Influence",
+      "level": "3",
+      "items": [
+        {
+          "name": "",
+          "text": "You gain proficiency in the Deception and Persuasion skills."
+        }
+      ]
+    },
+    {
+      "header": "Bewitching Whispers",
+      "level": "3",
+      "items": [
+        {
+          "name": "",
+          "text": ""
+        },
+        {
+          "name": "Prerequisite",
+          "text": "7th level"
+        },
+        {
+          "name": "",
+          "text": "You can cast Compulsion once using a warlock spell slot. You can’t do so again until you finish a Long Rest."
+        }
+      ]
+    },
+    {
+      "header": "Book of Ancient Secrets",
+      "level": "3",
+      "items": [
+        {
+          "name": "",
+          "text": ""
+        },
+        {
+          "name": "Prerequisite",
+          "text": "Pact of the Tome feature"
+        },
+        {
+          "name": "",
+          "text": "You can now inscribe magical Rituals in your Book of Shadows. Choose two 1st-level Spells that have the ritual tag from any class’s spell list (the two needn’t be from the same list). The Spells appear in the book and don’t count against the number of Spells you know. With your Book of Shadows in hand, you can cast the chosen Spells as Rituals. You can’t cast the Spells except as Rituals, unless you’ve learned them by some other means. You can also cast a warlock spell you know as a ritual if it has the ritual tag."
+        },
+        {
+          "name": "",
+          "text": "On your adventures, you can add other ritual Spells to your Book of Shadows. When you find such a spell, you can add it to the book if the spell’s level is equal to or less than half your warlock level (rounded up) and if you can spare the time to transcribe the spell. For each level of the spell, the transcription process takes 2 hours and costs 50 gp for the rare inks needed to inscribe it."
+        }
+      ]
+    },
+    {
+      "header": "Chains of Carceri",
+      "level": "3",
+      "items": [
+        {
+          "name": "",
+          "text": ""
+        },
+        {
+          "name": "Prerequisite",
+          "text": "15th level, Pact of the Chain feature"
+        },
+        {
+          "name": "",
+          "text": "You can cast Hold Monster at will—targeting a celestial, fiend, or elemental—without expending a spell slot or material Components. You must finish a Long Rest before you can use this invocation on the same creature again."
+        }
+      ]
+    },
+    {
+      "header": "Devil’s Sight",
+      "level": "3",
+      "items": [
+        {
+          "name": "",
+          "text": "You can see normally in Darkness, both magical and nonmagical, to a distance of 120 feet."
+        }
+      ]
+    },
+    {
+      "header": "Dreadful Word",
+      "level": "3",
+      "items": [
+        {
+          "name": "",
+          "text": ""
+        },
+        {
+          "name": "Prerequisite",
+          "text": "7th level"
+        },
+        {
+          "name": "",
+          "text": "You can cast Confusion once using a warlock spell slot. You can’t do so again until you finish a Long Rest."
+        }
+      ]
+    },
+    {
+      "header": "Eldritch Sight",
+      "level": "3",
+      "items": [
+        {
+          "name": "",
+          "text": "You can cast Detect Magic at will, without expending a spell slot."
+        }
+      ]
+    },
+    {
+      "header": "Eldritch Spear",
+      "level": "3",
+      "items": [
+        {
+          "name": "",
+          "text": ""
+        },
+        {
+          "name": "Prerequisite",
+          "text": "Eldritch Blast cantrip"
+        },
+        {
+          "name": "",
+          "text": "When you cast Eldritch Blast, its range is 300 feet."
+        }
+      ]
+    },
+    {
+      "header": "Eyes of the Rune Keeper",
+      "level": "3",
+      "items": [
+        {
+          "name": "",
+          "text": "You can read all writing."
+        }
+      ]
+    },
+    {
+      "header": "Fiendish Vigor",
+      "level": "3",
+      "items": [
+        {
+          "name": "",
+          "text": "You can cast False Life on yourself at will as a 1st-level spell, without expending a spell slot or material Components."
+        }
+      ]
+    },
+    {
+      "header": "Gaze of Two Minds",
+      "level": "3",
+      "items": [
+        {
+          "name": "",
+          "text": "You can use your action to touch a willing humanoid and perceive through its senses until the end of your next turn. As long as the creature is on the same plane of existence as you, you can use your action on subsequent turns to maintain this connection, extending the Duration until the end of your next turn. While perceiving through the other creature’s senses, you benefit from any Special senses possessed by that creature, and you are Blinded and Deafened to your own surroundings."
+        }
+      ]
+    },
+    {
+      "header": "Lifedrinker",
+      "level": "3",
+      "items": [
+        {
+          "name": "",
+          "text": ""
+        },
+        {
+          "name": "Prerequisite",
+          "text": "12th level, Pact of the Blade feature"
+        },
+        {
+          "name": "",
+          "text": "When you hit a creature with your pact weapon, the creature takes extra necrotic damage equal to your Charisma modifier (minimum 1)."
+        }
+      ]
+    },
+    {
+      "header": "Mask of Many Faces",
+      "level": "3",
+      "items": [
+        {
+          "name": "",
+          "text": "You can cast Disguise Self at will, without expending a spell slot."
+        }
+      ]
+    },
+    {
+      "header": "Master of Myriad Forms",
+      "level": "3",
+      "items": [
+        {
+          "name": "",
+          "text": ""
+        },
+        {
+          "name": "Prerequisite",
+          "text": "15th level"
+        },
+        {
+          "name": "",
+          "text": "You can cast Alter Self at will, without expending a spell slot."
+        }
+      ]
+    },
+    {
+      "header": "Minions of Chaos",
+      "level": "3",
+      "items": [
+        {
+          "name": "",
+          "text": ""
+        },
+        {
+          "name": "Prerequisite",
+          "text": "9th level"
+        },
+        {
+          "name": "",
+          "text": "You can cast Conjure Elemental once using a warlock spell slot. You can’t do so again until you finish a Long Rest."
+        }
+      ]
+    },
+    {
+      "header": "Mire the Mind",
+      "level": "3",
+      "items": [
+        {
+          "name": "",
+          "text": ""
+        },
+        {
+          "name": "Prerequisite",
+          "text": "5th level"
+        },
+        {
+          "name": "",
+          "text": "You can cast slow once using a warlock spell slot. You can’t do so again until you finish a Long Rest."
+        }
+      ]
+    },
+    {
+      "header": "Misty Visions",
+      "level": "3",
+      "items": [
+        {
+          "name": "",
+          "text": "You can cast Silent Image at will, without expending a spell slot or material Components."
+        }
+      ]
+    },
+    {
+      "header": "One with Shadows",
+      "level": "3",
+      "items": [
+        {
+          "name": "",
+          "text": ""
+        },
+        {
+          "name": "Prerequisite",
+          "text": "5th level"
+        },
+        {
+          "name": "",
+          "text": "When you are in an area of dim light or Darkness, you can use your action to become Invisible until you move or take an action or a reaction."
+        }
+      ]
+    },
+    {
+      "header": "Otherworldly Leap",
+      "level": "3",
+      "items": [
+        {
+          "name": "",
+          "text": ""
+        },
+        {
+          "name": "Prerequisite",
+          "text": "9th level"
+        },
+        {
+          "name": "",
+          "text": "You can cast jump on yourself at will, without expending a spell slot or material Components."
+        }
+      ]
+    },
+    {
+      "header": "Repelling Blast",
+      "level": "3",
+      "items": [
+        {
+          "name": "",
+          "text": ""
+        },
+        {
+          "name": "Prerequisite",
+          "text": "Eldritch Blast cantrip"
+        },
+        {
+          "name": "",
+          "text": "When you hit a creature with Eldritch Blast, you can push the creature up to 10 feet away from you in a straight line."
+        }
+      ]
+    },
+    {
+      "header": "Sculptor of Flesh",
+      "level": "3",
+      "items": [
+        {
+          "name": "",
+          "text": ""
+        },
+        {
+          "name": "Prerequisite",
+          "text": "7th level"
+        },
+        {
+          "name": "",
+          "text": "You can cast Polymorph once using a warlock spell slot. You can’t do so again until you finish a Long Rest."
+        }
+      ]
+    },
+    {
+      "header": "Sign of Ill Omen",
+      "level": "3",
+      "items": [
+        {
+          "name": "",
+          "text": ""
+        },
+        {
+          "name": "Prerequisite",
+          "text": "5th level"
+        },
+        {
+          "name": "",
+          "text": "You can cast Bestow Curse once using a warlock spell slot. You can’t do so again until you finish a Long Rest."
+        }
+      ]
+    },
+    {
+      "header": "Thief of Five Fates",
+      "level": "3",
+      "items": [
+        {
+          "name": "",
+          "text": "You can cast bane once using a warlock spell slot. You can’t do so again until you finish a Long Rest."
+        }
+      ]
+    },
+    {
+      "header": "Thirsting Blade",
+      "level": "3",
+      "items": [
+        {
+          "name": "",
+          "text": ""
+        },
+        {
+          "name": "Prerequisite",
+          "text": "5th level, Pact of the Blade feature"
+        },
+        {
+          "name": "",
+          "text": "You can Attack with your pact weapon twice, instead of once, whenever you take the Attack action on Your Turn."
+        }
+      ]
+    },
+    {
+      "header": "Visions of Distant Realms",
+      "level": "3",
+      "items": [
+        {
+          "name": "",
+          "text": ""
+        },
+        {
+          "name": "Prerequisite",
+          "text": "15th level"
+        },
+        {
+          "name": "",
+          "text": "You can cast Arcane Eye at will, without expending a spell slot."
+        }
+      ]
+    },
+    {
+      "header": "Voice of the Chain Master",
+      "level": "3",
+      "items": [
+        {
+          "name": "",
+          "text": ""
+        },
+        {
+          "name": "Prerequisite",
+          "text": "Pact of the Chain feature"
+        },
+        {
+          "name": "",
+          "text": "You can communicate telepathically with your familiar and perceive through your familiar’s senses as long as you are on the same plane of existence."
+        },
+        {
+          "name": "",
+          "text": "Additionally, while perceiving through your familiar’s senses, you can also speak through your familiar in your own voice, even if your familiar is normally incapable of Speech."
+        }
+      ]
+    },
+    {
+      "header": "Whispers of the Grave",
+      "level": "3",
+      "items": [
+        {
+          "name": "",
+          "text": ""
+        },
+        {
+          "name": "Prerequisite",
+          "text": "9th level"
+        },
+        {
+          "name": "",
+          "text": "You can cast Speak with Dead at will, without expending a spell slot."
+        }
+      ]
+    },
+    {
+      "header": "Witch Sight",
+      "level": "3",
+      "items": [
+        {
+          "name": "",
+          "text": ""
+        },
+        {
+          "name": "Prerequisite",
+          "text": "15th level"
+        },
+        {
+          "name": "",
+          "text": "You can see the true form of any shapechanger or creature concealed by Illusion or Transmutation magic while the creature is within 30 feet of you and within line of sight."
+        }
+      ]
+    },
+    {
+      "header": "Otherworldly Patrons",
+      "level": "2",
+      "items": [
+        {
+          "name": "",
+          "text": "The beings that serve as patrons for warlocks are mighty inhabitants of other planes of existence—not gods, but almost godlike in their power. Various patrons give their warlocks access to different powers and invocations, and expect significant favors in return."
+        },
+        {
+          "name": "",
+          "text": "Some patrons collect warlocks, doling out mystic knowledge relatively freely or boasting of their ability to bind mortals to their will. Other patrons bestow their power only grudgingly, and might make a pact with only one warlock. Warlocks who serve the same patron might view each other as allies, siblings, or rivals."
+        }
+      ]
+    },
+    {
+      "header": "The Fiend",
+      "level": "3",
+      "items": [
+        {
+          "name": "",
+          "text": "You have made a pact with a fiend from the lower planes of existence, a being whose aims are evil, even if you strive against those aims. Such beings desire the corruption or destruction of all things, ultimately including you. Fiends powerful enough to forge a pact include demon lords such as Demogorgon, Orcus, Fraz’Urb-luu, and Baphomet; archdevils such as Asmodeus, Dispater, Mephistopheles, and Belial; pit Fiends and balors that are especially mighty; and ultroloths and other lords of the yugoloths."
+        }
+      ]
+    },
+    {
+      "header": "Expanded Spell List",
+      "level": "4",
+      "items": [
+        {
+          "name": "",
+          "text": "The Fiend lets you choose from an expanded list of Spells when you learn a warlock spell. The following Spells are added to the warlock spell list for you."
+        }
+      ]
+    },
+    {
+      "type": "table",
+      "header": "Table: Fiend Expanded Spells",
+      "items": [
+        {
+          "type": "thead",
+          "rows": [
+            [
+              {
+                "type": "th",
+                "text": "Spell Level"
+              },
+              {
+                "type": "th",
+                "text": "Spells"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "tbody",
+          "rows": [
+            [
+              {
+                "type": "td",
+                "text": "1st"
+              },
+              {
+                "type": "td",
+                "text": "Burning Hands, Command"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "2nd"
+              },
+              {
+                "type": "td",
+                "text": "Blindness/Deafness, Scorching Ray"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "3rd"
+              },
+              {
+                "type": "td",
+                "text": "Fireball, Stinking Cloud"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "4th"
+              },
+              {
+                "type": "td",
+                "text": "Fire Shield, Wall of Fire"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "5th"
+              },
+              {
+                "type": "td",
+                "text": "Flame Strike, Hallow"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "header": "Dark One’s Blessing",
+      "level": "4",
+      "items": [
+        {
+          "name": "",
+          "text": "Starting at 1st level, when you reduce a hostile creature to 0 hit points, you gain Temporary Hit Points equal to your Charisma modifier + your warlock level (minimum of 1)."
+        }
+      ]
+    },
+    {
+      "header": "Dark One’s Own Luck",
+      "level": "4",
+      "items": [
+        {
+          "name": "",
+          "text": "Starting at 6th level, you can call on your patron to alter fate in your favor. When you make an ability check or a saving throw, you can use this feature to add a d10 to your roll. You can do so after seeing the initial roll but before any of the roll’s effects occur."
+        },
+        {
+          "name": "",
+          "text": "Once you use this feature, you can’t use it again until you finish a short or Long Rest."
+        }
+      ]
+    },
+    {
+      "header": "Fiendish Resilience",
+      "level": "4",
+      "items": [
+        {
+          "name": "",
+          "text": "Starting at 10th level, you can choose one damage type when you finish a short or Long Rest. You gain Resistance to that damage type until you choose a different one with this feature. Damage from magical Weapons or silver Weapons ignores this Resistance."
+        }
+      ]
+    },
+    {
+      "header": "Hurl Through Hell",
+      "level": "4",
+      "items": [
+        {
+          "name": "",
+          "text": "Starting at 14th level, when you hit a creature with an Attack, you can use this feature to instantly transport the target through the lower planes. The creature disappears and hurtles through a Nightmare landscape."
+        },
+        {
+          "name": "",
+          "text": "At the end of your next turn, the target returns to the space it previously occupied, or the nearest unoccupied space. If the target is not a fiend, it takes 10d10 psychic damage as it reels from its horrific experience."
+        },
+        {
+          "name": "",
+          "text": "Once you use this feature, you can’t use it again until you finish a Long Rest."
+        }
+      ]
+    },
+    {
+      "header": "Your Pact Boon",
+      "level": "2",
+      "items": [
+        {
+          "name": "",
+          "text": "Each Pact Boon option produces a Special creature or an object that reflects your patron’s nature."
+        },
+        {
+          "name": "",
+          "text": "Pact of the Chain. Your familiar is more cunning than a typical familiar. Its default form can be a reflection of your patron, with imps and quasits tied to the Fiend."
+        },
+        {
+          "name": "",
+          "text": "Pact of the Blade. If you serve the Fiend, your weapon could be an axe made of black metal and adorned with decorative flames."
+        },
+        {
+          "name": "",
+          "text": "Pact of the Tome. Your Book of Shadows could be a weighty tome bound in demon hide studded with iron, holding Spells of Conjuration and a wealth of forbidden lore about the sinister regions of the cosmos, a gift of the Fiend."
+        }
+      ]
+    }
+  ],
+  "attributes": {
+    "Hit Dice": "d8",
+    "Saving Throws": "Wisdom, Charisma",
+    "Category": "Classes",
+    "Source": "SRD 5.0"
+  }
+}

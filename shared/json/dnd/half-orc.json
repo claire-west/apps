@@ -1,0 +1,56 @@
+{
+  "name": "Half-Orc",
+  "sections": [
+    {
+      "header": "Half-Orc Traits",
+      "level": "2",
+      "items": [
+        {
+          "name": "",
+          "text": "Your half-orc character has certain traits deriving from your orc ancestry."
+        },
+        {
+          "name": "Ability Score Increase",
+          "text": "Your Strength score increases by 2, and your Constitution score increases by 1."
+        },
+        {
+          "name": "Age",
+          "text": "Half-Orcs mature a little faster than humans, reaching adulthood around age 14. They age noticeably faster and rarely live longer than 75 years."
+        },
+        {
+          "name": "Alignment",
+          "text": "Half-Orcs inherit a tendency toward chaos from their orc parents and are not strongly inclined toward good. Half-Orcs raised among orcs and willing to live out their lives among them are usually evil."
+        },
+        {
+          "name": "Size",
+          "text": "Half-Orcs are somewhat larger and bulkier than humans, and they range from 5 to well over 6 feet tall. Your size is Medium."
+        },
+        {
+          "name": "Speed",
+          "text": "Your base walking speed is 30 feet."
+        },
+        {
+          "name": "Darkvision",
+          "text": "Thanks to your orc blood, you have superior vision in dark and dim Conditions. You can see in dim light within 60 feet of you as if it were bright light, and in Darkness as if it were dim light. You can’t discern color in Darkness, only shades of gray."
+        },
+        {
+          "name": "Menacing",
+          "text": "You gain proficiency in the Intimidation skill."
+        },
+        {
+          "name": "Relentless Endurance",
+          "text": "When you are reduced to 0 hit points but not killed outright, you can drop to 1 hit point instead. You can’t use this feature again until you finish a Long Rest."
+        },
+        {
+          "name": "Savage Attacks",
+          "text": "When you score a critical hit with a melee weapon Attack, you can roll one of the weapon’s damage dice one additional time and add it to the extra damage of the critical hit."
+        },
+        {
+          "name": "Languages",
+          "text": "You can speak, read, and write Common and Orc. Orc is a harsh, grating Language with hard consonants. It has no script of its own but is written in the Dwarvish script."
+        }
+      ]
+    }
+  ],
+  "attributes": { "Category": "Races" }
+}

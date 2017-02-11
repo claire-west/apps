@@ -1,0 +1,1126 @@
+{
+  "name": "Monk",
+  "sections": [
+    {
+      "header": "",
+      "items": [
+        {
+          "name": "",
+          "text": "As a monk, you gain the following Class Features."
+        }
+      ]
+    },
+    {
+      "header": "Hit Points",
+      "level": "2",
+      "items": [
+        {
+          "name": "",
+          "text": ""
+        },
+        {
+          "name": "Hit Dice",
+          "text": "1d8 per monk level"
+        },
+        {
+          "name": "Hit Points at 1st Level",
+          "text": "8 + your Constitution modifier"
+        },
+        {
+          "name": "Hit Points at Higher Levels",
+          "text": "1d8 (or 5) + your Constitution modifier per monk level after 1st"
+        }
+      ]
+    },
+    {
+      "header": "Starting Proficiencies",
+      "level": "2",
+      "items": [
+        {
+          "name": "",
+          "text": "You are proficient with the following items, in addition to any proficiencies provided by your race or background."
+        },
+        {
+          "name": "Armor",
+          "text": "none"
+        },
+        {
+          "name": "Weapons",
+          "text": "simple Weapons, shortswords"
+        },
+        {
+          "name": "Tools",
+          "text": "any one type of artisan's tools or any one musical instrument of your choice"
+        },
+        {
+          "name": "Skills",
+          "text": "Choose two from Acrobatics, Athletics, History, Insight, Religion, and Stealth"
+        }
+      ]
+    },
+    {
+      "header": "Starting Equipment",
+      "level": "2",
+      "items": [
+        {
+          "name": "",
+          "text": ""
+        },
+        {
+          "name": "",
+          "text": "You start with the following items, plus anything provided by your background."
+        },
+        {
+          "name": "",
+          "text": "• (a) a Shortsword or (b) any simple weapon"
+        },
+        {
+          "name": "",
+          "text": "• (a) a Dungeoneer's Pack or (b) an Explorer's Pack"
+        },
+        {
+          "name": "",
+          "text": "• 10 darts"
+        },
+        {
+          "name": "",
+          "text": "Alternatively, you may start with 5d4 gp to buy your own Equipment."
+        }
+      ]
+    },
+    {
+      "type": "table",
+      "header": "Table: The Monk",
+      "items": [
+        {
+          "type": "thead",
+          "rows": [
+            [
+              {
+                "type": "th",
+                "text": "Level",
+                "style": "text-align:center"
+              },
+              {
+                "type": "th",
+                "text": "Proficiency Bonus",
+                "style": "text-align:center"
+              },
+              {
+                "type": "th",
+                "text": "Martial Arts",
+                "style": "text-align:center"
+              },
+              {
+                "type": "th",
+                "text": "Ki Points",
+                "style": "text-align:center"
+              },
+              {
+                "type": "th",
+                "text": "Unarmored Movement",
+                "style": "text-align:center"
+              },
+              {
+                "type": "th",
+                "text": "Features",
+                "style": "text-align:center"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "tbody",
+          "rows": [
+            [
+              {
+                "type": "td",
+                "text": "1st",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+2",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "1d4",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "—",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "—",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "Unarmored Defense, Martial Arts"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "2nd",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+2",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "1d4",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "2",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+10 ft.",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "Ki, Unarmored Movement"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "3rd",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+2",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "1d4",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+10 ft.",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "Monastic Tradition, Deflect Missiles"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "4th",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+2",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "1d4",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "4",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+10 ft.",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "Ability Score Improvement, Slow Fall"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "5th",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "1d6",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "5",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+10 ft.",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "Extra Attack, Stunning Strike"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "6th",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "1d6",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "6",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+15 ft.",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "Ki-­Empowered Strikes, Monastic Tradition feature"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "7th",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "1d6",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "7",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+15 ft.",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "Evasion, Stillness of Mind"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "8th",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "1d6",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "8",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+15 ft.",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "Ability Score Improvement"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "9th",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+4",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "1d6",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "9",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+15 ft.",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "Unarmored Movement improvement"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "10th",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+4",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "1d6",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "10",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+20 ft.",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "Purity of Body"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "11th",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+4",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "1d8",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "11",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+20 ft.",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "Monastic Tradition feature"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "12th",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+4",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "1d8",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "12",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+20 ft.",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "Ability Score Improvement"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "13th",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+5",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "1d8",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "13",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+20 ft.",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "Tongue of the Sun and Moon"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "14th",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+5",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "1d8",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "14",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+25 ft.",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "Diamond Soul"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "15th",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+5",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "1d8",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "15",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+25 ft.",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "Timeless Body"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "16th",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+5",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "1d8",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "16",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+25 ft.",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "Ability Score Improvement"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "17th",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+6",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "1d10",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "17",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+25 ft.",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "Monastic Tradition feature"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "18th",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+6",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "1d10",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "18",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+30 ft.",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "Empty Body"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "19th",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+6",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "1d10",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "19",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+30 ft.",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "Ability Score Improvement"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "20th",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+6",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "1d10",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "20",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+30 ft.",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "Perfect Self"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "header": "Unarmored Defense",
+      "level": "2",
+      "items": [
+        {
+          "name": "",
+          "text": "Beginning at 1st level, while you are wearing no armor and not wielding a Shield, your AC equals 10 + your Dexterity modifier + your Wisdom modifier."
+        }
+      ]
+    },
+    {
+      "header": "Martial Arts",
+      "level": "2",
+      "items": [
+        {
+          "name": "",
+          "text": "Your practice of martial arts gives you mastery of Combat styles that use unarmed strikes and monk Weapons, which are shortswords and any simple Melee Weapons that don't have the Two-Handed or heavy property."
+        },
+        {
+          "name": "",
+          "text": "    You gain the following benefits while you are unarmed or wielding only monk Weapons and you aren't wearing armor or wielding a Shield."
+        },
+        {
+          "name": "",
+          "text": "• You can use Dexterity instead of Strength for the Attack and Damage Rolls of your unarmed strikes and monk Weapons."
+        },
+        {
+          "name": "",
+          "text": "• You can roll a d4 in place of the normal damage of your unarmed strike or monk weapon."
+        },
+        {
+          "name": "",
+          "text": "• When you use the Attack action with an unarmed strike or a monk weapon on Your Turn, you can make one unarmed strike as a Bonus Action. For example, if you take the Attack action and Attack with a Quarterstaff, you can also make an unarmed strike as a Bonus Action, assuming you haven't already taken a Bonus Action this turn."
+        },
+        {
+          "name": "",
+          "text": "    Certain monasteries use specialized forms of the monk Weapons. For example, you might use a club that is two lengths of wood connected by a short chain (called a nunchaku) or a Sickle with a shorter, straighter blade (called a kama). Whatever name you use for a monk weapon, you can use the game Statistics provided for the weapon."
+        }
+      ]
+    },
+    {
+      "header": "Ki",
+      "level": "2",
+      "items": [
+        {
+          "name": "",
+          "text": "Starting at 2nd level, your Training allows you to harness the mystic energy of ki. Your access to this energy is represented by a number of ki points. Your monk level determines the number of points you have, as shown in the Ki Points column of the Monk table."
+        },
+        {
+          "name": "",
+          "text": "    You can spend these points to fuel various ki features. You start knowing three such features: Flurry of Blows, Patient Defense, and Step of the Wind. You learn more ki features as you gain levels in this class."
+        },
+        {
+          "name": "",
+          "text": "    When you spend a ki point, it is unavailable until you finish a short or Long Rest, at the end of which you draw all of your expended ki back into yourself. You must spend at least 30 minutes of the rest meditating to regain your ki points."
+        },
+        {
+          "name": "",
+          "text": "    Some of your ki features require your target to make a saving throw to resist the feature's effects. The saving throw DC is calculated as follows: "
+        },
+        {
+          "name": "Ki save DC",
+          "text": "= 8 + your proficiency bonus + your Wisdom modifier"
+        }
+      ]
+    },
+    {
+      "header": "Flurry of Blows",
+      "level": "3",
+      "items": [
+        {
+          "name": "",
+          "text": "Immediately after you take the Attack action on Your Turn, you can spend 1 ki point to make two unarmed strikes as a Bonus Action."
+        }
+      ]
+    },
+    {
+      "header": "Patient Defense",
+      "level": "3",
+      "items": [
+        {
+          "name": "",
+          "text": "You can spend 1 ki point to take the Dodge action as a Bonus Action on Your Turn."
+        }
+      ]
+    },
+    {
+      "header": "Step of the Wind",
+      "level": "3",
+      "items": [
+        {
+          "name": "",
+          "text": "You can spend 1 ki point to take the Disengage or Dash action as a Bonus Action on Your Turn, and your jump distance is doubled for the turn."
+        }
+      ]
+    },
+    {
+      "header": "Unarmored Movement",
+      "level": "2",
+      "items": [
+        {
+          "name": "",
+          "text": ""
+        },
+        {
+          "name": "",
+          "text": "Starting at 2nd level, your speed increases by 10 feet while you are not wearing armor or wielding a Shield. This bonus increases when you reach certain monk levels, as shown in the Monk table."
+        },
+        {
+          "name": "",
+          "text": "    At 9th level, you gain the ability to move along vertical surfaces and across liquids on Your Turn without Falling during the move."
+        }
+      ]
+    },
+    {
+      "header": "Monastic Tradition",
+      "level": "2",
+      "items": [
+        {
+          "name": "",
+          "text": "When you reach 3rd level, you commit yourself to a monastic tradition, such as the Way of the Open Hand. Your tradition grants you features at 3rd level and again at 6th, 11th, and 17th level."
+        }
+      ]
+    },
+    {
+      "header": "Deflect Missiles",
+      "level": "2",
+      "items": [
+        {
+          "name": "",
+          "text": "Starting at 3rd level, you can use your reaction to deflect or catch the missile when you are hit by a ranged weapon Attack. When you do so, the damage you take from the Attack is reduced by 1d 10 + your Dexterity modifier + your monk level."
+        },
+        {
+          "name": "",
+          "text": "    If you reduce the damage to 0, you can catch the missile if it is small enough for you to hold in one hand and you have at least one hand free. If you catch a missile in this way, you can spend 1 ki point to make a ranged Attack (range 20 feet/60 feet) with the weapon or piece of ammunition you just caught, as part of the same reaction. You make this Attack with proficiency, regardless of your weapon proficiencies, and the missile counts as a monk weapon for the Attack."
+        }
+      ]
+    },
+    {
+      "header": "Ability Score Improvement",
+      "level": "2",
+      "items": [
+        {
+          "name": "",
+          "text": "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two Ability Scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature."
+        }
+      ]
+    },
+    {
+      "header": "Slow Fall",
+      "level": "2",
+      "items": [
+        {
+          "name": "",
+          "text": "Beginning at 4th level, you can use your reaction when you fall to reduce any Falling damage you take by an amount equal to five times your monk level."
+        }
+      ]
+    },
+    {
+      "header": "Extra Attack",
+      "level": "2",
+      "items": [
+        {
+          "name": "",
+          "text": ""
+        },
+        {
+          "name": "",
+          "text": "Beginning at 5th level, you can Attack twice, instead of once, whenever you take the Attack action on Your Turn."
+        }
+      ]
+    },
+    {
+      "header": "Stunning Strike",
+      "level": "2",
+      "items": [
+        {
+          "name": "",
+          "text": "Starting at 5th level, you can interfere with the flow of ki in an opponent's body. When you hit another creature with a melee weapon Attack, you can spend 1 ki point to attempt a stunning strike. The target must succeed on a Constitution saving throw or be Stunned until the end of your next turn."
+        }
+      ]
+    },
+    {
+      "header": "Ki-Empowered Strikes",
+      "level": "2",
+      "items": [
+        {
+          "name": "",
+          "text": "Starting at 6th level, your unarmed strikes count as magical for the purpose of overcoming Resistance and immunity to nonmagical attacks and damage."
+        }
+      ]
+    },
+    {
+      "header": "Stillness of Mind",
+      "level": "2",
+      "items": [
+        {
+          "name": "",
+          "text": "Starting at 7th level, you can use your action to end one effect on yourself that is causing you to be Charmed or Frightened."
+        }
+      ]
+    },
+    {
+      "header": "Evasion",
+      "level": "2",
+      "items": [
+        {
+          "name": "",
+          "text": "At 7th level, your instinctive agility lets you dodge out of the way of certain area effects, such as a blue dragon's lightning breath or a Fireball spell. When you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail."
+        }
+      ]
+    },
+    {
+      "header": "Purity of Body",
+      "level": "2",
+      "items": [
+        {
+          "name": "",
+          "text": "At 10th level, your mastery of the ki flowing through you makes you immune to disease and poison."
+        }
+      ]
+    },
+    {
+      "header": "Tongue of the Sun and Moon",
+      "level": "2",
+      "items": [
+        {
+          "name": "",
+          "text": "Starting at 13th level, you learn to touch the ki of other minds so that you understand all spoken languages. Moreover, any creature that can understand a Language can understand what you say."
+        }
+      ]
+    },
+    {
+      "header": "Diamond Soul",
+      "level": "2",
+      "items": [
+        {
+          "name": "",
+          "text": "Beginning at 14th level, your mastery of ki grants you proficiency in all saving throws."
+        },
+        {
+          "name": "",
+          "text": "    Additionally, whenever you make a saving throw and fail, you can spend 1 ki point to reroll it and take the second result."
+        }
+      ]
+    },
+    {
+      "header": "Timeless Body",
+      "level": "2",
+      "items": [
+        {
+          "name": "",
+          "text": "At 15th level, your ki sustains you so that you suffer none of the frailty of old age, and you can't be aged magically. You can still die of old age, however. In addition, you no longer need food or water."
+        }
+      ]
+    },
+    {
+      "header": "Empty Body",
+      "level": "2",
+      "items": [
+        {
+          "name": "",
+          "text": "Beginning at 18th level, you can use your action to spend 4 ki points to become Invisible for 1 minute. During that time, you also have Resistance to all damage but force damage."
+        },
+        {
+          "name": "",
+          "text": "    Additionally, you can spend 8 ki points to cast the Astral Projection spell, without needing material Components. When you do so, you can't take any other creatures with you."
+        }
+      ]
+    },
+    {
+      "header": "Perfect Soul",
+      "level": "2",
+      "items": [
+        {
+          "name": "",
+          "text": "At 20th level, when you roll for initiative and have no ki points remaining, you regain 4 ki points."
+        }
+      ]
+    },
+    {
+      "header": "Monastic Traditions",
+      "level": "2",
+      "items": [
+        {
+          "name": "",
+          "text": "Three traditions of monastic pursuit are common in the monasteries scattered across the multiverse."
+        },
+        {
+          "name": "",
+          "text": "Most monasteries practice one tradition exclusively, but a few honor the three traditions and instruct each monk according to his or her aptitude and interest. All three traditions rely on the same basic techniques, diverging as the student grows more adept. Thus, a monk need choose a tradition only upon reaching 3rd level."
+        }
+      ]
+    },
+    {
+      "header": "Way of the Open Hand",
+      "level": "3",
+      "items": [
+        {
+          "name": "",
+          "text": "Monks of the Way of the Open Hand are the ultimate masters of martial arts Combat, whether armed or unarmed. They learn techniques to push and trip their opponents, manipulate ki to heal damage to their bodies, and practice advanced meditation that can protect them from harm."
+        }
+      ]
+    },
+    {
+      "header": "Open Hand Technique",
+      "level": "4",
+      "items": [
+        {
+          "name": "",
+          "text": "Starting when you choose this tradition at 3rd level, you can manipulate your enemy’s ki when you harness your own. Whenever you hit a creature with one of the attacks granted by your Flurry of Blows, you can impose one of the following effects on that target:"
+        },
+        {
+          "name": "",
+          "text": "• It must succeed on a Dexterity saving throw or be knocked prone."
+        },
+        {
+          "name": "",
+          "text": "• It must make a Strength saving throw. If it fails, you can push it up to 15 feet away from you."
+        },
+        {
+          "name": "",
+          "text": "• It can’t take reactions until the end of your next turn."
+        }
+      ]
+    },
+    {
+      "header": "Wholeness of Body",
+      "level": "4",
+      "items": [
+        {
+          "name": "",
+          "text": "At 6th level, you gain the ability to heal yourself. As an action, you can regain hit points equal to three times your monk level. You must finish a Long Rest before you can use this feature again."
+        }
+      ]
+    },
+    {
+      "header": "Tranquility",
+      "level": "4",
+      "items": [
+        {
+          "name": "",
+          "text": "Beginning at 11th level, you can enter a Special meditation that surrounds you with an aura of peace. At the end of a Long Rest, you gain the effect of a Sanctuary spell that lasts until the start of your next Long Rest (the spell can end early as normal). The saving throw DC for the spell equals 8 + your Wisdom modifier + your proficiency bonus."
+        }
+      ]
+    },
+    {
+      "header": "Quivering Palm",
+      "level": "4",
+      "items": [
+        {
+          "name": "",
+          "text": "At 17th level, you gain the ability to set up lethal vibrations in someone’s body. When you hit a creature with an unarmed strike, you can spend 3 ki points to start these imperceptible vibrations, which last for a number of days equal to your monk level. The vibrations are harmless unless you use your action to end them. To do so, you and the target must be on the same plane of existence. When you use this action, the creature must make a Constitution saving throw. If it fails, it is reduced to 0 hit points. If it succeeds, it takes 10d10 necrotic damage."
+        },
+        {
+          "name": "",
+          "text": "You can have only one creature under the effect of this feature at a time. You can choose to end the vibrations harmlessly without using an action."
+        }
+      ]
+    }
+  ],
+  "attributes": {
+    "Hit Dice": "d8",
+    "Saving Throws": "Strength, Dexterity",
+    "Category": "Classes",
+    "Source": "SRD 5.0"
+  }
+}

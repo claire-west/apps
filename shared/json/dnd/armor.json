@@ -1,0 +1,750 @@
+{
+  "name": "Armor",
+  "sections": [
+    {
+      "header": "",
+      "items": [
+        {
+          "name": "",
+          "text": "Fantasy gaming worlds are a vast tapestry made up of many different cultures, each with its own technology level. For this reason, adventurers have access to a variety of armor types, ranging from Leather Armor to Chain Mail to costly Plate Armor, with several other kinds of armor in between. The Armor table collects the most commonly available types of armor found in the game and separates them into three categories: light armor, medium armor, and heavy armor. Many warriors supplement their armor with a Shield."
+        },
+        {
+          "name": "",
+          "text": "The Armor table shows the cost, weight, and other properties of the common types of armor worn in fantasy gaming worlds."
+        },
+        {
+          "name": "Armor Proficiency",
+          "text": "Anyone can put on a suit of armor or strap a Shield to an arm. Only those proficient in the armor’s use know how to wear it effectively, however. Your class gives you proficiency with certain types of armor. If you wear armor that you lack proficiency with, you have disadvantage on any ability check, saving throw, or Attack roll that involves Strength or Dexterity, and you can’t cast Spells."
+        },
+        {
+          "name": "Armor Class (AC)",
+          "text": "Armor protects its wearer from attacks. The armor (and shield) you wear determines your base Armor Class."
+        },
+        {
+          "name": "Heavy Armor",
+          "text": "Heavier armor interferes with the wearer’s ability to move quickly, stealthily, and freely. If the Armor table shows “Str 13” or “Str 15” in the Strength column for an armor type, the armor reduces the wearer’s speed by 10 feet unless the wearer has a Strength score equal to or higher than the listed score."
+        },
+        {
+          "name": "Stealth",
+          "text": "If the Armor table shows “Disadvantage” in the Stealth column, the wearer has disadvantage on Dexterity (Stealth) checks."
+        },
+        {
+          "name": "Shields",
+          "text": "A Shield is made from wood or metal and is carried in one hand. Wielding a Shield increases your Armor Class by 2. You can benefit from only one Shield at a time."
+        }
+      ]
+    },
+    {
+      "header": "Light Armor",
+      "level": "3",
+      "items": [
+        {
+          "name": "",
+          "text": "Made from supple and thin materials, light armor favors agile adventurers since it offers some protection without sacrificing mobility. If you wear light armor, you add your Dexterity modifier to the base number from your armor type to determine your Armor Class."
+        },
+        {
+          "name": "Padded",
+          "text": "Padded Armor consists of quilted layers of cloth and batting."
+        },
+        {
+          "name": "Leather",
+          "text": "The Breastplate and shoulder protectors of this armor are made of leather that has been stiffened by being boiled in oil. The rest of the armor is made of softer and more flexible materials."
+        },
+        {
+          "name": "Studded Leather",
+          "text": "Made from tough but flexible leather, studded leather is reinforced with close-set rivets or spikes."
+        }
+      ]
+    },
+    {
+      "header": "Medium Armor",
+      "level": "3",
+      "items": [
+        {
+          "name": "",
+          "text": "Medium armor offers more protection than light armor, but it also impairs Movement more. If you wear medium armor, you add your Dexterity modifier, to a maximum of +2, to the base number from your armor type to determine your Armor Class."
+        },
+        {
+          "name": "Hide",
+          "text": "This crude armor consists of thick furs and pelts. It is commonly worn by Barbarian tribes, evil humanoids, and other folk who lack access to the tools and materials needed to create better armor."
+        },
+        {
+          "name": "Chain Shirt",
+          "text": "Made of interlocking metal rings, a Chain Shirt is worn between layers of clothing or leather. This armor offers modest protection to the wearer’s upper body and allows the sound of the rings rubbing against one another to be muffled by outer layers."
+        },
+        {
+          "name": "Scale Mail",
+          "text": "This armor consists of a coat and leggings (and perhaps a separate skirt) of leather covered with overlapping pieces of metal, much like the scales of a fish. The suit includes gauntlets."
+        },
+        {
+          "name": "Breastplate",
+          "text": "This armor consists of a fitted metal chest piece worn with supple leather. Although it leaves the legs and arms relatively unprotected, this armor provides good protection for the wearer’s vital organs while leaving the wearer relatively unencumbered."
+        },
+        {
+          "name": "Half Plate",
+          "text": "Half Plate consists of shaped metal plates that cover most of the wearer’s body. It does not include leg protection beyond simple greaves that are attached with leather straps."
+        }
+      ]
+    },
+    {
+      "header": "Heavy Armor",
+      "level": "3",
+      "items": [
+        {
+          "name": "",
+          "text": "Of all the armor categories, heavy armor offers the best protection. These suits of armor cover the entire body and are designed to stop a wide range of attacks. Only proficient warriors can manage their weight and bulk."
+        },
+        {
+          "name": "",
+          "text": "Heavy armor doesn’t let you add your Dexterity modifier to your Armor Class, but it also doesn’t penalize you if your Dexterity modifier is negative."
+        },
+        {
+          "name": "Ring Mail",
+          "text": "This armor is Leather Armor with heavy rings sewn into it. The rings help reinforce the armor against blows from swords and axes. Ring Mail is inferior to Chain Mail, and it's usually worn only by those who can’t afford better armor."
+        },
+        {
+          "name": "Chain Mail",
+          "text": "Made of interlocking metal rings, Chain Mail includes a layer of quilted fabric worn underneath the mail to prevent chafing and to cushion the impact of blows. The suit includes gauntlets."
+        },
+        {
+          "name": "Splint",
+          "text": "This armor is made of narrow vertical strips of metal riveted to a backing of leather that is worn over cloth padding. Flexible Chain Mail protects the joints."
+        },
+        {
+          "name": "Plate",
+          "text": "Plate consists of shaped, interlocking metal plates to cover the entire body. A suit of plate includes gauntlets, heavy leather boots, a visored helmet, and thick layers of padding underneath the armor. Buckles and straps distribute the weight over the body."
+        }
+      ]
+    },
+    {
+      "type": "table",
+      "header": "Armor",
+      "items": [
+        {
+          "type": "thead",
+          "rows": [
+            [
+              {
+                "type": "th",
+                "text": "Armor"
+              },
+              {
+                "type": "th",
+                "text": "Cost",
+                "style": "text-align:center"
+              },
+              {
+                "type": "th",
+                "text": "Armor Class (AC)",
+                "style": "text-align:center"
+              },
+              {
+                "type": "th",
+                "text": "Strength",
+                "style": "text-align:center"
+              },
+              {
+                "type": "th",
+                "text": "Stealth",
+                "style": "text-align:center"
+              },
+              {
+                "type": "th",
+                "text": "Weight",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Light Armor",
+                "colspan": "6"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "tbody",
+          "rows": [
+            [
+              {
+                "type": "td",
+                "text": "Padded",
+                "style": "padding-left:10px"
+              },
+              {
+                "type": "td",
+                "text": "5 gp",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "11 + Dex modifier",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "—",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "Disadvantage",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "8 lb.",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Leather",
+                "style": "padding-left:10px"
+              },
+              {
+                "type": "td",
+                "text": "10 gp",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "11 + Dex modifier",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "—",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "—",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "10 lb.",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Studded leather",
+                "style": "padding-left:10px"
+              },
+              {
+                "type": "td",
+                "text": "45 gp",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "12 + Dex modifier",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "—",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "—",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "13 lb.",
+                "style": "text-align:center"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "thead",
+          "rows": [
+            [
+              {
+                "type": "td",
+                "text": "Medium Armor",
+                "colspan": "6"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "tbody",
+          "rows": [
+            [
+              {
+                "type": "td",
+                "text": "Hide",
+                "style": "padding-left:10px"
+              },
+              {
+                "type": "td",
+                "text": "10 gp",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "12 + Dex modifier (max 2)",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "—",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "—",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "12 lb.",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Chain Shirt",
+                "style": "padding-left:10px"
+              },
+              {
+                "type": "td",
+                "text": "50 gp",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "13 + Dex modifier (max 2)",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "—",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "—",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "20 lb.",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Scale Mail",
+                "style": "padding-left:10px"
+              },
+              {
+                "type": "td",
+                "text": "50 gp",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "14 + Dex modifier (max 2)",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "—",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "Disadvantage",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "45 lb.",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Breastplate",
+                "style": "padding-left:10px"
+              },
+              {
+                "type": "td",
+                "text": "400 gp",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "14 + Dex modifier (max 2)",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "—",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "—",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "20 lb.",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Half Plate",
+                "style": "padding-left:10px"
+              },
+              {
+                "type": "td",
+                "text": "750 gp",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "15 + Dex modifier (max 2)",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "—",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "Disadvantage",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "40 lb.",
+                "style": "text-align:center"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "thead",
+          "rows": [
+            [
+              {
+                "type": "td",
+                "text": "Heavy Armor",
+                "colspan": "6"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "tbody",
+          "rows": [
+            [
+              {
+                "type": "td",
+                "text": "Ring Mail",
+                "style": "padding-left:10px"
+              },
+              {
+                "type": "td",
+                "text": "30 gp",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "14",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "—",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "Disadvantage",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "40 lb.",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Chain Mail",
+                "style": "padding-left:10px"
+              },
+              {
+                "type": "td",
+                "text": "75 gp",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "16",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "Str 13",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "Disadvantage",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "55 lb.",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Splint",
+                "style": "padding-left:10px"
+              },
+              {
+                "type": "td",
+                "text": "200 gp",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "17",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "Str 15",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "Disadvantage",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "60 lb.",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Plate",
+                "style": "padding-left:10px"
+              },
+              {
+                "type": "td",
+                "text": "1,500 gp",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "18",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "Str 15",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "Disadvantage",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "65 lb.",
+                "style": "text-align:center"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "thead",
+          "rows": [
+            [
+              {
+                "type": "td",
+                "text": "Shield",
+                "colspan": "6"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "tbody",
+          "rows": [
+            [
+              {
+                "type": "td",
+                "text": "Shield",
+                "style": "padding-left:10px"
+              },
+              {
+                "type": "td",
+                "text": "10 gp",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+2",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "—",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "—",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "6 lb.",
+                "style": "text-align:center"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "header": "Getting Into and Out of Armor",
+      "level": "3",
+      "items": [
+        {
+          "name": "",
+          "text": "The time it takes to don or doff armor depends on the armor’s category."
+        },
+        {
+          "name": "Don",
+          "text": "This is the time it takes to put on armor. You benefit from the armor’s AC only if you take the full time to don the suit of armor."
+        },
+        {
+          "name": "Doff",
+          "text": "This is the time it takes to take off armor. If you have help, reduce this time by half."
+        }
+      ]
+    },
+    {
+      "type": "table",
+      "header": "Donning and Doffing Armor",
+      "items": [
+        {
+          "type": "thead",
+          "rows": [
+            [
+              {
+                "type": "th",
+                "text": "Category"
+              },
+              {
+                "type": "th",
+                "text": "Don"
+              },
+              {
+                "type": "th",
+                "text": "Doff"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "tbody",
+          "rows": [
+            [
+              {
+                "type": "td",
+                "text": "Light Armor"
+              },
+              {
+                "type": "td",
+                "text": "1 minute"
+              },
+              {
+                "type": "td",
+                "text": "1 minute"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Medium Armor"
+              },
+              {
+                "type": "td",
+                "text": "5 minutes"
+              },
+              {
+                "type": "td",
+                "text": "1 minute"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Heavy Armor"
+              },
+              {
+                "type": "td",
+                "text": "10 minutes"
+              },
+              {
+                "type": "td",
+                "text": "5 minutes"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Shield"
+              },
+              {
+                "type": "td",
+                "text": "1 action"
+              },
+              {
+                "type": "td",
+                "text": "1 action"
+              }
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "attributes": {
+    "Category": "Rules",
+    "Based On": "Equipment",
+    "Source": "SRD 5.0"
+  }
+}

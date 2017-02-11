@@ -1,0 +1,1503 @@
+{
+  "name": "Ranger",
+  "sections": [
+    {
+      "header": "",
+      "items": [
+        {
+          "name": "",
+          "text": "As a ranger, you gain the following Class Features."
+        }
+      ]
+    },
+    {
+      "header": "Hit Points",
+      "level": "2",
+      "items": [
+        {
+          "name": "",
+          "text": ""
+        },
+        {
+          "name": "Hit Dice",
+          "text": "1d10 per ranger level"
+        },
+        {
+          "name": "Hit Points at 1st Level",
+          "text": "10 + your Constitution modifier"
+        },
+        {
+          "name": "Hit Points at Higher Levels",
+          "text": "1d10 (or 6) + your Constitution modifier per ranger level after 1st"
+        }
+      ]
+    },
+    {
+      "header": "Starting Proficiencies",
+      "level": "2",
+      "items": [
+        {
+          "name": "",
+          "text": "You are proficient with the following items, in addition to any proficiencies provided by your race or background."
+        },
+        {
+          "name": "Armor",
+          "text": "Light Armor, Medium Armor, shields"
+        },
+        {
+          "name": "Weapons",
+          "text": "simple Weapons, martial Weapons"
+        },
+        {
+          "name": "Tools",
+          "text": "none"
+        },
+        {
+          "name": "Skills",
+          "text": "Choose three from Animal Handling, Athletics, Insight, Investigation, Nature, Perception, Stealth, and Survival"
+        }
+      ]
+    },
+    {
+      "header": "Starting Equipment",
+      "level": "2",
+      "items": [
+        {
+          "name": "",
+          "text": ""
+        },
+        {
+          "name": "",
+          "text": "You start with the following items, plus anything provided by your background."
+        },
+        {
+          "name": "",
+          "text": "• (a) Scale Mail or (b) Leather Armor"
+        },
+        {
+          "name": "",
+          "text": "• (a) two shortswords or (b) two simple Melee Weapons"
+        },
+        {
+          "name": "",
+          "text": "• (a) a Dungeoneer's Pack or (b) an Explorer's Pack"
+        },
+        {
+          "name": "",
+          "text": "• A Longbow and a Quiver of 20 Arrows"
+        },
+        {
+          "name": "",
+          "text": "Alternatively, you may start with 5d4 x 10 gp to buy your own Equipment."
+        }
+      ]
+    },
+    {
+      "type": "table",
+      "header": "Table: The Ranger",
+      "items": [
+        {
+          "type": "thead",
+          "rows": [
+            [
+              {
+                "type": "th",
+                "text": "Level",
+                "style": "text-align:center",
+                "rowspan": "2"
+              },
+              {
+                "type": "th",
+                "text": "ProficiencyBonus",
+                "style": "text-align:center",
+                "rowspan": "2"
+              },
+              {
+                "type": "th",
+                "text": "Features",
+                "style": "text-align:center",
+                "rowspan": "2"
+              },
+              {
+                "type": "th",
+                "text": "SpellsKnown",
+                "style": "text-align:center",
+                "rowspan": "2"
+              },
+              {
+                "type": "th",
+                "text": "Spell Slots per Spell Level",
+                "style": "text-align:center",
+                "colspan": "5"
+              }
+            ],
+            [
+              {
+                "type": "th",
+                "text": "1st",
+                "style": "text-align:center"
+              },
+              {
+                "type": "th",
+                "text": "2nd",
+                "style": "text-align:center"
+              },
+              {
+                "type": "th",
+                "text": "3rd",
+                "style": "text-align:center"
+              },
+              {
+                "type": "th",
+                "text": "4th",
+                "style": "text-align:center"
+              },
+              {
+                "type": "th",
+                "text": "5th",
+                "style": "text-align:center"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "tbody",
+          "rows": [
+            [
+              {
+                "type": "td",
+                "text": "1st",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+2",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "Favored Enemy, Natural Explorer",
+                "style": "text-align:left"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "2nd",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+2",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "Fighting Style, Spellcasting",
+                "style": "text-align:left"
+              },
+              {
+                "type": "td",
+                "text": "2",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "2",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "3rd",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+2",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "Ranger Archetype, Primeval Awareness",
+                "style": "text-align:left"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "4th",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+2",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "Ability Score Improvement",
+                "style": "text-align:left"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "5th",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "Extra Attack",
+                "style": "text-align:left"
+              },
+              {
+                "type": "td",
+                "text": "4",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "4",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "2",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "6th",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "Favored Enemy and Natural Explorer improvements",
+                "style": "text-align:left"
+              },
+              {
+                "type": "td",
+                "text": "4",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "4",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "2",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "7th",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "Ranger Archetype feature",
+                "style": "text-align:left"
+              },
+              {
+                "type": "td",
+                "text": "5",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "4",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "8th",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "Ability Score Improvement, Land’s Stride",
+                "style": "text-align:left"
+              },
+              {
+                "type": "td",
+                "text": "5",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "4",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "9th",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+4",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:left"
+              },
+              {
+                "type": "td",
+                "text": "6",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "4",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "2",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "10th",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+4",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "Natural Explorer improvement, Hide in Plain Sight",
+                "style": "text-align:left"
+              },
+              {
+                "type": "td",
+                "text": "6",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "4",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "2",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "11th",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+4",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "Ranger Archetype feature",
+                "style": "text-align:left"
+              },
+              {
+                "type": "td",
+                "text": "7",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "4",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "12th",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+4",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "Ability Score Improvement",
+                "style": "text-align:left"
+              },
+              {
+                "type": "td",
+                "text": "7",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "4",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "13th",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+5",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:left"
+              },
+              {
+                "type": "td",
+                "text": "8",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "4",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "1",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "14th",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+5",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "Favored Enemy improvement, Vanish",
+                "style": "text-align:left"
+              },
+              {
+                "type": "td",
+                "text": "8",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "4",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "1",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "15th",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+5",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "Ranger Archetype feature",
+                "style": "text-align:left"
+              },
+              {
+                "type": "td",
+                "text": "9",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "4",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "2",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "16th",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+5",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "Ability Score Improvement",
+                "style": "text-align:left"
+              },
+              {
+                "type": "td",
+                "text": "9",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "4",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "2",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "17th",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+6",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:left"
+              },
+              {
+                "type": "td",
+                "text": "10",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "4",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "1",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "18th",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+6",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "Feral Senses",
+                "style": "text-align:left"
+              },
+              {
+                "type": "td",
+                "text": "10",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "4",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "1",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "19th",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+6",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "Ability Score Improvement",
+                "style": "text-align:left"
+              },
+              {
+                "type": "td",
+                "text": "11",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "4",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "2",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "20th",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+6",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "Foe Slayer",
+                "style": "text-align:left"
+              },
+              {
+                "type": "td",
+                "text": "11",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "4",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "2",
+                "style": "text-align:center"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "header": "Favored Enemy",
+      "level": "2",
+      "items": [
+        {
+          "name": "",
+          "text": "Beginning at 1st level, you have significant experience studying, tracking, hunting, and even talking to a certain type of enemy."
+        },
+        {
+          "name": "",
+          "text": "    Choose a type of favored enemy: Aberrations, Beasts, Celestials, constructs, dragons, elementals, fey, Fiends, Giants, Monstrosities, oozes, Plants, or Undead. Alternatively, you can select two races of humanoid (such as Gnolls and orc s) as favored enemies."
+        },
+        {
+          "name": "",
+          "text": "    You have advantage on Wisdom (Survival) checks to track your favored enemies, as well as on Intelligence Checks to recall information about them."
+        },
+        {
+          "name": "",
+          "text": "    When you gain this feature, you also learn one Language of your choice that is spoken by your favored enemies, if they speak one at all."
+        },
+        {
+          "name": "",
+          "text": "    You choose one additional favored enemy, as well as an associated Language, at 6th and 14th level. As you gain levels, your choices should reflect the types of Monsters you have encountered on your adventures."
+        }
+      ]
+    },
+    {
+      "header": "Natural Explorer",
+      "level": "2",
+      "items": [
+        {
+          "name": "",
+          "text": "You are particularly familiar with one type of natural Environment and are adept at traveling and surviving in such regions. Choose one type of favored terrain: arctic, coast, desert, forest, grassland, mountain, swamp, or The Underdark. When you make an Intelligence or Wisdom check related to your favored terrain, your proficiency bonus is doubled if you are using a skill that you're proficient in."
+        },
+        {
+          "name": "",
+          "text": "    While traveling for an hour or more in your favored terrain, you gain the following benefits:"
+        },
+        {
+          "name": "",
+          "text": "• Difficult terrain doesn't slow your group's travel."
+        },
+        {
+          "name": "",
+          "text": "• Your group can't become lost except by magical means."
+        },
+        {
+          "name": "",
+          "text": "• Even when you are engaged in another activity while traveling (such as foraging, navigating, or tracking), you remain alert to danger."
+        },
+        {
+          "name": "",
+          "text": "• If you are traveling alone, you can move stealthily at a normal pace."
+        },
+        {
+          "name": "",
+          "text": "• When you forage, you find twice as much food as you normally would."
+        },
+        {
+          "name": "",
+          "text": "• While tracking other creatures, you also learn their exact number, their sizes, and how long ago they passed through the area."
+        },
+        {
+          "name": "",
+          "text": "    You choose additional favored terrain types at 6th and 10th level."
+        }
+      ]
+    },
+    {
+      "header": "Spellcasting",
+      "level": "2",
+      "items": [
+        {
+          "name": "",
+          "text": "By the time you reach 2nd level, you have learned to use the magical essence of nature to cast Spells, much as a druid does. "
+        },
+        {
+          "name": "Spell Slots",
+          "text": ""
+        },
+        {
+          "name": "",
+          "text": "The Ranger table shows how many Spell Slots you have to cast your Spells of 1st level and higher. To cast one of these Spells, you must expend a slot of the spell's level or higher. You regain all expended Spell Slots when you finish a Long Rest."
+        },
+        {
+          "name": "",
+          "text": "    For example, if you know the 1st-level spell Animal Friendship and have a 1st-level and a 2nd-level spell slot available, you can cast Animal Friendship using either slot. "
+        },
+        {
+          "name": "Spells Known of 1st Level and Higher",
+          "text": ""
+        },
+        {
+          "name": "",
+          "text": "You know two 1st-level Spells of your choice from the ranger spell list."
+        },
+        {
+          "name": "",
+          "text": "    You learn an additional ranger spell of your choice at each odd numbered level thereafter. Each of these Spells must be of a level for which you have Spell Slots. For instance, when you reach 5th level in this class, you can learn one new spell of 1st or 2nd level."
+        },
+        {
+          "name": "",
+          "text": "    Additionally, when you gain a level in this class, you can choose one of the ranger Spells you know and replace it with another spell from the ranger spell list, which also must be of a level for which you have Spell Slots. "
+        },
+        {
+          "name": "Spellcasting Ability",
+          "text": ""
+        },
+        {
+          "name": "",
+          "text": "Wisdom is your spellcasting ability for your ranger Spells, since your magic draws on your Attunement to nature. You use your Wisdom whenever a spell refers to your spellcasting ability. In addition, you use your Wisdom modifier when Setting the saving throw DC for a ranger spell you cast and when Making an Attack roll with one."
+        },
+        {
+          "name": "Spell save DC",
+          "text": "= 8 + your proficiency bonus + your Wisdom modifier"
+        },
+        {
+          "name": "Spell Attack modifier",
+          "text": "= your proficiency bonus + your Wisdom modifier"
+        }
+      ]
+    },
+    {
+      "header": "Fighting Style",
+      "level": "2",
+      "items": [
+        {
+          "name": "",
+          "text": "At 2nd level, you adopt a particular style of fighting as your specialty. Choose one of the following options. You can’t take a Fighting Style option more than once, even if you later get to choose again."
+        }
+      ]
+    },
+    {
+      "header": "Archery",
+      "level": "3",
+      "items": [
+        {
+          "name": "",
+          "text": "You gain a +2 bonus to Attack rolls you make with Ranged Weapons."
+        }
+      ]
+    },
+    {
+      "header": "Defense",
+      "level": "3",
+      "items": [
+        {
+          "name": "",
+          "text": "While you are wearing armor, you gain a +1 bonus to AC."
+        }
+      ]
+    },
+    {
+      "header": "Dueling",
+      "level": "3",
+      "items": [
+        {
+          "name": "",
+          "text": "When you are wielding a melee weapon in one hand and no other Weapons, you gain a +2 bonus to Damage Rolls with that weapon."
+        }
+      ]
+    },
+    {
+      "header": "Two-Weapon Fighting",
+      "level": "3",
+      "items": [
+        {
+          "name": "",
+          "text": "When you engage in two-weapon fighting, you can add your ability modifier to the damage of the second Attack."
+        }
+      ]
+    },
+    {
+      "header": "Ranger Archetype",
+      "level": "2",
+      "items": [
+        {
+          "name": "",
+          "text": "At 3rd level, you choose an archetype that you strive to emulate, such as the Hunter. Your choice grants features at 3rd level, and again at 7th, 11th, and 15th level."
+        }
+      ]
+    },
+    {
+      "header": "Primeval Awareness",
+      "level": "2",
+      "items": [
+        {
+          "name": "",
+          "text": "Beginning at 3rd level, you can use your action and expend one ranger spell slot to focus your awareness on the region around you. For 1 minute per level of the spell slot you expend, you can sense whether the following types of creatures are present within 1 mile of you (or within up to 6 miles if you are in your favored terrain): Aberrations, Celestials, dragons, elementals, fey, Fiends, and Undead. This feature doesn't reveal the creatures' location or number."
+        }
+      ]
+    },
+    {
+      "header": "Ability Score Improvement",
+      "level": "2",
+      "items": [
+        {
+          "name": "",
+          "text": "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two Ability Scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature."
+        }
+      ]
+    },
+    {
+      "header": "Extra Attack",
+      "level": "2",
+      "items": [
+        {
+          "name": "",
+          "text": ""
+        },
+        {
+          "name": "",
+          "text": "Beginning at 5th level, you can Attack twice, instead of once, whenever you take the Attack action on Your Turn."
+        }
+      ]
+    },
+    {
+      "header": "Land's Stride",
+      "level": "2",
+      "items": [
+        {
+          "name": "",
+          "text": "Starting at 8th level, moving through nonmagical difficult terrain costs you no extra Movement. You can also pass through nonmagical Plants without being slowed by them and without taking damage from them if they have thorns, spines, or a similar hazard."
+        },
+        {
+          "name": "",
+          "text": "    In addition, you have advantage on saving throws against Plants that are magically created or manipulated to impede Movement, such those created by the Entangle spell."
+        }
+      ]
+    },
+    {
+      "header": "Hide in Plain Sight",
+      "level": "2",
+      "items": [
+        {
+          "name": "",
+          "text": "Starting at 10th level, you can spend 1 minute creating camouflage for yourself. You must have access to fresh mud, dirt, Plants, soot, and other naturally occurring materials with which to create your camouflage."
+        },
+        {
+          "name": "",
+          "text": "    Once you are camouflaged in this way, you can try to hide by pressing yourself up against a solid surface, such as a tree or wall, that is at least as tall and wide as you are. You gain a +10 bonus to Dexterity (Stealth) checks as long as you remain there without moving or taking actions. Once you move or take an action or a reaction, you must camouflage yourself again to gain this benefit."
+        }
+      ]
+    },
+    {
+      "header": "Vanish",
+      "level": "2",
+      "items": [
+        {
+          "name": "",
+          "text": "Starting at 14th level, you can use the Hide action as a Bonus Action on Your Turn. Also, you can't be tracked by nonmagical means, unless you choose to leave a trail."
+        }
+      ]
+    },
+    {
+      "header": "Feral Senses",
+      "level": "2",
+      "items": [
+        {
+          "name": "",
+          "text": "At 18th level, you gain preternatural senses that help you fight creatures you can't see. When you Attack a creature you can't see, your inability to see it doesn't impose disadvantage on your Attack rolls against it. You are also aware of the location of any Invisible creature within 30 feet of you, provided that the creature isn't hidden from you and you aren't Blinded or Deafened."
+        }
+      ]
+    },
+    {
+      "header": "Foe Slayer",
+      "level": "2",
+      "items": [
+        {
+          "name": "",
+          "text": "At 20th level, you become an unparalleled hunter of your enemies. Once on each of your turns, you can add your Wisdom modifier to the Attack roll or the damage roll of an Attack you make against one of your favored enemies. You can choose to use this feature before or after the roll, but before any effects of the roll are applied."
+        }
+      ]
+    },
+    {
+      "header": "Ranger Archetypes",
+      "level": "2",
+      "items": [
+        {
+          "name": "",
+          "text": "A classic expression of the ranger ideal is the Hunter."
+        }
+      ]
+    },
+    {
+      "header": "Hunter",
+      "level": "3",
+      "items": [
+        {
+          "name": "",
+          "text": ""
+        },
+        {
+          "name": "",
+          "text": "Emulating the Hunter archetype means accepting your place as a bulwark between civilization and the terrors of The Wilderness. As you walk the Hunter’s path, you learn specialized techniques for fighting the threats you face, from rampaging ogres and hordes of orcs to towering Giants and terrifying dragons."
+        }
+      ]
+    },
+    {
+      "header": "Hunter’s Prey",
+      "level": "4",
+      "items": [
+        {
+          "name": "",
+          "text": "At 3rd level, you gain one of the following features of your choice."
+        },
+        {
+          "name": "Colossus Slayer",
+          "text": "Your tenacity can wear down the most potent foes. When you hit a creature with a weapon Attack, the creature takes an extra 1d8 damage if it’s below its hit point maximum. You can deal this extra damage only once per turn."
+        },
+        {
+          "name": "Giant Killer",
+          "text": "When a Large or larger creature within 5 feet of you hits or misses you with an Attack, you can use your reaction to Attack that creature immediately after its Attack, provided that you can see the creature."
+        },
+        {
+          "name": "Horde Breaker",
+          "text": "Once on each of your turns when you make a weapon Attack, you can make another Attack with the same weapon against a different creature that is within 5 feet of the original target and within range of your weapon."
+        }
+      ]
+    },
+    {
+      "header": "Defensive Tactics",
+      "level": "4",
+      "items": [
+        {
+          "name": "",
+          "text": ""
+        },
+        {
+          "name": "",
+          "text": "At 7th level, you gain one of the following features of your choice."
+        },
+        {
+          "name": "Escape the Horde",
+          "text": "Opportunity Attacks against you are made with disadvantage."
+        },
+        {
+          "name": "Multiattack Defense",
+          "text": "When a creature hits you with an Attack, you gain a +4 bonus to AC against all subsequent attacks made by that creature for the rest of the turn."
+        },
+        {
+          "name": "Steel Will",
+          "text": "You have advantage on saving throws against being Frightened."
+        }
+      ]
+    },
+    {
+      "header": "Multiattack",
+      "level": "4",
+      "items": [
+        {
+          "name": "",
+          "text": "At 11th level, you gain one of the following features of your choice."
+        },
+        {
+          "name": "Volley",
+          "text": "You can use your action to make a ranged Attack against any number of creatures within 10 feet of a point you can see within your weapon’s range. You must have ammunition for each target, as normal, and you make a separate Attack roll for each target."
+        },
+        {
+          "name": "Whirlwind Attack",
+          "text": "You can use your action to make a melee Attack against any number of creatures within 5 feet of you, with a separate Attack roll for each target."
+        }
+      ]
+    },
+    {
+      "header": "Superior Hunter’s Defense",
+      "level": "4",
+      "items": [
+        {
+          "name": "",
+          "text": "At 15th level, you gain one of the following features of your choice."
+        },
+        {
+          "name": "Evasion",
+          "text": "When you are subjected to an effect, such as a red dragon’s fiery breath or a Lightning Bolt spell, that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail."
+        },
+        {
+          "name": "Stand Against the Tide",
+          "text": "When a hostile creature misses you with a melee Attack, you can use your reaction to force that creature to repeat the same Attack against another creature (other than itself) of your choice."
+        },
+        {
+          "name": "Uncanny Dodge",
+          "text": "When an attacker that you can see hits you with an Attack, you can use your reaction to halve the attack’s damage against you."
+        }
+      ]
+    }
+  ],
+  "attributes": {
+    "Hit Dice": "d10",
+    "Saving Throws": "Strength, Dexterity",
+    "Category": "Classes",
+    "Source": "SRD 5.0"
+  }
+}

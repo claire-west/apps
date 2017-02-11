@@ -1,0 +1,635 @@
+{
+  "name": "Mounts and Vehicles",
+  "sections": [
+    {
+      "header": "",
+      "items": [
+        {
+          "name": "",
+          "text": "A good mount can help you move more quickly through The Wilderness, but its primary purpose is to carry the gear that would otherwise slow you down. The Mounts and Other Animals table shows each animal’s speed and base carrying capacity."
+        },
+        {
+          "name": "",
+          "text": "An animal pulling a carriage, cart, chariot, sled, or wagon can move weight up to five times its base carrying capacity, including the weight of the vehicle. If multiple animals pull the same vehicle, they can add their carrying capacity together."
+        },
+        {
+          "name": "",
+          "text": "Mounts other than those listed here are available in fantasy gaming worlds, but they are rare and not normally available for purchase. These include flying mounts (pegasi, griffons, hippogriffs, and similar animals) and even aquatic mounts (giant sea horses, for example). Acquiring such a mount often means securing an egg and raising the creature yourself, making a bargain with a powerful entity, or negotiating with the mount itself."
+        },
+        {
+          "name": "Barding",
+          "text": "Barding is armor designed to protect an animal’s head, neck, chest, and body. Any type of armor shown on the Armor table can be purchased as barding. The cost is four times the equivalent armor made for humanoids, and it weighs twice as much."
+        },
+        {
+          "name": "Saddles",
+          "text": "A military saddle braces the rider, helping you keep your seat on an active mount in battle. It gives you advantage on any check you make to remain mounted. An exotic saddle is required for riding any aquatic or flying mount."
+        },
+        {
+          "name": "Vehicle Proficiency",
+          "text": "If you have proficiency with a certain kind of vehicle (land or water), you can add your proficiency bonus to any check you make to control that kind of vehicle in difficult circumstances."
+        },
+        {
+          "name": "Rowed Vessels",
+          "text": "Keelboats and rowboats are used on lakes and rivers. If going downstream, add the speed of the current (typically 3 miles per hour) to the speed of the vehicle. These vehicles can’t be rowed against any significant current, but they can be pulled upstream by draft animals on the shores. A rowboat weighs 100 pounds, in case adventurers carry it over land."
+        }
+      ]
+    },
+    {
+      "type": "table",
+      "header": "Mounts and Other Animals",
+      "items": [
+        {
+          "type": "thead",
+          "rows": [
+            [
+              {
+                "type": "th",
+                "text": "Animal"
+              },
+              {
+                "type": "th",
+                "text": "Cost",
+                "style": "text-align:center"
+              },
+              {
+                "type": "th",
+                "text": "Speed",
+                "style": "text-align:center"
+              },
+              {
+                "type": "th",
+                "text": "Capacity",
+                "style": "text-align:center"
+              },
+              {
+                "type": "th",
+                "text": "Animal"
+              },
+              {
+                "type": "th",
+                "text": "Cost",
+                "style": "text-align:center"
+              },
+              {
+                "type": "th",
+                "text": "Speed",
+                "style": "text-align:center"
+              },
+              {
+                "type": "th",
+                "text": "Capacity",
+                "style": "text-align:center"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "tbody",
+          "rows": [
+            [
+              {
+                "type": "td",
+                "text": "Camel"
+              },
+              {
+                "type": "td",
+                "text": "50 gp",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "50 ft.",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "480 lb.",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "Horse, riding"
+              },
+              {
+                "type": "td",
+                "text": "75 gp",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "60 ft.",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "480 lb.",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Donkey or mule"
+              },
+              {
+                "type": "td",
+                "text": "8 gp",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "40 ft.",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "420 lb.",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "Mastiff"
+              },
+              {
+                "type": "td",
+                "text": "25 gp",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "40 ft.",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "195 lb.",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Elephant"
+              },
+              {
+                "type": "td",
+                "text": "200 gp",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "40 ft.",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "1,320 lb.",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "Pony"
+              },
+              {
+                "type": "td",
+                "text": "30 gp",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "40 ft.",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "225 lb.",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Horse, draft"
+              },
+              {
+                "type": "td",
+                "text": "50 gp",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "40 ft.",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "540 lb.",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "Warhorse"
+              },
+              {
+                "type": "td",
+                "text": "400 gp",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "60 ft.",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "540 lb.",
+                "style": "text-align:center"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "type": "table",
+      "header": "Tack, Harness, and Drawn Vehicles",
+      "items": [
+        {
+          "type": "thead",
+          "rows": [
+            [
+              {
+                "type": "th",
+                "text": "Item"
+              },
+              {
+                "type": "th",
+                "text": "Cost",
+                "style": "text-align:center"
+              },
+              {
+                "type": "th",
+                "text": "Weight",
+                "style": "text-align:center"
+              },
+              {
+                "type": "th",
+                "text": "Item"
+              },
+              {
+                "type": "th",
+                "text": "Cost",
+                "style": "text-align:center"
+              },
+              {
+                "type": "th",
+                "text": "Weight",
+                "style": "text-align:center"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "tbody",
+          "rows": [
+            [
+              {
+                "type": "td",
+                "text": "Barding"
+              },
+              {
+                "type": "td",
+                "text": "×4",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "×2",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "Saddle, Military"
+              },
+              {
+                "type": "td",
+                "text": "20 gp",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "30 lb.",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Bit and bridle"
+              },
+              {
+                "type": "td",
+                "text": "2 gp",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "1 lb.",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "Saddle, Pack"
+              },
+              {
+                "type": "td",
+                "text": "5 gp",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "15 lb.",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Carriage"
+              },
+              {
+                "type": "td",
+                "text": "100 gp",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "600 lb.",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "Riding"
+              },
+              {
+                "type": "td",
+                "text": "10 gp",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "25 lb.",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Cart"
+              },
+              {
+                "type": "td",
+                "text": "15 gp",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "200 lb.",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "Saddlebags"
+              },
+              {
+                "type": "td",
+                "text": "4 gp",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "8 lb.",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Chariot"
+              },
+              {
+                "type": "td",
+                "text": "250 gp",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "100 lb.",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "Sled"
+              },
+              {
+                "type": "td",
+                "text": "20 gp",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "300 lb.",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Animal Feed (per day)"
+              },
+              {
+                "type": "td",
+                "text": "5 cp",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "10 lb.",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "Stabling (per day)"
+              },
+              {
+                "type": "td",
+                "text": "5 sp",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "—",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Saddle, Exotic"
+              },
+              {
+                "type": "td",
+                "text": "60 gp",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "40 lb.",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "Wagon"
+              },
+              {
+                "type": "td",
+                "text": "35 gp",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "400 lb.",
+                "style": "text-align:center"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "type": "table",
+      "header": "Waterborne Vehicles",
+      "items": [
+        {
+          "type": "thead",
+          "rows": [
+            [
+              {
+                "type": "th",
+                "text": "Vehicle"
+              },
+              {
+                "type": "th",
+                "text": "Cost"
+              },
+              {
+                "type": "th",
+                "text": "Speed"
+              },
+              {
+                "type": "th",
+                "text": "Vehicle"
+              },
+              {
+                "type": "th",
+                "text": "Cost"
+              },
+              {
+                "type": "th",
+                "text": "Speed"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "tbody",
+          "rows": [
+            [
+              {
+                "type": "td",
+                "text": "Galley"
+              },
+              {
+                "type": "td",
+                "text": "30,000 gp"
+              },
+              {
+                "type": "td",
+                "text": "4 mph"
+              },
+              {
+                "type": "td",
+                "text": "Rowboat"
+              },
+              {
+                "type": "td",
+                "text": "50 gp"
+              },
+              {
+                "type": "td",
+                "text": "1½ mph"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Keelboat"
+              },
+              {
+                "type": "td",
+                "text": "3,000 gp"
+              },
+              {
+                "type": "td",
+                "text": "1 mph"
+              },
+              {
+                "type": "td",
+                "text": "Sailing ship"
+              },
+              {
+                "type": "td",
+                "text": "10,000 gp"
+              },
+              {
+                "type": "td",
+                "text": "2 mph"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Longship"
+              },
+              {
+                "type": "td",
+                "text": "10,000 gp"
+              },
+              {
+                "type": "td",
+                "text": "3 mph"
+              },
+              {
+                "type": "td",
+                "text": "Warship"
+              },
+              {
+                "type": "td",
+                "text": "25,000 gp"
+              },
+              {
+                "type": "td",
+                "text": "2½ mph"
+              }
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "attributes": {
+    "Category": "Rules",
+    "Based On": "Equipment",
+    "Source": "SRD 5.0"
+  }
+}
