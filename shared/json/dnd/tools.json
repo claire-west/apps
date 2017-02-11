@@ -1,0 +1,674 @@
+{
+  "name": "Tools",
+  "sections": [
+    {
+      "header": "",
+      "items": [
+        {
+          "name": "",
+          "text": "A tool helps you to do something you couldn't otherwise do, such as craft or repair an item, forge a document, or pick a lock. Your race, class, background, or feats give you proficiency with certain tools. Proficiency with a tool allows you to add your proficiency bonus to any ability check you make using that tool. Tool use is not tied to a single ability, since proficiency with a tool represents broader knowledge of its use. For example, the GM might ask you to make a Dexterity check to carve a fine detail with your woodcarver’s tools, or a Strength check to make something out of particularly hard wood."
+        }
+      ]
+    },
+    {
+      "type": "table",
+      "header": "Tools",
+      "items": [
+        {
+          "type": "thead",
+          "rows": [
+            [
+              {
+                "type": "th",
+                "text": "Item"
+              },
+              {
+                "type": "th",
+                "text": "Cost",
+                "style": "text-align:center"
+              },
+              {
+                "type": "th",
+                "text": "Weight",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Artisan’s tools",
+                "colspan": "3"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "tbody",
+          "rows": [
+            [
+              {
+                "type": "td",
+                "text": "Alchemist’s supplies",
+                "style": "padding-left:10px"
+              },
+              {
+                "type": "td",
+                "text": "50 gp",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "8 lb.",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Brewer’s supplies",
+                "style": "padding-left:10px"
+              },
+              {
+                "type": "td",
+                "text": "20 gp",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "9 lb.",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Calligrapher's Supplies",
+                "style": "padding-left:10px"
+              },
+              {
+                "type": "td",
+                "text": "10 gp",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "5 lb.",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Carpenter’s tools",
+                "style": "padding-left:10px"
+              },
+              {
+                "type": "td",
+                "text": "8 gp",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "6 lb.",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Cartographer’s tools",
+                "style": "padding-left:10px"
+              },
+              {
+                "type": "td",
+                "text": "15 gp.",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "6 lb.",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Cobbler’s tools",
+                "style": "padding-left:10px"
+              },
+              {
+                "type": "td",
+                "text": "5 gp",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "5 lb.",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Cook’s utensils",
+                "style": "padding-left:10px"
+              },
+              {
+                "type": "td",
+                "text": "1 gp",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "8 lb.",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Glassblower’s tools",
+                "style": "padding-left:10px"
+              },
+              {
+                "type": "td",
+                "text": "30 gp",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "5 lb.",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Jeweler’s tools",
+                "style": "padding-left:10px"
+              },
+              {
+                "type": "td",
+                "text": "25 gp",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "2 lb.",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Leatherworker’s tools",
+                "style": "padding-left:10px"
+              },
+              {
+                "type": "td",
+                "text": "5 gp",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "5 lb.",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Mason’s tools",
+                "style": "padding-left:10px"
+              },
+              {
+                "type": "td",
+                "text": "10 gp",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "8 lb.",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Painter’s supplies",
+                "style": "padding-left:10px"
+              },
+              {
+                "type": "td",
+                "text": "10 gp",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "5 lb.",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Potter’s tools",
+                "style": "padding-left:10px"
+              },
+              {
+                "type": "td",
+                "text": "10 gp",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3 lb.",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Smith’s tools",
+                "style": "padding-left:10px"
+              },
+              {
+                "type": "td",
+                "text": "20 gp",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "8 lb.",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Tinker’s tools",
+                "style": "padding-left:10px"
+              },
+              {
+                "type": "td",
+                "text": "50 gp",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "10 lb.",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Weaver’s tools",
+                "style": "padding-left:10px"
+              },
+              {
+                "type": "td",
+                "text": "1 gp",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "5 lb.",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Woodcarver’s tools",
+                "style": "padding-left:10px"
+              },
+              {
+                "type": "td",
+                "text": "1 gp",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "5 lb.",
+                "style": "text-align:center"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "thead",
+          "rows": [
+            [
+              {
+                "type": "td",
+                "text": "Gaming sets",
+                "colspan": "3"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "tbody",
+          "rows": [
+            [
+              {
+                "type": "td",
+                "text": "Dice set",
+                "style": "padding-left:10px"
+              },
+              {
+                "type": "td",
+                "text": "1 sp",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "—",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Playing card set",
+                "style": "padding-left:10px"
+              },
+              {
+                "type": "td",
+                "text": "5 sp",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "—",
+                "style": "text-align:center"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "thead",
+          "rows": [
+            [
+              {
+                "type": "td",
+                "text": "Musical instruments",
+                "colspan": "3"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "tbody",
+          "rows": [
+            [
+              {
+                "type": "td",
+                "text": "Bagpipes",
+                "style": "padding-left:10px"
+              },
+              {
+                "type": "td",
+                "text": "30 gp",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "6 lb.",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Drum",
+                "style": "padding-left:10px"
+              },
+              {
+                "type": "td",
+                "text": "6 gp",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3 lb.",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Dulcimer",
+                "style": "padding-left:10px"
+              },
+              {
+                "type": "td",
+                "text": "25 gp",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "10 lb.",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Flute",
+                "style": "padding-left:10px"
+              },
+              {
+                "type": "td",
+                "text": "2 gp",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "1 lb.",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Lute",
+                "style": "padding-left:10px"
+              },
+              {
+                "type": "td",
+                "text": "35 gp",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "2 lb.",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Lyre",
+                "style": "padding-left:10px"
+              },
+              {
+                "type": "td",
+                "text": "30 gp",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "2 lb.",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Horn",
+                "style": "padding-left:10px"
+              },
+              {
+                "type": "td",
+                "text": "3 gp",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "2 lb.",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Pan flute",
+                "style": "padding-left:10px"
+              },
+              {
+                "type": "td",
+                "text": "12 gp",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "2 lb.",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Shawm",
+                "style": "padding-left:10px"
+              },
+              {
+                "type": "td",
+                "text": "2 gp",
+                "style": "padding-left:10px;text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "1 lb.",
+                "style": "padding-left:10px;text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Viol",
+                "style": "padding-left:10px"
+              },
+              {
+                "type": "td",
+                "text": "30 gp",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "1 lb.",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Navigator’s tools"
+              },
+              {
+                "type": "td",
+                "text": "25 gp",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "2 lb.",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Thieves’ tools"
+              },
+              {
+                "type": "td",
+                "text": "25 gp",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "1 lb.",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "Vehicles (land or water)"
+              },
+              {
+                "type": "td",
+                "text": "See Mounts & Vehicles",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "See Mounts & Vehicles",
+                "style": "text-align:center"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "header": "",
+      "items": [
+        {
+          "name": "Artisan’s Tools",
+          "text": "These Special tools include the items needed to pursue a craft or trade. The table shows examples of the most common types of tools, each providing items related to a single craft. Proficiency with a set of artisan’s tools lets you add your proficiency bonus to any Ability Checks you make using the tools in your craft. Each type of artisan’s tools requires a separate proficiency."
+        },
+        {
+          "name": "Disguise kit",
+          "text": "This pouch of cosmetics, hair dye, and small props lets you create disguises that change your physical appearance. Proficiency with this kit lets you add your proficiency bonus to any Ability Checks you make to create a visual disguise."
+        },
+        {
+          "name": "Forgery kit",
+          "text": "This small box contains a variety of papers and parchments, pens and inks, seals and Sealing wax, gold and silver leaf, and other supplies necessary to create convincing forgeries of physical documents. Proficiency with this kit lets you add your proficiency bonus to any Ability Checks you make to create a physical forgery of a document."
+        },
+        {
+          "name": "Gaming Set",
+          "text": "This item encompasses a wide range of game pieces, including dice and decks of cards (for games such as Three-Dragon Ante). A few common examples appear on the Tools table, but other kinds of gaming sets exist. If you are proficient with a gaming set, you can add your proficiency bonus to Ability Checks you make to play a game with that set. Each type of gaming set requires a separate proficiency."
+        },
+        {
+          "name": "Herbalism kit",
+          "text": "This kit contains a variety of instruments such as clippers, mortar and pestle, and pouches and vials used by herbalists to create remedies and potions. Proficiency with this kit lets you add your proficiency bonus to any Ability Checks you make to Identify or apply herbs. Also, proficiency with this kit is required to create Antitoxin and potions of Healing."
+        },
+        {
+          "name": "Musical Instrument",
+          "text": "Several of the most common types of musical instruments are shown on the table as examples. If you have proficiency with a given musical instrument, you can add your proficiency bonus to any Ability Checks you make to play music with the instrument. A bard can use a musical instrument as a spellcasting focus. Each type of musical instrument requires a separate proficiency."
+        },
+        {
+          "name": "Navigator’s Tools",
+          "text": "This set of instruments is used for navigation at sea. Proficiency with Navigator's Tools lets you chart a ship's course and follow navigation charts. In addition, these tools allow you to add your proficiency bonus to any ability check you make to avoid getting lost at sea."
+        },
+        {
+          "name": "Poisoner’s Kit",
+          "text": "A poisoner’s kit includes the vials, chemicals, and other Equipment necessary for the Creation of Poisons. Proficiency with this kit lets you add your proficiency bonus to any Ability Checks you make to craft or use Poisons."
+        },
+        {
+          "name": "Thieves’ Tools",
+          "text": "This set of tools includes a small file, a set of lock picks, a small mirror mounted on a metal handle, a set of narrow-bladed scissors, and a pair of pliers. Proficiency with these tools lets you add your proficiency bonus to any Ability Checks you make to disarm traps or open locks."
+        }
+      ]
+    }
+  ],
+  "attributes": {
+    "Category": "Rules",
+    "Based On": "Equipment",
+    "Source": "SRD 5.0"
+  }
+}

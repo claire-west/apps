@@ -1,0 +1,2373 @@
+{
+  "name": "Druid",
+  "sections": [
+    {
+      "header": "",
+      "items": [
+        {
+          "name": "",
+          "text": "As a druid, you gain the following Class Features."
+        }
+      ]
+    },
+    {
+      "header": "Hit Points",
+      "level": "2",
+      "items": [
+        {
+          "name": "",
+          "text": ""
+        },
+        {
+          "name": "Hit Dice",
+          "text": "1d8 per druid level"
+        },
+        {
+          "name": "Hit Points at 1st Level",
+          "text": "8 + your Constitution modifier"
+        },
+        {
+          "name": "Hit Points at Higher Levels",
+          "text": "1d8 (or 5) + your Constitution modifier per druid level after 1st"
+        }
+      ]
+    },
+    {
+      "header": "Starting Proficiencies",
+      "level": "2",
+      "items": [
+        {
+          "name": "",
+          "text": "You are proficient with the following items, in addition to any proficiencies provided by your race or background."
+        },
+        {
+          "name": "Armor",
+          "text": "Light Armor, Medium Armor, shields (druids will not wear armor or use shields made of metal)"
+        },
+        {
+          "name": "Weapons",
+          "text": "clubs, daggers, darts, javelins, maces, quarterstaffs, scimitars, sickles, slings, spears"
+        },
+        {
+          "name": "Tools",
+          "text": "Herbalism kit"
+        },
+        {
+          "name": "Skills",
+          "text": "Choose two from Arcana, Animal Handling, Insight, Medicine, Nature, Perception, Religion, and Survival"
+        }
+      ]
+    },
+    {
+      "header": "Starting Equipment",
+      "level": "2",
+      "items": [
+        {
+          "name": "",
+          "text": ""
+        },
+        {
+          "name": "",
+          "text": "You start with the following items, plus anything provided by your background."
+        },
+        {
+          "name": "",
+          "text": "• (a) a wooden Shield or (b) any simple weapon"
+        },
+        {
+          "name": "",
+          "text": "• (a) a Scimitar or (b) any simple melee weapon"
+        },
+        {
+          "name": "",
+          "text": "• Leather Armor, an Explorer's Pack, and a druidic focus"
+        },
+        {
+          "name": "",
+          "text": "Alternatively, you may start with 2d4 x 10 gp to buy your own Equipment."
+        }
+      ]
+    },
+    {
+      "type": "table",
+      "header": "Table: The Druid",
+      "items": [
+        {
+          "type": "thead",
+          "rows": [
+            [
+              {
+                "type": "th",
+                "text": "Level",
+                "style": "text-align:center",
+                "rowspan": "2"
+              },
+              {
+                "type": "th",
+                "text": "Proficiency Bonus",
+                "style": "text-align:center",
+                "rowspan": "2"
+              },
+              {
+                "type": "th",
+                "text": "Features",
+                "style": "text-align:center",
+                "rowspan": "2"
+              },
+              {
+                "type": "th",
+                "text": "Cantrips Known",
+                "style": "text-align:center",
+                "rowspan": "2"
+              },
+              {
+                "type": "th",
+                "text": "Spell Slots per Spell Level",
+                "style": "text-align:center",
+                "colspan": "9"
+              }
+            ],
+            [
+              {
+                "type": "th",
+                "text": "1st",
+                "style": "text-align:center"
+              },
+              {
+                "type": "th",
+                "text": "2nd",
+                "style": "text-align:center"
+              },
+              {
+                "type": "th",
+                "text": "3rd",
+                "style": "text-align:center"
+              },
+              {
+                "type": "th",
+                "text": "4th",
+                "style": "text-align:center"
+              },
+              {
+                "type": "th",
+                "text": "5th",
+                "style": "text-align:center"
+              },
+              {
+                "type": "th",
+                "text": "6th",
+                "style": "text-align:center"
+              },
+              {
+                "type": "th",
+                "text": "7th",
+                "style": "text-align:center"
+              },
+              {
+                "type": "th",
+                "text": "8th",
+                "style": "text-align:center"
+              },
+              {
+                "type": "th",
+                "text": "9th",
+                "style": "text-align:center"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "tbody",
+          "rows": [
+            [
+              {
+                "type": "td",
+                "text": "1st",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+2",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "Druidic, Spellcasting"
+              },
+              {
+                "type": "td",
+                "text": "2",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "2",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "2nd",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+2",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "Wild Shape, Druid Circle"
+              },
+              {
+                "type": "td",
+                "text": "2",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "3rd",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+2",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "2",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "4",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "2",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "4th",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+2",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "Wild Shape improvement, Ability Score Improvement"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "4",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "5th",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "4",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "2",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "6th",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "Druid Circle feature"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "4",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "7th",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "4",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "1",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "8th",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "Wild Shape improvement, Ability Score Improvement"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "4",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "2",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "9th",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+4",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "4",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "1",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "10th",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+4",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "Druid Circle feature"
+              },
+              {
+                "type": "td",
+                "text": "4",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "4",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "2",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "11th",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+4",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "4",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "4",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "2",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "1",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "12th",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+4",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "Ability Score Improvement"
+              },
+              {
+                "type": "td",
+                "text": "4",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "4",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "2",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "1",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "13th",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+5",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "4",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "4",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "2",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "1",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "1",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "14th",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+5",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "Druid Circle feature"
+              },
+              {
+                "type": "td",
+                "text": "4",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "4",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "2",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "1",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "1",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "15th",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+5",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "4",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "4",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "2",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "1",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "1",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "1",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "16th",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+5",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "Ability Score Improvement"
+              },
+              {
+                "type": "td",
+                "text": "4",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "4",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "2",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "1",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "1",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "1",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "17th",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+6",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "-",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "4",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "4",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "2",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "1",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "1",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "1",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "1",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "18th",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+6",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "Timeless Body, Beast Spells"
+              },
+              {
+                "type": "td",
+                "text": "4",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "4",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "1",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "1",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "1",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "1",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "19th",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+6",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "Ability Score Improvement"
+              },
+              {
+                "type": "td",
+                "text": "4",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "4",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "2",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "1",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "1",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "1",
+                "style": "text-align:center"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "20th",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+6",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "Archdruid"
+              },
+              {
+                "type": "td",
+                "text": "4",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "4",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "2",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "2",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "1",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "1",
+                "style": "text-align:center"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "header": "Druidic",
+      "level": "2",
+      "items": [
+        {
+          "name": "",
+          "text": "You know Druidic, the secret Language of druids. You can speak the Language and use it to leave hidden messages. You and others who know this Language automatically spot such a Message. Others spot the message's presence with a successful DC 15 Wisdom (Perception) check but can't decipher it without magic."
+        }
+      ]
+    },
+    {
+      "header": "Spellcasting",
+      "level": "2",
+      "items": [
+        {
+          "name": "",
+          "text": "Drawing on the divine essence of nature itself, you can cast Spells to shape that essence to your will. See chapter 10 for the general rules of spellcasting and chapter 11 for the druid spell list."
+        },
+        {
+          "name": "Cantrips",
+          "text": ""
+        },
+        {
+          "name": "",
+          "text": "At 1st level, you know two Cantrips of your choice from the druid spell list. You learn additional druid Cantrips of your choice at higher levels, as shown in the Cantrips Known column of the Druid table."
+        },
+        {
+          "name": "Preparing and Casting Spells",
+          "text": ""
+        },
+        {
+          "name": "",
+          "text": "The Druid table shows how many Spell Slots you have to cast your Spells of 1st level and higher. To cast one of these druid Spells, you must expend a slot of the spell's level or higher. You regain all expended Spell Slots when you finish a Long Rest."
+        },
+        {
+          "name": "",
+          "text": "    You prepare the list of druid Spells that are available for you to cast, choosing from the druid spell list. When you do so, choose a number of druid Spells equal to your Wisdom modifier + your druid level (minimum of one spell). The Spells must be of a level for which you have Spell Slots."
+        },
+        {
+          "name": "",
+          "text": "    For example, if you are a 3rd-level druid, you have four 1st-level and two 2nd-level Spell Slots. With a Wisdom of 16, your list of prepared Spells can include six Spells of 1st or 2nd level, in any combination. If you prepare the 1st-level spell Cure Wounds, you can cast it using a 1st-level ar 2nd-level slot. Casting the spell doesn't remove it from your list of prepared Spells."
+        },
+        {
+          "name": "",
+          "text": "    You can also change your list of prepared Spells when you finish a Long Rest. Preparing a new list of druid Spells requires time spent in prayer and meditation: at least 1 minute per Spell Level for each spell on your list."
+        },
+        {
+          "name": "Spellcasting Ability",
+          "text": ""
+        },
+        {
+          "name": "",
+          "text": "Wisdom is your spellcasting ability for your druid Spells, since your magic draws upon your devotion and Attunement to nature. You use your Wisdom whenever a spell refers to your spellcasting ability. In addition, you use your Wisdom modifier when Setting the saving throw DC for a druid spell you cast and when Making an Attack roll with one."
+        },
+        {
+          "name": "Spell save DC",
+          "text": "= 8 + your proficiency bonus + your Wisdom modifier"
+        },
+        {
+          "name": "Spell Attack modifier",
+          "text": "= your proficiency bonus + your Wisdom modifier"
+        },
+        {
+          "name": "Ritual Casting",
+          "text": ""
+        },
+        {
+          "name": "",
+          "text": "You can cast a druid spell as a ritual if that spell has the ritual tag and you have the spell prepared."
+        },
+        {
+          "name": "Spellcasting Focus",
+          "text": ""
+        },
+        {
+          "name": "",
+          "text": "You can use a druidic focus (see \"Equipment\") as a spellcasting focus for your druid Spells."
+        }
+      ]
+    },
+    {
+      "header": "Wild Shape",
+      "level": "2",
+      "items": [
+        {
+          "name": "",
+          "text": "Starting at 2nd level, you can use your action to magically assume the shape of a beast that you have seen before. You can use this feature twice. You regain expended uses when you finish a short or Long Rest."
+        },
+        {
+          "name": "",
+          "text": "    Your druid level determines the Beasts you can transform into, as shown in the Beast Shapes table. At 2nd level, for example, you can transform into any beast that has a challenge rating of 1/4 or lower that doesn't have a flying or swimming speed."
+        }
+      ]
+    },
+    {
+      "type": "table",
+      "header": "Table: Beast Shapes",
+      "items": [
+        {
+          "type": "thead",
+          "rows": [
+            [
+              {
+                "type": "th",
+                "text": "Level"
+              },
+              {
+                "type": "th",
+                "text": "Max. CR"
+              },
+              {
+                "type": "th",
+                "text": "Limitations"
+              },
+              {
+                "type": "th",
+                "text": "Example"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "tbody",
+          "rows": [
+            [
+              {
+                "type": "td",
+                "text": "2nd"
+              },
+              {
+                "type": "td",
+                "text": "1/4"
+              },
+              {
+                "type": "td",
+                "text": "No flying or swimming speed"
+              },
+              {
+                "type": "td",
+                "text": "Wolf"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "4th"
+              },
+              {
+                "type": "td",
+                "text": "1/2"
+              },
+              {
+                "type": "td",
+                "text": "No flying speed"
+              },
+              {
+                "type": "td",
+                "text": "Crocodile"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "8th"
+              },
+              {
+                "type": "td",
+                "text": "1"
+              },
+              {
+                "type": "td",
+                "text": "—"
+              },
+              {
+                "type": "td",
+                "text": "Giant Eagle"
+              }
+            ]
+          ]
+        },
+        {
+          "name": "",
+          "text": "    While you are transformed, the following rules apply:"
+        },
+        {
+          "name": "",
+          "text": "• Your game Statistics are replaced by the Statistics of the beast, but you retain your alignment, personality, and Intelligence, Wisdom, and Charisma scores. You also retain all of your skill and saving throw proficiencies, in addition to gaining those of the creature. If the creature has the same proficiency as you and the bonus in its stat block is higher than yours, use the creature's bonus instead of yours. If the creature has any legendary or lair actions, you can't use them."
+        },
+        {
+          "name": "",
+          "text": "• When you transform, you assume the beast's Hit Points and Hit Dice. When you revert to your normal form, you return to the number of hit points you had before you transformed. However, if you revert as a result of Dropping to 0 Hit Points, any excess damage carries over to your normal form. For example, if you take 10 damage in animal form and have only 1 hit point left, you revert and take 9 damage. As long as the excess damage doesn't reduce your normal form to 0 hit points, you aren't knocked Unconscious."
+        },
+        {
+          "name": "",
+          "text": "• You can't cast Spells, and your ability to speak or take any action that requires hands is limited to the capabilities of your beast form. Transforming doesn't break your Concentration on a spell you've already cast, however, or prevent you from taking actions that are part of a spell, such as Call Lightning, that you've already cast."
+        },
+        {
+          "name": "",
+          "text": "• You retain the benefit of any features from your class, race, or other source and can use them if the new form is physically capable of doing so. However, you can't use any of your Special senses, such as Darkvision, unless your new form also has that sense."
+        },
+        {
+          "name": "",
+          "text": "• You choose whether your Equipment falls to the ground in your space, merges into your new form, or is worn by it. Worn Equipment functions as normal, but the DM decides whether it is practical for the new form to wear a piece of Equipment, based on the creature's shape and size. Your Equipment doesn't change size or shape to match the new form, and any Equipment that the new form can't wear must either fall to the ground or merge with it. Equipment that merges with the form has no effect until you leave the form."
+        }
+      ]
+    },
+    {
+      "header": "Druid Circle",
+      "level": "2",
+      "items": [
+        {
+          "name": "",
+          "text": "At 2nd level, you choose to Identify with a circle of druids, such as the Circle of the Land. Your choice grants you features at 2nd level and again at 6th, 10th, and 14th level."
+        }
+      ]
+    },
+    {
+      "header": "Ability Score Improvement",
+      "level": "2",
+      "items": [
+        {
+          "name": "",
+          "text": "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two Ability Scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature."
+        }
+      ]
+    },
+    {
+      "header": "Timeless Body",
+      "level": "2",
+      "items": [
+        {
+          "name": "",
+          "text": "Starting at 18th level, the primal magic that you wield causes you to age more slowly. For every 10 years that pass, your body ages only 1 year."
+        }
+      ]
+    },
+    {
+      "header": "Beast Spells",
+      "level": "2",
+      "items": [
+        {
+          "name": "",
+          "text": ""
+        },
+        {
+          "name": "",
+          "text": "Beginning at 18th level, you can cast many of your druid Spells in any shape you assume using Wild Shape. You can perform the somatic and verbal Components of a druid spell while in a beast shape, but you aren't able to provide material Components."
+        }
+      ]
+    },
+    {
+      "header": "Archdruid",
+      "level": "2",
+      "items": [
+        {
+          "name": "",
+          "text": "At 20th level, you can use your Wild Shape an unlimited number of times."
+        },
+        {
+          "name": "",
+          "text": "    Additionally, you can ignore the verbal and somatic Components of your druid Spells, as well as any material Components that lack a cost and aren't consumed by a spell. You gain this benefit in both your normal shape and your beast shape from Wild Shape."
+        }
+      ]
+    },
+    {
+      "header": "Circle of the Land",
+      "level": "2",
+      "items": [
+        {
+          "name": "",
+          "text": "The Circle of the Land is made up of mystics and sages who safeguard ancient knowledge and rites through a vast oral tradition. These druids meet within sacred circles of trees or standing stones to whisper primal secrets in Druidic. The circle’s wisest members preside as the chief priests of communities that hold to the Old Faith and serve as advisors to the rulers of those folk. As a member of this circle, your magic is influenced by the land where you were initiated into the circle’s mysterious rites."
+        }
+      ]
+    },
+    {
+      "header": "Bonus Cantrip",
+      "level": "3",
+      "items": [
+        {
+          "name": "",
+          "text": "When you choose this circle at 2nd level, you learn one additional druid cantrip of your choice."
+        }
+      ]
+    },
+    {
+      "header": "Natural Recovery",
+      "level": "3",
+      "items": [
+        {
+          "name": "",
+          "text": "Starting at 2nd level, you can regain some of your magical energy by sitting in meditation and communing with nature. During a Short Rest, you choose expended Spell Slots to recover. The Spell Slots can have a combined level that is equal to or less than half your druid level (rounded up), and none of the slots can be 6th level or higher. You can’t use this feature again until you finish a Long Rest."
+        },
+        {
+          "name": "",
+          "text": "For example, when you are a 4th-level druid, you can recover up to two levels worth of Spell Slots. You can recover either a 2nd-level slot or two 1st-level slots."
+        }
+      ]
+    },
+    {
+      "header": "Circle Spells",
+      "level": "3",
+      "items": [
+        {
+          "name": "",
+          "text": ""
+        },
+        {
+          "name": "",
+          "text": "Your mystical connection to the land infuses you with the ability to cast certain Spells. At 3rd, 5th, 7th, and 9th level you gain access to circle Spells connected to the land where you became a druid."
+        },
+        {
+          "name": "",
+          "text": "Choose that land—arctic, coast, desert, forest, grassland, mountain, or swamp—and consult the associated list of Spells."
+        },
+        {
+          "name": "",
+          "text": "Once you gain access to a circle spell, you always have it prepared, and it doesn’t count against the number of Spells you can prepare each day. If you gain access to a spell that doesn’t appear on the druid spell list, the spell is nonetheless a druid spell for you."
+        }
+      ]
+    },
+    {
+      "type": "table",
+      "header": "Table: Arctic",
+      "items": [
+        {
+          "type": "thead",
+          "rows": [
+            [
+              {
+                "type": "th",
+                "text": "Druid Level"
+              },
+              {
+                "type": "th",
+                "text": "Circle Spells"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "tbody",
+          "rows": [
+            [
+              {
+                "type": "td",
+                "text": "3rd"
+              },
+              {
+                "type": "td",
+                "text": "Hold Person, Spike Growth"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "5th"
+              },
+              {
+                "type": "td",
+                "text": "Sleet Storm, Slow"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "7th"
+              },
+              {
+                "type": "td",
+                "text": "Freedom of Movement, Ice Storm"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "9th"
+              },
+              {
+                "type": "td",
+                "text": "Commune with Nature, Cone of Cold"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "type": "table",
+      "header": "Table: Coast",
+      "items": [
+        {
+          "type": "thead",
+          "rows": [
+            [
+              {
+                "type": "th",
+                "text": "Druid Level"
+              },
+              {
+                "type": "th",
+                "text": "Circle Spells"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "tbody",
+          "rows": [
+            [
+              {
+                "type": "td",
+                "text": "3rd"
+              },
+              {
+                "type": "td",
+                "text": "Mirror Image, Misty Step"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "5th"
+              },
+              {
+                "type": "td",
+                "text": "Water Breathing, Water Walk"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "7th"
+              },
+              {
+                "type": "td",
+                "text": "Control Water, Freedom of Movement"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "9th"
+              },
+              {
+                "type": "td",
+                "text": "Conjure Elemental, Scrying"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "type": "table",
+      "header": "Table: Desert",
+      "items": [
+        {
+          "type": "thead",
+          "rows": [
+            [
+              {
+                "type": "th",
+                "text": "Druid Level"
+              },
+              {
+                "type": "th",
+                "text": "Circle Spells"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "tbody",
+          "rows": [
+            [
+              {
+                "type": "td",
+                "text": "3rd"
+              },
+              {
+                "type": "td",
+                "text": "Blur, Silence"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "5th"
+              },
+              {
+                "type": "td",
+                "text": "Create Food and Water, Protection from Energy"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "7th"
+              },
+              {
+                "type": "td",
+                "text": "Blight, Hallucinatory Terrain"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "9th"
+              },
+              {
+                "type": "td",
+                "text": "Insect Plague, Wall of Stone"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "type": "table",
+      "header": "Table: Forest",
+      "items": [
+        {
+          "type": "thead",
+          "rows": [
+            [
+              {
+                "type": "th",
+                "text": "Druid Level"
+              },
+              {
+                "type": "th",
+                "text": "Circle Spells"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "tbody",
+          "rows": [
+            [
+              {
+                "type": "td",
+                "text": "3rd"
+              },
+              {
+                "type": "td",
+                "text": "Barkskin, Spider Climb"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "5th"
+              },
+              {
+                "type": "td",
+                "text": "Call Lightning, Plant Growth"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "7th"
+              },
+              {
+                "type": "td",
+                "text": "Divination, Freedom of Movement"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "9th"
+              },
+              {
+                "type": "td",
+                "text": "Commune with Nature, Tree Stride"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "type": "table",
+      "header": "Table: Grassland",
+      "items": [
+        {
+          "type": "thead",
+          "rows": [
+            [
+              {
+                "type": "th",
+                "text": "Druid Level"
+              },
+              {
+                "type": "th",
+                "text": "Circle Spells"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "tbody",
+          "rows": [
+            [
+              {
+                "type": "td",
+                "text": "3rd"
+              },
+              {
+                "type": "td",
+                "text": "Invisibility, Pass without Trace"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "5th"
+              },
+              {
+                "type": "td",
+                "text": "Daylight, Haste"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "7th"
+              },
+              {
+                "type": "td",
+                "text": "Divination, Freedom of Movement"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "9th"
+              },
+              {
+                "type": "td",
+                "text": "Dream, Insect Plague"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "type": "table",
+      "header": "Table: Mountain",
+      "items": [
+        {
+          "type": "thead",
+          "rows": [
+            [
+              {
+                "type": "th",
+                "text": "Druid Level"
+              },
+              {
+                "type": "th",
+                "text": "Circle Spells"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "tbody",
+          "rows": [
+            [
+              {
+                "type": "td",
+                "text": "3rd"
+              },
+              {
+                "type": "td",
+                "text": "Spider Climb, Spike Growth"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "5th"
+              },
+              {
+                "type": "td",
+                "text": "Lightning Bolt, Meld into Stone"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "7th"
+              },
+              {
+                "type": "td",
+                "text": "Stone Shape, Stoneskin"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "9th"
+              },
+              {
+                "type": "td",
+                "text": "Passwall, Wall of Stone"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "type": "table",
+      "header": "Table: Swamp",
+      "items": [
+        {
+          "type": "thead",
+          "rows": [
+            [
+              {
+                "type": "th",
+                "text": "Druid Level"
+              },
+              {
+                "type": "th",
+                "text": "Circle Spells"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "tbody",
+          "rows": [
+            [
+              {
+                "type": "td",
+                "text": "3rd"
+              },
+              {
+                "type": "td",
+                "text": "Acid Arrow, Darkness"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "5th"
+              },
+              {
+                "type": "td",
+                "text": "Water Walk, Stinking Cloud"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "7th"
+              },
+              {
+                "type": "td",
+                "text": "Freedom of Movement, Locate Creature"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "9th"
+              },
+              {
+                "type": "td",
+                "text": "Insect Plague, Scrying"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "header": "Land’s Stride",
+      "level": "3",
+      "items": [
+        {
+          "name": "",
+          "text": "Starting at 6th level, moving through nonmagical difficult terrain costs you no extra Movement. You can also pass through nonmagical Plants without being slowed by them and without taking damage from them if they have thorns, spines, or a similar hazard."
+        },
+        {
+          "name": "",
+          "text": "In addition, you have advantage on saving throws against Plants that are magically created or manipulated to impede Movement, such those created by the Entangle spell."
+        }
+      ]
+    },
+    {
+      "header": "Nature’s Ward",
+      "level": "3",
+      "items": [
+        {
+          "name": "",
+          "text": "When you reach 10th level, you can’t be Charmed or Frightened by elementals or fey, and you are immune to poison and disease."
+        }
+      ]
+    },
+    {
+      "header": "Nature’s Sanctuary",
+      "level": "3",
+      "items": [
+        {
+          "name": "",
+          "text": ""
+        },
+        {
+          "name": "",
+          "text": "When you reach 14th level, creatures of the natural world sense your connection to nature and become hesitant to Attack you. When a beast or plant creature attacks you, that creature must make a Wisdom saving throw against your druid spell save DC. On a failed save, the creature must choose a different target, or the Attack automatically misses. On a successful save, the creature is immune to this effect for 24 hours."
+        },
+        {
+          "name": "",
+          "text": "The creature is aware of this effect before it makes its Attack against you."
+        }
+      ]
+    },
+    {
+      "header": "Sacred Plants and Wood",
+      "level": "2",
+      "items": [
+        {
+          "name": "",
+          "text": "A druid holds certain Plants to be sacred, particularly alder, ash, birch, elder, hazel, holly, juniper, mistletoe, oak, rowan, willow, and yew. Druids often use such Plants as part of a spellcasting focus, incorporating lengths of oak or yew or sprigs of mistletoe."
+        },
+        {
+          "name": "",
+          "text": "Similarly, a druid uses such woods to make other Objects, such as Weapons and shields. Yew is associated with death and rebirth, so weapon handles for scimitars or sickles might be fashioned from it. Ash is associated with life and oak with Strength. These woods make excellent hafts or whole Weapons, such as clubs or quarterstaffs, as well as shields. Alder is associated with air, and it might be used for Thrown Weapons, such as darts or javelins."
+        },
+        {
+          "name": "",
+          "text": "Druids from regions that lack the Plants described here have chosen other Plants to take on similar uses. For instance, a druid of a desert region might value the yucca tree and cactus Plants."
+        }
+      ]
+    },
+    {
+      "header": "Druids and the Gods",
+      "level": "2",
+      "items": [
+        {
+          "name": "",
+          "text": "Some druids venerate the forces of nature themselves, but most druids are devoted to one of the many nature deities worshiped in the multiverse (the lists of gods in Pantheons include many such deities). The worship of these deities is often considered a more ancient tradition than the faiths of clerics and urbanized peoples."
+        }
+      ]
+    }
+  ],
+  "attributes": {
+    "Hit Dice": "d8",
+    "Saving Throws": "Intelligence, Wisdom",
+    "Category": "Classes",
+    "Source": "SRD 5.0"
+  }
+}

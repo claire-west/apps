@@ -1,0 +1,796 @@
+{
+  "name": "Rogue",
+  "sections": [
+    {
+      "header": "",
+      "items": [
+        {
+          "name": "",
+          "text": "As a rogue, you have the following Class Features."
+        }
+      ]
+    },
+    {
+      "header": "Hit Points",
+      "level": "2",
+      "items": [
+        {
+          "name": "",
+          "text": ""
+        },
+        {
+          "name": "Hit Dice",
+          "text": "1d8 per rogue level"
+        },
+        {
+          "name": "Hit Points at 1st Level",
+          "text": "8 + your Constitution modifier"
+        },
+        {
+          "name": "Hit Points at Higher Levels",
+          "text": "1d8 (or 5) + your Constitution modifier per rogue level after 1st"
+        }
+      ]
+    },
+    {
+      "header": "Starting Proficiencies",
+      "level": "2",
+      "items": [
+        {
+          "name": "",
+          "text": "You are proficient with the following items, in addition to any proficiencies provided by your race or background."
+        },
+        {
+          "name": "Armor",
+          "text": "Light Armor"
+        },
+        {
+          "name": "Weapons",
+          "text": "simple Weapons, hand crossbows, longswords, rapiers, shortswords"
+        },
+        {
+          "name": "Tools",
+          "text": "Thieves' Tools"
+        },
+        {
+          "name": "Skills",
+          "text": "Choose four from Acrobatics, Athletics, Deception, Insight, Intimidation, Investigation, Perception, Performance. Persuasion, Sleight of Hand, and Stealth"
+        }
+      ]
+    },
+    {
+      "header": "Starting Equipment",
+      "level": "2",
+      "items": [
+        {
+          "name": "",
+          "text": ""
+        },
+        {
+          "name": "",
+          "text": "You start with the following items, plus anything provided by your background."
+        },
+        {
+          "name": "",
+          "text": "• (a) a Rapier or (b) a Shortsword"
+        },
+        {
+          "name": "",
+          "text": "• (a) a Shortbow and Quiver of 20 Arrows or (b) a Shortsword"
+        },
+        {
+          "name": "",
+          "text": "• (a) a Burglar's Pack, (b) a Dungeoneer's Pack, or (c) an Explorer's Pack"
+        },
+        {
+          "name": "",
+          "text": "• Leather Armor, two daggers, and Thieves' Tools"
+        },
+        {
+          "name": "",
+          "text": "Alternatively, you may start with 4d4 x 10 gp to buy your own Equipment."
+        }
+      ]
+    },
+    {
+      "type": "table",
+      "header": "Table: The Rogue",
+      "items": [
+        {
+          "type": "thead",
+          "rows": [
+            [
+              {
+                "type": "th",
+                "text": "Level",
+                "style": "text-align:center"
+              },
+              {
+                "type": "th",
+                "text": "Proficiency Bonus",
+                "style": "text-align:center"
+              },
+              {
+                "type": "th",
+                "text": "Sneak Attack",
+                "style": "text-align:center"
+              },
+              {
+                "type": "th",
+                "text": "Features",
+                "style": "text-align:center"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "tbody",
+          "rows": [
+            [
+              {
+                "type": "td",
+                "text": "1st",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+2",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "1d6",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "Expertise, Sneak Attack, Thieves’ Cant"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "2nd",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+2",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "1d6",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "Cunning Action"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "3rd",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+2",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "2d6",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "Roguish Archetype"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "4th",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+2",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "2d6",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "Ability Score Improvement"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "5th",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3d6",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "Uncanny Dodge"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "6th",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "3d6",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "Expertise"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "7th",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "4d6",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "Evasion"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "8th",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+3",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "4d6",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "Ability Score Improvement"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "9th",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+4",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "5d6",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "Roguish Archetype feature"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "10th",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+4",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "5d6",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "Ability Score Improvement"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "11th",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+4",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "6d6",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "Reliable Talent"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "12th",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+4",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "6d6",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "Ability Score Improvement"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "13th",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+5",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "7d6",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "Roguish Archetype feature"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "14th",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+5",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "7d6",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "Blindsense"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "15th",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+5",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "8d6",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "Slippery Mind"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "16th",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+5",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "8d6",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "Ability Score Improvement"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "17th",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+6",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "9d6",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "Roguish Archetype feature"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "18th",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+6",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "9d6",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "Elusive"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "19th",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+6",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "10d6",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "Ability Score Improvement"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "20th",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "+6",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "10d6",
+                "style": "text-align:center"
+              },
+              {
+                "type": "td",
+                "text": "Stroke of Luck"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "header": "Expertise",
+      "level": "2",
+      "items": [
+        {
+          "name": "",
+          "text": "At 1st level, choose two of your skill proficiencies, or one of your skill proficiencies and your proficiency with Thieves' Tools. Your proficiency bonus is doubled for any ability check you make that uses either of the chosen proficiencies."
+        },
+        {
+          "name": "",
+          "text": "    At 6th level, you can choose two more of your proficiencies (in skills or with thieves' tools) to gain this benefit."
+        }
+      ]
+    },
+    {
+      "header": "Sneak Attack",
+      "level": "2",
+      "items": [
+        {
+          "name": "",
+          "text": ""
+        },
+        {
+          "name": "",
+          "text": "Beginning at 1st level, you know how to strike subtly and exploit a foe's distraction. Once per turn, you can deal an extra 1d6 damage to one creature you hit with an Attack if you have advantage on the Attack roll. The Attack must use a Finesse or a ranged weapon."
+        },
+        {
+          "name": "",
+          "text": "    You don't need advantage on the Attack roll if another enemy of the target is within 5 feet of it, that enemy isn't Incapacitated, and you don't have disadvantage on the Attack roll."
+        },
+        {
+          "name": "",
+          "text": "    The amount of the extra damage increases as you gain levels in this class, as shown in the Sneak Attack column of the Rogue table."
+        }
+      ]
+    },
+    {
+      "header": "Thieves' Cant",
+      "level": "2",
+      "items": [
+        {
+          "name": "",
+          "text": "During your rogue Training you learned thieves' cant, a secret mix of dialect, jargon, and code that allows you to hide messages in seemingly normal conversation. Only another creature that knows thieves' cant understands such messages. It takes four times longer to convey such a Message than it does to speak the same idea plainly."
+        },
+        {
+          "name": "",
+          "text": "    In addition, you understand a set of secret signs and symbols used to convey short, simple messages, such as whether an area is dangerous or the territory of a thieves' guild, whether loot is nearby, or whether the people in an area are easy marks or will provide a safe house for thieves on the run."
+        }
+      ]
+    },
+    {
+      "header": "Cunning Action",
+      "level": "2",
+      "items": [
+        {
+          "name": "",
+          "text": "Starting at 2nd level, your quick thinking and agility allow you to move and act quickly. You can take a Bonus Action on each of your turns in Combat. This action can be used only to take the Dash, Disengage, or Hide action."
+        }
+      ]
+    },
+    {
+      "header": "Roguish Archetype",
+      "level": "2",
+      "items": [
+        {
+          "name": "",
+          "text": "At 3rd level, you choose an archetype that you emulate in the exercise of your rogue Abilities, such as Thief. Your archetype choice grants you features at 3rd level and then again at 9th, 13th, and 17th level."
+        }
+      ]
+    },
+    {
+      "header": "Ability Score Improvement",
+      "level": "2",
+      "items": [
+        {
+          "name": "",
+          "text": "When you reach 4th level, and again at 8th, 10th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two Ability Scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature."
+        }
+      ]
+    },
+    {
+      "header": "Uncanny Dodge",
+      "level": "2",
+      "items": [
+        {
+          "name": "",
+          "text": ""
+        },
+        {
+          "name": "",
+          "text": "Starting at 5th level, when an attacker that you can see hits you with an Attack, you can use your reaction to halve the attack's damage against you."
+        }
+      ]
+    },
+    {
+      "header": "Evasion",
+      "level": "2",
+      "items": [
+        {
+          "name": "",
+          "text": "Beginning at 7th level, you can nimbly dodge out of the way of certain area effects, such as a red dragon's fiery breath or an Ice Storm spell. When you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail."
+        }
+      ]
+    },
+    {
+      "header": "Reliable Talent",
+      "level": "2",
+      "items": [
+        {
+          "name": "",
+          "text": "By 11th level, you have refined your chosen skills until they approach perfection. Whenever you make an ability check that lets you add your proficiency bonus, you can treat a d20 roll of 9 or lower as a 10."
+        }
+      ]
+    },
+    {
+      "header": "Blindsense",
+      "level": "2",
+      "items": [
+        {
+          "name": "",
+          "text": "Starting at 14th level, if you are able to hear, you are aware of the location of any hidden or Invisible creature within 10 feet of you."
+        }
+      ]
+    },
+    {
+      "header": "Slippery Mind",
+      "level": "2",
+      "items": [
+        {
+          "name": "",
+          "text": "By 15th level, you have acquired greater mental Strength. You gain proficiency in Wisdom saving throws."
+        }
+      ]
+    },
+    {
+      "header": "Elusive",
+      "level": "2",
+      "items": [
+        {
+          "name": "",
+          "text": "Beginning at 18th level, you are so evasive that attackers rarely gain the upper hand against you. No Attack roll has advantage against you while you aren't Incapacitated."
+        }
+      ]
+    },
+    {
+      "header": "Stroke of Luck",
+      "level": "2",
+      "items": [
+        {
+          "name": "",
+          "text": "At 20th level, you have an uncanny knack for succeeding when you need to. If your Attack misses a target within range, you can turn the miss into a hit. Alternatively, if you fail an ability check, you can treat the d20 roll as a 20."
+        },
+        {
+          "name": "",
+          "text": "    Once you use this feature, you can't use it again until you finish a short or Long Rest."
+        }
+      ]
+    },
+    {
+      "header": "Roguish Archetypes",
+      "level": "2",
+      "items": [
+        {
+          "name": "",
+          "text": "Rogues have many features in common, including their emphasis on perfecting their skills, their precise and deadly approach to Combat, and their increasingly quick reflexes. But different rogues steer those talents in varying directions, embodied by the rogue archetypes. Your choice of archetype is a reflection of your focus—not necessarily an indication of your chosen profession, but a description of your preferred techniques."
+        }
+      ]
+    },
+    {
+      "header": "Thief",
+      "level": "3",
+      "items": [
+        {
+          "name": "",
+          "text": ""
+        },
+        {
+          "name": "",
+          "text": "You hone your skills in the larcenous arts. Burglars, bandits, cutpurses, and other criminals typically follow this archetype, but so do rogues who prefer to think of themselves as professional Treasure seekers, explorers, delvers, and investigators. In addition to improving your agility and stealth, you learn skills useful for delving into ancient ruins, reading unfamiliar languages, and using Magic Items you normally couldn’t employ."
+        }
+      ]
+    },
+    {
+      "header": "Fast Hands",
+      "level": "4",
+      "items": [
+        {
+          "name": "",
+          "text": "Starting at 3rd level, you can use the Bonus Action granted by your Cunning Action to make a Dexterity (Sleight of Hand) check, use your thieves’ tools to disarm a trap or open a lock, or take the Use an Object action."
+        }
+      ]
+    },
+    {
+      "header": "Second-Story Work",
+      "level": "4",
+      "items": [
+        {
+          "name": "",
+          "text": "When you choose this archetype at 3rd level, you gain the ability to climb faster than normal; climbing no longer costs you extra Movement."
+        },
+        {
+          "name": "",
+          "text": "In addition, when you make a running jump, the distance you cover increases by a number of feet equal to your Dexterity modifier."
+        }
+      ]
+    },
+    {
+      "header": "Supreme Sneak",
+      "level": "4",
+      "items": [
+        {
+          "name": "",
+          "text": "Starting at 9th level, you have advantage on a Dexterity (Stealth) check if you move no more than half your speed on the same turn."
+        }
+      ]
+    },
+    {
+      "header": "Use Magic Device",
+      "level": "4",
+      "items": [
+        {
+          "name": "",
+          "text": "By 13th level, you have learned enough about the workings of magic that you can improvise the use of items even when they are not intended for you. You ignore all class, race, and level requirements on the use of Magic Items."
+        }
+      ]
+    },
+    {
+      "header": "Thief’s Reflexes",
+      "level": "4",
+      "items": [
+        {
+          "name": "",
+          "text": "When you reach 17th level, you have become adept at laying ambushes and quickly escaping danger. You can take two turns during the first round of any Combat. You take your first turn at your normal initiative and your second turn at your initiative minus 10. You can’t use this feature when you are surprised."
+        }
+      ]
+    }
+  ],
+  "attributes": {
+    "Hit Dice": "d8",
+    "Saving Throws": "Dexterity, Intelligence",
+    "Category": "Classes",
+    "Source": "SRD 5.0"
+  }
+}
