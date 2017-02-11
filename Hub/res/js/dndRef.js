@@ -20,6 +20,7 @@
             bestiary: null,
             spellbook: null,
             spellLevels: null,
+            pages: {},
 
             cr: [
                 '0', '1/8', '1/4', '1/2', '1',
@@ -181,6 +182,12 @@
                     return $.ajax({
                         url: '../shared/json/dnd/spellLevels.json'
                     });
+                },
+
+                page: function(name) {
+                    return $.ajax({
+                        url: '../shared/json/dnd/' + name + '.json'
+                    });
                 }
             },
 
@@ -221,6 +228,16 @@
                             dndRef.index.spellbook();
                         }
                     );
+                },
+
+                page: function($content, name) {
+                    if (dndRef.pages[name]) {
+                        return $.when();
+                    }
+
+                    return modules.ajaxLoader(dndRef.api.page(name), $content).done(function(data) {
+                        dndRef.pages[name] = data;
+                    });
                 }
             },
 
@@ -475,6 +492,102 @@
 
                     $($spells[$spells.length - 1]).addClass('end');
                     return $spells;
+                },
+
+                page: function(name) {
+                    var data = dndRef.pages[name];
+                    var $page = dynCore.makeFragment('dndRef.page');
+                    var $sections = $page.children('.sections');
+                    for (var s = 0; s < data.sections.length; s++) {
+                        var section = data.sections[s];
+                        var $section = $('<div/>', {
+                            class: 'column'
+                        });
+
+                        if (section.type === 'table') {
+                            var $table = $('<table/>', {
+                                class: 'scroll'
+                            }).appendTo($section);
+                            if (section.header) {
+                                if (section.header.startsWith('Table: ')) {
+                                    section.header = section.header.substring(7);
+                                }
+                                $table.append(
+                                    $('<caption/>', {
+                                        text: section.header
+                                    })
+                                );
+                            }
+
+                            for (var n = 0; n < section.items.length; n++) {
+                                var $item = $('<' + section.items[n].type + '/>');
+                                var rows = section.items[n].rows;
+                                if (rows) {
+                                    for (var i = 0; i < rows.length; i++) {
+                                        var $row = $('<tr/>');
+                                        for (var x = 0; x < rows[i].length; x++) {
+                                            var cell = rows[i][x];
+                                            var $cell = $('<' + cell.type + '/>', {
+                                                text: cell.text,
+                                                style: cell.style
+                                            });
+                                            if (cell.colspan) {
+                                                $cell.attr('colspan', cell.colspan);
+                                            }
+                                            if (cell.rowspan) {
+                                                $cell.attr('rowspan', cell.rowspan);
+                                            }
+                                            $row.append($cell);
+                                        }
+                                        $item.append($row);
+                                    }
+                                }
+                                $table.append($item);
+                            }
+                        } else {
+                            if (section.header) {
+                                $section.append($('<h' +
+                                    Math.min(6, (parseInt(section.level) + 2)) +
+                                    '/>', { text: section.header }));
+                            }
+                            for (var n = 0; n < section.items.length; n++) {
+                                $section.append(
+                                    $('<p/>').append(
+                                        $('<strong/>', {
+                                            text: section.items[n].name + ' '
+                                        })
+                                    ).append(
+                                        $('<span/>', {
+                                            text: section.items[n].text
+                                        })
+                                    )
+                                );
+                            }
+                        }
+
+                        $sections.append($section);
+                    }
+
+                    var $attributes = $page.find('.attributes');
+                    if (data.attributes) {
+                        $attributes.append($('<caption/>', {
+                            text: 'Attributes'
+                        }));
+                        for (var key in data.attributes) {
+                            $attributes.append(
+                                $('<tr/>').append([
+                                    $('<th/>', {
+                                        text: key
+                                    }),
+                                    $('<td/>', {
+                                        text: data.attributes[key]
+                                    })
+                                ])
+                            );
+                        }
+                    }
+
+                    return $page;
                 }
             },
 
@@ -571,6 +684,22 @@
                         $('#dndRef-spellbook .spellName').val(spell);
 
                         dndRef.filter.spellbook();
+                    });
+                },
+
+                page: function(name) {
+                    if (!name) {
+                        window.location.replace('#dndRef-directory');
+                    }
+
+                    var $header = $('#dndRef-page .pageHeader');
+                    var $content = $('#dndRef-page .content');
+                    $content.empty();
+
+                    var template = dynCore.loadTemplate('dndRef.page', 'res/html/dndRefPage.html');
+                    $.when(dndRef.load.page($content, name), template).done(function() {
+                        $header.text(dndRef.pages[name].name);
+                        $content.append(dndRef.render.page(name));
                     });
                 }
             },
