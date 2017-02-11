@@ -11,6 +11,10 @@
     font-family: Georgia, serif;
 }
 
+#app-dndRef .top-bar-left i {
+    margin-top: 0.0625rem;
+}
+
 #dndRef-directory {
     font-size: 1.1875rem;
 }
