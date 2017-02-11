@@ -226,10 +226,15 @@
                             value: 'all'
                         })
                     ];
+                    var speciesArr = [];
                     for (var key in specie) {
+                        speciesArr.push(key);
+                    }
+                    speciesArr.sort();
+                    for (var i = 0; i < speciesArr.length; i++) {
                         speciesOptions.push($('<option/>', {
-                            text: key,
-                            value: key.toLocaleLowerCase()
+                            text: speciesArr[i],
+                            value: speciesArr[i].toLocaleLowerCase()
                         }));
                     }
                     $('#dndRef-bestiary .species').append(speciesOptions);
@@ -453,10 +458,15 @@
                             value: 'any'
                         })
                     ];
+                    var levelArr = [];
                     for (var key in levels) {
+                        levelArr.push(key);
+                    }
+                    levelArr.sort();
+                    for (var i = 0; i < levelArr.length; i++) {
                         levelOptions.push($('<option/>', {
-                            text: key,
-                            value: key.toLocaleLowerCase()
+                            text: levelArr[i],
+                            value: levelArr[i].toLocaleLowerCase()
                         }));
                     }
                     $('#dndRef-spellbook .spellLevel').append(levelOptions);
@@ -467,10 +477,15 @@
                             value: 'all'
                         })
                     ];
+                    var classArr = [];
                     for (var key in classes) {
+                        classArr.push(key);
+                    }
+                    classArr.sort();
+                    for (var i = 0; i < classArr.length; i++) {
                         classOptions.push($('<option/>', {
-                            text: key,
-                            value: key.toLocaleLowerCase()
+                            text: classArr[i],
+                            value: classArr[i].toLocaleLowerCase()
                         }));
                     }
                     $('#dndRef-spellbook .spellCategory').append(classOptions);

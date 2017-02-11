@@ -123,6 +123,10 @@
             },
 
             renderStreams: function(streams, title) {
+                var $title = $('title');
+                if ($title.text().startsWith('Twitch')) {
+                    $title.text('Twitch (' + streams.length + ')');
+                }
                 if (streams.length < 1) {
                     $("#twitch-currentStreams").append(twitchStream.rendering.error("No Channels Live"));
                 } else {
