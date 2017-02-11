@@ -125,6 +125,28 @@
                 return dndRef.xp[cr];
             },
 
+            getSortedOptions: function(arr) {
+                var items = [];
+                if (!Array.isArray(arr)) {
+                    for (var key in arr) {
+                        items.push(key);
+                    }
+                } else {
+                    items = arr;
+                }
+
+                items.sort();
+                var $options = [];
+                for (var i = 0; i < items.length; i++) {
+                    $options.push($('<option/>', {
+                        text: items[i],
+                        value: items[i].toLocaleLowerCase()
+                    }));
+                }
+
+                return $options;
+            },
+
             filter: {
                 bestiary: function() {
                     $('#dndRef-bestiary .monster').hide();
@@ -220,24 +242,11 @@
                         };
                     });
 
-                    var speciesOptions = [
-                        $('<option/>', {
-                            text: 'Any',
-                            value: 'all'
-                        })
-                    ];
-                    var speciesArr = [];
-                    for (var key in specie) {
-                        speciesArr.push(key);
-                    }
-                    speciesArr.sort();
-                    for (var i = 0; i < speciesArr.length; i++) {
-                        speciesOptions.push($('<option/>', {
-                            text: speciesArr[i],
-                            value: speciesArr[i].toLocaleLowerCase()
-                        }));
-                    }
-                    $('#dndRef-bestiary .species').append(speciesOptions);
+                    $('#dndRef-bestiary .species').append($('<option/>', {
+                        text: 'Any',
+                        value: 'all'
+                    }));
+                    $('#dndRef-bestiary .species').append(dndRef.getSortedOptions(specie));
 
                     var $monsters = dynCore.makeFragment('dndRef.bestiary', args);
                     $($monsters[$monsters.length - 1]).addClass('end');
@@ -452,43 +461,17 @@
                         }
                     }
 
-                    var levelOptions = [
-                        $('<option/>', {
-                            text: 'Any',
-                            value: 'any'
-                        })
-                    ];
-                    var levelArr = [];
-                    for (var key in levels) {
-                        levelArr.push(key);
-                    }
-                    levelArr.sort();
-                    for (var i = 0; i < levelArr.length; i++) {
-                        levelOptions.push($('<option/>', {
-                            text: levelArr[i],
-                            value: levelArr[i].toLocaleLowerCase()
-                        }));
-                    }
-                    $('#dndRef-spellbook .spellLevel').append(levelOptions);
+                    $('#dndRef-spellbook .spellLevel').append($('<option/>', {
+                        text: 'Any',
+                        value: 'any'
+                    }));
+                    $('#dndRef-spellbook .spellLevel').append(dndRef.getSortedOptions(levels));
 
-                    var classOptions = [
-                        $('<option/>', {
-                            text: 'All',
-                            value: 'all'
-                        })
-                    ];
-                    var classArr = [];
-                    for (var key in classes) {
-                        classArr.push(key);
-                    }
-                    classArr.sort();
-                    for (var i = 0; i < classArr.length; i++) {
-                        classOptions.push($('<option/>', {
-                            text: classArr[i],
-                            value: classArr[i].toLocaleLowerCase()
-                        }));
-                    }
-                    $('#dndRef-spellbook .spellCategory').append(classOptions);
+                    $('#dndRef-spellbook .spellCategory').append($('<option/>', {
+                        text: 'All',
+                        value: 'all'
+                    }));
+                    $('#dndRef-spellbook .spellCategory').append(dndRef.getSortedOptions(classes));
 
                     $($spells[$spells.length - 1]).addClass('end');
                     return $spells;
