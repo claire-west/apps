@@ -15,7 +15,7 @@
         },
         {
           "name": "Age",
-          "text": "Dwarves mature at the same rate as humans, but they’re considered young until they reach the age of 50. On average, they live about 350 years."
+          "text": "Dwarves mature at the same rate as humans, but they're considered young until they reach the age of 50. On average, they live about 350 years."
         },
         {
           "name": "Alignment",
@@ -31,7 +31,7 @@
         },
         {
           "name": "Darkvision",
-          "text": "Accustomed to life underground, you have superior vision in dark and dim Conditions. You can see in dim light within 60 feet of you as if it were bright light, and in Darkness as if it were dim light. You can’t discern color in Darkness, only shades of gray."
+          "text": "Accustomed to life underground, you have superior vision in dark and dim Conditions. You can see in dim light within 60 feet of you as if it were bright light, and in Darkness as if it were dim light. You can't discern color in Darkness, only shades of gray."
         },
         {
           "name": "Dwarven Resilience",
@@ -43,7 +43,7 @@
         },
         {
           "name": "Tool Proficiency",
-          "text": "You gain proficiency with the artisan’s tools of your choice: smith’s tools, brewer’s supplies, or mason’s tools."
+          "text": "You gain proficiency with the artisan's tools of your choice: smith's tools, brewer's supplies, or mason's tools."
         },
         {
           "name": "Stonecunning",
@@ -82,7 +82,28 @@
           "text": "Your hit point maximum increases by 1, and it increases by 1 every time you gain a level."
         }
       ]
+    },
+    {
+      "header": "Mountain Dwarf",
+      "level": "3",
+      "items": [
+        {
+          "name": "",
+          "text": "As a mountain dwarf, you're strong and hardy, accustomed to a difficult life in rugged terrain. You're probably on the tall side (for a dwarf), and tend toward lighter coloration."
+        },
+        {
+          "name": "Ability Score Increase",
+          "text": "Your Strength score increases by 1."
+        },
+        {
+          "name": "Dwarven Armor Training",
+          "text": "You have proficiency with light and medium armor."
+        }
+      ]
     }
   ],
-  "attributes": { "Category": "Races" }
+  "attributes": {
+    "Category": "Races",
+    "Source": "Player's Basic Rules 0.2"
+  }
 }

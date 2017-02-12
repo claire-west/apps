@@ -144,7 +144,7 @@
               },
               {
                 "type": "td",
-                "text": "Expertise, Sneak Attack, Thieves’ Cant"
+                "text": "Expertise, Sneak Attack, Thieves' Cant"
               }
             ],
             [
@@ -626,7 +626,7 @@
       "items": [
         {
           "name": "",
-          "text": "When you reach 4th level, and again at 8th, 10th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two Ability Scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature."
+          "text": "When you reach 4th level, and again at 8th, 10th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two Ability Scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature."
         }
       ]
     },
@@ -728,7 +728,7 @@
         },
         {
           "name": "",
-          "text": "You hone your skills in the larcenous arts. Burglars, bandits, cutpurses, and other criminals typically follow this archetype, but so do rogues who prefer to think of themselves as professional Treasure seekers, explorers, delvers, and investigators. In addition to improving your agility and stealth, you learn skills useful for delving into ancient ruins, reading unfamiliar languages, and using Magic Items you normally couldn’t employ."
+          "text": "You hone your skills in the larcenous arts. Burglars, bandits, cutpurses, and other criminals typically follow this archetype, but so do rogues who prefer to think of themselves as professional Treasure seekers, explorers, delvers, and investigators. In addition to improving your agility and stealth, you learn skills useful for delving into ancient ruins, reading unfamiliar languages, and using Magic Items you normally couldn't employ."
         }
       ]
     },
@@ -738,7 +738,7 @@
       "items": [
         {
           "name": "",
-          "text": "Starting at 3rd level, you can use the Bonus Action granted by your Cunning Action to make a Dexterity (Sleight of Hand) check, use your thieves’ tools to disarm a trap or open a lock, or take the Use an Object action."
+          "text": "Starting at 3rd level, you can use the Bonus Action granted by your Cunning Action to make a Dexterity (Sleight of Hand) check, use your thieves' tools to disarm a trap or open a lock, or take the Use an Object action."
         }
       ]
     },
@@ -777,12 +777,12 @@
       ]
     },
     {
-      "header": "Thief’s Reflexes",
+      "header": "Thief's Reflexes",
       "level": "4",
       "items": [
         {
           "name": "",
-          "text": "When you reach 17th level, you have become adept at laying ambushes and quickly escaping danger. You can take two turns during the first round of any Combat. You take your first turn at your normal initiative and your second turn at your initiative minus 10. You can’t use this feature when you are surprised."
+          "text": "When you reach 17th level, you have become adept at laying ambushes and quickly escaping danger. You can take two turns during the first round of any Combat. You take your first turn at your normal initiative and your second turn at your initiative minus 10. You can't use this feature when you are surprised."
         }
       ]
     }

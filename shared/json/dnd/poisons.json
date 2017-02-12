@@ -22,7 +22,7 @@
         },
         {
           "name": "Inhaled",
-          "text": "These poisons are powders or gases that take effect when inhaled. Blowing the powder or releasing the gas subjects creatures in a 5-foot cube to its effect. The resulting cloud dissipates immediately afterward. Holding one’s breath is ineffective against inhaled poisons, as they affect nasal membranes, tear ducts, and other parts of the body."
+          "text": "These poisons are powders or gases that take effect when inhaled. Blowing the powder or releasing the gas subjects creatures in a 5-foot cube to its effect. The resulting cloud dissipates immediately afterward. Holding one's breath is ineffective against inhaled poisons, as they affect nasal membranes, tear ducts, and other parts of the body."
         },
         {
           "name": "Injury",
@@ -71,7 +71,7 @@
             [
               {
                 "type": "td",
-                "text": "Assassin’s blood"
+                "text": "Assassin's blood"
               },
               {
                 "type": "td",
@@ -263,8 +263,8 @@
           "text": "Each type of poison has its own debilitating effects."
         },
         {
-          "name": "Assassin’s Blood (Ingested)",
-          "text": "A creature subjected to this poison must make a DC 10 Constitution saving throw. On a failed save, it takes 6 (1d12) poison damage and is Poisoned for 24 hours. On a successful save, the creature takes half damage and isn’t Poisoned."
+          "name": "Assassin's Blood (Ingested)",
+          "text": "A creature subjected to this poison must make a DC 10 Constitution saving throw. On a failed save, it takes 6 (1d12) poison damage and is Poisoned for 24 hours. On a successful save, the creature takes half damage and isn't Poisoned."
         },
         {
           "name": "Burnt Othur Fumes (Inhaled)",
@@ -296,7 +296,7 @@
         },
         {
           "name": "Pale Tincture (Ingested)",
-          "text": "A creature subjected to this poison must succeed on a DC 16 Constitution saving throw or take 3 (1d6) poison damage and become Poisoned. The Poisoned creature must repeat the saving throw every 24 hours, taking 3 (1d6) poison damage on a failed save. Until this poison ends, the damage the poison deals can’t be healed by any means. After seven successful saving throws, the effect ends and the creature can heal normally."
+          "text": "A creature subjected to this poison must succeed on a DC 16 Constitution saving throw or take 3 (1d6) poison damage and become Poisoned. The Poisoned creature must repeat the saving throw every 24 hours, taking 3 (1d6) poison damage on a failed save. Until this poison ends, the damage the poison deals can't be healed by any means. After seven successful saving throws, the effect ends and the creature can heal normally."
         },
         {
           "name": "Purple Worm Poison (Injury)",
@@ -312,7 +312,7 @@
         },
         {
           "name": "Truth Serum (Ingested)",
-          "text": "A creature subjected to this poison must succeed on a DC 11 Constitution saving throw or become Poisoned for 1 hour. The Poisoned creature can’t knowingly speak a lie, as if under the effect of a Zone of Truth spell."
+          "text": "A creature subjected to this poison must succeed on a DC 11 Constitution saving throw or become Poisoned for 1 hour. The Poisoned creature can't knowingly speak a lie, as if under the effect of a Zone of Truth spell."
         },
         {
           "name": "Wyvern Poison (Injury)",

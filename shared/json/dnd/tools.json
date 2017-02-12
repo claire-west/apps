@@ -6,7 +6,7 @@
       "items": [
         {
           "name": "",
-          "text": "A tool helps you to do something you couldn't otherwise do, such as craft or repair an item, forge a document, or pick a lock. Your race, class, background, or feats give you proficiency with certain tools. Proficiency with a tool allows you to add your proficiency bonus to any ability check you make using that tool. Tool use is not tied to a single ability, since proficiency with a tool represents broader knowledge of its use. For example, the GM might ask you to make a Dexterity check to carve a fine detail with your woodcarver’s tools, or a Strength check to make something out of particularly hard wood."
+          "text": "A tool helps you to do something you couldn't otherwise do, such as craft or repair an item, forge a document, or pick a lock. Your race, class, background, or feats give you proficiency with certain tools. Proficiency with a tool allows you to add your proficiency bonus to any ability check you make using that tool. Tool use is not tied to a single ability, since proficiency with a tool represents broader knowledge of its use. For example, the GM might ask you to make a Dexterity check to carve a fine detail with your woodcarver's tools, or a Strength check to make something out of particularly hard wood."
         }
       ]
     },
@@ -36,7 +36,7 @@
             [
               {
                 "type": "td",
-                "text": "Artisan’s tools",
+                "text": "Artisan's tools",
                 "colspan": "3"
               }
             ]
@@ -48,7 +48,7 @@
             [
               {
                 "type": "td",
-                "text": "Alchemist’s supplies",
+                "text": "Alchemist's supplies",
                 "style": "padding-left:10px"
               },
               {
@@ -65,7 +65,7 @@
             [
               {
                 "type": "td",
-                "text": "Brewer’s supplies",
+                "text": "Brewer's supplies",
                 "style": "padding-left:10px"
               },
               {
@@ -99,7 +99,7 @@
             [
               {
                 "type": "td",
-                "text": "Carpenter’s tools",
+                "text": "Carpenter's tools",
                 "style": "padding-left:10px"
               },
               {
@@ -116,7 +116,7 @@
             [
               {
                 "type": "td",
-                "text": "Cartographer’s tools",
+                "text": "Cartographer's tools",
                 "style": "padding-left:10px"
               },
               {
@@ -133,7 +133,7 @@
             [
               {
                 "type": "td",
-                "text": "Cobbler’s tools",
+                "text": "Cobbler's tools",
                 "style": "padding-left:10px"
               },
               {
@@ -150,7 +150,7 @@
             [
               {
                 "type": "td",
-                "text": "Cook’s utensils",
+                "text": "Cook's utensils",
                 "style": "padding-left:10px"
               },
               {
@@ -167,7 +167,7 @@
             [
               {
                 "type": "td",
-                "text": "Glassblower’s tools",
+                "text": "Glassblower's tools",
                 "style": "padding-left:10px"
               },
               {
@@ -184,7 +184,7 @@
             [
               {
                 "type": "td",
-                "text": "Jeweler’s tools",
+                "text": "Jeweler's tools",
                 "style": "padding-left:10px"
               },
               {
@@ -201,7 +201,7 @@
             [
               {
                 "type": "td",
-                "text": "Leatherworker’s tools",
+                "text": "Leatherworker's tools",
                 "style": "padding-left:10px"
               },
               {
@@ -218,7 +218,7 @@
             [
               {
                 "type": "td",
-                "text": "Mason’s tools",
+                "text": "Mason's tools",
                 "style": "padding-left:10px"
               },
               {
@@ -235,7 +235,7 @@
             [
               {
                 "type": "td",
-                "text": "Painter’s supplies",
+                "text": "Painter's supplies",
                 "style": "padding-left:10px"
               },
               {
@@ -252,7 +252,7 @@
             [
               {
                 "type": "td",
-                "text": "Potter’s tools",
+                "text": "Potter's tools",
                 "style": "padding-left:10px"
               },
               {
@@ -269,7 +269,7 @@
             [
               {
                 "type": "td",
-                "text": "Smith’s tools",
+                "text": "Smith's tools",
                 "style": "padding-left:10px"
               },
               {
@@ -286,7 +286,7 @@
             [
               {
                 "type": "td",
-                "text": "Tinker’s tools",
+                "text": "Tinker's tools",
                 "style": "padding-left:10px"
               },
               {
@@ -303,7 +303,7 @@
             [
               {
                 "type": "td",
-                "text": "Weaver’s tools",
+                "text": "Weaver's tools",
                 "style": "padding-left:10px"
               },
               {
@@ -320,7 +320,7 @@
             [
               {
                 "type": "td",
-                "text": "Woodcarver’s tools",
+                "text": "Woodcarver's tools",
                 "style": "padding-left:10px"
               },
               {
@@ -575,7 +575,7 @@
             [
               {
                 "type": "td",
-                "text": "Navigator’s tools"
+                "text": "Navigator's tools"
               },
               {
                 "type": "td",
@@ -591,7 +591,7 @@
             [
               {
                 "type": "td",
-                "text": "Thieves’ tools"
+                "text": "Thieves' tools"
               },
               {
                 "type": "td",
@@ -628,8 +628,8 @@
       "header": "",
       "items": [
         {
-          "name": "Artisan’s Tools",
-          "text": "These Special tools include the items needed to pursue a craft or trade. The table shows examples of the most common types of tools, each providing items related to a single craft. Proficiency with a set of artisan’s tools lets you add your proficiency bonus to any Ability Checks you make using the tools in your craft. Each type of artisan’s tools requires a separate proficiency."
+          "name": "Artisan's Tools",
+          "text": "These Special tools include the items needed to pursue a craft or trade. The table shows examples of the most common types of tools, each providing items related to a single craft. Proficiency with a set of artisan's tools lets you add your proficiency bonus to any Ability Checks you make using the tools in your craft. Each type of artisan's tools requires a separate proficiency."
         },
         {
           "name": "Disguise kit",
@@ -652,15 +652,15 @@
           "text": "Several of the most common types of musical instruments are shown on the table as examples. If you have proficiency with a given musical instrument, you can add your proficiency bonus to any Ability Checks you make to play music with the instrument. A bard can use a musical instrument as a spellcasting focus. Each type of musical instrument requires a separate proficiency."
         },
         {
-          "name": "Navigator’s Tools",
+          "name": "Navigator's Tools",
           "text": "This set of instruments is used for navigation at sea. Proficiency with Navigator's Tools lets you chart a ship's course and follow navigation charts. In addition, these tools allow you to add your proficiency bonus to any ability check you make to avoid getting lost at sea."
         },
         {
-          "name": "Poisoner’s Kit",
-          "text": "A poisoner’s kit includes the vials, chemicals, and other Equipment necessary for the Creation of Poisons. Proficiency with this kit lets you add your proficiency bonus to any Ability Checks you make to craft or use Poisons."
+          "name": "Poisoner's Kit",
+          "text": "A poisoner's kit includes the vials, chemicals, and other Equipment necessary for the Creation of Poisons. Proficiency with this kit lets you add your proficiency bonus to any Ability Checks you make to craft or use Poisons."
         },
         {
-          "name": "Thieves’ Tools",
+          "name": "Thieves' Tools",
           "text": "This set of tools includes a small file, a set of lock picks, a small mirror mounted on a metal handle, a set of narrow-bladed scissors, and a pair of pliers. Proficiency with these tools lets you add your proficiency bonus to any Ability Checks you make to disarm traps or open locks."
         }
       ]

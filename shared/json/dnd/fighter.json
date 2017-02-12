@@ -559,7 +559,7 @@
       "items": [
         {
           "name": "",
-          "text": "When you reach 4th level, and again at 6th, 8th, 12th, 14th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two Ability Scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature."
+          "text": "When you reach 4th level, and again at 6th, 8th, 12th, 14th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two Ability Scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature."
         }
       ]
     },
@@ -631,7 +631,7 @@
       "items": [
         {
           "name": "",
-          "text": "Starting at 7th level, you can add half your proficiency bonus (round up) to any Strength, Dexterity, or Constitution check you make that doesn’t already use your proficiency bonus."
+          "text": "Starting at 7th level, you can add half your proficiency bonus (round up) to any Strength, Dexterity, or Constitution check you make that doesn't already use your proficiency bonus."
         },
         {
           "name": "",
@@ -669,7 +669,7 @@
         },
         {
           "name": "",
-          "text": "You don’t gain this benefit if you have 0 hit points."
+          "text": "You don't gain this benefit if you have 0 hit points."
         }
       ]
     }

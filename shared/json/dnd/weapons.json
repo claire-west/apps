@@ -6,7 +6,7 @@
       "items": [
         {
           "name": "",
-          "text": "Your class grants proficiency in certain weapons, reflecting both the class’s focus and the tools you are most likely to use. Whether you favor a Longsword or a Longbow, your weapon and your ability to wield it effectively can mean the difference between life and death while adventuring."
+          "text": "Your class grants proficiency in certain weapons, reflecting both the class's focus and the tools you are most likely to use. Whether you favor a Longsword or a Longbow, your weapon and your ability to wield it effectively can mean the difference between life and death while adventuring."
         },
         {
           "name": "",
@@ -72,7 +72,7 @@
         },
         {
           "name": "",
-          "text": "Small creatures have disadvantage on Attack rolls with heavy weapons. A heavy weapon’s size and bulk make it too large for a Small creature to use effectively."
+          "text": "Small creatures have disadvantage on Attack rolls with heavy weapons. A heavy weapon's size and bulk make it too large for a Small creature to use effectively."
         }
       ]
     },
@@ -102,7 +102,7 @@
       "items": [
         {
           "name": "",
-          "text": "A weapon that can be used to make a ranged Attack has a range in parentheses after the ammunition or thrown property. The range lists two numbers. The first is the weapon’s normal range in feet, and the second indicates the weapon’s long range. When attacking a target beyond normal range, you have disadvantage on the Attack roll. You can’t Attack a target beyond the weapon’s long range."
+          "text": "A weapon that can be used to make a ranged Attack has a range in parentheses after the ammunition or thrown property. The range lists two numbers. The first is the weapon's normal range in feet, and the second indicates the weapon's long range. When attacking a target beyond normal range, you have disadvantage on the Attack roll. You can't Attack a target beyond the weapon's long range."
         }
       ]
     },
@@ -122,7 +122,7 @@
       "items": [
         {
           "name": "",
-          "text": "A weapon with the special property has unusual rules governing its use, explained in the weapon’s description (see “Special Weapons” later in this section)."
+          "text": "A weapon with the special property has unusual rules governing its use, explained in the weapon's description (see “Special Weapons” later in this section)."
         }
       ]
     },
@@ -162,11 +162,11 @@
       "items": [
         {
           "name": "",
-          "text": "Sometimes characters don’t have their weapons and have to Attack with whatever is at hand. An improvised weapon includes any object you can wield in one or two hands, such as broken glass, a table leg, a frying pan, a wagon wheel, or a dead Goblin."
+          "text": "Sometimes characters don't have their weapons and have to Attack with whatever is at hand. An improvised weapon includes any object you can wield in one or two hands, such as broken glass, a table leg, a frying pan, a wagon wheel, or a dead Goblin."
         },
         {
           "name": "",
-          "text": "Often, an improvised weapon is similar to an actual weapon and can be treated as such. For example, a table leg is akin to a club. At the GM’s option, a character proficient with a weapon can use a similar object as if it were that weapon and use his or her proficiency bonus."
+          "text": "Often, an improvised weapon is similar to an actual weapon and can be treated as such. For example, a table leg is akin to a club. At the GM's option, a character proficient with a weapon can use a similar object as if it were that weapon and use his or her proficiency bonus."
         },
         {
           "name": "",
@@ -194,7 +194,7 @@
         },
         {
           "name": "Lance",
-          "text": "You have disadvantage when you use a lance to Attack a target within 5 feet of you. Also, a lance requires two hands to wield when you aren’t mounted."
+          "text": "You have disadvantage when you use a lance to Attack a target within 5 feet of you. Also, a lance requires two hands to wield when you aren't mounted."
         },
         {
           "name": "Net",

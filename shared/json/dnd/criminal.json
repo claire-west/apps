@@ -6,7 +6,7 @@
       "items": [
         {
           "name": "",
-          "text": "You are an experienced criminal with a history of breaking the law. You have spent a lot of time among other criminals and still have contacts within the criminal underworld. You’re far closer than most people to the world of murder, theft, and violence that pervades the underbelly of civilization, and you have survived up to this point by flouting the rules and regulations of society."
+          "text": "You are an experienced criminal with a history of breaking the law. You have spent a lot of time among other criminals and still have contacts within the criminal underworld. You're far closer than most people to the world of murder, theft, and violence that pervades the underbelly of civilization, and you have survived up to this point by flouting the rules and regulations of society."
         },
         {
           "name": "Skill Proficiencies",
@@ -14,7 +14,7 @@
         },
         {
           "name": "Tool Proficiencies",
-          "text": "One type of gaming set, thieves’ tools"
+          "text": "One type of gaming set, thieves' tools"
         },
         {
           "name": "Equipment",
@@ -28,7 +28,7 @@
       "items": [
         {
           "name": "",
-          "text": "There are many kinds of criminals, and within a thieves’ guild or similar criminal organization, individual members have particular specialties. Even criminals who operate outside of such organizations have strong preferences for certain kinds of crimes over others. Choose the role you played in your criminal life, or roll on the table below."
+          "text": "There are many kinds of criminals, and within a thieves' guild or similar criminal organization, individual members have particular specialties. Even criminals who operate outside of such organizations have strong preferences for certain kinds of crimes over others. Choose the role you played in your criminal life, or roll on the table below."
         }
       ]
     },
@@ -247,7 +247,7 @@
               },
               {
                 "type": "td",
-                "text": "I don’t pay attention to the risks in a situation. Never tell me the odds."
+                "text": "I don't pay attention to the risks in a situation. Never tell me the odds."
               }
             ],
             [
@@ -257,7 +257,7 @@
               },
               {
                 "type": "td",
-                "text": "The best way to get me to do something is to tell me I can’t do it."
+                "text": "The best way to get me to do something is to tell me I can't do it."
               }
             ],
             [
@@ -303,7 +303,7 @@
               },
               {
                 "type": "td",
-                "text": "Honor. I don’t steal from others in the trade. (Lawful)"
+                "text": "Honor. I don't steal from others in the trade. (Lawful)"
               }
             ],
             [
@@ -343,7 +343,7 @@
               },
               {
                 "type": "td",
-                "text": "People. I’m loyal to my friends, not to any ideals, and everyone else can take a trip down the Styx for all I care. (Neutral)"
+                "text": "People. I'm loyal to my friends, not to any ideals, and everyone else can take a trip down the Styx for all I care. (Neutral)"
               }
             ],
             [
@@ -353,7 +353,7 @@
               },
               {
                 "type": "td",
-                "text": "Redemption. There’s a spark of good in everyone. (Good)"
+                "text": "Redemption. There's a spark of good in everyone. (Good)"
               }
             ]
           ]
@@ -389,7 +389,7 @@
               },
               {
                 "type": "td",
-                "text": "I’m trying to pay off an old debt I owe to a generous benefactor."
+                "text": "I'm trying to pay off an old debt I owe to a generous benefactor."
               }
             ],
             [
@@ -429,7 +429,7 @@
               },
               {
                 "type": "td",
-                "text": "I’m guilty of a terrible crime. I hope I can redeem myself for it."
+                "text": "I'm guilty of a terrible crime. I hope I can redeem myself for it."
               }
             ],
             [
@@ -475,7 +475,7 @@
               },
               {
                 "type": "td",
-                "text": "When I see something valuable, I can’t think about anything but how to steal it."
+                "text": "When I see something valuable, I can't think about anything but how to steal it."
               }
             ],
             [
@@ -495,7 +495,7 @@
               },
               {
                 "type": "td",
-                "text": "If there’s a plan, I’ll forget it. If I don’t forget it, I’ll ignore it."
+                "text": "If there's a plan, I'll forget it. If I don't forget it, I'll ignore it."
               }
             ],
             [
@@ -505,7 +505,7 @@
               },
               {
                 "type": "td",
-                "text": "I have a “tell” that reveals when I’m lying."
+                "text": "I have a “tell” that reveals when I'm lying."
               }
             ],
             [
@@ -525,7 +525,7 @@
               },
               {
                 "type": "td",
-                "text": "An innocent person is in prison for a crime that I committed. I’m okay with that."
+                "text": "An innocent person is in prison for a crime that I committed. I'm okay with that."
               }
             ]
           ]

@@ -14,7 +14,7 @@
         },
         {
           "name": "Armor Proficiency",
-          "text": "Anyone can put on a suit of armor or strap a Shield to an arm. Only those proficient in the armor’s use know how to wear it effectively, however. Your class gives you proficiency with certain types of armor. If you wear armor that you lack proficiency with, you have disadvantage on any ability check, saving throw, or Attack roll that involves Strength or Dexterity, and you can’t cast Spells."
+          "text": "Anyone can put on a suit of armor or strap a Shield to an arm. Only those proficient in the armor's use know how to wear it effectively, however. Your class gives you proficiency with certain types of armor. If you wear armor that you lack proficiency with, you have disadvantage on any ability check, saving throw, or Attack roll that involves Strength or Dexterity, and you can't cast Spells."
         },
         {
           "name": "Armor Class (AC)",
@@ -22,7 +22,7 @@
         },
         {
           "name": "Heavy Armor",
-          "text": "Heavier armor interferes with the wearer’s ability to move quickly, stealthily, and freely. If the Armor table shows “Str 13” or “Str 15” in the Strength column for an armor type, the armor reduces the wearer’s speed by 10 feet unless the wearer has a Strength score equal to or higher than the listed score."
+          "text": "Heavier armor interferes with the wearer's ability to move quickly, stealthily, and freely. If the Armor table shows “Str 13” or “Str 15” in the Strength column for an armor type, the armor reduces the wearer's speed by 10 feet unless the wearer has a Strength score equal to or higher than the listed score."
         },
         {
           "name": "Stealth",
@@ -70,7 +70,7 @@
         },
         {
           "name": "Chain Shirt",
-          "text": "Made of interlocking metal rings, a Chain Shirt is worn between layers of clothing or leather. This armor offers modest protection to the wearer’s upper body and allows the sound of the rings rubbing against one another to be muffled by outer layers."
+          "text": "Made of interlocking metal rings, a Chain Shirt is worn between layers of clothing or leather. This armor offers modest protection to the wearer's upper body and allows the sound of the rings rubbing against one another to be muffled by outer layers."
         },
         {
           "name": "Scale Mail",
@@ -78,11 +78,11 @@
         },
         {
           "name": "Breastplate",
-          "text": "This armor consists of a fitted metal chest piece worn with supple leather. Although it leaves the legs and arms relatively unprotected, this armor provides good protection for the wearer’s vital organs while leaving the wearer relatively unencumbered."
+          "text": "This armor consists of a fitted metal chest piece worn with supple leather. Although it leaves the legs and arms relatively unprotected, this armor provides good protection for the wearer's vital organs while leaving the wearer relatively unencumbered."
         },
         {
           "name": "Half Plate",
-          "text": "Half Plate consists of shaped metal plates that cover most of the wearer’s body. It does not include leg protection beyond simple greaves that are attached with leather straps."
+          "text": "Half Plate consists of shaped metal plates that cover most of the wearer's body. It does not include leg protection beyond simple greaves that are attached with leather straps."
         }
       ]
     },
@@ -96,11 +96,11 @@
         },
         {
           "name": "",
-          "text": "Heavy armor doesn’t let you add your Dexterity modifier to your Armor Class, but it also doesn’t penalize you if your Dexterity modifier is negative."
+          "text": "Heavy armor doesn't let you add your Dexterity modifier to your Armor Class, but it also doesn't penalize you if your Dexterity modifier is negative."
         },
         {
           "name": "Ring Mail",
-          "text": "This armor is Leather Armor with heavy rings sewn into it. The rings help reinforce the armor against blows from swords and axes. Ring Mail is inferior to Chain Mail, and it's usually worn only by those who can’t afford better armor."
+          "text": "This armor is Leather Armor with heavy rings sewn into it. The rings help reinforce the armor against blows from swords and axes. Ring Mail is inferior to Chain Mail, and it's usually worn only by those who can't afford better armor."
         },
         {
           "name": "Chain Mail",
@@ -643,11 +643,11 @@
       "items": [
         {
           "name": "",
-          "text": "The time it takes to don or doff armor depends on the armor’s category."
+          "text": "The time it takes to don or doff armor depends on the armor's category."
         },
         {
           "name": "Don",
-          "text": "This is the time it takes to put on armor. You benefit from the armor’s AC only if you take the full time to don the suit of armor."
+          "text": "This is the time it takes to put on armor. You benefit from the armor's AC only if you take the full time to don the suit of armor."
         },
         {
           "name": "Doff",

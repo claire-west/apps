@@ -14,11 +14,11 @@
         },
         {
           "name": "Tool Proficiencies",
-          "text": "One type of artisan’s tools, vehicles (land)"
+          "text": "One type of artisan's tools, vehicles (land)"
         },
         {
           "name": "Equipment",
-          "text": "A set of artisan’s tools (one of your choice), a shovel, an iron pot, a set of common clothes, and a belt pouch containing 10 gp"
+          "text": "A set of artisan's tools (one of your choice), a shovel, an iron pot, a set of common clothes, and a belt pouch containing 10 gp"
         }
       ]
     },
@@ -61,7 +61,7 @@
               },
               {
                 "type": "td",
-                "text": "I stood up to a tyrant’s agents."
+                "text": "I stood up to a tyrant's agents."
               }
             ],
             [
@@ -111,7 +111,7 @@
               },
               {
                 "type": "td",
-                "text": "I broke into a tyrant’s castle and stole weapons to arm the people."
+                "text": "I broke into a tyrant's castle and stole weapons to arm the people."
               }
             ],
             [
@@ -121,7 +121,7 @@
               },
               {
                 "type": "td",
-                "text": "I trained the peasantry to use farm implements as weapons against a tyrant’s soldiers."
+                "text": "I trained the peasantry to use farm implements as weapons against a tyrant's soldiers."
               }
             ],
             [
@@ -151,7 +151,7 @@
               },
               {
                 "type": "td",
-                "text": "Recruited into a lord’s army, I rose to leadership and was commended for my heroism."
+                "text": "Recruited into a lord's army, I rose to leadership and was commended for my heroism."
               }
             ]
           ]
@@ -217,7 +217,7 @@
               },
               {
                 "type": "td",
-                "text": "If someone is in trouble, I’m always ready to lend help."
+                "text": "If someone is in trouble, I'm always ready to lend help."
               }
             ],
             [
@@ -247,7 +247,7 @@
               },
               {
                 "type": "td",
-                "text": "I’m confident in my own abilities and do what I can to instill confidence in others."
+                "text": "I'm confident in my own abilities and do what I can to instill confidence in others."
               }
             ],
             [
@@ -353,7 +353,7 @@
               },
               {
                 "type": "td",
-                "text": "Sincerity. There’s no good in pretending to be something I’m not. (Neutral)"
+                "text": "Sincerity. There's no good in pretending to be something I'm not. (Neutral)"
               }
             ],
             [
@@ -495,7 +495,7 @@
               },
               {
                 "type": "td",
-                "text": "I’m convinced of the significance of my destiny, and blind to my shortcomings and the risk of failure."
+                "text": "I'm convinced of the significance of my destiny, and blind to my shortcomings and the risk of failure."
               }
             ],
             [

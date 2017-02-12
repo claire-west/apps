@@ -505,7 +505,7 @@
               },
               {
                 "type": "td",
-                "text": "Ability Score Improvement, Land’s Stride",
+                "text": "Ability Score Improvement, Land's Stride",
                 "style": "text-align:left"
               },
               {
@@ -1235,7 +1235,7 @@
       "items": [
         {
           "name": "",
-          "text": "At 2nd level, you adopt a particular style of fighting as your specialty. Choose one of the following options. You can’t take a Fighting Style option more than once, even if you later get to choose again."
+          "text": "At 2nd level, you adopt a particular style of fighting as your specialty. Choose one of the following options. You can't take a Fighting Style option more than once, even if you later get to choose again."
         }
       ]
     },
@@ -1305,7 +1305,7 @@
       "items": [
         {
           "name": "",
-          "text": "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two Ability Scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature."
+          "text": "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two Ability Scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature."
         }
       ]
     },
@@ -1401,12 +1401,12 @@
         },
         {
           "name": "",
-          "text": "Emulating the Hunter archetype means accepting your place as a bulwark between civilization and the terrors of The Wilderness. As you walk the Hunter’s path, you learn specialized techniques for fighting the threats you face, from rampaging ogres and hordes of orcs to towering Giants and terrifying dragons."
+          "text": "Emulating the Hunter archetype means accepting your place as a bulwark between civilization and the terrors of The Wilderness. As you walk the Hunter's path, you learn specialized techniques for fighting the threats you face, from rampaging ogres and hordes of orcs to towering Giants and terrifying dragons."
         }
       ]
     },
     {
-      "header": "Hunter’s Prey",
+      "header": "Hunter's Prey",
       "level": "4",
       "items": [
         {
@@ -1415,7 +1415,7 @@
         },
         {
           "name": "Colossus Slayer",
-          "text": "Your tenacity can wear down the most potent foes. When you hit a creature with a weapon Attack, the creature takes an extra 1d8 damage if it’s below its hit point maximum. You can deal this extra damage only once per turn."
+          "text": "Your tenacity can wear down the most potent foes. When you hit a creature with a weapon Attack, the creature takes an extra 1d8 damage if it's below its hit point maximum. You can deal this extra damage only once per turn."
         },
         {
           "name": "Giant Killer",
@@ -1463,7 +1463,7 @@
         },
         {
           "name": "Volley",
-          "text": "You can use your action to make a ranged Attack against any number of creatures within 10 feet of a point you can see within your weapon’s range. You must have ammunition for each target, as normal, and you make a separate Attack roll for each target."
+          "text": "You can use your action to make a ranged Attack against any number of creatures within 10 feet of a point you can see within your weapon's range. You must have ammunition for each target, as normal, and you make a separate Attack roll for each target."
         },
         {
           "name": "Whirlwind Attack",
@@ -1472,7 +1472,7 @@
       ]
     },
     {
-      "header": "Superior Hunter’s Defense",
+      "header": "Superior Hunter's Defense",
       "level": "4",
       "items": [
         {
@@ -1481,7 +1481,7 @@
         },
         {
           "name": "Evasion",
-          "text": "When you are subjected to an effect, such as a red dragon’s fiery breath or a Lightning Bolt spell, that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail."
+          "text": "When you are subjected to an effect, such as a red dragon's fiery breath or a Lightning Bolt spell, that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail."
         },
         {
           "name": "Stand Against the Tide",
@@ -1489,7 +1489,7 @@
         },
         {
           "name": "Uncanny Dodge",
-          "text": "When an attacker that you can see hits you with an Attack, you can use your reaction to halve the attack’s damage against you."
+          "text": "When an attacker that you can see hits you with an Attack, you can use your reaction to halve the attack's damage against you."
         }
       ]
     }

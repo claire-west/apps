@@ -19,7 +19,7 @@
         },
         {
           "name": "Alignment",
-          "text": "Elves love freedom, variety, and self- expression, so they lean strongly toward the gentler aspects of chaos. They value and protect others’ freedom as well as their own, and they are more often good than not."
+          "text": "Elves love freedom, variety, and self- expression, so they lean strongly toward the gentler aspects of chaos. They value and protect others' freedom as well as their own, and they are more often good than not."
         },
         {
           "name": "Size",
@@ -31,7 +31,7 @@
         },
         {
           "name": "Darkvision",
-          "text": "Accustomed to twilit forests and the night sky, you have superior vision in dark and dim Conditions. You can see in dim light within 60 feet of you as if it were bright light, and in Darkness as if it were dim light. You can’t discern color in Darkness, only shades of gray."
+          "text": "Accustomed to twilit forests and the night sky, you have superior vision in dark and dim Conditions. You can see in dim light within 60 feet of you as if it were bright light, and in Darkness as if it were dim light. You can't discern color in Darkness, only shades of gray."
         },
         {
           "name": "Keen Senses",
@@ -39,11 +39,11 @@
         },
         {
           "name": "Fey Ancestry",
-          "text": "You have advantage on saving throws against being Charmed, and magic can’t put you to sleep."
+          "text": "You have advantage on saving throws against being Charmed, and magic can't put you to sleep."
         },
         {
           "name": "Trance",
-          "text": "Elves don’t need to sleep. Instead, they meditate deeply, remaining semiconscious, for 4 hours a day. (The Common word for such meditation is “trance.”) While meditating, you can dream after a fashion; such dreams are actually mental exercises that have become reflexive through years of practice. After Resting in this way, you gain the same benefit that a human does from 8 hours of sleep."
+          "text": "Elves don't need to sleep. Instead, they meditate deeply, remaining semiconscious, for 4 hours a day. (The Common word for such meditation is “trance.”) While meditating, you can dream after a fashion; such dreams are actually mental exercises that have become reflexive through years of practice. After Resting in this way, you gain the same benefit that a human does from 8 hours of sleep."
         },
         {
           "name": "Languages",
@@ -75,7 +75,7 @@
         },
         {
           "name": "Elf Weapon Training",
-          "text": "You have proficiency with the Longsword, Shortsword, Shortbow, and Longbow."
+          "text": "You have proficiency with the longsword, ahortsword, ahortbow, and longbow."
         },
         {
           "name": "Cantrip",
@@ -86,7 +86,40 @@
           "text": "You can speak, read, and write one extra Language of your choice."
         }
       ]
+    },
+    {
+      "header": "Wood Elf",
+      "level": "3",
+      "items": [
+        {
+          "name": "",
+          "text": "As a wood elf, you have keen senses and intuition, and your fleet feet carry you quickly and stealthily through your native forests."
+        },
+        {
+          "name": "",
+          "text": "Wood elves' skin tends to be copperish in hue, sometimes with traces of green. Their hair tends toward browns and blacks, but it is occasionally blond or copper-colored. Their eyes are green, brown, or hazel."
+        },
+        {
+          "name": "Ability Score Increase",
+          "text": "Your Wisdom score increases by 1."
+        },
+        {
+          "name": "Elf Weapon Training",
+          "text": "You have proficiency with the longsword, shortsword, shortbow, and longbow."
+        },
+        {
+          "name": "Fleet of Foot",
+          "text": "Your base walking speed increases to 35 feet."
+        },
+        {
+          "name": "Mask of the Wild",
+          "text": "You can attempt to hide even when you are only lightly obscured by foliage, heavy rain, falling snow, mist, and other natural phenomena."
+        }
+      ]
     }
   ],
-  "attributes": { "Category": "Races" }
+  "attributes": {
+    "Category": "Races",
+    "Source": "Player's Basic Rules 0.2"
+  }
 }

@@ -1615,7 +1615,7 @@
         },
         {
           "name": "",
-          "text": "For example, if you’re a 4th-level wizard, you can recover up to two levels worth of Spell Slots. You can recover either a 2nd-level spell slot or two 1st-level Spell Slots."
+          "text": "For example, if you're a 4th-level wizard, you can recover up to two levels worth of Spell Slots. You can recover either a 2nd-level spell slot or two 1st-level Spell Slots."
         }
       ]
     },
@@ -1635,7 +1635,7 @@
       "items": [
         {
           "name": "",
-          "text": "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two Ability Scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature."
+          "text": "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two Ability Scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature."
         }
       ]
     },
@@ -1717,7 +1717,7 @@
         },
         {
           "name": "",
-          "text": "Beginning at 2nd level, you can create pockets of relative safety within the effects of your Evocation Spells. When you cast an Evocation spell that affects other creatures that you can see, you can choose a number of them equal to 1 + the spell’s level. The chosen creatures automatically succeed on their saving throws against the spell, and they take no damage if they would normally take half damage on a successful save."
+          "text": "Beginning at 2nd level, you can create pockets of relative safety within the effects of your Evocation Spells. When you cast an Evocation spell that affects other creatures that you can see, you can choose a number of them equal to 1 + the spell's level. The chosen creatures automatically succeed on their saving throws against the spell, and they take no damage if they would normally take half damage on a successful save."
         }
       ]
     },
@@ -1727,7 +1727,7 @@
       "items": [
         {
           "name": "",
-          "text": "Starting at 6th level, your damaging Cantrips affect even creatures that avoid the brunt of the effect. When a creature succeeds on a saving throw against your cantrip, the creature takes half the cantrip’s damage (if any) but suffers no additional effect from the cantrip."
+          "text": "Starting at 6th level, your damaging Cantrips affect even creatures that avoid the brunt of the effect. When a creature succeeds on a saving throw against your cantrip, the creature takes half the cantrip's damage (if any) but suffers no additional effect from the cantrip."
         }
       ]
     },
@@ -1769,7 +1769,7 @@
         },
         {
           "name": "",
-          "text": "The Spells that you add to your Spellbook as you gain levels reflect the arcane research you conduct on your own, as well as intellectual breakthroughs you have had about the nature of the multiverse. You might find other Spells during your adventures. You could discover a spell recorded on a scroll in an evil wizard’s chest, for example, or in a dusty tome in an ancient Library."
+          "text": "The Spells that you add to your Spellbook as you gain levels reflect the arcane research you conduct on your own, as well as intellectual breakthroughs you have had about the nature of the multiverse. You might find other Spells during your adventures. You could discover a spell recorded on a scroll in an evil wizard's chest, for example, or in a dusty tome in an ancient Library."
         },
         {
           "name": "Copying a Spell into the Book",
@@ -1792,7 +1792,7 @@
           "text": "If you lose your Spellbook, you can use the same procedure to transcribe the Spells that you have prepared into a new Spellbook. Filling out the remainder of your Spellbook requires you to find new Spells to do so, as normal. For this reason, many wizards keep backup spellbooks in a safe place."
         },
         {
-          "name": "The Book’s Appearance",
+          "name": "The Book's Appearance",
           "text": "Your Spellbook is a unique compilation of Spells, with its own decorative flourishes and margin notes. It might be a plain, functional leather volume that you received as a gift from your master, a finely bound gilt-­edged tome you found in an ancient Library, or even a loose collection of notes scrounged together after you lost your previous Spellbook in a mishap."
         }
       ]

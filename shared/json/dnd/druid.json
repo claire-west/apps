@@ -1733,7 +1733,7 @@
       "items": [
         {
           "name": "",
-          "text": "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two Ability Scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature."
+          "text": "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two Ability Scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature."
         }
       ]
     },
@@ -1781,7 +1781,7 @@
       "items": [
         {
           "name": "",
-          "text": "The Circle of the Land is made up of mystics and sages who safeguard ancient knowledge and rites through a vast oral tradition. These druids meet within sacred circles of trees or standing stones to whisper primal secrets in Druidic. The circle’s wisest members preside as the chief priests of communities that hold to the Old Faith and serve as advisors to the rulers of those folk. As a member of this circle, your magic is influenced by the land where you were initiated into the circle’s mysterious rites."
+          "text": "The Circle of the Land is made up of mystics and sages who safeguard ancient knowledge and rites through a vast oral tradition. These druids meet within sacred circles of trees or standing stones to whisper primal secrets in Druidic. The circle's wisest members preside as the chief priests of communities that hold to the Old Faith and serve as advisors to the rulers of those folk. As a member of this circle, your magic is influenced by the land where you were initiated into the circle's mysterious rites."
         }
       ]
     },
@@ -1801,7 +1801,7 @@
       "items": [
         {
           "name": "",
-          "text": "Starting at 2nd level, you can regain some of your magical energy by sitting in meditation and communing with nature. During a Short Rest, you choose expended Spell Slots to recover. The Spell Slots can have a combined level that is equal to or less than half your druid level (rounded up), and none of the slots can be 6th level or higher. You can’t use this feature again until you finish a Long Rest."
+          "text": "Starting at 2nd level, you can regain some of your magical energy by sitting in meditation and communing with nature. During a Short Rest, you choose expended Spell Slots to recover. The Spell Slots can have a combined level that is equal to or less than half your druid level (rounded up), and none of the slots can be 6th level or higher. You can't use this feature again until you finish a Long Rest."
         },
         {
           "name": "",
@@ -1827,7 +1827,7 @@
         },
         {
           "name": "",
-          "text": "Once you gain access to a circle spell, you always have it prepared, and it doesn’t count against the number of Spells you can prepare each day. If you gain access to a spell that doesn’t appear on the druid spell list, the spell is nonetheless a druid spell for you."
+          "text": "Once you gain access to a circle spell, you always have it prepared, and it doesn't count against the number of Spells you can prepare each day. If you gain access to a spell that doesn't appear on the druid spell list, the spell is nonetheless a druid spell for you."
         }
       ]
     },
@@ -2294,7 +2294,7 @@
       ]
     },
     {
-      "header": "Land’s Stride",
+      "header": "Land's Stride",
       "level": "3",
       "items": [
         {
@@ -2308,17 +2308,17 @@
       ]
     },
     {
-      "header": "Nature’s Ward",
+      "header": "Nature's Ward",
       "level": "3",
       "items": [
         {
           "name": "",
-          "text": "When you reach 10th level, you can’t be Charmed or Frightened by elementals or fey, and you are immune to poison and disease."
+          "text": "When you reach 10th level, you can't be Charmed or Frightened by elementals or fey, and you are immune to poison and disease."
         }
       ]
     },
     {
-      "header": "Nature’s Sanctuary",
+      "header": "Nature's Sanctuary",
       "level": "3",
       "items": [
         {

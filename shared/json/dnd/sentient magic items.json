@@ -14,7 +14,7 @@
         },
         {
           "name": "",
-          "text": "Sentient Magic Items function as NPCs under the GM’s control. Any activated property of the item is under the item’s control, not its wielder’s. As long as the wielder maintains a good relationship with the item, the wielder can access those properties normally. If the relationship is strained, the item can suppress its activated properties or even turn them against the wielder."
+          "text": "Sentient Magic Items function as NPCs under the GM's control. Any activated property of the item is under the item's control, not its wielder's. As long as the wielder maintains a good relationship with the item, the wielder can access those properties normally. If the relationship is strained, the item can suppress its activated properties or even turn them against the wielder."
         }
       ]
     },
@@ -28,7 +28,7 @@
         },
         {
           "name": "",
-          "text": "When you decide to make a magic item sentient, you create the item’s persona in the same way you would create an NPC, with a few exceptions described here."
+          "text": "When you decide to make a magic item sentient, you create the item's persona in the same way you would create an NPC, with a few exceptions described here."
         }
       ]
     },
@@ -38,7 +38,7 @@
       "items": [
         {
           "name": "",
-          "text": "A sentient magic item has Intelligence, Wisdom, and Charisma scores. You can choose the item’s abilities or determine them randomly. To determine them randomly, roll 4d6 for each one, dropping the lowest roll and totaling the rest."
+          "text": "A sentient magic item has Intelligence, Wisdom, and Charisma scores. You can choose the item's abilities or determine them randomly. To determine them randomly, roll 4d6 for each one, dropping the lowest roll and totaling the rest."
         }
       ]
     },
@@ -316,7 +316,7 @@
       "items": [
         {
           "name": "",
-          "text": "You can give a sentient item an objective it pursues, perhaps to the exclusion of all else. As long as the wielder’s use of the item aligns with that Special purpose, the item remains cooperative. Deviating from this course might cause conflict between the wielder and the item, and could even cause the item to prevent the use of its activated properties. You can pick a Special purpose or roll on the following table."
+          "text": "You can give a sentient item an objective it pursues, perhaps to the exclusion of all else. As long as the wielder's use of the item aligns with that Special purpose, the item remains cooperative. Deviating from this course might cause conflict between the wielder and the item, and could even cause the item to prevent the use of its activated properties. You can pick a Special purpose or roll on the following table."
         }
       ]
     },
@@ -452,7 +452,7 @@
       "items": [
         {
           "name": "",
-          "text": "A sentient item has a will of its own, shaped by its personality and alignment. If its wielder acts in a manner opposed to the item’s alignment or purpose, conflict can arise. When such a conflict occurs, the item makes a Charisma check contested by the wielder’s Charisma check. If the item wins the contest, it makes one or more of the following demands:"
+          "text": "A sentient item has a will of its own, shaped by its personality and alignment. If its wielder acts in a manner opposed to the item's alignment or purpose, conflict can arise. When such a conflict occurs, the item makes a Charisma check contested by the wielder's Charisma check. If the item wins the contest, it makes one or more of the following demands:"
         },
         {
           "name": "",
@@ -464,11 +464,11 @@
         },
         {
           "name": "",
-          "text": "• The item demands that its wielder pursue the item’s goals to the exclusion of all other goals."
+          "text": "• The item demands that its wielder pursue the item's goals to the exclusion of all other goals."
         },
         {
           "name": "",
-          "text": "• The item demands to be given to someone else.If its wielder refuses to comply with the item’s wishes, the item can do any or all of the following:Make it impossible for its wielder to attune to it."
+          "text": "• The item demands to be given to someone else.If its wielder refuses to comply with the item's wishes, the item can do any or all of the following:Make it impossible for its wielder to attune to it."
         },
         {
           "name": "",
@@ -480,7 +480,7 @@
         },
         {
           "name": "",
-          "text": "If a sentient item attempts to take control of its wielder, the wielder must make a Charisma Saving Throw, with a DC equal to 12 + the item’s Charisma modifier. On a failed save, the wielder is Charmed by the item for 1d12 hours. While Charmed, the wielder must try to follow the item’s commands. If the wielder takes damage, it can repeat the Saving Throw, ending the effect on a success. Whether the attempt to control its user succeeds or fails, the item can’t use this power again until the next dawn."
+          "text": "If a sentient item attempts to take control of its wielder, the wielder must make a Charisma Saving Throw, with a DC equal to 12 + the item's Charisma modifier. On a failed save, the wielder is Charmed by the item for 1d12 hours. While Charmed, the wielder must try to follow the item's commands. If the wielder takes damage, it can repeat the Saving Throw, ending the effect on a success. Whether the attempt to control its user succeeds or fails, the item can't use this power again until the next dawn."
         }
       ]
     }
