@@ -178,6 +178,12 @@
                     });
                 },
 
+                elementalEvilSpells: function() {
+                    return $.ajax({
+                        url: '../shared/json/dnd/ext/elemental evil spells.json'
+                    });
+                },
+
                 spellLevels: function() {
                     return $.ajax({
                         url: '../shared/json/dnd/spellLevels.json'
@@ -215,16 +221,15 @@
                 },
 
                 spellbook: function($content) {
-                    if (dndRef.spellbook && dndRef.spellLevels) {
+                    if (dndRef.spellbook) {
                         return $.when();
                     }
 
                     return modules.ajaxLoader($.when(
                             dndRef.api.spellbook(),
-                            dndRef.api.spellLevels()),
-                        $content).done(function(data) {
-                            dndRef.spellbook = data[0];
-                            dndRef.spellLevels = data[1];
+                            dndRef.api.elementalEvilSpells()
+                        ), $content).done(function(data, ext) {
+                            dndRef.spellbook = data[0].concat(ext[0]);
                             dndRef.index.spellbook();
                         }
                     );
@@ -419,13 +424,18 @@
                             components.text += ' (' + obj.attributes.Material + ')';
                         }
 
+                        var school = 'Level ' + obj.attributes.Level + ' ' + obj.attributes.School;
+                        if (obj.attributes.Ritual === 'Yes') {
+                            school += ' (ritual)';
+                        }
+
                         return {
                             '': dataTags,
                             '.name': {
                                 text: obj.name
                             },
                             '.school': {
-                                text: 'Level ' + obj.attributes.Level + ' ' + obj.attributes.School
+                                text: school
                             },
                             '.castTime': {
                                 text: obj.attributes['Casting Time']
