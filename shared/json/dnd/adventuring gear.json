@@ -13,7 +13,7 @@
           "text": "As an action, you can splash the contents of this vial onto a creature within 5 feet of you or throw the vial up to 20 feet, shattering it on impact. In either case, make a ranged Attack against a creature or object, treating the acid as an improvised weapon. On a hit, the target takes 2d6 acid damage."
         },
         {
-          "name": "Alchemist’s Fire",
+          "name": "Alchemist's Fire",
           "text": "This sticky, adhesive fluid ignites when exposed to air. As an action, you can throw this flask up to 20 feet, shattering it on impact. Make a ranged Attack against a creature or object, treating the Alchemist's Fire as an improvised weapon. On a hit, the target takes 1d4 fire damage at the start of each of its turns. A creature can end this damage by using its action to make a DC 10 Dexterity check to extinguish the flames."
         },
         {
@@ -26,7 +26,7 @@
         },
         {
           "name": "Ball bearings",
-          "text": "As an action, you can spill these tiny metal balls from their pouch to cover a level, square area that is 10 feet on a side. A creature moving across the covered area must succeed on a DC 10 Dexterity saving throw or fall prone. A creature moving through the area at half speed doesn’t need to make the save."
+          "text": "As an action, you can spill these tiny metal balls from their pouch to cover a level, square area that is 10 feet on a side. A creature moving across the covered area must succeed on a DC 10 Dexterity saving throw or fall prone. A creature moving through the area at half speed doesn't need to make the save."
         },
         {
           "name": "Block and tackle",
@@ -38,7 +38,7 @@
         },
         {
           "name": "Caltrops",
-          "text": "As an action, you can spread a bag of Caltrops to cover a square area that is 5 feet on a side. Any creature that enters the area must succeed on a DC 15 Dexterity saving throw or stop moving this turn and take 1 piercing damage. Taking this damage reduces the creature’s walking speed by 10 feet until the creature regains at least 1 hit point. A creature moving through the area at half speed doesn’t need to make the save."
+          "text": "As an action, you can spread a bag of Caltrops to cover a square area that is 5 feet on a side. Any creature that enters the area must succeed on a DC 15 Dexterity saving throw or stop moving this turn and take 1 piercing damage. Taking this damage reduces the creature's walking speed by 10 feet until the creature regains at least 1 hit point. A creature moving through the area at half speed doesn't need to make the save."
         },
         {
           "name": "Candle",
@@ -57,8 +57,8 @@
           "text": "A chain has 10 hit points. It can be burst with a successful DC 20 Strength check."
         },
         {
-          "name": "Climber’s Kit",
-          "text": "A climber’s kit includes Special pitons, boot tips, gloves, and a harness. You can use the climber’s kit as an action to anchor yourself; when you do, you can’t fall more than 25 feet from the point where you anchored yourself, and you can’t climb more than 25 feet away from that point without undoing the anchor."
+          "name": "Climber's Kit",
+          "text": "A climber's kit includes Special pitons, boot tips, gloves, and a harness. You can use the climber's kit as an action to anchor yourself; when you do, you can't fall more than 25 feet from the point where you anchored yourself, and you can't climb more than 25 feet away from that point without undoing the anchor."
         },
         {
           "name": "Component pouch",
@@ -66,7 +66,7 @@
         },
         {
           "name": "Crowbar",
-          "text": "Using a Crowbar grants advantage to Strength Checks where the crowbar’s leverage can be applied."
+          "text": "Using a Crowbar grants advantage to Strength Checks where the crowbar's leverage can be applied."
         },
         {
           "name": "Druidic Focus",
@@ -77,7 +77,7 @@
           "text": "This kit includes a wooden rod, silken line, corkwood bobbers, steel hooks, lead sinkers, velvet lures, and narrow netting."
         },
         {
-          "name": "Healer’s Kit",
+          "name": "Healer's Kit",
           "text": "This kit is a leather pouch containing bandages, salves, and splints. The kit has ten uses. As an action, you can expend one use of the kit to stabilize a creature that has 0 hit points, without needing to make a Wisdom (Medicine) check."
         },
         {
@@ -106,7 +106,7 @@
         },
         {
           "name": "Lock",
-          "text": "A key is provided with the lock. Without the key, a creature proficient with thieves’ tools can pick this lock with a successful DC 15 Dexterity check. Your GM may decide that better locks are available for higher prices."
+          "text": "A key is provided with the lock. Without the key, a creature proficient with thieves' tools can pick this lock with a successful DC 15 Dexterity check. Your GM may decide that better locks are available for higher prices."
         },
         {
           "name": "Magnifying glass",
@@ -114,7 +114,7 @@
         },
         {
           "name": "Manacles",
-          "text": "These metal restraints can bind a Small or Medium creature. Escaping the Manacles requires a successful DC 20 Dexterity check. Breaking them requires a successful DC 20 Strength check. Each set of Manacles comes with one key. Without the key, a creature proficient with thieves’ tools can pick the manacles’ lock with a successful DC 15 Dexterity check. Manacles have 15 hit points."
+          "text": "These metal restraints can bind a Small or Medium creature. Escaping the Manacles requires a successful DC 20 Dexterity check. Breaking them requires a successful DC 20 Strength check. Each set of Manacles comes with one key. Without the key, a creature proficient with thieves' tools can pick the manacles' lock with a successful DC 15 Dexterity check. Manacles have 15 hit points."
         },
         {
           "name": "Mess kit",
@@ -153,7 +153,7 @@
           "text": "Rope, whether made of hemp or silk, has 2 hit points and can be burst with a DC 17 Strength check."
         },
         {
-          "name": "Scale, Merchant’s",
+          "name": "Scale, Merchant's",
           "text": "A scale includes a small balance, pans, and a suitable assortment of weights up to 2 pounds. With it, you can measure the exact weight of small Objects, such as raw precious metals or Trade Goods, to help determine their worth."
         },
         {
@@ -241,7 +241,7 @@
             [
               {
                 "type": "td",
-                "text": "Alchemist’s fire (flask)"
+                "text": "Alchemist's fire (flask)"
               },
               {
                 "type": "td",
@@ -796,7 +796,7 @@
             [
               {
                 "type": "td",
-                "text": "Clothes, traveler’s"
+                "text": "Clothes, traveler's"
               },
               {
                 "type": "td",
@@ -1173,7 +1173,7 @@
             [
               {
                 "type": "td",
-                "text": "Kit, climber’s"
+                "text": "Kit, climber's"
               },
               {
                 "type": "td",
@@ -1237,7 +1237,7 @@
             [
               {
                 "type": "td",
-                "text": "Kit, healer’s"
+                "text": "Kit, healer's"
               },
               {
                 "type": "td",
@@ -1269,7 +1269,7 @@
             [
               {
                 "type": "td",
-                "text": "Kit, poisoner’s"
+                "text": "Kit, poisoner's"
               },
               {
                 "type": "td",
@@ -1477,7 +1477,7 @@
             [
               {
                 "type": "td",
-                "text": "Pick, miner’s"
+                "text": "Pick, miner's"
               },
               {
                 "type": "td",
@@ -1701,7 +1701,7 @@
             [
               {
                 "type": "td",
-                "text": "Scale, merchant’s"
+                "text": "Scale, merchant's"
               },
               {
                 "type": "td",
@@ -1951,31 +1951,31 @@
           "text": "The starting Equipment you get from your class includes a collection of useful adventuring gear, put together in a pack. The contents of these packs are listed here. If you are buying your starting Equipment, you can purchase a pack for the price shown, which might be cheaper than buying the items individually."
         },
         {
-          "name": "Burglar’s Pack (16 gp)",
+          "name": "Burglar's Pack (16 gp)",
           "text": "Includes a Backpack, a bag of 1,000 Ball bearings, 10 feet of string, a bell, 5 candles, a Crowbar, a Hammer, 10 pitons, a Hooded lantern, 2 flasks of oil, 5 days Rations, a Tinderbox, and a Waterskin. The pack also has 50 feet of Hempen rope strapped to the side of it."
         },
         {
-          "name": "Diplomat’s Pack (39 gp)",
+          "name": "Diplomat's Pack (39 gp)",
           "text": "Includes a chest, 2 cases for maps and scrolls, a set of Fine clothes, a bottle of ink, an Ink pen, a lamp, 2 flasks of oil, 5 sheets of paper, a vial of Perfume, Sealing wax, and soap."
         },
         {
-          "name": "Dungeoneer’s Pack (12 gp)",
+          "name": "Dungeoneer's Pack (12 gp)",
           "text": "Includes a Backpack, a Crowbar, a Hammer, 10 pitons, 10 torches, a Tinderbox, 10 days of Rations, and a Waterskin. The pack also has 50 feet of Hempen rope strapped to the side of it."
         },
         {
-          "name": "Entertainer’s Pack (40 gp)",
+          "name": "Entertainer's Pack (40 gp)",
           "text": "Includes a Backpack, a Bedroll, 2 costumes, 5 candles, 5 days of Rations, a Waterskin, and a Disguise kit."
         },
         {
-          "name": "Explorer’s Pack (10 gp)",
+          "name": "Explorer's Pack (10 gp)",
           "text": "Includes a Backpack, a Bedroll, a Mess kit, a Tinderbox, 10 torches, 10 days of Rations, and a Waterskin. The pack also has 50 feet of Hempen rope strapped to the side of it."
         },
         {
-          "name": "Priest’s Pack (19 gp)",
+          "name": "Priest's Pack (19 gp)",
           "text": "Includes a Backpack, a Blanket, 10 candles, a Tinderbox, an alms box, 2 blocks of incense, a censer, vestments, 2 days of Rations, and a Waterskin."
         },
         {
-          "name": "Scholar’s Pack (40 gp)",
+          "name": "Scholar's Pack (40 gp)",
           "text": "Includes a Backpack, a book of lore, a bottle of ink, an Ink pen, 10 sheets of Parchment, a little bag of sand, and a small knife.   "
         }
       ]

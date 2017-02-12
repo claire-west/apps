@@ -6,7 +6,7 @@
       "items": [
         {
           "name": "",
-          "text": "Conditions alter a creature’s capabilities in a variety of ways and can arise as a result of a spell, a class feature, a monster’s Attack, or other effect. Most conditions, such as blinded, are impairments, but a few, such as invisible, can be advantageous."
+          "text": "Conditions alter a creature's capabilities in a variety of ways and can arise as a result of a spell, a class feature, a monster's Attack, or other effect. Most conditions, such as blinded, are impairments, but a few, such as invisible, can be advantageous."
         },
         {
           "name": "",
@@ -14,7 +14,7 @@
         },
         {
           "name": "",
-          "text": "If multiple effects impose the same condition on a creature, each instance of the condition has its own Duration, but the condition’s effects don’t get worse. A creature either has a condition or doesn’t."
+          "text": "If multiple effects impose the same condition on a creature, each instance of the condition has its own Duration, but the condition's effects don't get worse. A creature either has a condition or doesn't."
         },
         {
           "name": "",
@@ -32,11 +32,11 @@
         },
         {
           "name": "",
-          "text": "• A blinded creature can’t see and automatically fails any ability check that requires sight."
+          "text": "• A blinded creature can't see and automatically fails any ability check that requires sight."
         },
         {
           "name": "",
-          "text": "• Attack rolls against the creature have advantage, and the creature’s Attack rolls have disadvantage."
+          "text": "• Attack rolls against the creature have advantage, and the creature's Attack rolls have disadvantage."
         }
       ]
     },
@@ -50,7 +50,7 @@
         },
         {
           "name": "",
-          "text": "• A charmed creature can’t Attack the charmer or target the charmer with harmful Abilities or magical effects."
+          "text": "• A charmed creature can't Attack the charmer or target the charmer with harmful Abilities or magical effects."
         },
         {
           "name": "",
@@ -68,7 +68,7 @@
         },
         {
           "name": "",
-          "text": "• A deafened creature can’t hear and automatically fails any ability check that requires hearing."
+          "text": "• A deafened creature can't hear and automatically fails any ability check that requires hearing."
         }
       ]
     },
@@ -96,7 +96,7 @@
         },
         {
           "name": "",
-          "text": "• The creature can’t willingly move closer to the source of its fear."
+          "text": "• The creature can't willingly move closer to the source of its fear."
         }
       ]
     },
@@ -110,7 +110,7 @@
         },
         {
           "name": "",
-          "text": "• A grappled creature’s speed becomes 0, and it can’t benefit from any bonus to its speed."
+          "text": "• A grappled creature's speed becomes 0, and it can't benefit from any bonus to its speed."
         },
         {
           "name": "",
@@ -132,7 +132,7 @@
         },
         {
           "name": "",
-          "text": "• An incapacitated creature can’t take actions or reactions."
+          "text": "• An incapacitated creature can't take actions or reactions."
         }
       ]
     },
@@ -146,11 +146,11 @@
         },
         {
           "name": "",
-          "text": "• An invisible creature is impossible to see without the aid of magic or a Special sense. For the purpose of Hiding, the creature is heavily obscured. The creature’s location can be detected by any noise it makes or any tracks it leaves."
+          "text": "• An invisible creature is impossible to see without the aid of magic or a Special sense. For the purpose of Hiding, the creature is heavily obscured. The creature's location can be detected by any noise it makes or any tracks it leaves."
         },
         {
           "name": "",
-          "text": "• Attack rolls against the creature have disadvantage, and the creature’s Attack rolls have advantage."
+          "text": "• Attack rolls against the creature have disadvantage, and the creature's Attack rolls have advantage."
         }
       ]
     },
@@ -164,7 +164,7 @@
         },
         {
           "name": "",
-          "text": "• A paralyzed creature is incapacitated (see the condition) and can’t move or speak."
+          "text": "• A paralyzed creature is incapacitated (see the condition) and can't move or speak."
         },
         {
           "name": "",
@@ -194,7 +194,7 @@
         },
         {
           "name": "",
-          "text": "• The creature is incapacitated (see the condition), can’t move or speak, and is unaware of its surroundings."
+          "text": "• The creature is incapacitated (see the condition), can't move or speak, and is unaware of its surroundings."
         },
         {
           "name": "",
@@ -238,7 +238,7 @@
         },
         {
           "name": "",
-          "text": "• A prone creature’s only Movement option is to crawl, unless it stands up and thereby ends the condition."
+          "text": "• A prone creature's only Movement option is to crawl, unless it stands up and thereby ends the condition."
         },
         {
           "name": "",
@@ -260,11 +260,11 @@
         },
         {
           "name": "",
-          "text": "• A restrained creature’s speed becomes 0, and it can’t benefit from any bonus to its speed."
+          "text": "• A restrained creature's speed becomes 0, and it can't benefit from any bonus to its speed."
         },
         {
           "name": "",
-          "text": "• Attack rolls against the creature have advantage, and the creature’s Attack rolls have disadvantage."
+          "text": "• Attack rolls against the creature have advantage, and the creature's Attack rolls have disadvantage."
         },
         {
           "name": "",
@@ -282,7 +282,7 @@
         },
         {
           "name": "",
-          "text": "• A stunned creature is incapacitated (see the condition), can’t move, and can speak only falteringly."
+          "text": "• A stunned creature is incapacitated (see the condition), can't move, and can speak only falteringly."
         },
         {
           "name": "",
@@ -304,11 +304,11 @@
         },
         {
           "name": "",
-          "text": "• An unconscious creature is incapacitated (see the condition), can’t move or speak, and is unaware of its surroundings"
+          "text": "• An unconscious creature is incapacitated (see the condition), can't move or speak, and is unaware of its surroundings"
         },
         {
           "name": "",
-          "text": "• The creature drops whatever it’s holding and falls prone."
+          "text": "• The creature drops whatever it's holding and falls prone."
         },
         {
           "name": "",
@@ -334,7 +334,7 @@
         },
         {
           "name": "",
-          "text": "Some Special Abilities and environmental hazards, such as starvation and the long-­term effects of freezing or scorching temperatures, can lead to a Special condition called exhaustion. Exhaustion is measured in six levels. An effect can give a creature one or more levels of exhaustion, as specified in the effect’s description."
+          "text": "Some Special Abilities and environmental hazards, such as starvation and the long-­term effects of freezing or scorching temperatures, can lead to a Special condition called exhaustion. Exhaustion is measured in six levels. An effect can give a creature one or more levels of exhaustion, as specified in the effect's description."
         }
       ]
     },
@@ -424,7 +424,7 @@
         },
         {
           "name": "",
-          "text": "If an already exhausted creature suffers another effect that causes exhaustion, its current level of exhaustion increases by the amount specified in the effect’s description."
+          "text": "If an already exhausted creature suffers another effect that causes exhaustion, its current level of exhaustion increases by the amount specified in the effect's description."
         },
         {
           "name": "",
@@ -432,11 +432,11 @@
         },
         {
           "name": "",
-          "text": "An effect that removes exhaustion reduces its level as specified in the effect’s description, with all exhaustion effects ending if a creature’s exhaustion level is reduced below 1."
+          "text": "An effect that removes exhaustion reduces its level as specified in the effect's description, with all exhaustion effects ending if a creature's exhaustion level is reduced below 1."
         },
         {
           "name": "",
-          "text": "Finishing a Long Rest reduces a creature’s exhaustion level by 1, provided that the creature has also ingested some food and drink."
+          "text": "Finishing a Long Rest reduces a creature's exhaustion level by 1, provided that the creature has also ingested some food and drink."
         }
       ]
     }

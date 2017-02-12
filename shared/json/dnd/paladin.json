@@ -1043,7 +1043,7 @@
       "items": [
         {
           "name": "",
-          "text": "At 2nd level, you adopt a style of fighting as your specialty. Choose one of the following options. You can’t take a Fighting Style option more than once, even if you later get to choose again."
+          "text": "At 2nd level, you adopt a style of fighting as your specialty. Choose one of the following options. You can't take a Fighting Style option more than once, even if you later get to choose again."
         }
       ]
     },
@@ -1185,11 +1185,11 @@
         },
         {
           "name": "",
-          "text": "Each oath has a list of associated Spells. You gain access to these Spells at the levels specified in the oath description. Once you gain access to an oath spell, you always have it prepared. Oath Spells don’t count against the number of Spells you can prepare each day."
+          "text": "Each oath has a list of associated Spells. You gain access to these Spells at the levels specified in the oath description. Once you gain access to an oath spell, you always have it prepared. Oath Spells don't count against the number of Spells you can prepare each day."
         },
         {
           "name": "",
-          "text": "If you gain an oath spell that doesn’t appear on the paladin spell list, the spell is nonetheless a paladin spell for you."
+          "text": "If you gain an oath spell that doesn't appear on the paladin spell list, the spell is nonetheless a paladin spell for you."
         }
       ]
     },
@@ -1217,7 +1217,7 @@
       "items": [
         {
           "name": "",
-          "text": "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two Ability Scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature."
+          "text": "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two Ability Scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature."
         }
       ]
     },
@@ -1293,7 +1293,7 @@
       "items": [
         {
           "name": "",
-          "text": "Becoming a paladin involves taking vows that commit the paladin to the cause of righteousness, an active path of fighting wickedness. The final oath, taken when he or she reaches 3rd level, is the culmination of all the paladin’s Training. Some characters with this class don’t consider themselves true paladins until they have reached 3rd level and made this oath. For others, the actual swearing of the oath is a formality, an official stamp on what has always been true in the paladin’s heart."
+          "text": "Becoming a paladin involves taking vows that commit the paladin to the cause of righteousness, an active path of fighting wickedness. The final oath, taken when he or she reaches 3rd level, is the culmination of all the paladin's Training. Some characters with this class don't consider themselves true paladins until they have reached 3rd level and made this oath. For others, the actual swearing of the oath is a formality, an official stamp on what has always been true in the paladin's heart."
         }
       ]
     },
@@ -1307,7 +1307,7 @@
         },
         {
           "name": "",
-          "text": "Many who swear this oath are devoted to gods of law and good and use their gods’ tenets as the measure of their devotion. They hold angels—the perfect servants of good—as their ideals, and incorporate images of angelic wings into their helmets or coats of arms."
+          "text": "Many who swear this oath are devoted to gods of law and good and use their gods' tenets as the measure of their devotion. They hold angels—the perfect servants of good—as their ideals, and incorporate images of angelic wings into their helmets or coats of arms."
         }
       ]
     },
@@ -1321,7 +1321,7 @@
         },
         {
           "name": "",
-          "text": "• Honesty: Don’t lie or cheat. Let your word be your promise."
+          "text": "• Honesty: Don't lie or cheat. Let your word be your promise."
         },
         {
           "name": "",
@@ -1453,7 +1453,7 @@
         },
         {
           "name": "",
-          "text": "A turned creature must spend its turns trying to move as far away from you as it can, and it can’t willingly move to a space within 30 feet of you. It also can’t take reactions. For its action, it can use only the Dash action or try to escape from an effect that prevents it from moving. If there’s nowhere to move, the creature can use the Dodge action."
+          "text": "A turned creature must spend its turns trying to move as far away from you as it can, and it can't willingly move to a space within 30 feet of you. It also can't take reactions. For its action, it can use only the Dash action or try to escape from an effect that prevents it from moving. If there's nowhere to move, the creature can use the Dodge action."
         }
       ]
     },
@@ -1463,7 +1463,7 @@
       "items": [
         {
           "name": "",
-          "text": "Starting at 7th level, you and friendly creatures within 10 feet of you can’t be Charmed while you are conscious."
+          "text": "Starting at 7th level, you and friendly creatures within 10 feet of you can't be Charmed while you are conscious."
         },
         {
           "name": "",
@@ -1513,11 +1513,11 @@
         },
         {
           "name": "",
-          "text": "If a paladin willfully violates his or her oath and shows no sign of repentance, the consequences can be more serious. At the GM’s discretion, an impenitent paladin might be forced to abandon this class and adopt another."
+          "text": "If a paladin willfully violates his or her oath and shows no sign of repentance, the consequences can be more serious. At the GM's discretion, an impenitent paladin might be forced to abandon this class and adopt another."
         },
         {
           "name": "",
-          "text": "Once you use this feature, you can’t use it again until you finish a Long Rest."
+          "text": "Once you use this feature, you can't use it again until you finish a Long Rest."
         }
       ]
     }

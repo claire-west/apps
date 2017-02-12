@@ -43,7 +43,7 @@
         },
         {
           "name": "Languages",
-          "text": "You can speak, read, and write Common and Halfling. The Halfling Language isn’t secret, but halflings are loath to share it with others. They write very little, so they don’t have a rich body of literature. Their oral tradition, however, is very strong. Almost all halflings speak Common to converse with the people in whose lands they dwell or through which they are traveling."
+          "text": "You can speak, read, and write Common and Halfling. The Halfling Language isn't secret, but halflings are loath to share it with others. They write very little, so they don't have a rich body of literature. Their oral tradition, however, is very strong. Almost all halflings speak Common to converse with the people in whose lands they dwell or through which they are traveling."
         }
       ]
     },
@@ -63,7 +63,7 @@
       "items": [
         {
           "name": "",
-          "text": "As a lightfoot halfling, you can easily hide from notice, even using other people as cover. You’re inclined to be affable and get along well with others."
+          "text": "As a lightfoot halfling, you can easily hide from notice, even using other people as cover. You're inclined to be affable and get along well with others."
         },
         {
           "name": "",
@@ -75,10 +75,31 @@
         },
         {
           "name": "Naturally Stealthy",
-          "text": "You can attempt to hide even when you are obscured only by a creature that is at least one size larger than you"
+          "text": "You can attempt to hide even when you are obscured only by a creature that is at least one size larger than you."
+        }
+      ]
+    },
+    {
+      "header": "Stout",
+      "level": "3",
+      "items": [
+        {
+          "name": "",
+          "text": "As a stout halfling, you're hardier than average and have some resistance to poison. Some say that stouts have dwarven blood. In the Forgotten Realms, these halflings are called stronghearts, and they're most common in the south."
+        },
+        {
+          "name": "Ability Score Increase",
+          "text": "Your Constitution score increases by 1."
+        },
+        {
+          "name": "Stout Resilience",
+          "text": "You have advantage on saving throws against poison, and you have resistance against poison damage."
         }
       ]
     }
   ],
-  "attributes": { "Category": "Races" }
+  "attributes": {
+    "Category": "Races",
+    "Source": "Player's Basic Rules 0.2"
+  }
 }

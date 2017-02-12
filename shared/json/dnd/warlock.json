@@ -1108,7 +1108,7 @@
         },
         {
           "name": "",
-          "text": "You learn the Find Familiar spell and can cast it as a ritual. The spell doesn’t count against your number of Spells known."
+          "text": "You learn the Find Familiar spell and can cast it as a ritual. The spell doesn't count against your number of Spells known."
         },
         {
           "name": "",
@@ -1134,7 +1134,7 @@
         },
         {
           "name": "",
-          "text": "You can transform one Magic Weapon into your pact weapon by performing a Special ritual while you hold the weapon. You perform the ritual over the course of 1 hour, which can be done during a Short Rest. You can then dismiss the weapon, shunting it into an extradimensional space, and it appears whenever you create your pact weapon thereafter. You can’t affect an artifact or a sentient weapon in this way. The weapon ceases being your pact weapon if you die, if you perform the 1-hour ritual on a different weapon, or if you use a 1-hour ritual to break your bond to it. The weapon appears at your feet if it is in the extradimensional space when the bond breaks."
+          "text": "You can transform one Magic Weapon into your pact weapon by performing a Special ritual while you hold the weapon. You perform the ritual over the course of 1 hour, which can be done during a Short Rest. You can then dismiss the weapon, shunting it into an extradimensional space, and it appears whenever you create your pact weapon thereafter. You can't affect an artifact or a sentient weapon in this way. The weapon ceases being your pact weapon if you die, if you perform the 1-hour ritual on a different weapon, or if you use a 1-hour ritual to break your bond to it. The weapon appears at your feet if it is in the extradimensional space when the bond breaks."
         }
       ]
     },
@@ -1144,7 +1144,7 @@
       "items": [
         {
           "name": "",
-          "text": "Your patron gives you a grimoire called a Book of Shadows. When you gain this feature, choose three Cantrips from any class’s spell list (the three needn’t be from the same list). While the book is on your person, you can cast those Cantrips at will. They don’t count against your number of Cantrips known. If they don’t appear on the warlock spell list, they are nonetheless warlock Spells for you."
+          "text": "Your patron gives you a grimoire called a Book of Shadows. When you gain this feature, choose three Cantrips from any class's spell list (the three needn't be from the same list). While the book is on your person, you can cast those Cantrips at will. They don't count against your number of Cantrips known. If they don't appear on the warlock spell list, they are nonetheless warlock Spells for you."
         },
         {
           "name": "",
@@ -1158,7 +1158,7 @@
       "items": [
         {
           "name": "",
-          "text": "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two Ability Scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature."
+          "text": "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two Ability Scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature."
         }
       ]
     },
@@ -1284,7 +1284,7 @@
         },
         {
           "name": "",
-          "text": "You can cast Compulsion once using a warlock spell slot. You can’t do so again until you finish a Long Rest."
+          "text": "You can cast Compulsion once using a warlock spell slot. You can't do so again until you finish a Long Rest."
         }
       ]
     },
@@ -1302,11 +1302,11 @@
         },
         {
           "name": "",
-          "text": "You can now inscribe magical Rituals in your Book of Shadows. Choose two 1st-level Spells that have the ritual tag from any class’s spell list (the two needn’t be from the same list). The Spells appear in the book and don’t count against the number of Spells you know. With your Book of Shadows in hand, you can cast the chosen Spells as Rituals. You can’t cast the Spells except as Rituals, unless you’ve learned them by some other means. You can also cast a warlock spell you know as a ritual if it has the ritual tag."
+          "text": "You can now inscribe magical Rituals in your Book of Shadows. Choose two 1st-level Spells that have the ritual tag from any class's spell list (the two needn't be from the same list). The Spells appear in the book and don't count against the number of Spells you know. With your Book of Shadows in hand, you can cast the chosen Spells as Rituals. You can't cast the Spells except as Rituals, unless you've learned them by some other means. You can also cast a warlock spell you know as a ritual if it has the ritual tag."
         },
         {
           "name": "",
-          "text": "On your adventures, you can add other ritual Spells to your Book of Shadows. When you find such a spell, you can add it to the book if the spell’s level is equal to or less than half your warlock level (rounded up) and if you can spare the time to transcribe the spell. For each level of the spell, the transcription process takes 2 hours and costs 50 gp for the rare inks needed to inscribe it."
+          "text": "On your adventures, you can add other ritual Spells to your Book of Shadows. When you find such a spell, you can add it to the book if the spell's level is equal to or less than half your warlock level (rounded up) and if you can spare the time to transcribe the spell. For each level of the spell, the transcription process takes 2 hours and costs 50 gp for the rare inks needed to inscribe it."
         }
       ]
     },
@@ -1329,7 +1329,7 @@
       ]
     },
     {
-      "header": "Devil’s Sight",
+      "header": "Devil's Sight",
       "level": "3",
       "items": [
         {
@@ -1352,7 +1352,7 @@
         },
         {
           "name": "",
-          "text": "You can cast Confusion once using a warlock spell slot. You can’t do so again until you finish a Long Rest."
+          "text": "You can cast Confusion once using a warlock spell slot. You can't do so again until you finish a Long Rest."
         }
       ]
     },
@@ -1410,7 +1410,7 @@
       "items": [
         {
           "name": "",
-          "text": "You can use your action to touch a willing humanoid and perceive through its senses until the end of your next turn. As long as the creature is on the same plane of existence as you, you can use your action on subsequent turns to maintain this connection, extending the Duration until the end of your next turn. While perceiving through the other creature’s senses, you benefit from any Special senses possessed by that creature, and you are Blinded and Deafened to your own surroundings."
+          "text": "You can use your action to touch a willing humanoid and perceive through its senses until the end of your next turn. As long as the creature is on the same plane of existence as you, you can use your action on subsequent turns to maintain this connection, extending the Duration until the end of your next turn. While perceiving through the other creature's senses, you benefit from any Special senses possessed by that creature, and you are Blinded and Deafened to your own surroundings."
         }
       ]
     },
@@ -1474,7 +1474,7 @@
         },
         {
           "name": "",
-          "text": "You can cast Conjure Elemental once using a warlock spell slot. You can’t do so again until you finish a Long Rest."
+          "text": "You can cast Conjure Elemental once using a warlock spell slot. You can't do so again until you finish a Long Rest."
         }
       ]
     },
@@ -1492,7 +1492,7 @@
         },
         {
           "name": "",
-          "text": "You can cast slow once using a warlock spell slot. You can’t do so again until you finish a Long Rest."
+          "text": "You can cast slow once using a warlock spell slot. You can't do so again until you finish a Long Rest."
         }
       ]
     },
@@ -1574,7 +1574,7 @@
         },
         {
           "name": "",
-          "text": "You can cast Polymorph once using a warlock spell slot. You can’t do so again until you finish a Long Rest."
+          "text": "You can cast Polymorph once using a warlock spell slot. You can't do so again until you finish a Long Rest."
         }
       ]
     },
@@ -1592,7 +1592,7 @@
         },
         {
           "name": "",
-          "text": "You can cast Bestow Curse once using a warlock spell slot. You can’t do so again until you finish a Long Rest."
+          "text": "You can cast Bestow Curse once using a warlock spell slot. You can't do so again until you finish a Long Rest."
         }
       ]
     },
@@ -1602,7 +1602,7 @@
       "items": [
         {
           "name": "",
-          "text": "You can cast bane once using a warlock spell slot. You can’t do so again until you finish a Long Rest."
+          "text": "You can cast bane once using a warlock spell slot. You can't do so again until you finish a Long Rest."
         }
       ]
     },
@@ -1656,11 +1656,11 @@
         },
         {
           "name": "",
-          "text": "You can communicate telepathically with your familiar and perceive through your familiar’s senses as long as you are on the same plane of existence."
+          "text": "You can communicate telepathically with your familiar and perceive through your familiar's senses as long as you are on the same plane of existence."
         },
         {
           "name": "",
-          "text": "Additionally, while perceiving through your familiar’s senses, you can also speak through your familiar in your own voice, even if your familiar is normally incapable of Speech."
+          "text": "Additionally, while perceiving through your familiar's senses, you can also speak through your familiar in your own voice, even if your familiar is normally incapable of Speech."
         }
       ]
     },
@@ -1720,7 +1720,7 @@
       "items": [
         {
           "name": "",
-          "text": "You have made a pact with a fiend from the lower planes of existence, a being whose aims are evil, even if you strive against those aims. Such beings desire the corruption or destruction of all things, ultimately including you. Fiends powerful enough to forge a pact include demon lords such as Demogorgon, Orcus, Fraz’Urb-luu, and Baphomet; archdevils such as Asmodeus, Dispater, Mephistopheles, and Belial; pit Fiends and balors that are especially mighty; and ultroloths and other lords of the yugoloths."
+          "text": "You have made a pact with a fiend from the lower planes of existence, a being whose aims are evil, even if you strive against those aims. Such beings desire the corruption or destruction of all things, ultimately including you. Fiends powerful enough to forge a pact include demon lords such as Demogorgon, Orcus, Fraz'Urb-luu, and Baphomet; archdevils such as Asmodeus, Dispater, Mephistopheles, and Belial; pit Fiends and balors that are especially mighty; and ultroloths and other lords of the yugoloths."
         }
       ]
     },
@@ -1811,7 +1811,7 @@
       ]
     },
     {
-      "header": "Dark One’s Blessing",
+      "header": "Dark One's Blessing",
       "level": "4",
       "items": [
         {
@@ -1821,16 +1821,16 @@
       ]
     },
     {
-      "header": "Dark One’s Own Luck",
+      "header": "Dark One's Own Luck",
       "level": "4",
       "items": [
         {
           "name": "",
-          "text": "Starting at 6th level, you can call on your patron to alter fate in your favor. When you make an ability check or a saving throw, you can use this feature to add a d10 to your roll. You can do so after seeing the initial roll but before any of the roll’s effects occur."
+          "text": "Starting at 6th level, you can call on your patron to alter fate in your favor. When you make an ability check or a saving throw, you can use this feature to add a d10 to your roll. You can do so after seeing the initial roll but before any of the roll's effects occur."
         },
         {
           "name": "",
-          "text": "Once you use this feature, you can’t use it again until you finish a short or Long Rest."
+          "text": "Once you use this feature, you can't use it again until you finish a short or Long Rest."
         }
       ]
     },
@@ -1858,7 +1858,7 @@
         },
         {
           "name": "",
-          "text": "Once you use this feature, you can’t use it again until you finish a Long Rest."
+          "text": "Once you use this feature, you can't use it again until you finish a Long Rest."
         }
       ]
     },
@@ -1868,7 +1868,7 @@
       "items": [
         {
           "name": "",
-          "text": "Each Pact Boon option produces a Special creature or an object that reflects your patron’s nature."
+          "text": "Each Pact Boon option produces a Special creature or an object that reflects your patron's nature."
         },
         {
           "name": "",

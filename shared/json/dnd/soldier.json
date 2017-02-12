@@ -10,7 +10,7 @@
         },
         {
           "name": "",
-          "text": "When you choose this background, work with your DM to determine which military organization you were a part of, how far through its ranks you progressed, and what kind of experiences you had during your military career. Was it a standing army, a town guard, or a village militia? Or it might have been a noble’s or merchant’s private army, or a mercenary company."
+          "text": "When you choose this background, work with your DM to determine which military organization you were a part of, how far through its ranks you progressed, and what kind of experiences you had during your military career. Was it a standing army, a town guard, or a village militia? Or it might have been a noble's or merchant's private army, or a mercenary company."
         },
         {
           "name": "Skill Proficiencies",
@@ -195,7 +195,7 @@
               },
               {
                 "type": "td",
-                "text": "I’m always polite and respectful."
+                "text": "I'm always polite and respectful."
               }
             ],
             [
@@ -205,7 +205,7 @@
               },
               {
                 "type": "td",
-                "text": "I’m haunted by memories of war. I can’t get the images of violence out of my mind."
+                "text": "I'm haunted by memories of war. I can't get the images of violence out of my mind."
               }
             ],
             [
@@ -215,7 +215,7 @@
               },
               {
                 "type": "td",
-                "text": "I’ve lost too many friends, and I’m slow to make new ones."
+                "text": "I've lost too many friends, and I'm slow to make new ones."
               }
             ],
             [
@@ -225,7 +225,7 @@
               },
               {
                 "type": "td",
-                "text": "I’m full of inspiring and cautionary tales from my military experience relevant to almost every combat situation."
+                "text": "I'm full of inspiring and cautionary tales from my military experience relevant to almost every combat situation."
               }
             ],
             [
@@ -341,7 +341,7 @@
               },
               {
                 "type": "td",
-                "text": "Live and Let Live. Ideals aren’t worth killing over or going to war for. (Neutral)"
+                "text": "Live and Let Live. Ideals aren't worth killing over or going to war for. (Neutral)"
               }
             ],
             [
@@ -417,7 +417,7 @@
               },
               {
                 "type": "td",
-                "text": "I’ll never forget the crushing defeat my company suffered or the enemies who dealt it."
+                "text": "I'll never forget the crushing defeat my company suffered or the enemies who dealt it."
               }
             ],
             [
@@ -523,7 +523,7 @@
               },
               {
                 "type": "td",
-                "text": "I’d rather eat my armor than admit when I’m wrong."
+                "text": "I'd rather eat my armor than admit when I'm wrong."
               }
             ]
           ]

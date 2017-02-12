@@ -1,0 +1,68 @@
+{
+  "name": "Goliath",
+  "sections": [
+    {
+      "header": "",
+      "items": [
+        {
+          "name": "",
+          "text": "At the highest mountain peaks—far above the slopes where trees grow and where the air is thin and the frigid winds howl—dwell the reclusive goliaths. Few folk can claim to have seen a goliath, and fewer still can claim friendship with them. Goliaths wander a bleak realm of rock, wind, and cold. Their bodies look as if they are carved from mountain stone and give them great physical power. Their spirits take after the wandering wind, making them nomads who wander from peak to peak. Their hearts are infused with the cold regard of their frigid realm, leaving each goliath with the responsibility to earn a place in the tribe or die trying."
+        }
+      ]
+    },
+    {
+      "header": "Goliath Traits",
+      "level": "2",
+      "items": [
+        {
+          "name": "",
+          "text": "Goliaths share a number of traits in common with each other."
+        },
+        {
+          "name": "Ability Score Increase",
+          "text": "Your Strength score increases by 2, and your Constitution score increases by 1."
+        },
+        {
+          "name": "Age",
+          "text": "Goliaths have lifespans comparable to humans. They enter adulthood in their late teens and usually live less than a century."
+        },
+        {
+          "name": "Alignment",
+          "text": "Goliath society, with its clear roles and tasks, has a strong lawful bent. The goliath sense of fairness, balanced with an emphasis on self-sufficiency and personal accountability, pushes them toward neutrality."
+        },
+        {
+          "name": "Size",
+          "text": "Goliaths are between 7 and 8 feet tall and weigh between 280 and 340 pounds. Your size is Medium."
+        },
+        {
+          "name": "Speed",
+          "text": "Your base walking speed is 30 feet."
+        },
+        {
+          "name": "Natural Athlete",
+          "text": "You have proficiency in the Athletics skill."
+        },
+        {
+          "name": "Stone's Endurance",
+          "text": "You can focus yourself to occasionally shrug off injury. When you take damage, you can use your reaction to roll a d12. Add your Constitution modifier to the number rolled, and reduce the damage by that total. After you use this trait, you can't use it again until you finish a short or long rest."
+        },
+        {
+          "name": "Powerful Build",
+          "text": "You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift."
+        },
+        {
+          "name": "Mountain Born",
+          "text": "You're acclimated to high altitude, including elevations above 20,000 feet. You're also naturally adapted to cold climates, as described in chapter 5 of the Dungeon Master's Guide."
+        },
+        {
+          "name": "Languages",
+          "text": "You can speak, read, and write Common and Giant."
+        }
+      ]
+    }
+  ],
+  "attributes": {
+    "Category": "Races",
+    "Source": "Elemental Evil Player's Companion"
+  }
+}

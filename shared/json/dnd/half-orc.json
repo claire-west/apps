@@ -31,7 +31,7 @@
         },
         {
           "name": "Darkvision",
-          "text": "Thanks to your orc blood, you have superior vision in dark and dim Conditions. You can see in dim light within 60 feet of you as if it were bright light, and in Darkness as if it were dim light. You can’t discern color in Darkness, only shades of gray."
+          "text": "Thanks to your orc blood, you have superior vision in dark and dim Conditions. You can see in dim light within 60 feet of you as if it were bright light, and in Darkness as if it were dim light. You can't discern color in Darkness, only shades of gray."
         },
         {
           "name": "Menacing",
@@ -39,11 +39,11 @@
         },
         {
           "name": "Relentless Endurance",
-          "text": "When you are reduced to 0 hit points but not killed outright, you can drop to 1 hit point instead. You can’t use this feature again until you finish a Long Rest."
+          "text": "When you are reduced to 0 hit points but not killed outright, you can drop to 1 hit point instead. You can't use this feature again until you finish a Long Rest."
         },
         {
           "name": "Savage Attacks",
-          "text": "When you score a critical hit with a melee weapon Attack, you can roll one of the weapon’s damage dice one additional time and add it to the extra damage of the critical hit."
+          "text": "When you score a critical hit with a melee weapon Attack, you can roll one of the weapon's damage dice one additional time and add it to the extra damage of the critical hit."
         },
         {
           "name": "Languages",

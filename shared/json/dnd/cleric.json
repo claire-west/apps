@@ -1654,7 +1654,7 @@
       "items": [
         {
           "name": "",
-          "text": "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two Ability Scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature."
+          "text": "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two Ability Scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature."
         }
       ]
     },
@@ -1792,7 +1792,7 @@
       "items": [
         {
           "name": "",
-          "text": "Also starting at 1st level, your Healing Spells are more effective. Whenever you use a spell of 1st level or higher to restore hit points to a creature, the creature regains additional hit points equal to 2 + the spell’s level."
+          "text": "Also starting at 1st level, your Healing Spells are more effective. Whenever you use a spell of 1st level or higher to restore hit points to a creature, the creature regains additional hit points equal to 2 + the spell's level."
         }
       ]
     },
@@ -1810,7 +1810,7 @@
         },
         {
           "name": "",
-          "text": "Choose any creatures within 30 feet of you, and divide those hit points among them. This feature can restore a creature to no more than half of its hit point maximum. You can’t use this feature on an Undead or a construct."
+          "text": "Choose any creatures within 30 feet of you, and divide those hit points among them. This feature can restore a creature to no more than half of its hit point maximum. You can't use this feature on an Undead or a construct."
         }
       ]
     },
@@ -1820,7 +1820,7 @@
       "items": [
         {
           "name": "",
-          "text": "Beginning at 6th level, the Healing Spells you cast on others heal you as well. When you Cast a Spell of 1st level or higher that restores hit points to a creature other than you, you regain hit points equal to 2 + the spell’s level."
+          "text": "Beginning at 6th level, the Healing Spells you cast on others heal you as well. When you Cast a Spell of 1st level or higher that restores hit points to a creature other than you, you regain hit points equal to 2 + the spell's level."
         }
       ]
     },
