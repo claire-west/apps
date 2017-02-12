@@ -1,0 +1,84 @@
+{
+  "name": "Backgrounds",
+  "sections": [
+    {
+      "header": "",
+      "items": [
+        {
+          "name": "",
+          "text": "Every story has a beginning. Your character’s background reveals where you came from, how you became an adventurer, and your place in the world. Your Fighter might have been a courageous Knight or a grizzled soldier. Your Wizard could have been a sage or an artisan. Your rogue might have gotten by as a guild thief or commanded audiences as a jester."
+        },
+        {
+          "name": "",
+          "text": "Choosing a background provides you with important story cues about your character’s identity. The most important question to ask about your background iswhat changed? Why did you stop doing whatever your background describes and start adventuring? Where did you get the money to purchase your starting gear, or, if you come from a wealthy background, why don’t you have more money? How did you learn the skills of your class? What sets you apart from ordinary people who share your background?"
+        },
+        {
+          "name": "",
+          "text": "The sample background presented here provides both concrete benefits (features, proficiencies, and languages) and roleplaying suggestions."
+        }
+      ]
+    },
+    {
+      "header": "Proficiencies",
+      "level": "4",
+      "items": [
+        {
+          "name": "",
+          "text": "Each background gives a character proficiency in two skills (described in “Using”)."
+        },
+        {
+          "name": "",
+          "text": "In addition, most backgrounds give a character proficiency with one or more tools (detailed in “”)."
+        },
+        {
+          "name": "",
+          "text": "If a character would gain the same proficiency from two different sources, he or she can choose a different proficiency of the same kind (skill or tool) instead."
+        }
+      ]
+    },
+    {
+      "header": "Languages",
+      "level": "4",
+      "items": [
+        {
+          "name": "",
+          "text": "Some backgrounds also allow characters to learn additional languages beyond those given by race. See “Languages.”"
+        }
+      ]
+    },
+    {
+      "header": "Equipment",
+      "level": "4",
+      "items": [
+        {
+          "name": "",
+          "text": "Each background provides a package of starting Equipment. If you use the optional rule to spend coin on gear, you do not receive the starting Equipment from your background."
+        }
+      ]
+    },
+    {
+      "header": "Suggested Characteristics",
+      "level": "4",
+      "items": [
+        {
+          "name": "",
+          "text": "A background contains suggested personal characteristics based on your background. You can pick characteristics, roll dice to determine them randomly, or use the suggestions as Inspiration for characteristics of your own Creation."
+        }
+      ]
+    },
+    {
+      "header": "Customizing a Background",
+      "level": "4",
+      "items": [
+        {
+          "name": "",
+          "text": "You might want to tweak some of the features of a background so it better fits your character or the campaign Setting. To customize a background, you can replace one feature with any other one, choose any two skills, and choose a total of two tool proficiencies or languages from the sample backgrounds. You can either use the Equipment package from your background or spend coin on gear as described in the Equipment section. (If you spend coin, you can’t also take the Equipment package suggested for your class.) Finally, choose two personality traits, one ideal, one bond, and one flaw. If you can’t find a feature that matches your desired background, work with your GM to create one."
+        }
+      ]
+    }
+  ],
+  "attributes": {
+    "Category": "Backgrounds",
+    "Source": "SRD 5.0"
+  }
+}

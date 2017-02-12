@@ -1,0 +1,538 @@
+{
+  "name": "Soldier",
+  "sections": [
+    {
+      "header": "",
+      "items": [
+        {
+          "name": "",
+          "text": "War has been your life for as long as you care to remember. You trained as a youth, studied the use of weapons and armor, learned basic survival techniques, including how to stay alive on the battlefield. You might have been part of a standing national army or a mercenary company, or perhaps a member of a local militia who rose to prominence during a recent war."
+        },
+        {
+          "name": "",
+          "text": "When you choose this background, work with your DM to determine which military organization you were a part of, how far through its ranks you progressed, and what kind of experiences you had during your military career. Was it a standing army, a town guard, or a village militia? Or it might have been a noble’s or merchant’s private army, or a mercenary company."
+        },
+        {
+          "name": "Skill Proficiencies",
+          "text": "Athletics, Intimidation"
+        },
+        {
+          "name": "Tool Proficiencies",
+          "text": "One type of gaming set, vehicles (land)"
+        },
+        {
+          "name": "Equipment",
+          "text": "An insignia of rank, a trophy taken from a fallen enemy (a dagger, broken blade, or piece of a banner), a set of bone dice or deck of cards, a set of common clothes, and a belt pouch containing 10 gp"
+        }
+      ]
+    },
+    {
+      "header": "Speciality",
+      "level": "4",
+      "items": [
+        {
+          "name": "",
+          "text": "During your time as a soldier, you had a specific role to play in your unit or army. Roll a d8 or choose from the options in the table below to determine your role:"
+        }
+      ]
+    },
+    {
+      "type": "table",
+      "header": "",
+      "items": [
+        {
+          "type": "thead",
+          "rows": [
+            [
+              {
+                "type": "td",
+                "text": "d8"
+              },
+              {
+                "type": "td",
+                "text": "Speciality"
+              },
+              {
+                "type": "td",
+                "text": "d8"
+              },
+              {
+                "type": "td",
+                "text": "Speciality"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "tbody",
+          "rows": [
+            [
+              {
+                "type": "td",
+                "text": "1"
+              },
+              {
+                "type": "td",
+                "text": "Officer"
+              },
+              {
+                "type": "td",
+                "text": "6"
+              },
+              {
+                "type": "td",
+                "text": "Quartermaster"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "2"
+              },
+              {
+                "type": "td",
+                "text": "Scout"
+              },
+              {
+                "type": "td",
+                "text": "7"
+              },
+              {
+                "type": "td",
+                "text": "Standard bearer"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "3"
+              },
+              {
+                "type": "td",
+                "text": "Infantry"
+              },
+              {
+                "type": "td",
+                "text": "8",
+                "rowspan": 3
+              },
+              {
+                "type": "td",
+                "text": "Support staff (cook, blacksmith, or the like)",
+                "rowspan": 3
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "4"
+              },
+              {
+                "type": "td",
+                "text": "Cavalry"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "5"
+              },
+              {
+                "type": "td",
+                "text": "Healer"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "header": "Feature: Military Rank",
+      "level": "4",
+      "items": [
+        {
+          "name": "",
+          "text": "You have a military rank from your career as a soldier. Soldiers loyal to your former military organization still recognize your authority and influence, and they defer to you if they are of a lower rank. You can invoke your rank to exert influence over other soldiers and requisition simple equipment or horses for temporary use. You can also usually gain access to friendly military encampments and fortresses where your rank is recognized."
+        }
+      ]
+    },
+    {
+      "header": "Suggested Characteristics",
+      "level": "4",
+      "items": [
+        {
+          "name": "",
+          "text": "The horrors of war combined with the rigid discipline of military service leave their mark on all soldiers, shaping their ideals, creating strong bonds, and often leaving them scarred and vulnerable to fear, shame, and hatred."
+        }
+      ]
+    },
+    {
+      "type": "table",
+      "header": "",
+      "items": [
+        {
+          "type": "thead",
+          "rows": [
+            [
+              {
+                "type": "td",
+                "text": "d8"
+              },
+              {
+                "type": "td",
+                "text": "Personality Trait"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "tbody",
+          "rows": [
+            [
+              {
+                "type": "td",
+                "text": "1"
+              },
+              {
+                "type": "td",
+                "text": "I’m always polite and respectful."
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "2"
+              },
+              {
+                "type": "td",
+                "text": "I’m haunted by memories of war. I can’t get the images of violence out of my mind."
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "3"
+              },
+              {
+                "type": "td",
+                "text": "I’ve lost too many friends, and I’m slow to make new ones."
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "4"
+              },
+              {
+                "type": "td",
+                "text": "I’m full of inspiring and cautionary tales from my military experience relevant to almost every combat situation."
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "5"
+              },
+              {
+                "type": "td",
+                "text": "I can stare down a hell hound without flinching."
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "6"
+              },
+              {
+                "type": "td",
+                "text": "I enjoy being strong and like breaking things."
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "7"
+              },
+              {
+                "type": "td",
+                "text": "I have a crude sense of humor."
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "8"
+              },
+              {
+                "type": "td",
+                "text": "I face problems head-on. A simple, direct solution is the best path to success."
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "type": "table",
+      "header": "",
+      "items": [
+        {
+          "type": "thead",
+          "rows": [
+            [
+              {
+                "type": "td",
+                "text": "d6"
+              },
+              {
+                "type": "td",
+                "text": "Ideal"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "tbody",
+          "rows": [
+            [
+              {
+                "type": "td",
+                "text": "1"
+              },
+              {
+                "type": "td",
+                "text": "Greater Good. Our lot is to lay down our lives in defense of others. (Good)"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "2"
+              },
+              {
+                "type": "td",
+                "text": "Responsibility. I do what I must and obey just authority. (Lawful)"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "3"
+              },
+              {
+                "type": "td",
+                "text": "Independence. When people follow orders blindly, they embrace a kind of tyranny. (Chaotic)"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "4"
+              },
+              {
+                "type": "td",
+                "text": "Might. In life as in war, the stronger force wins. (Evil)"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "5"
+              },
+              {
+                "type": "td",
+                "text": "Live and Let Live. Ideals aren’t worth killing over or going to war for. (Neutral)"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "6"
+              },
+              {
+                "type": "td",
+                "text": "Nation. My city, nation, or people are all that matter. (Any)"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "type": "table",
+      "header": "",
+      "items": [
+        {
+          "type": "thead",
+          "rows": [
+            [
+              {
+                "type": "td",
+                "text": "d6"
+              },
+              {
+                "type": "td",
+                "text": "Bond"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "tbody",
+          "rows": [
+            [
+              {
+                "type": "td",
+                "text": "1"
+              },
+              {
+                "type": "td",
+                "text": "I would still lay down my life for the people I served with."
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "2"
+              },
+              {
+                "type": "td",
+                "text": "Someone saved my life on the battlefield. To this day, I will never leave a friend behind."
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "3"
+              },
+              {
+                "type": "td",
+                "text": "My honor is my life."
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "4"
+              },
+              {
+                "type": "td",
+                "text": "I’ll never forget the crushing defeat my company suffered or the enemies who dealt it."
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "5"
+              },
+              {
+                "type": "td",
+                "text": "Those who fight beside me are those worth dying for."
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "6"
+              },
+              {
+                "type": "td",
+                "text": "I fight for those who cannot fight for themselves."
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "type": "table",
+      "header": "",
+      "items": [
+        {
+          "type": "thead",
+          "rows": [
+            [
+              {
+                "type": "td",
+                "text": "d6"
+              },
+              {
+                "type": "td",
+                "text": "Flaw"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "tbody",
+          "rows": [
+            [
+              {
+                "type": "td",
+                "text": "1"
+              },
+              {
+                "type": "td",
+                "text": "The monstrous enemy we faced in battle still leaves me quivering with fear."
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "2"
+              },
+              {
+                "type": "td",
+                "text": "I have little respect for anyone who is not a proven warrior."
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "3"
+              },
+              {
+                "type": "td",
+                "text": "I made a terrible mistake in battle that cost many lives—and I would do anything to keep that mistake secret."
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "4"
+              },
+              {
+                "type": "td",
+                "text": "My hatred of my enemies is blind and unreasoning."
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "5"
+              },
+              {
+                "type": "td",
+                "text": "I obey the law, even if the law causes misery."
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "6"
+              },
+              {
+                "type": "td",
+                "text": "I’d rather eat my armor than admit when I’m wrong."
+              }
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "attributes": {
+    "Category": "Backgrounds",
+    "Source": "Player's Basic Rules 0.2"
+  }
+}
