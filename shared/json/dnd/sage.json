@@ -1,0 +1,530 @@
+{
+  "name": "Sage",
+  "sections": [
+    {
+      "header": "",
+      "items": [
+        {
+          "name": "",
+          "text": "You spent years learning the lore of the multiverse. You scoured manuscripts, studied scrolls, and listened to the greatest experts on the subjects that interest you. Your efforts have made you a master in your fields of study."
+        },
+        {
+          "name": "Skill Proficiencies",
+          "text": "Arcana, History"
+        },
+        {
+          "name": "Languages",
+          "text": "Two of your choice"
+        },
+        {
+          "name": "Equipment",
+          "text": "A bottle of black ink, a quill, a small knife, a letter from a dead colleague posing a question you have not yet been able to answer, a set of common clothes, and a belt pouch containing 10 gp"
+        }
+      ]
+    },
+    {
+      "header": "Speciality",
+      "level": "4",
+      "items": [
+        {
+          "name": "",
+          "text": "To determine the nature of your scholarly training, roll a d8 or choose from the options in the table below."
+        }
+      ]
+    },
+    {
+      "type": "table",
+      "header": "",
+      "items": [
+        {
+          "type": "thead",
+          "rows": [
+            [
+              {
+                "type": "td",
+                "text": "d8"
+              },
+              {
+                "type": "td",
+                "text": "Speciality"
+              },
+              {
+                "type": "td",
+                "text": "d8"
+              },
+              {
+                "type": "td",
+                "text": "Speciality"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "tbody",
+          "rows": [
+            [
+              {
+                "type": "td",
+                "text": "1"
+              },
+              {
+                "type": "td",
+                "text": "Alchemist"
+              },
+              {
+                "type": "td",
+                "text": "5"
+              },
+              {
+                "type": "td",
+                "text": "Professor"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "2"
+              },
+              {
+                "type": "td",
+                "text": "Astronomer"
+              },
+              {
+                "type": "td",
+                "text": "6"
+              },
+              {
+                "type": "td",
+                "text": "Researcher"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "3"
+              },
+              {
+                "type": "td",
+                "text": "Discredited academic"
+              },
+              {
+                "type": "td",
+                "text": "7"
+              },
+              {
+                "type": "td",
+                "text": "Wizard's apprentice"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "4"
+              },
+              {
+                "type": "td",
+                "text": "Librarian"
+              },
+              {
+                "type": "td",
+                "text": "8"
+              },
+              {
+                "type": "td",
+                "text": "Scribe"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "header": "Feature: Researcher",
+      "level": "4",
+      "items": [
+        {
+          "name": "",
+          "text": "When you attempt to learn or recall a piece of lore, if you do not know that information, you often know where and from whom you can obtain it. Usually, this information comes from a library, scriptorium, university, or a sage or other learned person or creature. Your DM might rule that the knowledge you seek is secreted away in an almost inaccessible place, or that it simply cannot be found. Unearthing the deepest secrets of the multiverse can require an adventure or even a whole campaign."
+        }
+      ]
+    },
+    {
+      "header": "Suggested Characteristics",
+      "level": "4",
+      "items": [
+        {
+          "name": "",
+          "text": "Sages are defined by their extensive studies, and their characteristics reflect this life of study. Devoted to scholarly pursuits, a sage values knowledge highly—sometimes in its own right, sometimes as a means toward other ideals."
+        }
+      ]
+    },
+    {
+      "type": "table",
+      "header": "",
+      "items": [
+        {
+          "type": "thead",
+          "rows": [
+            [
+              {
+                "type": "td",
+                "text": "d8"
+              },
+              {
+                "type": "td",
+                "text": "Personality Trait"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "tbody",
+          "rows": [
+            [
+              {
+                "type": "td",
+                "text": "1"
+              },
+              {
+                "type": "td",
+                "text": "I use polysyllabic words that convey the impression of great erudition."
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "2"
+              },
+              {
+                "type": "td",
+                "text": "I’ve read every book in the world’s greatest libraries—or I like to boast that I have."
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "3"
+              },
+              {
+                "type": "td",
+                "text": "I’m used to helping out those who aren’t as smart as I am, and I patiently explain anything and everything to others."
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "4"
+              },
+              {
+                "type": "td",
+                "text": "There’s nothing I like more than a good mystery."
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "5"
+              },
+              {
+                "type": "td",
+                "text": "I’m willing to listen to every side of an argument before I make my own judgment."
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "6"
+              },
+              {
+                "type": "td",
+                "text": "I . . . speak . . . slowly . . . when talking . . . to idiots, . . . which . . . almost . . . everyone . . . is . . . compared . . . to me."
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "7"
+              },
+              {
+                "type": "td",
+                "text": "I am horribly, horribly awkward in social situations."
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "8"
+              },
+              {
+                "type": "td",
+                "text": "I’m convinced that people are always trying to steal my secrets."
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "type": "table",
+      "header": "",
+      "items": [
+        {
+          "type": "thead",
+          "rows": [
+            [
+              {
+                "type": "td",
+                "text": "d6"
+              },
+              {
+                "type": "td",
+                "text": "Ideal"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "tbody",
+          "rows": [
+            [
+              {
+                "type": "td",
+                "text": "1"
+              },
+              {
+                "type": "td",
+                "text": "Knowledge. The path to power and self-improvement is through knowledge. (Neutral)"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "2"
+              },
+              {
+                "type": "td",
+                "text": "Beauty. What is beautiful points us beyond itself toward what is true. (Good)"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "3"
+              },
+              {
+                "type": "td",
+                "text": "Logic. Emotions must not cloud our logical thinking. (Lawful)"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "4"
+              },
+              {
+                "type": "td",
+                "text": "No Limits. Nothing should fetter the infinite possibility inherent in all existence. (Chaotic)"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "5"
+              },
+              {
+                "type": "td",
+                "text": "Power. Knowledge is the path to power and domination. (Evil)"
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "6"
+              },
+              {
+                "type": "td",
+                "text": "Self-Improvement. The goal of a life of study is the betterment of oneself. (Any)"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "type": "table",
+      "header": "",
+      "items": [
+        {
+          "type": "thead",
+          "rows": [
+            [
+              {
+                "type": "td",
+                "text": "d6"
+              },
+              {
+                "type": "td",
+                "text": "Bond"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "tbody",
+          "rows": [
+            [
+              {
+                "type": "td",
+                "text": "1"
+              },
+              {
+                "type": "td",
+                "text": "It is my duty to protect my students."
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "2"
+              },
+              {
+                "type": "td",
+                "text": "I have an ancient text that holds terrible secrets that must not fall into the wrong hands."
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "3"
+              },
+              {
+                "type": "td",
+                "text": "I work to preserve a library, university, scriptorium, or monastery."
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "4"
+              },
+              {
+                "type": "td",
+                "text": "My life’s work is a series of tomes related to a specific field of lore."
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "5"
+              },
+              {
+                "type": "td",
+                "text": "I’ve been searching my whole life for the answer to a certain question."
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "6"
+              },
+              {
+                "type": "td",
+                "text": "I sold my soul for knowledge. I hope to do great deeds and win it back."
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "type": "table",
+      "header": "",
+      "items": [
+        {
+          "type": "thead",
+          "rows": [
+            [
+              {
+                "type": "td",
+                "text": "d6"
+              },
+              {
+                "type": "td",
+                "text": "Flaw"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "tbody",
+          "rows": [
+            [
+              {
+                "type": "td",
+                "text": "1"
+              },
+              {
+                "type": "td",
+                "text": "I am easily distracted by the promise of information."
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "2"
+              },
+              {
+                "type": "td",
+                "text": "Most people scream and run when they see a demon. I stop and take notes on its anatomy."
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "3"
+              },
+              {
+                "type": "td",
+                "text": "Unlocking an ancient mystery is worth the price of a civilization."
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "4"
+              },
+              {
+                "type": "td",
+                "text": "I overlook obvious solutions in favor of complicated ones."
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "5"
+              },
+              {
+                "type": "td",
+                "text": "I speak without really thinking through my words, invariably insulting others."
+              }
+            ],
+            [
+              {
+                "type": "td",
+                "text": "6"
+              },
+              {
+                "type": "td",
+                "text": "I can’t keep a secret to save my life, or anyone else’s."
+              }
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "attributes": {
+    "Category": "Backgrounds",
+    "Source": "Player's Basic Rules 0.2"
+  }
+}
