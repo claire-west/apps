@@ -1,0 +1,32 @@
+<nav class="top-bar sectionNav"></nav>
+<section id="resources-manager" class="row contentSection defaultSection" hidden>
+    <div class="column">
+        <h4>Upload</h4>
+    </div>
+    <div class="small-6 medium-4 large-3 columns">
+        <button class="resourceFileButton button expanded">Select File</button>
+    </div>
+    <div class="small-6 medium-4 medium-offset-4 large-3 large-offset-6 columns">
+        <button class="resourceUploadButton button expanded float-right" disabled>Save as Resource<span class="ajaxSpinner" hidden>&nbsp;<i class="fa fa-refresh fa-spin"></i></button>
+    </div>
+    <div class="small-6 columns">
+        <label>
+            Label
+            <input type="text" class="resourceName" />
+        </label>
+    </div>
+    <div class="small-6 columns">
+        <label>
+            Suffix
+            <input type="text" class="metaSuffix" />
+        </label>
+    </div>
+    <div class="small-6 columns">
+        <p class="fileContent"></p>
+    </div>
+    <div class="resourceList small-6 columns"></div>
+    <input type="file" class="resourceFile" hidden />
+</section>
+<section id="resources-unauthorized" class="row contentSection" hidden>
+    <h5>You must log in to use this app.</h5>
+</section>

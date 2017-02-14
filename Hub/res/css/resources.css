@@ -1,0 +1,13 @@
+#app-resources .resourceFileButton,
+#app-resources .resourceUploadButton {
+    margin-bottom: 0;
+}
+
+#app-resources .fileContent {
+    word-wrap: break-word;
+}
+
+#resources-unauthorized h5 {
+    text-align: center;
+    margin-top: 1rem;
+}
