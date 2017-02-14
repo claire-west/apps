@@ -13,6 +13,15 @@
                     return modules.propGet.compare({key: a}, b, 'key');
                 },
 
+                clearIndex: function(array) {
+                    for (var i = 0; i < indexer.arrays.length; i++) {
+                        if (indexer.arrays[i] && indexer.arrays[i].array === array) {
+                            indexer.arrays.splice(i, 1)
+                            break;
+                        }
+                    }
+                },
+
                 indexArray: function(array, prop, promise) {
                     promise = promise || $.Deferred();
 
