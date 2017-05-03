@@ -2,6 +2,14 @@
     margin-bottom: 0;
 }
 
+#app-dndRef .dndRefDirectorySearch {
+    display: inline-block;
+    font-size: 1.5625rem;
+    line-height: 2.15rem;
+    text-align: center;
+    margin-right: 0;
+}
+
 #app-dndRef .fa.fa-cog {
     margin-top: 1px;
 }
@@ -29,6 +37,14 @@
 }
 #dndRef-directory dd + dt {
     margin-top: 0.25rem;
+}
+
+#dndRef-directory .search .content h5 {
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+}
+#dndRef-directory .search .content p {
+    margin-bottom: 0;
 }
 
 #dndRef-monster h4,
@@ -104,8 +120,7 @@
 }
 #dndRef-page .attributes th,
 #dndRef-page .attributes td {
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
+    padding: 0.25rem 0.5rem;
 }
 #dndRef-page .attributes caption {
     font-weight: bold;
