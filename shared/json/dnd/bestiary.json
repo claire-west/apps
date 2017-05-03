@@ -5296,8 +5296,8 @@
             "text": "The gnome has advantage on Dexterity (Stealth) checks made to hide in rocky terrain."
           },
           {
-            "name": "",
-            "text": "Gnome Cunning</strong>:&nbsp;The gnome has advantage on Intelligence, Wisdom, and Charisma saving throws against magic."
+            "name": "Gnome Cunning",
+            "text": "The gnome has advantage on Intelligence, Wisdom, and Charisma saving throws against magic."
           },
           {
             "name": "Innate Spellcasting",
@@ -5305,11 +5305,11 @@
           },
           {
             "name": "",
-            "text": "At will: <em>Nondetection</em>&nbsp;(self only)"
+            "text": "At will: Nondetection (self only)"
           },
           {
             "name": "",
-            "text": "1/day each: <em>Blindness Deafness, blur, Disguise Self</em>"
+            "text": "1/day each: Blindness Deafness, blur, Disguise Self"
           }
         ]
       },
@@ -5330,7 +5330,7 @@
     "attributes": {
       "Category": "Monsters",
       "Size": "Small",
-      "Type": "Humanoid (gnome)",
+      "Type": "Humanoid (Gnome)",
       "Alignment": "Neutral Good",
       "AC": "15 (chain shirt)",
       "HP": "16 (3d6 + 6)",
@@ -5518,12 +5518,12 @@
         "header": "Traits",
         "items": [
           {
-            "name": "",
-            "text": "Keen Smell</strong>. The rat has advantage on Wisdom  (Perception) checks that rely on smell."
+            "name": "Keen Smell",
+            "text": "The rat has advantage on Wisdom  (Perception) checks that rely on smell."
           },
           {
-            "name": "",
-            "text": "Pack Tactics</strong>. The rat has advantage on an Attack roll  against a creature if at least one of the rat's allies is  within 5 feet of the creature and the ally isn't  Incapacitated."
+            "name": "Pack Tactics",
+            "text": "The rat has advantage on an Attack roll  against a creature if at least one of the rat's allies is  within 5 feet of the creature and the ally isn't  Incapacitated."
           }
         ]
       },
@@ -5531,12 +5531,8 @@
         "header": "Actions",
         "items": [
           {
-            "name": "",
-            "text": "Bite</strong>. Melee Weapon Attack: +4 to hit, reach 5 ft., one  target. Hit: 4 (1d4 + 2) piercing damage. If the target is a  creature, it must succeed on a DC 10 Constitution saving  throw or contract a disease. Until the disease is cured, the  target can't regain hit points except by magical means, and  the target's hit point maximum decreases by 3 (1d6) every 24 "
-          },
-          {
-            "name": "",
-            "text": "hours. If the target's hit point maximum drops to 0 as a result  of this disease, the target dies."
+            "name": "Bite",
+            "text": "Melee Weapon Attack: +4 to hit, reach 5 ft., one  target. Hit: 4 (1d4 + 2) piercing damage. If the target is a  creature, it must succeed on a DC 10 Constitution saving  throw or contract a disease. Until the disease is cured, the  target can't regain hit points except by magical means, and  the target's hit point maximum decreases by 3 (1d6) every 24 hours. If the target's hit point maximum drops to 0 as a result  of this disease, the target dies."
           }
         ]
       }
@@ -9972,8 +9968,8 @@
         "header": "Actions",
         "items": [
           {
-            "name": "",
-            "text": "Multiattack</strong>:&nbsp;The Veteran makes two Longsword attacks.  If it has a Shortsword drawn, it can also make a  Shortsword Attack. "
+            "name": "Multiattack",
+            "text": "The Veteran makes two Longsword attacks.  If it has a Shortsword drawn, it can also make a  Shortsword Attack. "
           },
           {
             "name": "Longsword",
@@ -9998,7 +9994,7 @@
       "Category": "Monsters",
       "Source": "SRD 5.0",
       "Size": "Medium",
-      "Type": "Humanoid (human)",
+      "Type": "Humanoid (Human)",
       "Alignment": "Any",
       "AC": "18 (plate)",
       "HP": "65",
@@ -14958,12 +14954,12 @@
         "header": "Traits",
         "items": [
           {
-            "name": "",
-            "text": "Keen Smell</strong>. The tiger has advantage on Wisdom  (Perception) checks that rely on smell. "
+            "name": "Keen Smell",
+            "text": "The tiger has advantage on Wisdom  (Perception) checks that rely on smell. "
           },
           {
-            "name": "",
-            "text": "Pounce</strong>. If the tiger moves at least 20 feet straight  toward a creature and then hits it with a claw Attack on  the same turn, that target must succeed on a DC 14  Strength saving throw or be knocked prone. If the  target is prone, the tiger can make one bite Attack  against it as a Bonus Action."
+            "name": "Pounce",
+            "text": "If the tiger moves at least 20 feet straight  toward a creature and then hits it with a claw Attack on  the same turn, that target must succeed on a DC 14  Strength saving throw or be knocked prone. If the  target is prone, the tiger can make one bite Attack  against it as a Bonus Action."
           }
         ]
       },
@@ -14971,12 +14967,12 @@
         "header": "Actions",
         "items": [
           {
-            "name": "",
-            "text": "Bite</strong>. Melee Weapon Attack: +6 to hit, reach 5 ft., one  target. Hit: 10 (1d10 + 5) piercing damage. "
+            "name": "Bite",
+            "text": "Melee Weapon Attack: +6 to hit, reach 5 ft., one  target. Hit: 10 (1d10 + 5) piercing damage. "
           },
           {
-            "name": "",
-            "text": "Claw</strong>. Melee Weapon Attack: +6 to hit, reach 5 ft., one  target. Hit: 12 (2d6 + 5) slashing damage."
+            "name": "Claw",
+            "text": "Melee Weapon Attack: +6 to hit, reach 5 ft., one  target. Hit: 12 (2d6 + 5) slashing damage."
           }
         ]
       }
@@ -18720,20 +18716,20 @@
         "header": "Traits",
         "items": [
           {
-            "name": "",
-            "text": "Consume Life</strong>. As a Bonus Action, the will-o'-wisp can  target one creature it can see within 5 feet of it that  has 0 hit points and is still alive. The target must  succeed on a DC 10 Constitution saving throw against  this magic or die. If the target dies, the will-o'-wisp  regains 10 (3d6) hit points. "
+            "name": "Consume Life",
+            "text": "As a Bonus Action, the will-o'-wisp can  target one creature it can see within 5 feet of it that  has 0 hit points and is still alive. The target must  succeed on a DC 10 Constitution saving throw against  this magic or die. If the target dies, the will-o'-wisp  regains 10 (3d6) hit points. "
           },
           {
-            "name": "",
-            "text": "Ephemeral</strong>. The will-o'-wisp can't wear or carry  anything. "
+            "name": "Ephemeral",
+            "text": "The will-o'-wisp can't wear or carry  anything. "
           },
           {
-            "name": "",
-            "text": "Incorporeal Movement</strong>. The will-o'-wisp can move  through other creatures and Objects as if they were  difficult terrain. It takes 5 (1d10) force damage if it  ends its turn inside an object. "
+            "name": "Incorporeal Movement",
+            "text": "The will-o'-wisp can move  through other creatures and Objects as if they were  difficult terrain. It takes 5 (1d10) force damage if it  ends its turn inside an object. "
           },
           {
-            "name": "",
-            "text": "Variable Illumination</strong>. The will-o'-wisp sheds bright  light in a 5b to 20-foot radius and dim light for an additional number of feet equal to the chosen radius.  The will-o'-wisp can alter the radius as a Bonus Action. "
+            "name": "Variable Illumination",
+            "text": "The will-o'-wisp sheds bright  light in a 5b to 20-foot radius and dim light for an additional number of feet equal to the chosen radius.  The will-o'-wisp can alter the radius as a Bonus Action. "
           }
         ]
       },
@@ -18741,12 +18737,12 @@
         "header": "Actions",
         "items": [
           {
-            "name": "",
-            "text": "Shock</strong>. Melee Spell Attack: +4 to hit, reach 5 ft., one  creature. Hit: 9 (2d8) lightning damage. "
+            "name": "Shock",
+            "text": "Melee Spell Attack: +4 to hit, reach 5 ft., one  creature. Hit: 9 (2d8) lightning damage. "
           },
           {
-            "name": "",
-            "text": "Invisibility</strong>. The will-o'-wisp and its light magically  become Invisible until it attacks or uses its Consume  Life, or until its Concentration ends (as if concentrating  on a spell)."
+            "name": "Invisibility",
+            "text": "The will-o'-wisp and its light magically  become Invisible until it attacks or uses its Consume  Life, or until its Concentration ends (as if concentrating  on a spell)."
           }
         ]
       }
