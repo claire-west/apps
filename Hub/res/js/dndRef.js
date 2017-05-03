@@ -22,6 +22,7 @@
             spellLevels: null,
             pages: {},
             resourcePages: {},
+            directory: null,
 
             cr: [
                 '0', '1/8', '1/4', '1/2', '1',
@@ -49,6 +50,7 @@
                 dndRef.spellLevels = null;
                 dndRef.pages = {};
                 dndRef.resourcePages = {};
+                dndRef.directory = null;
                 if ($('#app-dndRef').is(':visible') &&
                     !$('#dndRef-bestiary').is(':visible')) {
                     hashNav.rehash();
@@ -126,6 +128,14 @@
                 return selector;
             },
 
+            getDirectorySearchSelector: function() {
+                var search = $('#app-dndRef .dndRefDirectorySearch').val();
+                if (search.length > 1) {
+                    return '[data-keywords*="' + search.toLocaleLowerCase() + '"]';
+                }
+                return '';
+            },
+
             getModifier: function(score) {
                 var mod = Math.floor((score - 10) / 2);
                 if (mod > -1) {
@@ -160,7 +170,29 @@
                 return $options;
             },
 
+            getSearchTerms: function(ext) {
+                var terms = [];
+
+                for (var i = 0; i < ext.length; i++) {
+                    var obj = JSON.parse(ext[i]);
+                }
+            },
+
+            mergeSearchTerms: function(data, ext) {
+                return data;
+                // TODO - Finish this
+                var extTerms = dndRef.getSearchTerms(ext);
+            },
+
             filter: {
+                directory: function() {
+                    $('#dndRef-directory .directorySearchCategory').hide();
+                    var selector = dndRef.getDirectorySearchSelector();
+                    var $category = $('#dndRef-directory .directorySearchCategory' + selector).show();
+                    $category.find('.directorySearchItem').hide();
+                    $category.find('.directorySearchItem' + selector).show();
+                },
+
                 bestiary: function() {
                     $('#dndRef-bestiary .monster').hide();
                     $(dndRef.getMonsterSelector()).show();
@@ -193,15 +225,11 @@
                 },
 
                 bestiary: function() {
-                    return $.ajax({
-                        url: '../shared/json/dnd/bestiary.json'
-                    });
+                    return $.ajax('../shared/json/dnd/bestiary.json');
                 },
 
                 spellbook: function() {
-                    return $.ajax({
-                        url: '../shared/json/dnd/spells.json'
-                    });
+                    return $.ajax('../shared/json/dnd/spells.json');
                 },
 
                 elementalEvilSpells: function() {
@@ -211,15 +239,11 @@
                 },
 
                 spellLevels: function() {
-                    return $.ajax({
-                        url: '../shared/json/dnd/spellLevels.json'
-                    });
+                    return $.ajax('../shared/json/dnd/spellLevels.json');
                 },
 
                 page: function(name) {
-                    return $.ajax({
-                        url: '../shared/json/dnd/' + name + '.json'
-                    });
+                    return $.ajax('../shared/json/dnd/' + name + '.json');
                 },
 
                 extension: function(name) {
@@ -227,6 +251,10 @@
                         url: '/nosql/resources/dnd-ext-' + name,
                         headers: modules.centralAuth.google.baseHeaders()
                     });
+                },
+
+                directory: function() {
+                    return $.ajax('../shared/json/dnd/ext/directory.json');
                 }
             },
 
@@ -296,7 +324,7 @@
                         promise.reject();
                     });
 
-                    return promise;;
+                    return promise;
                 },
 
                 extendedBestiary: function(data) {
@@ -361,6 +389,11 @@
                     return promise;
                 },
 
+                extension: function(name) {
+                    // TODO - cache so the same file isn't loaded twice
+                    return dndRef.api.extension(name);
+                },
+
                 page: function($content, name) {
                     if (dndRef.pages[name]) {
                         return $.when();
@@ -372,15 +405,21 @@
 
                     dndRef.api.page(name).done(function(data) {
                         if (modules.centralAuth.google.info) {
-                            dndRef.api.extension(name).done(function(ext) {
+                            dndRef.load.extension(name).done(function(ext) {
                                 for (var i = 0; i < ext.length; i++) {
                                     var extension = JSON.parse(ext[i].Text);
                                     data.sections = data.sections.concat(extension.sections);
                                     if (extension.attributes &&
-                                        extension.attributes.Source &&
-                                        !data.attributes[extension.name]) {
-
-                                        data.attributes[extension.name] = extension.attributes.Source;
+                                        extension.attributes.Source) {
+                                        if (data.attributes['Additional Sources']) {
+                                            data.attributes['Additional Sources'] += ', ' + extension.attributes.Source;
+                                        }
+                                        if (data.attributes['Additional Source']) {
+                                            data.attributes['Additional Sources'] = data.attributes['Additional Source'] + ', ' + extension.attributes.Source;
+                                            delete data.attributes['Additional Source'];
+                                        } else {
+                                            data.attributes['Additional Source'] = extension.attributes.Source;
+                                        }
                                     }
                                 }
                             }).always(function() {
@@ -396,11 +435,49 @@
                     });
 
                     return promise;
+                },
+
+                directory: function($content) {
+                    if (dndRef.directory) {
+                        return $.when();
+                    }
+
+                    var promise = $.Deferred();
+                    modules.ajaxLoader(promise, $content);
+
+                    dndRef.api.directory().done(function(data) {
+                        if (modules.centralAuth.google.info) {
+                            dndRef.api.resources().done(function(ext) {
+                                data = dndRef.mergeSearchTerms(data, ext);
+                                dndRef.directory = data;
+                                promise.resolve(data);
+                            });
+                        } else {
+                            dndRef.directory = data;
+                            promise.resolve(data);
+
+                            var fn = function() {
+                                modules.centralAuth.google.off('signIn', fn);
+                                dndRef.api.resources().done(function(ext) {
+                                    console.log(ext)
+                                    // TODO - merge with existing rendered
+                                });
+                            };
+
+                            modules.centralAuth.google.on('signIn', fn);
+                        }
+                    }).fail(function() {
+                        promise.reject();
+                    });
+
+                    return promise;
                 }
             },
 
             render: {
                 directory: function() {
+                    var dirtyDLs = [];
+
                     for (var key in dndRef.resourcePages.ref) {
                         var page = dndRef.resourcePages.ref[key];
                         var category = page.attributes.Category.toLocaleLowerCase();
@@ -416,7 +493,81 @@
                                 })
                             )
                         );
+
+                        dirtyDLs.push($dl);
                     }
+
+                    for (var i = 0; i < dirtyDLs.length; i++) {
+                        var $dl = $(dirtyDLs[i]);
+
+                        var items = $dl.children('dd').get();
+                        items.sort(function(a, b) {
+                           return $(a).text().toUpperCase().localeCompare($(b).text().toUpperCase());
+                        });
+                        $.each(items, function(i, item) {
+                            $dl.append(item);
+                        });
+                    }
+                },
+
+                search: function(directory) {
+                    var $directory = [];
+                    for (var i = 0; i < directory.length; i++) {
+                        var dataTags = {
+                            'data-name': directory[i].name.toLocaleLowerCase(),
+                            'data-keywords': directory[i].name.toLocaleLowerCase()
+                        };
+                        if (directory[i].tags) {
+                            for (var n = 0; n < directory[i].tags.length; n++) {
+                                dataTags['data-keywords'] += ',' +
+                                    (directory[i].tags[n].text ||
+                                    directory[i].tags[n].name ||
+                                    directory[i].tags[n]).toLocaleLowerCase();
+                            }
+                        }
+
+                        var $category = dynCore.makeFragment('dndRef.directory', {
+                            '': dataTags,
+                            'a': {
+                                text: directory[i].name,
+                                href: directory[i].url || ''
+                            }
+                        });
+
+                        var args = directory[i].tags.map(function(obj) {
+                            var name = obj.name || obj.text || obj;
+                            var href = '';
+
+                            if (directory[i].name === 'Spells') {
+                                href = '#dndRef-spellbook/all/any/' + name;
+                            } else if (directory[i].name === 'Bestiary') {
+                                href = '#dndRef-monster/' + name;
+                            }
+
+                            var text = name;
+                            if (obj.type) {
+                                text += ' (' + obj.type + ')';
+                            }
+
+                            return {
+                                '': {
+                                    'data-keywords': name.toLocaleLowerCase()
+                                },
+                                'a': {
+                                    text: text,
+                                    href: href
+                                }
+                            }
+                        });
+
+                        var $items = dynCore.makeFragment('dndRef.directoryItem', args);
+                        $items.find('a[href=""]').contents().unwrap();
+
+                        $category.children('.keywords').append($items);
+                        $directory.push($category);
+                    }
+
+                    return $directory;
                 },
 
                 bestiary: function(beasts) {
@@ -767,7 +918,7 @@
 
                     var $attributes = $page.find('.attributes');
                     if (data.attributes) {
-                        $attributes.append($('<caption/>', {
+                        $attributes.parent().prepend($('<caption/>', {
                             text: 'Attributes'
                         }));
                         for (var key in data.attributes) {
@@ -789,19 +940,62 @@
             },
 
             nav: {
-                directory: function() {
-                    $('#dndRef-directory dd[data-ref]').remove();
+                directorySearchRendered: false,
+                directorySearch: null,
+                directory: function(search) {
+                    $('#app-dndRef .dndRefDirectorySearch').show();
 
-                    if (modules.centralAuth.google.info) {
+                    if (modules.centralAuth.google.info && !search &&
+                        (!dndRef.resourcePages || !dndRef.resourcePages.ref)) {
+                        
+                        $('#dndRef-directory dd[data-ref]').remove();
                         dndRef.load.resources().done(function() {
                             dndRef.render.directory();
                         });
                     }
+
+                    if (search) {
+                        $('#dndRef-directory .menu').hide();
+                        $('#dndRef-directory .search').show();
+                    } else {
+                        $('#dndRef-directory .search').hide();
+                        $('#dndRef-directory .menu').show();
+                    }
+
+                    dndRef.nav.directorySearch = search;
+
+                    if (dndRef.nav.directorySearchRendered) {
+                        var $search = $('#app-dndRef .dndRefDirectorySearch');
+                        if (search !== $search.val()) {
+                            $('#app-dndRef .dndRefDirectorySearch').val(search);
+                        }
+                        dndRef.filter.directory();
+                        return;
+                    }
+
+                    var $content = $('#dndRef-directory .search .content');
+                    $content.empty();
+
+                    var template = dynCore.loadTemplate('dndRef.directory', 'res/html/dndRefDirectory.html');
+                    var itemTemplate = dynCore.loadTemplate('dndRef.directoryItem', 'res/html/dndRefDirectoryItem.html');
+
+                    dndRef.nav.directorySearchRendered = true;
+                    $.when(dndRef.load.directory($content),
+                        template, itemTemplate).done(function(data) {
+
+                        $content.append(dndRef.render.search(data));
+                        $('#app-dndRef .dndRefDirectorySearch').val(search);
+                        dndRef.filter.directory();
+                    }).fail(function() {
+                        dndRef.nav.directorySearchRendered = false;
+                    });
                 },
 
                 bestiaryRendered: false,
                 bestiaryArgs: {},
                 bestiary: function(category, minCR, maxCR, query) {
+                    $('#app-dndRef .top-bar-right .input-group').show();
+                    $('#app-dndRef .addToEncounter').hide();
                     if (!maxCR) {
                         var hash = '#dndRef-bestiary/' + (category ||
                             dndRef.nav.bestiaryArgs.category || 'all') + '/' +
@@ -848,7 +1042,9 @@
 
                 currentMonster: null,
                 monster: function(name) {
-                    $('#app-dndRef .backToBestiary').show();
+                    $('#app-dndRef .backToBestiary,' + 
+                        '#app-dndRef .top-bar-right .input-group,' +
+                        '#app-dndRef .addToEncounter').show();
                     if (name === dndRef.nav.currentMonster) {
                         return;
                     }
@@ -922,6 +1118,11 @@
             },
 
             rehash: {
+                directory: function() {
+                    var hash = '#dndRef-directory/' + $('#app-dndRef .dndRefDirectorySearch').val();
+                    window.location.replace(hash);
+                },
+
                 bestiary: function() {
                     var hash = '#dndRef-bestiary/' +
                         $('#dndRef-bestiary .species').val() + '/' +
@@ -966,6 +1167,8 @@
 
         $('#dndRef-spellbook input').on('keyup', dndRef.rehash.spellbook);
         $('#dndRef-spellbook select').on('change', dndRef.rehash.spellbook);
+
+        $('#app-dndRef .dndRefDirectorySearch').on('keyup', dndRef.rehash.directory);
         
         modules.centralAuth.google.on('signIn', dndRef.signInOut);
         modules.centralAuth.google.on('signOut', dndRef.signInOut);
@@ -980,7 +1183,9 @@
 
         hashNav.bindNavSection(function(app, section, args) {
             if (app === 'dndRef' && section) {
-                $('#app-dndRef .backToBestiary').hide();
+                $('#app-dndRef .backToBestiary,' +
+                    '#app-dndRef .top-bar-right .input-group,' +
+                    '#app-dndRef .dndRefDirectorySearch').hide();
                 if (dndRef.nav[section]) {
                     dndRef.nav[section].apply(this, args);
                 }

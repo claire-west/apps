@@ -19,11 +19,16 @@
         <div class="top-bar-right">
             <ul class="menu">
                 <li>
+                    <input class="dndRefDirectorySearch" placeholder="Search" />
                     <div class="input-group">
-                        <a href="#dndRef-settings" class="topbar-button-fa button secondary" title="Settings" style="border-left: none;">
-                            <i class="fa fa-cog"></i>
-                            <span class="show-for-sr">Settings</span>
-                        </a>
+                        <button class="addToEncounter topbar-button-fa button" title="Add to Encounter" style="border-right: 1px solid white;     border-left: none;">
+                            <i class="fa fa-plus-square"></i>
+                            <span class="show-for-sr">Add to Encounter</span>
+                        </button>
+                        <button class="topbar-button-fa button secondary" title="Encounter" data-open="dndRef-encounter-dialog" style="border-left: none;">
+                            <i class="fa fa-th-list"></i>
+                            <span class="show-for-sr">Encounter</span>
+                        </button>
                     </div>
                 </li>
             </ul>
@@ -31,113 +36,121 @@
     </div>
 </nav>
 <section id="dndRef-directory" class="row contentSection defaultSection" hidden>
-    <div class="column">
-        <h4>D&amp;D 5th Edition</h4>
+    <div class="search">
+        <div class="column">
+            <h4>Search Results</h4>
+        </div>
+        <div class="content"></div>
     </div>
-    <div class="medium-6 large-4 columns">
-        <div class="row">
-            <div class="content small-6 columns">
-                <dl data-category="rules">
-                    <dt>Rules:</dt>
-                    <dd><a href="#dndRef-page/ability scores">Ability Scores</a></dd>
-                    <dd><a href="#dndRef-page/character advancement">Character Advancement</a></dd>
-                    <dd><a href="#dndRef-page/combat">Combat</a></dd>
-                    <dd><a href="#dndRef-page/conditions">Conditions</a></dd>
-                    <dd><a href="#dndRef-page/feats">Feats</a></dd>
-                    <dd><a href="#dndRef-page/movement">Movement</a></dd>
-                    <dd><a href="#dndRef-page/resting">Resting</a></dd>
-                    <dd><a href="#dndRef-page/the environment">The Environment</a></dd>
-                    <dd><a href="#dndRef-page/traps">Traps</a></dd>
-                </dl>
-            </div>
-            <div class="content small-6 columns">
-                <dl data-category="items">
-                    <dt>Items:</dt>
-                    <dd><a href="#dndRef-page/adventuring gear">Adventuring Gear</a></dd>
-                    <dd><a href="#dndRef-page/armor">Armor</a></dd>
-                    <dd><a href="#dndRef-page/mounts and vehicles">Mounts &amp; Vehicles</a></dd>
-                    <dd><a href="#dndRef-page/objects">Objects</a></dd>
-                    <dd><a href="#dndRef-page/poisons">Poisons</a></dd>
-                    <dd><a href="#dndRef-page/trade goods">Trade Goods</a></dd>
-                    <dd><a href="#dndRef-page/treasure">Treasure</a></dd>
-                    <dd><a href="#dndRef-page/tools">Tools</a></dd>
-                    <dd><a href="#dndRef-page/weapons">Weapons</a></dd>
-                </dl>
+    <div class="menu">
+        <div class="column">
+            <h4>D&amp;D 5th Edition</h4>
+        </div>
+        <div class="medium-6 large-4 columns">
+            <div class="row">
+                <div class="content small-6 columns">
+                    <dl data-category="rules">
+                        <dt>Rules:</dt>
+                        <dd><a href="#dndRef-page/ability scores">Ability Scores</a></dd>
+                        <dd><a href="#dndRef-page/character advancement">Character Advancement</a></dd>
+                        <dd><a href="#dndRef-page/combat">Combat</a></dd>
+                        <dd><a href="#dndRef-page/conditions">Conditions</a></dd>
+                        <dd><a href="#dndRef-page/feats">Feats</a></dd>
+                        <dd><a href="#dndRef-page/movement">Movement</a></dd>
+                        <dd><a href="#dndRef-page/resting">Resting</a></dd>
+                        <dd><a href="#dndRef-page/the environment">The Environment</a></dd>
+                        <dd><a href="#dndRef-page/traps">Traps</a></dd>
+                    </dl>
+                </div>
+                <div class="content small-6 columns">
+                    <dl data-category="items">
+                        <dt>Items:</dt>
+                        <dd><a href="#dndRef-page/adventuring gear">Adventuring Gear</a></dd>
+                        <dd><a href="#dndRef-page/armor">Armor</a></dd>
+                        <dd><a href="#dndRef-page/mounts and vehicles">Mounts &amp; Vehicles</a></dd>
+                        <dd><a href="#dndRef-page/objects">Objects</a></dd>
+                        <dd><a href="#dndRef-page/poisons">Poisons</a></dd>
+                        <dd><a href="#dndRef-page/trade goods">Trade Goods</a></dd>
+                        <dd><a href="#dndRef-page/treasure">Treasure</a></dd>
+                        <dd><a href="#dndRef-page/tools">Tools</a></dd>
+                        <dd><a href="#dndRef-page/weapons">Weapons</a></dd>
+                    </dl>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="medium-6 large-4 columns">
-        <div class="row">
-            <div class="content small-6 columns">
-                <dl data-category="races">
-                    <dt>Races:</dt>
-                    <dd><a href="#dndRef-page/aarakocra">Aarakocra</a></dd>
-                    <dd><a href="#dndRef-page/deep gnome">Deep Gnome</a></dd>
-                    <dd><a href="#dndRef-page/dragonborn">Dragonborn</a></dd>
-                    <dd><a href="#dndRef-page/dwarf">Dwarf</a></dd>
-                    <dd><a href="#dndRef-page/elf">Elf</a></dd>
-                    <dd><a href="#dndRef-page/genasi">Genasi</a></dd>
-                    <dd><a href="#dndRef-page/gnome">Gnome</a></dd>
-                    <dd><a href="#dndRef-page/goliath">Goliath</a></dd>
-                    <dd><a href="#dndRef-page/half-elf">Half-elf</a></dd>
-                    <dd><a href="#dndRef-page/half-orc">Half-orc</a></dd>
-                    <dd><a href="#dndRef-page/halfling">Halfling</a></dd>
-                    <dd><a href="#dndRef-page/human">Human</a></dd>
-                    <dd><a href="#dndRef-page/tiefling">Tiefling</a></dd>
-                </dl>
-            </div>
-            <div class="content small-6 columns">
-                <dl data-category="classes">
-                    <dt>Classes:</dt>
-                    <dd><a href="#dndRef-page/barbarian">Barbarian</a></dd>
-                    <dd><a href="#dndRef-page/bard">Bard</a></dd>
-                    <dd><a href="#dndRef-page/cleric">Cleric</a></dd>
-                    <dd><a href="#dndRef-page/druid">Druid</a></dd>
-                    <dd><a href="#dndRef-page/fighter">Fighter</a></dd>
-                    <dd><a href="#dndRef-page/monk">Monk</a></dd>
-                    <dd><a href="#dndRef-page/paladin">Paladin</a></dd>
-                    <dd><a href="#dndRef-page/ranger">Ranger</a></dd>
-                    <dd><a href="#dndRef-page/rogue">Rogue</a></dd>
-                    <dd><a href="#dndRef-page/sorcerer">Sorcerer</a></dd>
-                    <dd><a href="#dndRef-page/warlock">Warlock</a></dd>
-                    <dd><a href="#dndRef-page/wizard">Wizard</a></dd>
-                </dl>
+        <div class="medium-6 large-4 columns">
+            <div class="row">
+                <div class="content small-6 columns">
+                    <dl data-category="races">
+                        <dt>Races:</dt>
+                        <dd><a href="#dndRef-page/aarakocra">Aarakocra</a></dd>
+                        <dd><a href="#dndRef-page/deep gnome">Deep Gnome</a></dd>
+                        <dd><a href="#dndRef-page/dragonborn">Dragonborn</a></dd>
+                        <dd><a href="#dndRef-page/dwarf">Dwarf</a></dd>
+                        <dd><a href="#dndRef-page/elf">Elf</a></dd>
+                        <dd><a href="#dndRef-page/genasi">Genasi</a></dd>
+                        <dd><a href="#dndRef-page/gnome">Gnome</a></dd>
+                        <dd><a href="#dndRef-page/goliath">Goliath</a></dd>
+                        <dd><a href="#dndRef-page/half-elf">Half-elf</a></dd>
+                        <dd><a href="#dndRef-page/half-orc">Half-orc</a></dd>
+                        <dd><a href="#dndRef-page/halfling">Halfling</a></dd>
+                        <dd><a href="#dndRef-page/human">Human</a></dd>
+                        <dd><a href="#dndRef-page/tiefling">Tiefling</a></dd>
+                    </dl>
+                </div>
+                <div class="content small-6 columns">
+                    <dl data-category="classes">
+                        <dt>Classes:</dt>
+                        <dd><a href="#dndRef-page/barbarian">Barbarian</a></dd>
+                        <dd><a href="#dndRef-page/bard">Bard</a></dd>
+                        <dd><a href="#dndRef-page/cleric">Cleric</a></dd>
+                        <dd><a href="#dndRef-page/druid">Druid</a></dd>
+                        <dd><a href="#dndRef-page/fighter">Fighter</a></dd>
+                        <dd><a href="#dndRef-page/monk">Monk</a></dd>
+                        <dd><a href="#dndRef-page/paladin">Paladin</a></dd>
+                        <dd><a href="#dndRef-page/ranger">Ranger</a></dd>
+                        <dd><a href="#dndRef-page/rogue">Rogue</a></dd>
+                        <dd><a href="#dndRef-page/sorcerer">Sorcerer</a></dd>
+                        <dd><a href="#dndRef-page/warlock">Warlock</a></dd>
+                        <dd><a href="#dndRef-page/wizard">Wizard</a></dd>
+                    </dl>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="medium-6 large-4 columns end">
-        <div class="row">
-            <div class="content small-6 columns">
-                <dl data-category="backgrounds">
-                    <dt><a href="#dndRef-page/backgrounds">Backgrounds:</a></dt>
-                    <dd><a href="#dndRef-page/acolyte">Acolyte</a></dd>
-                    <dd><a href="#dndRef-page/criminal">Criminal/Spy</a></dd>
-                    <dd><a href="#dndRef-page/folk hero">Folk Hero</a></dd>
-                    <dd><a href="#dndRef-page/noble">Noble</a></dd>
-                    <dd><a href="#dndRef-page/sage">Sage</a></dd>
-                    <dd><a href="#dndRef-page/soldier">Soldier</a></dd>
-                </dl>
-            </div>
-            <div class="content small-6 columns">
-                <dl>
-                    <dt>Monsters:</dt>
-                    <dd><a href="#dndRef-bestiary">Bestiary</a></dd>
-                    <dt>Spellbook:</dt>
-                    <dd><a href="#dndRef-spellbook">All Spells</a></dd>
-                    <dd>
-                        <dl>
-                            <dt>By Class:</dt>
-                            <dd><a href="#dndRef-spellbook/bard">Bard</a></dd>
-                            <dd><a href="#dndRef-spellbook/cleric">Cleric</a></dd>
-                            <dd><a href="#dndRef-spellbook/druid">Druid</a></dd>
-                            <dd><a href="#dndRef-spellbook/paladin">Paladin</a></dd>
-                            <dd><a href="#dndRef-spellbook/ranger">Ranger</a></dd>
-                            <dd><a href="#dndRef-spellbook/sorcerer">Sorcerer</a></dd>
-                            <dd><a href="#dndRef-spellbook/warlock">Warlock</a></dd>
-                            <dd><a href="#dndRef-spellbook/wizard">Wizard</a></dd>
-                        </dl>
-                    </dd>
-                </dl>
+        <div class="medium-6 large-4 columns end">
+            <div class="row">
+                <div class="content small-6 columns">
+                    <dl data-category="backgrounds">
+                        <dt><a href="#dndRef-page/backgrounds">Backgrounds:</a></dt>
+                        <dd><a href="#dndRef-page/acolyte">Acolyte</a></dd>
+                        <dd><a href="#dndRef-page/criminal">Criminal</a></dd>
+                        <dd><a href="#dndRef-page/folk hero">Folk Hero</a></dd>
+                        <dd><a href="#dndRef-page/noble">Noble</a></dd>
+                        <dd><a href="#dndRef-page/sage">Sage</a></dd>
+                        <dd><a href="#dndRef-page/soldier">Soldier</a></dd>
+                    </dl>
+                </div>
+                <div class="content small-6 columns">
+                    <dl>
+                        <dt>Monsters:</dt>
+                        <dd><a href="#dndRef-bestiary">Bestiary</a></dd>
+                        <dt>Spellbook:</dt>
+                        <dd><a href="#dndRef-spellbook">All Spells</a></dd>
+                        <dd>
+                            <dl>
+                                <dt>By Class:</dt>
+                                <dd><a href="#dndRef-spellbook/bard">Bard</a></dd>
+                                <dd><a href="#dndRef-spellbook/cleric">Cleric</a></dd>
+                                <dd><a href="#dndRef-spellbook/druid">Druid</a></dd>
+                                <dd><a href="#dndRef-spellbook/paladin">Paladin</a></dd>
+                                <dd><a href="#dndRef-spellbook/ranger">Ranger</a></dd>
+                                <dd><a href="#dndRef-spellbook/sorcerer">Sorcerer</a></dd>
+                                <dd><a href="#dndRef-spellbook/warlock">Warlock</a></dd>
+                                <dd><a href="#dndRef-spellbook/wizard">Wizard</a></dd>
+                            </dl>
+                        </dd>
+                    </dl>
+                </div>
             </div>
         </div>
     </div>
@@ -202,4 +215,14 @@
     <div class="column"><h3 class="pageHeader"></h3></div>
     <div class="content"></div>
 </section>
-<section id="dndRef-settings" class="row contentSection" hidden></section>
+<div id="dndRef-encounter-dialog" class="reveal" data-reveal>
+    <div class="content"></div>
+    <div class="row">
+        <div class="medium-6 medium-offset-6 columns">
+            <a class="confirmNewEncounter primary button expanded" data-close style="margin-bottom: 0;">Create This Encounter</a>
+        </div>
+    </div>
+    <button class="close-button" data-close aria-label="Close modal" type="button">
+        <span aria-hidden="true">&times;</span>
+    </button>
+</div>
