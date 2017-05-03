@@ -1,6 +1,6 @@
 (function() {
     window.dynCore.declare('twoButtonDialog',
-        window.dynCore.loadTemplate('twoButtonDialog', '../shared/html/twoButtonDialog.html'),
+        window.dynCore.loadTemplate('twoButtonDialog', '/shared/html/twoButtonDialog.html'),
         function() {
             return function(title, text, positive, negative, swapButtons) {
                 var promise = $.Deferred();

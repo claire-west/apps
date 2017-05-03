@@ -6,7 +6,7 @@
             'isMobile.js',
             'arraySort.js',
             'hashNav.js'
-        ], '../shared/js/')
+        ], '/shared/js/')
     ).done(function(modules) {
         window.hashNav.appInit(init(modules));
     });

@@ -2,13 +2,13 @@
     dynCore.css('dndRef', 'res/css/dndRef.css');
 
     dynCore.when(dynCore.html('dndRef'),
-        dynCore.loadTemplate('ajaxLoader', '../shared/html/ajaxLoader.html'),
+        dynCore.loadTemplate('ajaxLoader', '/shared/html/ajaxLoader.html'),
         dynCore.require([
             'hashNav.js',
             'indexer.js',
             'ajaxLoader.js',
             'ajaxError.js',
-        ], '../shared/js/')
+        ], '/shared/js/')
     ).done(function(modules) {
         hashNav.appInit(init(modules));
     });
@@ -225,25 +225,25 @@
                 },
 
                 bestiary: function() {
-                    return $.ajax('../shared/json/dnd/bestiary.json');
+                    return $.ajax('/shared/json/dnd/bestiary.json');
                 },
 
                 spellbook: function() {
-                    return $.ajax('../shared/json/dnd/spells.json');
+                    return $.ajax('/shared/json/dnd/spells.json');
                 },
 
                 elementalEvilSpells: function() {
                     return $.ajax({
-                        url: '../shared/json/dnd/ext/elemental evil spells.json'
+                        url: '/shared/json/dnd/ext/elemental evil spells.json'
                     });
                 },
 
                 spellLevels: function() {
-                    return $.ajax('../shared/json/dnd/spellLevels.json');
+                    return $.ajax('/shared/json/dnd/spellLevels.json');
                 },
 
                 page: function(name) {
-                    return $.ajax('../shared/json/dnd/' + name + '.json');
+                    return $.ajax('/shared/json/dnd/' + name + '.json');
                 },
 
                 extension: function(name) {
@@ -254,7 +254,7 @@
                 },
 
                 directory: function() {
-                    return $.ajax('../shared/json/dnd/ext/directory.json');
+                    return $.ajax('/shared/json/dnd/ext/directory.json');
                 }
             },
 

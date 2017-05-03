@@ -120,7 +120,7 @@
         iframe: function(app, url, $container) {
             $container = $container || $('#app-' + app);
             
-            return window.dynCore.require('../shared/js/iframeScaling.js').then(function() {
+            return window.dynCore.require('/shared/js/iframeScaling.js').then(function() {
                 $element = $('<iframe/>', {
                     src: url,
                     frameborder: 0,

@@ -2,7 +2,7 @@
     dynCore.css('pinboard', 'res/css/pinboard.css');
 
     dynCore.when(dynCore.html('pinboard'),
-        dynCore.loadTemplate('ajaxLoader', '../shared/html/ajaxLoader.html'),
+        dynCore.loadTemplate('ajaxLoader', '/shared/html/ajaxLoader.html'),
         dynCore.require([
             'hashNav.js',
             'centralAuth.js',
@@ -12,7 +12,7 @@
             'localUUID.js',
             'isMobile.js',
             'isInt.js'
-        ], '../shared/js/'),
+        ], '/shared/js/'),
         dynCore.require([
             'https://cdn.jsdelivr.net/clamp.js/0.5.1/clamp.min.js',
             'res/js/Sortable.js'

@@ -4,7 +4,7 @@
             'propGet.js',
             'arraySort.js',
             'binarySearch.js'
-        ], '../shared/js/'),
+        ], '/shared/js/'),
         function(modules) {
             var indexer = {
                 arrays: [],

@@ -1,6 +1,6 @@
 (function() {
     window.dynCore.declare('ajaxLoader',
-        window.dynCore.loadTemplate('ajaxLoader', '../shared/html/ajaxLoader.html'),
+        window.dynCore.loadTemplate('ajaxLoader', '/shared/html/ajaxLoader.html'),
         function() {
             return function(promise, $container, text) {
                 var $elements = $container.find('*').filter(':visible').hide();

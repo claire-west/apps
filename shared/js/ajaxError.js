@@ -1,6 +1,6 @@
 (function() {
     window.dynCore.declare('ajaxError',
-        window.dynCore.loadTemplate('ajaxError', '../shared/html/ajaxError.html'),
+        window.dynCore.loadTemplate('ajaxError', '/shared/html/ajaxError.html'),
         function() {
             return function($container, fnRetry) {
                 var $elements = $container.find('*').filter(':visible').hide();

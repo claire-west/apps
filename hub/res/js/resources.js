@@ -2,13 +2,13 @@
     dynCore.css('resources', 'res/css/resources.css');
 
     dynCore.when(dynCore.html('resources'),
-        dynCore.loadTemplate('ajaxLoader', '../shared/html/ajaxLoader.html'),
+        dynCore.loadTemplate('ajaxLoader', '/shared/html/ajaxLoader.html'),
         dynCore.require([
             'hashNav.js',
             'ajaxLoader.js',
             'ajaxError.js',
             'twoButtonDialog.js'
-        ], '../shared/js/')
+        ], '/shared/js/')
     ).done(function(modules) {
         hashNav.appInit(init(modules));
     });

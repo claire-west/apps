@@ -1,6 +1,6 @@
 (function() {
     window.dynCore.declare('hubAuth',
-        window.dynCore.require('../shared/js/centralAuth.js')
+        window.dynCore.require('/shared/js/centralAuth.js')
     ).done(function(modules) {
         var $signOut = $('.signOut');
         $signOut.find('a').on('click', function() {

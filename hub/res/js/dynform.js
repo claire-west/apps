@@ -1,6 +1,6 @@
 (function(dynCore, hashNav) {
     $.when(hashNav.getPending('dynform'),
-        dynCore.require('../shared/js/centralAuth.js')
+        dynCore.require('/shared/js/centralAuth.js')
     ).done(function(rpWindow) {
         hashNav.appInit(init(rpWindow, dynCore.modules()), 'dynform');
     });

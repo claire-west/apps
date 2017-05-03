@@ -2,7 +2,7 @@
     dynCore.css('youtube', 'res/css/youtube.css');
 
     dynCore.when(dynCore.html('youtube'),
-        dynCore.loadTemplate('ajaxLoader', '../shared/html/ajaxLoader.html'),
+        dynCore.loadTemplate('ajaxLoader', '/shared/html/ajaxLoader.html'),
         dynCore.require('https://apis.google.com/js/client.js'),
         dynCore.require([
             'hashNav.js',
@@ -10,7 +10,7 @@
             'ajaxLoader.js',
             'ajaxError.js',
             'isMobile.js'
-        ], '../shared/js/')
+        ], '/shared/js/')
     ).done(function(modules) {
         hashNav.appInit(init(modules));
         modules.centralAuth.google.on('signIn', function(info) {
