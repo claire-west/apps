@@ -106,7 +106,7 @@
             var promise = $.Deferred();
             $container = $container || $('#app-' + title);
 
-            $container.load(path || (title + '.html'), function(resp, status) {
+            $container.load(path || ('/hub/' + title + '.html'), function(resp, status) {
                 if (status === 'success') {
                     promise.resolve(resp);
                 } else {
