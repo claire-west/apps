@@ -420,7 +420,7 @@
                 save: function(board, label) {
                     pinboard.saveStatus.saving();
                     return $.ajax({
-                        url: '/nosql',
+                        url: 'http://isaac-west.ca/nosql',
                         method: 'POST',
                         data: {
                             id: board.id,
@@ -442,7 +442,7 @@
 
                 delete: function(id) {
                     return $.ajax({
-                        url: '/nosql/' + id,
+                        url: 'http://isaac-west.ca/nosql/' + id,
                         method: 'DELETE',
                         headers: Object.assign({
                             meta: 'pinboard'
@@ -463,7 +463,7 @@
 
                 singleBoard: function(id) {
                     return $.ajax({
-                        url: '/nosql/' + id,
+                        url: 'http://isaac-west.ca/nosql/' + id,
                         method: 'GET',
                         headers: Object.assign({
                             meta: 'pinboard'
@@ -473,7 +473,7 @@
 
                 privateBoards: function() {
                     return $.ajax({
-                        url: '/nosql',
+                        url: 'http://isaac-west.ca/nosql',
                         method: 'GET',
                         headers: Object.assign({
                             meta: 'pinboard'
@@ -483,7 +483,7 @@
 
                 publicBoards: function(userId) {
                     return $.ajax({
-                        url: '/nosql',
+                        url: 'http://isaac-west.ca/nosql',
                         method: 'GET',
                         headers: Object.assign({
                             meta: 'pinboard',

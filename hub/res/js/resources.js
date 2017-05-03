@@ -47,7 +47,7 @@
             api: {
                 save: function(data, label, suffix) {
                     return $.ajax({
-                        url: '/nosql',
+                        url: 'http://isaac-west.ca/nosql',
                         method: 'POST',
                         data: {
                             id: null,
@@ -62,7 +62,7 @@
 
                 list: function() {
                     return $.ajax({
-                        url: '/nosql/resources',
+                        url: 'http://isaac-west.ca/nosql/resources',
                         headers: Object.assign({
                             userId: modules.centralAuth.google.info.id
                         }, modules.centralAuth.google.baseHeaders())
@@ -71,7 +71,7 @@
 
                 delete: function(id, meta) {
                     return $.ajax({
-                        url: '/nosql/' + id,
+                        url: 'http://isaac-west.ca/nosql/' + id,
                         method: 'DELETE',
                         headers: Object.assign({
                             meta: meta

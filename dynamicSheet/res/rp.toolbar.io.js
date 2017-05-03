@@ -115,7 +115,7 @@
             .next().prop("disabled", true);
         var headers = rp.core.getBaseHeaders();
         $.ajax({
-            url: "/nosql",
+            url: "http://api.isaac-west.ca/nosql",
             method: "GET",
             headers: headers,
             success: function(data) {
@@ -184,7 +184,7 @@
             json: rp.core.getSerialized()
         };
         $.ajax({
-            url: "/nosql",
+            url: "http://isaac-west.ca/nosql",
             method: "POST",
             headers: headers,
             data: data,
@@ -215,7 +215,7 @@
         if (id) {
             var headers = rp.core.getBaseHeaders();
             $.ajax({
-                url: "/nosql/" + id,
+                url: "http://isaac-west.ca/nosql/" + id,
                 method: "GET",
                 headers: headers,
                 success: function (data) {
@@ -237,7 +237,7 @@
         if (id) {
             var headers = rp.core.getBaseHeaders();
             $.ajax({
-                url: "/nosql/" + id,
+                url: "http://isaac-west.ca/nosql/" + id,
                 method: "DELETE",
                 headers: headers,
                 success: cancel,

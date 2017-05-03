@@ -219,7 +219,7 @@
                         meta += '-' + name;
                     }
                     return $.ajax({
-                        url: '/nosql/resources/' + meta,
+                        url: 'http://isaac-west.ca/nosql/resources/' + meta,
                         headers: modules.centralAuth.google.baseHeaders()
                     });
                 },
@@ -248,7 +248,7 @@
 
                 extension: function(name) {
                     return $.ajax({
-                        url: '/nosql/resources/dnd-ext-' + name,
+                        url: 'http://isaac-west.ca/nosql/resources/dnd-ext-' + name,
                         headers: modules.centralAuth.google.baseHeaders()
                     });
                 },
