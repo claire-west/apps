@@ -1,5 +1,5 @@
 (function(dynCore, hashNav) {
-    dynCore.css('youtube', 'res/css/youtube.css');
+    dynCore.css('youtube', '/hub/res/css/youtube.css');
 
     dynCore.when(dynCore.html('youtube'),
         dynCore.loadTemplate('ajaxLoader', '/shared/html/ajaxLoader.html'),

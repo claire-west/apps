@@ -1,5 +1,5 @@
 (function(dynCore, hashNav) {
-    dynCore.css('pinboard', 'res/css/pinboard.css');
+    dynCore.css('pinboard', '/hub/res/css/pinboard.css');
 
     dynCore.when(dynCore.html('pinboard'),
         dynCore.loadTemplate('ajaxLoader', '/shared/html/ajaxLoader.html'),
@@ -15,7 +15,7 @@
         ], '/shared/js/'),
         dynCore.require([
             'https://cdn.jsdelivr.net/clamp.js/0.5.1/clamp.min.js',
-            'res/js/Sortable.js'
+            '/hub/res/js/Sortable.js'
         ])
     ).done(function(modules) {
         hashNav.appInit(init(modules));
@@ -498,8 +498,8 @@
                 view: function(id, pin) {
                     var $board = $('#pinboard-view .pinboard');
 
-                    var tileTemplate = dynCore.loadTemplate('pinboard.tile', 'res/html/pinboardTile.html');
-                    var contentTemplate = dynCore.loadTemplate('pinboard.pinContent', 'res/html/pinboardTileContent.html');
+                    var tileTemplate = dynCore.loadTemplate('pinboard.tile', '/hub/res/html/pinboardTile.html');
+                    var contentTemplate = dynCore.loadTemplate('pinboard.pinContent', '/hub/res/html/pinboardTileContent.html');
 
                     var fnRetry = function() {
                         modules.ajaxError($board, function() {
@@ -583,7 +583,7 @@
                     $privateBoards.empty();
 
                     var boards = modules.ajaxLoader(pinboard.api.privateBoards(), $privateBoards);
-                    var template = dynCore.loadTemplate('pinboard.boardListItem', 'res/html/pinboardBoardListItem.html');
+                    var template = dynCore.loadTemplate('pinboard.boardListItem', '/hub/res/html/pinboardBoardListItem.html');
                     
                     $.when(boards, template).done(function(boards) {
                         pinboard.lists.private = boards[0];
@@ -614,7 +614,7 @@
                     $publicBoards.empty();
 
                     var boards = modules.ajaxLoader(pinboard.api.publicBoards(userId), $publicBoards);
-                    var template = dynCore.loadTemplate('pinboard.boardListItem', 'res/html/pinboardBoardListItem.html');
+                    var template = dynCore.loadTemplate('pinboard.boardListItem', '/hub/res/html/pinboardBoardListItem.html');
                     
                     $.when(boards, template).done(function(boards) {
                         pinboard.lists.public = boards[0];
@@ -825,7 +825,7 @@
                     content = [content];
                 }
 
-                var template = dynCore.loadTemplate('pinboard.pinContent', 'res/html/pinboardTileContent.html');
+                var template = dynCore.loadTemplate('pinboard.pinContent', '/hub/res/html/pinboardTileContent.html');
                 template.done(function() {
                     var $elements = [];
                     for (var i = 0; i < content.length; i++) {

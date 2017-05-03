@@ -1,5 +1,5 @@
 (function(dynCore) {
-    dynCore.css('twitch', 'res/css/twitch.css');
+    dynCore.css('twitch', '/hub/res/css/twitch.css');
 
     dynCore.when(dynCore.html('twitch'),
         dynCore.require([

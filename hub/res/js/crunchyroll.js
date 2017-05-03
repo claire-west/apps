@@ -1,5 +1,5 @@
 (function(dynCore, hashNav) {
-    dynCore.css('crunchyroll', 'res/css/crunchyroll.css');
+    dynCore.css('crunchyroll', '/hub/res/css/crunchyroll.css');
 
     dynCore.when(dynCore.html('crunchyroll'),
         dynCore.require([
@@ -217,7 +217,7 @@
             refresh: {
                 seriesList: function(sorting, page) {
                     var shows = crunchyroll.ajaxLoader(crunchyroll.api.seriesList(sorting, page), '#crunchyroll-browse');
-                    var template = dynCore.loadTemplate('crunchyroll.showTile', 'res/html/crunchyrollShowTile.html');
+                    var template = dynCore.loadTemplate('crunchyroll.showTile', '/hub/res/html/crunchyrollShowTile.html');
                     
                     var $tiles = $('#crunchyroll-browse .showTiles');
                     $tiles.empty();
@@ -262,8 +262,8 @@
                 episodes: function(series, sorting) {
                     var info = crunchyroll.api.seriesInfo(series);
                     var episodes = crunchyroll.ajaxLoader(crunchyroll.api.episodes(series, sorting), '#crunchyroll-episodes');
-                    var template = dynCore.loadTemplate('crunchyroll.episodeTile', 'res/html/crunchyrollEpisodeTile.html');
-                    var headerTemplate = dynCore.loadTemplate('crunchyroll.seasonHeader', 'res/html/crunchyrollSeasonHeader.html');
+                    var template = dynCore.loadTemplate('crunchyroll.episodeTile', '/hub/res/html/crunchyrollEpisodeTile.html');
+                    var headerTemplate = dynCore.loadTemplate('crunchyroll.seasonHeader', '/hub/res/html/crunchyrollSeasonHeader.html');
                     
                     var $section = $('#crunchyroll-episodes');
                     var $tiles = $section.find('.episodes');
@@ -362,7 +362,7 @@
 
                 queue: function() {
                     var info = crunchyroll.ajaxLoader(crunchyroll.api.queue(), '#crunchyroll-queue');
-                    var template = dynCore.loadTemplate('crunchyroll.queueTile', 'res/html/crunchyrollQueueTile.html');
+                    var template = dynCore.loadTemplate('crunchyroll.queueTile', '/hub/res/html/crunchyrollQueueTile.html');
 
                     var $section = $('#crunchyroll-queue');
                     var $tiles = $section.find('.queueTiles');

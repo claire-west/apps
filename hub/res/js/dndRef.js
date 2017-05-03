@@ -1,5 +1,5 @@
 (function(dynCore, hashNav) {
-    dynCore.css('dndRef', 'res/css/dndRef.css');
+    dynCore.css('dndRef', '/hub/res/css/dndRef.css');
 
     dynCore.when(dynCore.html('dndRef'),
         dynCore.loadTemplate('ajaxLoader', '/shared/html/ajaxLoader.html'),
@@ -976,8 +976,8 @@
                     var $content = $('#dndRef-directory .search .content');
                     $content.empty();
 
-                    var template = dynCore.loadTemplate('dndRef.directory', 'res/html/dndRefDirectory.html');
-                    var itemTemplate = dynCore.loadTemplate('dndRef.directoryItem', 'res/html/dndRefDirectoryItem.html');
+                    var template = dynCore.loadTemplate('dndRef.directory', '/hub/res/html/dndRefDirectory.html');
+                    var itemTemplate = dynCore.loadTemplate('dndRef.directoryItem', '/hub/res/html/dndRefDirectoryItem.html');
 
                     dndRef.nav.directorySearchRendered = true;
                     $.when(dndRef.load.directory($content),
@@ -1026,7 +1026,7 @@
                     var $content = $('#dndRef-bestiary .content');
                     $content.empty();
 
-                    var template = dynCore.loadTemplate('dndRef.bestiary', 'res/html/dndRefBestiary.html');
+                    var template = dynCore.loadTemplate('dndRef.bestiary', '/hub/res/html/dndRefBestiary.html');
                     $.when(dndRef.load.bestiary($content), template).done(function() {
                         $content.append(dndRef.render.bestiary(dndRef.bestiary));
                         dndRef.nav.bestiaryRendered = true;
@@ -1053,7 +1053,7 @@
                     var $content = $('#dndRef-monster');
                     $content.empty();
 
-                    var template = dynCore.loadTemplate('dndRef.monster', 'res/html/dndRefMonster.html');
+                    var template = dynCore.loadTemplate('dndRef.monster', '/hub/res/html/dndRefMonster.html');
                     $.when(dndRef.load.bestiary($content), template).done(function() {
                         $content.append(dndRef.render.monster(name));
                     });
@@ -1078,7 +1078,7 @@
                     var $content = $('#dndRef-spellbook .content');
                     $content.empty();
 
-                    var template = dynCore.loadTemplate('dndRef.spell', 'res/html/dndRefSpell.html');
+                    var template = dynCore.loadTemplate('dndRef.spell', '/hub/res/html/dndRefSpell.html');
                     $.when(dndRef.load.spellbook($content), template).done(function() {
                         $content.append(dndRef.render.spellbook());
 
@@ -1099,7 +1099,7 @@
                     var $content = $('#dndRef-page .content');
                     $content.empty();
 
-                    var template = dynCore.loadTemplate('dndRef.page', 'res/html/dndRefPage.html');
+                    var template = dynCore.loadTemplate('dndRef.page', '/hub/res/html/dndRefPage.html');
                     if (mod) {
                         if (modules.centralAuth.google.info) {
                             $.when(dndRef.load.resourcePage($content, name, mod), template).done(function() {

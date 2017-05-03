@@ -11,7 +11,7 @@
         if (title.endsWith('.js')) {
             path = title;
         } else {
-            path = paths[title] || ('res/js/' + title + '.js');
+            path = paths[title] || ('/hub/res/js/' + title + '.js');
         }
         return path;
     };

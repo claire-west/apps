@@ -353,7 +353,7 @@
             $("<select/>").append(
                 $("<option/>", {
                     text: "Dungeons & Dragons 5e",
-                    value: "res/rp.dnd.json"
+                    value: "/hub/res/rp.dnd.json"
                 })
             )
         ).append(

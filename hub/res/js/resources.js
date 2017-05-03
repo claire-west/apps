@@ -1,5 +1,5 @@
 (function(dynCore, hashNav) {
-    dynCore.css('resources', 'res/css/resources.css');
+    dynCore.css('resources', '/hub/res/css/resources.css');
 
     dynCore.when(dynCore.html('resources'),
         dynCore.loadTemplate('ajaxLoader', '/shared/html/ajaxLoader.html'),
@@ -131,7 +131,7 @@
                     var $content = $('#resources-manager .resourceList');
                     $content.empty();
 
-                    var template = dynCore.loadTemplate('resources.listItem', 'res/html/resourcesListItem.html');
+                    var template = dynCore.loadTemplate('resources.listItem', '/hub/res/html/resourcesListItem.html');
                     $.when(resources.load.list($content), template).done(function() {
                         $content.append(resources.render.list());
                     });
