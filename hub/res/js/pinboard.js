@@ -710,7 +710,8 @@
                 $element = pinboard.parseTable($element);
                 $element = pinboard.parseBreak($element);
                 $element = pinboard.parseLink($element);
-
+                $element.html($element.html().split('&amp;').join('&'));
+                
                 return $element;
             },
 
