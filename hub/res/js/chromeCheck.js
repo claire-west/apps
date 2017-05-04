@@ -1,5 +1,4 @@
 (function() {
-    console.log('here')
     if (!
         ((window.chrome &&
         window.navigator.vendor === 'Google Inc.' &&
