@@ -30,6 +30,8 @@
     }
 
     function init(modules) {
+        var nosqlUrl = dynCore.getResource('nosql');
+
         var pinboard = {
             title: 'pinboard',
             favicon: null,
@@ -420,7 +422,7 @@
                 save: function(board, label) {
                     pinboard.saveStatus.saving();
                     return $.ajax({
-                        url: 'http://isaac-west.ca/nosql',
+                        url: nosqlUrl,
                         method: 'POST',
                         data: {
                             id: board.id,
@@ -442,7 +444,7 @@
 
                 delete: function(id) {
                     return $.ajax({
-                        url: 'http://isaac-west.ca/nosql/' + id,
+                        url: nosqlUrl + '/' + id,
                         method: 'DELETE',
                         headers: Object.assign({
                             meta: 'pinboard'
@@ -463,7 +465,7 @@
 
                 singleBoard: function(id) {
                     return $.ajax({
-                        url: 'http://isaac-west.ca/nosql/' + id,
+                        url: nosqlUrl + '/' + id,
                         method: 'GET',
                         headers: Object.assign({
                             meta: 'pinboard'
@@ -473,7 +475,7 @@
 
                 privateBoards: function() {
                     return $.ajax({
-                        url: 'http://isaac-west.ca/nosql',
+                        url: nosqlUrl,
                         method: 'GET',
                         headers: Object.assign({
                             meta: 'pinboard'
@@ -483,7 +485,7 @@
 
                 publicBoards: function(userId) {
                     return $.ajax({
-                        url: 'http://isaac-west.ca/nosql',
+                        url: nosqlUrl,
                         method: 'GET',
                         headers: Object.assign({
                             meta: 'pinboard',

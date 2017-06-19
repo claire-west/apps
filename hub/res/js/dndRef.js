@@ -14,6 +14,8 @@
     });
 
     function init(modules) {
+        var nosqlUrl = dynCore.getResource('nosql');
+
         var dndRef = {
             title: 'dndRef',
             favicon: null,
@@ -219,7 +221,7 @@
                         meta += '-' + name;
                     }
                     return $.ajax({
-                        url: 'http://isaac-west.ca/nosql/resources/' + meta,
+                        url: nosqlUrl + '/resources/' + meta,
                         headers: modules.centralAuth.google.baseHeaders()
                     });
                 },
@@ -248,7 +250,7 @@
 
                 extension: function(name) {
                     return $.ajax({
-                        url: 'http://isaac-west.ca/nosql/resources/dnd-ext-' + name,
+                        url: nosqlUrl + '/resources/dnd-ext-' + name,
                         headers: modules.centralAuth.google.baseHeaders()
                     });
                 },

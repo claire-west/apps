@@ -14,6 +14,8 @@
     });
 
     function init(modules) {
+        var nosqlUrl = dynCore.getResource('nosql');
+
         var targetHash;
         var resources = {
             title: 'resources',
@@ -47,7 +49,7 @@
             api: {
                 save: function(data, label, suffix) {
                     return $.ajax({
-                        url: 'http://isaac-west.ca/nosql',
+                        url: nosqlUrl,
                         method: 'POST',
                         data: {
                             id: null,
@@ -62,7 +64,7 @@
 
                 list: function() {
                     return $.ajax({
-                        url: 'http://isaac-west.ca/nosql/resources',
+                        url: nosqlUrl+ '/resources',
                         headers: Object.assign({
                             userId: modules.centralAuth.google.info.id
                         }, modules.centralAuth.google.baseHeaders())
@@ -71,7 +73,7 @@
 
                 delete: function(id, meta) {
                     return $.ajax({
-                        url: 'http://isaac-west.ca/nosql/' + id,
+                        url: nosqlUrl + '/' + id,
                         method: 'DELETE',
                         headers: Object.assign({
                             meta: meta

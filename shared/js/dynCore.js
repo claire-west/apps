@@ -16,7 +16,15 @@
         return path;
     };
 
+    var resources = {};
+
     window.dynCore = {
+        setResource: function(key, value) {
+            resources[key] = value;
+        },
+        getResource: function(key) {
+            return resources[key] || key;
+        },
         path: function(title, path) {
             paths[title] = path;
         },
@@ -233,7 +241,7 @@
             $('head').append(
                 $('<link/>', {
                     id: 'favicon',
-                    href: filepath || 'http://www.isaac-west.ca/favicon.ico',
+                    href: filepath || window.dynCore.getResource('url') || '/favicon.png',
                     rel: 'icon'
                 })
             );

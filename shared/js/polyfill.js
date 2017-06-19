@@ -4,7 +4,7 @@
     String.prototype.endsWith = String.prototype.endsWith || function(searchString, position) {
         var subjectString = this.toString();
         if (typeof position !== 'number' || !isFinite(position) || Math.floor(position) !== position || position >   subjectString.length) {
-          position = subjectString.length;
+            position = subjectString.length;
         }
         position -= searchString.length;
         var lastIndex = subjectString.lastIndexOf(searchString, position);
@@ -14,13 +14,13 @@
     String.prototype.includes = String.prototype.includes || function(search, start) {
         'use strict';
         if (typeof start !== 'number') {
-          start = 0;
+            start = 0;
         }
         
         if (start + search.length > this.length) {
-          return false;
+            return false;
         } else {
-          return this.indexOf(search, start) !== -1;
+            return this.indexOf(search, start) !== -1;
         }
     };
 
@@ -40,7 +40,7 @@
 
                 // 3. If len is 0, return false.
                 if (len === 0) {
-                  return false;
+                    return false;
                 }
 
                 // 4. Let n be ? ToInteger(fromIndex).
@@ -55,18 +55,18 @@
                 var k = Math.max(n >= 0 ? n : len - Math.abs(n), 0);
 
                 function sameValueZero(x, y) {
-                  return x === y || (typeof x === 'number' && typeof y === 'number' && isNaN(x) && isNaN(y));
+                    return x === y || (typeof x === 'number' && typeof y === 'number' && isNaN(x) && isNaN(y));
                 }
 
                 // 7. Repeat, while k < len
                 while (k < len) {
-                  // a. Let elementK be the result of ? Get(O, ! ToString(k)).
-                  // b. If SameValueZero(searchElement, elementK) is true, return true.
-                  // c. Increase k by 1. 
-                  if (sameValueZero(o[k], searchElement)) {
-                    return true;
-                  }
-                  k++;
+                    // a. Let elementK be the result of ? Get(O, ! ToString(k)).
+                    // b. If SameValueZero(searchElement, elementK) is true, return true.
+                    // c. Increase k by 1. 
+                    if (sameValueZero(o[k], searchElement)) {
+                        return true;
+                    }
+                    k++;
                 }
 
                 // 8. Return false
@@ -79,24 +79,24 @@
         Object.assign = function(target, varArgs) { // .length of function is 2
             'use strict';
             if (target == null) { // TypeError if undefined or null
-              throw new TypeError('Cannot convert undefined or null to object');
+                throw new TypeError('Cannot convert undefined or null to object');
             }
-    
-                var to = Object(target);
-    
-                for (var index = 1; index < arguments.length; index++) {
-                  var nextSource = arguments[index];
-    
-                  if (nextSource != null) { // Skip over if undefined or null
+
+            var to = Object(target);
+
+            for (var index = 1; index < arguments.length; index++) {
+                var nextSource = arguments[index];
+
+                if (nextSource != null) { // Skip over if undefined or null
                     for (var nextKey in nextSource) {
-                      // Avoid bugs when hasOwnProperty is shadowed
-                      if (Object.prototype.hasOwnProperty.call(nextSource, nextKey)) {
-                        to[nextKey] = nextSource[nextKey];
-                      }
+                        // Avoid bugs when hasOwnProperty is shadowed
+                        if (Object.prototype.hasOwnProperty.call(nextSource, nextKey)) {
+                          to[nextKey] = nextSource[nextKey];
+                        }
                     }
-                  }
                 }
-              return to;
+            }
+            return to;
         };
     }
 })();

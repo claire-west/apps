@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Isaac West | App Hub</title>
-    <link id="favicon" rel="icon" href="http://www.isaac-west.ca/favicon.ico" />
+    <link id="favicon" rel="icon" href="http://isaac-west.ca/favicon.png" />
     <link href="https://cdn.jsdelivr.net/foundation/6.1.2/foundation.min.css" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/foundation-icons/3.0/foundation-icons.min.css" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/fontawesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" />
@@ -38,6 +38,7 @@
     <div id="app-crunchyroll" data-app="Crunchyroll" class="app" hidden></div>
     <div id="app-pinboard" data-app="Pinboard" class="app" hidden></div>
     <div id="app-dndRef" data-app="D&D Reference" class="app" hidden></div>
+    <!-- <div id="app-randomTables" data-app="Random Table Autoroller" class="app" hidden></div> -->
     <div id="app-dynform" data-app="Dynamic Form" data-iframe="/dynamicSheet" class="app" hidden></div>
     <div id="app-resources" data-app="Resource Manager" class="app" hidden></div>
 </div>
@@ -48,15 +49,19 @@
 <script src="/shared/js/polyfill.js"></script>
 <script src="/shared/js/dynCore.js"></script>
 <script>
-    (function() {
-        window.dynCore.require([
+    (function(dynCore) {
+        dynCore.setResource('url', 'http://isaacwest.ca');
+        dynCore.setResource('api', 'http://api.isaacwest.ca');
+        dynCore.setResource('nosql', dynCore.getResource('api') + '/nosql');
+
+        dynCore.require([
             'hashNav.js',
             'centralAuth.js',
             'yearFooter.js'
         ], '/shared/js/').done(function() {
-            window.dynCore.require('/hub/res/js/hubAuth.js');
+            dynCore.require('/hub/res/js/hubAuth.js');
         });
-    })();
+    })(window.dynCore);
 </script>
 </body>
 </html>
