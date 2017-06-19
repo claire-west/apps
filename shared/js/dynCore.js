@@ -241,7 +241,7 @@
             $('head').append(
                 $('<link/>', {
                     id: 'favicon',
-                    href: filepath || window.dynCore.getResource('url') + '/favicon.png',
+                    href: filepath || window.dynCore.getResource('url') + '/favicon.ico',
                     rel: 'icon'
                 })
             );
