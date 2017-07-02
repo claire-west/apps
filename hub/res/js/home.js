@@ -1,7 +1,7 @@
 (function(dynCore, hashNav) {
     dynCore.css('home', '/hub/res/css/home.css');
 
-    dynCore.when(dynCore.html('home')).done(function(modules) {
+    dynCore.when(dynCore.html('home'), dynCore.require('/shared/js/isMobile.js')).done(function(modules) {
         hashNav.appInit(init(modules));
     });
 
