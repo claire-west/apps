@@ -8,6 +8,7 @@
             'indexer.js',
             'ajaxLoader.js',
             'ajaxError.js',
+            'delayedAction.js'
         ], '/shared/js/')
     ).done(function(modules) {
         hashNav.appInit(init(modules));
@@ -1164,13 +1165,19 @@
             );
         }
 
-        $('#dndRef-bestiary input').on('keyup', dndRef.rehash.bestiary);
         $('#dndRef-bestiary select').on('change', dndRef.rehash.bestiary);
+        $('#dndRef-bestiary input').on('keyup', function() {
+            modules.delayedAction(dndRef.rehash.bestiary, 'bestiarySearch');
+        });
 
-        $('#dndRef-spellbook input').on('keyup', dndRef.rehash.spellbook);
         $('#dndRef-spellbook select').on('change', dndRef.rehash.spellbook);
+        $('#dndRef-spellbook input').on('keyup', function() {
+            modules.delayedAction(dndRef.rehash.spellbook, 'spellbookSearch');
+        });
 
-        $('#app-dndRef .dndRefDirectorySearch').on('keyup', dndRef.rehash.directory);
+        $('#app-dndRef .dndRefDirectorySearch').on('keyup', function() {
+            modules.delayedAction(dndRef.rehash.directory, 'directorySearch');
+        });
         
         modules.centralAuth.google.on('signIn', dndRef.signInOut);
         modules.centralAuth.google.on('signOut', dndRef.signInOut);
