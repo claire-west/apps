@@ -30,6 +30,10 @@ body {
     padding: 0.05rem;
 }
 
+.off-canvas .appCategory li a {
+    outline: none;
+}
+
 nav.appNav {
     background-color: #222;
     padding-top: 0;

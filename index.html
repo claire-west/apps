@@ -17,7 +17,14 @@
     <button class="close-button" aria-label="Close menu" type="button" data-close>
         <span aria-hidden="true">&times;</span>
     </button>
-    <ul class="vertical menu appMenu"></ul>
+    <ul class="vertical menu appMenu">
+        <li class="menu-text">
+            <a href="https://github.com/iwest/AppHub" data-close="" class="active">
+                <span>This site on GitHub&nbsp;</span>
+                <i class="fa fa-github"></i>
+            </a>
+        </li>
+    </ul>
 </div>
 <div class="off-canvas-content" data-off-canvas-content>
     <nav class="top-bar appNav">
@@ -33,14 +40,15 @@
             </div>
         </div>
     </nav>
-    <div id="app-twitch" data-app="Twitch" class="app defaultApp" hidden></div>
-    <!-- <div id="app-youtube" data-app="YouTube" class="app" hidden></div> -->
-    <div id="app-crunchyroll" data-app="Crunchyroll" class="app" hidden></div>
+    <div id="app-home" data-app="Home" class="app defaultApp" hidden></div>
     <div id="app-pinboard" data-app="Pinboard" class="app" hidden></div>
     <div id="app-dndRef" data-app="D&D Reference" class="app" hidden></div>
-    <!-- <div id="app-randomTables" data-app="Random Table Autoroller" class="app" hidden></div> -->
-    <div id="app-dynform" data-app="Dynamic Form" data-iframe="/dynamicSheet" class="app" hidden></div>
-    <div id="app-resources" data-app="Resource Manager" class="app" hidden></div>
+    <div id="app-twitch" data-app="Twitch" class="app" hidden></div>
+    <div id="app-crunchyroll" data-app="Crunchyroll" class="app" hidden></div>
+    <!-- <div id="app-youtube" data-app="YouTube" class="app" hidden></div> -->
+    <!-- <div id="app-randomTables" data-app="Random Table Roller" data-app-category="In Progress" class="app" hidden></div> -->
+    <div id="app-dynform" data-app="Dynamic Form" data-app-category="Misc" data-iframe="/dynamicSheet" class="app" hidden></div>
+    <div id="app-resources" data-app="Resource Manager" data-app-category="Misc" class="app" hidden></div>
 </div>
 </div>
 </div>

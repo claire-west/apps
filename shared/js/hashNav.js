@@ -4,8 +4,38 @@
     var pending = {};
     var apps = {};
 
-    var register = function(title, id) {
-        $('.menu.appMenu').append(
+    var register = function(title, id, category) {
+        var $menu = $('.menu.appMenu');
+
+        if (category) {
+            $menu = $('.menu.appCategory[data-app-category=' + category + ']');
+
+            if ($menu.length > 0) {
+                $menu = $menu.find('.menu.vertical.nested');
+            } else {
+                $menu = $('<ul/>', {
+                    class: 'menu vertical nested'
+                });
+
+                var $category = $('<ul/>', {
+                    class: "vertical menu appCategory",
+                    'data-accordion-menu': '',
+                    'data-app-category': category
+                }).append(
+                    $('<li/>', {
+                        class: 'menu-text offCanvasShow'
+                    }).append(
+                        $('<a/>', {
+                            text: category
+                        })
+                    ).append($menu)
+                ).appendTo($('#offCanvas'));
+            }
+
+            $menu = $menu.add('.appNav .menu.appMenu');
+        }
+
+        $menu.append(
             $('<li/>', {
                 class: 'menu-text'
             }).append(
@@ -22,7 +52,7 @@
     for (var i = 0; i < $apps.length; i++) {
         var $app = $($apps[i])
         var id = $app[0].id.split('-')[1];
-        register($app.data("app"), id);
+        register($app.data("app"), id, $app.data("app-category"));
     }
 
     var currentApp;
