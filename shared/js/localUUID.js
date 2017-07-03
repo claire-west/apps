@@ -1,6 +1,6 @@
 (function() {
     // function from https://gist.github.com/jcxplorer/823878
-    window.dynCore.declare('uuid', null, function() {
+    window.dynCore.declare('uuid', function() {
         var uuid = function() {
             var uuid = "", i, random;
             for (i = 0; i < 32; i++) {

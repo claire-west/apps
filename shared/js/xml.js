@@ -1,11 +1,10 @@
 (function() {
-    window.dynCore.declare('xml', null, function() {
-
+    window.dynCore.declare('xml', function() {
         var parse = function(element) {
-
             var object = {
                 $: {}
             };
+
             if (element.attributes) {
                 for (var i = 0; i < element.attributes.length; i++) {
                     var attribute = element.attributes[i];

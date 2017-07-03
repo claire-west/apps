@@ -1,5 +1,5 @@
 (function() {
-    window.dynCore.declare('actuallyRandom', null, function() {
+    window.dynCore.declare('actuallyRandom', function() {
         var apiKey = '3790c32c-d334-4a6f-a893-7f588efa6e45';
         var baseObject = {
             jsonrpc: "2.0",

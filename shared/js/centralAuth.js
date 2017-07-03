@@ -1,5 +1,5 @@
 (function() {
-    window.dynCore.declare('centralAuth', null, function() {
+    window.dynCore.declare('centralAuth', function() {
         var events = {};
         var initialized;
         var centralAuth = {

@@ -60,6 +60,11 @@
             );
         },
         declare: function(title, promises, fnInit) {
+            if (typeof(fnInit) === 'undefined' && typeof(promises) === 'function') {
+                fnInit = promises;
+                promises = undefined;
+            }
+
             var promise = window.dynCore.pending();
 
             if (!Array.isArray(promises)) {

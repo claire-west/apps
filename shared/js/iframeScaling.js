@@ -1,5 +1,5 @@
 (function() {
-    window.dynCore.declare('scaleIframe', null, function() {
+    window.dynCore.declare('scaleIframe', function() {
         var scaleIframe = function(element, maintain) {
             element.style.height = element.contentWindow.document.body.scrollHeight + 'px';
 

@@ -1,5 +1,5 @@
 (function() {
-    window.dynCore.declare('propGet', null, function() {
+    window.dynCore.declare('propGet', function() {
         var propGet = {
             get: function(object, path) {
                 var propArray = propGet.pathToArray(path);

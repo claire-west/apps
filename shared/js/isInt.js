@@ -1,5 +1,5 @@
 (function() {
-    window.dynCore.declare('isInt', null, function() {
+    window.dynCore.declare('isInt', function() {
         return function(value) {
             return !isNaN(value) && 
                 parseInt(Number(value)) == value && 

@@ -1,5 +1,5 @@
 (function() {
-    window.dynCore.declare('binarySearch', null, function() {
+    window.dynCore.declare('binarySearch', function() {
         // http://stackoverflow.com/a/29018745/7520417
         return function(ar, el, compare_fn) {
             var m = 0;
