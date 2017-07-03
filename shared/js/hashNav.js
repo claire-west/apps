@@ -4,11 +4,11 @@
     var pending = {};
     var apps = {};
 
-    var register = function(title, id, category) {
+    var register = function(id, args) {
         var $menu = $('.menu.appMenu');
 
-        if (category) {
-            $menu = $('.menu.appCategory[data-app-category=' + category + ']');
+        if (args.category) {
+            $menu = $('.menu.appCategory[data-app-category=\'' + args.category + '\']');
 
             if ($menu.length > 0) {
                 $menu = $menu.find('.menu.vertical.nested');
@@ -17,16 +17,25 @@
                     class: 'menu vertical nested'
                 });
 
-                var $category = $('<ul/>', {
+                var categoryType = '<a/>';
+                var categoryArgs = {
                     class: "vertical menu appCategory",
                     'data-accordion-menu': '',
-                    'data-app-category': category
-                }).append(
+                    'data-app-category': args.category
+                };
+
+                if (args.expandCategory) {
+                    //$menu.addClass('is-active');
+                    delete categoryArgs['data-accordion-menu'];
+                    categoryType = '<span/>';
+                }
+
+                var $category = $('<ul/>', categoryArgs).append(
                     $('<li/>', {
                         class: 'menu-text offCanvasShow'
                     }).append(
-                        $('<a/>', {
-                            text: category
+                        $(categoryType, {
+                            text: args.category
                         })
                     ).append($menu)
                 ).appendTo($('#offCanvas'));
@@ -40,7 +49,7 @@
                 class: 'menu-text'
             }).append(
                 $('<a/>', {
-                    text: title,
+                    text: args.title,
                     href: '#' + id,
                     'data-close': ''
                 })
@@ -52,7 +61,11 @@
     for (var i = 0; i < $apps.length; i++) {
         var $app = $($apps[i])
         var id = $app[0].id.split('-')[1];
-        register($app.data("app"), id, $app.data("app-category"));
+        register(id, {
+            title: $app.data('app'),
+            category: $app.data('app-category'),
+            expandCategory: (typeof($app.data('app-category-collapse')) === 'undefined')
+        });
     }
 
     var currentApp;

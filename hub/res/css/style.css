@@ -34,6 +34,14 @@ body {
     outline: none;
 }
 
+.off-canvas .appCategory .menu.vertical {
+    padding-top: 0.7rem;
+}
+
+.off-canvas .appCategory .menu.vertical .menu-text:last-child {
+    padding-bottom: 0;
+}
+
 nav.appNav {
     background-color: #222;
     padding-top: 0;
@@ -58,7 +66,8 @@ nav.appNav li a {
     transition: 0.5s;
 }
 
-.off-canvas li a:not(.active) {
+.off-canvas li a:not(.active),
+.off-canvas li span {
     color: #fff;
     -o-transition: 0.5s;
     -ms-transition: 0.5s;

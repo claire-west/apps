@@ -49,12 +49,13 @@
                 console.warn('Module at ' + path + ' already loaded.');
                 return $.when();
             }
+
             return $.getScript(path)
                 .done(function() {
                     console.info('Module ' + title + ' loaded.');
                     loadedModules.push(path);
                 }).fail(function(resp, e) {
-                    console.error('Unable to load module.', resp, e);
+                    console.error('Unable to load module (' + e + ') - ', path);
                 }
             );
         },
@@ -113,7 +114,7 @@
         html: function(title, path, $container) {
             var promise = $.Deferred();
             $container = $container || $('#app-' + title);
-
+            
             $container.load(path || ('/hub/' + title + '.html'), function(resp, status) {
                 if (status === 'success') {
                     promise.resolve(resp);
