@@ -13,8 +13,12 @@
 
         hashNav.bindNavApp(function(app, section, args) {
             if (app === 'home') {
-                // Do something
+                //
             }
+        });
+
+        dynCore.require('/shared/js/xml.js').done(function() {
+            dynCore.modules().xml.ajax('http://services.odata.org/OData/OData.svc/$metadata')
         });
 
         return home;
