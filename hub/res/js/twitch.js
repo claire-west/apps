@@ -20,6 +20,7 @@
             quality: localStorage.getItem("twitchStream.quality"),
             autoRefresh: localStorage.getItem("twitchStream.autoRefresh"),
             twelveHour: localStorage.getItem("twitchStream.twelveHour"),
+            includeVodcasts: localStorage.getItem("twitchStream.includeVodcasts"),
             activePlaylist: localStorage.getItem("twitchStream.activePlaylist"),
             gamePlaylists: JSON.parse(localStorage.getItem("twitchStream.gamePlaylists")),
             playlistData: JSON.parse(localStorage.getItem("twitchStream.playlistData")),
@@ -134,16 +135,20 @@
 
                     var now = Date.now();
                     streams.forEach(function(item) {
-                        $("#twitch-currentStreams").append(
-                            twitchStream.rendering.renderFollow(
-                                item.channel.display_name,
-                                item.channel.status,
-                                item.preview.medium,
-                                item.game,
-                                item.viewers,
-                                now
-                            )
-                        );
+                        if (item.stream_type === 'live' ||
+                            (item.stream_type === 'watch_party' && twitchStream.includeVodcasts)) {
+
+                            $("#twitch-currentStreams").append(
+                                twitchStream.rendering.renderFollow(
+                                    item.channel.display_name,
+                                    item.channel.status,
+                                    item.preview.medium,
+                                    item.game,
+                                    item.viewers,
+                                    now
+                                )
+                            );
+                        }
                     });
 
                     $("#twitch-currentStreams > div.columns:last-child").addClass("end");
@@ -825,6 +830,10 @@
             $("#twelveHour").prop("checked", true);
         }
 
+        if (twitchStream.includeVodcasts) {
+            $("#includeVodcasts").prop("checked", true);
+        }
+
         twitchStream.playlists.selectActive();
 
         $("#app-twitch [data-section]").on("click", function() {
@@ -891,6 +900,19 @@
             twitchStream.twelveHour = twelveHour;
             if (!$("#lastRefresh").hasClass("hide")) {
                 twitchStream.updateRefreshTimestamp();
+            }
+        });
+
+        $("#includeVodcasts").on("change", function() {
+            var includeVodcasts = $(this).is(":checked");
+            if (includeVodcasts) {
+                localStorage.setItem("twitchStream.includeVodcasts", includeVodcasts);
+            } else {
+                localStorage.removeItem("twitchStream.includeVodcasts");
+            }
+            twitchStream.includeVodcasts = includeVodcasts;
+            if (!$("#lastRefresh").hasClass("hide")) {
+                twitchStream.refresh();
             }
         });
 
