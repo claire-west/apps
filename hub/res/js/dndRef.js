@@ -765,6 +765,13 @@
                         if (obj.attributes.Material) {
                             components.text += ' (' + obj.attributes.Material + ')';
                         }
+                        
+                        var duration = {
+                            text: obj.attributes.Duration
+                        };
+                        if (obj.attributes.Concentration === 'Yes') {
+                            duration.text += ' (concentration)';   
+                        }
 
                         var school = 'Level ' + obj.attributes.Level + ' ' + obj.attributes.School;
                         if (obj.attributes.Ritual === 'Yes') {
@@ -786,9 +793,7 @@
                                 text: obj.attributes.Range
                             },
                             '.components': components,
-                            '.duration': {
-                                text: obj.attributes.Duration
-                            }
+                            '.duration': duration
                         };
                     });
 
