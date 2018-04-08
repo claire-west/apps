@@ -8,12 +8,14 @@
     <h6><strong>Prerequisites</strong></h6>
     <ul>
         <li><a href="http://www.videolan.org/vlc/index.html">VLC</a></li>
-        <li><a href="http://docs.livestreamer.io/">Livestreamer</a></li>
+        <li><a href="https://streamlink.github.io/">Streamlink</a></li>
     </ul>
     <h6><strong>launch.bat</strong></h6>
-    <code>set "str=%1</code><br />
-    <code>set "var2=%str:*:=%"</code><br />
-    <code>livestreamer %var2%</code><br />
+    <code>for /F "tokens=1* delims=:" %%a in ("%1") do (</code><br />
+    <code style="padding-left: 1rem;">for /F "tokens=1* delims=%%20" %%c in ("%%b") do (</code><br />
+    <code style="padding-left: 2rem;">streamlink %%c %%d</code><br />
+    <code style="padding-left: 1rem;">)</code><br />
+    <code>)</code><br />
     <h6 style="margin-top:0.5rem;"><strong>Protocol Setup</strong></h6>
     <ol>
         <li>In regedit, find HKEY_CLASSES_ROOT</li>
@@ -27,8 +29,8 @@
     </ol>
     <p style="margin-top:0.5rem;margin-bottom:0.5rem;">The final structure should look like this:</p>
     <p style="margin-bottom:0;">HKEY_CLASSES_ROOT</p>
-    <p style="margin-bottom:0;text-indent:1rem;">livestreamer</p>
-    <p style="margin-bottom:0;text-indent:2rem;">(Default) = "URL:Livestreamer Protocol"</p>
+    <p style="margin-bottom:0;text-indent:1rem;">streamlink</p>
+    <p style="margin-bottom:0;text-indent:2rem;">(Default) = "URL:streamlink"</p>
     <p style="margin-bottom:0;text-indent:2rem;">URL Protocol = ""</p>
     <p style="margin-bottom:0;text-indent:2rem;">shell</p>
     <p style="margin-bottom:0;text-indent:3rem;">open</p>

@@ -197,7 +197,7 @@
                                 profileLink: 'http://www.twitch.tv/' + streams[i].channel.display_name + '/profile',
                                 previewSrc: streams[i].preview.medium + '?' + Date.now(),
                                 chatLink: 'https://www.twitch.tv/' + streams[i].channel.name + '/chat',
-                                launchLink: 'livestreamer:twitch.tv/' + streams[i].channel.display_name + ' ' + this.model.quality
+                                launchLink: 'streamlink:twitch.tv/' + streams[i].channel.display_name + ' ' + this.model.quality
                             });
                         }
                     }
