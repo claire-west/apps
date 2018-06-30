@@ -188,7 +188,8 @@
 
                     for (var i = 0; i < streams.length; i++) {
                         if (this.matchCriteria(streams[i], templates[n].criteria)) {
-                            result[n].channels.push({
+                            var channel = {
+                                display: streams[i].channel.display_name,
                                 channel: streams[i].channel.name,
                                 streamTitle: streams[i].channel.status,
                                 game: streams[i].game,
@@ -198,7 +199,11 @@
                                 previewSrc: streams[i].preview.medium + '?' + Date.now(),
                                 chatLink: 'https://www.twitch.tv/' + streams[i].channel.name + '/chat',
                                 launchLink: 'streamlink:twitch.tv/' + streams[i].channel.name + ' ' + this.model.quality
-                            });
+                            };
+                            if (channel.display.toLocaleLowerCase() !== channel.channel.toLocaleLowerCase()) {
+                                channel.display += ' (' + channel.channel + ')';
+                            }
+                            result[n].channels.push(channel);
                         }
                     }
                 }
