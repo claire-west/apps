@@ -110,7 +110,7 @@
 
                 this.getFollowedChannels().done(function(follows) {
                     self.getFollowedStreams(follows).done(function(resp) {
-                        resp.streams.sortBy("channel.display_name");
+                        resp.streams.sortBy("channel.name");
                         self.model._set('streams', self.makeStreamModel(resp.streams, [
                             templates.liveFollows,
                             templates.premieres,
@@ -164,7 +164,7 @@
             getFollowedStreams: function(follows) {
                 var channels = [];
                 for (var i = 0; i < follows.length; i++) {
-                    channels.push(follows[i].channel.display_name);
+                    channels.push(follows[i].channel.name);
                 }
 
                 var url = "https://api.twitch.tv/kraken/streams?channel=" + channels.join(',');
@@ -189,15 +189,15 @@
                     for (var i = 0; i < streams.length; i++) {
                         if (this.matchCriteria(streams[i], templates[n].criteria)) {
                             result[n].channels.push({
-                                channel: streams[i].channel.display_name,
+                                channel: streams[i].channel.name,
                                 streamTitle: streams[i].channel.status,
                                 game: streams[i].game,
                                 viewers: streams[i].viewers,
-                                channelLink: 'http://www.twitch.tv/' + streams[i].channel.display_name,
-                                profileLink: 'http://www.twitch.tv/' + streams[i].channel.display_name + '/profile',
+                                channelLink: 'http://www.twitch.tv/' + streams[i].channel.name,
+                                profileLink: 'http://www.twitch.tv/' + streams[i].channel.name + '/profile',
                                 previewSrc: streams[i].preview.medium + '?' + Date.now(),
                                 chatLink: 'https://www.twitch.tv/' + streams[i].channel.name + '/chat',
-                                launchLink: 'streamlink:twitch.tv/' + streams[i].channel.display_name + ' ' + this.model.quality
+                                launchLink: 'streamlink:twitch.tv/' + streams[i].channel.name + ' ' + this.model.quality
                             });
                         }
                     }
