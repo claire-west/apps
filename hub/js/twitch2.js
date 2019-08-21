@@ -64,19 +64,7 @@
 
                 this.model.onSaveUsername = function() {
                     localStorage.setItem('twitchStream.currentUser', self.model.username);
-                    $.ajax({
-                        url: 'https://api.twitch.tv/kraken/users?login=' + self.model.username,
-                        headers: {
-                            'Accept': 'application/vnd.twitchtv.v5+json',
-                            'Client-ID': atob(twitchClientId)
-                        }
-                    }).done(function(resp) {
-                        var userid = resp.users[0]._id
-                        console.log(userid, resp)
-                        localStorage.setItem('twitchStream.userid', userid);
-                        self.model._set('userid', userid);
-                        self.refresh();
-                    });
+                    self.getUserId();
                 },
 
                 this.model._track('quality', function(val) {
@@ -91,6 +79,23 @@
 
                 this.model._track('twelveHour', function(val) {
                     localStorage.setItem('twitchStream.twelveHour', val);
+                });
+            },
+
+            getUserId: function() {
+                var self = this;
+                $.ajax({
+                    url: 'https://api.twitch.tv/kraken/users?login=' + this.model.username,
+                    headers: {
+                        'Accept': 'application/vnd.twitchtv.v5+json',
+                        'Client-ID': atob(twitchClientId)
+                    }
+                }).done(function(resp) {
+                    var userid = resp.users[0]._id
+                    console.log(userid, resp)
+                    localStorage.setItem('twitchStream.userid', userid);
+                    self.model._set('userid', userid);
+                    self.refresh();
                 });
             },
 
@@ -110,6 +115,9 @@
 
             refresh: function() {
                 if (!this.model.userid) {
+                    if (this.model.username) {
+                        this.getUserId();
+                    }
                     return;
                 }
 
