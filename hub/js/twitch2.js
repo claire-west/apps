@@ -44,6 +44,7 @@
                 autoRefresh: localStorage.getItem('twitchStream.autoRefresh') === 'true',
                 twelveHour: localStorage.getItem('twitchStream.twelveHour') === 'true',
                 username: localStorage.getItem('twitchStream.currentUser'),
+                userid: localStorage.getItem('twitchStream.userid'),
 
                 toggleLineWrap: function() {
                     $(this).toggleClass('truncate-line-wrap');
@@ -63,7 +64,19 @@
 
                 this.model.onSaveUsername = function() {
                     localStorage.setItem('twitchStream.currentUser', self.model.username);
-                    self.refresh();
+                    $.ajax({
+                        url: 'https://api.twitch.tv/kraken/users?login=' + self.model.username,
+                        headers: {
+                            'Accept': 'application/vnd.twitchtv.v5+json',
+                            'Client-ID': atob(twitchClientId)
+                        }
+                    }).done(function(resp) {
+                        var userid = resp.users[0]._id
+                        console.log(userid, resp)
+                        localStorage.setItem('twitchStream.userid', userid);
+                        self.model._set('userid', userid);
+                        self.refresh();
+                    });
                 },
 
                 this.model._track('quality', function(val) {
@@ -96,7 +109,7 @@
             },
 
             refresh: function() {
-                if (!this.model.username) {
+                if (!this.model.userid) {
                     return;
                 }
 
@@ -134,23 +147,24 @@
                 return promise;
             },
 
-            getFollowedChannels: function(next, total) {
-                if (typeof(total) === 'undefined') {
-                    total = 0;
+            getFollowedChannels: function(offset) {
+                if (typeof(offset) === 'undefined') {
+                    offset = 0;
                 }
                 var promise = $.Deferred();
-                var url = next || "https://api.twitch.tv/kraken/users/" + this.model.username + "/follows/channels";
+                var url = "https://api.twitch.tv/kraken/users/" + this.model.userid + "/follows/channels?limit=100&offset=" + offset;
 
                 var self = this;
                 $.ajax({
                     url: url,
                     headers: {
-                       'Client-ID': atob(twitchClientId)
+                        'Accept': 'application/vnd.twitchtv.v5+json',
+                        'Client-ID': atob(twitchClientId)
                     },
                     cache: false
                 }).done(function(resp) {
-                    if (resp.follows.length && resp.follows.length + total < resp._total && resp._links && resp._links.next) {
-                        self.getFollowedChannels(resp._links.next, resp.follows.length + total).done(function(follows) {
+                    if (resp.follows.length && resp.follows.length + offset < resp._total) {
+                        self.getFollowedChannels(resp.follows.length + offset).done(function(follows) {
                             promise.resolve(resp.follows.concat(follows))
                         }).fail(promise.reject);
                     } else {
@@ -164,13 +178,14 @@
             getFollowedStreams: function(follows) {
                 var channels = [];
                 for (var i = 0; i < follows.length; i++) {
-                    channels.push(follows[i].channel.name);
+                    channels.push(follows[i].channel._id);
                 }
 
-                var url = "https://api.twitch.tv/kraken/streams?channel=" + channels.join(',');
+                var url = "https://api.twitch.tv/kraken/streams?limit=100&stream_type=all&channel=" + channels.join(',');
                 return $.ajax({
                     url: url,
                     headers: {
+                        'Accept': 'application/vnd.twitchtv.v5+json',
                         'Client-ID': atob(twitchClientId)
                     },
                     cache: false
