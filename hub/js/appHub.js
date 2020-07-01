@@ -158,7 +158,6 @@
                         }
                     );
                 }
-                console.log($app.data('namespace'))
                 appHub.loadApp(app, $app.data('namespace'));
                 return;
             }
