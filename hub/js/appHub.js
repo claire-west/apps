@@ -12,11 +12,12 @@
         var appHub = {
             init: function(title, app, $app) {
                 dynCore.when(dynCore.require('lib.baseApp')).done(function(modules, baseApp) {
+                    $app = $app || $('#app-' + title);
                     baseApp({
                         title: title,
-                        namespace: 'hub',
+                        namespace: $app.data('namespace') || $app.data('ns') || 'hub',
                         app: app,
-                        $app: $app || $('#app-' + title)
+                        $app: $app
                     }).done(function(app) {
                         apps[app.title] = app;
                         $(document).foundation();
